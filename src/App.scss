@@ -1891,6 +1891,7 @@ body {
   .pricing__delivery__section__content__card__heading {
   color: #2d9cdb;
 }
+
 .pricing__delivery__section__content__card:nth-child(3) * ::before {
   background-color: #bb6bd9;
 }
@@ -2011,6 +2012,16 @@ body {
   margin-bottom: 1em;
   position: relative;
 }
+.pricing__delivery__section__content__card{
+   border: 1px solid transparent;
+   padding: 1em;
+}
+.pricing__delivery__section__content__card:hover{
+  border: 1px solid $primary;
+  
+  // padding: 1em;
+
+}
 
 .pricing__delivery__section__content__card__para::before {
   content: "";
@@ -2021,6 +2032,9 @@ body {
   height: 10px;
   background-color: $primary;
   border-radius: 50px;
+}
+.pricing__delivery__section__content__card:hover{
+  border-radius: 5px;
 }
 .pricing__process__container {
   margin: 2em 0;
@@ -3043,6 +3057,7 @@ body {
   flex-wrap: wrap;
 }
 
+
 .container__web__dev__experience__content__entry {
   display: flex;
   flex-direction: column;
@@ -3815,6 +3830,7 @@ body {
   height: 100%;
   width: 100%;
   padding: 0 2rem;
+  
 }
 
 .meetus__container__smallThings__content {
@@ -3878,6 +3894,7 @@ body {
   margin-bottom: 4em;
   display: flex;
   align-items: center;
+  
 }
 
 .meetus__container__sub__content {
@@ -3895,6 +3912,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.meetus__container__sub__content img{
+  mix-blend-mode: luminosity;
+  
 }
 
 .meetus__container__sub__left__image {
@@ -3921,11 +3942,13 @@ body {
   font-size: 18px;
   width: 100%;
   max-width: 500px;
+  color: $white;
 }
 .meetus__container__sub__right__heading {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 0.5em;
+  color: $white;
 }
 .meetus__container__sub__right__heading span {
   color: $primary;
