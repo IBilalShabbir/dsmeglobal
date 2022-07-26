@@ -170,6 +170,7 @@ export default function ServicesAndroid() {
                       width="44.629"
                       height="44.601"
                       viewBox="0 0 21.629 21.601"
+                      strokeWidth={.5}
                     >
                       <g
                         id="Group_13"
