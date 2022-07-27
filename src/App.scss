@@ -2012,15 +2012,14 @@ body {
   margin-bottom: 1em;
   position: relative;
 }
-.pricing__delivery__section__content__card{
-   border: 1px solid transparent;
-   padding: 1em;
+.pricing__delivery__section__content__card {
+  border: 1px solid transparent;
+  padding: 1em;
 }
-.pricing__delivery__section__content__card:hover{
+.pricing__delivery__section__content__card:hover {
   border: 1px solid $primary;
-  
-  // padding: 1em;
 
+  // padding: 1em;
 }
 
 .pricing__delivery__section__content__card__para::before {
@@ -2033,12 +2032,11 @@ body {
   background-color: $primary;
   border-radius: 50px;
 }
-.pricing__delivery__section__content__card:hover{
+.pricing__delivery__section__content__card:hover {
   border-radius: 5px;
 }
 .pricing__process__container {
   margin: 2em 0;
-  
 }
 .pricing__process__container__content {
   height: 100%;
@@ -3057,7 +3055,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .container__web__dev__experience__content__entry {
   display: flex;
   flex-direction: column;
@@ -3830,7 +3827,6 @@ body {
   height: 100%;
   width: 100%;
   padding: 0 2rem;
-  
 }
 
 .meetus__container__smallThings__content {
@@ -3894,7 +3890,6 @@ body {
   margin-bottom: 4em;
   display: flex;
   align-items: center;
-  
 }
 
 .meetus__container__sub__content {
@@ -3913,9 +3908,8 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.meetus__container__sub__content img{
+.meetus__container__sub__content img {
   mix-blend-mode: luminosity;
-  
 }
 
 .meetus__container__sub__left__image {
@@ -5993,9 +5987,9 @@ body {
   font-weight: bold;
   margin-bottom: 1em;
 }
-.staff__talent__sub__heading__one{
+.staff__talent__sub__heading__one {
   font-size: 18px;
-width: 60%;
+  width: 60%;
   margin-bottom: 1em;
 }
 .staff__talent__info {
@@ -9147,18 +9141,46 @@ width: 60%;
   margin: 0 auto;
   color: $primary;
 }
-.ios__development__native__impressive__performance__svg svg{
+.ios__development__native__impressive__performance__svg svg {
   color: $primary;
 }
-.container__web__dev__experience__header__heading span{
-  color: #189366;
-}.pricing__process__container__content__top__heading span{
+.container__web__dev__experience__header__heading span {
   color: #189366;
 }
-.container__web__dev__experties__header__heading span{
+.pricing__process__container__content__top__heading span {
   color: #189366;
 }
-.highly__customer__main__first__container__jira__container__heading svg{
- stroke: #189366;
- color: #189366;
+.container__web__dev__experties__header__heading span {
+  color: #189366;
+}
+.highly__customer__main__first__container__jira__container__heading svg {
+  stroke: #189366;
+  color: #189366;
+}
+.graphic__design__essence__container {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.graphic__design__essence__container__content {
+  font-size: 15px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.graphic__design__essence__container__buttton a {
+  text-align: center;
+  background-color: $primary;
+
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $white;
+}
+.graphic__design__essence__container__buttton {
+  text-align: center;
 }

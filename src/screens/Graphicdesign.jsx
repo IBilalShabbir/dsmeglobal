@@ -15,8 +15,7 @@ function Graphicdesign() {
     "Campaign Microsites",
     "2D / 3D Illustration and Visualization",
     "Video Content Creation",
-   " Print, Packaging and POS",
-    
+    " Print, Packaging and POS",
   ];
   return (
     <>
@@ -53,8 +52,8 @@ function Graphicdesign() {
           media companies and brands. It's working exceedingly well, and we're
           delivering some staggering.
         </div>
-        <div className="staff__talent__info" style={{fontsize:30}}>
-        Want to create a lasting brand impact?
+        <div className="staff__talent__info" style={{ fontsize: 30 }}>
+          Want to create a lasting brand impact?
         </div>
         <div className="staff__talent__features">
           {talentFeatures.map((feature) => (
@@ -67,6 +66,18 @@ function Graphicdesign() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="graphic__design__essence__container">
+        THE ESSENCE OF 360 DEGREE BRANDING
+      </div>
+      <div className="graphic__design__essence__container__content">
+        A belief that permeates the way we do business One brand – One voice
+        Every point of contact matters Emanating from a single, focused brand
+        strategy OUR graphic design services surround the brand, making
+        important brand equity deposits into the bran
+      </div>
+      <div className="graphic__design__essence__container__buttton">
+        <a href="">Get started </a>
       </div>
     </>
   );
