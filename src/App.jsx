@@ -61,9 +61,11 @@ function App() {
         <Route path="/services/ecomerece" element={<ServiceEcomerece />} />
         <Route path="/services/startup" element={<ServiceStartup />} />
         <Route path="/services/staff" element={<ServiceStaff />} />
-        <Route path="/services/discoveryworkshop"element={<DiscoveryWorkshop />}/>
-        <Route path="/services/graphicdesign"element={<GraphicDesign />}/>
-        
+        <Route
+          path="/services/discoveryworkshop"
+          element={<DiscoveryWorkshop />}
+        />
+        <Route path="/services/graphicdesign" element={<GraphicDesign />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blog-details" element={<BlogDetails />} />
