@@ -1,8 +1,8 @@
-import React from 'react';
-import {Bounce} from 'react-reveal';
-export default function BlogsFilter({title, onChange, defaultChecked}) {
+import React from "react";
+import { Bounce } from "react-reveal";
+export default function BlogsFilter({ title, onChange, defaultChecked }) {
   return (
-    <Bounce right>
+    <Bounce duration={2000} right>
       <div className="blog__page__filter__entry">
         <input
           type="radio"

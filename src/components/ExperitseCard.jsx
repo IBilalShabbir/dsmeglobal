@@ -1,9 +1,9 @@
-import React from 'react';
-import {Zoom} from 'react-reveal';
+import React from "react";
+import { Zoom } from "react-reveal";
 
-export function ExperitseCard({label, info, svg}) {
+export function ExperitseCard({ label, info, svg }) {
   return (
-    <Zoom In>
+    <Zoom duration={2000} In>
       <div className="container__web__dev__experties__content__entry">
         <div className="container__web__dev__experties__content__header">
           {svg}

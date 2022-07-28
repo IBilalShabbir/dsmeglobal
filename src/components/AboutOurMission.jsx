@@ -11,7 +11,7 @@ export function AboutOurMission({}) {
       }}
     >
       <div className="our__mission__section__about__us__content">
-        <Bounce left>
+        <Bounce duration={2000} left>
           <div className="our__mission__section__about__us__content__left">
             <div
               className="feature__section__entry__content__jumbotron__sub__heading"
@@ -37,7 +37,7 @@ export function AboutOurMission({}) {
           </div>
         </Bounce>
         <div className="our__mission__section__about__us__content__right">
-          <Zoom>
+          <Zoom duration={2000}>
             <img
               loading="lazy"
               src={missionSvg}

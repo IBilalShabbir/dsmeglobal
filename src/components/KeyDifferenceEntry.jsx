@@ -3,7 +3,7 @@ import { Bounce } from "react-reveal";
 
 export function KeyDifferenceEntry({ svg, label, info }) {
   return (
-    <Bounce>
+    <Bounce duration={2000}>
       <div className="about__key__difference__content__col__entry">
         <div className="about__key__difference__content__col__entry__header">
           <div className="about__key__difference__content__col__entry__header__icon">

@@ -25,7 +25,7 @@ export function BlogSection() {
           data
             ?.filter((blog, i) => i < 3)
             .map((blog) => (
-              <Zoom>
+              <Zoom duration={2000}>
                 <button
                   onClick={() => {
                     setTimeout(() => {
@@ -51,7 +51,7 @@ export function BlogSection() {
                   />
 
                   <div className="blog__card__content">
-                    <Bounce>
+                    <Bounce duration={2000}>
                       <div className="blog__card__content__heading">
                         {blog.title}
                       </div>

@@ -40,10 +40,11 @@ export function ServicesSection() {
   return (
     <>
       <div className="container__services">
-        <Bounce left>
+        <Bounce duration={2000} left>
           <div className="container__services__left">
             <div className="container__services__left__heading">
-              A complete enterprise designed to <span>modernize your business</span> 
+              A complete enterprise designed to{" "}
+              <span>modernize your business</span>
             </div>
             <div className="container__services__left__info">
               We excel in providing cutting-edge solutions and development

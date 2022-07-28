@@ -12,7 +12,7 @@ export function AboutOurVision({}) {
     >
       <div className="our__vision__section__about__us__content">
         <div className="our__vision__section__about__us__content__right">
-          <Zoom>
+          <Zoom duration={2000}>
             <img
               loading="lazy"
               src={visionSvg}
@@ -22,9 +22,9 @@ export function AboutOurVision({}) {
           </Zoom>
         </div>
         <div className="our__vision__section__about__us__content__left">
-          <Bounce right>
+          <Bounce duration={2000} right>
             <div className="feature__section__entry__content__jumbotron__sub__heading">
-              Our <span>Vision</span> 
+              Our <span>Vision</span>
             </div>
             <div className="our__vision__section__about__us__content__left__para">
               Our vision is to help businesses and people create a better

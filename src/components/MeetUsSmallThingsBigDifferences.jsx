@@ -1,18 +1,18 @@
-import React from 'react';
-import agilefirst from '../assets/agileFirst.svg';
-import {Bounce, Zoom} from 'react-reveal';
+import React from "react";
+import agilefirst from "../assets/agileFirst.svg";
+import { Bounce, Zoom } from "react-reveal";
 
 export function MeetUsSmallThingsBigDifferences() {
   return (
     <div className="meetus__container__smallThings">
       <div className="meetus__container__smallThings__content">
-        <Zoom In>
+        <Zoom duration={2000} In>
           <div className="meetus__container__smallThings__heading">
             Small things. <span>Big difference</span>
           </div>
         </Zoom>
         <div className="meetus__container__smallThings__content__container">
-          <Bounce left>
+          <Bounce duration={2000} left>
             <div className="meetus__container__smallThings__left">
               <div className="meetus__container__smallThings__left__heading">
                 <span>Agile </span> first
@@ -24,7 +24,7 @@ export function MeetUsSmallThingsBigDifferences() {
             </div>
           </Bounce>
           <div className="meetus__container__smallThings__right">
-            <Bounce right>
+            <Bounce duration={2000} right>
               <div className="meetus__container__smallThings__right__image">
                 <img loading="lazy" src={agilefirst} alt="Agile first" />
               </div>

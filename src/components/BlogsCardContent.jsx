@@ -1,27 +1,28 @@
-import React from 'react';
-import { Zoom } from 'react-reveal';
+import React from "react";
+import { Zoom } from "react-reveal";
 
-import {useNavigate} from 'react-router-dom';
-import {getText} from '../utils/functions';
+import { useNavigate } from "react-router-dom";
+import { getText } from "../utils/functions";
 
-export default function BlogsCardContent({data}) {
+export default function BlogsCardContent({ data }) {
   const navigate = useNavigate();
 
   return (
-    <Zoom InUp>
+    <Zoom duration={2000} InUp>
       <button
         onClick={() => {
           setTimeout(() => {
-            window.scrollTo({top: 0, behavior: 'smooth'});
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }, 300);
-          navigate('/blog-details');
-          window.localStorage.setItem('blogsData', JSON.stringify(data));
+          navigate("/blog-details");
+          window.localStorage.setItem("blogsData", JSON.stringify(data));
         }}
-        className="blog__card ">
+        className="blog__card "
+      >
         <img
           loading="lazy"
           src={
-            'https://res.cloudinary.com/mehfoozurrehman/image/upload/' +
+            "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
             data.image
           }
           alt={data.title}
@@ -33,7 +34,7 @@ export default function BlogsCardContent({data}) {
           <div className="blog__card__content__info">
             {getText(data.content).length < 200
               ? getText(data.content)
-              : getText(data.content).substring(0, 200) + '...'}
+              : getText(data.content).substring(0, 200) + "..."}
           </div>
         </div>
       </button>

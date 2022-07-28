@@ -41,7 +41,7 @@ export function WorkSection() {
                   />
                 </Fade>
               </div>
-              <Bounce right>
+              <Bounce duration={2000} right>
                 <div className="work__section__content__project__about">
                   <div className="work__section__content__project__about__heading">
                     <div className="work__section__content__project__about__heading__top">
@@ -79,7 +79,7 @@ export function WorkSection() {
                       }}
                       defaultChecked={i === 0 ? true : false}
                     />
-                    <Zoom>
+                    <Zoom duration={2000}>
                       <img
                         loading="lazy"
                         src={

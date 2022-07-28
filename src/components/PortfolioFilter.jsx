@@ -1,9 +1,9 @@
-import React from 'react';
-import {Bounce} from 'react-reveal';
+import React from "react";
+import { Bounce } from "react-reveal";
 
-export function PortfolioFilter({title, onChange, defaultChecked}) {
+export function PortfolioFilter({ title, onChange, defaultChecked }) {
   return (
-    <Bounce right>
+    <Bounce duration={2000} right>
       <div className="blog__page__filter__entry">
         <input
           type="radio"

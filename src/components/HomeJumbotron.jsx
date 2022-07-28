@@ -27,7 +27,7 @@ export function HomeJumbotron({
 
   return (
     <div className="container__jumbotron" style={{ ...styleImage }}>
-      <Bounce left>
+      <Bounce duration={2000} left>
         <div className="container__jumbotron__left">
           <div
             className="container__jumbotron__left__heading"
@@ -100,7 +100,7 @@ export function HomeJumbotron({
           ) : null}
         </div>
       </Bounce>
-      <Zoom>
+      <Zoom duration={2000}>
         <div className="container__jumbotron__right">
           {imgs ? (
             imgs

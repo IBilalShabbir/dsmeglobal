@@ -1,17 +1,20 @@
-import React from 'react';
-import qualityOver from '../assets/qualityOver.svg';
-import continuousChange from '../assets/continuousChange.svg';
-import fouceOn from '../assets/fouceOn.svg';
-import {Bounce} from 'react-reveal';
+import React from "react";
+import qualityOver from "../assets/qualityOver.svg";
+import continuousChange from "../assets/continuousChange.svg";
+import fouceOn from "../assets/fouceOn.svg";
+import { Bounce } from "react-reveal";
 
 export function MeetUsQualityOverQuantity() {
   return (
-    <div className="meetus__containerOf__sub" >
+    <div className="meetus__containerOf__sub">
       <div className="meetus__container__sub">
-        <div className="meetus__container__sub__content" style={{background: "black",padding:"2em 1em"}}>
+        <div
+          className="meetus__container__sub__content"
+          style={{ background: "black", padding: "2em 1em" }}
+        >
           <div className="meetus__container__sub__left">
-            <Bounce left>
-              <div className="meetus__container__sub__left__image" >
+            <Bounce duration={2000} left>
+              <div className="meetus__container__sub__left__image">
                 <img
                   loading="lazy"
                   src={qualityOver}
@@ -20,8 +23,8 @@ export function MeetUsQualityOverQuantity() {
               </div>
             </Bounce>
           </div>
-          <Bounce right>
-            <div className="meetus__container__sub__right" >
+          <Bounce duration={2000} right>
+            <div className="meetus__container__sub__right">
               <div className="meetus__container__sub__right__heading">
                 <span>Quality </span> over quantity
               </div>
@@ -38,20 +41,27 @@ export function MeetUsQualityOverQuantity() {
       <div className="meetus__container__sub">
         <div
           className="meetus__container__sub__content"
-          id="meetus__container__sub__content2">
-          <Bounce left>
+          id="meetus__container__sub__content2"
+        >
+          <Bounce duration={2000} left>
             <div className="meetus__container__sub__left">
-              <div className="meetus__container__sub__right__heading"style={{color: "black"}} >
-                 <span style={{paddingLeft: "5px"}}>Continuous </span>change
+              <div
+                className="meetus__container__sub__right__heading"
+                style={{ color: "black" }}
+              >
+                <span style={{ paddingLeft: "5px" }}>Continuous </span>change
               </div>
-              <div className="meetus__container__sub__right__para" style={{color: "black"}}>
+              <div
+                className="meetus__container__sub__right__para"
+                style={{ color: "black" }}
+              >
                 Change is the only constant. We believe in that. Technology
                 switch? Sure thing! New frameworks and tools? More than welcome.
               </div>
             </div>
           </Bounce>
           <div className="meetus__container__sub__right">
-            <Bounce right>
+            <Bounce duration={2000} right>
               <div className="meetus__container__sub__left__image">
                 <img
                   loading="lazy"
@@ -64,16 +74,19 @@ export function MeetUsQualityOverQuantity() {
         </div>
       </div>
       <div className="meetus__container__sub">
-        <div className="meetus__container__sub__content" style={{background: "black",padding:"2em 1em"}}>
+        <div
+          className="meetus__container__sub__content"
+          style={{ background: "black", padding: "2em 1em" }}
+        >
           <div className="meetus__container__sub__left">
-            <Bounce left>
+            <Bounce duration={2000} left>
               <div className="meetus__container__sub__left__image">
                 <img loading="lazy" src={fouceOn} alt="Fouce on people" />
               </div>
             </Bounce>
           </div>
-          <Bounce right>
-            <div className="meetus__container__sub__right" >
+          <Bounce duration={2000} right>
+            <div className="meetus__container__sub__right">
               <div className="meetus__container__sub__right__heading">
                 Focus on <span>people</span>
               </div>

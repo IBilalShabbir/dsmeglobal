@@ -30,7 +30,7 @@ export function ClientsSection() {
   }, []);
   return (
     <div className="container__clients">
-      <Bounce left>
+      <Bounce duration={2000} left>
         <div className="container__clients__left">
           <div className="container__clients__left__heading">
             Our <span>Techonologies</span>

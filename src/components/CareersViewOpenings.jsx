@@ -13,7 +13,13 @@ export function CareersViewOpenings({
   return (
     <div className="hot__offers__section__wrapper">
       <section id="job__section" className="hot__offers__section">
-       <Bounce left> <div className="hot__offers__section__header"> View<span>Openings</span>  </div></Bounce>
+        <Bounce duration={2000} left>
+          {" "}
+          <div className="hot__offers__section__header">
+            {" "}
+            View<span>Openings</span>{" "}
+          </div>
+        </Bounce>
         <div className="hot__offers__section__content">
           {error ? (
             <div>failed to load</div>

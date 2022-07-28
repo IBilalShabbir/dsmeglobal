@@ -1,10 +1,10 @@
-import React from 'react';
-import {Bounce, Zoom} from 'react-reveal';
-import {getText} from '../utils/functions';
+import React from "react";
+import { Bounce, Zoom } from "react-reveal";
+import { getText } from "../utils/functions";
 
-export default function HotOfferJobCard({item, onApply}) {
+export default function HotOfferJobCard({ item, onApply }) {
   return (
-    <Bounce right>
+    <Bounce duration={2000} right>
       <button className="hot__offers__section__content__card" onClick={onApply}>
         <div className="hot__offers__section__content__card__title">
           {item.position}
@@ -14,13 +14,13 @@ export default function HotOfferJobCard({item, onApply}) {
             Description
           </div>
           <div className="hot__offers__section__content__card__info__content">
-            {item.description.substring('', 100)}
+            {item.description.substring("", 100)}
           </div>
           <div className="hot__offers__section__content__card__info__heading">
             Requirements
           </div>
           <div className="hot__offers__section__content__card__info__content">
-            {getText(item.requirements).substring('', 200)}
+            {getText(item.requirements).substring("", 200)}
           </div>
         </div>
       </button>

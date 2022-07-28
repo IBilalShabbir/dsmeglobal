@@ -1,10 +1,10 @@
-import React from 'react';
-import {Zoom} from 'react-reveal';
-import {getText, parseDate} from '../utils/functions';
+import React from "react";
+import { Zoom } from "react-reveal";
+import { getText, parseDate } from "../utils/functions";
 
-export default function VarcencyCardContent({item, onApply}) {
+export default function VarcencyCardContent({ item, onApply }) {
   return (
-    <Zoom up>
+    <Zoom duration={2000} up>
       <div className="hot__offers__section__content__entry">
         <div className="hot__offers__section__content__entry__left">
           <div className="hot__offers__section__content__entry__left__heading">
@@ -24,8 +24,9 @@ export default function VarcencyCardContent({item, onApply}) {
           <div
             className="hot__offers__section__content__entry__middle__heading"
             style={{
-              marginTop: '.5em',
-            }}>
+              marginTop: ".5em",
+            }}
+          >
             Requirements
           </div>
           <div className="hot__offers__section__content__entry__middle__description">
@@ -35,7 +36,8 @@ export default function VarcencyCardContent({item, onApply}) {
         <div className="hot__offers__section__content__entry__right">
           <button
             className="hot__offers__section__content__entry__right__apply"
-            onClick={onApply}>
+            onClick={onApply}
+          >
             Apply
           </button>
         </div>

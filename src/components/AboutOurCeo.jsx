@@ -6,7 +6,7 @@ export function AboutOurCeo({}) {
   return (
     <div className="about__ceo__message">
       <div className="about__ceo__message__left">
-        <Zoom>
+        <Zoom duration={2000}>
           <img
             loading="lazy"
             src={ceo}
@@ -16,7 +16,7 @@ export function AboutOurCeo({}) {
         </Zoom>
       </div>
       <div className="about__ceo__message__right">
-        <Bounce right>
+        <Bounce duration={2000} right>
           <div className="about__ceo__message__right__heading">
             Message from our <span>ceo</span>
           </div>

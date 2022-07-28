@@ -1,15 +1,15 @@
-import React from 'react';
-import {Bounce} from 'react-reveal';
-import {PricingFeatureEntry} from '../components/PricingFeatureEntry';
+import React from "react";
+import { Bounce } from "react-reveal";
+import { PricingFeatureEntry } from "../components/PricingFeatureEntry";
 
 export function IndustryFeatrues() {
   return (
     <div className="pricing__feature__main">
       <div className="pricing__feature">
-        <Bounce left>
+        <Bounce duration={2000} left>
           <div className="pricing__feature__entry__reverse">
-          <span> Revolutionizing</span>  the way business is conducted across industries with
-            the latest technology introductions.
+            <span> Revolutionizing</span> the way business is conducted across
+            industries with the latest technology introductions.
           </div>
         </Bounce>
         <PricingFeatureEntry
@@ -18,11 +18,13 @@ export function IndustryFeatrues() {
               xmlns="http://www.w3.org/2000/svg"
               width="67.586"
               height="66.56"
-              viewBox="0 0 67.586 66.56">
+              viewBox="0 0 67.586 66.56"
+            >
               <g
                 id="Group_12115"
                 data-name="Group 12115"
-                transform="translate(-225.774 -2885.342)">
+                transform="translate(-225.774 -2885.342)"
+              >
                 <path
                   id="Path_11831"
                   data-name="Path 11831"
@@ -56,11 +58,13 @@ export function IndustryFeatrues() {
               xmlns="http://www.w3.org/2000/svg"
               width="78.749"
               height="78.747"
-              viewBox="0 0 78.749 78.747">
+              viewBox="0 0 78.749 78.747"
+            >
               <g
                 id="Group_12116"
                 data-name="Group 12116"
-                transform="translate(-395.42 -2877)">
+                transform="translate(-395.42 -2877)"
+              >
                 <path
                   id="Path_11908"
                   data-name="Path 11908"
@@ -87,11 +91,13 @@ export function IndustryFeatrues() {
               xmlns="http://www.w3.org/2000/svg"
               width="41.035"
               height="41.042"
-              viewBox="0 0 41.035 41.042">
+              viewBox="0 0 41.035 41.042"
+            >
               <g
                 id="Group_12122"
                 data-name="Group 12122"
-                transform="translate(-533.768 -2852.977)">
+                transform="translate(-533.768 -2852.977)"
+              >
                 <path
                   id="Path_11943"
                   data-name="Path 11943"
@@ -139,11 +145,13 @@ export function IndustryFeatrues() {
               xmlns="http://www.w3.org/2000/svg"
               width="45.057"
               height="45.063"
-              viewBox="0 0 45.057 45.063">
+              viewBox="0 0 45.057 45.063"
+            >
               <g
                 id="Group_12117"
                 data-name="Group 12117"
-                transform="translate(-734.781 -2904.059)">
+                transform="translate(-734.781 -2904.059)"
+              >
                 <path
                   id="Path_11898"
                   data-name="Path 11898"
@@ -177,11 +185,13 @@ export function IndustryFeatrues() {
               xmlns="http://www.w3.org/2000/svg"
               width="66.848"
               height="66.838"
-              viewBox="0 0 66.848 66.838">
+              viewBox="0 0 66.848 66.838"
+            >
               <g
                 id="Group_12118"
                 data-name="Group 12118"
-                transform="translate(-960 -2888.908)">
+                transform="translate(-960 -2888.908)"
+              >
                 <path
                   id="Path_11868"
                   data-name="Path 11868"
@@ -278,11 +288,13 @@ export function IndustryFeatrues() {
               xmlns="http://www.w3.org/2000/svg"
               width="44.554"
               height="57.231"
-              viewBox="0 0 44.554 57.231">
+              viewBox="0 0 44.554 57.231"
+            >
               <g
                 id="Group_12120"
                 data-name="Group 12120"
-                transform="translate(-1183.89 -2885.238)">
+                transform="translate(-1183.89 -2885.238)"
+              >
                 <path
                   id="Path_11859"
                   data-name="Path 11859"
@@ -309,11 +321,13 @@ export function IndustryFeatrues() {
               xmlns="http://www.w3.org/2000/svg"
               width="58.376"
               height="58.378"
-              viewBox="0 0 58.376 58.378">
+              viewBox="0 0 58.376 58.378"
+            >
               <g
                 id="Group_12121"
                 data-name="Group 12121"
-                transform="translate(-1300.06 -2887.117)">
+                transform="translate(-1300.06 -2887.117)"
+              >
                 <path
                   id="Path_11911"
                   data-name="Path 11911"
@@ -361,11 +375,13 @@ export function IndustryFeatrues() {
               xmlns="http://www.w3.org/2000/svg"
               width="78.148"
               height="77.351"
-              viewBox="0 0 78.148 77.351">
+              viewBox="0 0 78.148 77.351"
+            >
               <g
                 id="Group_12119"
                 data-name="Group 12119"
-                transform="translate(-1541.52 -2870.01)">
+                transform="translate(-1541.52 -2870.01)"
+              >
                 <path
                   id="Path_11837"
                   data-name="Path 11837"

@@ -1,9 +1,9 @@
-import React from 'react';
-import {Bounce} from 'react-reveal';
+import React from "react";
+import { Bounce } from "react-reveal";
 
-export function PricingFeatureEntry({title, content, icon}) {
+export function PricingFeatureEntry({ title, content, icon }) {
   return (
-    <Bounce right>
+    <Bounce duration={2000} right>
       <div className="pricing__feature__entry">
         {icon ? (
           <div className="pricing__feature__entry__icon">{icon}</div>

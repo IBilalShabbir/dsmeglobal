@@ -67,7 +67,7 @@ export function TestimonialsSection() {
           id="container__testimonials__overlay__content"
         >
           {array.map((item, i) => (
-            <Zoom>
+            <Zoom duration={2000}>
               <button
                 key={JSON.stringify(item)}
                 className={
@@ -97,7 +97,7 @@ export function TestimonialsSection() {
             className="container__testimonials__overlay__info"
             key={JSON.stringify(item)}
           >
-            <Bounce>
+            <Bounce duration={2000}>
               <div className="container__testimonials__overlay__info__message">
                 {item.message}
               </div>

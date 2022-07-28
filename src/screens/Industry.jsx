@@ -1,8 +1,8 @@
-import React from 'react';
-import {HomeJumbotron} from '../components/HomeJumbotron';
-import {IndustryFeatrues} from '../components/IndustryFeatrues';
-import industries from '../assets/industry.webp';
-import {Bounce} from 'react-reveal';
+import React from "react";
+import { HomeJumbotron } from "../components/HomeJumbotron";
+import { IndustryFeatrues } from "../components/IndustryFeatrues";
+import industries from "../assets/industry.webp";
+import { Bounce } from "react-reveal";
 
 export default function Industry() {
   return (
@@ -15,14 +15,14 @@ export default function Industry() {
           talk={true}
         />
       </div>
-      <Bounce left>
-        {' '}
+      <Bounce duration={2000} left>
+        {" "}
         <div className="industry__software__solutions">
-          Software solutions for<span>industry leaders</span> 
+          Software solutions for<span>industry leaders</span>
         </div>
       </Bounce>
-      <Bounce up>
-        {' '}
+      <Bounce duration={2000} up>
+        {" "}
         <div className="industry__software__solutions__content">
           Need a software solution that’s right for you? Choose a digital
           product crafted to answer the challenges of your industry. Small or

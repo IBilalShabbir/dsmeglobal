@@ -12,10 +12,10 @@ export function QuateSection() {
       <div className="container__stats__wrapper">
         <div className="container__stats__content">
           <div className="container__stats">
-            <Bounce left>
+            <Bounce duration={2000} left>
               <div className="container__stats__left">
                 <div className="container__stats__left__heading">
-                  Where business meets <span>cutting-edge technology</span> 
+                  Where business meets <span>cutting-edge technology</span>
                 </div>
                 <div className="container__stats__left__info">
                   Choose the tech stack for your next application, or let us

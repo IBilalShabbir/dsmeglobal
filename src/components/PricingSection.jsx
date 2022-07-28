@@ -12,7 +12,7 @@ export function PricingSection() {
         className="container__testimonials__overlay__heading"
         style={{ marginBottom: "1em", marginTop: "2em" }}
       >
-        Engagement  Models
+        Engagement Models
         <span>
           Depending on your project specifics and needs, you can choose method
           of your own choice.
@@ -24,7 +24,7 @@ export function PricingSection() {
       >
         <div className="container__pricing__content__left">
           <img loading="lazy" src={customizations} alt="customizations" />
-          <Bounce left>
+          <Bounce duration={2000} left>
             <div className="container__pricing__content__left__heading">
               Build your dedicated teams
             </div>
@@ -56,7 +56,7 @@ export function PricingSection() {
         </div>
         <div className="container__pricing__content__right">
           <img loading="lazy" src={products} alt="products" />
-          <Bounce right>
+          <Bounce duration={2000} right>
             <div className="container__pricing__content__right__heading">
               Fixed Price Project
             </div>

@@ -8,7 +8,7 @@ export function AboutAgileDevelopmentProcess({}) {
       <div className="about__agile__process__heading">
         Agile <span>Development</span> Process
       </div>
-      <Zoom>
+      <Zoom duration={2000}>
         <img
           loading="lazy"
           className="about__agile__process__img"

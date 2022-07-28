@@ -1,23 +1,23 @@
-import React from 'react';
-import {Bounce, Zoom} from 'react-reveal';
+import React from "react";
+import { Bounce, Zoom } from "react-reveal";
 
 export function MeetUsStories() {
   return (
     <div className="meetus__container__stories">
       <div className="meetus__container__stories__content">
-        <Bounce left>
+        <Bounce duration={2000} left>
           <div className="meetus__container__stories__heading">
             See our <span>stories</span>
           </div>
         </Bounce>
-        <Bounce up>
+        <Bounce duration={2000} up>
           <div className="meetus__container__stories__para">
             Your passion is part of our identity. See how #dsmeglobalpeople
             rock.
           </div>
         </Bounce>
         <div className="meetus__container__stories__card__container">
-          <Zoom>
+          <Zoom duration={2000}>
             <div className="meetus__container__stories__card">
               <div className="meetus__container__stories__card__image">
                 <img
@@ -36,7 +36,7 @@ export function MeetUsStories() {
               </div>
             </div>
           </Zoom>
-          <Zoom>
+          <Zoom duration={2000}>
             <div className="meetus__container__stories__card">
               <div className="meetus__container__stories__card__image">
                 <img
@@ -55,7 +55,7 @@ export function MeetUsStories() {
               </div>
             </div>
           </Zoom>
-          <Zoom>
+          <Zoom duration={2000}>
             <div className="meetus__container__stories__card">
               <div className="meetus__container__stories__card__image">
                 <img

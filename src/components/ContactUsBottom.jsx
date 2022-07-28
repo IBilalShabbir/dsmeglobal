@@ -25,7 +25,7 @@ export default function ContactUsBottom() {
       <div className="contact__section">
         <div className="contact__section__content">
           <div className="contact__section__content__left">
-            <Zoom>
+            <Zoom duration={2000}>
               <img
                 loading="lazy"
                 src={contactImg}
@@ -65,7 +65,7 @@ export default function ContactUsBottom() {
             className="contact__section__content__middle"
           >
             <div className="contact__section__content__middle__header">
-              <Bounce left>
+              <Bounce duration={2000} left>
                 <div className="contact__section__content__middle__sub__heading">
                   Let us help you!
                 </div>
