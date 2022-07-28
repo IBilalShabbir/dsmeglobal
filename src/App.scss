@@ -1891,7 +1891,6 @@ body {
   .pricing__delivery__section__content__card__heading {
   color: #2d9cdb;
 }
-
 .pricing__delivery__section__content__card:nth-child(3) * ::before {
   background-color: #bb6bd9;
 }
@@ -2012,6 +2011,7 @@ body {
   margin-bottom: 1em;
   position: relative;
 }
+
 .pricing__delivery__section__content__card {
   border: 1px solid transparent;
   padding: 1em;
@@ -2032,9 +2032,11 @@ body {
   background-color: $primary;
   border-radius: 50px;
 }
+
 .pricing__delivery__section__content__card:hover {
   border-radius: 5px;
 }
+
 .pricing__process__container {
   margin: 2em 0;
 }
@@ -2286,12 +2288,14 @@ body {
 .pricing__all__inclusive__container__content__bottom__card {
   padding: 1em;
   margin: 1%;
-  width: 22%;
+  width: 18%;
 }
 .pricing__all__inclusive__container__content__bottom__card__icon svg {
   height: 50px;
   width: 50px;
+  
 }
+
 .pricing__all__inclusive__container__content__bottom__card__title {
   font-size: 18px;
   color: $white;
@@ -3908,6 +3912,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
 .meetus__container__sub__content img {
   mix-blend-mode: luminosity;
 }
@@ -3936,13 +3941,13 @@ body {
   font-size: 18px;
   width: 100%;
   max-width: 500px;
-  color: $white;
+  color: white;
 }
 .meetus__container__sub__right__heading {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 0.5em;
-  color: $white;
+  color: white;
 }
 .meetus__container__sub__right__heading span {
   color: $primary;
@@ -9130,7 +9135,6 @@ body {
   padding: 4em;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 0;
 }
 .Agile__discover__workshop__container__content {
   border: 1px solid $primary;
@@ -9143,6 +9147,7 @@ body {
 }
 .ios__development__native__impressive__performance__svg svg {
   color: $primary;
+
 }
 .container__web__dev__experience__header__heading span {
   color: #189366;
