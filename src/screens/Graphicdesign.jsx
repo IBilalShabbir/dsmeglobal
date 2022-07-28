@@ -119,6 +119,19 @@ function Graphicdesign() {
           </div>
         </div>
       </div>
+      <div className="graphic__design__essence__container__we__offer">
+      <div className="graphic__design__essence__container__we__offer__heading">
+        WE OFFER CUSTOM PRICING BECAUSE EVERY GRAPHIC DESIGN SERVICE IS
+        DIFFERENT
+      </div>
+      <div className="graphic__design__essence__container__we__offer__content">
+        Through our years of experience, we’ve learned it’s best to start by
+        listening to your story. Then we review your existing brand and offer
+        you options from there. Below we’ve listed our most requested packages,
+        but each of these can be tweaked or we can give you a completely custom
+        quote.
+      </div>
+      </div>
     </>
   );
 }
