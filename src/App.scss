@@ -9189,3 +9189,45 @@ body {
 .graphic__design__essence__container__buttton {
   text-align: center;
 }
+.graphic__design__essence__container__skills__heading{
+  font-size: 30px;
+  font-weight: 600;
+}
+.graphic__design__essence__container__image{
+  display: flex;
+  justify-content: space-between;
+}
+.graphic__design__essence__container__skills__all{
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  color: $primary;
+  padding: 2em;
+}
+.graphic__design__essence__container__image{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.graphic__design__essence__container__image img{
+  width:50%;
+  height: fit-content;
+}
+.graphic__design__essence__container__buttton{
+  margin-bottom: 4em;
+}
+.graphic__design__essence__container__skills__heading{
+  margin-bottom: 1em;
+  text-align: center;
+}
+.graphic__design__essence__container__skills__one{
+  margin-bottom: 2em;
+  border-bottom: 1px solid $primary;
+}
+.graphic__design__essence__container__image{
+  background-color: $black;
+}
+.graphic__design__essence__container__skills__main{
+  color:$white;
+}

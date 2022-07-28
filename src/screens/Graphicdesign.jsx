@@ -2,6 +2,7 @@ import React from "react";
 import servicesbanner from "../assets/servicesbanner.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { Check } from "react-feather";
+import Graphic from "../assets/graphic.png";
 
 function Graphicdesign() {
   const talentFeatures = [
@@ -78,6 +79,45 @@ function Graphicdesign() {
       </div>
       <div className="graphic__design__essence__container__buttton">
         <a href="">Get started </a>
+      </div>
+      <div className="graphic__design__essence__container__skills__and__image">
+        <div className="graphic__design__essence__container__image">
+          <img src={Graphic} alt="" />
+          <div className="graphic__design__essence__container__skills__all">
+            <div className="graphic__design__essence__container__skills__heading">
+              Skills
+            </div>
+            <div className="graphic__design__essence__container__skills__main">
+              <div className="graphic__design__essence__container__skills__one">
+                Graphic design
+              </div>
+              <div className="graphic__design__essence__container__skills__one">
+                Product branding
+              </div>
+              <div className="graphic__design__essence__container__skills__one">
+                Bussines planing
+              </div>
+              <div className="graphic__design__essence__container__skills__one">
+                Photography
+              </div>
+              <div className="graphic__design__essence__container__skills__one">
+                Market research
+              </div>
+              <div className="graphic__design__essence__container__skills__one">
+                Strategic consulting
+              </div>
+              <div className="graphic__design__essence__container__skills__one">
+                Ecommerence consulting
+              </div>
+              <div className="graphic__design__essence__container__skills__one">
+                Web design
+              </div>
+              <div className="graphic__design__essence__container__skills__one">
+                Web development
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
