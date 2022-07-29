@@ -18,7 +18,7 @@ export function AboutKeyDifferences({}) {
               requirements to ensure best fit experts are working on your
               project. Domain Expertise Solid business domain experience,
               technical expertise and knowledge of latest industry trends helps
-              us deliver exceptional results
+              us deliver exceptional results.
             </div>
           </div>
         </Bounce>
