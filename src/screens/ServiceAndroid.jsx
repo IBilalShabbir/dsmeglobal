@@ -95,6 +95,21 @@ export default function ServicesAndroid() {
                 What makes DSME Global Links a top{" "}
                 <span>Android development company?</span>
               </div>
+              <div className="ios__mobile__page__container__ios__company__para">
+                Are you struggling to find a solution that fits your
+                expectations perfectly? Choose our custom app development
+                services and build your app with an Android team rated number
+                one on Clutch. We create digital products from scratch, starting
+                with deep market research, and studying your needs and business
+                goals carefully to offer you a solution that fits like a glove.
+                What is there to gain? Excellent design to help you stand out
+                from the competition and build a strong brand. Scalability and
+                flexibility that lets you adjust your product as your business
+                grows. No all-fits-one features, but a product that is
+                tailor-made for you. Development schedule and budget adjusted to
+                your business plan. Full application support and maintenance.
+                And that’s just to name a few!
+              </div>
               <div className="Android__and__ios__box__one__and__two">
                 <div className="Android__and__ios__box__one">
                   <div className="svg__Android__and__ios__box__two">
@@ -170,7 +185,7 @@ export default function ServicesAndroid() {
                       width="44.629"
                       height="44.601"
                       viewBox="0 0 21.629 21.601"
-                      strokeWidth={.5}
+                      strokeWidth={0.5}
                     >
                       <g
                         id="Group_13"
@@ -386,7 +401,6 @@ export default function ServicesAndroid() {
                       width="44.958"
                       height="44.947"
                       viewBox="0 0 21.958 21.947"
-
                     >
                       <g
                         id="Group_14"
@@ -468,8 +482,7 @@ export default function ServicesAndroid() {
                     approach! If you pick cross-platform over native Android
                     application development, we can take care of that, too. Our
                     team excels in building apps with the two most popular
-                    cross-platform frameworks: Flutter and React Native.Flutter
-                    and react Native
+                    cross-platform frameworks: Flutter and React Native.
                   </div>
                 </div>
               </div>

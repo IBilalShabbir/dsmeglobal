@@ -9444,14 +9444,22 @@ body {
 }
 .svg__Android__and__ios__box__two svg {
   margin-right: 1em;
-  stroke: #189366;
+ fill: $primary
 }
 
 .Android__and__ios__box__two:hover .svg__Android__and__ios__box__two svg {
-  stroke: $white;
+  fill: $white;
 }
 .Android__and__ios__box__one:hover .svg__Android__and__ios__box__two svg {
-  stroke: $white;
+  fill: $white;
+}
+.ios__mobile__page__container__ios__company__para{
+  color: $white;
+  text-align: center;
+  font-size: 18px;
+  padding: 1.3em 0em;
+  width: 90%;
+  margin: 0 auto;
 }
 .Agile__discovery {
   padding-top: 2em;
