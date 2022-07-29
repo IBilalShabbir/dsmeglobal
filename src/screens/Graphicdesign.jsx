@@ -3,6 +3,12 @@ import servicesbanner from "../assets/servicesbanner.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { Check } from "react-feather";
 import Graphic from "../assets/graphic.png";
+import img1 from "../assets/1.webp";
+import img2 from "../assets/2.webp";
+import img3 from "../assets/3.webp";
+import img4 from "../assets/4.webp";
+import img5 from "../assets/5.webp";
+import img6 from "../assets/6.webp";
 
 function Graphicdesign() {
   const talentFeatures = [
@@ -144,16 +150,48 @@ function Graphicdesign() {
         </div>
       </div>
       <div className="graphic__design__essence__container__packages">
-      <div className="graphic__design__essence__container__we__offer__heading">
-        LOGO & BRANDING DESIGN PACKAGES
+        <div className="graphic__design__essence__container__we__offer__heading">
+          LOGO & BRANDING DESIGN PACKAGES
+        </div>
+        <div className="graphic__design__essence__container__we__offer__content">
+          DESIGN At DSME Global Links we begin every project with a
+          conversation. It’s important for us to spend time listening to your
+          story before we offer any solutions because every business is
+          different. So before we offer final estimates we spend time on the
+          phone with you brain-storming strategies and solutions that work best
+          for you.
+        </div>
       </div>
-      <div className="graphic__design__essence__container__we__offer__content">
-        DESIGN At DSME Global Links we begin every project with a conversation.
-        It’s important for us to spend time listening to your story before we
-        offer any solutions because every business is different. So before we
-        offer final estimates we spend time on the phone with you brain-storming
-        strategies and solutions that work best for you.
+      <div className="ios__mobile__share__your__idea__section__buttons__section">
+        <div className="ios__mobile__share__your__idea__section__buttons__section__awards">
+          <img loading="lazy" src={img1} alt="imgmunber" />
+          <img loading="lazy" src={img2} alt="imgmunber" />
+          <img loading="lazy" src={img3} alt="imgmunber" />
+          <img loading="lazy" src={img4} alt="imgmunber" />
+          <img loading="lazy" src={img5} alt="imgmunber" />
+          <img loading="lazy" src={img6} alt="imgmunber" />
+        </div>
       </div>
+      <div className="graphic__design__essence__container__packages">
+        <div className="graphic__design__essence__container__we__offer__heading">
+          SMALL BUSINESS START-UP PACKAGES
+        </div>
+        <div className="graphic__design__essence__container__we__offer__content">
+          If you have a brand new business these are the best options for you.
+          We know you’re excited to present yourself in a professional way so
+          we’ve put these packages to give you just what you need AND save your
+          money.
+        </div>
+      </div>
+      <div className="ios__mobile__share__your__idea__section__buttons__section">
+        <div className="ios__mobile__share__your__idea__section__buttons__section__awards">
+          <img loading="lazy" src={img1} alt="imgmunber" />
+          <img loading="lazy" src={img2} alt="imgmunber" />
+          <img loading="lazy" src={img3} alt="imgmunber" />
+          <img loading="lazy" src={img4} alt="imgmunber" />
+          <img loading="lazy" src={img5} alt="imgmunber" />
+          <img loading="lazy" src={img6} alt="imgmunber" />
+        </div>
       </div>
     </>
   );

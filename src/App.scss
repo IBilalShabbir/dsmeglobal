@@ -2991,7 +2991,6 @@ body {
   user-select: none;
 }
 
-
 .container input {
   position: absolute;
   opacity: 0;
@@ -3027,7 +3026,6 @@ body {
   width: 100%;
 }
 
-
 .container input:checked ~ .checkmark {
   background-color: #189366;
   border-radius: 25px;
@@ -3040,11 +3038,9 @@ body {
   display: none;
 }
 
-
 .container input:checked ~ .checkmark:after {
   display: block;
 }
-
 
 .container .checkmark:after {
   left: 0.4em;
@@ -9538,6 +9534,7 @@ body {
 .graphic__design__essence__container__image img {
   width: 50%;
   height: fit-content;
+  border-radius: 5px;
 }
 .graphic__design__essence__container__skills__heading {
   margin-bottom: 1em;
