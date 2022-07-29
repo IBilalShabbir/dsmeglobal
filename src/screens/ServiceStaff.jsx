@@ -7,6 +7,7 @@ import { ScaleUpTeamForStaff } from "../components/ScaleUpTeamForStaff";
 import { AugmentationProcessForStaff } from "../components/AugmentationProcessForStaff";
 import { CorporateModelForStaff } from "../components/CorporateModelForStaff";
 import staff from "../assets/staff.svg";
+import { ServiceStaffModernSolution } from "../components/ServiceStaffModernSolution";
 
 export default function ServiceStaff() {
   return (
@@ -25,6 +26,7 @@ export default function ServiceStaff() {
       <CorporateModelForStaff />
       <TechonologiesForStaff />
       <BenifitsForStaff />
+      <ServiceStaffModernSolution />
     </>
   );
 }

@@ -14,6 +14,7 @@ import { AboutAwardAchievements } from "../components/AboutAwardAchievements";
 import { AboutOurEndeavors } from "../components/AboutOurEndeavors";
 import { AboutSuccessStories } from "../components/AboutSuccessStories";
 import { AboutPressRelease } from "../components/AboutPressRelease";
+import { AboutOurMissionandVision } from "../components/AboutOurMissionandVision";
 
 export default function AboutUs() {
   const [slidesPerView, setSlidesPerView] = useState(3);
@@ -67,8 +68,7 @@ export default function AboutUs() {
         />
       </div>
       <AboutOurCeo />
-      <AboutOurMission />
-      <AboutOurVision />
+      <AboutOurMissionandVision />
       <AboutOurTeam />
       <AboutAgileDevelopmentProcess />
       <AboutOurCoreValues />

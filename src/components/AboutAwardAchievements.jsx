@@ -121,11 +121,11 @@ export function AboutAwardAchievements({
           </SwiperSlide>
         </Swiper>
       </div>
+      <div className="highly__customer__main__container__heading">
+        Highly Customer Centric <span>Development Process</span>
+      </div>
       <div className="highly__customer__main__container">
         <div className="highly__customer__main__first__container">
-          <div className="highly__customer__main__container__heading">
-            Highly Customer Centric <span>Development Process</span>
-          </div>
           <div className="highly__customer__main__first__container__jira__container">
             <div className="highly__customer__main__first__container__jira__container__heading">
               <svg
