@@ -189,6 +189,14 @@ export default function ContactUsBottom() {
                 placeholder="Give us some details about your project"
               />
             </div>
+            <label className="container">
+              <input type="checkbox" />
+              <div className="checkmark"></div>
+              <div className="checkbox__label">
+                Yes, I agree to receive marketing communication from DSME Global
+                Links.
+              </div>
+            </label>
             <button className="contact__section__content__middle__form__button">
               Let’s start a conversation
             </button>
