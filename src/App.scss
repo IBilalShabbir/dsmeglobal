@@ -6720,6 +6720,77 @@ body {
 .blockchain__techstack__container__tags__button:hover {
   background-color: $primaryDark;
 }
+.WHYS__main__container {
+  min-height: 500px;
+  padding: 3em 0;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+}
+.WHYS__main__container__left {
+  width: 50%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 2em;
+}
+.WHYS__main__container__left__heading {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2em;
+  position: absolute;
+  top: 0;
+}
+.WHYS__main__container__left__subHeading {
+  font-size: 20px;
+  color: $primary;
+  margin-bottom: 1em;
+}
+.WHYS__main__container__left__text {
+  font-size: 16px;
+}
+.WHYS__main__container__right {
+  width: 50%;
+  min-height: 100%;
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  align-items: center;
+  border-radius: 5px;
+}
+.WHYS__main__container__right:hover {
+  background-color: black;
+  transition: background-color 0.5s ease-in-out;
+}
+.WHYS__main__container__right__content {
+  display: flex;
+  width: 80%;
+  // border: 1px solid black;
+  margin-bottom: 1em;
+  align-items: center;
+}
+.WHYS__main__container__right__content__icon {
+  margin-right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  padding: 0.7em;
+  border-radius: 50%;
+}
+.WHYS__main__container__right__content__icon svg {
+  height: 40px;
+  width: 40px;
+  fill: white;
+}
+.WHYS__main__container__right__content__text {
+  color: white;
+}
 
 @media (max-width: 1000px) {
   .blockchain__worksection__detail {
@@ -6746,6 +6817,19 @@ body {
   }
   .blockchain__worksection {
     padding: 4em 4em;
+  }
+  .WHYS__main__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .WHYS__main__container__left {
+    width: 100%;
+    height: 350px;
+    justify-content: end;
+  }
+  .WHYS__main__container__right {
+    width: 100%;
+    min-height: 50%;
   }
 }
 @media (max-width: 875px) {
@@ -6806,6 +6890,12 @@ body {
   .blockchain__techstack__container__tags {
     align-items: flex-start;
     padding: 3em 2em;
+  }
+  .WHYS__main__container__left {
+    padding: 2em 0;
+  }
+  .WHYS__main__container__right {
+    padding: 2em 0;
   }
 }
 
@@ -7360,6 +7450,9 @@ body {
   }
   .about__teams__content__entry {
     min-width: 50%;
+  }
+  .WHYS__main__container__left {
+    height: 400px;
   }
 }
 
