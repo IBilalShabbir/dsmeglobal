@@ -769,45 +769,6 @@ export default function ServicesAndroid() {
                 <div className="ios__development__native__impressive__performance__svg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="44.778"
-                    height="44.8"
-                    viewBox="0 0 44.778 44.8"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
-                    <g
-                      id="Group_4"
-                      data-name="Group 4"
-                      transform="translate(-1419.402 -200.25)"
-                    >
-                      <path
-                        id="Path_19"
-                        data-name="Path 19"
-                        d="M443.42,10.659V48.97a1.84,1.84,0,0,1-1.861.972c-7.688-.025-15.377-.015-23.065-.015h-.6c0,.95-.04,1.851.012,2.747a1.684,1.684,0,0,1-.984,1.806H399.609a1.606,1.606,0,0,1-.967-1.462c.013-5.45.006-10.9.008-16.349a1.345,1.345,0,0,1,1.448-1.44c.815-.006,1.631,0,2.447,0h.654v-.6c0-7.722.014-15.445-.017-23.168a1.6,1.6,0,0,1,1.8-1.785q18.312.047,36.623,0A1.779,1.779,0,0,1,443.42,10.659Zm-2.753,1.788H405.976V35.2c.122.01.22.025.319.026,3.119,0,6.237,0,9.356-.011a.892.892,0,0,0,.554-.256q5.051-5.028,10.084-10.075c.076-.076.138-.166.256-.309h-.5c-1.6,0-3.206,0-4.809,0a1.364,1.364,0,1,1-.012-2.724q4.307-.011,8.613,0a1.337,1.337,0,0,1,1.433,1.455q.007,4.285,0,8.571a1.7,1.7,0,0,1-.079.556,1.338,1.338,0,0,1-1.525.882A1.321,1.321,0,0,1,428.552,32c-.012-1.632-.005-3.265-.006-4.9v-.535c-.136.114-.2.163-.262.221q-5.086,5.087-10.162,10.181a.951.951,0,0,0-.216.614c-.014,3.032-.01,6.064-.01,9.1v.469h22.771ZM413.2,37.981H401.411V51.718h13.723V40.009l-.1-.067a3.353,3.353,0,0,1-.291.385q-2.87,2.88-5.755,5.744a2.019,2.019,0,0,1-.876.52,1.282,1.282,0,0,1-1.467-.684,1.411,1.411,0,0,1,.313-1.678q2.158-2.17,4.326-4.33C411.9,39.282,412.517,38.666,413.2,37.981Z"
-                        transform="translate(1020.76 190.57)"
-                      />
-                    </g>
-                  </svg>
-
-                  <div className="ios__development__native__impressive__performance__heading">
-                    Future-proof and scalable
-                  </div>
-                </div>
-                <div className="ios__development__native__impressive__performance__content">
-                  Thinking about a product that you can expand over the years?
-                  Native iOS development will be a safe bet here. As a mature,
-                  well-supported language, Swift is less likely to change as
-                  dynamically as cross-platform frameworks. Also, note that
-                  native apps are faster to scale, implement changes, and add
-                  new features into, as there is only one platform that needs to
-                  be configured. Keep that in mind if you’re expecting your iOS
-                  app to grow rapidly or change in the future.
-                </div>
-              </div>
-              <div className="ios__development__native__impressive__performance">
-                <div className="ios__development__native__impressive__performance__svg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="49.642"
                     height="34.505"
                     viewBox="0 0 49.642 34.505"
@@ -872,11 +833,10 @@ export default function ServicesAndroid() {
                 <div className="ios__development__native__cross__plat__development__container__text__li">
                   <li>want to build a uniform application</li>
                   <li>have a limited project budget</li>
-                  <li>wish to enter the market fast...</li>
+                  <li>wish to enter the market fast</li>
                 </div>
                 <div className="ios__development__native__cross__plat__development__container__text">
-                  ...you should consider our cross-platform development
-                  services.
+                  You should consider our cross-platform development services.
                 </div>
                 <div className="ios__development__native__cross__plat__development__container__text">
                   Learn about Cross-platform development

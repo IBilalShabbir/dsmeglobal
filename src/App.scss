@@ -968,7 +968,7 @@ body {
   margin-left: 10px;
   color: $primary;
 }
-.hot__offers__section__header_span{
+.hot__offers__section__header_span {
   font-size: 30px;
   margin-left: 10px;
   color: $primary;
@@ -3246,7 +3246,10 @@ body {
   width: 40%;
   border-radius: 10px;
 }
-
+.container__web__dev__solution__right:hover {
+  background-color: $black;
+  transition: all 0.2s ease-in-out;
+}
 .container__web__dev__solution__right__entry {
   display: flex;
   align-items: center;
@@ -3308,6 +3311,11 @@ body {
   left: 0;
   margin-top: 2em;
   padding: 0 4em;
+}
+.container__emerging__technologies__section svg {
+  stroke: $white;
+  z-index: 999;
+  color: $white;
 }
 
 .container__emerging__technologies__section::after {
@@ -3589,7 +3597,6 @@ body {
   width: 100%;
   max-width: 500px;
 }
-
 .container__pricing__content__left__link {
   display: flex;
   align-items: center;
@@ -3940,7 +3947,6 @@ body {
   line-height: 27px;
   margin-top: 30px;
   font-size: 16px;
-  
 }
 
 .header__content__logo {
@@ -5295,6 +5301,9 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
 }
+// .ios__development__native__ios__container__right:hover {
+//   color: $primary;
+// }
 .ios__development__native__impressive__performance__svg {
   display: flex;
   align-items: center;
@@ -5336,8 +5345,13 @@ body {
   border-radius: 50px;
   top: 5px;
 }
-.ios__development__native__ios__container__right__card a:hover {
-  color: $primary;
+.ios__development__native__ios__container__right__card:hover {
+  background-color: $primary;
+}
+.ios__development__native__ios__container__right__card:hover
+  .ios__development__native__ios__container__right__card::after {
+  background-color: #ffffff;
+  color: $white;
 }
 .ios__development__native__sound__promising {
   width: 100%;
@@ -5874,7 +5888,7 @@ body {
   color: $primary;
 }
 ::marker {
-  color: $primary;
+  color: $white;
   font-size: 20px;
 }
 .about__ceo__message__right__info {
@@ -6107,8 +6121,13 @@ body {
 .container__feature__col__entry {
   margin-bottom: 2em;
   min-height: 130px;
+  padding: 1em;
+  border: 1px solid transparent;
 }
-
+.container__feature__col__entry:hover {
+  border: 1px solid $primary;
+  transition: 300ms ease-in-out;
+}
 .container__feature__col__entry__heading {
   font-size: 20px;
   color: $black;
@@ -6365,6 +6384,15 @@ body {
   border-radius: 5px;
   padding: 2em;
   width: 32%;
+}
+.Custome__methodologies__section__detail__card:hover {
+  background-color: $primary;
+  color: $white;
+}
+.Custome__methodologies__section__detail__card:hover
+  .Custome__methodologies__section__detail__card__line::before {
+  color: $white;
+  background-color: $white;
 }
 .customsoft_five_container_all_main_boxes {
   margin-bottom: 2em;
@@ -9444,7 +9472,7 @@ body {
 }
 .svg__Android__and__ios__box__two svg {
   margin-right: 1em;
- fill: $primary
+  fill: $primary;
 }
 
 .Android__and__ios__box__two:hover .svg__Android__and__ios__box__two svg {
@@ -9452,14 +9480,6 @@ body {
 }
 .Android__and__ios__box__one:hover .svg__Android__and__ios__box__two svg {
   fill: $white;
-}
-.ios__mobile__page__container__ios__company__para{
-  color: $white;
-  text-align: center;
-  font-size: 18px;
-  padding: 1.3em 0em;
-  width: 90%;
-  margin: 0 auto;
 }
 .Agile__discovery {
   padding-top: 2em;

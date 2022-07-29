@@ -10,7 +10,7 @@ export default function ServicesIos() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="iOS app development"
+          taglinesLine="Industry-leading iOS app development company"
           info="Explore new business destinations, accelerate growth, and captivate your customers with a custom iOS application"
           img={ios}
           talk={true}

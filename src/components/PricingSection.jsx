@@ -36,7 +36,9 @@ export function PricingSection() {
             <div className="container__pricing__content__left__info">
               High-performing, on-demand teams of engineers.
               <ul>
-                <li>Augment your existing in-house / external team.</li>
+                <li style={{ color: "#fff" }}>
+                  Augment your existing in-house / external team.
+                </li>
                 <li>Develop a product - working in a true agile fashion.</li>
                 <li>Maintain & support your existing product.</li>
               </ul>

@@ -54,9 +54,10 @@ export function Youshareyourideawegetitdone() {
               <div className="svg__Android__and__ios__box__two">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="18.384"
-                  height="22.758"
-                  viewBox="0 0 18.384 22.758"
+                  width="44.859"
+                  height="44.973"
+                  viewBox="0 0 16.859 15.973"
+                  fill="currentcolor"
                 >
                   <path
                     id="Union_10"
@@ -89,8 +90,7 @@ export function Youshareyourideawegetitdone() {
                   width="44.852"
                   height="44.856"
                   viewBox="0 0 16.852 16.856"
-                  stroke="currentColor"
-                  fill="none"
+                  fill="currentcolor"
                 >
                   <g
                     id="Group_17"
@@ -202,8 +202,7 @@ export function Youshareyourideawegetitdone() {
                   width="44.19"
                   height="44.188"
                   viewBox="0 0 21.19 21.188"
-                  stroke="currentColor"
-                  fill="none"
+                  fill="currentColor"
                 >
                   <g
                     id="Group_18"
@@ -257,6 +256,7 @@ export function Youshareyourideawegetitdone() {
                   width="44.958"
                   height="44.947"
                   viewBox="0 0 21.958 21.947"
+                  fill="currentColor"
                 >
                   <g
                     id="Group_14"
@@ -337,8 +337,8 @@ export function Youshareyourideawegetitdone() {
                 here to make sure you choose the right approach! If you pick
                 cross-platform over native Android application development, we
                 can take care of that, too. Our team excels in building apps
-                with the two most popular cross-platform frameworks Flutter and
-                React Native.
+                with the two most popular cross-platform frameworks: Flutter and
+                React Native : Flutter and react Native
               </div>
             </div>
           </div>
