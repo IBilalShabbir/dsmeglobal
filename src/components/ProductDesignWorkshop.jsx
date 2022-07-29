@@ -124,7 +124,7 @@ export function ProductDesignWorkshop() {
         </div>
         <div className="june_second_container_title_two">
           We have designed amazing experiences for websites and web applications
-          across all platforms (desktop, mobile & tablets)..
+          across all platforms (desktop, mobile & tablets).
         </div>
       </div>
     </div>

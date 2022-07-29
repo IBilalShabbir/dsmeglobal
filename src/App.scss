@@ -4568,7 +4568,7 @@ body {
   color: $primary;
 }
 .june_third_container_para {
-  width: 500px;
+  width: 50%;
   font-weight: 300;
   display: flex;
   justify-content: center;
@@ -4577,6 +4577,7 @@ body {
   padding-bottom: 2.5em;
   max-width: 1500px;
   color: $white;
+  margin-top: 1em;
 }
 
 .june_third_container_first_box_svg svg {
