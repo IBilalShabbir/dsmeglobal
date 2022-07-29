@@ -15,7 +15,10 @@ export default function ServiceStaff() {
       <div className="container">
         <HomeJumbotron
           taglinesLine="Staff Automation"
-          info="Web applications that are visually amazing and provide seamless user experience for the desktop, mobile and tablet."
+          info="Get The Best IT Talent Under One Roof.
+          
+          Leverage our IT staff augmentation services to access certified IT professionals, including skilled software developers, business analysts, Scrum Masters, and QA specialists. We can help you scale up on demand with the right pool of talented individuals without stretching your budget.
+"
           img={staff}
           talk={true}
         />
