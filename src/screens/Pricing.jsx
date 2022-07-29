@@ -325,7 +325,7 @@ export default function Pricing() {
                   label="Flexible Contracts  "
                   info="Scalable contracts with simple billing.  "
                 />
-                <WorkWithUsCard label="" info="" />
+                {/* <WorkWithUsCard label="" info="" /> */}
               </div>
             </div>
           </div>

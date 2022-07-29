@@ -956,7 +956,7 @@ body {
 }
 
 .hot__offers__section__header {
-  font-size: 30px;
+  font-size: 10px;
   color: $black;
   font-weight: bold;
   margin-bottom: 1em;
@@ -965,9 +965,14 @@ body {
 }
 .hot__offers__section__header span {
   font-size: 30px;
-  font-weight: normal;
   margin-left: 10px;
   color: $primary;
+}
+.hot__offers__section__header_span{
+  font-size: 30px;
+  margin-left: 10px;
+  color: $primary;
+  font-weight: bolder;
 }
 .hot__offers__section__wrapper .hot__offers__section__header {
   color: $white;
@@ -3932,6 +3937,7 @@ body {
   color: $white;
   font-family: "Montserrat", sans-serif;
   line-height: 27px;
+  margin-top: 20px;
 }
 
 .header__content__logo {
@@ -8871,7 +8877,7 @@ body {
   height: 50px;
   width: 50px;
 }
-.services__startup__card__label {
+.hot__offers__section__heade {
   font-size: 16px;
   font-weight: bold;
   margin: 0.5em 0;
@@ -8923,7 +8929,7 @@ body {
   min-height: 100%;
 }
 
-.why__work__with__us__card .services__startup__card__label {
+.why__work__with__us__card .hot__offers__section__header {
   text-align: left;
 }
 .services__startup__third__header {
