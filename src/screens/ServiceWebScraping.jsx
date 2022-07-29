@@ -8,7 +8,10 @@ function ServiceWebScraping() {
       <div className="container">
         <HomeJumbotron
           taglinesLine="Web Scraping"
-          info="Our web scrapers sift through the web’s maze of data to find precisely what you need. "
+          info="Our engineers create custom web scraping solutions that quickly and efficiently gather the data you need and provide it to you in an elegant structure. 
+
+          
+          Our web scrapers sift through the web’s maze of data to find precisely what you need. "
           img={software}
           talk={true}
         />
