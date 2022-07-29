@@ -9711,3 +9711,12 @@ body {
   padding: 4em;
   margin-bottom: 4em;
 }
+.blockchain__whysection__servicecard__svg__content {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.blockchain__whysection__servicecard__svg__content svg {
+  margin-right: 1em;
+}
