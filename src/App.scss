@@ -6220,7 +6220,7 @@ body {
 .staff__talent__info {
   width: 100%;
   max-width: 800px;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .staff__talent__info__heading {
   width: 100%;
@@ -9511,6 +9511,7 @@ body {
 }
 .graphic__design__essence__container__buttton {
   text-align: center;
+  margin-bottom: 4em;
 }
 .graphic__design__essence__container__skills__heading {
   font-size: 30px;
@@ -9528,6 +9529,7 @@ body {
   width: 50%;
   color: $primary;
   padding: 2em;
+  padding-top: 0em;
 }
 .graphic__design__essence__container__image {
   max-width: 1440px;
@@ -9561,7 +9563,7 @@ body {
   max-width: 1440px;
   width: 60%;
   padding-left: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 .graphic__design__essence__container__we__offer__content {
   font-size: 15px;
@@ -9570,8 +9572,13 @@ body {
   margin-bottom: 2em;
   padding-left: 4em;
 }
+.graphic__design__essence__container__packages {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .graphic__design__essence__container__skills__and__image {
   max-width: 1440px;
   margin: 0 auto;
   padding: 4em;
+  margin-bottom: 4em;
 }
