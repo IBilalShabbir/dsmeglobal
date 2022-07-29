@@ -203,10 +203,10 @@ export function EmergingTechnologiesKnowHowMobDev() {
     <div
       className="container__emerging__technologies"
       style={{
-        marginTop: "5em",
+        marginTop: "5em",backgroundColor: "#ffff", color:"#242424" 
       }}
     >
-      <div className="container__emerging__technologies__heading__main">
+      <div className="container__emerging__technologies__heading__main" >
         Emerging Technologies <span> Know -How</span>
       </div>
       <div className="container__emerging__technologies__text__main">

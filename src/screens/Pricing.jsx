@@ -330,41 +330,45 @@ export default function Pricing() {
             </div>
           </div>
           <div className="container__web__dev__experties__header__heading">
-          Why Fixed Price Project With <span>DSME Global Links?</span> 
-
+            Why Fixed Price Project With <span>DSME Global Links?</span>
           </div>
         </div>
 
-        <div className="pricing__feature">
-          <div className="pricing__feature__entry__reverse">
-            We leverage our across-the-board knowledge base to expertly deliver
-            your product on time and within your budget.
-          </div>
-          <PricingFeatureEntry
-            title="Senior Team"
-            content="Highly experienced senior-level cross-functional team inclusive of a technical project manager, developers, designers, and QA experts are allocated for the duration of the project."
-          />
-          <PricingFeatureEntry
-            title="Reliable"
-            content="Fixed price – no hidden costs. We understand what you need to build and then commit to it.
+        <div style={{ background: "#242424", width: "100%" }}>
+          <div
+            className="pricing__feature"
+            style={{ background: "#242424", width: "100%" }}
+          >
+            <div className="pricing__feature__entry__reverse">
+              We leverage our across-the-board knowledge base to expertly
+              deliver your product on time and within your budget.
+            </div>
+            <PricingFeatureEntry
+              title="Senior Team"
+              content="Highly experienced senior-level cross-functional team inclusive of a technical project manager, developers, designers, and QA experts are allocated for the duration of the project."
+            />
+            <PricingFeatureEntry
+              title="Reliable"
+              content="Fixed price – no hidden costs. We understand what you need to build and then commit to it.
           95% client satisfaction – we are happy to make intros to our past clients."
-          />
-          <PricingFeatureEntry
-            title="Immediate Starts"
-            content="No need to worry about your ideas and code base being stolen, you are fully protected under standard “Work for Hire” agreements and NDAs."
-          />
-          <PricingFeatureEntry
-            title="Strong IP Protection"
-            content="No need to worry about your ideas and code base being stolen, you are fully protected under standard “Work for Hire” agreements and NDAs."
-          />
-          <PricingFeatureEntry
-            title="Flexibility"
-            content="We have agile commercial agreements in place, which allow you to modify your product scope as you move forward."
-          />
-          <PricingFeatureEntry
-            title="Full Cycle Services"
-            content="Our full spectrum of services range from designing and developing your product to initially engineering your requirements through our Discovery Workshop."
-          />
+            />
+            <PricingFeatureEntry
+              title="Immediate Starts"
+              content="No need to worry about your ideas and code base being stolen, you are fully protected under standard “Work for Hire” agreements and NDAs."
+            />
+            <PricingFeatureEntry
+              title="Strong IP Protection"
+              content="No need to worry about your ideas and code base being stolen, you are fully protected under standard “Work for Hire” agreements and NDAs."
+            />
+            <PricingFeatureEntry
+              title="Flexibility"
+              content="We have agile commercial agreements in place, which allow you to modify your product scope as you move forward."
+            />
+            <PricingFeatureEntry
+              title="Full Cycle Services"
+              content="Our full spectrum of services range from designing and developing your product to initially engineering your requirements through our Discovery Workshop."
+            />
+          </div>
         </div>
 
         <div className="container__web__dev__experties__header__heading">
@@ -752,22 +756,34 @@ export default function Pricing() {
             </div>
             <div className="pricing__all__inclusive__container__content__bottom__card">
               <div className="pricing__all__inclusive__container__content__bottom__card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="45.505" height="26.446" viewBox="0 0 45.505 26.446">
-  <g id="Group_1" data-name="Group 1" transform="translate(-748.148 -75.568)">
-    <path id="Path_23" data-name="Path 23" d="M413.167,38.611a1.684,1.684,0,0,1-1.76.959c-2.1-.037-4.2-.011-6.3-.013a1.356,1.356,0,0,1-1.538-1.511c0-.4,0-.807,0-1.234a1.359,1.359,0,0,0-1.352.336c-2.569,2.614-5.17,5.2-7.763,7.785a5.275,5.275,0,0,1-7.58-.023c-1.587-1.589-3.156-3.2-4.77-4.756a4.063,4.063,0,0,1-1.536-3.357h-2.311c0,.394,0,.791,0,1.189-.007,1.072-.5,1.57-1.564,1.57q-3.259,0-6.519,0a1.345,1.345,0,0,1-1.512-1.525q0-7.474,0-14.948a1.325,1.325,0,0,1,1.516-1.509q3.3,0,6.605,0a1.317,1.317,0,0,1,1.472,1.433c.009.431,0,.864,0,1.347.773,0,1.506.011,2.24-.01.116,0,.24-.139.342-.233a21.513,21.513,0,0,1,1.7-1.542,7.15,7.15,0,0,1,8.041-.214.5.5,0,0,0,.647.006,7.122,7.122,0,0,1,8.9.938,2.839,2.839,0,0,0,2.671,1.065,5.125,5.125,0,0,1,.772-.006c0-.478-.007-.909,0-1.342a1.316,1.316,0,0,1,1.461-1.442c2.145,0,4.288.023,6.431-.013a1.6,1.6,0,0,1,1.7.967Zm-18.11-8.248c-.074.06-.173.142-.272.221a7.253,7.253,0,0,1-9.531-.349,1.329,1.329,0,0,1-.035-2.119q1.657-1.662,3.322-3.316a2.4,2.4,0,0,1,.445-.277,4.38,4.38,0,0,0-4.9.184,9.822,9.822,0,0,0-1.583,1.479,2.187,2.187,0,0,1-1.912.8c-.756-.058-1.522-.013-2.292-.013v7.153c1.233,0,2.432,0,3.632-.006a.6.6,0,0,0,.312-.129,5,5,0,0,1,6.52.706c1.781,1.842,3.621,3.63,5.434,5.444.22.22.427.454.616.655l5.344-5.33Zm-6.968-1.312a4.252,4.252,0,0,0,2.81.479,5.4,5.4,0,0,0,3.091-1.791,1.352,1.352,0,0,1,2.235-.011c2,2,4,3.979,5.976,6a1.319,1.319,0,0,0,1.34.359V26.972c-.9,0-1.784-.016-2.662.006a1.611,1.611,0,0,1-1.274-.532c-.44-.46-.891-.912-1.355-1.347a4.549,4.549,0,0,0-6.061-.186C390.752,26.206,389.457,27.659,388.089,29.051ZM371.3,24.194V36.9h4.3V24.194Zm34.934,0V36.9h4.3V24.194ZM385.07,35.71a2.731,2.731,0,0,0-.39.031,1.8,1.8,0,0,0-1.451,1.035c-.233.614.2.991.589,1.374q2.151,2.145,4.3,4.295a11.94,11.94,0,0,0,.94.9,2.606,2.606,0,0,0,3.35-.084.684.684,0,0,0,.047-1.149q-2.866-2.872-5.743-5.736A2.183,2.183,0,0,0,385.07,35.71Z" transform="translate(379.986 54.986)" fill="#329d76" stroke="#000" stroke-width="1"/>
-  </g>
-</svg>
-
-
-
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45.505"
+                  height="26.446"
+                  viewBox="0 0 45.505 26.446"
+                >
+                  <g
+                    id="Group_1"
+                    data-name="Group 1"
+                    transform="translate(-748.148 -75.568)"
+                  >
+                    <path
+                      id="Path_23"
+                      data-name="Path 23"
+                      d="M413.167,38.611a1.684,1.684,0,0,1-1.76.959c-2.1-.037-4.2-.011-6.3-.013a1.356,1.356,0,0,1-1.538-1.511c0-.4,0-.807,0-1.234a1.359,1.359,0,0,0-1.352.336c-2.569,2.614-5.17,5.2-7.763,7.785a5.275,5.275,0,0,1-7.58-.023c-1.587-1.589-3.156-3.2-4.77-4.756a4.063,4.063,0,0,1-1.536-3.357h-2.311c0,.394,0,.791,0,1.189-.007,1.072-.5,1.57-1.564,1.57q-3.259,0-6.519,0a1.345,1.345,0,0,1-1.512-1.525q0-7.474,0-14.948a1.325,1.325,0,0,1,1.516-1.509q3.3,0,6.605,0a1.317,1.317,0,0,1,1.472,1.433c.009.431,0,.864,0,1.347.773,0,1.506.011,2.24-.01.116,0,.24-.139.342-.233a21.513,21.513,0,0,1,1.7-1.542,7.15,7.15,0,0,1,8.041-.214.5.5,0,0,0,.647.006,7.122,7.122,0,0,1,8.9.938,2.839,2.839,0,0,0,2.671,1.065,5.125,5.125,0,0,1,.772-.006c0-.478-.007-.909,0-1.342a1.316,1.316,0,0,1,1.461-1.442c2.145,0,4.288.023,6.431-.013a1.6,1.6,0,0,1,1.7.967Zm-18.11-8.248c-.074.06-.173.142-.272.221a7.253,7.253,0,0,1-9.531-.349,1.329,1.329,0,0,1-.035-2.119q1.657-1.662,3.322-3.316a2.4,2.4,0,0,1,.445-.277,4.38,4.38,0,0,0-4.9.184,9.822,9.822,0,0,0-1.583,1.479,2.187,2.187,0,0,1-1.912.8c-.756-.058-1.522-.013-2.292-.013v7.153c1.233,0,2.432,0,3.632-.006a.6.6,0,0,0,.312-.129,5,5,0,0,1,6.52.706c1.781,1.842,3.621,3.63,5.434,5.444.22.22.427.454.616.655l5.344-5.33Zm-6.968-1.312a4.252,4.252,0,0,0,2.81.479,5.4,5.4,0,0,0,3.091-1.791,1.352,1.352,0,0,1,2.235-.011c2,2,4,3.979,5.976,6a1.319,1.319,0,0,0,1.34.359V26.972c-.9,0-1.784-.016-2.662.006a1.611,1.611,0,0,1-1.274-.532c-.44-.46-.891-.912-1.355-1.347a4.549,4.549,0,0,0-6.061-.186C390.752,26.206,389.457,27.659,388.089,29.051ZM371.3,24.194V36.9h4.3V24.194Zm34.934,0V36.9h4.3V24.194ZM385.07,35.71a2.731,2.731,0,0,0-.39.031,1.8,1.8,0,0,0-1.451,1.035c-.233.614.2.991.589,1.374q2.151,2.145,4.3,4.295a11.94,11.94,0,0,0,.94.9,2.606,2.606,0,0,0,3.35-.084.684.684,0,0,0,.047-1.149q-2.866-2.872-5.743-5.736A2.183,2.183,0,0,0,385.07,35.71Z"
+                      transform="translate(379.986 54.986)"
+                      fill="#329d76"
+                      stroke="#000"
+                      stroke-width="1"
+                    />
+                  </g>
+                </svg>
               </div>
               <div className="pricing__all__inclusive__container__content__bottom__card__title">
-              Flexible Contracts
-
+                Flexible Contracts
               </div>
               <div className="pricing__all__inclusive__container__content__bottom__card__info">
-              Scalable contracts with simple billing.
-
+                Scalable contracts with simple billing.
               </div>
             </div>
           </div>

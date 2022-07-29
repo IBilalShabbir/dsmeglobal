@@ -4,8 +4,8 @@ import { PricingFeatureEntry } from "../components/PricingFeatureEntry";
 
 export function IndustryFeatrues() {
   return (
-    <div className="pricing__feature__main">
-      <div className="pricing__feature">
+    <div className="pricing__feature__main ">
+      <div className="pricing__feature" >
         <Bounce duration={2000} left>
           <div className="pricing__feature__entry__reverse">
             <span> Revolutionizing</span> the way business is conducted across

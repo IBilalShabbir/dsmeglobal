@@ -2293,7 +2293,6 @@ body {
 .pricing__all__inclusive__container__content__bottom__card__icon svg {
   height: 50px;
   width: 50px;
-  
 }
 
 .pricing__all__inclusive__container__content__bottom__card__title {
@@ -2931,7 +2930,7 @@ body {
   width: 100%;
   padding: 0 4em;
   padding-bottom: 5em;
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0 auto;
   margin-top: 2em;
 }
@@ -3023,7 +3022,7 @@ body {
 
 .container__web__dev__experience {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 5em 4em;
 }
@@ -3095,7 +3094,7 @@ body {
   position: sticky;
   z-index: 999;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   padding: 7em 4em;
   margin: 0 auto;
   display: flex;
@@ -5847,7 +5846,7 @@ body {
 .container__feature {
   display: flex;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   padding: 3em 4em;
   margin: 0em auto;
   flex-wrap: wrap;
@@ -5890,7 +5889,7 @@ body {
 }
 .pricing__fitted__team {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   padding: 4em 3em;
   margin: 0em auto;
   display: flex;
@@ -5938,7 +5937,6 @@ body {
   border: 2px solid $primary;
   border-radius: 10px;
   padding: 3em;
-  padding-bottom: 1.5em;
   margin: 1em;
 }
 .pricing__fitted__team__content__entry__heading {
@@ -6062,7 +6060,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   padding: 4em;
   margin: 0em auto;
 
@@ -6109,7 +6107,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   padding: 4em 4em 1em 4em;
   margin: 2em auto;
 }
@@ -8250,6 +8248,8 @@ body {
   background-color: $black;
   padding: 4em;
   margin-top: 3em;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .customsoft_fourth_container_first_title {
   display: flex;
@@ -8451,6 +8451,10 @@ body {
 .customsoft_fourth_container_first_box_all_main_container {
   padding: 4em;
 }
+.customsoft_fourth_container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .customesoft__why__section {
   display: flex;
   flex-direction: column;
@@ -8463,7 +8467,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1440px;
   padding: 3em;
 }
 .customesoft__why__section__heading {
@@ -9147,7 +9151,6 @@ body {
 }
 .ios__development__native__impressive__performance__svg svg {
   color: $primary;
-
 }
 .container__web__dev__experience__header__heading span {
   color: #189366;
@@ -9189,61 +9192,60 @@ body {
 .graphic__design__essence__container__buttton {
   text-align: center;
 }
-.graphic__design__essence__container__skills__heading{
+.graphic__design__essence__container__skills__heading {
   font-size: 30px;
   font-weight: 600;
 }
-.graphic__design__essence__container__image{
+.graphic__design__essence__container__image {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
 }
-.graphic__design__essence__container__skills__all{
-flex-direction: column;
+.graphic__design__essence__container__skills__all {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50%;
   color: $primary;
   padding: 2em;
 }
-.graphic__design__essence__container__image{
+.graphic__design__essence__container__image {
   max-width: 1440px;
   margin: 0 auto;
 }
-.graphic__design__essence__container__image img{
-  width:50%;
+.graphic__design__essence__container__image img {
+  width: 50%;
   height: fit-content;
 }
-.graphic__design__essence__container__buttton{
+.graphic__design__essence__container__buttton {
   margin-bottom: 4em;
 }
-.graphic__design__essence__container__skills__heading{
+.graphic__design__essence__container__skills__heading {
   margin-bottom: 1em;
   text-align: center;
 }
-.graphic__design__essence__container__skills__one{
+.graphic__design__essence__container__skills__one {
   margin-bottom: 2em;
   border-bottom: 1px solid $primary;
 }
-.graphic__design__essence__container__image{
+.graphic__design__essence__container__image {
   background-color: $black;
 }
-.graphic__design__essence__container__skills__main{
-  color:$white;
+.graphic__design__essence__container__skills__main {
+  color: $white;
 }
-.graphic__design__essence__container__we__offer{
-  
+.graphic__design__essence__container__we__offer {
   max-width: 1440px;
   margin: 0 auto;
 }
-.graphic__design__essence__container__we__offer__heading{
+.graphic__design__essence__container__we__offer__heading {
   font-size: 30px;
   font-weight: 600;
   margin-top: 4em;
   width: 60%;
   margin-bottom: 2em;
 }
-.graphic__design__essence__container__we__offer__content{
+.graphic__design__essence__container__we__offer__content {
   font-size: 15px;
   width: 60%;
   margin-top: 2em;

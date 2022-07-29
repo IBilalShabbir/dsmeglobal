@@ -121,7 +121,7 @@ export function OurExpertiseMobDev() {
             </svg>
           }
           label="Web to Mobile App Extension"
-          info="We can help you extend your existing web portals and applications to highly functional and beautiful looking mobile apps."
+          info="We can help you extend your existing web portals and applications to highly functional and beautiful - looking mobile apps."
         />
         <ExperitseCard
           svg={

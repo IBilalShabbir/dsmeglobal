@@ -55,8 +55,9 @@ export default function ServicesWebDev() {
       <ExperienceInDevelopingDiverseSolutions />
       <FromMVPtoEnterpriseSolution />
       <EmergingTechnologiesWebDev />
-      <HowSection />
       <WhyWorkwithDSMEGlobalLinks />
+      <HowSection />
+    
       <AboutSuccessStories slidesPerView={slidesPerView} />
     </>
   );

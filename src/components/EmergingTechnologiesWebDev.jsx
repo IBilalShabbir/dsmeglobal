@@ -155,36 +155,38 @@ export function EmergingTechnologiesWebDev() {
     },
   ];
   return (
-    <div className="container__emerging__technologies">
-      <div className="container__emerging__technologies__heading__main">
-        Emerging<span>Technologies</span>
-      </div>
-      <div className="container__emerging__technologies__text__main">
-        We constantly push our limits and explore emerging technologies to build
-        a solution that you help our clients stay ahead of the game.
-      </div>
-      <div className="container__emerging__technologies__section">
-        {array.map((item) => (
-          <WebdevArrEntry
-            label={item.label}
-            svg={item.svg}
-            selected={selected}
-            setSelected={setSelected}
-          />
-        ))}
-      </div>
-      {array
-        .filter((item) => item.label === selected)
-        .map((item) => (
-          <div className="container__emerging__technologies__section__entry__data">
-            <div className="container__emerging__technologies__section__entry__data___heading">
-              {item.label}
+    <div style={{ backgroundcolor: "#242424", width: "100%" }}>
+      <div className="container__emerging__technologies">
+        <div className="container__emerging__technologies__heading__main">
+          Emerging<span>Technologies</span>
+        </div>
+        <div className="container__emerging__technologies__text__main">
+          We constantly push our limits and explore emerging technologies to
+          build a solution that you help our clients stay ahead of the game.
+        </div>
+        <div className="container__emerging__technologies__section">
+          {array.map((item) => (
+            <WebdevArrEntry
+              label={item.label}
+              svg={item.svg}
+              selected={selected}
+              setSelected={setSelected}
+            />
+          ))}
+        </div>
+        {array
+          .filter((item) => item.label === selected)
+          .map((item) => (
+            <div className="container__emerging__technologies__section__entry__data">
+              <div className="container__emerging__technologies__section__entry__data___heading">
+                {item.label}
+              </div>
+              <div className="container__emerging__technologies__section__entry__data__text">
+                {item.info}
+              </div>
             </div>
-            <div className="container__emerging__technologies__section__entry__data__text">
-              {item.info}
-            </div>
-          </div>
-        ))}
+          ))}
+      </div>
     </div>
   );
 }
