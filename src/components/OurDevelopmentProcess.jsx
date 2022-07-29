@@ -1,28 +1,25 @@
-import React, { useState } from "react";
-import { WebdevArrEntry } from "./WebdevArrEntry";
+import React, {useState} from 'react';
+import {WebdevArrEntry} from './WebdevArrEntry';
 
 export function OurDevelopmentProcess() {
-  const [selected, setSelected] = useState("Scoping & estimation");
+  const [selected, setSelected] = useState('Scoping & estimation');
   const array = [
     {
-      label: "Scoping & estimation",
+      label: 'Scoping & estimation',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 144.341 144.374"
-        >
+          viewBox="0 0 144.341 144.374">
           <g
             id="Group_29"
             data-name="Group 29"
-            transform="translate(-157.648 -1512)"
-          >
+            transform="translate(-157.648 -1512)">
             <g
               id="Group_9"
               data-name="Group 9"
-              transform="translate(157.648 1512)"
-            >
+              transform="translate(157.648 1512)">
               <path
                 id="Path_72"
                 data-name="Path 72"
@@ -51,24 +48,21 @@ export function OurDevelopmentProcess() {
       ),
     },
     {
-      label: "Workshops & preparation",
+      label: 'Workshops & preparation',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 135.396 135.374"
-        >
+          viewBox="0 0 135.396 135.374">
           <g
             id="Group_30"
             data-name="Group 30"
-            transform="translate(-421.925 -1521)"
-          >
+            transform="translate(-421.925 -1521)">
             <g
               id="Group_10"
               data-name="Group 10"
-              transform="translate(421.925 1521)"
-            >
+              transform="translate(421.925 1521)">
               <path
                 id="Path_74"
                 data-name="Path 74"
@@ -87,7 +81,7 @@ export function OurDevelopmentProcess() {
       ),
       info: (
         <>
-          <span>Understanding the nature of your project</span>
+          <span>Shaping the vision and discussing the details</span>
           We want to make sure your idea turns into a huge success. To help you
           choose the best strategy or sharpen your vision, we put together a
           session of Data, Product or Strategy workshops – whatever best fits
@@ -98,24 +92,21 @@ export function OurDevelopmentProcess() {
       ),
     },
     {
-      label: "Design & development",
+      label: 'Design & development',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 143.757 144.452"
-        >
+          viewBox="0 0 143.757 144.452">
           <g
             id="Group_31"
             data-name="Group 31"
-            transform="translate(-707.142 -1512)"
-          >
+            transform="translate(-707.142 -1512)">
             <g
               id="Group_11"
               data-name="Group 11"
-              transform="translate(707.142 1512)"
-            >
+              transform="translate(707.142 1512)">
               <path
                 id="Path_76"
                 data-name="Path 76"
@@ -157,24 +148,21 @@ export function OurDevelopmentProcess() {
       ),
     },
     {
-      label: "Product release",
+      label: 'Product release',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 120.788 142.938"
-        >
+          viewBox="0 0 120.788 142.938">
           <g
             id="Group_32"
             data-name="Group 32"
-            transform="translate(-987.321 -1521)"
-          >
+            transform="translate(-987.321 -1521)">
             <g
               id="Group_12"
               data-name="Group 12"
-              transform="translate(987.321 1521)"
-            >
+              transform="translate(987.321 1521)">
               <path
                 id="Path_80"
                 data-name="Path 80"
@@ -204,7 +192,7 @@ export function OurDevelopmentProcess() {
       ),
     },
     {
-      label: "Product growth",
+      label: 'Product growth',
       svg: (
         <svg
           id="Group_13"
@@ -212,8 +200,7 @@ export function OurDevelopmentProcess() {
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 165.23 102.883"
-        >
+          viewBox="0 0 165.23 102.883">
           <path
             id="Path_82"
             data-name="Path 82"
@@ -251,29 +238,26 @@ export function OurDevelopmentProcess() {
     <div
       className="container__emerging__technologies"
       style={{
-        paddingTop: "5em",
-        paddingBottom: "5em",
-        backgroundColor: "#242424",
-        marginTop: "3em",
-        marginBottom: "4em",
-      }}
-    >
+        paddingTop: '5em',
+        paddingBottom: '5em',
+        backgroundColor: '#242424',
+        marginTop: '3em',
+        marginBottom: '4em',
+      }}>
       <div
         className="container__emerging__technologies__heading__main"
-        style={{ color: "white" }}
-      >
-        Our Development <span>Process</span> 
+        style={{color: 'white'}}>
+        Our Development <span>Process</span>
       </div>
       <div
         className="container__emerging__technologies__text__main"
-        style={{ color: "white" }}
-      >
+        style={{color: 'white'}}>
         We understand the potential value of emerging technologies for both
         corporates and consumers and thus help you choose the right set of
         technologies.
       </div>
       <div className="container__emerging__technologies__section container__emerging__technologies__section__reverse">
-        {array.map((item) => (
+        {array.map(item => (
           <WebdevArrEntry
             label={item.label}
             svg={item.svg}
@@ -283,19 +267,17 @@ export function OurDevelopmentProcess() {
         ))}
       </div>
       {array
-        .filter((item) => item.label === selected)
-        .map((item) => (
+        .filter(item => item.label === selected)
+        .map(item => (
           <div className="container__emerging__technologies__section__entry__data">
             <div
               className="container__emerging__technologies__section__entry__data___heading"
-              style={{ color: "white" }}
-            >
+              style={{color: 'white'}}>
               {item.label}
             </div>
             <div
               className="container__emerging__technologies__section__entry__data__text"
-              style={{ color: "white" }}
-            >
+              style={{color: 'white'}}>
               {item.info}
             </div>
           </div>
