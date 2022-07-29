@@ -150,7 +150,7 @@ export function AugmentationProcessForStaff() {
               </svg>
             }
             label="Tell your requirements"
-            info="Share your augmentation needs, including relevant tech stack, team size, and staffing period. The more details we have, the faster we'll connect you with the ideal candidates"
+            info="Share your augmentation needs, including relevant tech stack, team size, and staffing period. The more details we have, the faster we'll connect you with the ideal candidates."
           />
           <EngagementModelCard
             icon={
@@ -300,7 +300,7 @@ export function AugmentationProcessForStaff() {
               </svg>
             }
             label="Manage extended team"
-            info="The extended team adjusts to your internal schedule and shares the same project management tools as your on-site team. If you want to hand over team management, we can offer part-time or full-time Project Manager"
+            info="The extended team adjusts to your internal schedule and shares the same project management tools as your on-site team. If you want to hand over team management, we can offer part-time or full-time Project Manager."
           />
           <EngagementModelCard
             icon={
