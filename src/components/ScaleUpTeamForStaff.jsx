@@ -27,6 +27,8 @@ export function ScaleUpTeamForStaff() {
                 height="74.143"
                 viewBox="0 0 79.078 74.143"
                 fill="currentcolor"
+                stroke="currentcolor"
+                strokeWidth="2"
               >
                 <g
                   id="Group_12061"
@@ -81,8 +83,8 @@ export function ScaleUpTeamForStaff() {
                 id="Group_12060"
                 data-name="Group 12060"
                 xmlns="http://www.w3.org/2000/svg"
-                width="75.25"
-                height="84.197"
+                width="72.25"
+                height="72.197"
                 viewBox="0 0 75.25 84.197"
                 fill="currentColor"
               >
@@ -113,6 +115,8 @@ export function ScaleUpTeamForStaff() {
                 height="72.194"
                 viewBox="0 0 72.227 72.194"
                 fill="currentColor"
+                stroke="currentColor"
+                strokeWidth={2}
               >
                 <path
                   id="Path_11484"
