@@ -948,7 +948,7 @@ body {
 
 .hot__offers__section {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   padding: 5em 4em;
   position: sticky;
   z-index: 999;
@@ -2040,6 +2040,9 @@ body {
 
 .pricing__process__container {
   margin: 2em 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4em;
 }
 .pricing__process__container__content {
   height: 100%;
@@ -3933,9 +3936,6 @@ body {
   color: $black;
 }
 .meetus__container__main {
-  position: sticky;
-  z-index: 99;
-  padding: 0 4rem;
   margin-bottom: 2em;
 }
 
@@ -3944,6 +3944,9 @@ body {
   height: 100%;
   width: 100%;
   padding: 0 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4em;
 }
 
 .meetus__container__smallThings__content {
@@ -4012,10 +4015,11 @@ body {
 .meetus__container__sub__content {
   width: 100%;
   height: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding: 1em 4em;
 }
 
 .meetus__container__sub__left {
@@ -4080,9 +4084,10 @@ body {
 .meetus__container__stories__content {
   width: 100%;
   height: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 5em;
+  padding: 4em;
 }
 
 .meetus__container__stories__heading {
@@ -4284,7 +4289,7 @@ body {
   gap: 1rem;
   padding: 0em 4em;
   padding-bottom: 4em;
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0 auto;
   text-align: center;
 }
@@ -4431,9 +4436,9 @@ body {
 .june_second_container_main {
   display: flex;
   justify-content: center;
-  padding: 4em 2em;
+  padding: 4em;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0em auto;
 }
 .june_second_container:hover {
@@ -4705,7 +4710,7 @@ body {
   color: $black;
 }
 .june_fourth_container_box {
-  background-color: #001712;
+  background-color: $black;
   color: $white;
   padding: 4em;
 }
@@ -4753,10 +4758,12 @@ body {
 .june_main_container_images {
   display: flex;
   justify-content: center;
-  padding-top: 8em;
+  padding: 4em;
   align-items: center;
   width: 100%;
   overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
   padding-bottom: 8em;
 }
 
@@ -4800,6 +4807,7 @@ body {
   margin-top: -10px;
   width: 100%;
   font-size: 30px;
+  font-weight: bold;
 }
 
 .june_main_container_images_content_main:hover
@@ -5496,6 +5504,7 @@ body {
   align-items: stretch;
   flex-wrap: wrap;
   margin: 0 -1em;
+  padding: 2em;
 }
 .ecommerce__screen__container__services__content__entry {
   width: 31%;
@@ -5633,6 +5642,7 @@ body {
   align-items: stretch;
   flex-wrap: wrap;
   margin: 0 -1em;
+  padding: 2em;
 }
 .ecommerce__screen__container__work__code__content
   .ecommerce__screen__container__services__content__entry {
@@ -6101,7 +6111,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   padding: 4em;
   margin: 0em auto;
 }
@@ -6362,10 +6372,8 @@ body {
   background-color: $black;
 }
 .blockchain__servicessection {
-  max-width: 1500px;
   width: 100%;
-  margin: 0em auto;
-  padding: 4em 4em 1em 4em;
+  padding: 4em;
   background-color: $black;
 }
 .blockchain__servicessection__heading {
@@ -6384,6 +6392,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 4em;
+  max-width: 1440px;
+  padding: 4em;
+  margin: 0 auto;
 }
 .blockchain__servicessection__servicecard {
   width: 49%;
@@ -6419,10 +6430,10 @@ body {
   fill: $primary;
 }
 .blockchain__ready {
-  max-width: 1500px;
+  max-width: 1440px;
   width: 100%;
   margin: 0em auto;
-  padding: 4em 4em;
+  padding: 4em;
   background-color: $primary;
   display: flex;
   justify-content: center;
@@ -6472,7 +6483,7 @@ body {
   background-color: $primaryDark;
 }
 .blockchain__worksection {
-  max-width: 1500px;
+  max-width: 1440px;
   width: 100%;
   margin: 0em auto;
   padding: 4em 4em;
@@ -8180,7 +8191,6 @@ body {
   margin: 0 auto;
   max-width: 1500px;
   padding: 4em;
-  padding-bottom: 1em;
 }
 .customsoft_first_container_svg {
   display: flex;
@@ -8721,7 +8731,7 @@ body {
   width: 100%;
 }
 .max__width__container {
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 4em;
 }
@@ -9375,6 +9385,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   color: $primary;
+  padding: 2em 4em;
 }
 .ios__development__native__impressive__performance__svg svg {
   color: $primary;
@@ -9444,9 +9455,6 @@ body {
   width: 50%;
   height: fit-content;
 }
-.graphic__design__essence__container__buttton {
-  margin-bottom: 4em;
-}
 .graphic__design__essence__container__skills__heading {
   margin-bottom: 1em;
   text-align: center;
@@ -9468,13 +9476,20 @@ body {
 .graphic__design__essence__container__we__offer__heading {
   font-size: 30px;
   font-weight: 600;
-  margin-top: 4em;
+  max-width: 1440px;
   width: 60%;
+  padding-left: 2em;
   margin-bottom: 2em;
 }
 .graphic__design__essence__container__we__offer__content {
   font-size: 15px;
   width: 60%;
-  margin-top: 2em;
+  max-width: 1440px;
   margin-bottom: 2em;
+  padding-left: 4em;
+}
+.graphic__design__essence__container__skills__and__image {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4em;
 }

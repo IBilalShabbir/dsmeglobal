@@ -10,32 +10,45 @@ export function MeetUsQualityOverQuantity() {
       <div className="meetus__container__sub">
         <div
           className="meetus__container__sub__content"
-          style={{ background: "black", padding: "2em 1em" }}
+          style={{
+            backgroundColor: "black",
+
+            width: "100%",
+            maxWidth: "100%",
+          }}
         >
-          <div className="meetus__container__sub__left">
-            <Bounce duration={2000} left>
-              <div className="meetus__container__sub__left__image">
-                <img
-                  loading="lazy"
-                  src={qualityOver}
-                  alt="Quality over quantity"
-                />
+          <div
+            className="meetus__container__sub__content"
+            style={{
+              padding: "2em 4em",
+              width: "100%",
+            }}
+          >
+            <div className="meetus__container__sub__left">
+              <Bounce duration={2000} left>
+                <div className="meetus__container__sub__left__image">
+                  <img
+                    loading="lazy"
+                    src={qualityOver}
+                    alt="Quality over quantity"
+                  />
+                </div>
+              </Bounce>
+            </div>
+            <Bounce duration={2000} right>
+              <div className="meetus__container__sub__right">
+                <div className="meetus__container__sub__right__heading">
+                  <span>Quality </span> over quantity
+                </div>
+
+                <div className="meetus__container__sub__right__para">
+                  When it comes to our job, it's quality that matters. UX
+                  research, code reviews, manual and automatic tests. No
+                  exceptions.
+                </div>
               </div>
             </Bounce>
           </div>
-          <Bounce duration={2000} right>
-            <div className="meetus__container__sub__right">
-              <div className="meetus__container__sub__right__heading">
-                <span>Quality </span> over quantity
-              </div>
-
-              <div className="meetus__container__sub__right__para">
-                When it comes to our job, it's quality that matters. UX
-                research, code reviews, manual and automatic tests. No
-                exceptions.
-              </div>
-            </div>
-          </Bounce>
         </div>
       </div>
       <div className="meetus__container__sub">
@@ -74,29 +87,31 @@ export function MeetUsQualityOverQuantity() {
         </div>
       </div>
       <div className="meetus__container__sub">
-        <div
-          className="meetus__container__sub__content"
-          style={{ background: "black", padding: "2em 1em" }}
-        >
-          <div className="meetus__container__sub__left">
-            <Bounce duration={2000} left>
-              <div className="meetus__container__sub__left__image">
-                <img loading="lazy" src={fouceOn} alt="Fouce on people" />
+        <div style={{ background: "black", width: "100%" }}>
+          <div
+            className="meetus__container__sub__content"
+            style={{ padding: "2em 4em" }}
+          >
+            <div className="meetus__container__sub__left">
+              <Bounce duration={2000} left>
+                <div className="meetus__container__sub__left__image">
+                  <img loading="lazy" src={fouceOn} alt="Fouce on people" />
+                </div>
+              </Bounce>
+            </div>
+            <Bounce duration={2000} right>
+              <div className="meetus__container__sub__right">
+                <div className="meetus__container__sub__right__heading">
+                  Focus on <span>people</span>
+                </div>
+                <div className="meetus__container__sub__right__para">
+                  “People matter”. Such a cliché, right? But at DSME Global
+                  Links, they really do. Family atmosphere and tons of laughs
+                  guaranteed. See for yourself.
+                </div>
               </div>
             </Bounce>
           </div>
-          <Bounce duration={2000} right>
-            <div className="meetus__container__sub__right">
-              <div className="meetus__container__sub__right__heading">
-                Focus on <span>people</span>
-              </div>
-              <div className="meetus__container__sub__right__para">
-                “People matter”. Such a cliché, right? But at DSME Global Links,
-                they really do. Family atmosphere and tons of laughs guaranteed.
-                See for yourself.
-              </div>
-            </div>
-          </Bounce>
         </div>
       </div>
     </div>
