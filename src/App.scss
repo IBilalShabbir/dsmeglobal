@@ -4065,6 +4065,10 @@ body {
 .meetus__container__main {
   margin-bottom: 2em;
 }
+.footer__container__content__bottom__left__link__svg:hover {
+  color: $black;
+  cursor: pointer;
+}
 
 .meetus__container__smallThings {
   min-height: 600px;
