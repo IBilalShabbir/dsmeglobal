@@ -27,8 +27,8 @@ export default function ServiceStaff() {
       <ScaleUpTeamForStaff />
       <AugmentationProcessForStaff />
       <CorporateModelForStaff />
-      <TechonologiesForStaff />
       <BenifitsForStaff />
+      <TechonologiesForStaff />
       <ServiceStaffModernSolution />
     </>
   );
