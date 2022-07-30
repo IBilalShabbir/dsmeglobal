@@ -21,7 +21,7 @@ export default function FaqSection() {
     {
       label: "I know everything I need to know about my idea, can I skip ADW?",
       description:
-        "As tempting as it may sound to you, it is usually not the wise thing to do. ADW allows for a deeper understanding of your product idea, what you tend to achieve with it, and its technical feasibility It’s the cornerstone of a successful collaboration between you and your technical partner for the duration of the project. By skipping this crucial step you might be setting your project up for failure from the very start.",
+        "As tempting as it may sound to you, it is usually not the wise thing to do. ADW allows for a deeper understanding of your product idea, what you tend to achieve with it, and its technical feasibility. It’s the cornerstone of a successful collaboration between you and your technical partner for the duration of the project. By skipping this crucial step you might be setting your project up for failure from the very start.",
     },
     {
       label: "Why should I opt for the workshop?",
