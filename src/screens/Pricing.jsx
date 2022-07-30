@@ -120,11 +120,6 @@ export default function Pricing() {
                   this workshop, you can choose either a fixed price or
                   dedicated team service based on your priorities.
                 </div>
-                <div className="pricing__understand__container__content__bottom__card__right__btn">
-                  <a href="https://www.codedistrict.com/agile-discovery-workshop">
-                    Learn More <span>→</span>
-                  </a>
-                </div>
               </div>
             </div>
             <div className="pricing__understand__container__content__bottom__card">
