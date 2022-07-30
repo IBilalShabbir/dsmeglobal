@@ -1650,6 +1650,7 @@ body {
   padding: 4em;
   border-radius: 30px;
   margin: 2em auto;
+  margin-bottom: 0;
   background-color: $black;
   display: flex;
   justify-content: space-between;
@@ -8135,6 +8136,9 @@ body {
   .container__services__right__entry {
     width: 100%;
   }
+  .tangible_results {
+    padding: 1em !important;
+  }
   .Android__and__ios__box__one__and__two {
     padding: 2em !important;
   }
@@ -9061,18 +9065,21 @@ body {
 }
 
 .tangible_results {
-  background-color: rgba(13, 110, 74, 0.1);
   width: 100%;
-  height: 300px;
+  height: 60%;
+  padding: 2em;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  max-width: 1440px;
   align-items: center;
 }
 .tangible_results_left_heading {
   font-size: 30px;
   font-weight: 500;
+
+  width: 100%;
 }
 .tangible_results_left_para {
   width: 78%;
