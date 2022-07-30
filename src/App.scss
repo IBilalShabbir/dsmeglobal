@@ -1733,17 +1733,10 @@ body {
 .pricing__feature__entry__heading {
   font-size: 20px;
   margin-bottom: 0.7em;
-  color: $black;
+  color: $primary;
   font-weight: bold;
 }
-.pricing__fitted__team__content__entry__box__one:hover {
-  background-color: $primary;
-}
-.pricing__fitted__team__content__entry__box__one:hover
-  .pricing__fitted__team__content__entry__list::before {
-  color: $white;
-  background-color: $white;
-}
+
 .pricing__feature__entry:hover {
   transition: 300ms ease-in-out;
   border-color: $primary;
@@ -1925,7 +1918,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: $black;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   display: flex;
   justify-content: center;
 }
@@ -9042,6 +9035,13 @@ body {
 .services__startup__card__icon svg {
   height: 50px;
   width: 50px;
+}
+
+.tangible_results {
+  background-color: $black;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
 }
 .hot__offers__section__heade {
   font-size: 16px;

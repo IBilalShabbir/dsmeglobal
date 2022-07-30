@@ -33,6 +33,24 @@ export default function Industry() {
         </div>
       </Bounce>
       <IndustryFeatrues />
+
+      <div className="tangible_results">
+        <div className="tangible_results_left">
+          <div className="tangible_results_left_heading">
+            Tangible results, right on schedule
+          </div>
+          <div className="tangible_results_left_para">
+            Engineering teams today need to move and scale fast. DSME Global
+            Links injects momentum into your engineering department with
+            high-performing, and excellent teams of developers.
+          </div>
+        </div>
+        <div className="tangible_results_right">
+          <div className="tangible_results_right_icon"></div>
+          <div className="tangible_results_right_sub_heading"></div>
+          <div className="tangible_results_right_para"></div>
+        </div>
+      </div>
     </>
   );
 }
