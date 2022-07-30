@@ -241,6 +241,15 @@ body {
   width: 100%;
   max-width: 500px;
   margin: 1em 0;
+  font-size: 16px;
+}
+.container__services__left__info,
+.container__services__right__entry__info,
+.work__section__content__project__about__info,
+.container__stats__right__card__info,
+.container__pricing__content__right__sub__heading,
+.container__pricing__content__right__info {
+  font-size: 16px;
 }
 
 .container__jumbotron__left__button {
