@@ -9572,6 +9572,7 @@ body {
 
 .Android__and__ios__box__two:hover .svg__Android__and__ios__box__two svg {
   fill: $white;
+  color: $white;
 }
 .Android__and__ios__box__one:hover .svg__Android__and__ios__box__two svg {
   fill: $white;
@@ -9650,6 +9651,9 @@ body {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
+}
+.graphic__design__essence__container__image img {
+  margin-top: 4em;
 }
 .graphic__design__essence__container__skills__all {
   flex-direction: column;

@@ -247,6 +247,8 @@ export function AboutAwardAchievements({
                 height="30"
                 viewBox="0 0 88.872 87.702"
                 fill="#189366"
+                stroke="#189366"
+                strokeWidth={5}
               >
                 <g
                   id="Group_6"
