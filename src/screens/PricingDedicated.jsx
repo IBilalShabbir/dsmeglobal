@@ -49,7 +49,9 @@ export default function PricingDedicated() {
       <div className="container">
         <HomeJumbotron
           taglinesLine="Fully Managed Development Teams To Build Your Software"
-          info="Work with a dedicated pool of technical resources for your software development needs. Hire top tech talent and quickly scale your delivery capacity."
+          info="Get your next project expertly delivered in record time. Work with a dedicated pool of technical resources for your software development needs. Our teams include top developers, designers, and project managers and can deliver your software in record time and quality.
+          Hire top tech talent and quickly scale your delivery capacity.
+          "
           img={teams}
           talk={true}
         />

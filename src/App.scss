@@ -1722,10 +1722,17 @@ body {
 .pricing__feature__entry__heading {
   font-size: 20px;
   margin-bottom: 0.7em;
-  color: $primary;
+  color: $black;
   font-weight: bold;
 }
-
+.pricing__fitted__team__content__entry__box__one:hover {
+  background-color: $primary;
+}
+.pricing__fitted__team__content__entry__box__one:hover
+  .pricing__fitted__team__content__entry__list::before {
+  color: $white;
+  background-color: $white;
+}
 .pricing__feature__entry:hover {
   transition: 300ms ease-in-out;
   border-color: $primary;
@@ -1907,7 +1914,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: $black;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   display: flex;
   justify-content: center;
 }
