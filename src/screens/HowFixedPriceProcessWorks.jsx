@@ -80,20 +80,22 @@ export function HowFixedPriceProcessWorks({}) {
                   The remaining milestones are about delivering the scope of
                   work defined during detailed discovery.
                 </li>
-                <div
-                  style={{
-                    marginTop: "2em",
-                    textAlign: "center",
-                  }}
-                >
-                  We understand that each client is unique although a typical
-                  fixed-price project is composed of all the above stages, we
-                  tailor our process according to your needs. You can also
-                  benefit from our additional offerings below:
-                </div>
               </ul>
             </div>
+            <div
+              className="pricing__process__container__content__bottom__left__outer__bottom"
+              style={{
+                marginTop: "1em",
+                textAlign: "center",
+              }}
+            >
+              We understand that each client is unique although a typical
+              fixed-price project is composed of all the above stages, we tailor
+              our process according to your needs. You can also benefit from our
+              additional offerings below:
+            </div>
           </div>
+
           <div className="pricing__process__container__content__bottom__left">
             <div className="pricing__process__container__content__bottom__left__top">
               Go Live

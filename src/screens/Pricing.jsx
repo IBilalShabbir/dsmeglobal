@@ -320,7 +320,6 @@ export default function Pricing() {
                   label="Flexible Contracts  "
                   info="Scalable contracts with simple billing.  "
                 />
-                {/* <WorkWithUsCard label="" info="" /> */}
               </div>
             </div>
           </div>
@@ -339,8 +338,8 @@ export default function Pricing() {
               deliver your product on time and within your budget.
             </div>
             <PricingFeatureEntry
-              title="Senior Team"
-              content="Highly experienced senior-level cross-functional team inclusive of a technical project manager, developers, designers, and QA experts are allocated for the duration of the project."
+              title="Flexibility"
+              content="We have agile commercial agreements in place, which allow you to modify your product scope as you move forward."
             />
             <PricingFeatureEntry
               title="Reliable"
@@ -348,16 +347,17 @@ export default function Pricing() {
           95% client satisfaction – we are happy to make intros to our past clients."
             />
             <PricingFeatureEntry
-              title="Immediate Starts"
-              content="No need to worry about your ideas and code base being stolen, you are fully protected under standard “Work for Hire” agreements and NDAs."
-            />
-            <PricingFeatureEntry
               title="Strong IP Protection"
               content="No need to worry about your ideas and code base being stolen, you are fully protected under standard “Work for Hire” agreements and NDAs."
             />
             <PricingFeatureEntry
-              title="Flexibility"
-              content="We have agile commercial agreements in place, which allow you to modify your product scope as you move forward."
+              title="Senior Team"
+              content="Highly experienced senior-level cross-functional team inclusive of a technical project manager, developers, designers, and QA experts are allocated for the duration of the project."
+            />
+
+            <PricingFeatureEntry
+              title="Immediate Starts"
+              content="You don’t need to go through the stress of recruitment, infrastructure setup, and deal with various staffing risks & problems. We help you ramp up and get started on your project immediately."
             />
             <PricingFeatureEntry
               title="Full Cycle Services"

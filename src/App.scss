@@ -2207,6 +2207,26 @@ body {
 .pricing__process__container__content__bottom__left__bottom ul li:nth-child(2) {
   margin: 1em 0;
 }
+.pricing__process__container__content__bottom__left__outer__bottom {
+  border: 1px dashed $primary;
+  height: 100%;
+  border-radius: 5px;
+  padding: 1em;
+  width: 100%;
+  position: relative;
+  font-size: 14px;
+}
+
+.pricing__process__container__content__bottom__left__outer__bottom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -1em;
+  width: 1%;
+  height: 1em;
+  border-right: 1px dashed $primary;
+  border-radius: 5px;
+}
 .pricing__understand__container {
   margin: 2em 0;
   background-color: $black;
@@ -8985,6 +9005,7 @@ body {
 }
 .service__startup__main__container__first__heading span {
   color: $primary;
+  font-weight: 400;
 }
 .service__startup__main__container__first__subheading {
   text-align: center;
