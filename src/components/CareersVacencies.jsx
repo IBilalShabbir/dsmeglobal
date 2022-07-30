@@ -1,7 +1,7 @@
-import React from "react";
-import { Bounce } from "react-reveal";
-import { CareersFilters } from "../components/CareersFilters";
-import VacencyCard from "../components/VacencyCard";
+import React from 'react';
+import {Bounce} from 'react-reveal';
+import {CareersFilters} from '../components/CareersFilters';
+import VacencyCard from '../components/VacencyCard';
 
 export function CareersVacencies({
   setDeparment,
@@ -15,12 +15,15 @@ export function CareersVacencies({
   return (
     <div className="hot__offers__section">
       <Bounce duration={2000} down>
-        <div className="hot__offers__section__header">
-          Open Vacancies <span className="hot__offers__section__header">- Join us</span>
-          <span>
+        <div className="hot__offers__section__text">
+          <div className="hot__offers__section__header">
+            Open Vacancies{' '}
+            <span className="hot__offers__section__header">- Join us</span>
+          </div>
+          <div className="hot__offers__section__header__text">
             We give you opportunities to excel and achieve the global
             recognition that you deserve!
-          </span>
+          </div>
         </div>
       </Bounce>
       <div className="hot__offers__section__content">
@@ -31,13 +34,12 @@ export function CareersVacencies({
         {careerDataFiltered.length === 0 ? (
           <div
             style={{
-              width: "100%",
-              height: "400px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+              width: '100%',
+              height: '400px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
             <img
               loading="lazy"
               src={noData}

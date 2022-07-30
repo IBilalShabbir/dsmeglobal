@@ -1,9 +1,9 @@
-import React from "react";
-import { HomeJumbotron } from "../components/HomeJumbotron";
-import { MeetUsStories } from "../components/MeetUsStories";
-import { MeetUsQualityOverQuantity } from "../components/MeetUsQualityOverQuantity";
-import { MeetUsSmallThingsBigDifferences } from "../components/MeetUsSmallThingsBigDifferences";
-import meet from "../assets/meet.svg";
+import React from 'react';
+import {HomeJumbotron} from '../components/HomeJumbotron';
+import {MeetUsStories} from '../components/MeetUsStories';
+import {MeetUsQualityOverQuantity} from '../components/MeetUsQualityOverQuantity';
+import {MeetUsSmallThingsBigDifferences} from '../components/MeetUsSmallThingsBigDifferences';
+import meet from '../assets/meet.svg';
 
 export default function MeetUs() {
   return (
@@ -11,7 +11,7 @@ export default function MeetUs() {
       <div className="container">
         <HomeJumbotron
           taglinesLine="Meet Us"
-          info="We give you opportunities to excel and achieve the global recognition that you deserve!"
+          info="Diverse personalities, Geeks, Individualists, and Team players Making kick-ass apps together."
           img={meet}
         />
       </div>
