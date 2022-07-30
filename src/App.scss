@@ -3405,6 +3405,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 1em;
+  color: $white;
 }
 
 .container__emerging__technologies__section__entry__text {
@@ -9025,7 +9026,7 @@ body {
   padding: 1em;
   margin: 1%;
   border: 1px solid transparent;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .scaleup__startup__card:hover {
   transition: border 0.5s ease-in-out;

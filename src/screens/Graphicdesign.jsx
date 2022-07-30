@@ -61,19 +61,22 @@ function Graphicdesign() {
         </div>
         <div
           className="staff__talent__info"
-          style={{ fontSize: "25px", fontWeight: "500" }}>
+          style={{ fontSize: "25px", fontWeight: "500" }}
+        >
           Want to create a <span>lasting brand impact?</span>
         </div>
         <div
           className="staff__talent__info"
-          style={{ width: "100%", marginBottom: "20px" }}>
+          style={{ width: "100%", marginBottom: "20px" }}
+        >
           Get in touch with our graphic design services consultants.
         </div>
         <div className="staff__talent__features">
           {talentFeatures.map((feature) => (
             <div
               className="staff__talent__features__entry"
-              key={JSON.stringify(feature)}>
+              key={JSON.stringify(feature)}
+            >
               <Check size={20} color="currentColor" />
               {feature}
             </div>

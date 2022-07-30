@@ -12,6 +12,7 @@ export function EmergingTechnologiesWebDev() {
           width="40"
           height="40"
           viewBox="0 0 166.185 103.878"
+          fill="currentColor"
         >
           <g
             id="Group_40"
@@ -40,6 +41,7 @@ export function EmergingTechnologiesWebDev() {
           width="40"
           height="40"
           viewBox="0 0 163.531 163.412"
+          fill="currentColor"
         >
           <path
             id="Union_2"
@@ -59,6 +61,7 @@ export function EmergingTechnologiesWebDev() {
           width="40"
           height="40"
           viewBox="0 0 143.757 144.452"
+          fill="currentColor"
         >
           <g id="Group_21" data-name="Group 21" transform="translate(0)">
             <path
@@ -98,6 +101,7 @@ export function EmergingTechnologiesWebDev() {
           width="40"
           height="40"
           viewBox="0 0 148.214 148.413"
+          fill="currentColor"
         >
           <path
             id="Path_103"
@@ -117,6 +121,7 @@ export function EmergingTechnologiesWebDev() {
           width="40"
           height="40"
           viewBox="0 0 148.361 148.413"
+          fill="currentColor"
         >
           <g
             id="Group_22"
@@ -142,6 +147,7 @@ export function EmergingTechnologiesWebDev() {
           width="40"
           height="40"
           viewBox="0 0 150.275 150.286"
+          fill="currentColor"
         >
           <path
             id="Union_4"
