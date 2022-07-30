@@ -9856,6 +9856,7 @@ body {
   max-width: 1440px;
   width: 60%;
   padding-left: 2em;
+  padding-right: 2em;
   margin-bottom: 0.5em;
 }
 .graphic__design__essence__container__we__offer__content {
@@ -9864,6 +9865,7 @@ body {
   max-width: 1440px;
   margin-bottom: 2em;
   padding-left: 4em;
+  padding-right: 4em;
 }
 .graphic__design__essence__container__packages {
   max-width: 1440px;
@@ -9895,11 +9897,23 @@ body {
   margin-bottom: 2em;
 }
 @media (max-width: 1000px) {
-  .graphic__design__essence__container__skills__and__image {
+  .graphic__design__essence__container__image {
     flex-direction: column !important;
     flex-wrap: wrap;
   }
   .graphic__design__essence__container__skills__all {
+    width: 100%;
+  }
+  .graphic__design__essence__container__image img {
+    width: 100%;
+    margin: 2em 0em;
+  }
+}
+@media (max-width: 1000px) {
+  .graphic__design__essence__container__skills__and__image {
+    padding: 2em;
+  }
+  .graphic__design__essence__container__image {
     width: 100%;
   }
 }
