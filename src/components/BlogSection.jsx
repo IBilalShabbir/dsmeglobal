@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { fetcher, getText } from "../utils/functions";
 import useSWR from "swr";
-import { Bounce, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 
 export function BlogSection() {
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ export function BlogSection() {
           data
             ?.filter((blog, i) => i < 3)
             .map((blog) => (
-              <Zoom duration={2000}>
+              <Zoom>
                 <button
                   onClick={() => {
                     setTimeout(() => {
@@ -51,7 +51,7 @@ export function BlogSection() {
                   />
 
                   <div className="blog__card__content">
-                    <Bounce duration={2000}>
+                    <Fade>
                       <div className="blog__card__content__heading">
                         {blog.title}
                       </div>
@@ -60,7 +60,7 @@ export function BlogSection() {
                           ? getText(blog.content)
                           : getText(blog.content).substring(0, 260) + "..."}
                       </div>
-                    </Bounce>
+                    </Fade>
                   </div>
                 </button>
               </Zoom>

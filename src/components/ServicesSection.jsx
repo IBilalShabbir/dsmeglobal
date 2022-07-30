@@ -1,5 +1,5 @@
 import React from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 import { ServicesCard as ServicesCardNew } from "./ServicesCard";
 
 export function ServicesSection() {
@@ -40,7 +40,7 @@ export function ServicesSection() {
   return (
     <>
       <div className="container__services">
-        <Bounce duration={2000} left>
+        <Fade>
           <div className="container__services__left">
             <div className="container__services__left__heading">
               A complete enterprise designed to{" "}
@@ -64,7 +64,7 @@ export function ServicesSection() {
               </button>
             </div>
           </div>
-        </Bounce>
+        </Fade>
         <div className="container__services__right">
           {data.map((item) => (
             <ServicesCardNew data={item} key={JSON.stringify(item)} />

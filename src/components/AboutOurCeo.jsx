@@ -1,12 +1,12 @@
 import React from "react";
-import { Bounce, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 import ceo from "../assets/ceo.webp";
 
 export function AboutOurCeo({}) {
   return (
     <div className="about__ceo__message">
       <div className="about__ceo__message__left">
-        <Zoom duration={2000}>
+        <Zoom>
           <img
             loading="lazy"
             src={ceo}
@@ -16,7 +16,7 @@ export function AboutOurCeo({}) {
         </Zoom>
       </div>
       <div className="about__ceo__message__right">
-        <Bounce duration={2000} right>
+        <Fade>
           <div className="about__ceo__message__right__heading">
             Message from our <span>ceo</span>
           </div>
@@ -26,7 +26,7 @@ export function AboutOurCeo({}) {
             “We enable a smooth and reliable digital transformation by providing
             comprehensive services that embed technology into business.”
           </div>
-        </Bounce>
+        </Fade>
       </div>
     </div>
   );

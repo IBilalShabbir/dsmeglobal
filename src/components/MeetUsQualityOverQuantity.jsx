@@ -2,7 +2,7 @@ import React from "react";
 import qualityOver from "../assets/qualityOver.svg";
 import continuousChange from "../assets/continuousChange.svg";
 import fouceOn from "../assets/fouceOn.svg";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function MeetUsQualityOverQuantity() {
   return (
@@ -25,7 +25,7 @@ export function MeetUsQualityOverQuantity() {
             }}
           >
             <div className="meetus__container__sub__left">
-              <Bounce duration={2000} left>
+              <Fade>
                 <div className="meetus__container__sub__left__image">
                   <img
                     loading="lazy"
@@ -33,9 +33,9 @@ export function MeetUsQualityOverQuantity() {
                     alt="Quality over quantity"
                   />
                 </div>
-              </Bounce>
+              </Fade>
             </div>
-            <Bounce duration={2000} right>
+            <Fade>
               <div className="meetus__container__sub__right">
                 <div className="meetus__container__sub__right__heading">
                   <span>Quality </span> over quantity
@@ -47,7 +47,7 @@ export function MeetUsQualityOverQuantity() {
                   exceptions.
                 </div>
               </div>
-            </Bounce>
+            </Fade>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ export function MeetUsQualityOverQuantity() {
           className="meetus__container__sub__content"
           id="meetus__container__sub__content2"
         >
-          <Bounce duration={2000} left>
+          <Fade>
             <div className="meetus__container__sub__left">
               <div
                 className="meetus__container__sub__right__heading"
@@ -72,9 +72,9 @@ export function MeetUsQualityOverQuantity() {
                 switch? Sure thing! New frameworks and tools? More than welcome.
               </div>
             </div>
-          </Bounce>
+          </Fade>
           <div className="meetus__container__sub__right">
-            <Bounce duration={2000} right>
+            <Fade>
               <div className="meetus__container__sub__left__image">
                 <img
                   loading="lazy"
@@ -82,7 +82,7 @@ export function MeetUsQualityOverQuantity() {
                   alt="Continuous change"
                 />
               </div>
-            </Bounce>
+            </Fade>
           </div>
         </div>
       </div>
@@ -93,13 +93,13 @@ export function MeetUsQualityOverQuantity() {
             style={{ padding: "2em 4em" }}
           >
             <div className="meetus__container__sub__left">
-              <Bounce duration={2000} left>
+              <Fade>
                 <div className="meetus__container__sub__left__image">
                   <img loading="lazy" src={fouceOn} alt="Fouce on people" />
                 </div>
-              </Bounce>
+              </Fade>
             </div>
-            <Bounce duration={2000} right>
+            <Fade>
               <div className="meetus__container__sub__right">
                 <div className="meetus__container__sub__right__heading">
                   Focus on <span>people</span>
@@ -110,7 +110,7 @@ export function MeetUsQualityOverQuantity() {
                   guaranteed. See for yourself.
                 </div>
               </div>
-            </Bounce>
+            </Fade>
           </div>
         </div>
       </div>

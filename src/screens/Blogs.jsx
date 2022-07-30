@@ -6,7 +6,7 @@ import { fetcher } from "../utils/functions";
 import blog from "../assets/blog.svg";
 import useSWR from "swr";
 import { HomeJumbotron } from "../components/HomeJumbotron";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export default function Blogs() {
   const navigate = useNavigate();
@@ -95,7 +95,7 @@ export default function Blogs() {
           </div>
         ) : null}
         <div className="blog__greenbox__container">
-          <Bounce duration={2000} up>
+          <Fade up>
             <div className="blog__greenbox__container__heading">
               Delivering software solutions beyond expectations
             </div>
@@ -110,7 +110,7 @@ export default function Blogs() {
             >
               Free Consultation
             </button>
-          </Bounce>
+          </Fade>
         </div>
       </div>
     </>

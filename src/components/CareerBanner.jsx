@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
 export function CareerBanner({ setCareerBanner, setLightHeader }) {
@@ -21,9 +21,9 @@ export function CareerBanner({ setCareerBanner, setLightHeader }) {
       />
       <div className="careers__wrapper__overlay">
         <Link to="/meet-us" className="careers__wrapper__overlay__left">
-          <Bounce duration={2000} left>
+          <Fade>
             meet <span> us</span>
-          </Bounce>
+          </Fade>
         </Link>
         <button
           onClick={() => {
@@ -43,9 +43,9 @@ export function CareerBanner({ setCareerBanner, setLightHeader }) {
               transform="translate(100 100)"
             />
           </svg>
-          <Bounce duration={2000} right>
+          <Fade>
             search <span> jobs</span>
-          </Bounce>
+          </Fade>
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"

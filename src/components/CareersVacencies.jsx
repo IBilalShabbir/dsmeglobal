@@ -1,7 +1,7 @@
-import React from 'react';
-import {Bounce} from 'react-reveal';
-import {CareersFilters} from '../components/CareersFilters';
-import VacencyCard from '../components/VacencyCard';
+import React from "react";
+import { Fade } from "react-reveal";
+import { CareersFilters } from "../components/CareersFilters";
+import VacencyCard from "../components/VacencyCard";
 
 export function CareersVacencies({
   setDeparment,
@@ -14,10 +14,10 @@ export function CareersVacencies({
 }) {
   return (
     <div className="hot__offers__section">
-      <Bounce duration={2000} down>
+      <Fade down>
         <div className="hot__offers__section__text">
           <div className="hot__offers__section__header">
-            Open Vacancies{' '}
+            Open Vacancies{" "}
             <span className="hot__offers__section__header">- Join us</span>
           </div>
           <div className="hot__offers__section__header__text">
@@ -25,7 +25,7 @@ export function CareersVacencies({
             recognition that you deserve!
           </div>
         </div>
-      </Bounce>
+      </Fade>
       <div className="hot__offers__section__content">
         <CareersFilters
           setDeparment={setDeparment}
@@ -34,12 +34,13 @@ export function CareersVacencies({
         {careerDataFiltered.length === 0 ? (
           <div
             style={{
-              width: '100%',
-              height: '400px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
+              width: "100%",
+              height: "400px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <img
               loading="lazy"
               src={noData}

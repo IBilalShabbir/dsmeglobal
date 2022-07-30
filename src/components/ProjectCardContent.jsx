@@ -1,5 +1,5 @@
 import React from "react";
-import { Bounce, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 
 import { useNavigate } from "react-router-dom";
 
@@ -7,7 +7,7 @@ export default function ProjectCardContent({ image, title, data }) {
   const navigate = useNavigate();
 
   return (
-    <Zoom duration={2000}>
+    <Zoom>
       <button
         className="service__details__projects__entry"
         onClick={() => {

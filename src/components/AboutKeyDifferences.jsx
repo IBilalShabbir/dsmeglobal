@@ -1,5 +1,5 @@
 import React from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 import { KeyDifferenceEntry } from "../components/KeyDifferenceEntry";
 
 export function AboutKeyDifferences({}) {
@@ -9,7 +9,7 @@ export function AboutKeyDifferences({}) {
         Key <span>Differences</span>
       </div>
       <div className="about__key__difference__content">
-        <Bounce duration={2000} left>
+        <Fade>
           <div className="about__key__difference__content__col">
             <div className="about__key__difference__content__col__info">
               Clear and transparent process that led by a dedicated project
@@ -21,7 +21,7 @@ export function AboutKeyDifferences({}) {
               us deliver exceptional results.
             </div>
           </div>
-        </Bounce>
+        </Fade>
         <div className="about__key__difference__content__col">
           <KeyDifferenceEntry
             svg={
@@ -333,7 +333,7 @@ export function AboutKeyDifferences({}) {
             info="We have standardized development process derived from industry best practices and our learning across projects."
           />
         </div>
-        <Bounce duration={2000} right>
+        <Fade>
           <div className="about__key__difference__content__col">
             <KeyDifferenceEntry
               svg={
@@ -611,7 +611,7 @@ export function AboutKeyDifferences({}) {
               label="Countless Testimonials"
             />
           </div>
-        </Bounce>
+        </Fade>
       </div>
     </div>
   );

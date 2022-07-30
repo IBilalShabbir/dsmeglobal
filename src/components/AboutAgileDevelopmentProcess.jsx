@@ -1,6 +1,6 @@
-import React from 'react';
-import {Zoom} from 'react-reveal';
-import agileprocess from '../assets/agile__process__img.webp';
+import React from "react";
+import { Zoom } from "react-reveal";
+import agileprocess from "../assets/agile__process__img.webp";
 
 export function AboutAgileDevelopmentProcess({}) {
   return (
@@ -8,7 +8,7 @@ export function AboutAgileDevelopmentProcess({}) {
       <div className="about__agile__process__heading">
         Our <span>Development</span> Process
       </div>
-      <Zoom duration={2000}>
+      <Zoom>
         <img
           loading="lazy"
           className="about__agile__process__img"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Bounce, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 import testimonialBg from "../assets/testimonialBg.webp";
 
 export function TestimonialsSection() {
@@ -67,7 +67,7 @@ export function TestimonialsSection() {
           id="container__testimonials__overlay__content"
         >
           {array.map((item, i) => (
-            <Zoom duration={2000}>
+            <Zoom>
               <button
                 key={JSON.stringify(item)}
                 className={
@@ -97,7 +97,7 @@ export function TestimonialsSection() {
             className="container__testimonials__overlay__info"
             key={JSON.stringify(item)}
           >
-            <Bounce duration={2000}>
+            <Fade>
               <div className="container__testimonials__overlay__info__message">
                 {item.message}
               </div>
@@ -107,7 +107,7 @@ export function TestimonialsSection() {
               <div className="container__testimonials__overlay__info__sub__heading">
                 {item.designation}
               </div>
-            </Bounce>
+            </Fade>
           </div>
         ))}
     </div>

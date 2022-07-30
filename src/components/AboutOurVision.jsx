@@ -1,5 +1,5 @@
 import React from "react";
-import { Bounce, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 import visionSvg from "../assets/visionSvg.svg";
 
 export function AboutOurVision({}) {
@@ -12,7 +12,7 @@ export function AboutOurVision({}) {
     >
       <div className="our__vision__section__about__us__content">
         <div className="our__vision__section__about__us__content__right">
-          <Zoom duration={2000}>
+          <Zoom>
             <img
               loading="lazy"
               src={visionSvg}
@@ -22,7 +22,7 @@ export function AboutOurVision({}) {
           </Zoom>
         </div>
         <div className="our__vision__section__about__us__content__left">
-          <Bounce duration={2000} right>
+          <Fade>
             <div className="feature__section__entry__content__jumbotron__sub__heading">
               Our <span>Vision</span>
             </div>
@@ -34,7 +34,7 @@ export function AboutOurVision({}) {
               solutions to help and improve businesses and lifestyles of the
               community.
             </div>
-          </Bounce>
+          </Fade>
         </div>
       </div>
     </div>

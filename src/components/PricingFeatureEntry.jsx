@@ -1,9 +1,9 @@
 import React from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function PricingFeatureEntry({ title, content, icon }) {
   return (
-    <Bounce duration={2000} right>
+    <Fade>
       <div className="pricing__feature__entry">
         {icon ? (
           <div className="pricing__feature__entry__icon">{icon}</div>
@@ -11,6 +11,6 @@ export function PricingFeatureEntry({ title, content, icon }) {
         <div className="pricing__feature__entry__heading">{title}</div>
         <div className="pricing__feature__entry__info">{content}</div>
       </div>
-    </Bounce>
+    </Fade>
   );
 }

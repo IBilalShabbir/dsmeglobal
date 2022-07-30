@@ -1,5 +1,5 @@
 import React from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function AboutOurTeam({}) {
   const team = [
@@ -191,7 +191,7 @@ export function AboutOurTeam({}) {
       </div>
       <div className="about__teams__content">
         {team.map((item) => (
-          <Bounce duration={2000}>
+          <Fade>
             <div
               className="about__teams__content__entry"
               key={JSON.stringify(item)}
@@ -214,7 +214,7 @@ export function AboutOurTeam({}) {
                 </div>
               </div>
             </div>
-          </Bounce>
+          </Fade>
         ))}
       </div>
     </div>

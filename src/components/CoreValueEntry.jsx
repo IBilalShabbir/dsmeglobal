@@ -1,9 +1,9 @@
 import React from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function CoreValueEntry({ svg, label, info }) {
   return (
-    <Bounce duration={2000} left>
+    <Fade>
       <div className="about__core__values__content__entry">
         <div className="about__core__values__content__entry__icon">{svg}</div>
         <div className="about__core__values__content__entry__heading">
@@ -11,6 +11,6 @@ export function CoreValueEntry({ svg, label, info }) {
         </div>
         <div className="about__core__values__content__entry__info">{info}</div>
       </div>
-    </Bounce>
+    </Fade>
   );
 }

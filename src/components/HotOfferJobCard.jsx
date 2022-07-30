@@ -1,10 +1,10 @@
 import React from "react";
-import { Bounce, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 import { getText } from "../utils/functions";
 
 export default function HotOfferJobCard({ item, onApply }) {
   return (
-    <Bounce duration={2000} right>
+    <Fade>
       <button className="hot__offers__section__content__card" onClick={onApply}>
         <div className="hot__offers__section__content__card__title">
           {item.position}
@@ -24,6 +24,6 @@ export default function HotOfferJobCard({ item, onApply }) {
           </div>
         </div>
       </button>
-    </Bounce>
+    </Fade>
   );
 }

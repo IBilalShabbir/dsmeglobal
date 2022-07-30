@@ -1,9 +1,9 @@
 import React from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function KeyDifferenceEntry({ svg, label, info }) {
   return (
-    <Bounce duration={2000}>
+    <Fade>
       <div className="about__key__difference__content__col__entry">
         <div className="about__key__difference__content__col__entry__header">
           <div className="about__key__difference__content__col__entry__header__icon">
@@ -19,6 +19,6 @@ export function KeyDifferenceEntry({ svg, label, info }) {
           </div>
         ) : null}
       </div>
-    </Bounce>
+    </Fade>
   );
 }

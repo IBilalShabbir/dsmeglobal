@@ -1,17 +1,17 @@
 import React from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 import { PricingFeatureEntry } from "../components/PricingFeatureEntry";
 
 export function IndustryFeatrues() {
   return (
     <div className="pricing__feature__main ">
       <div className="pricing__feature">
-        <Bounce duration={2000} left>
+        <Fade>
           <div className="pricing__feature__entry__reverse">
             <span> Revolutionizing</span> the way business is conducted across
             industries with the latest technology introductions.
           </div>
-        </Bounce>
+        </Fade>
         <PricingFeatureEntry
           icon={
             <svg

@@ -1,5 +1,5 @@
 import React from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
 export function ServicesCard({ data }) {
@@ -14,7 +14,7 @@ export function ServicesCard({ data }) {
       to={data.link}
       className="container__services__right__entry"
     >
-      <Bounce duration={2000}>
+      <Fade>
         <div className="container__services__right__entry__icon">
           <img
             loading="lazy"
@@ -31,7 +31,7 @@ export function ServicesCard({ data }) {
         <div className="container__services__right__entry__info">
           {data.shortDescription.substring(0, 70) + "..."}
         </div>
-      </Bounce>
+      </Fade>
     </Link>
   );
 }

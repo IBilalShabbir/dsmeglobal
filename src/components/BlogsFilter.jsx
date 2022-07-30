@@ -1,8 +1,8 @@
 import React from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 export default function BlogsFilter({ title, onChange, defaultChecked }) {
   return (
-    <Bounce duration={2000} right>
+    <Fade>
       <div className="blog__page__filter__entry">
         <input
           type="radio"
@@ -13,6 +13,6 @@ export default function BlogsFilter({ title, onChange, defaultChecked }) {
         />
         <div className="blog__page__filter__entry__content">{title}</div>
       </div>
-    </Bounce>
+    </Fade>
   );
 }

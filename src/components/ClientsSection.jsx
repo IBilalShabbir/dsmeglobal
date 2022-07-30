@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { fetcher } from "../utils/functions";
 import useSWR from "swr";
-import { Bounce, Reveal } from "react-reveal";
+import { Fade, Reveal } from "react-reveal";
 
 export function ClientsSection() {
   const [slidesPerView, setSlidesPerView] = useState(4);
@@ -30,7 +30,7 @@ export function ClientsSection() {
   }, []);
   return (
     <div className="container__clients">
-      <Bounce duration={2000} left>
+      <Fade>
         <div className="container__clients__left">
           <div className="container__clients__left__heading">
             Our <span>Techonologies</span>
@@ -43,7 +43,7 @@ export function ClientsSection() {
             to help you choose a tech solution that will work best!
           </div>
         </div>
-      </Bounce>
+      </Fade>
       <div className="container__clients__right">
         {error ? (
           <div>failed to load</div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { fetcher } from "../utils/functions";
 import useSWR from "swr";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function CareersFilters({ setDeparment, setSearchQuery }) {
   const { data, error } = useSWR(
@@ -11,7 +11,7 @@ export function CareersFilters({ setDeparment, setSearchQuery }) {
   );
   return (
     <div className="hot__offers__section__content__filters">
-      <Bounce duration={2000} left>
+      <Fade>
         <input
           list="departments"
           name="department"
@@ -21,7 +21,7 @@ export function CareersFilters({ setDeparment, setSearchQuery }) {
             setDeparment(e.target.value);
           }}
         />
-      </Bounce>
+      </Fade>
       <datalist id="departments">
         {error ? (
           <option>failed to load</option>
@@ -31,7 +31,7 @@ export function CareersFilters({ setDeparment, setSearchQuery }) {
           ))
         )}
       </datalist>
-      <Bounce duration={2000} right>
+      <Fade>
         <input
           type="text"
           placeholder="Search"
@@ -39,7 +39,7 @@ export function CareersFilters({ setDeparment, setSearchQuery }) {
             setSearchQuery(e.target.value);
           }}
         />
-      </Bounce>
+      </Fade>
     </div>
   );
 }

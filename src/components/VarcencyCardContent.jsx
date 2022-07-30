@@ -1,10 +1,10 @@
 import React from "react";
-import { Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 import { getText, parseDate } from "../utils/functions";
 
 export default function VarcencyCardContent({ item, onApply }) {
   return (
-    <Zoom duration={2000} up>
+    <Fade up>
       <div className="hot__offers__section__content__entry">
         <div className="hot__offers__section__content__entry__left">
           <div className="hot__offers__section__content__entry__left__heading">
@@ -42,6 +42,6 @@ export default function VarcencyCardContent({ item, onApply }) {
           </button>
         </div>
       </div>
-    </Zoom>
+    </Fade>
   );
 }

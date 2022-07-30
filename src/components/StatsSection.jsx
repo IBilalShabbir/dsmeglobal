@@ -11,7 +11,7 @@ export function StatsSection() {
     <div className="container__stats__wrapper" ref={ref}>
       <div className="container__stats__content">
         <div className="container__stats">
-          <Zoom duration={2000}>
+          <Zoom>
             <div className="container__stats__entry">
               <div className="container__stats__entry__value">
                 <CountUp end={10} redraw={true} duration={2} />+
@@ -21,7 +21,7 @@ export function StatsSection() {
               </div>
             </div>
           </Zoom>
-          <Zoom duration={2000}>
+          <Zoom>
             <div className="container__stats__entry">
               <div className="container__stats__entry__value">
                 <CountUp end={150} redraw={true} duration={2} />+
@@ -31,7 +31,7 @@ export function StatsSection() {
               </div>
             </div>
           </Zoom>
-          <Zoom duration={2000}>
+          <Zoom>
             <div className="container__stats__entry">
               <div className="container__stats__entry__value">
                 <CountUp end={200} redraw={true} duration={2} />
@@ -41,7 +41,7 @@ export function StatsSection() {
               </div>
             </div>
           </Zoom>
-          <Zoom duration={2000}>
+          <Zoom>
             <div className="container__stats__entry">
               <div className="container__stats__entry__value">
                 <CountUp end={9} redraw={true} duration={2} />/

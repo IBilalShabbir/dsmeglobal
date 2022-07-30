@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import contactImg from "../assets/contact.svg";
 import Input from "../components/Input";
 import axios from "axios";
-import { Bounce, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 
 export default function ContactUsBottom() {
   const [name, setName] = useState("");
@@ -25,7 +25,7 @@ export default function ContactUsBottom() {
       <div className="contact__section">
         <div className="contact__section__content">
           <div className="contact__section__content__left">
-            <Zoom duration={2000}>
+            <Zoom>
               <img
                 loading="lazy"
                 src={contactImg}
@@ -65,14 +65,14 @@ export default function ContactUsBottom() {
             className="contact__section__content__middle"
           >
             <div className="contact__section__content__middle__header">
-              <Bounce duration={2000} left>
+              <Fade>
                 <div className="contact__section__content__middle__sub__heading">
                   Let us help you!
                 </div>
                 <div className="contact__section__content__middle__heading">
                   GET IN <span>TOUCH!</span>
                 </div>
-              </Bounce>
+              </Fade>
             </div>
             <div className="contact__section__content__middle__form">
               <div className="contact__section__content__middle__form__row">

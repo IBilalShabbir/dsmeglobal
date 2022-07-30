@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetcher } from "../utils/functions";
 import useSWR from "swr";
-import { Bounce, Fade, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 
 export function WorkSection() {
   const [project, setProject] = useState([]);
@@ -41,7 +41,7 @@ export function WorkSection() {
                   />
                 </Fade>
               </div>
-              <Bounce duration={2000} right>
+              <Fade>
                 <div className="work__section__content__project__about">
                   <div className="work__section__content__project__about__heading">
                     <div className="work__section__content__project__about__heading__top">
@@ -55,7 +55,7 @@ export function WorkSection() {
                     {project.description}
                   </div>
                 </div>
-              </Bounce>
+              </Fade>
             </div>
             <div className="work__section__content__selection">
               {error ? (
@@ -79,7 +79,7 @@ export function WorkSection() {
                       }}
                       defaultChecked={i === 0 ? true : false}
                     />
-                    <Zoom duration={2000}>
+                    <Zoom>
                       <img
                         loading="lazy"
                         src={

@@ -8,7 +8,7 @@ export default function BlogsCardContent({ data }) {
   const navigate = useNavigate();
 
   return (
-    <Zoom duration={2000} InUp>
+    <Zoom InUp>
       <button
         onClick={() => {
           setTimeout(() => {

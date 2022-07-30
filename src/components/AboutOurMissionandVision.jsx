@@ -1,7 +1,7 @@
 import React from "react";
 import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function AboutOurMissionandVision() {
   return (
@@ -10,7 +10,7 @@ export function AboutOurMissionandVision() {
         <div className="about__page__container__pricing__content">
           <div className="about__page__container__pricing__content__left">
             <img loading="lazy" src={missionSvg} alt="missionSvg" />
-            <Bounce duration={2000} left>
+            <Fade>
               <div className="about__page__container__pricing__content__left__heading">
                 Our Mission
               </div>
@@ -22,11 +22,11 @@ export function AboutOurMissionandVision() {
                 technological backdrop. Specializing in mobile, web and other
                 smart technologies.
               </div>
-            </Bounce>
+            </Fade>
           </div>
           <div className="about__page__container__pricing__content__right">
             <img loading="lazy" src={visionSvg} alt="visionSvg" />
-            <Bounce duration={2000} right>
+            <Fade>
               <div className="about__page__container__pricing__content__right__heading">
                 Our Vision
               </div>
@@ -38,7 +38,7 @@ export function AboutOurMissionandVision() {
                 tech-enabled solutions to help and improve businesses and
                 lifestyles of the community.
               </div>
-            </Bounce>
+            </Fade>
           </div>
         </div>
       </div>

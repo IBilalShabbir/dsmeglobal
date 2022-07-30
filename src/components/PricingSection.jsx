@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "react-feather";
 import products from "../assets/products.svg";
 import customizations from "../assets/customizations.svg";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function PricingSection() {
   return (
@@ -24,7 +24,7 @@ export function PricingSection() {
       >
         <div className="container__pricing__content__left">
           <img loading="lazy" src={customizations} alt="customizations" />
-          <Bounce duration={2000} left>
+          <Fade>
             <div className="container__pricing__content__left__heading">
               Build your dedicated teams
             </div>
@@ -54,11 +54,11 @@ export function PricingSection() {
               Build your team
               <ArrowRight size={20} strokeWidth={1.5} color="currentColor" />
             </Link>
-          </Bounce>
+          </Fade>
         </div>
         <div className="container__pricing__content__right">
           <img loading="lazy" src={products} alt="products" />
-          <Bounce duration={2000} right>
+          <Fade>
             <div className="container__pricing__content__right__heading">
               Fixed Price Project
             </div>
@@ -87,7 +87,7 @@ export function PricingSection() {
               DEVELOP YOUR PRODUCT{" "}
               <ArrowRight size={20} strokeWidth={1.5} color="currentColor" />
             </Link>
-          </Bounce>
+          </Fade>
         </div>
       </div>
     </div>

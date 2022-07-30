@@ -2,7 +2,7 @@ import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { IndustryFeatrues } from "../components/IndustryFeatrues";
 import industries from "../assets/industry.webp";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export default function Industry() {
   return (
@@ -15,13 +15,13 @@ export default function Industry() {
           talk={true}
         />
       </div>
-      <Bounce duration={2000} left>
+      <Fade>
         {" "}
         <div className="industry__software__solutions">
           Software solutions for<span>industry leaders</span>
         </div>
-      </Bounce>
-      <Bounce duration={2000} up>
+      </Fade>
+      <Fade up>
         {" "}
         <div className="industry__software__solutions__content">
           Need a software solution that’s right for you? Choose a digital
@@ -31,7 +31,7 @@ export default function Industry() {
           business with a state-of-the-art digital solution, tailored to your
           needs and expectations.
         </div>
-      </Bounce>
+      </Fade>
       <IndustryFeatrues />
       <div style={{ background: "rgba(13, 110, 74, 0.1)" }}>
         <div className="tangible_results">

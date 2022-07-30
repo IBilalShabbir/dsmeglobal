@@ -1,5 +1,5 @@
 import React from "react";
-import { Bounce, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 import missionSvg from "../assets/missionSvg.svg";
 
 export function AboutOurMission({}) {
@@ -11,7 +11,7 @@ export function AboutOurMission({}) {
       }}
     >
       <div className="our__mission__section__about__us__content">
-        <Bounce duration={2000} left>
+        <Fade>
           <div className="our__mission__section__about__us__content__left">
             <div
               className="feature__section__entry__content__jumbotron__sub__heading"
@@ -35,9 +35,9 @@ export function AboutOurMission({}) {
               smart technologies.
             </div>
           </div>
-        </Bounce>
+        </Fade>
         <div className="our__mission__section__about__us__content__right">
-          <Zoom duration={2000}>
+          <Zoom>
             <img
               loading="lazy"
               src={missionSvg}
