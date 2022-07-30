@@ -103,33 +103,79 @@ function Graphicdesign() {
               <div className="graphic__design__essence__container__skills__heading">
                 Skills
               </div>
+
               <div className="graphic__design__essence__container__skills__main">
-                <div className="graphic__design__essence__container__skills__one">
-                  Graphic design
+                <div className="graphic__design__essence__container__skills__one__percentage">
+                  <div className="graphic__design__essence__container__skills__one">
+                    Graphic design
+                  </div>
+                  <div className="graphic__design__essence__container__skills__heading__percentage">
+                    91%
+                  </div>
                 </div>
-                <div className="graphic__design__essence__container__skills__one">
-                  Product branding
+                <div className="graphic__design__essence__container__skills__one__percentage">
+                  <div className="graphic__design__essence__container__skills__one">
+                    Product branding
+                  </div>
+                  <div className="graphic__design__essence__container__skills__heading__percentage">
+                    95%
+                  </div>
                 </div>
-                <div className="graphic__design__essence__container__skills__one">
-                  Bussines planing
+                <div className="graphic__design__essence__container__skills__one__percentage">
+                  <div className="graphic__design__essence__container__skills__one">
+                    Bussines planing
+                  </div>
+                  <div className="graphic__design__essence__container__skills__heading__percentage">
+                    93%
+                  </div>
                 </div>
-                <div className="graphic__design__essence__container__skills__one">
-                  Photography
+                <div className="graphic__design__essence__container__skills__one__percentage">
+                  <div className="graphic__design__essence__container__skills__one">
+                    Photography
+                  </div>
+                  <div className="graphic__design__essence__container__skills__heading__percentage">
+                    95%
+                  </div>
                 </div>
-                <div className="graphic__design__essence__container__skills__one">
-                  Market research
+                <div className="graphic__design__essence__container__skills__one__percentage">
+                  <div className="graphic__design__essence__container__skills__one">
+                    Market research
+                  </div>
+                  <div className="graphic__design__essence__container__skills__heading__percentage">
+                    95%
+                  </div>
                 </div>
-                <div className="graphic__design__essence__container__skills__one">
-                  Strategic consulting
+                <div className="graphic__design__essence__container__skills__one__percentage">
+                  <div className="graphic__design__essence__container__skills__one">
+                    Strategic consulting
+                  </div>
+                  <div className="graphic__design__essence__container__skills__heading__percentage">
+                    90%
+                  </div>
                 </div>
-                <div className="graphic__design__essence__container__skills__one">
-                  Ecommerence consulting
+                <div className="graphic__design__essence__container__skills__one__percentage">
+                  <div className="graphic__design__essence__container__skills__one">
+                    Ecommerence consulting
+                  </div>
+                  <div className="graphic__design__essence__container__skills__heading__percentage">
+                    98%
+                  </div>
                 </div>
-                <div className="graphic__design__essence__container__skills__one">
-                  Web design
+                <div className="graphic__design__essence__container__skills__one__percentage">
+                  <div className="graphic__design__essence__container__skills__one">
+                    Web design
+                  </div>
+                  <div className="graphic__design__essence__container__skills__heading__percentage">
+                    97%
+                  </div>
                 </div>
-                <div className="graphic__design__essence__container__skills__one">
-                  Web development
+                <div className="graphic__design__essence__container__skills__one__percentage">
+                  <div className="graphic__design__essence__container__skills__one">
+                    Web development
+                  </div>
+                  <div className="graphic__design__essence__container__skills__heading__percentage">
+                    96%
+                  </div>
                 </div>
               </div>
             </div>

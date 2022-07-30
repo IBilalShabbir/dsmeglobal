@@ -6877,6 +6877,12 @@ body {
   .blockchain__worksection__text {
     width: 100%;
   }
+  .graphic__design__essence__container__we__offer__heading {
+    min-width: 100%;
+  }
+  .graphic__design__essence__container__we__offer__content {
+    min-width: 100%;
+  }
   .blockchain__worksection__heading {
     display: flex;
     justify-content: center;
@@ -6908,6 +6914,9 @@ body {
   .WHYS__main__container__right {
     width: 100%;
     min-height: 50%;
+  }
+  .graphic__design__essence__container__image {
+    width: 100%;
   }
 }
 @media (max-width: 875px) {
@@ -9805,6 +9814,8 @@ body {
 }
 .graphic__design__essence__container__image img {
   margin-top: 4em;
+  width: 100%;
+  min-height: 500px;
 }
 .graphic__design__essence__container__skills__all {
   flex-direction: column;
@@ -9828,10 +9839,7 @@ body {
   margin-bottom: 1em;
   text-align: center;
 }
-.graphic__design__essence__container__skills__one {
-  margin-bottom: 2em;
-  border-bottom: 1px solid $primary;
-}
+
 .graphic__design__essence__container__image {
   background-color: $black;
 }
@@ -9866,6 +9874,7 @@ body {
   margin: 0 auto;
   padding: 4em;
   margin-bottom: 4em;
+  flex-wrap: wrap;
 }
 .blockchain__whysection__servicecard__svg__content {
   display: flex;
@@ -9875,4 +9884,22 @@ body {
 }
 .blockchain__whysection__servicecard__svg__content svg {
   margin-right: 1em;
+}
+.graphic__design__essence__container__skills__heading__percentage {
+  color: $white;
+}
+.graphic__design__essence__container__skills__one__percentage {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $primary;
+  margin-bottom: 2em;
+}
+@media (max-width: 1000px) {
+  .graphic__design__essence__container__skills__and__image {
+    flex-direction: column !important;
+    flex-wrap: wrap;
+  }
+  .graphic__design__essence__container__skills__all {
+    width: 100%;
+  }
 }
