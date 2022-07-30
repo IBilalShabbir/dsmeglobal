@@ -9,8 +9,11 @@ export function WeHelpYouSucceed({}) {
             We help you succeed
           </div>
           <div className="WHYS__main__container__left__subHeading">
+            <span>"</span>
             We build amazing software solutions on-time and within budget.
+            <span>"</span>
           </div>
+
           <div className="WHYS__main__container__left__text">
             Work with top-notch developers and designers to build, enhance and
             support your product on time and in budget.
@@ -21,11 +24,13 @@ export function WeHelpYouSucceed({}) {
             <div className="WHYS__main__container__right__content__icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 17.996 18.031">
+                viewBox="0 0 17.996 18.031"
+              >
                 <g
                   id="Group_21"
                   data-name="Group 21"
-                  transform="translate(-1718.063 -604)">
+                  transform="translate(-1718.063 -604)"
+                >
                   <path
                     id="Path_144"
                     data-name="Path 144"
@@ -85,7 +90,8 @@ export function WeHelpYouSucceed({}) {
             <div className="WHYS__main__container__right__content__icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 17.823 16.081">
+                viewBox="0 0 17.823 16.081"
+              >
                 <path
                   id="Union_12"
                   data-name="Union 12"
@@ -105,7 +111,8 @@ export function WeHelpYouSucceed({}) {
             <div className="WHYS__main__container__right__content__icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 17.651 17.626">
+                viewBox="0 0 17.651 17.626"
+              >
                 <path
                   id="Union_13"
                   data-name="Union 13"
@@ -125,7 +132,8 @@ export function WeHelpYouSucceed({}) {
             <div className="WHYS__main__container__right__content__icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 17.486 17.765">
+                viewBox="0 0 17.486 17.765"
+              >
                 <path
                   id="Path_161"
                   data-name="Path 161"

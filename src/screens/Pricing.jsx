@@ -274,6 +274,7 @@ export default function Pricing() {
           </div>
         </div>
       </div>
+
       <div className="container__web__dev__experties">
         <div
           className="container__web__dev__experties__header"

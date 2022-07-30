@@ -1,11 +1,12 @@
 import React from "react";
 import objectimgnew from "../assets/object.webp";
+import blockdeskimg from "../assets/blockchaindesktop.png";
 
 export function BlockchainHowWork() {
   return (
     <div className="blockchain__worksection">
       <div className="blockchain__worksection__heading">
-        How Blockchain <span>Works?</span> 
+        How Blockchain <span>Works?</span>
       </div>
       <div className="blockchain__worksection__detail">
         <div className="blockchain__worksection__text">
@@ -49,6 +50,22 @@ export function BlockchainHowWork() {
         <div className="blockchain__worksection__img">
           <img loading="lazy" src={objectimgnew} alt="objectimgnew" />
         </div>
+      </div>
+      <div className="">
+        <div className="blockchain__worksection__heading__two">
+          SMART CONTRACT <span>DEVELOPMENT</span>
+        </div>
+        <div className="blockchain__worksection__heading__text">
+          We develop, deploy and debug smart contracts (Ethereum, BSC, Matic,
+          Solana, Fantom) for businesses, ensuring a highly secured, verified,
+          and frictionless exchange of digital assets and information in
+          real-time.
+        </div>
+        <img
+          className="blockchain__worksection__heading__two__desktopimg"
+          src={blockdeskimg}
+          alt="blockchaindesktop"
+        />
       </div>
     </div>
   );
