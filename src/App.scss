@@ -2143,8 +2143,7 @@ body {
 .pricing__process__container__content__bottom__left__middle__button {
   flex: 1 1 45%;
   padding: 1em;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 12px;
   background: linear-gradient(135deg, $primary, $black);
   margin: 0.1rem;
   border-radius: 5px;
@@ -2154,6 +2153,9 @@ body {
   justify-content: center;
   align-items: center;
   height: fit-content;
+  width: 200px;
+  height: 50px;
+  padding: 0em 0.1em;
 }
 .pricing__process__container__content__bottom__left:nth-child(2)
   .pricing__process__container__content__bottom__left__middle__button {
