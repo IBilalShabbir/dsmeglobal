@@ -11,7 +11,7 @@ export default function MeetUs() {
       <div className="container">
         <HomeJumbotron
           taglinesLine="Meet Us"
-          info="Diverse personalities, Geeks, Individualists, and Team players Making kick-ass apps together."
+          info="Diverse personalities, Geeks, Individualists, and Team players Making kick-ass apps together.s"
           img={meet}
         />
       </div>

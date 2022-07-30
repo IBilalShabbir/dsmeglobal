@@ -1,15 +1,15 @@
-import React from "react";
-import img1 from "../assets/1.webp";
-import img2 from "../assets/2.webp";
-import img3 from "../assets/3.webp";
-import img4 from "../assets/4.webp";
-import img5 from "../assets/5.webp";
-import img6 from "../assets/6.webp";
-import { Link } from "react-router-dom";
-import logoDark from "../assets/logo.svg";
-import { Facebook, Instagram, Linkedin } from "react-feather";
-import { FooterServices } from "./FooterServices";
-import { FooterTopics } from "./FooterTopics";
+import React from 'react';
+import img1 from '../assets/1.webp';
+import img2 from '../assets/2.webp';
+import img3 from '../assets/3.webp';
+import img4 from '../assets/4.webp';
+import img5 from '../assets/5.webp';
+import img6 from '../assets/6.webp';
+import {Link} from 'react-router-dom';
+import logoDark from '../assets/logo.svg';
+import {Facebook, Instagram, Linkedin} from 'react-feather';
+import {FooterServices} from './FooterServices';
+import {FooterTopics} from './FooterTopics';
 
 export default function Footer() {
   return (
@@ -20,13 +20,12 @@ export default function Footer() {
             <Link
               to="/"
               onClick={() => {
-                document.getElementById("Home").checked = true;
+                document.getElementById('Home').checked = true;
               }}
-              className="header__content__logo"
-            >
+              className="header__content__logo">
               <img loading="lazy" src={logoDark} alt="logo" />
             </Link>
-            <div className="footer__container__content__col__text">
+            <div className="footer__container__content__col__text__logo__under">
               We are talented. We are experienced. We are bold. We are DSME
               Global Links! Get a behind-the-scenes glimpse of your new favorite
               software development company. Let’s work together
@@ -39,29 +38,29 @@ export default function Footer() {
               Contact Us
             </div>
             <div className="footer__container__content__col__text">
-              <div className="footer__container__content__col__text__heading">
-                Phone
-              </div>
               <div className="footer__container__content__col__text__data">
                 <div className="footer__container__content__col__text__data__entry">
-                  354 454 5344 343
+                  info@dsmeglobal.com{' '}
                 </div>
                 <div className="footer__container__content__col__text__data__entry">
-                  354 454 5344 343
-                </div>
-              </div>
-
-              <div className="footer__container__content__col__text__data">
-                <div className="footer__container__content__col__text__data__entry">
-                  hello@J7.com
-                </div>
-                <div className="footer__container__content__col__text__data__entry">
-                  hello@J7Group.com
+                  +92-321-9652222
                 </div>
               </div>
               <div className="footer__container__content__col__text__data">
+                <div className="footer__container__content__col__text__heading">
+                  HEADQUARTERS
+                </div>
                 <div className="footer__container__content__col__text__data__entry">
-                  1st floor, DHA - Z Block, Plot # 33, Lahore, 54000, Pakistan
+                  33-Z, 1st Floor Commercial Plaza, DHA Phase III, Lahore,
+                  Pakistan.
+                </div>
+              </div>
+              <div className="footer__container__content__col__text__data">
+                <div className="footer__container__content__col__text__heading">
+                  OTHER OFFICES
+                </div>
+                <div className="footer__container__content__col__text__data__entry">
+                  Arnhem, Netherlands
                 </div>
               </div>
             </div>
@@ -84,8 +83,7 @@ export default function Footer() {
             </div>
             <a
               href="#"
-              className="footer__container__content__bottom__left__link"
-            >
+              className="footer__container__content__bottom__left__link">
               Privacy Policy
             </a>
           </div>
@@ -96,22 +94,19 @@ export default function Footer() {
             <a
               href="https://www.facebook.com/dsmeglobal"
               className="footer__container__content__bottom__left__link"
-              title="Facebook"
-            >
+              title="Facebook">
               <Facebook size={20} color="currentColor" />
             </a>
             <a
               href="https://www.instagram.com/dsmeglobal"
               className="footer__container__content__bottom__left__link"
-              title="Instagram"
-            >
+              title="Instagram">
               <Instagram size={20} color="currentColor" />
             </a>
             <a
               href="https://www.linkedin.com/company/dsmegloballinks"
               className="footer__container__content__bottom__left__link"
-              title="Linkedin"
-            >
+              title="Linkedin">
               <Linkedin size={20} color="currentColor" />
             </a>
           </div>
