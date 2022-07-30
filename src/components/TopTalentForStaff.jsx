@@ -48,6 +48,9 @@ export function TopTalentForStaff() {
           </div>
         ))}
       </div>
+      <div className="staff__talent__buttons">
+        <button>SCHEDULE A DEVELOPER INTERVIEW</button>
+      </div>
     </div>
   );
 }
