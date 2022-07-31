@@ -1714,7 +1714,14 @@ body {
   z-index: -1;
   transition: 300ms ease-in-out;
 }
-
+.ios__mobile__page__container__ios__company__para{
+  width: 80%;
+  color: $white;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 2em;
+  text-align: center;
+}
 .pricing__feature__entry::before {
   content: "";
   position: absolute;
@@ -9653,9 +9660,11 @@ body {
   background-color: $black;
 }
 .Android__and__ios__boxes {
-  padding-bottom: 4em;
+  padding-bottom: 6em;
   max-width: 1440px;
   margin: 0 auto;
+  padding-top: 1em;
+  
 }
 .Android__and__ios__boxes__all {
   background-color: $black;
