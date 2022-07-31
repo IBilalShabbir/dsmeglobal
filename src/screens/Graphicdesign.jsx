@@ -1,5 +1,4 @@
 import React from "react";
-import servicesbanner from "../assets/servicesbanner.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { Check } from "react-feather";
 import Graphic from "../assets/graphic.png";
@@ -29,10 +28,8 @@ function Graphicdesign() {
       <div className="container">
         <HomeJumbotron
           taglinesLine="Designing Your Presence"
-          info={
-            <>Unleash and expand your brand with strategic art and design.</>
-          }
-          img={servicesbanner}
+          info="Unleash and expand your brand with strategic art and design."
+          img={JSON.parse(window.localStorage.getItem("servicesData"))}
           talk={true}
         />
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
-import software from "../assets/software.svg";
 import { ServicesFeatureListItem } from "../components/ServicesFeatureListItem";
 
 export default function ServiceCustomSoft() {
@@ -10,7 +9,7 @@ export default function ServiceCustomSoft() {
         <HomeJumbotron
           taglinesLine="Custom software Development"
           info="Web applications that are visually amazing and provide seamless user experience for the desktop, mobile and tablet."
-          img={software}
+          img={JSON.parse(window.localStorage.getItem("servicesData"))}
           talk={true}
         />
       </div>
@@ -772,43 +771,43 @@ export default function ServiceCustomSoft() {
           </div>
         </div>
         <div className="container__feature">
-      <div className="container__feature__col">
-        <div className="container__feature__col__heading">
-          Why DSME <span>Global Links?</span> 
-        </div>
-        <div className="container__feature__col__info">
-          We create a cross-functional team to find the perfect blend of tech
-          teams and tested development processes that ensure the highest quality
-          custom-built products on time and within budget.
-        </div>
-      </div>
-      <div className="container__feature__col">
-        <ServicesFeatureListItem
-          label="Worry-free software development"
-          info=" We have a standardized development process derived from industry
+          <div className="container__feature__col">
+            <div className="container__feature__col__heading">
+              Why DSME <span>Global Links?</span>
+            </div>
+            <div className="container__feature__col__info">
+              We create a cross-functional team to find the perfect blend of
+              tech teams and tested development processes that ensure the
+              highest quality custom-built products on time and within budget.
+            </div>
+          </div>
+          <div className="container__feature__col">
+            <ServicesFeatureListItem
+              label="Worry-free software development"
+              info=" We have a standardized development process derived from industry
           best practices and our learnings across projects. Helps you save
           time, money and energy."
-        />
-        <ServicesFeatureListItem
-          label="Complete transparency"
-          info="Agile based project management, with 100% online cloud-based tools
+            />
+            <ServicesFeatureListItem
+              label="Complete transparency"
+              info="Agile based project management, with 100% online cloud-based tools
           to ensure round the clock visibility & delivery."
-        />
-      </div>
-      <div className="container__feature__col">
-        <ServicesFeatureListItem
-          label="Fair agreements & Strong IP Protection"
-          info=" Standard ‘work for hire’ contracts but flexible enough to allow
+            />
+          </div>
+          <div className="container__feature__col">
+            <ServicesFeatureListItem
+              label="Fair agreements & Strong IP Protection"
+              info=" Standard ‘work for hire’ contracts but flexible enough to allow
           for quick team size adjustments, scope changes in fixed-price
           projects and pay only for work delivered."
-        />
-        <ServicesFeatureListItem
-          label="Strong commitment to delivery"
-          info="Every project comes with a delivery commitment. We make sure that
+            />
+            <ServicesFeatureListItem
+              label="Strong commitment to delivery"
+              info="Every project comes with a delivery commitment. We make sure that
           we deliver the project as promised, no matter what happens."
-        />
-      </div>
-    </div>
+            />
+          </div>
+        </div>
       </div>
     </>
   );

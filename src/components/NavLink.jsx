@@ -12,7 +12,9 @@ export function NavLink({ children, to, navigate, setIsNavOpen }) {
         defaultChecked={window.location.pathname === to}
         onClick={() => {
           navigate(to);
-          setIsNavOpen(false);
+          if (window.innerWidth < 1000) {
+            setIsNavOpen(false);
+          }
         }}
       />
       <div className="header__content__nav__entry__content">{children}</div>

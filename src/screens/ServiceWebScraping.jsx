@@ -1,6 +1,5 @@
 import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
-import software from "../assets/software.svg";
 
 function ServiceWebScraping() {
   return (
@@ -8,15 +7,11 @@ function ServiceWebScraping() {
       <div className="container">
         <HomeJumbotron
           taglinesLine="Web Scraping"
-          info="Our engineers create custom web scraping solutions that quickly and efficiently gather the data you need and provide it to you in an elegant structure. 
-
-          
-          Our web scrapers sift through the web’s maze of data to find precisely what you need. "
-          img={software}
+          info="Our engineers create custom web scraping solutions that quickly and efficiently gather the data you need and provide it to you in an elegant structure. Our web scrapers sift through the web’s maze of data to find precisely what you need."
+          img={JSON.parse(window.localStorage.getItem("servicesData"))}
           talk={true}
         />
       </div>
-
       <div className="Android__and__ios__boxes__all">
         <div className="Android__and__ios__boxes">
           <div className="ios__mobile__page__container__ios__company__heading">

@@ -21,7 +21,7 @@ export default function Industry() {
           Software solutions for<span>industry leaders</span>
         </div>
       </Fade>
-      <Fade up>
+      <Fade>
         {" "}
         <div className="industry__software__solutions__content">
           Need a software solution that’s right for you? Choose a digital

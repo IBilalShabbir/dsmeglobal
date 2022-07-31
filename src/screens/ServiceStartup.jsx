@@ -6,7 +6,6 @@ import { TechnologiesWeWorkOnForStartups } from "../components/TechnologiesWeWor
 import { OurProcessforStartupProductDevelopment } from "../components/OurProcessforStartupProductDevelopment";
 import { StartupServicesSection } from "../components/StartupServicesSection";
 import { AccelerateYourGrowthwithOurStartupProductDevelopmentServices } from "../components/AccelerateYourGrowthwithOurStartupProductDevelopmentServices";
-import startup from "../assets/startup.svg";
 
 export default function ServiceStartup() {
   return (
@@ -15,7 +14,7 @@ export default function ServiceStartup() {
         <HomeJumbotron
           taglinesLine="Startup Services"
           info="Web applications that are visually amazing and provide seamless user experience for the desktop, mobile and tablet."
-          img={startup}
+          img={JSON.parse(window.localStorage.getItem("servicesData"))}
           talk={true}
         />
       </div>

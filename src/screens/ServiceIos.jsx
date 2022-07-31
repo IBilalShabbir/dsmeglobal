@@ -3,7 +3,6 @@ import { HomeJumbotron } from "../components/HomeJumbotron";
 import { WhychoosenativeiOSappdevelopment } from "../components/WhychoosenativeiOSappdevelopment";
 import { Tangibleresultsrightonschedule } from "../components/Tangibleresultsrightonschedule";
 import { Youshareyourideawegetitdone } from "../components/Youshareyourideawegetitdone";
-import ios from "../assets/ios.svg";
 
 export default function ServicesIos() {
   return (
@@ -12,7 +11,7 @@ export default function ServicesIos() {
         <HomeJumbotron
           taglinesLine="Industry-leading iOS app development company"
           info="Explore new business destinations, accelerate growth, and captivate your customers with a custom iOS application"
-          img={ios}
+          img={JSON.parse(window.localStorage.getItem("servicesData"))}
           talk={true}
         />
       </div>

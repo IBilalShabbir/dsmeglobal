@@ -34,6 +34,7 @@ export default function Header({ light }) {
   useEffect(() => {
     changeBackgrond();
   }, []);
+
   window.addEventListener("scroll", changeBackgrond);
   return (
     <div

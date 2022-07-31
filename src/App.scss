@@ -26,7 +26,6 @@ body {
   overflow-x: hidden;
   width: 100%;
   font-family: "Jost", sans-serif;
-  
 }
 .width__50per {
   width: 48%;
@@ -36,7 +35,6 @@ body {
   top: 0;
   width: 100%;
   z-index: 9990;
-  
 }
 .header__active {
   background-color: transparent;
@@ -248,7 +246,6 @@ body {
   max-width: 500px;
   margin: 1em 0;
   font-size: $font-normal;
-
 }
 .container__services__left__info,
 .container__services__right__entry__info,
@@ -657,60 +654,126 @@ body {
   width: 100%;
   max-width: 1500px;
   display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1em 3em;
+  margin-top: 3em;
 }
-
-.services__main__container__content__wrapper__card {
+.services__main__container__left {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: rgba(13, 110, 74, 0.1);
-  width: calc(25% - 2em);
-  aspect-ratio: 1/1;
-  margin: 1em;
-  padding: 2em;
-  border-radius: 15px;
-  box-shadow: 10px 30px 76px rgba(0, 0, 0, 0.04);
+  margin-right: 4em;
+  margin-top: -7em;
+}
+.services__main__container__right {
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $primary;
   height: fit-content;
-
+  position: sticky;
+  top: 7em;
+  padding: 2em;
+  padding-bottom: 1em;
+}
+.services__main__container__right__link {
+  margin-bottom: 1em;
+  color: $black;
   text-decoration: none;
 }
-
-.services__main__container__content__wrapper__card__svg__container {
-  margin-bottom: 1.5em;
+.services__main__container__right__link:hover {
+  transition: 300ms ease-in-out;
+  color: $primary;
+  text-decoration: underline;
 }
-
+.services__main__container__content__wrapper__card {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 7em 0em;
+  padding-bottom: 3em;
+  position: relative;
+}
+.services__main__container__content__wrapper__card::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  max-width: 200px;
+  left: calc(50% - 100px);
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.services__main__container__content__wrapper__card::before {
+  position: absolute;
+  bottom: -1.5px;
+  content: "";
+  width: 100%;
+  max-width: 100px;
+  border-radius: 50px;
+  left: calc(50% - 50px);
+  height: 3px;
+  background-color: $black;
+}
+.services__main__container__content__wrapper__card:nth-child(even) {
+  flex-direction: row-reverse;
+}
 .services__main__container__content__wrapper__card__svg {
-  width: 70px;
-  height: 70px;
+  width: 350px;
+  margin-right: 3em;
 }
-
+.services__main__container__content__wrapper__card:nth-child(even)
+  .services__main__container__content__wrapper__card__svg {
+  margin-right: 0em;
+  margin-left: 3em;
+}
+.services__main__container__content__wrapper__card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
 .services__main__container__content__wrapper__card__heading {
   color: $black;
   font-weight: bold;
+  font-size: $font-heading;
   margin-bottom: 1em;
+}
+.services__main__container__content__wrapper__card__heading span {
+  margin-right: 0.3em;
+  margin-left: 0.3em;
+  color: $primary;
 }
 
 .services__main__container__content__wrapper__card__info {
   color: $black;
+  width: 100%;
+  font-size: $font-normal;
+  max-width: 600px;
 }
-
-.services__main__container__content__wrapper__card:hover {
+.services__main__container__content__wrapper__card__link {
+  color: $primary;
+  width: fit-content;
+  padding: 1em 0em;
+  display: flex;
+  align-items: center;
+  font-size: $font-normal;
+  font-weight: 500;
   transition: 300ms ease-in-out;
-  background-color: $primary;
 }
-
-.services__main__container__content__wrapper__card:hover
-  .services__main__container__content__wrapper__card__heading {
-  color: $white;
+.services__main__container__content__wrapper__card__link:hover {
+  transition: 300ms ease-in-out;
+  text-decoration: none;
 }
-
-.services__main__container__content__wrapper__card:hover
-  .services__main__container__content__wrapper__card__info {
-  color: $white;
+.services__main__container__content__wrapper__card__link svg {
+  margin-top: 0.2em;
+  transition: 300ms ease-in-out;
+}
+.services__main__container__content__wrapper__card__link:hover svg {
+  transition: 300ms ease-in-out;
+  margin-left: 0.5em;
 }
 
 .blog__page {
@@ -1714,7 +1777,7 @@ body {
   z-index: -1;
   transition: 300ms ease-in-out;
 }
-.ios__mobile__page__container__ios__company__para{
+.ios__mobile__page__container__ios__company__para {
   width: 80%;
   color: $white;
   margin: 0 auto;
@@ -3257,7 +3320,7 @@ body {
 
   text-align: center;
   padding: 0 4em;
-    max-width: 60%;
+  max-width: 60%;
   margin: 0 auto;
   margin-top: 1.5em;
   margin-bottom: 1em;
@@ -3366,14 +3429,12 @@ body {
   max-width: 55%;
   display: flex;
   flex-direction: column;
-
 }
 .container__emerging__technologies__section__entry__data__text span {
   font-weight: bold;
 }
 
 .container__emerging__technologies__section__entry__img {
-
   margin-bottom: 1em;
 
   color: $white;
@@ -3697,7 +3758,6 @@ body {
   font-size: $font-large;
   font-weight: bold;
   max-width: 500px;
-  
 }
 
 .customer__center__development__section__container__left__heading span {
@@ -3919,7 +3979,6 @@ body {
 .footer__container__content__col__text {
   max-width: 300px;
   color: $white;
-
 
   font-size: $font-normal;
 }
@@ -4235,7 +4294,6 @@ body {
 
 .portfolio__section__container__heading__text {
   max-width: 50%;
-  
 }
 
 .portfolio__section__container__buttons {
@@ -4284,7 +4342,6 @@ body {
   width: 100%;
   max-width: 700px;
   text-align: center;
- 
 }
 
 .portfolio__section__container__text__content__entry__background {
@@ -6132,7 +6189,7 @@ body {
   margin-bottom: 3em;
 }
 .pricing__fitted__team__header__heading {
-  font-size:  $font-large;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -6411,7 +6468,7 @@ body {
   margin-bottom: 0.5em;
 }
 .Custome__methodologies__section__detail__card__line {
-  font-size: $font-normal
+  font-size: $font-normal;
 }
 .Custome__methodologies__section__detail__card__line::before {
   content: "";
@@ -9665,7 +9722,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 1em;
-  
 }
 .Android__and__ios__boxes__all {
   background-color: $black;
@@ -9727,7 +9783,6 @@ body {
 .graphic__design__essence__container {
   font-size: $font-large;
   font-weight: 600;
-
 }
 .graphic__design__essence__container__content {
   font-size: $font-normal;
@@ -9800,7 +9855,7 @@ body {
   margin: 0 auto;
 }
 .graphic__design__essence__container__we__offer__heading {
-  font-size:  $font-large;
+  font-size: $font-large;
   font-weight: 600;
   max-width: 1440px;
   width: 60%;

@@ -94,7 +94,7 @@ export default function ContactUsBottom() {
                   }}
                 />
                 <Input
-                  type="email"
+                  type="text"
                   required={true}
                   label="Company Name (Optional)"
                   placeholder="Type your company name"
@@ -189,7 +189,7 @@ export default function ContactUsBottom() {
                 placeholder="Give us some details about your project"
               />
             </div>
-           
+
             <button className="contact__section__content__middle__form__button">
               Let’s start a conversation
             </button>

@@ -1,6 +1,5 @@
 import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
-import web from "../assets/web.svg";
 import { HowFixedPriceProcessWorks } from "./HowFixedPriceProcessWorks";
 import { ExperitseCard } from "../components/ExperitseCard";
 import { ExperienceCard } from "../components/ExperienceCard";
@@ -12,7 +11,7 @@ function AgileDiscoveryWorkshop() {
         <HomeJumbotron
           taglinesLine=" Agile Discovery Workshop"
           info="Fastest way to engineer your requirements and take your product from concept to development."
-          img={web}
+          img={JSON.parse(window.localStorage.getItem("servicesData"))}
           talk={true}
         />
       </div>

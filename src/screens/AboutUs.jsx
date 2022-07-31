@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Navigation, Pagination } from "swiper";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import about from "../assets/about.svg";
-import { AboutOurVision } from "../components/AboutOurVision";
-import { AboutOurMission } from "../components/AboutOurMission";
 import { AboutKeyDifferences } from "../components/AboutKeyDifferences";
 import { AboutOurTeam } from "../components/AboutOurTeam";
 import { AboutAgileDevelopmentProcess } from "../components/AboutAgileDevelopmentProcess";

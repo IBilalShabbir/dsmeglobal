@@ -32,7 +32,8 @@ export default function Home({ setLightHeader }) {
             'url("https://img.freepik.com/free-photo/black-elegant-background-with-copy-space_24972-1836.jpg?t=st=1658749141~exp=1658749741~hmac=1e2a415798ccb0b21f058af653cee77aa63112f98c093a9fc3d4cd6fa220f5ca&w=900"),no-repeat',
           backgroundSize: "cover",
           marginBottom: "3em",
-        }}>
+        }}
+      >
         <HomeJumbotron
           taglinesLine="Quality"
           taglines={["services", "products", "customizations"]}

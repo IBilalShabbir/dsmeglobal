@@ -46,26 +46,38 @@ function App() {
       <Header light={lightHeader} />
       <Routes maxLoadingTime={500}>
         <Route path="/" element={<Home setLightHeader={setLightHeader} />} />
+        <Route path="/services" element={<Services />} />
         <Route
-          path="/services"
-          element={<Services setLightHeader={setLightHeader} />}
+          path="/services/web-app-development"
+          element={<ServicesWebDev />}
         />
-        <Route path="/services/web-dev" element={<ServicesWebDev />} />
-        <Route path="/services/uiux" element={<ServiceUIUX />} />
-        <Route path="/services/mob-dev" element={<ServiceMobDev />} />
-        <Route path="/services/blockchain" element={<ServiceBlockChain />} />
-        <Route path="/services/custom-soft" element={<ServiceCustomSoft />} />
-        <Route path="/services/ios" element={<ServiceIos />} />
-        <Route path="/services/web-scraping" element={<ServiceWebScraping />} />
-        <Route path="/services/android" element={<ServiceAndroid />} />
-        <Route path="/services/ecomerece" element={<ServiceEcomerece />} />
-        <Route path="/services/startup" element={<ServiceStartup />} />
-        <Route path="/services/staff" element={<ServiceStaff />} />
+        <Route path="/services/ui-ux-design" element={<ServiceUIUX />} />
         <Route
-          path="/services/discoveryworkshop"
+          path="/services/mobile-app-development"
+          element={<ServiceMobDev />}
+        />
+        <Route
+          path="/services/blockchain-consulting"
+          element={<ServiceBlockChain />}
+        />
+        <Route
+          path="/services/custom-software-development"
+          element={<ServiceCustomSoft />}
+        />
+        <Route path="/services/ios-development" element={<ServiceIos />} />
+        <Route path="/services/web-scraping" element={<ServiceWebScraping />} />
+        <Route
+          path="/services/android-development"
+          element={<ServiceAndroid />}
+        />
+        <Route path="/services/ecomerce" element={<ServiceEcomerece />} />
+        <Route path="/services/startup-services" element={<ServiceStartup />} />
+        <Route path="/services/staff-augmentation" element={<ServiceStaff />} />
+        <Route
+          path="/services/agile-discovery-workshop"
           element={<DiscoveryWorkshop />}
         />
-        <Route path="/services/graphicdesign" element={<GraphicDesign />} />
+        <Route path="/services/graphic-designing" element={<GraphicDesign />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blog-details" element={<BlogDetails />} />

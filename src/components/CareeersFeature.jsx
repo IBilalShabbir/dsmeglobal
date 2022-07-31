@@ -18,7 +18,7 @@ export function CareeersFeature() {
             <span>We’re family</span>
           </div>
         </Fade>
-        <Fade up>
+        <Fade>
           <div className="container__web__dev__experties__header__info">
             DSME Global Links is not just a workplace – it’s a lifestyle, and we
             want each of our team members to get the most out of it

@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
-import android from "../assets/android.svg";
 import img1 from "../assets/1.webp";
 import img2 from "../assets/2.webp";
 import img3 from "../assets/3.webp";
 import img4 from "../assets/4.webp";
 import img5 from "../assets/5.webp";
 import img6 from "../assets/6.webp";
-import img7 from "../assets/iosandroid.jpg";
 import img8 from "../assets/iosswift.jpg";
-import img9 from "../assets/iosapplication.png";
-import img10 from "../assets/ioscross.png";
 import { WebdevArrEntry } from "../components/WebdevArrEntry";
 import { User } from "react-feather";
 
@@ -54,7 +50,7 @@ export default function ServicesAndroid() {
         <HomeJumbotron
           taglinesLine="Full-service Android application development company"
           info="Choose an experienced partner to transform your business idea into a top-performing custom Android app"
-          img={android}
+          img={JSON.parse(window.localStorage.getItem("servicesData"))}
           talk={true}
         />
       </div>

@@ -30,7 +30,7 @@ export function WorkSection() {
           <div className="work__section__content">
             <div className="work__section__content__project">
               <div className="work__section__content__project__image__wrapper">
-                <Fade right>
+                <Fade>
                   <img
                     loading="lazy"
                     src={

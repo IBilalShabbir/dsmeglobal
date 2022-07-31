@@ -7,10 +7,11 @@ import useSWR from "swr";
 
 export default function QuoteScreen({ setNoShowContactUs }) {
   const { data } = useSWR(
-    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_service`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_category`,
     fetcher,
     { suspense: true }
   );
+  console.log(data);
   useEffect(() => {
     setNoShowContactUs(false);
 
@@ -102,7 +103,7 @@ export default function QuoteScreen({ setNoShowContactUs }) {
                   type="text"
                   required={true}
                   placeholder="Services"
-                  list={data.map((item) => item.title)}
+                  list={data.map((item) => item.name)}
                   onChange={(e) => {
                     setService(e.target.value);
                   }}

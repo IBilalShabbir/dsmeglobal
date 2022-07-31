@@ -10,7 +10,7 @@ export function MeetUsStories() {
             See our <span>stories</span>
           </div>
         </Fade>
-        <Fade up>
+        <Fade>
           <div className="meetus__container__stories__para">
             Your passion is part of our identity. See how #dsmeglobalpeople
             rock.
