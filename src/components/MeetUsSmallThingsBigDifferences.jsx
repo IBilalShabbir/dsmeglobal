@@ -1,16 +1,16 @@
 import React from "react";
 import agilefirst from "../assets/agileFirst.svg";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function MeetUsSmallThingsBigDifferences() {
   return (
     <div className="meetus__container__smallThings">
       <div className="meetus__container__smallThings__content">
-        <Zoom In>
+        <Fade In>
           <div className="meetus__container__smallThings__heading">
             Small things. <span>Big difference</span>
           </div>
-        </Zoom>
+        </Fade>
         <div className="meetus__container__smallThings__content__container">
           <Fade>
             <div className="meetus__container__smallThings__left">

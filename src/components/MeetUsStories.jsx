@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function MeetUsStories() {
   return (
@@ -17,7 +17,7 @@ export function MeetUsStories() {
           </div>
         </Fade>
         <div className="meetus__container__stories__card__container">
-          <Zoom>
+          <Fade>
             <div className="meetus__container__stories__card">
               <div className="meetus__container__stories__card__image">
                 <img
@@ -35,8 +35,8 @@ export function MeetUsStories() {
                 </div>
               </div>
             </div>
-          </Zoom>
-          <Zoom>
+          </Fade>
+          <Fade>
             <div className="meetus__container__stories__card">
               <div className="meetus__container__stories__card__image">
                 <img
@@ -54,8 +54,8 @@ export function MeetUsStories() {
                 </div>
               </div>
             </div>
-          </Zoom>
-          <Zoom>
+          </Fade>
+          <Fade>
             <div className="meetus__container__stories__card">
               <div className="meetus__container__stories__card__image">
                 <img
@@ -73,7 +73,7 @@ export function MeetUsStories() {
                 </div>
               </div>
             </div>
-          </Zoom>
+          </Fade>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 import { useNavigate } from "react-router-dom";
 import { replacePngWithWebp } from "../utils/functions";
@@ -8,7 +8,7 @@ export default function ProjectCardContent({ image, title, data }) {
   const navigate = useNavigate();
 
   return (
-    <Zoom>
+    <Fade>
       <button
         className="service__details__projects__entry"
         onClick={() => {
@@ -34,6 +34,6 @@ export default function ProjectCardContent({ image, title, data }) {
           </div>
         </div>
       </button>
-    </Zoom>
+    </Fade>
   );
 }

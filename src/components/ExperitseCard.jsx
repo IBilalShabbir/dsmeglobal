@@ -1,9 +1,9 @@
 import React from "react";
-import { Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function ExperitseCard({ label, info, svg }) {
   return (
-    <Zoom In>
+    <Fade In>
       <div className="container__web__dev__experties__content__entry">
         <div className="container__web__dev__experties__content__header">
           {svg}
@@ -15,6 +15,6 @@ export function ExperitseCard({ label, info, svg }) {
           {info}
         </div>
       </div>
-    </Zoom>
+    </Fade>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import CountUp from "react-countup";
-import { Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 import { useIsInViewport } from "../utils/useIsInViewport";
 
 export function StatsSection() {
@@ -11,7 +11,7 @@ export function StatsSection() {
     <div className="container__stats__wrapper" ref={ref}>
       <div className="container__stats__content">
         <div className="container__stats">
-          <Zoom>
+          <Fade>
             <div className="container__stats__entry">
               <div className="container__stats__entry__value">
                 <CountUp end={10} redraw={true} duration={2} />+
@@ -20,8 +20,8 @@ export function StatsSection() {
                 Years in Remote Software Development
               </div>
             </div>
-          </Zoom>
-          <Zoom>
+          </Fade>
+          <Fade>
             <div className="container__stats__entry">
               <div className="container__stats__entry__value">
                 <CountUp end={150} redraw={true} duration={2} />+
@@ -30,8 +30,8 @@ export function StatsSection() {
                 Digital Solutions Delivered
               </div>
             </div>
-          </Zoom>
-          <Zoom>
+          </Fade>
+          <Fade>
             <div className="container__stats__entry">
               <div className="container__stats__entry__value">
                 <CountUp end={200} redraw={true} duration={2} />
@@ -40,8 +40,8 @@ export function StatsSection() {
                 Experts on Board
               </div>
             </div>
-          </Zoom>
-          <Zoom>
+          </Fade>
+          <Fade>
             <div className="container__stats__entry">
               <div className="container__stats__entry__value">
                 <CountUp end={9} redraw={true} duration={2} />/
@@ -51,7 +51,7 @@ export function StatsSection() {
                 Projects Conducted Remotely
               </div>
             </div>
-          </Zoom>
+          </Fade>
         </div>
       </div>
     </div>

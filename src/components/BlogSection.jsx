@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { fetcher, getText, replacePngWithWebp } from "../utils/functions";
 import useSWR from "swr";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function BlogSection() {
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ export function BlogSection() {
           data
             ?.filter((blog, i) => i < 3)
             .map((blog) => (
-              <Zoom>
+              <Fade>
                 <button
                   onClick={() => {
                     setTimeout(() => {
@@ -63,7 +63,7 @@ export function BlogSection() {
                     </Fade>
                   </div>
                 </button>
-              </Zoom>
+              </Fade>
             ))
         )}
       </div>

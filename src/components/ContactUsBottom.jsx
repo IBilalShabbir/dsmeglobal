@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import contactImg from "../assets/contact.svg";
 import Input from "../components/Input";
 import axios from "axios";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export default function ContactUsBottom() {
   const [name, setName] = useState("");
@@ -25,14 +25,14 @@ export default function ContactUsBottom() {
       <div className="contact__section">
         <div className="contact__section__content">
           <div className="contact__section__content__left">
-            <Zoom>
+            <Fade>
               <img
                 loading="lazy"
                 src={contactImg}
                 alt="contactImg"
                 className="contact__section__content__img"
               />
-            </Zoom>
+            </Fade>
           </div>
           <form
             onSubmit={(e) => {

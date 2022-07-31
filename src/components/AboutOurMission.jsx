@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 import missionSvg from "../assets/missionSvg.svg";
 
 export function AboutOurMission() {
@@ -37,14 +37,14 @@ export function AboutOurMission() {
           </div>
         </Fade>
         <div className="our__mission__section__about__us__content__right">
-          <Zoom>
+          <Fade>
             <img
               loading="lazy"
               src={missionSvg}
               alt="missionSvg"
               className="our__mission__section__about__us__content__right__img"
             />
-          </Zoom>
+          </Fade>
         </div>
       </div>
     </div>

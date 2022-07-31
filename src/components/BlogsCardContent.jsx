@@ -1,5 +1,5 @@
 import React from "react";
-import { Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 import { useNavigate } from "react-router-dom";
 import { getText } from "../utils/functions";
@@ -8,7 +8,7 @@ export default function BlogsCardContent({ data }) {
   const navigate = useNavigate();
 
   return (
-    <Zoom InUp>
+    <Fade InUp>
       <button
         onClick={() => {
           setTimeout(() => {
@@ -38,6 +38,6 @@ export default function BlogsCardContent({ data }) {
           </div>
         </div>
       </button>
-    </Zoom>
+    </Fade>
   );
 }

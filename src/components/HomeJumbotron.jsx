@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 import { Link, useNavigate } from "react-router-dom";
 
 export function HomeJumbotron({
@@ -100,7 +100,7 @@ export function HomeJumbotron({
           ) : null}
         </div>
       </Fade>
-      <Zoom>
+      <Fade>
         <div className="container__jumbotron__right">
           {imgs ? (
             imgs
@@ -112,7 +112,7 @@ export function HomeJumbotron({
             <img src={img} alt={img} />
           )}
         </div>
-      </Zoom>
+      </Fade>
     </div>
   );
 }

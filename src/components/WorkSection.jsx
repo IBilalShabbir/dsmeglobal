@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetcher, replacePngWithWebp } from "../utils/functions";
 import useSWR from "swr";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export function WorkSection() {
   const [project, setProject] = useState([]);
@@ -80,7 +80,7 @@ export function WorkSection() {
                       }}
                       defaultChecked={i === 0 ? true : false}
                     />
-                    <Zoom>
+                    <Fade>
                       <img
                         loading="lazy"
                         src={
@@ -90,7 +90,7 @@ export function WorkSection() {
                         alt={item.title}
                         className="work__section__content__selection__entry__img"
                       />
-                    </Zoom>
+                    </Fade>
                   </div>
                 ))
               )}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 import agileprocess from "../assets/agile__process__img.webp";
 
 export function AboutAgileDevelopmentProcess() {
@@ -8,14 +8,14 @@ export function AboutAgileDevelopmentProcess() {
       <div className="about__agile__process__heading">
         Our <span>Development</span> Process
       </div>
-      <Zoom>
+      <Fade>
         <img
           loading="lazy"
           className="about__agile__process__img"
           src={agileprocess}
           alt="agile process img"
         />
-      </Zoom>
+      </Fade>
     </div>
   );
 }

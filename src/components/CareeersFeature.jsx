@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 import { ExperitseCard } from "../components/ExperitseCard";
 
 export function CareeersFeature() {
@@ -12,12 +12,12 @@ export function CareeersFeature() {
       }}
     >
       <div className="container__web__dev__experties__header services__startup__third__header">
-        <Zoom>
+        <Fade>
           <div className="container__web__dev__experties__header__heading">
             We’re not just colleagues.
             <span>We’re family</span>
           </div>
-        </Zoom>
+        </Fade>
         <Fade up>
           <div className="container__web__dev__experties__header__info">
             DSME Global Links is not just a workplace – it’s a lifestyle, and we

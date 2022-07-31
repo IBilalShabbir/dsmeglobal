@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 import { getText } from "../utils/functions";
 
 export default function HotOfferJobCard({ item, onApply }) {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 import visionSvg from "../assets/visionSvg.svg";
 
 export function AboutOurVision() {
@@ -12,14 +12,14 @@ export function AboutOurVision() {
     >
       <div className="our__vision__section__about__us__content">
         <div className="our__vision__section__about__us__content__right">
-          <Zoom>
+          <Fade>
             <img
               loading="lazy"
               src={visionSvg}
               alt="visionSvg"
               className="our__vision__section__about__us__content__right__img"
             />
-          </Zoom>
+          </Fade>
         </div>
         <div className="our__vision__section__about__us__content__left">
           <Fade>
