@@ -26,6 +26,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   font-family: "Jost", sans-serif;
+  
 }
 .width__50per {
   width: 48%;
@@ -35,6 +36,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 9990;
+  
 }
 .header__active {
   background-color: transparent;
@@ -193,17 +195,16 @@ body {
 }
 
 .container__jumbotron__left__heading {
-  font-size: 40px;
+  font-size: $font-large;
   font-weight: bold;
   width: 100%;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  line-height: 110%;
 }
 .container__jumbotron__left__heading__entry {
   display: flex;
-  font-size: 35px;
+  font-size: $font-large;
 }
 .container__jumbotron__left__heading span {
   color: $primary;
@@ -246,7 +247,8 @@ body {
   width: 100%;
   max-width: 500px;
   margin: 1em 0;
-  font-size: 16px;
+  font-size: $font-normal;
+
 }
 .container__services__left__info,
 .container__services__right__entry__info,
@@ -254,7 +256,7 @@ body {
 .container__stats__right__card__info,
 .container__pricing__content__right__sub__heading,
 .container__pricing__content__right__info {
-  font-size: 16px;
+  font-size: $font-normal;
 }
 
 .container__jumbotron__left__button {
@@ -314,7 +316,7 @@ body {
 }
 
 .container__clients__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -387,7 +389,7 @@ body {
 }
 
 .container__services__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -449,7 +451,7 @@ body {
 .container__services__right__entry__heading {
   font-weight: bold;
   margin-bottom: 1em;
-  font-size: 20px;
+  font-size: $font-sub-heading;
 }
 
 .container__services__right__entry:first-child {
@@ -500,7 +502,7 @@ body {
 }
 
 .container__newsletter__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -557,7 +559,7 @@ body {
 }
 
 .blog__section__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 1.5em;
 }
@@ -850,7 +852,7 @@ body {
 }
 
 .service__details__projects__entry__content__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   color: $white;
   font-weight: bold;
   display: none;
@@ -970,7 +972,7 @@ body {
 }
 
 .hot__offers__section__header {
-  font-size: 10px;
+  font-size: $font-normal;
   color: $black;
   font-weight: bold;
   margin-bottom: 1em;
@@ -978,12 +980,12 @@ body {
   text-align: center;
 }
 .hot__offers__section__header span {
-  font-size: 30px;
+  font-size: $font-large;
   margin-left: 10px;
   color: $primary;
 }
 .hot__offers__section__header_span {
-  font-size: 30px;
+  font-size: $font-large;
   margin-left: 10px;
   color: $primary;
   font-weight: bolder;
@@ -1042,7 +1044,7 @@ body {
 }
 
 .hot__offers__section__content__card__title {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   color: $primary;
   text-transform: capitalize;
   font-weight: bold;
@@ -1208,7 +1210,7 @@ body {
 }
 
 .apply__popup__form__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   margin-bottom: 1em;
   font-weight: bold;
 }
@@ -1294,7 +1296,7 @@ body {
 }
 
 .contact__section__content__left__header {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 1em;
@@ -1308,12 +1310,12 @@ body {
 }
 
 .contact__section__content__middle__sub__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   color: $primary;
 }
 
 .contact__section__content__middle__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -1325,7 +1327,7 @@ body {
   height: 250px;
 }
 .industry__software__solutions {
-  font-size: 35px;
+  font-size: $font-large;
   font-weight: 600;
   display: flex;
   justify-content: start;
@@ -1340,7 +1342,7 @@ body {
   margin-left: 10px;
 }
 .industry__software__solutions__content {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 400;
   display: flex;
   justify-content: start;
@@ -1452,7 +1454,7 @@ body {
 }
 
 .feature__section__entry__content__jumbotron__sub__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
 }
@@ -1546,7 +1548,7 @@ body {
   align-items: center;
 }
 .about__teams__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 1.5em;
@@ -1588,12 +1590,12 @@ body {
   opacity: 0;
 }
 .about__teams__content__entry__overlay__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   color: $white;
   font-weight: bold;
 }
 .about__teams__content__entry__overlay__info {
-  font-size: 16px;
+  font-size: $font-normal;
   color: $white;
 }
 .about__teams__content__entry:hover .about__teams__content__entry__overlay {
@@ -1611,7 +1613,7 @@ body {
   align-items: center;
 }
 .about__agile__process__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   text-align: center;
@@ -1623,13 +1625,13 @@ body {
   width: 100%;
 }
 .feature__section__entry__content__jumbotron__sub__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   display: flex;
   margin-bottom: 0.5em;
 }
 .pricing__feature__container {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -1639,7 +1641,7 @@ body {
   margin: 0 auto;
 }
 .pricing__feature__container__button {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -1678,7 +1680,7 @@ body {
   background-color: $black;
 }
 .pricing__feature__entry__reverse {
-  font-size: 30px;
+  font-size: $font-large;
   color: $white;
   font-weight: bold;
   min-height: 180px;
@@ -1735,7 +1737,7 @@ body {
   height: 40px;
 }
 .pricing__feature__entry__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   margin-bottom: 0.7em;
   color: $black;
   font-weight: bold;
@@ -1775,7 +1777,7 @@ body {
   align-items: center;
   justify-content: center;
   color: $white;
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: bold;
   background-color: $primary;
   height: 50px;
@@ -1919,7 +1921,7 @@ body {
   color: #bb6bd9;
 }
 .pricing__delivery__section__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   color: $black;
   padding-bottom: 2em;
@@ -1927,7 +1929,7 @@ body {
   justify-content: center;
 }
 .pricing__delivery__section__heading__content {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 400;
   color: $black;
   margin-bottom: 1em;
@@ -2021,7 +2023,7 @@ body {
 }
 
 .pricing__delivery__section__content__card__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: bold;
   color: $primary;
   margin-bottom: 1em;
@@ -2080,7 +2082,7 @@ body {
   margin-bottom: 2em;
 }
 .pricing__process__container__content__top__heading {
-  font-size: 25px;
+  font-size: $font-heading;
   font-weight: bold;
   color: $black;
   margin-bottom: 1em;
@@ -2088,7 +2090,7 @@ body {
 .pricing__process__container__content__top__info {
   width: 50%;
   text-align: center;
-  font-size: 18px;
+  font-size: $font-sub-heading;
 }
 .pricing__process__container__content__bottom {
   display: flex;
@@ -2105,7 +2107,7 @@ body {
 }
 
 .pricing__process__container__content__bottom__left__top {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   color: $primary;
   position: relative;
   width: 100%;
@@ -2158,7 +2160,7 @@ body {
 .pricing__process__container__content__bottom__left__middle__button {
   flex: 1 1 45%;
   padding: 1em;
-  font-size: 12px;
+  font-size: $font-normal;
   background: linear-gradient(135deg, $primary, $black);
   margin: 0.1rem;
   border-radius: 5px;
@@ -2203,7 +2205,7 @@ body {
   border-radius: 5px;
 }
 .pricing__process__container__content__bottom__left__bottom ul {
-  font-size: 14px;
+  font-size: $font-normal;
   margin: 0;
   padding-left: 1.5em;
 }
@@ -2240,7 +2242,7 @@ body {
 .pricing__understand__container__content__top {
   text-align: center;
   width: 50%;
-  font-size: 18px;
+  font-size: $font-sub-heading;
   margin: 0 auto;
   padding: 1em 0;
 }
@@ -2272,7 +2274,7 @@ body {
   height: 50px;
 }
 .pricing__understand__container__content__bottom__card__right__heading {
-  font-size: 25px;
+  font-size: $font-heading;
   color: $primary;
 }
 .pricing__understand__container__content__bottom__card__right__info {
@@ -2314,12 +2316,12 @@ body {
   text-align: center;
 }
 .pricing__all__inclusive__container__content__top__heading {
-  font-size: 25px;
+  font-size: $font-heading;
   color: $white;
   font-weight: bold;
 }
 .pricing__all__inclusive__container__content__top__info {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   color: $white;
 }
 .pricing__all__inclusive__container__content__bottom {
@@ -2340,7 +2342,7 @@ body {
 }
 
 .pricing__all__inclusive__container__content__bottom__card__title {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   color: $white;
   font-weight: bold;
   margin: 1rem 0;
@@ -2371,7 +2373,7 @@ body {
 }
 
 .blog__jumbotron__overlay__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $white;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -2452,7 +2454,7 @@ body {
 }
 
 .container__stats__entry__value {
-  font-size: 30px;
+  font-size: $font-large;
   color: $primary;
   font-weight: bold;
   margin-bottom: 0.2em;
@@ -2476,7 +2478,7 @@ body {
 }
 
 .work__section__header {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 2em;
@@ -2528,7 +2530,7 @@ body {
 }
 
 .work__section__content__project__about__heading__bottom {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   color: $primary;
   font-weight: bold;
 }
@@ -2631,7 +2633,7 @@ body {
   padding: 0 2em;
   margin: 0 auto;
   margin-bottom: 2em;
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   display: flex;
@@ -2639,7 +2641,7 @@ body {
   color: $primary;
 }
 .container__testimonials__overlay__heading span {
-  font-size: 16px;
+  font-size: $font-normal;
   font-weight: normal;
   color: $black;
 }
@@ -2727,7 +2729,7 @@ body {
 }
 
 .container__testimonials__overlay__info__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   color: $primary;
   font-weight: bold;
   margin: 0.5em 0;
@@ -2743,7 +2745,7 @@ body {
 }
 
 .container__stats__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $white;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -2846,7 +2848,7 @@ body {
 }
 
 .container__stats__right__card__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   color: $black;
   font-weight: bold;
   margin: 0.5em 0;
@@ -2889,7 +2891,7 @@ body {
 }
 
 .service__details__jumbotron__right__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -2947,7 +2949,7 @@ body {
 }
 
 .portfolio__home__section__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   color: $white;
 }
@@ -2988,7 +2990,7 @@ body {
 }
 
 .container__web__dev__experties__header__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   color: $black;
   margin-bottom: 0.5em;
@@ -3027,7 +3029,7 @@ body {
   display: block;
   position: relative;
   cursor: pointer;
-  font-size: 20px;
+  font-size: $font-sub-heading;
   user-select: none;
 }
 
@@ -3043,7 +3045,7 @@ body {
   display: block;
   position: relative;
   cursor: pointer;
-  font-size: 20px;
+  font-size: $font-sub-heading;
   user-select: none;
 }
 
@@ -3123,13 +3125,13 @@ body {
 
 .container__web__dev__experties__content__header__heading {
   color: $black;
-  font-size: 16px;
+  font-size: $font-normal;
   font-weight: bold;
 }
 
 .container__web__dev__experties__content__info {
   color: $black;
-  font-size: 14px;
+  font-size: $font-normal;
 }
 .container__web__dev__experties__content__entry:hover * {
   fill: $white;
@@ -3158,7 +3160,7 @@ body {
 }
 
 .container__web__dev__experience__header__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   color: $white;
   margin-bottom: 0.5em;
@@ -3241,7 +3243,7 @@ body {
 }
 
 .container__web__dev__solution__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   color: $black;
   width: 100%;
@@ -3312,7 +3314,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
 }
 .container__emerging__technologies__heading__main span {
@@ -3326,8 +3328,7 @@ body {
 
   text-align: center;
   padding: 0 4em;
-  line-height: 30px;
-  max-width: 60%;
+    max-width: 60%;
   margin: 0 auto;
   margin-top: 1.5em;
   margin-bottom: 1em;
@@ -3430,12 +3431,11 @@ body {
 .container__emerging__technologies__section__entry__data___heading {
   font-weight: 500;
   margin-right: 1em;
-  font-size: 20px;
+  font-size: $font-sub-heading;
 }
 
 .container__emerging__technologies__section__entry__data__text {
   max-width: 55%;
-  line-height: 25px;
   display: flex;
   flex-direction: column;
 }
@@ -3491,7 +3491,7 @@ body {
   opacity: 0.25;
 }
 .about__page__container__pricing__content__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $white;
   font-weight: bold;
   margin-bottom: 1.5em;
@@ -3539,14 +3539,14 @@ body {
   width: 20px;
 }
 .about__page__container__pricing__content__right__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $white;
   font-weight: bold;
   margin-bottom: 1.5em;
   position: relative;
 }
 .container__pricing__content__right__sub__heading {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   color: $white;
   font-weight: bold;
   margin-bottom: 0.3em;
@@ -3609,7 +3609,7 @@ body {
   z-index: 2;
 }
 .container__pricing__content__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $white;
   font-weight: bold;
   margin-bottom: 1.5em;
@@ -3629,7 +3629,7 @@ body {
 }
 
 .container__pricing__content__left__sub__heading {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   color: $white;
   font-weight: bold;
   margin-bottom: 0.3em;
@@ -3690,7 +3690,7 @@ body {
   z-index: 2;
 }
 .container__pricing__content__right__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $white;
   font-weight: bold;
   margin-bottom: 1.5em;
@@ -3710,7 +3710,7 @@ body {
 }
 
 .container__pricing__content__right__sub__heading {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   color: $white;
   font-weight: bold;
   margin-bottom: 0.3em;
@@ -3766,10 +3766,10 @@ body {
 }
 
 .customer__center__development__section__container__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   max-width: 500px;
-  line-height: 35px;
+  
 }
 
 .customer__center__development__section__container__left__heading span {
@@ -3784,7 +3784,7 @@ body {
 
 .customer__center__development__section__container__left__heading__text {
   margin-left: 1em;
-  font-size: 18px;
+  font-size: $font-sub-heading;
   font-weight: bold;
   color: $black;
 }
@@ -3857,7 +3857,7 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 2em;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
 }
 
@@ -3966,12 +3966,12 @@ body {
   min-width: 250px;
   align-items: flex-start;
   padding: 0.9em 1em;
-  line-height: 25px;
-  font-size: 14px;
+
+  font-size: $font-normal;
 }
 
 .footer__container__content__col__heading {
-  font-size: 22px;
+  font-size: $font-sub-heading;
   font-weight: 600;
   color: $white;
   transition: all 0.3s ease-in-out;
@@ -3991,19 +3991,16 @@ body {
 .footer__container__content__col__text {
   max-width: 300px;
   color: $white;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  line-height: 33px;
-  // margin-top: 30px;
-  font-size: 14px;
+
+
+  font-size: $font-normal;
 }
 .footer__container__content__col__text__logo__under {
   max-width: 300px;
   color: $white;
-  font-family: "Montserrat", sans-serif;
-  line-height: 27px;
+
   margin-top: 30px;
-  font-size: 14px;
+  font-size: $font-normal;
 }
 .header__content__logo {
   margin-bottom: 1em;
@@ -4012,8 +4009,6 @@ body {
 .footer__container__content__col__link {
   margin: 0.3em 0;
   color: $white;
-
-  font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
 
@@ -4131,12 +4126,12 @@ body {
 }
 
 .meetus__container__smallThings__left__para {
-  font-size: 18px;
+  font-size: $font-normal;
   width: 100%;
   max-width: 500px;
 }
 .meetus__container__smallThings__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -4208,13 +4203,13 @@ body {
 
 .meetus__container__sub__right__info,
 .meetus__container__sub__right__para {
-  font-size: 18px;
+  font-size: $font-normal;
   width: 100%;
   max-width: 500px;
   color: white;
 }
 .meetus__container__sub__right__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 0.5em;
   color: white;
@@ -4223,7 +4218,7 @@ body {
   color: $primary;
 }
 .meetus__container__stories__para {
-  font-size: 18px;
+  font-size: $font-normal;
   margin-bottom: 3em;
 }
 
@@ -4244,7 +4239,7 @@ body {
 }
 
 .meetus__container__stories__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 0.3em;
 }
@@ -4283,7 +4278,7 @@ body {
 }
 
 .meetus__container__stories__card__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: bold;
   text-align: center;
   margin-bottom: 0.5em;
@@ -4304,7 +4299,7 @@ body {
 }
 
 .portfolio__section__container__heading {
-  font-size: 35px;
+  font-size: $font-large;
   font-weight: 600;
   margin-bottom: 1em;
   color: $black;
@@ -4312,7 +4307,7 @@ body {
 
 .portfolio__section__container__heading__text {
   max-width: 50%;
-  line-height: 22px;
+  
 }
 
 .portfolio__section__container__buttons {
@@ -4361,7 +4356,7 @@ body {
   width: 100%;
   max-width: 700px;
   text-align: center;
-  line-height: 25px;
+ 
 }
 
 .portfolio__section__container__text__content__entry__background {
@@ -4371,7 +4366,7 @@ body {
 }
 
 .portfolio__section__container__text__content__entry__span {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 500;
 }
 
@@ -4405,7 +4400,7 @@ body {
   margin-right: 1em;
   display: flex;
   align-items: center;
-  font-size: 32px;
+  font-size: $font-large;
   font-weight: 600;
 }
 
@@ -4418,7 +4413,7 @@ body {
   margin-right: 1em;
   display: flex;
   align-items: center;
-  font-size: 32px;
+  font-size: $font-large;
   font-weight: 600;
 }
 
@@ -4427,7 +4422,7 @@ body {
 }
 
 .june_main_container_first_container_title {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 0.5em;
   margin-top: 3em;
@@ -4461,7 +4456,7 @@ body {
   stroke: $primary;
 }
 .june_third_container_first_box__colomns__heading__text {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   font-weight: bold;
 }
 .june_third_container_first_box__colomns__contents {
@@ -4477,7 +4472,7 @@ body {
   margin-right: 1em;
 }
 .june_third_container_first_box__colomns__contents__text {
-  font-size: 18px;
+  font-size: $font-sub-heading;
 }
 
 .june_third_container_first_box__colomns__heading__svg svg {
@@ -4546,13 +4541,13 @@ body {
 
 .june_second_container_box_title_one {
   margin-bottom: 1em;
-  font-size: 18px;
+  font-size: $font-sub-heading;
   font-weight: bold;
 }
 
 .june_second_container_title_two {
   font-weight: unset;
-  font-size: 16px;
+  font-size: $font-normal;
 }
 
 .june_second_container_box_svg_one svg {
@@ -4624,7 +4619,7 @@ body {
 .june_third_container_title {
   text-align: center;
   padding-top: 2em;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 0.5em;
   color: $white;
@@ -4659,7 +4654,7 @@ body {
 
 .june_third_container_first_box_svg_one {
   padding-left: 1em;
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: bold;
 }
 
@@ -4669,13 +4664,13 @@ body {
 
 .june_third_container_second_box_container_svg_one {
   padding-left: 1rem;
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: bold;
 }
 
 .june_third_container_third_box_container_svg_one {
   padding-left: 1rem;
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: bold;
 }
 
@@ -4870,7 +4865,7 @@ body {
 }
 .june_fourth_container_box_title span {
   color: $primary;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
 }
 
@@ -4880,7 +4875,7 @@ body {
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
 }
 
@@ -4960,7 +4955,7 @@ body {
   height: 100%;
   margin-top: -10px;
   width: 100%;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
 }
 
@@ -5130,7 +5125,7 @@ body {
   width: 100%;
 }
 .ios__mobile__share__your__idea__section__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 600;
   width: 100%;
   text-align: center;
@@ -5173,7 +5168,7 @@ body {
 }
 .ios__mobile__page__container__ios__company__heading {
   width: 100%;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 600;
   color: $white;
   text-align: center;
@@ -5195,7 +5190,7 @@ body {
   padding: 0em 1em;
 }
 .ios__mobile__page__one__step__ios__development__section__left__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -5219,7 +5214,7 @@ body {
 }
 
 .ios__mobile__page__one__step__swift__development__section__right__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: bold;
   margin-bottom: 2em;
 }
@@ -5247,7 +5242,7 @@ body {
   padding: 0em 1em;
 }
 .ios__ios__development__swift__development__section__right__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -5259,7 +5254,7 @@ body {
 .ios__development__tangible__col__one__heading {
   width: 100%;
   text-align: center;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 600;
 }
 .ios__development__tangible__col__one__heading span {
@@ -5278,7 +5273,7 @@ body {
   flex-direction: column;
 }
 .ios__development__tangible__col__two__header__weeks {
-  font-size: 28px;
+  font-size: $font-heading;
   font-weight: 600;
   margin-bottom: 0.5em;
 }
@@ -5307,7 +5302,7 @@ body {
   flex-direction: column;
 }
 .ios__development__tangible__col__three__header__weeks {
-  font-size: 28px;
+  font-size: $font-heading;
   font-weight: 600;
   margin-bottom: 0.5em;
 }
@@ -5326,7 +5321,7 @@ body {
   width: 60%;
 }
 .ios__development__native__ios__container__heading {
-  font-size: 30px;
+  font-size: $font-large;
   margin-bottom: 0.4em;
   font-weight: 600;
 }
@@ -5348,7 +5343,7 @@ body {
   transition: 300ms ease-in-out;
 }
 .ios__development__native__impressive__performance__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 600;
 }
 .ios__development__native__impressive__performance__content {
@@ -5426,7 +5421,7 @@ body {
   color: $primary;
 }
 .ios__development__native__sound__promising__heading {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   font-weight: 600;
 }
 .ios__development__native__sound__promising__button {
@@ -5512,7 +5507,7 @@ body {
 }
 .ecommerce__screen__container__selling__heading {
   text-align: center;
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 2em;
@@ -5541,7 +5536,7 @@ body {
   color: $black;
   margin-bottom: 3em;
   font-weight: 500;
-  font-size: 18px;
+  font-size: $font-sub-heading;
   width: 100%;
   max-width: 500px;
 }
@@ -5550,7 +5545,7 @@ body {
 }
 .ecommerce__screen__container__recent__work__heading {
   text-align: center;
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 2em;
@@ -5652,7 +5647,7 @@ body {
   margin-bottom: 6em;
 }
 .ecommerce__screen__container__services__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $white;
   font-weight: bold;
   margin-bottom: 2em;
@@ -5682,7 +5677,7 @@ body {
   height: 50px;
 }
 .ecommerce__screen__container__services__content__entry__heading {
-  font-size: 18px;
+  font-size: $font-normal;
   color: inherit;
   font-weight: bold;
   margin: 1em 0;
@@ -5701,7 +5696,7 @@ body {
   margin-bottom: 2em;
 }
 .ecommerce__screen__container__process__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 2em;
@@ -5786,7 +5781,7 @@ body {
   margin-bottom: 2em;
 }
 .ecommerce__screen__container__work__code__header__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -5845,7 +5840,7 @@ body {
   width: 40%;
 }
 .ios__development__native__cross__plat__development__container__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 600;
   margin-bottom: 1em;
 }
@@ -5878,7 +5873,7 @@ body {
   flex-direction: column;
 }
 .android__development__our__stack__container__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   text-align: center;
   padding-bottom: 1em;
@@ -5893,7 +5888,7 @@ body {
 }
 
 .android__development__our__stack__container__col__one__heading {
-  font-size: 23px;
+  font-size: $font-heading;
   color: #189366;
   margin-top: 1.5em;
   align-items: center;
@@ -5938,7 +5933,7 @@ body {
   background-color: $black;
 }
 .about__ceo__message__right__heading {
-  font-size: 25px;
+  font-size: $font-heading;
   color: $white;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -5949,7 +5944,7 @@ body {
 }
 ::marker {
   color: $white;
-  font-size: 20px;
+  font-size: $font-sub-heading;
 }
 .about__ceo__message__right__info {
   color: $white;
@@ -5970,7 +5965,7 @@ body {
   margin-bottom: 5em;
 }
 .about__core__values__header__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -6020,7 +6015,7 @@ body {
   height: 40px;
 }
 .about__core__values__content__entry__heading {
-  font-size: 18px;
+  font-size: $font-normal;
   font-weight: bold;
   margin: 0.5em 0em;
 }
@@ -6068,7 +6063,7 @@ body {
   align-items: center;
 }
 .about__key__difference__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 2em;
   text-align: center;
@@ -6113,7 +6108,7 @@ body {
   height: 30px;
 }
 .about__key__difference__content__col__entry__header__heading {
-  font-size: 18px;
+  font-size: $font-normal;
   color: $black;
   font-weight: bold;
 }
@@ -6159,7 +6154,7 @@ body {
   padding: 0em 2em;
 }
 .container__feature__col__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -6189,7 +6184,7 @@ body {
   transition: 300ms ease-in-out;
 }
 .container__feature__col__entry__heading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   color: $black;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -6209,7 +6204,7 @@ body {
   margin-bottom: 3em;
 }
 .pricing__fitted__team__header__heading {
-  font-size: 30px;
+  font-size:  $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -6247,12 +6242,12 @@ body {
   margin: 1em;
 }
 .pricing__fitted__team__content__entry__heading {
-  font-size: 22px;
+  font-size: $font-heading;
   color: $primary;
   font-weight: bold;
 }
 .pricing__fitted__team__content__entry__sub__heading {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   color: $black;
   font-weight: bold;
 }
@@ -6283,7 +6278,7 @@ body {
   margin: 0em auto;
 }
 .staff__talent__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $black;
   font-weight: bold;
   margin-bottom: 1em;
@@ -6292,13 +6287,13 @@ body {
   color: $primary;
 }
 .staff__talent__sub__heading {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   color: $primary;
   font-weight: bold;
   margin-bottom: 1em;
 }
 .staff__talent__sub__heading__one {
-  font-size: 18px;
+  font-size: $font-normal;
   width: 60%;
   margin-bottom: 1em;
 }
@@ -6325,7 +6320,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 1em;
-  font-size: 14px;
+  font-size: $font-normal;
 }
 .staff__talent__features__entry svg {
   margin-right: 1em;
@@ -6346,7 +6341,7 @@ body {
   padding: 2em;
 }
 .blog__greenbox__container__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   text-align: center;
 }
@@ -6381,7 +6376,7 @@ body {
   color: $white;
 }
 .how__we__do__section__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   text-align: center;
 }
@@ -6389,7 +6384,7 @@ body {
   color: $primary;
 }
 .how__we__do__section__subheading {
-  font-size: 16px;
+  font-size: $font-sub-heading;
   margin: 1em 0;
   text-align: center;
 }
@@ -6402,7 +6397,7 @@ body {
   margin-top: 3em;
 }
 .how__we__do__section__card__heading {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   font-weight: bold;
   margin-bottom: 1em;
 }
@@ -6411,7 +6406,7 @@ body {
   margin: 0.5em;
 }
 .how__we__do__section__card__detail__line__text {
-  font-size: 16px;
+  font-size: $font-normal;
   margin-left: 0.5em;
 }
 .how__we__do__section__card__detail__line__svg {
@@ -6426,7 +6421,7 @@ body {
   margin: 2em auto;
 }
 .Custome__methodologies__section__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2em;
@@ -6483,12 +6478,12 @@ body {
   padding: 2em;
 }
 .Custome__methodologies__section__detail__card__heading {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
 .Custome__methodologies__section__detail__card__line {
-  font-size: 16px;
+  font-size: $font-normal
 }
 .Custome__methodologies__section__detail__card__line::before {
   content: "";
@@ -6506,7 +6501,7 @@ body {
   padding: 2em 4em;
 }
 .blockchain__whysection__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 600;
   color: $black;
   text-align: center;
@@ -6530,7 +6525,7 @@ body {
   background-color: rgba(13, 110, 74, 0.1);
 }
 .blockchain__whysection__servicecard__heading {
-  font-size: 18px;
+  font-size: $font-sub-heading;
   font-weight: bold;
   color: $black;
   margin: 1em 0em;
@@ -6554,7 +6549,7 @@ body {
   background-color: $black;
 }
 .blockchain__servicessection__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 600;
   margin-bottom: 2em;
   color: $white;
@@ -6583,7 +6578,7 @@ body {
 }
 
 .blockchain__servicessection__servicecard__heading {
-  font-size: 16px;
+  font-size: $font-normal;
   font-weight: bold;
   color: $black;
   margin-bottom: 1em;
@@ -6639,7 +6634,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .blockchain__ready__text {
-  font-size: 22px;
+  font-size: $font-sub-heading;
   color: $white;
   font-weight: bolder;
 }
@@ -6669,12 +6664,12 @@ body {
   width: 100%;
 }
 .blockchain__worksection__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
 .blockchain__worksection__heading__two {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 0.5em;
   width: 100%;
@@ -6699,7 +6694,7 @@ body {
   width: 50%;
 }
 .blockchain__worksection__heading__text {
-  font-size: 16px;
+  font-size: $font-normal;
 }
 .blockchain__worksection__text__subtext {
   display: flex;
@@ -6762,7 +6757,7 @@ body {
 .blockchain__techstack__container__heading {
   text-align: center;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
 }
 
@@ -6797,7 +6792,7 @@ body {
   outline: none;
   color: $white;
   border: 1px solid $primary;
-  font-size: 16px;
+  font-size: $font-normal;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -6821,7 +6816,7 @@ body {
   padding: 2em;
 }
 .WHYS__main__container__left__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   margin-bottom: 3em;
   position: relative;
@@ -6843,12 +6838,12 @@ body {
   position: absolute;
 }
 .WHYS__main__container__left__subHeading {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   color: $primary;
   margin-bottom: 1em;
 }
 .WHYS__main__container__left__text {
-  font-size: 16px;
+  font-size: $font-normal;
 }
 .WHYS__main__container__right {
   width: 50%;
@@ -7132,7 +7127,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 600;
   margin-bottom: 1em;
   text-align: center;
@@ -7141,7 +7136,7 @@ body {
   width: 100%;
 }
 .Staff__automation__a__modern__solution__to__scaling__container__heading {
-  font-size: 18px;
+  font-size: $font-normal;
   max-width: 750px;
   margin-bottom: 2em;
 }
@@ -7241,7 +7236,7 @@ body {
   margin: 0em auto;
 }
 .faq__section__content__heading {
-  font-size: 30px;
+  font-size: $font-large;
   color: $white;
   font-weight: bold;
   margin-bottom: 1em;
@@ -7255,7 +7250,7 @@ body {
   flex-direction: column;
 }
 .faq__section__content__entry__heading {
-  font-size: 16px;
+  font-size: $font-normal;
   color: $white;
   border: 1px solid $primary;
   border-radius: 5px;
@@ -7270,7 +7265,7 @@ body {
   background-color: $primaryDark;
 }
 .faq__section__content__entry__info {
-  font-size: 14px;
+  font-size: $font-normal;
   color: $white;
   margin-bottom: 1em;
 }
@@ -7566,7 +7561,7 @@ body {
   }
   .june_main_container_first_container_title {
     position: sticky;
-    font-size: 20px;
+    font-size: $font-sub-heading;
     position: sticky;
   }
   .about__teams {
@@ -7764,7 +7759,7 @@ body {
   .container__jumbotron__left__heading {
     text-align: center;
     max-width: 700px;
-    font-size: 30px;
+    font-size: $font-large;
   }
   .container__jumbotron__left__info {
     text-align: center;
@@ -7962,17 +7957,17 @@ body {
   }
   .careers__wrapper__overlay__left {
     width: 100%;
-    font-size: 30px;
+    font-size: $font-large;
   }
   .careers__wrapper__overlay__left:hover {
-    font-size: 30px;
+    font-size: $font-large;
   }
   .careers__wrapper__overlay__right {
     width: 100%;
-    font-size: 30px;
+    font-size: $font-large;
   }
   .careers__wrapper__overlay__right:hover {
-    font-size: 30px;
+    font-size: $font-large;
   }
   .careers__wrapper__overlay__right__svgtop {
     top: -300px;
@@ -8059,7 +8054,7 @@ body {
     padding: 0 0;
   }
   .container__emerging__technologies__heading__main {
-    font-size: 30px;
+    font-size: $font-large;
   }
   .container__emerging__technologies__section {
     justify-content: center;
@@ -8089,7 +8084,7 @@ body {
     width: 120px;
   }
   .container__jumbotron__left__heading {
-    font-size: 30px;
+    font-size: $font-large;
   }
 
   .container__services {
@@ -8153,7 +8148,7 @@ body {
     text-align: start;
   }
   .container__emerging__technologies__heading__main {
-    font-size: 30px;
+    font-size: $font-large;
     justify-content: flex-start;
   }
   .container__web__dev__solution__left__row__img {
@@ -8512,7 +8507,7 @@ body {
     padding: 0 2em;
   }
   .about__key__different__sec__contanier__heading div {
-    font-size: 30px;
+    font-size: $font-large;
     font-weight: 700;
     margin-bottom: 1em;
   }
@@ -8552,7 +8547,7 @@ body {
   text-align: center;
 }
 .customsoft_first_container_svg span {
-  font-size: 25px;
+  font-size: $font-heading;
   font-weight: 600;
   padding-left: 0.5em;
 }
@@ -8560,7 +8555,7 @@ body {
   color: $primary;
 }
 .customsoft_second_container_svg span {
-  font-size: 25px;
+  font-size: $font-heading;
   font-weight: 600;
   padding-left: 0.5em;
 }
@@ -8570,7 +8565,7 @@ body {
   justify-content: center;
   padding-left: 5em;
 
-  font-size: 15px;
+  font-size: $font-normal;
 }
 .customsoft_first_container_button {
   padding-left: 6em;
@@ -8585,7 +8580,7 @@ body {
 
 .learn_more {
   text-decoration: none;
-  font-size: 15px;
+  font-size: $font-normal;
   font-weight: 600;
   padding-right: 7px;
   color: $primary;
@@ -8611,7 +8606,7 @@ body {
   width: 100%;
   padding-left: 5em;
   padding-top: 1em;
-  font-size: 15px;
+  font-size: $font-normal;
 }
 .Andriod__and__ios__boxes {
   background-color: $black;
@@ -8636,7 +8631,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 650;
   color: $white;
 }
@@ -8654,7 +8649,7 @@ body {
   width: 500px;
   padding-top: 2em;
   font-weight: 400;
-  font-size: 15px;
+  font-size: $font-normal;
 }
 .customsoft_third_container_first_box_svg {
   display: flex;
@@ -8707,7 +8702,7 @@ body {
   color: $white;
 }
 .customsoft_third_container_first_box_start span {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 700;
   padding-left: 7px;
 }
@@ -8747,7 +8742,7 @@ body {
   margin-top: 2em;
 }
 .customsoft_third_container_second_box span {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 700;
   padding-left: 7px;
 }
@@ -8764,7 +8759,7 @@ body {
   color: $white;
 }
 .customsoft_third_container_third_box span {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 700;
   padding-left: 7px;
 }
@@ -8792,7 +8787,7 @@ body {
 .customsoft_fourth_container_first_title {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 650;
   padding-top: 2em;
 }
@@ -8830,7 +8825,7 @@ body {
   justify-content: space-around;
 }
 .customsoft_fourth_container_first_box_one {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 500;
   padding-bottom: 1em;
   color: $primary;
@@ -9009,7 +9004,7 @@ body {
   padding: 3em;
 }
 .customesoft__why__section__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: bold;
   text-align: center;
   margin-bottom: 0.5em;
@@ -9019,11 +9014,11 @@ body {
 }
 .customesoft__why__section__subheading {
   display: flex;
-  font-size: 16px;
+  font-size: $font-normal;
   text-align: center;
 }
 .customsoft_five_container_first_box_content {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 600;
   width: 300px;
   padding-top: 1.5em;
@@ -9033,7 +9028,7 @@ body {
   padding-top: 1.5em;
 }
 .customsoft_five_container_second_box_content {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 600;
   width: 300px;
   padding-top: 1.5em;
@@ -9043,7 +9038,7 @@ body {
   padding-top: 1.5em;
 }
 .customsoft_five_container_third_box_content {
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 600;
   width: 300px;
   padding-top: 1.5em;
@@ -9053,7 +9048,7 @@ body {
   padding-top: 1.5em;
 }
 .customsoft_five_container_four_box_content {
-  font-size: 20px;
+  font-size: $font-normal;
   font-weight: 600;
   width: 300px;
   padding-top: 1.5em;
@@ -9095,7 +9090,7 @@ body {
   color: $white;
 }
 .service__startup__main__container__first__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 600;
   text-align: center;
   width: 100%;
@@ -9158,7 +9153,7 @@ body {
   align-items: center;
 }
 .tangible_results_left_heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 500;
 
   width: 100%;
@@ -9169,12 +9164,12 @@ body {
   text-align: start;
 }
 .tangible_results_right_sub_heading {
-  font-size: 45px;
+  font-size: $font-large;
   font-weight: 600;
   color: $primary;
 }
 .tangible_results_right_para {
-  font-size: 20px;
+  font-size: $font-normal;
 }
 
 .tangible_results_right_contant {
@@ -9189,7 +9184,7 @@ body {
   width: 30%;
 }
 .hot__offers__section__heade {
-  font-size: 16px;
+  font-size: $font-normal;
   font-weight: bold;
   margin: 0.5em 0;
   text-align: center;
@@ -9227,7 +9222,7 @@ body {
   color: $primary;
 }
 .scaleup__startup__card__label {
-  font-size: 16px;
+  font-size: $font-normal;
   font-weight: bold;
   margin: 0.5em 0;
   text-align: center;
@@ -9434,7 +9429,7 @@ body {
     padding-left: 5em;
   }
   .highly__customer__main__container__heading__content {
-    font-size: 20px !important;
+    font-size: $font-sub-heading !important;
   }
   .highly__customer__main__second__container {
     padding: 2em 0em;
@@ -9567,7 +9562,7 @@ body {
   }
 }
 .highly__customer__main__container__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 700;
   margin-bottom: 2em;
 }
@@ -9604,7 +9599,7 @@ body {
   margin-top: 1em;
 }
 .highly__customer__main__first__container__jira__container__heading {
-  font-size: 25px;
+  font-size: $font-heading;
   font-weight: 500;
 }
 
@@ -9627,14 +9622,14 @@ body {
 }
 
 .highly__customer__main__container__heading__content {
-  font-size: 28px;
+  font-size: $font-heading;
   padding: 2em;
   width: 99.2%;
   font-weight: 500;
 }
 .highly__customer__main__first__container__jira__container__content {
   margin-top: 1em;
-  font-size: 17px;
+  font-size: $font-normal;
   width: 100%;
 }
 .highly__customer__main__container {
@@ -9644,7 +9639,7 @@ body {
   padding-left: 1em;
   padding-right: 1em;
   color: $primary;
-  font-size: 25px;
+  font-size: $font-heading;
   font-weight: 800;
 }
 .one {
@@ -9703,7 +9698,7 @@ body {
   background-color: $primary;
 }
 .Android__and__ios__box__one__heading {
-  font-size: 25px;
+  font-size: $font-heading;
   font-weight: 600;
   width: 100%;
 }
@@ -9716,7 +9711,7 @@ body {
   margin-top: 2em;
 }
 .Android__and__ios__box__two__heading {
-  font-size: 25px;
+  font-size: $font-heading;
   font-weight: 600;
 }
 .Android__and__ios__box__two__heading span {
@@ -9800,12 +9795,12 @@ body {
   color: #189366;
 }
 .graphic__design__essence__container {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 600;
   text-align: center;
 }
 .graphic__design__essence__container__content {
-  font-size: 15px;
+  font-size: $font-normal;
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
@@ -9828,7 +9823,7 @@ body {
   margin-bottom: 4em;
 }
 .graphic__design__essence__container__skills__heading {
-  font-size: 30px;
+  font-size: $font-large;
   font-weight: 600;
 }
 .graphic__design__essence__container__image {
@@ -9875,7 +9870,7 @@ body {
   margin: 0 auto;
 }
 .graphic__design__essence__container__we__offer__heading {
-  font-size: 30px;
+  font-size:  $font-large;
   font-weight: 600;
   max-width: 1440px;
   width: 60%;
@@ -9884,7 +9879,7 @@ body {
   margin-bottom: 0.5em;
 }
 .graphic__design__essence__container__we__offer__content {
-  font-size: 15px;
+  font-size: $font-normal;
   width: 60%;
   max-width: 1440px;
   margin-bottom: 2em;
@@ -9905,7 +9900,7 @@ body {
 .blockchain__whysection__servicecard__svg__content {
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: $font-sub-heading;
   font-weight: 600;
 }
 .blockchain__whysection__servicecard__svg__content svg {
