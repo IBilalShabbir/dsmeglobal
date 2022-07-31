@@ -695,6 +695,7 @@ body {
   padding: 7em 0em;
   padding-bottom: 3em;
   position: relative;
+  width: 100%;
 }
 .services__main__container__content__wrapper__card::after {
   position: absolute;
@@ -721,7 +722,8 @@ body {
   flex-direction: row-reverse;
 }
 .services__main__container__content__wrapper__card__svg {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   margin-right: 3em;
 }
 .services__main__container__content__wrapper__card:nth-child(even)
@@ -7100,6 +7102,12 @@ body {
     .services__startup__card__icon::after {
     display: none;
   }
+  .services__main__container__right {
+    display: none;
+  }
+  .services__main__container__left {
+    margin-right: 0em;
+  }
 }
 .Staff__automation__a__modern__solution__to__scaling {
   width: 100%;
@@ -7621,9 +7629,6 @@ body {
     width: 100%;
     padding-right: 0;
   }
-  .services__main__container__content__wrapper__card {
-    width: calc(33% - 2em);
-  }
   .work__section__content__project__image__wrapper {
     width: 60%;
   }
@@ -7813,6 +7818,18 @@ body {
   .container__emerging__technologies__section__entry__data {
     padding: 0 2em;
   }
+  .services__main__container__content__wrapper__card {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .services__main__container__content__wrapper__card__svg {
+    margin-right: 0em !important;
+    margin-bottom: 5em !important;
+  }
+  .services__main__container__content__wrapper__card__content {
+    text-align: center;
+    align-items: center;
+  }
 }
 @media (max-width: 850px) {
   .container__services__right {
@@ -7860,9 +7877,6 @@ body {
   .customer__center__development__section__container {
     max-width: 1500px;
     margin: 0 auto;
-  }
-  .services__main__container__content__wrapper__card {
-    width: calc(50% - 2em);
   }
   .work__section__content__project {
     flex-direction: column;
@@ -8106,9 +8120,6 @@ body {
   }
   .services__main__container {
     padding: 2em;
-  }
-  .services__main__container__content__wrapper__card {
-    width: 100%;
   }
   .container__stats {
     padding: 2em;
