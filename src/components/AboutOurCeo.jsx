@@ -2,7 +2,7 @@ import React from "react";
 import { Fade, Zoom } from "react-reveal";
 import ceo from "../assets/ceo.webp";
 
-export function AboutOurCeo({}) {
+export function AboutOurCeo() {
   return (
     <div className="about__ceo__message">
       <div className="about__ceo__message__left">

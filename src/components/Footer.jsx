@@ -139,8 +139,8 @@ export default function Footer() {
                   transform="translate(1.5 1.5)"
                   fill="none"
                   stroke="#fff"
-                  stroke-miterlimit="10"
-                  stroke-width="7"
+                  strokeMiterlimit="10"
+                  strokeWidth="7"
                 />
               </svg>
             </a>

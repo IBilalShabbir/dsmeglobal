@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { fetcher, getText } from "../utils/functions";
+import { fetcher, getText, replacePngWithWebp } from "../utils/functions";
 import useSWR from "swr";
 import { Fade, Zoom } from "react-reveal";
 
@@ -43,8 +43,8 @@ export function BlogSection() {
                   <img
                     loading="lazy"
                     src={
-                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                      blog.image
+                      import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                      replacePngWithWebp(blog.image)
                     }
                     alt={blog.title}
                     className="blog__card__img"

@@ -8233,7 +8233,7 @@ body {
     padding-bottom: 4em;
   }
 }
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .meetus__container__stories__card__container {
     flex-wrap: wrap;
   }
@@ -8241,9 +8241,12 @@ body {
     width: 48%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .meetus__container__smallThings__content__container {
     flex-direction: column;
+  }
+  .header__active .header__content__nav__entry__content {
+    color: $black;
   }
   .meetus__container__smallThings__heading {
     margin: 3rem 0;

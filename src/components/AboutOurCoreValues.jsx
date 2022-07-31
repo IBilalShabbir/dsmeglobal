@@ -1,7 +1,7 @@
 import React from "react";
 import { CoreValueEntry } from "../components/CoreValueEntry";
 
-export function AboutOurCoreValues({}) {
+export function AboutOurCoreValues() {
   return (
     <div className="about__core__values">
       <div className="about__core__values__header">

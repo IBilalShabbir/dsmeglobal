@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-export function EcommerceSelling({}) {
+export function EcommerceSelling() {
   return (
     <div className="ecommerce__screen__container__selling">
       <div className="ecommerce__screen__container__selling__heading">

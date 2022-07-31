@@ -57,7 +57,6 @@ export default function Header({ light }) {
           className="header__content__logo"
         >
           <img
-            loading="lazy"
             src={isScrolling ? logoDark : light ? logo : logoDark}
             alt="logo"
           />
@@ -70,7 +69,7 @@ export default function Header({ light }) {
               }
             }}
           >
-            <Nav navigate={navigate} />
+            <Nav navigate={navigate} setIsNavOpen={setIsNavOpen} />
           </OutsideClickHandler>
         ) : null}
         <div className="header__content__button">
@@ -79,6 +78,7 @@ export default function Header({ light }) {
             onClick={() => {
               setIsNavOpen(!isNavOpen);
             }}
+            title="Menu"
           >
             {isNavOpen ? (
               <X size={20} color="currentColor" />

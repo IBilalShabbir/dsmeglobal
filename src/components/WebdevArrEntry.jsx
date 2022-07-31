@@ -4,11 +4,12 @@ export function WebdevArrEntry({ label, svg, selected, setSelected }) {
       <div className="container__emerging__technologies__section__wrapper">
         <input
           type="radio"
-          name="name"
+          name="container__emerging__technologies__section__wrapper"
           defaultChecked={selected === label}
           onChange={() => {
             setSelected(label);
           }}
+          title={label}
           className="container__emerging__technologies__section__wrapper__input"
         />
         <div className="container__emerging__technologies__section__entry">

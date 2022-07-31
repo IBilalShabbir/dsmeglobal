@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Portfolio__section from "../components/Portfolio__section";
+import { replacePngWithWebp } from "../utils/functions";
 
 export default function PortfolioDetail() {
   const [data, setData] = useState([]);
@@ -22,8 +23,8 @@ export default function PortfolioDetail() {
           <img
             loading="lazy"
             src={
-              "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-              data.banner
+              import.meta.env.VITE_CLOUDNAIRY_API_URL +
+              replacePngWithWebp(data.banner)
             }
             alt={data.title}
             className="portfolio__home__section__right"

@@ -2,7 +2,7 @@ import React from "react";
 import { Fade } from "react-reveal";
 import { KeyDifferenceEntry } from "../components/KeyDifferenceEntry";
 
-export function AboutKeyDifferences({}) {
+export function AboutKeyDifferences() {
   return (
     <div className="about__key__difference">
       <div className="about__key__difference__heading">

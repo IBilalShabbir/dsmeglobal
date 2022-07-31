@@ -40,3 +40,9 @@ export function parseDate(date) {
 }
 
 export const fetcher = (url) => axios.get(url).then((res) => res.data);
+
+export function replacePngWithWebp(image) {
+  if (image !== undefined) {
+    return image.replace(".png", ".webp");
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { PromiseEntry } from "../components/PromiseEntry";
 
-export function AboutOurPromise({}) {
+export function AboutOurPromise() {
   return (
     <div className="about__core__values">
       <div className="about__core__values__header">

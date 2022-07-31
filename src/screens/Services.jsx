@@ -3,7 +3,7 @@ import ServicesCard from "../components/ServicesSectionCard";
 import servicesbanner from "../assets/servicesbanner.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 
-export default function Services({}) {
+export default function Services() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);

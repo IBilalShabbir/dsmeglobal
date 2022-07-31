@@ -22,6 +22,8 @@ export function ServicesCard({ data }) {
               "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
               data.logo
             }
+            width={70}
+            height={70}
             alt={data.title}
           />
         </div>

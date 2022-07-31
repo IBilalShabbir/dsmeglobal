@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { replacePngWithWebp } from "../utils/functions";
 
 export default function Portfolio__section({ data }) {
   return (
@@ -48,8 +49,8 @@ export default function Portfolio__section({ data }) {
             <img
               loading="lazy"
               src={
-                "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                data.image
+                import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                replacePngWithWebp(data.image)
               }
               alt={data.title}
               className="portfolio__section__images__entry"
@@ -60,8 +61,8 @@ export default function Portfolio__section({ data }) {
               <img
                 loading="lazy"
                 src={
-                  "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                  item
+                  import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                  replacePngWithWebp(item)
                 }
                 alt={item}
                 className="portfolio__section__images__entry"

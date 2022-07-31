@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { fetcher } from "../utils/functions";
+import { fetcher, replacePngWithWebp } from "../utils/functions";
 import useSWR from "swr";
 import { Fade, Reveal } from "react-reveal";
 
@@ -56,8 +56,8 @@ export function ClientsSection() {
                     <img
                       loading="lazy"
                       src={
-                        "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                        client.icon
+                        import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                        replacePngWithWebp(client.icon)
                       }
                       alt={client.icon}
                     />

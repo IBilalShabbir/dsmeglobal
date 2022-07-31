@@ -1,6 +1,6 @@
 import React from "react";
 
-export function WhychoosenativeiOSappdevelopment({}) {
+export function WhychoosenativeiOSappdevelopment() {
   return (
     <div className="ios__development__native__ios">
       <div className="ios__development__native__ios__container">

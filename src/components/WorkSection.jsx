@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { fetcher } from "../utils/functions";
+import { fetcher, replacePngWithWebp } from "../utils/functions";
 import useSWR from "swr";
 import { Fade, Zoom } from "react-reveal";
 
@@ -19,6 +19,7 @@ export function WorkSection() {
         setProject(item);
       });
   }, [data]);
+
   return (
     <>
       {
@@ -33,8 +34,8 @@ export function WorkSection() {
                   <img
                     loading="lazy"
                     src={
-                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                      project.image
+                      import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                      replacePngWithWebp(project.image)
                     }
                     alt={project.title}
                     className="work__section__content__project__image"

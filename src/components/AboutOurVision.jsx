@@ -2,7 +2,7 @@ import React from "react";
 import { Fade, Zoom } from "react-reveal";
 import visionSvg from "../assets/visionSvg.svg";
 
-export function AboutOurVision({}) {
+export function AboutOurVision() {
   return (
     <div
       className="our__vision__section__about__us"

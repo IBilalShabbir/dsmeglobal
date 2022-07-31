@@ -1,7 +1,7 @@
-import React from 'react';
-import EcomerenceServiceEntry from '../components/EcomerenceServiceEntry';
+import React from "react";
+import EcomerenceServiceEntry from "../components/EcomerenceServiceEntry";
 
-export function EcommerceServices({}) {
+export function EcommerceServices() {
   return (
     <div className="ecommerce__screen__container__outside">
       <div className="ecommerce__screen__container">
@@ -16,15 +16,18 @@ export function EcommerceServices({}) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  viewBox="0 0 224.561 231.142">
+                  viewBox="0 0 224.561 231.142"
+                >
                   <g
                     id="Group_42"
                     data-name="Group 42"
-                    transform="translate(-290.746 -3575)">
+                    transform="translate(-290.746 -3575)"
+                  >
                     <g
                       id="Group_29"
                       data-name="Group 29"
-                      transform="translate(0 -25)">
+                      transform="translate(0 -25)"
+                    >
                       <path
                         id="Path_110"
                         data-name="Path 110"
@@ -59,15 +62,18 @@ export function EcommerceServices({}) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  viewBox="0 0 205.574 218.29">
+                  viewBox="0 0 205.574 218.29"
+                >
                   <g
                     id="Group_43"
                     data-name="Group 43"
-                    transform="translate(-704.798 -3584)">
+                    transform="translate(-704.798 -3584)"
+                  >
                     <g
                       id="Group_23"
                       data-name="Group 23"
-                      transform="translate(76.993 131)">
+                      transform="translate(76.993 131)"
+                    >
                       <g id="shopify" transform="translate(632.265 3458.232)">
                         <path
                           id="Path_108"
@@ -100,15 +106,18 @@ export function EcommerceServices({}) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  viewBox="0 0 247.369 247.789">
+                  viewBox="0 0 247.369 247.789"
+                >
                   <g
                     id="Group_44"
                     data-name="Group 44"
-                    transform="translate(-1070.34 -3567)">
+                    transform="translate(-1070.34 -3567)"
+                  >
                     <g
                       id="Group_24"
                       data-name="Group 24"
-                      transform="translate(184.707 -8.491)">
+                      transform="translate(184.707 -8.491)"
+                    >
                       <path
                         id="Path_113"
                         data-name="Path 113"
@@ -137,15 +146,18 @@ export function EcommerceServices({}) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  viewBox="0 0 208.004 208.005">
+                  viewBox="0 0 208.004 208.005"
+                >
                   <g
                     id="Group_45"
                     data-name="Group 45"
-                    transform="translate(-277.411 -3969)">
+                    transform="translate(-277.411 -3969)"
+                  >
                     <g
                       id="Group_27"
                       data-name="Group 27"
-                      transform="translate(0 -0.201)">
+                      transform="translate(0 -0.201)"
+                    >
                       <path
                         id="Path_115"
                         data-name="Path 115"
@@ -168,15 +180,18 @@ export function EcommerceServices({}) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  viewBox="0 0 228.258 195.525">
+                  viewBox="0 0 228.258 195.525"
+                >
                   <g
                     id="Group_46"
                     data-name="Group 46"
-                    transform="translate(-723.708 -3976)">
+                    transform="translate(-723.708 -3976)"
+                  >
                     <g
                       id="Group_26"
                       data-name="Group 26"
-                      transform="translate(0 14.076)">
+                      transform="translate(0 14.076)"
+                    >
                       <path
                         id="Path_116"
                         data-name="Path 116"
@@ -223,15 +238,18 @@ export function EcommerceServices({}) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  viewBox="0 0 216.675 216.776">
+                  viewBox="0 0 216.675 216.776"
+                >
                   <g
                     id="Group_47"
                     data-name="Group 47"
-                    transform="translate(-1101.034 -3969)">
+                    transform="translate(-1101.034 -3969)"
+                  >
                     <g
                       id="Group_25"
                       data-name="Group 25"
-                      transform="translate(7.996 8.185)">
+                      transform="translate(7.996 8.185)"
+                    >
                       <path
                         id="Path_121"
                         data-name="Path 121"
@@ -296,15 +314,18 @@ export function EcommerceServices({}) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  viewBox="0 0 207.396 208.428">
+                  viewBox="0 0 207.396 208.428"
+                >
                   <g
                     id="Group_48"
                     data-name="Group 48"
-                    transform="translate(-293.204 -4326.53)">
+                    transform="translate(-293.204 -4326.53)"
+                  >
                     <g
                       id="Group_30"
                       data-name="Group 30"
-                      transform="translate(27.435)">
+                      transform="translate(27.435)"
+                    >
                       <path
                         id="Path_132"
                         data-name="Path 132"
@@ -314,7 +335,8 @@ export function EcommerceServices({}) {
                       <g
                         id="Group_28"
                         data-name="Group 28"
-                        transform="translate(265.769 4326.53)">
+                        transform="translate(265.769 4326.53)"
+                      >
                         <path
                           id="Path_129"
                           data-name="Path 129"

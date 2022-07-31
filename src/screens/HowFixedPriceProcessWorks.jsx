@@ -1,6 +1,6 @@
 import React from "react";
 
-export function HowFixedPriceProcessWorks({}) {
+export function HowFixedPriceProcessWorks() {
   return (
     <div className="pricing__process__container">
       <div className="pricing__process__container__content">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
 
-export function AboutOurTeam({}) {
+export function AboutOurTeam() {
   const team = [
     {
       image: "Abdullah_Backend_Developer_szxgvm",

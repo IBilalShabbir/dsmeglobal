@@ -2,7 +2,7 @@ import React from "react";
 import { Fade, Zoom } from "react-reveal";
 import missionSvg from "../assets/missionSvg.svg";
 
-export function AboutOurMission({}) {
+export function AboutOurMission() {
   return (
     <div
       className="our__mission__section__about__us"

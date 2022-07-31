@@ -1,7 +1,7 @@
 import React from "react";
 import EcomereceProjectsCard from "../components/EcomereceProjectsCard";
 
-export function EcommerceRecentWork({}) {
+export function EcommerceRecentWork() {
   return (
     <div className="ecommerce__screen__container__recent__work">
       <div className="ecommerce__screen__container__recent__work__heading">

@@ -106,15 +106,10 @@ export function HomeJumbotron({
             imgs
               .filter((item, i) => i === taglineNo)
               .map((item) => (
-                <img
-                  loading="lazy"
-                  src={item}
-                  alt={item}
-                  key={JSON.stringify(item)}
-                />
+                <img src={item} alt={item} key={JSON.stringify(item)} />
               ))
           ) : (
-            <img loading="lazy" src={img} alt={img} />
+            <img src={img} alt={img} />
           )}
         </div>
       </Zoom>

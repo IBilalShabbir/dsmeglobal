@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
 import useSWR from "swr";
-import { fetcher } from "../utils/functions";
+import { fetcher, replacePngWithWebp } from "../utils/functions";
 
 export default function ServiceDetails() {
   const [showImage, setShowImage] = useState(false);
@@ -67,8 +67,8 @@ export default function ServiceDetails() {
           <img
             loading="lazy"
             src={
-              "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-              serviceData.image
+              import.meta.env.VITE_CLOUDNAIRY_API_URL +
+              replacePngWithWebp(serviceData.image)
             }
             alt="serviceDetailsImg"
             className="service__details__jumbotron__left__img"

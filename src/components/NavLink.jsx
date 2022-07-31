@@ -1,6 +1,6 @@
 import React from "react";
 
-export function NavLink({ children, to, navigate }) {
+export function NavLink({ children, to, navigate, setIsNavOpen }) {
   return (
     <div className="header__content__nav__entry">
       <input
@@ -12,6 +12,7 @@ export function NavLink({ children, to, navigate }) {
         defaultChecked={window.location.pathname === to}
         onClick={() => {
           navigate(to);
+          setIsNavOpen(false);
         }}
       />
       <div className="header__content__nav__entry__content">{children}</div>

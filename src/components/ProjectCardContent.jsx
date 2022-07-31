@@ -2,6 +2,7 @@ import React from "react";
 import { Fade, Zoom } from "react-reveal";
 
 import { useNavigate } from "react-router-dom";
+import { replacePngWithWebp } from "../utils/functions";
 
 export default function ProjectCardContent({ image, title, data }) {
   const navigate = useNavigate();
@@ -19,8 +20,7 @@ export default function ProjectCardContent({ image, title, data }) {
         <img
           loading="lazy"
           src={
-            "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-            image
+            import.meta.env.VITE_CLOUDNAIRY_API_URL + replacePngWithWebp(image)
           }
           alt="projectImg"
           className="service__details__projects__entry__img"

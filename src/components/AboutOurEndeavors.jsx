@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AboutUsEndveoursPic from "../assets/About__us__endveours.webp";
 
-export function AboutOurEndeavors({}) {
+export function AboutOurEndeavors() {
   return (
     <div className="pricing__fitted__team">
       <div
