@@ -6,7 +6,7 @@ export function AboutOurCeo() {
   return (
     <div className="about__ceo__message">
       <div className="about__ceo__message__left">
-        <Fade>
+        <Fade up>
           <img
             loading="lazy"
             src={ceo}
@@ -16,7 +16,7 @@ export function AboutOurCeo() {
         </Fade>
       </div>
       <div className="about__ceo__message__right">
-        <Fade>
+        <Fade up>
           <div className="about__ceo__message__right__heading">
             Message from our <span>ceo</span>
           </div>

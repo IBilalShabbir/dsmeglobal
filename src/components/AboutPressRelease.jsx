@@ -5,7 +5,7 @@ import pressRelasePic2 from "../assets/pressRelase2.webp";
 import pressRelasePic3 from "../assets/pressRelase3.webp";
 import pressRelasePic4 from "../assets/pressRelase4.webp";
 import pressRelasePic5 from "../assets/pressRelase5.webp";
-import pressRelasePic6 from "../assets/pressRelase6.webp";
+import pressRelasePic6 from "../assets/pressRelase5.webp";
 
 export function AboutPressRelease({ slidesPerView }) {
   return (

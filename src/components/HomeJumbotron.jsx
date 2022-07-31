@@ -27,7 +27,7 @@ export function HomeJumbotron({
 
   return (
     <div className="container__jumbotron" style={{ ...styleImage }}>
-      <Fade>
+      <Fade up>
         <div className="container__jumbotron__left">
           <div
             className="container__jumbotron__left__heading"
@@ -100,7 +100,7 @@ export function HomeJumbotron({
           ) : null}
         </div>
       </Fade>
-      <Fade>
+      <Fade up>
         <div className="container__jumbotron__right">
           {imgs ? (
             imgs

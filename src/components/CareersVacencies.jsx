@@ -14,7 +14,7 @@ export function CareersVacencies({
 }) {
   return (
     <div className="hot__offers__section">
-      <Fade down>
+      <Fade up down>
         <div className="hot__offers__section__text">
           <div className="hot__offers__section__header">
             Open Vacancies{" "}

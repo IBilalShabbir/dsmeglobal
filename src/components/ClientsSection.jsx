@@ -30,7 +30,7 @@ export function ClientsSection() {
   }, []);
   return (
     <div className="container__clients">
-      <Fade>
+      <Fade up>
         <div className="container__clients__left">
           <div className="container__clients__left__heading">
             Our <span>Techonologies</span>

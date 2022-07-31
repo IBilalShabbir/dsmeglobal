@@ -12,7 +12,7 @@ export function QuateSection() {
       <div className="container__stats__wrapper">
         <div className="container__stats__content">
           <div className="container__stats">
-            <Fade>
+            <Fade up>
               <div className="container__stats__left">
                 <div className="container__stats__left__heading">
                   Where business meets <span>cutting-edge technology</span>

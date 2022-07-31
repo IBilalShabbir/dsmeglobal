@@ -8,7 +8,7 @@ export default function BlogsCardContent({ data }) {
   const navigate = useNavigate();
 
   return (
-    <Fade InUp>
+    <Fade up InUp>
       <button
         onClick={() => {
           setTimeout(() => {

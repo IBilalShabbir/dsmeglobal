@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 
 export function ExperitseCard({ label, info, svg }) {
   return (
-    <Fade In>
+    <Fade up In>
       <div className="container__web__dev__experties__content__entry">
         <div className="container__web__dev__experties__content__header">
           {svg}

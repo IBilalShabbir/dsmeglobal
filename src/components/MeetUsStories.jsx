@@ -5,19 +5,19 @@ export function MeetUsStories() {
   return (
     <div className="meetus__container__stories">
       <div className="meetus__container__stories__content">
-        <Fade>
+        <Fade up>
           <div className="meetus__container__stories__heading">
             See our <span>stories</span>
           </div>
         </Fade>
-        <Fade>
+        <Fade up>
           <div className="meetus__container__stories__para">
             Your passion is part of our identity. See how #dsmeglobalpeople
             rock.
           </div>
         </Fade>
         <div className="meetus__container__stories__card__container">
-          <Fade>
+          <Fade up>
             <div className="meetus__container__stories__card">
               <div className="meetus__container__stories__card__image">
                 <img
@@ -36,7 +36,7 @@ export function MeetUsStories() {
               </div>
             </div>
           </Fade>
-          <Fade>
+          <Fade up>
             <div className="meetus__container__stories__card">
               <div className="meetus__container__stories__card__image">
                 <img
@@ -55,7 +55,7 @@ export function MeetUsStories() {
               </div>
             </div>
           </Fade>
-          <Fade>
+          <Fade up>
             <div className="meetus__container__stories__card">
               <div className="meetus__container__stories__card__image">
                 <img

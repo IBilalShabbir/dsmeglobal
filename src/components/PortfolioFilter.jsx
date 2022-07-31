@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 
 export function PortfolioFilter({ title, onChange, defaultChecked }) {
   return (
-    <Fade>
+    <Fade up>
       <div className="blog__page__filter__entry">
         <input
           type="radio"

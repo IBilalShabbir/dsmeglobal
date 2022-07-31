@@ -6,13 +6,13 @@ export function MeetUsSmallThingsBigDifferences() {
   return (
     <div className="meetus__container__smallThings">
       <div className="meetus__container__smallThings__content">
-        <Fade In>
+        <Fade up In>
           <div className="meetus__container__smallThings__heading">
             Small things. <span>Big difference</span>
           </div>
         </Fade>
         <div className="meetus__container__smallThings__content__container">
-          <Fade>
+          <Fade up>
             <div className="meetus__container__smallThings__left">
               <div className="meetus__container__smallThings__left__heading">
                 <span>Agile </span> first
@@ -24,7 +24,7 @@ export function MeetUsSmallThingsBigDifferences() {
             </div>
           </Fade>
           <div className="meetus__container__smallThings__right">
-            <Fade>
+            <Fade up>
               <div className="meetus__container__smallThings__right__image">
                 <img loading="lazy" src={agilefirst} alt="Agile first" />
               </div>

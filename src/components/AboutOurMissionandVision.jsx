@@ -10,7 +10,7 @@ export function AboutOurMissionandVision() {
         <div className="about__page__container__pricing__content">
           <div className="about__page__container__pricing__content__left">
             <img loading="lazy" src={missionSvg} alt="missionSvg" />
-            <Fade>
+            <Fade up>
               <div className="about__page__container__pricing__content__left__heading">
                 Our Mission
               </div>
@@ -26,7 +26,7 @@ export function AboutOurMissionandVision() {
           </div>
           <div className="about__page__container__pricing__content__right">
             <img loading="lazy" src={visionSvg} alt="visionSvg" />
-            <Fade>
+            <Fade up>
               <div className="about__page__container__pricing__content__right__heading">
                 Our Vision
               </div>

@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 
 export function KeyDifferenceEntry({ svg, label, info }) {
   return (
-    <Fade>
+    <Fade up>
       <div className="about__key__difference__content__col__entry">
         <div className="about__key__difference__content__col__entry__header">
           <div className="about__key__difference__content__col__entry__header__icon">

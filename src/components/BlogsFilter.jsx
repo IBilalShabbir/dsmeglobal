@@ -2,7 +2,7 @@ import React from "react";
 import { Fade } from "react-reveal";
 export default function BlogsFilter({ title, onChange, defaultChecked }) {
   return (
-    <Fade>
+    <Fade up>
       <div className="blog__page__filter__entry">
         <input
           type="radio"

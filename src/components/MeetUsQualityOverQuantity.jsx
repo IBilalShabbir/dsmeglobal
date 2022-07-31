@@ -25,7 +25,7 @@ export function MeetUsQualityOverQuantity() {
             }}
           >
             <div className="meetus__container__sub__left">
-              <Fade>
+              <Fade up>
                 <div className="meetus__container__sub__left__image">
                   <img
                     loading="lazy"
@@ -35,7 +35,7 @@ export function MeetUsQualityOverQuantity() {
                 </div>
               </Fade>
             </div>
-            <Fade>
+            <Fade up>
               <div className="meetus__container__sub__right">
                 <div className="meetus__container__sub__right__heading">
                   <span>Quality </span> over quantity
@@ -56,7 +56,7 @@ export function MeetUsQualityOverQuantity() {
           className="meetus__container__sub__content"
           id="meetus__container__sub__content2"
         >
-          <Fade>
+          <Fade up>
             <div className="meetus__container__sub__left">
               <div
                 className="meetus__container__sub__right__heading"
@@ -74,7 +74,7 @@ export function MeetUsQualityOverQuantity() {
             </div>
           </Fade>
           <div className="meetus__container__sub__right">
-            <Fade>
+            <Fade up>
               <div className="meetus__container__sub__left__image">
                 <img
                   loading="lazy"
@@ -93,13 +93,13 @@ export function MeetUsQualityOverQuantity() {
             style={{ padding: "2em 4em" }}
           >
             <div className="meetus__container__sub__left">
-              <Fade>
+              <Fade up>
                 <div className="meetus__container__sub__left__image">
                   <img loading="lazy" src={fouceOn} alt="Fouce on people" />
                 </div>
               </Fade>
             </div>
-            <Fade>
+            <Fade up>
               <div className="meetus__container__sub__right">
                 <div className="meetus__container__sub__right__heading">
                   Focus on <span>people</span>

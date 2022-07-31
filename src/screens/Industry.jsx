@@ -15,13 +15,13 @@ export default function Industry() {
           talk={true}
         />
       </div>
-      <Fade>
+      <Fade up>
         {" "}
         <div className="industry__software__solutions">
           Software solutions for<span>industry leaders</span>
         </div>
       </Fade>
-      <Fade>
+      <Fade up>
         {" "}
         <div className="industry__software__solutions__content">
           Need a software solution that’s right for you? Choose a digital

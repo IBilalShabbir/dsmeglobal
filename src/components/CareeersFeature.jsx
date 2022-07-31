@@ -12,13 +12,13 @@ export function CareeersFeature() {
       }}
     >
       <div className="container__web__dev__experties__header services__startup__third__header">
-        <Fade>
+        <Fade up>
           <div className="container__web__dev__experties__header__heading">
             We’re not just colleagues.
             <span>We’re family</span>
           </div>
         </Fade>
-        <Fade>
+        <Fade up>
           <div className="container__web__dev__experties__header__info">
             DSME Global Links is not just a workplace – it’s a lifestyle, and we
             want each of our team members to get the most out of it

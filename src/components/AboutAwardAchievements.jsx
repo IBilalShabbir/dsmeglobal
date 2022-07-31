@@ -9,12 +9,12 @@ import itrateco from "../assets/itrateco.webp";
 import fastestGrowingApp from "../assets/fastest-growing-app.webp";
 import designrush from "../assets/designrush.webp";
 import designWorkImageMob from "../assets/design-work-image-mob.webp";
-import appfuturaBadge from "../assets/appfutura-badge.webp";
+import appfuturaBadge from "../assets/sdappfutura-badge.webp";
 import softwaredev from "../assets/softwaredev.webp";
 import sdappfuturaBadge from "../assets/sdappfutura-badge.webp";
-import webappusfuturaBadge from "../assets/webappusfutura-badge.webp";
-import webappfuturaBadge from "../assets/webappfutura-badge.webp";
-import topAppPic from "../assets/topapp.webp";
+import webappusfuturaBadge from "../assets/sdappfutura-badge.webp";
+import webappfuturaBadge from "../assets/sdappfutura-badge.webp";
+import softwaredevPic from "../assets/softwaredev.webp";
 
 export function AboutAwardAchievements({
   slidesPerViewLogo,
@@ -100,7 +100,7 @@ export function AboutAwardAchievements({
               <img loading="lazy" src={webappfuturaBadge} alt="Brand Logo" />
             </div>
             <div className="pricing__awards__achievements__slide__logo">
-              <img loading="lazy" src={topAppPic} alt="Brand Logo" />
+              <img loading="lazy" src={softwaredevPic} alt="Brand Logo" />
             </div>
           </SwiperSlide>
           <SwiperSlide>

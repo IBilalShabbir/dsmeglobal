@@ -4,7 +4,7 @@ import { getText, parseDate } from "../utils/functions";
 
 export default function VarcencyCardContent({ item, onApply }) {
   return (
-    <Fade>
+    <Fade up>
       <div className="hot__offers__section__content__entry">
         <div className="hot__offers__section__content__entry__left">
           <div className="hot__offers__section__content__entry__left__heading">

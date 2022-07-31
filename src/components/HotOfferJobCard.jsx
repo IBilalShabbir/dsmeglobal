@@ -4,7 +4,7 @@ import { getText } from "../utils/functions";
 
 export default function HotOfferJobCard({ item, onApply }) {
   return (
-    <Fade>
+    <Fade up>
       <button className="hot__offers__section__content__card" onClick={onApply}>
         <div className="hot__offers__section__content__card__title">
           {item.position}

@@ -20,7 +20,7 @@ export function CareerBanner({ setCareerBanner, setLightHeader }) {
       />
       <div className="careers__wrapper__overlay">
         <Link to="/meet-us" className="careers__wrapper__overlay__left">
-          <Fade>
+          <Fade up>
             meet <span> us</span>
           </Fade>
         </Link>
@@ -42,7 +42,7 @@ export function CareerBanner({ setCareerBanner, setLightHeader }) {
               transform="translate(100 100)"
             />
           </svg>
-          <Fade>
+          <Fade up>
             search <span> jobs</span>
           </Fade>
           <svg

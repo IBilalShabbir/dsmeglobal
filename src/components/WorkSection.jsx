@@ -30,7 +30,7 @@ export function WorkSection() {
           <div className="work__section__content">
             <div className="work__section__content__project">
               <div className="work__section__content__project__image__wrapper">
-                <Fade>
+                <Fade up>
                   <img
                     loading="lazy"
                     src={
@@ -42,7 +42,7 @@ export function WorkSection() {
                   />
                 </Fade>
               </div>
-              <Fade>
+              <Fade up>
                 <div className="work__section__content__project__about">
                   <div className="work__section__content__project__about__heading">
                     <div className="work__section__content__project__about__heading__top">
@@ -80,7 +80,7 @@ export function WorkSection() {
                       }}
                       defaultChecked={i === 0 ? true : false}
                     />
-                    <Fade>
+                    <Fade up>
                       <img
                         loading="lazy"
                         src={

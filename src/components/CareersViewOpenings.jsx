@@ -13,7 +13,7 @@ export function CareersViewOpenings({
   return (
     <div className="hot__offers__section__wrapper">
       <section id="job__section" className="hot__offers__section">
-        <Fade>
+        <Fade up>
           {" "}
           <div className="hot__offers__section__header"> View Openings </div>
         </Fade>

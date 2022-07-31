@@ -95,7 +95,7 @@ export default function Blogs() {
           </div>
         ) : null}
         <div className="blog__greenbox__container">
-          <Fade>
+          <Fade up>
             <div className="blog__greenbox__container__heading">
               Delivering software solutions beyond expectations
             </div>

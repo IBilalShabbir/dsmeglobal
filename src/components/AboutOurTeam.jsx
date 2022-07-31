@@ -191,7 +191,7 @@ export function AboutOurTeam() {
       </div>
       <div className="about__teams__content">
         {team.map((item) => (
-          <Fade>
+          <Fade up>
             <div
               className="about__teams__content__entry"
               key={JSON.stringify(item)}

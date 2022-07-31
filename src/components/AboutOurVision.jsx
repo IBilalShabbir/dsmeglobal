@@ -12,7 +12,7 @@ export function AboutOurVision() {
     >
       <div className="our__vision__section__about__us__content">
         <div className="our__vision__section__about__us__content__right">
-          <Fade>
+          <Fade up>
             <img
               loading="lazy"
               src={visionSvg}
@@ -22,7 +22,7 @@ export function AboutOurVision() {
           </Fade>
         </div>
         <div className="our__vision__section__about__us__content__left">
-          <Fade>
+          <Fade up>
             <div className="feature__section__entry__content__jumbotron__sub__heading">
               Our <span>Vision</span>
             </div>

@@ -11,7 +11,7 @@ export function AboutOurMission() {
       }}
     >
       <div className="our__mission__section__about__us__content">
-        <Fade>
+        <Fade up>
           <div className="our__mission__section__about__us__content__left">
             <div
               className="feature__section__entry__content__jumbotron__sub__heading"
@@ -37,7 +37,7 @@ export function AboutOurMission() {
           </div>
         </Fade>
         <div className="our__mission__section__about__us__content__right">
-          <Fade>
+          <Fade up>
             <img
               loading="lazy"
               src={missionSvg}

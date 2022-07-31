@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 
 export function PricingFeatureEntry({ title, content, icon }) {
   return (
-    <Fade>
+    <Fade up>
       <div className="pricing__feature__entry">
         {icon ? (
           <div className="pricing__feature__entry__icon">{icon}</div>

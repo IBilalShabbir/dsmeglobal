@@ -6,7 +6,7 @@ export function IndustryFeatrues() {
   return (
     <div className="pricing__feature__main ">
       <div className="pricing__feature">
-        <Fade>
+        <Fade up>
           <div className="pricing__feature__entry__reverse">
             <span> Revolutionizing</span> the way business is conducted across
             industries with the latest technology introductions.

@@ -40,7 +40,7 @@ export function ServicesSection() {
   return (
     <>
       <div className="container__services">
-        <Fade>
+        <Fade up>
           <div className="container__services__left">
             <div className="container__services__left__heading">
               A complete enterprise designed to{" "}

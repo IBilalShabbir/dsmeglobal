@@ -8,7 +8,7 @@ export function AboutAgileDevelopmentProcess() {
       <div className="about__agile__process__heading">
         Our <span>Development</span> Process
       </div>
-      <Fade>
+      <Fade up>
         <img
           loading="lazy"
           className="about__agile__process__img"

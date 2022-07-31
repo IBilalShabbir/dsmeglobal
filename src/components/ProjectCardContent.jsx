@@ -8,7 +8,7 @@ export default function ProjectCardContent({ image, title, data }) {
   const navigate = useNavigate();
 
   return (
-    <Fade>
+    <Fade up>
       <button
         className="service__details__projects__entry"
         onClick={() => {

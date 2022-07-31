@@ -11,7 +11,7 @@ export function CareersFilters({ setDeparment, setSearchQuery }) {
   );
   return (
     <div className="hot__offers__section__content__filters">
-      <Fade>
+      <Fade up>
         <input
           list="departments"
           name="department"
@@ -31,7 +31,7 @@ export function CareersFilters({ setDeparment, setSearchQuery }) {
           ))
         )}
       </datalist>
-      <Fade>
+      <Fade up>
         <input
           type="text"
           placeholder="Search"

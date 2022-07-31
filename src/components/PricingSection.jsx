@@ -24,7 +24,7 @@ export function PricingSection() {
       >
         <div className="container__pricing__content__left">
           <img loading="lazy" src={customizations} alt="customizations" />
-          <Fade>
+          <Fade up>
             <div className="container__pricing__content__left__heading">
               Build your dedicated teams
             </div>
@@ -58,7 +58,7 @@ export function PricingSection() {
         </div>
         <div className="container__pricing__content__right">
           <img loading="lazy" src={products} alt="products" />
-          <Fade>
+          <Fade up>
             <div className="container__pricing__content__right__heading">
               Fixed Price Project
             </div>
