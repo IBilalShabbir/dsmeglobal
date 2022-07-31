@@ -37,10 +37,7 @@ export function ClientsSection() {
           </div>
           <div className="container__clients__left__info">
             We solve business challenges with cutting-edge technology and
-            data-driven research. Looking to introduce a state-of-the-art
-            digital product into your business strategy? Not sure which
-            programming language is the right fit for your next app? We are here
-            to help you choose a tech solution that will work best!
+            data-driven research.
           </div>
         </div>
       </Fade>
