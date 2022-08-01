@@ -4,18 +4,16 @@ import { ScaleUpYourTeamForStaffCard } from "../components/ScaleUpYourTeamForSta
 export function CorporateModelForStaff() {
   return (
     <div
-      className="service__startup__main__container__second max_width__scale__up__container"
+      className="service__startup__main__container__second "
       style={{
         paddingTop: "0em",
-      }}
-    >
+      }}>
       <div className="max__width__container">
         <div
-          className="service__startup__main__container__first__heading max_width__scale__up__container__heading"
+          className="service__startup__main__container__first__heading "
           style={{
             paddingBottom: "1em",
-          }}
-        >
+          }}>
           Cooperation <span>Models</span>
         </div>
         <div className="service__startup__main__container__second__cards__container">
@@ -26,13 +24,11 @@ export function CorporateModelForStaff() {
                 width="81.588"
                 height="81.919"
                 viewBox="0 0 81.588 81.919"
-                fill="currentColor"
-              >
+                fill="currentColor">
                 <g
                   id="Group_12072"
                   data-name="Group 12072"
-                  transform="translate(-835.518 -2565.609)"
-                >
+                  transform="translate(-835.518 -2565.609)">
                   <g id="Group_12069" data-name="Group 12069">
                     <path
                       id="Path_11585"
@@ -85,13 +81,11 @@ export function CorporateModelForStaff() {
                 width="62.795"
                 height="55.858"
                 viewBox="0 0 62.795 60.858"
-                fill="currentColor"
-              >
+                fill="currentColor">
                 <g
                   id="Group_12070"
                   data-name="Group 12070"
-                  transform="translate(-961.783 -2579.019)"
-                >
+                  transform="translate(-961.783 -2579.019)">
                   <path
                     id="Path_11564"
                     data-name="Path 11564"
@@ -184,13 +178,11 @@ export function CorporateModelForStaff() {
                 width="126.128"
                 height="104.173"
                 viewBox="0 0 126.128 104.173"
-                fill="currentColor"
-              >
+                fill="currentColor">
                 <g
                   id="Group_12071"
                   data-name="Group 12071"
-                  transform="translate(-1247.004 -613.916)"
-                >
+                  transform="translate(-1247.004 -613.916)">
                   <path
                     id="Path_11360"
                     data-name="Path 11360"

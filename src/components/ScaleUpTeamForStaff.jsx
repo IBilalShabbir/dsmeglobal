@@ -4,18 +4,16 @@ import { ScaleUpYourTeamForStaffCard } from "../components/ScaleUpYourTeamForSta
 export function ScaleUpTeamForStaff() {
   return (
     <div
-      className="service__startup__main__container__second  max_width__scale__up__container"
+      className="service__startup__main__container__second "
       style={{
         paddingTop: "0em",
-      }}
-    >
+      }}>
       <div className="max__width__container ">
         <div
-          className="service__startup__main__container__first__heading max_width__scale__up__container__heading"
+          className="service__startup__main__container__first__heading"
           style={{
             paddingBottom: "1em",
-          }}
-        >
+          }}>
           Scale-up Your Team the <span>Way You Need</span>
         </div>
         <div className="service__startup__main__container__second__cards__container">
@@ -28,13 +26,11 @@ export function ScaleUpTeamForStaff() {
                 viewBox="0 0 79.078 74.143"
                 fill="currentcolor"
                 stroke="currentcolor"
-                strokeWidth="2"
-              >
+                strokeWidth="2">
                 <g
                   id="Group_12061"
                   data-name="Group 12061"
-                  transform="translate(0 0)"
-                >
+                  transform="translate(0 0)">
                   <path
                     id="Path_11468"
                     data-name="Path 11468"
@@ -86,8 +82,7 @@ export function ScaleUpTeamForStaff() {
                 width="72.25"
                 height="72.197"
                 viewBox="0 0 75.25 84.197"
-                fill="currentColor"
-              >
+                fill="currentColor">
                 <path
                   id="Path_11492"
                   data-name="Path 11492"
@@ -116,8 +111,7 @@ export function ScaleUpTeamForStaff() {
                 viewBox="0 0 72.227 72.194"
                 fill="currentColor"
                 stroke="currentColor"
-                strokeWidth={2}
-              >
+                strokeWidth={2}>
                 <path
                   id="Path_11484"
                   data-name="Path 11484"

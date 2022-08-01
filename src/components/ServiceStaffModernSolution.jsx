@@ -9,9 +9,10 @@ export function ServiceStaffModernSolution() {
           <div className="Staff__automation__a__modern__solution__to__scaling__heading__one">
             A modern solution to
           </div>
-          <div className="Staff__automation__a__modern__solution__to__scaling__heading__two">
+          <span className="Staff__automation__a__modern__solution__to__scaling__heading__two">
+            {" "}
             scaling
-          </div>
+          </span>
         </div>
         <div className="Staff__automation__a__modern__solution__to__scaling__container__heading">
           Engineering teams today need to move and scale fast. DSME Global Links

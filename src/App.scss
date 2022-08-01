@@ -6943,23 +6943,24 @@ body {
 .Staff__automation__a__modern__solution__to__scaling__heading {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+
   align-items: center;
   font-size: $font-large;
   font-weight: 600;
   margin-bottom: 1em;
   text-align: center;
 }
-.Staff__automation__a__modern__solution__to__scaling__heading__one {
-  width: 100%;
-}
+
 .Staff__automation__a__modern__solution__to__scaling__container__heading {
   font-size: $font-normal;
   max-width: 750px;
+  text-align: center;
   margin-bottom: 2em;
+  margin: 0 auto;
 }
 .Staff__automation__a__modern__solution__to__scaling__heading__two {
   color: $primary;
+  margin-left: 0.3em;
 }
 .staff__talent__buttons button {
   background-color: $primary;
@@ -7669,8 +7670,8 @@ body {
   flex-wrap: wrap;
 }
 .services__startup__card {
-  height: fit-content;
   width: 23%;
+  margin: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7744,9 +7745,11 @@ body {
 }
 
 .scaleup__startup__card {
-  height: fit-content;
+  // height: fit-content;
   width: 23%;
   display: flex;
+  color: black;
+  background-color: rgba(13, 110, 74, 0.1);
   flex-direction: column;
   align-items: center;
   padding: 1em;
@@ -7759,6 +7762,9 @@ body {
   border: 1px solid $primary;
   transition: 400 ease-in-out;
   background-color: $primary;
+}
+.scaleup__startup__card:hover > * {
+  color: $white;
 }
 .scaleup__startup__card:hover .scaleup__startup__card__icon svg {
   color: white;
@@ -7773,12 +7779,15 @@ body {
   font-weight: bold;
   margin: 0.5em 0;
   text-align: center;
-  color: $white;
+  // color: $white;
+  color: black;
 }
 .scaleup__startup__card__info {
   text-align: center;
   width: 100%;
-  color: $white;
+  // color: $white;
+  color: black;
+
   min-height: 100%;
 }
 
@@ -7794,7 +7803,6 @@ body {
 .why__work__with__us__card {
   min-width: 48%;
   align-items: start;
-  height: fit-content;
   padding: 2em;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgb(0 0 0 / 4%);
@@ -7802,7 +7810,11 @@ body {
   background-color: rgba(13, 110, 74, 0.1);
   border: 1px solid transparent;
 }
+.services__startup__card__label {
+  font-size: $font-sub-heading;
 
+  margin-bottom: 1em;
+}
 .why__work__with__us__card__info {
   text-align: start;
 }
@@ -8275,6 +8287,9 @@ body {
   }
   .graphic__design__essence__container__image {
     width: 100%;
+  }
+  .scaleup__startup__card {
+    width: 48%;
   }
 }
 @media (max-width: 875px) {
@@ -10022,6 +10037,9 @@ body {
   }
   .pricing__transparent__execution__content__entry__box__icons__middle {
     width: 100%;
+  }
+  .scaleup__startup__card {
+    width: 99%;
   }
 }
 @media (max-width: 1195px) {
