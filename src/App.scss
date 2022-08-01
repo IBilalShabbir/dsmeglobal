@@ -6519,6 +6519,10 @@ body {
   margin: 1%;
   background-color: rgba(13, 110, 74, 0.1);
 }
+.blockchain__whysection__servicecard__icon svg {
+  fill: $primary;
+  stroke: $primary;
+}
 .blockchain__whysection__servicecard__heading {
   font-size: $font-sub-heading;
   font-weight: bold;
@@ -6531,9 +6535,21 @@ body {
 .blockchain__whysection__servicecard:hover {
   border: 1px solid $primary;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: $primary;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  transition: all 0.5s ease-in-out;
+}
+.blockchain__whysection__servicecard:hover > * {
+  stroke: $white;
+  fill: $white;
+  color: $white;
+}
+.blockchain__whysection__servicecard:hover
+  .blockchain__whysection__servicecard__icon
+  svg {
+  stroke: $white;
+  fill: $white;
 }
 .blockchain__servicessection__main {
   background-color: $black;
@@ -7849,12 +7865,12 @@ body {
 }
 .highly__customer__main__first__container__jira__container__heading {
   width: 100%;
-}
-
-.highly__customer__main__first__container__jira__container__heading {
-  text-align: center;
+  font-size: $font-sub-heading;
+  color: black;
+  display: flex;
   align-items: center;
 }
+
 .highly__customer__main__first__container__jira__container__heading svg {
   margin-right: 0.5em;
 }
@@ -7868,7 +7884,25 @@ body {
   margin: 1em;
 }
 .highly__customer__main__first__container__jira__container:hover {
-  background-color: rgba(13, 110, 74, 0.1);
+  background-color: $primary;
+  transition: all 0.5s ease;
+}
+.highly__customer__main__first__container__jira__container:hover
+  .highly__customer__main__first__container__jira__container__heading
+  svg {
+  fill: $white;
+  stroke: $white;
+  color: $white;
+  transition: all 0.5s ease;
+}
+.highly__customer__main__first__container__jira__container:hover
+  .highly__customer__main__first__container__jira__container__heading {
+  color: $white;
+  transition: all 0.5s ease;
+}
+.highly__customer__main__first__container__jira__container:hover
+  .highly__customer__main__first__container__jira__container__content {
+  color: $white;
   transition: all 0.5s ease;
 }
 
@@ -7885,6 +7919,7 @@ body {
   margin-top: 1em;
   font-size: $font-normal;
   width: 100%;
+  color: black;
 }
 .highly__customer__main__container {
   padding: 0em 1em 0em 0em;
