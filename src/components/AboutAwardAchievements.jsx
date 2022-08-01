@@ -124,6 +124,11 @@ export function AboutAwardAchievements({
       <div className="highly__customer__main__container__heading">
         Highly Customer Centric <span>Development Process</span>
       </div>
+      <div className="highly__customer__main__container__heading__content">
+        We build glass wall visibility on all our projects using various
+        communication channels and Project Management tools to ensure clients
+        stay updated about the progress of their projects at all times.
+      </div>
       <div className="highly__customer__main__container">
         <div className="highly__customer__main__first__container">
           <div className="highly__customer__main__first__container__jira__container">
@@ -316,18 +321,6 @@ export function AboutAwardAchievements({
             <div className="highly__customer__main__first__container__jira__container__content">
               On every sprint end, we give you a live demo of work, done during
               that week.
-            </div>
-          </div>
-        </div>
-        <div className="highly__customer__main__second__container">
-          <div className="highly__customer__main__second__container__interior">
-            <div className="highly__customer__main__container__heading__content">
-              <span>{"//"}</span>
-              We build glass wall visibility on all our projects using various
-              communication channels and Project Management tools to ensure
-              clients stay updated about the progress of their projects at all
-              times.
-              <span className="one">{"//"}</span>
             </div>
           </div>
         </div>
