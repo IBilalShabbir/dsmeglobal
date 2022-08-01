@@ -37,7 +37,7 @@ export default function Industry() {
         <div className="tangible_results">
           <div className="tangible_results_left">
             <div className="tangible_results_left_heading">
-              Tangible results, right on schedule
+              Tangible results,right on schedule
             </div>
             <div className="tangible_results_left_para">
               Engineering teams today need to move and scale fast. DSME Global

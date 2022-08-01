@@ -3141,6 +3141,7 @@ body {
   position: sticky;
   z-index: 999;
   width: 100%;
+  background-color: $black;
 }
 
 .container__web__dev__experience {
@@ -9160,23 +9161,22 @@ body {
 .tangible_results {
   width: 100%;
   height: 60%;
-  padding: 2em;
+  padding: 4em;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
-  text-align: center;
   max-width: 1440px;
   align-items: center;
 }
 .tangible_results_left_heading {
   font-size: $font-large;
   font-weight: 500;
-
   width: 100%;
 }
 .tangible_results_left_para {
-  width: 78%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 1em;
+  padding-left: 0;
   text-align: start;
 }
 .tangible_results_right_sub_heading {
@@ -9190,14 +9190,16 @@ body {
 
 .tangible_results_right_contant {
   flex-direction: column;
+  flex: 1;
+  text-align: center;
 }
 .tangible_results_right {
   display: flex;
-  width: 70%;
+  width: 60%;
   justify-content: space-around;
 }
 .tangible_results_left {
-  width: 30%;
+  width: 40%;
 }
 .hot__offers__section__heade {
   font-size: $font-normal;
@@ -9614,13 +9616,11 @@ body {
   margin-top: 1em;
 }
 .highly__customer__main__first__container__jira__container__heading {
-  font-size: $font-heading;
-  font-weight: 500;
   width: 100%;
 }
 
 .highly__customer__main__first__container__jira__container__heading {
-  display: flex;
+  text-align: center;
   align-items: center;
 }
 .highly__customer__main__first__container__jira__container__heading svg {
