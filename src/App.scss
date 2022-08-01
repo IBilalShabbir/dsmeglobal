@@ -755,6 +755,10 @@ body {
   font-size: $font-normal;
   max-width: 600px;
 }
+.pricing__success__stories__slide__info {
+  word-wrap: break-word;
+  word-break: break-all;
+}
 .services__main__container__content__wrapper__card__link {
   color: $primary;
   width: fit-content;

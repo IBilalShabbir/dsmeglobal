@@ -1,9 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import StoryPic from "../assets/fw-airlines.webp";
-import brandLogo from "../assets/6.webp";
+import { fetcher, replacePngWithWebp } from "../utils/functions";
+import useSWR from "swr";
 
 export function PricingDedicatedSuccessStories({ slidesPerView }) {
+  const { data } = useSWR(
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_success_stories`,
+    fetcher,
+    { suspense: true }
+  );
   return (
     <div className="pricing__fitted__team">
       <div
@@ -16,66 +21,35 @@ export function PricingDedicatedSuccessStories({ slidesPerView }) {
       </div>
       <div className="pricing__fitted__team__content">
         <Swiper slidesPerView={slidesPerView} autoplay>
-          <SwiperSlide>
-            <div className="pricing__success__stories__slide">
-              <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={StoryPic} alt="Story" />
+          {data.map((item) => (
+            <SwiperSlide>
+              <div className="pricing__success__stories__slide">
+                <div className="pricing__success__stories__slide__image">
+                  <img
+                    loading="lazy"
+                    src={
+                      import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                      replacePngWithWebp(item.image)
+                    }
+                    alt="Story"
+                  />
+                </div>
+                <div className="pricing__success__stories__slide__logo">
+                  <img
+                    loading="lazy"
+                    src={
+                      import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                      replacePngWithWebp(item.logo)
+                    }
+                    alt="Brand Logo"
+                  />
+                </div>
+                <div className="pricing__success__stories__slide__info">
+                  {item.description}
+                </div>
               </div>
-              <div className="pricing__success__stories__slide__logo">
-                <img loading="lazy" src={brandLogo} alt="Brand Logo" />
-              </div>
-              <div className="pricing__success__stories__slide__info">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repellat exercitationem architecto error a sequi officiis nam
-                excepturi repudiandae aliquid ipsam.
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="pricing__success__stories__slide">
-              <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={StoryPic} alt="Story" />
-              </div>
-              <div className="pricing__success__stories__slide__logo">
-                <img loading="lazy" src={brandLogo} alt="Brand Logo" />
-              </div>
-              <div className="pricing__success__stories__slide__info">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repellat exercitationem architecto error a sequi officiis nam
-                excepturi repudiandae aliquid ipsam.
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="pricing__success__stories__slide">
-              <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={StoryPic} alt="Story" />
-              </div>
-              <div className="pricing__success__stories__slide__logo">
-                <img loading="lazy" src={brandLogo} alt="Brand Logo" />
-              </div>
-              <div className="pricing__success__stories__slide__info">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repellat exercitationem architecto error a sequi officiis nam
-                excepturi repudiandae aliquid ipsam.
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="pricing__success__stories__slide">
-              <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={StoryPic} alt="Story" />
-              </div>
-              <div className="pricing__success__stories__slide__logo">
-                <img loading="lazy" src={brandLogo} alt="Brand Logo" />
-              </div>
-              <div className="pricing__success__stories__slide__info">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repellat exercitationem architecto error a sequi officiis nam
-                excepturi repudiandae aliquid ipsam.
-              </div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
