@@ -11,9 +11,9 @@ import designrush from "../assets/designrush.webp";
 import designWorkImageMob from "../assets/design-work-image-mob.webp";
 import appfuturaBadge from "../assets/sdappfutura-badge.webp";
 import softwaredev from "../assets/softwaredev.webp";
-import sdappfuturaBadge from "../assets/sdsdappfutura-badge.webp";
+import sdappfuturaBadge from "../assets/sdappfutura-badge.webp";
 import webappusfuturaBadge from "../assets/sdappfutura-badge.webp";
-import webappfuturaBadge from "../assets/websdappfutura-badge.webp";
+import webappfuturaBadge from "../assets/sdappfutura-badge.webp";
 import softwaredevPic from "../assets/softwaredev.webp";
 
 export function AwardsAchievements({
