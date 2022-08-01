@@ -799,11 +799,17 @@ export default function ServicesAndroid() {
             </div>
             <div className="ios__development__native__ios__container__right">
               <div className="ios__development__native__ios__container__right__card">
-                <a href="#">Unique user experience</a>
-                <a href="#">Native Android features</a>
-                <a href="#">Dependability and support</a>
-                <a href="#">Stability and performance</a>
-                <a href="#">In-house transfer options</a>
+                <a href="#Unique-user-experience">Unique user experience</a>
+                <a href="#Native-Android-features">Native Android features</a>
+                <a href="#Dependability-and-support">
+                  Dependability and support
+                </a>
+                <a href="#Stability-and-performance">
+                  Stability and performance
+                </a>
+                <a href="#In-house-transfer-options">
+                  In-house transfer options
+                </a>
               </div>
             </div>
           </div>

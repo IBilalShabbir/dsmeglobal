@@ -5400,13 +5400,8 @@ body {
   border-radius: 50px;
   top: 5px;
 }
-.ios__development__native__ios__container__right__card:hover {
-  background-color: $primary;
-}
-.ios__development__native__ios__container__right__card:hover
-  .ios__development__native__ios__container__right__card::after {
-  background-color: #ffffff;
-  color: $white;
+.ios__development__native__ios__container__right__card a:hover {
+  color: $primary;
 }
 .ios__development__native__sound__promising {
   width: 100%;
@@ -7984,6 +7979,7 @@ body {
 }
 .Android__and__ios__box__one:hover .svg__Android__and__ios__box__two svg {
   fill: $white;
+  color: $white;
 }
 .Agile__discovery {
   padding-top: 2em;
@@ -9127,7 +9123,7 @@ body {
   .Android__and__ios__box__one {
     min-width: 100%;
     margin-bottom: 1em;
-    padding-bottom: 0;
+    padding-bottom: 2em;
   }
   .Android__and__ios__box__two {
     min-width: 100%;

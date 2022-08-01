@@ -36,7 +36,10 @@ export function WhychoosenativeiOSappdevelopment() {
                 </g>
               </svg>
 
-              <div className="ios__development__native__impressive__performance__heading">
+              <div
+                className="ios__development__native__impressive__performance__heading"
+                id="Impressive-performance"
+              >
                 Impressive performance
               </div>
             </div>
@@ -324,7 +327,7 @@ export function WhychoosenativeiOSappdevelopment() {
         </div>
         <div className="ios__development__native__ios__container__right">
           <div className="ios__development__native__ios__container__right__card">
-            <a href="#">Impressive performance</a>
+            <a href="#Impressive-performance">Impressive performance</a>
             <a href="#">Platform-specific features</a>
             <a href="#">Dependability and support</a>
             <a href="#">Future-proof and scalable</a>
