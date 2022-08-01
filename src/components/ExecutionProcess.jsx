@@ -5,7 +5,9 @@ export function ExecutionProcess() {
     <div className="june_second_main_container">
       <div className="june_second_main_all_container">
         <div className="june_third_container">
-          <div className="june_third_container_title">Execution <span>Process</span> </div>
+          <div className="june_third_container_title">
+            Execution <span>Process</span>{" "}
+          </div>
           <div className="june_third_container_para">
             We work with you to make appealing sites, impactful applications,
             and modern enterprise systems individuals love. Through your vision
@@ -21,7 +23,7 @@ export function ExecutionProcess() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="#ffff"
+                  fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -50,7 +52,6 @@ export function ExecutionProcess() {
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                
                   stroke="currentcolor"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -116,7 +117,7 @@ export function ExecutionProcess() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="#ffff"
+                  fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -206,7 +207,7 @@ export function ExecutionProcess() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="#ffff"
+                  fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"

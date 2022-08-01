@@ -125,25 +125,144 @@ export default function ServiceCustomSoft() {
             </div>
           </div>
         </div>
-        <div style={{ background: "#242424", width: "100%" }}>
-          <div className="customsoft_third_container">
-            <div className="customsoft_third_container_headind">
-              For All{" "}
-              <span className="customsoft_third_container_headindspan">
-                {" "}
-                Business Sizes
-              </span>
-            </div>
-            <div className="customsoft_third_container_content">
-              <span>
-                We empower innovative startups, rapidly expanding businesses and
-                enterprises to build amazing custom applications
-              </span>
-            </div>
-            <div className="customsoft_third_container_first_box_main">
-              <div className="customsoft_third_container_first_box">
-                <div className="customsoft_third_container_first_box_first_main">
-                  <div className="customsoft_third_container_first_box_start">
+
+        <div className="customsoft_third_container">
+          <div className="customsoft_third_container_headind">
+            For All{" "}
+            <span className="customsoft_third_container_headindspan">
+              {" "}
+              Business Sizes
+            </span>
+          </div>
+          <div className="customsoft_third_container_content">
+            <span>
+              We empower innovative startups, rapidly expanding businesses and
+              enterprises to build amazing custom applications
+            </span>
+          </div>
+          <div className="customsoft_third_container_first_box_main">
+            <div className="customsoft_third_container_first_box">
+              <div className="customsoft_third_container_first_box_first_main">
+                <div className="customsoft_third_container_first_box_start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-shield"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <span>Enterprise</span>
+                </div>
+                <div className="customsoft_third_container_first_box_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>
+                    Fixed Price Custom Software Development for your enterprise.
+                  </span>
+                </div>
+                <div className="customsoft_third_container_first_box_svg_one">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>
+                    Professional consulting and assistance with Enterprise
+                    Mobility strategies.
+                  </span>
+                </div>
+                <div className="customsoft_third_container_first_box_svg_two">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Dedicated teams for long-term engagements.</span>
+                </div>
+                <div className="customsoft_third_container_first_box_svg_three">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Legacy app upgrade and enhancements. </span>
+                </div>
+                <div className="customsoft_third_container_first_box_svg_fourth">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>
+                    Migration to newer platforms, integration with third-party
+                    products.
+                  </span>
+                </div>
+              </div>
+
+              <div className="customsoft_third_container_first_box_svg_main_text">
+                <div className="customsoft_third_container_second_box_main">
+                  <div className="customsoft_third_container_second_box">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="40"
@@ -154,34 +273,16 @@ export default function ServiceCustomSoft() {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="feather feather-shield"
+                      className="feather feather-shopping-cart"
                     >
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <circle cx="9" cy="21" r="1"></circle>
+                      <circle cx="20" cy="21" r="1"></circle>
+                      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
                     </svg>
-                    <span>Enterprise</span>
+                    <span>SMBs</span>
                   </div>
+
                   <div className="customsoft_third_container_first_box_svg">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="feather feather-check-circle"
-                    >
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span>
-                      Fixed Price Custom Software Development for your
-                      enterprise.
-                    </span>
-                  </div>
-                  <div className="customsoft_third_container_first_box_svg_one">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -198,8 +299,28 @@ export default function ServiceCustomSoft() {
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
                     <span>
-                      Professional consulting and assistance with Enterprise
-                      Mobility strategies.
+                      Provide Dedicated Development Teams for short & long term
+                      engagements.
+                    </span>
+                  </div>
+                  <div className="customsoft_third_container_first_box_svg_one">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="feather feather-check-circle"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>
+                      Flexible fixed price engagement depending on your needs.
                     </span>
                   </div>
                   <div className="customsoft_third_container_first_box_svg_two">
@@ -218,7 +339,9 @@ export default function ServiceCustomSoft() {
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
-                    <span>Dedicated teams for long-term engagements.</span>
+                    <span>
+                      Solutions for existing Business Process Automation.
+                    </span>
                   </div>
                   <div className="customsoft_third_container_first_box_svg_three">
                     <svg
@@ -236,7 +359,7 @@ export default function ServiceCustomSoft() {
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
-                    <span>Legacy app upgrade and enhancements. </span>
+                    <span>Ability to carry out rescue missions.</span>
                   </div>
                   <div className="customsoft_third_container_first_box_svg_fourth">
                     <svg
@@ -255,242 +378,118 @@ export default function ServiceCustomSoft() {
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
                     <span>
-                      Migration to newer platforms, integration with third-party
-                      products.
+                      Hands-on domain experience and value-added industry
+                      knowledge.
                     </span>
                   </div>
                 </div>
+              </div>
 
-                <div className="customsoft_third_container_first_box_svg_main_text">
-                  <div className="customsoft_third_container_second_box_main">
-                    <div className="customsoft_third_container_second_box">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="40"
-                        height="40"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="feather feather-shopping-cart"
-                      >
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                      </svg>
-                      <span>SMBs</span>
-                    </div>
-
-                    <div className="customsoft_third_container_first_box_svg">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="feather feather-check-circle"
-                      >
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                      </svg>
-                      <span>
-                        Provide Dedicated Development Teams for short & long
-                        term engagements.
-                      </span>
-                    </div>
-                    <div className="customsoft_third_container_first_box_svg_one">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="feather feather-check-circle"
-                      >
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                      </svg>
-                      <span>
-                        Flexible fixed price engagement depending on your needs.
-                      </span>
-                    </div>
-                    <div className="customsoft_third_container_first_box_svg_two">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="feather feather-check-circle"
-                      >
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                      </svg>
-                      <span>
-                        Solutions for existing Business Process Automation.
-                      </span>
-                    </div>
-                    <div className="customsoft_third_container_first_box_svg_three">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="feather feather-check-circle"
-                      >
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                      </svg>
-                      <span>Ability to carry out rescue missions.</span>
-                    </div>
-                    <div className="customsoft_third_container_first_box_svg_fourth">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="feather feather-check-circle"
-                      >
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                      </svg>
-                      <span>
-                        Hands-on domain experience and value-added industry
-                        knowledge.
-                      </span>
-                    </div>
-                  </div>
+              <div className="customsoft_third_container_third_box_main">
+                <div className="customsoft_third_container_third_box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-flag"
+                  >
+                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                    <line x1="4" y1="22" x2="4" y2="15"></line>
+                  </svg>
+                  <span>Startups</span>
                 </div>
-
-                <div className="customsoft_third_container_third_box_main">
-                  <div className="customsoft_third_container_third_box">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="feather feather-flag"
-                    >
-                      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-                      <line x1="4" y1="22" x2="4" y2="15"></line>
-                    </svg>
-                    <span>Startups</span>
-                  </div>
-                  <div className="customsoft_third_container_first_box_svg">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="feather feather-check-circle"
-                    >
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span>
-                      Agile Discovery Workshop the first step to building a
-                      successful tech startup.
-                    </span>
-                  </div>
-                  <div className="customsoft_third_container_first_box_svg_one">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="feather feather-check-circle"
-                    >
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span>
-                      Flexible & scalable Dedicated Teams capacity to rapidly
-                      grow the development team.
-                    </span>
-                  </div>
-                  <div className="customsoft_third_container_first_box_svg_two">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="feather feather-check-circle"
-                    >
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span>
-                      Flexible fixed price engagement - enable rapid delivery of
-                      a fully verified MVP.
-                    </span>
-                  </div>
-                  <div className="customsoft_third_container_first_box_svg_three">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="feather feather-check-circle"
-                    >
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span>Agile delivery model to deliver faster, better.</span>
-                  </div>
+                <div className="customsoft_third_container_first_box_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>
+                    Agile Discovery Workshop the first step to building a
+                    successful tech startup.
+                  </span>
+                </div>
+                <div className="customsoft_third_container_first_box_svg_one">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>
+                    Flexible & scalable Dedicated Teams capacity to rapidly grow
+                    the development team.
+                  </span>
+                </div>
+                <div className="customsoft_third_container_first_box_svg_two">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>
+                    Flexible fixed price engagement - enable rapid delivery of a
+                    fully verified MVP.
+                  </span>
+                </div>
+                <div className="customsoft_third_container_first_box_svg_three">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Agile delivery model to deliver faster, better.</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div className="Custome__methodologies__section">
           <div className="Custome__methodologies__section__heading">
             End-to-End Software <span>Development Methodologies</span>

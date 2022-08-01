@@ -3287,6 +3287,7 @@ body {
 .container__web__dev__solution__right:hover {
   background-color: $black;
   transition: all 0.2s ease-in-out;
+  color: $primary;
 }
 .container__web__dev__solution__right__entry {
   display: flex;
@@ -4600,6 +4601,11 @@ body {
 .june_third_container_first_box__colomns:hover {
   background-color: $primary;
   cursor: pointer;
+}
+.june_third_container_first_box__colomns:hover
+  .june_third_container_first_box__colomns__heading__svg
+  svg {
+  stroke: white;
 }
 .june_third_container_first_box__colomns:hover * {
   color: $white;
@@ -6169,10 +6175,7 @@ body {
   padding: 1em;
   border: 1px solid transparent;
 }
-.container__feature__col__entry:hover {
-  border: 1px solid $primary;
-  transition: 300ms ease-in-out;
-}
+
 .container__feature__col__entry__heading {
   font-size: $font-sub-heading;
   color: $black;
