@@ -81,7 +81,7 @@ function Graphicdesign() {
         </div>
       </div>
       <div className="graphic__design__essence__container">
-        THE ESSENCE OF 360 DEGREE BRANDING
+        THE ESSENCE OF 360 <span>DEGREE BRANDING</span>
       </div>
       <div className="graphic__design__essence__container__content">
         A belief that permeates the way we do business One brand – One voice
@@ -181,8 +181,8 @@ function Graphicdesign() {
       </div>
       <div className="graphic__design__essence__container__we__offer">
         <div className="graphic__design__essence__container__we__offer__heading">
-          WE OFFER CUSTOM PRICING BECAUSE EVERY GRAPHIC DESIGN SERVICE IS
-          DIFFERENT
+          WE OFFER CUSTOM <span>PRICING BECAUSE EVERY</span> GRAPHIC DESIGN
+          SERVICE IS DIFFERENT
         </div>
         <div className="graphic__design__essence__container__we__offer__content">
           Through our years of experience, we’ve learned it’s best to start by
@@ -194,7 +194,7 @@ function Graphicdesign() {
       </div>
       <div className="graphic__design__essence__container__packages">
         <div className="graphic__design__essence__container__we__offer__heading">
-          LOGO & BRANDING DESIGN PACKAGES
+          LOGO & BRANDING <span>DESIGN PACKAGES</span>
         </div>
         <div className="graphic__design__essence__container__we__offer__content">
           DESIGN At DSME Global Links we begin every project with a
@@ -206,18 +206,27 @@ function Graphicdesign() {
         </div>
       </div>
       <div className="ios__mobile__share__your__idea__section__buttons__section">
-        <div className="ios__mobile__share__your__idea__section__buttons__section__awards">
-          <img loading="lazy" src={img1} alt="imgmunber" />
-          <img loading="lazy" src={img2} alt="imgmunber" />
-          <img loading="lazy" src={img3} alt="imgmunber" />
-          <img loading="lazy" src={img4} alt="imgmunber" />
-          <img loading="lazy" src={img5} alt="imgmunber" />
-          <img loading="lazy" src={img6} alt="imgmunber" />
+        <div className="graphic__design__logos__and__brands__imgs">
+          <div className="graphic__design__logos__and__brands">
+            <img className="graphic__design__logo" src={img1} alt="" />
+            <img src={img2} alt="" />
+            <img src={img3} alt="" />
+          </div>
+          <div className="graphic__design__logos__and__brands">
+            <img className="graphic__design__logo" src={img4} alt="" />
+            <img src={img5} alt="" />
+            <img src={img6} alt="" />
+          </div>
+          <div className="graphic__design__logos">
+            <img className="graphic__design__logo" src={img4} alt="" />
+            <img src={img5} alt="" />
+            <img src={img6} alt="" />
+          </div>
         </div>
       </div>
       <div className="graphic__design__essence__container__packages">
         <div className="graphic__design__essence__container__we__offer__heading">
-          SMALL BUSINESS START-UP PACKAGES
+          SMALL BUSINESS <span>START-UP PACKAGES</span>
         </div>
         <div className="graphic__design__essence__container__we__offer__content">
           If you have a brand new business these are the best options for you.
@@ -226,14 +235,21 @@ function Graphicdesign() {
           money.
         </div>
       </div>
-      <div className="ios__mobile__share__your__idea__section__buttons__section">
-        <div className="ios__mobile__share__your__idea__section__buttons__section__awards">
-          <img loading="lazy" src={img1} alt="imgmunber" />
-          <img loading="lazy" src={img2} alt="imgmunber" />
-          <img loading="lazy" src={img3} alt="imgmunber" />
-          <img loading="lazy" src={img4} alt="imgmunber" />
-          <img loading="lazy" src={img5} alt="imgmunber" />
-          <img loading="lazy" src={img6} alt="imgmunber" />
+      <div className="graphic__design__logos__and__brands__imgs">
+        <div className="graphic__design__logos__and__brands">
+          <img className="graphic__design__logo" src={img1} alt="" />
+          <img src={img2} alt="" />
+          <img src={img3} alt="" />
+        </div>
+        <div className="graphic__design__logos__and__brands">
+          <img className="graphic__design__logo" src={img4} alt="" />
+          <img src={img5} alt="" />
+          <img src={img6} alt="" />
+        </div>
+        <div className="graphic__design__logos">
+          <img className="graphic__design__logo" src={img4} alt="" />
+          <img src={img5} alt="" />
+          <img src={img6} alt="" />
         </div>
       </div>
     </>

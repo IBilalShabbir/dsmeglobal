@@ -5152,13 +5152,50 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   mix-blend-mode: luminosity;
   background-color: $white;
   padding: 2em;
 }
+
 .ios__mobile__share__your__idea__section {
   width: 100%;
+}
+
+.graphic__design__logos__and__brands img {
+  width: 200px;
+  height: 170px;
+  cursor: pointer;
+  mix-blend-mode: luminosity;
+  border-bottom: 1px solid $primary;
+  border-right: 1px solid $primary;
+  border-right: overflow;
+}
+.graphic__design__logos__and__brands {
+  text-align: center;
+  mix-blend-mode: luminosity;
+  background-color: $white;
+}
+.graphic__design__logos__and__brands :last-child {
+  border-right: none;
+}
+.graphic__design__logos {
+  text-align: center;
+  mix-blend-mode: luminosity;
+  background-color: $white;
+}
+.graphic__design__logos__and__brands__imgs {
+  padding: 4em;
+}
+.graphic__design__logos img {
+  width: 200px;
+  height: 170px;
+  cursor: pointer;
+  mix-blend-mode: luminosity;
+  border-right: 1px solid $primary;
+  border-right: overflow;
+}
+.graphic__design__logos :last-child {
+  border-right: none;
 }
 .ios__mobile__share__your__idea__section__buttons__section__awards img {
   width: 150px;
@@ -5170,7 +5207,7 @@ body {
   width: 100%;
   font-size: $font-large;
   font-weight: 600;
-  color: $white;
+
   text-align: center;
   padding-top: 2em;
 }
@@ -6266,7 +6303,7 @@ body {
   margin: 0em auto;
 }
 .staff__talent__heading {
-  font-size: $font-large;
+  font-size: $font-heading;
   color: $black;
   font-weight: bold;
   margin-bottom: 1em;
@@ -6376,7 +6413,7 @@ body {
 .how__we__do__section__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .how__we__do__section__card {
   margin-top: 3em;
@@ -7941,19 +7978,23 @@ body {
   padding: 2em;
   margin-right: 4em;
   border-radius: 5px;
+  background-color: rgba(13, 110, 74, 0.1);
 }
 .Android__and__ios__box__two {
   width: 50%;
   border: 1px solid $primary;
   padding: 2em;
   border-radius: 5px;
+  background-color: rgba(13, 110, 74, 0.1);
 }
 
 .Android__and__ios__box__one:hover {
   background-color: $primary;
+  color: $white;
 }
 .Android__and__ios__box__two:hover {
   background-color: $primary;
+  color: $white;
 }
 .Android__and__ios__box__one__heading {
   font-size: $font-heading;
@@ -7987,8 +8028,6 @@ body {
   width: 100%;
   padding: 4em;
   padding-bottom: 0em;
-  color: $white;
-  background-color: $black;
 }
 .Android__and__ios__boxes {
   padding-bottom: 6em;
@@ -7996,9 +8035,7 @@ body {
   margin: 0 auto;
   padding-top: 1em;
 }
-.Android__and__ios__boxes__all {
-  background-color: $black;
-}
+
 .svg__Android__and__ios__box__two {
   display: flex;
   align-items: center;
@@ -8055,8 +8092,15 @@ body {
   color: #189366;
 }
 .graphic__design__essence__container {
-  font-size: $font-large;
+  font-size: $font-heading;
   font-weight: 600;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0em 4em;
+}
+.graphic__design__essence__container span {
+  color: $primary;
 }
 .graphic__design__essence__container__content {
   font-size: $font-normal;
@@ -8064,6 +8108,8 @@ body {
   max-width: 900px;
   margin: 0 auto;
   margin-top: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
   margin-bottom: 2em;
 }
 .graphic__design__essence__container__buttton a {
@@ -8129,13 +8175,16 @@ body {
   margin: 0 auto;
 }
 .graphic__design__essence__container__we__offer__heading {
-  font-size: $font-large;
+  font-size: $font-heading;
   font-weight: 600;
   max-width: 1440px;
   width: 60%;
-  padding-left: 2em;
+  padding-left: 2.5em;
   padding-right: 2em;
   margin-bottom: 0.5em;
+}
+.graphic__design__essence__container__we__offer__heading span {
+  color: $primary;
 }
 .graphic__design__essence__container__we__offer__content {
   font-size: $font-normal;
@@ -9160,6 +9209,9 @@ body {
     margin-bottom: 1em;
     padding-bottom: 2em;
   }
+  .staff__talent__sub__heading__one {
+    width: 100%;
+  }
   .Android__and__ios__box__two {
     min-width: 100%;
   }
@@ -9392,6 +9444,9 @@ body {
   .tangible_results {
     padding: 1em !important;
   }
+  .graphic__design__essence__container {
+    padding: 0em 1em !important;
+  }
   .Android__and__ios__box__one__and__two {
     padding: 2em !important;
   }
@@ -9503,8 +9558,18 @@ body {
   .container__web__dev__experties__content__entry {
     width: 100%;
   }
+  .graphic__design__essence__container__image img {
+    object-fit: contain;
+  }
   .services__startup__card {
     min-width: 100%;
+  }
+  .staff__talent__features__entry {
+    width: 100%;
+  }
+  .graphic__design__essence__container {
+    padding: 0em 2em !important
+    ;
   }
   .why__work__with__us__card {
     min-width: 100% !important;
