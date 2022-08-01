@@ -14,14 +14,13 @@ export function AboutSuccessStories({ slidesPerView }) {
     <div className="pricing__fitted__team">
       <div
         className="pricing__fitted__team__header"
-        id="pricing__success__stories__team__header"
-      >
+        id="pricing__success__stories__team__header">
         <div className="pricing__fitted__team__header__heading">
           Success <span>Stories</span>
         </div>
       </div>
       <div className="pricing__fitted__team__content">
-        <Swiper slidesPerView={3} autoplay>
+        <Swiper slidesPerView={slidesPerView} autoplay>
           {data.map((item) => {
             console.log(import.meta.env.VITE_CLOUDNAIRY_API_URL + item.logo);
             return (
