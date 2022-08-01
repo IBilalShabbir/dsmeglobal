@@ -4,6 +4,7 @@ import servicesbanner from "../assets/servicesbanner.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import useSWR from "swr";
 import { fetcher } from "../utils/functions";
+import { Fade } from "react-reveal";
 
 export default function Services() {
   useEffect(() => {
@@ -34,21 +35,23 @@ export default function Services() {
         </div>
         <div className="services__main__container__right">
           {data.map((item) => (
-            <a
-              href={
-                "#" +
-                item.title
-                  .trim()
-                  .replaceAll(" ", "-")
-                  .replaceAll("-&-", "-")
-                  .replaceAll(".", "")
-                  .replaceAll("/", "-")
-                  .toLowerCase()
-              }
-              className="services__main__container__right__link"
-            >
-              {item.title}
-            </a>
+            <Fade up>
+              <a
+                href={
+                  "#" +
+                  item.title
+                    .trim()
+                    .replaceAll(" ", "-")
+                    .replaceAll("-&-", "-")
+                    .replaceAll(".", "")
+                    .replaceAll("/", "-")
+                    .toLowerCase()
+                }
+                className="services__main__container__right__link"
+              >
+                {item.title}
+              </a>
+            </Fade>
           ))}
         </div>
       </div>

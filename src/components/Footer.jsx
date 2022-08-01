@@ -26,7 +26,10 @@ export default function Footer() {
             >
               <img loading="lazy" src={logoDark} alt="logo" />
             </Link>
-            <div className="footer__container__content__col__text">
+            <div
+              className="footer__container__content__col__text"
+              style={{ marginTop: "30px" }}
+            >
               We are talented. We are experienced. We are bold. We are DSME
               Global Links! Get a behind-the-scenes glimpse of your new favorite
               software development company. Let’s work together
@@ -39,9 +42,6 @@ export default function Footer() {
               Contact Us
             </div>
             <div className="footer__container__content__col__text">
-              <div className="footer__container__content__col__text__heading">
-                Phone
-              </div>
               <div className="footer__container__content__col__text__data">
                 <div className="footer__container__content__col__text__data__entry">
                   354 454 5344 343

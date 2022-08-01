@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import { teamData } from "../constants/data";
 
 export function MeetUsStories() {
   return (
@@ -17,63 +18,31 @@ export function MeetUsStories() {
           </div>
         </Fade>
         <div className="meetus__container__stories__card__container">
-          <Fade up>
-            <div className="meetus__container__stories__card">
-              <div className="meetus__container__stories__card__image">
-                <img
-                  loading="lazy"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  alt="Stories card"
-                />
-              </div>
-              <div className="meetus__container__stories__card__text">
-                <div className="meetus__container__stories__card__heading">
-                  Olivia Piper
+          {teamData.map((item) => (
+            <Fade up>
+              <div className="meetus__container__stories__card">
+                <div className="meetus__container__stories__card__image">
+                  <img
+                    loading="lazy"
+                    src={
+                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/v1658515904/dsme_team/" +
+                      item.image +
+                      ".webp"
+                    }
+                    alt="Stories card"
+                  />
                 </div>
-                <div className="meetus__container__stories__card__para">
-                  Designer
-                </div>
-              </div>
-            </div>
-          </Fade>
-          <Fade up>
-            <div className="meetus__container__stories__card">
-              <div className="meetus__container__stories__card__image">
-                <img
-                  loading="lazy"
-                  src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  alt="Stories card"
-                />
-              </div>
-              <div className="meetus__container__stories__card__text">
-                <div className="meetus__container__stories__card__heading">
-                  Liam Benjamin
-                </div>
-                <div className="meetus__container__stories__card__para">
-                  Designer
+                <div className="meetus__container__stories__card__text">
+                  <div className="meetus__container__stories__card__heading">
+                    {item.name}
+                  </div>
+                  <div className="meetus__container__stories__card__para">
+                    {item.designation}
+                  </div>
                 </div>
               </div>
-            </div>
-          </Fade>
-          <Fade up>
-            <div className="meetus__container__stories__card">
-              <div className="meetus__container__stories__card__image">
-                <img
-                  loading="lazy"
-                  src="https://images.unsplash.com/photo-1517256673644-36ad11246d21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                  alt="Stories card"
-                />
-              </div>
-              <div className="meetus__container__stories__card__text">
-                <div className="meetus__container__stories__card__heading">
-                  Madison Joe
-                </div>
-                <div className="meetus__container__stories__card__para">
-                  Designer
-                </div>
-              </div>
-            </div>
-          </Fade>
+            </Fade>
+          ))}
         </div>
       </div>
     </div>
