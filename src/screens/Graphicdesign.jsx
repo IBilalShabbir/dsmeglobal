@@ -23,6 +23,20 @@ function Graphicdesign() {
     "Video Content Creation",
     " Print, Packaging and POS",
   ];
+  const logos = [
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+  ];
   return (
     <>
       <div className="container">
@@ -208,19 +222,15 @@ function Graphicdesign() {
       <div className="ios__mobile__share__your__idea__section__buttons__section">
         <div className="graphic__design__logos__and__brands__imgs">
           <div className="graphic__design__logos__and__brands">
-            <img className="graphic__design__logo" src={img1} alt="" />
-            <img src={img2} alt="" />
-            <img src={img3} alt="" />
-          </div>
-          <div className="graphic__design__logos__and__brands">
-            <img className="graphic__design__logo" src={img4} alt="" />
-            <img src={img5} alt="" />
-            <img src={img6} alt="" />
-          </div>
-          <div className="graphic__design__logos">
-            <img className="graphic__design__logo" src={img4} alt="" />
-            <img src={img5} alt="" />
-            <img src={img6} alt="" />
+            {logos.map((logo, i) => (
+              <div
+                className="graphic__design__logo__wrapper"
+                style={(i + 1) % 5 === 0 ? { borderRight: "none" } : null}
+              >
+                <img className="graphic__design__logo" src={logo} alt={logo} />
+              </div>
+            ))}
+            <div className="graphic__design__logo__wrapper">hello</div>
           </div>
         </div>
       </div>
@@ -237,19 +247,15 @@ function Graphicdesign() {
       </div>
       <div className="graphic__design__logos__and__brands__imgs">
         <div className="graphic__design__logos__and__brands">
-          <img className="graphic__design__logo" src={img1} alt="" />
-          <img src={img2} alt="" />
-          <img src={img3} alt="" />
-        </div>
-        <div className="graphic__design__logos__and__brands">
-          <img className="graphic__design__logo" src={img4} alt="" />
-          <img src={img5} alt="" />
-          <img src={img6} alt="" />
-        </div>
-        <div className="graphic__design__logos">
-          <img className="graphic__design__logo" src={img4} alt="" />
-          <img src={img5} alt="" />
-          <img src={img6} alt="" />
+          {logos.map((logo, i) => (
+            <div
+              className="graphic__design__logo__wrapper"
+              style={(i + 1) % 5 === 0 ? { borderRight: "none" } : null}
+            >
+              <img className="graphic__design__logo" src={logo} alt={logo} />
+            </div>
+          ))}
+          <div className="graphic__design__logo__wrapper">hello</div>
         </div>
       </div>
     </>

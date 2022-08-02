@@ -1788,7 +1788,7 @@ body {
 }
 .ios__mobile__page__container__ios__company__para {
   width: 80%;
-  color: $white;
+
   margin: 0 auto;
   align-items: center;
   padding-top: 2em;
@@ -5160,22 +5160,33 @@ body {
 .ios__mobile__share__your__idea__section {
   width: 100%;
 }
-
-.graphic__design__logos__and__brands img {
-  width: 200px;
+.graphic__design__logo__wrapper {
+  width: 20%;
   height: 170px;
   cursor: pointer;
   mix-blend-mode: luminosity;
-  border-bottom: 1px solid $primary;
-  border-right: 1px solid $primary;
+  border-bottom: 1px solid #2424242e;
+  border-right: 1px solid #2424242e;
   border-right: overflow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.graphic__design__logo__wrapper img {
+  width: 100%;
+  max-width: 200px;
+}
+.graphic__design__logo__wrapper:last-child {
+  border-right: none;
 }
 .graphic__design__logos__and__brands {
   text-align: center;
   mix-blend-mode: luminosity;
   background-color: $white;
+  display: flex;
+  flex-wrap: wrap;
 }
-.graphic__design__logos__and__brands :last-child {
+.graphic__design__logos__and__brands:last-child {
   border-right: none;
 }
 .graphic__design__logos {
@@ -5185,16 +5196,21 @@ body {
 }
 .graphic__design__logos__and__brands__imgs {
   padding: 4em;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
 }
 .graphic__design__logos img {
   width: 200px;
   height: 170px;
   cursor: pointer;
-  mix-blend-mode: luminosity;
-  border-right: 1px solid $primary;
-  border-right: overflow;
+  border-right: 1px solid #2424242e;
 }
-.graphic__design__logos :last-child {
+.graphic__design__logos:nth-child(even) {
+  border-right: none;
+  border-left: none;
+}
+.graphic__design__logos:last-child {
   border-right: none;
 }
 .ios__mobile__share__your__idea__section__buttons__section__awards img {
@@ -8034,11 +8050,11 @@ body {
   margin-top: 2em;
 }
 .Android__and__ios__box__one__and__two {
-  display: flex;
-  justify-content: space-between;
   height: 100%;
   width: 100%;
-  padding: 4em;
+  display: flex;
+  justify-content: space-between;
+
   padding-bottom: 0em;
 }
 .Android__and__ios__boxes {
