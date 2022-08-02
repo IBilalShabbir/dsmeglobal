@@ -90,9 +90,6 @@ export default function Footer() {
             </a>
           </div>
           <div className="footer__container__content__bottom__right">
-            <div className="footer__container__content__bottom__text">
-              Follow us
-            </div>
             <a
               href="https://www.facebook.com/dsmeglobal"
               className="footer__container__content__bottom__left__link"
