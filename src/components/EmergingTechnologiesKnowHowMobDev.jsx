@@ -217,22 +217,22 @@ export function EmergingTechnologiesKnowHowMobDev() {
         technologies.
       </div>
       <div className="container__emerging__technologies__section">
-        {array?.map((item) => (
+        {array?.map((item, i) => (
           <WebdevArrEntry
             label={item.label}
             svg={item.svg}
             selected={selected}
             setSelected={setSelected}
-            key={JSON.stringify(item)}
+            key={i}
           />
         ))}
       </div>
       {array
         ?.filter((item) => item.label === selected)
-        ?.map((item) => (
+        ?.map((item, i) => (
           <div
             className="container__emerging__technologies__section__entry__data"
-            key={JSON.stringify(item)}
+            key={i}
           >
             <div className="container__emerging__technologies__section__entry__data___heading">
               {item.label}

@@ -91,11 +91,8 @@ export function TestimonialsSection() {
       </div>
       {array
         ?.filter((item, i) => i === selected)
-        ?.map((item) => (
-          <div
-            className="container__testimonials__overlay__info"
-            key={JSON.stringify(item)}
-          >
+        ?.map((item, i) => (
+          <div className="container__testimonials__overlay__info" key={i}>
             <Fade up>
               <div className="container__testimonials__overlay__info__message">
                 {item.message}

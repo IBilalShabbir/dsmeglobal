@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { WebdevArrEntry } from "../components/WebdevArrEntry";
-import reactlogo from "../assets/technologies/react.webp";
+import reactlogo from "../assets/react.webp";
 
 export function TechonologiesForStaff() {
   const [selected, setSelected] = useState("Web Developers");
@@ -55,13 +55,13 @@ export function TechonologiesForStaff() {
         a solution that you help our clients stay ahead of the game.
       </div> */}
       <div className="container__emerging__technologies__section">
-        {array?.map((item) => (
+        {array?.map((item, i) => (
           <WebdevArrEntry
             label={item.label}
             svg={item.svg}
             selected={selected}
             setSelected={setSelected}
-            key={JSON.stringify(item)}
+            key={i}
           />
         ))}
       </div>
@@ -69,10 +69,10 @@ export function TechonologiesForStaff() {
         ?.filter((item) => item.label === selected)
         ?.map((item) => (
           <div className="container__emerging__technologies__section__entry__data">
-            {item.techIcons?.map((icon) => {
+            {item.techIcons?.map((icon, i) => {
               return (
                 <div
-                  key={JSON.stringify(icon)}
+                  key={i}
                   className="container__emerging__technologies__section__entry__data__img"
                 >
                   <img src={icon} alt="icon" />
