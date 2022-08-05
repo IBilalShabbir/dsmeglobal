@@ -1265,7 +1265,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.Android__and__ios__box__container_entry_heading {
+  font-size: $font-heading;
+}
+.Android__and__ios__box__container_entry_heading span {
+  color: $primary;
+}
 .apply__popup__form {
   display: flex;
   flex-direction: column;
@@ -3275,6 +3280,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
+.Android__and__ios__box__container {
+  padding: 0em 1em;
+}
 
 .container__web__dev__solution__left__row__img {
   width: 60px;
@@ -3282,7 +3290,23 @@ body {
   margin-left: 1em;
   margin-bottom: 1em;
 }
+.Android__and__ios__box__container_entry {
+  width: 100%;
+  display: flex;
+  padding: 2em 0em;
+  align-items: center;
+}
+.Android__and__ios__box__container_entry_para {
+  padding: 1em 0em;
+}
+.Android__and__ios__box__container_entry_left {
+  width: 50%;
+  padding-left: 2em;
+}
 
+.Android__and__ios__box__container_entry_right {
+  width: 50%;
+}
 .container__web__dev__solution__right {
   background-color: $primary;
   display: flex;
@@ -5230,16 +5254,19 @@ body {
   mix-blend-mode: luminosity;
 }
 .ios__mobile__page__container__ios__company__heading {
-  width: 100%;
-  font-size: $font-large;
+  font-size: $font-heading;
   font-weight: 600;
-
-  text-align: center;
-  padding-top: 2em;
+  width: 100%;
+  top: 0;
+  position: sticky;
+}
+.Android__and__ios__box__container_entry_right_svg{
+  padding:  0em 5em;
 }
 .ios__mobile__page__container__ios__company__heading span {
   color: $primary;
 }
+
 .ios__mobile__page__one__step__ios__development__section {
   width: 100%;
   display: flex;
@@ -8068,12 +8095,14 @@ body {
   padding-bottom: 0em;
 }
 .Android__and__ios__boxes {
-  padding-bottom: 6em;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 1em;
+  width: 70%;
+  position: relative;
 }
-
+.Android__and__ios__boxes__all {
+  width: 100%;
+  display: flex;
+  padding: 2em 4em;
+}
 .svg__Android__and__ios__box__two {
   display: flex;
   align-items: center;
@@ -8269,6 +8298,11 @@ body {
 @media (max-width: 1000px) {
   .blockchain__worksection__detail {
     flex-direction: column;
+  }
+  .ios__mobile__page__container__ios__company__heading {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
   }
   .blockchain__worksection__text {
     width: 100%;
