@@ -32,6 +32,7 @@ export function WorkSection({ data }) {
                       replacePngWithWebp(project.image)
                     }
                     alt={project.title}
+                    width={700}
                     className="work__section__content__project__image"
                   />
                 </Fade>
@@ -78,6 +79,7 @@ export function WorkSection({ data }) {
                         "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
                         item.logo
                       }
+                      width={200}
                       alt={item.title}
                       className="work__section__content__selection__entry__img"
                     />

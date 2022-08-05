@@ -26,6 +26,7 @@ export default function BlogsCardContent({ data }) {
             data.image
           }
           alt={data.title}
+          width={200}
           className="blog__card__img"
         />
 

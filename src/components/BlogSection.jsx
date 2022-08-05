@@ -36,6 +36,7 @@ export function BlogSection({ data }) {
                     replacePngWithWebp(blog.image)
                   }
                   alt={blog.title}
+                  width={200}
                   className="blog__card__img"
                 />
 
