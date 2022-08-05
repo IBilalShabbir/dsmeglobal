@@ -3156,7 +3156,6 @@ body {
   position: sticky;
   z-index: 999;
   width: 100%;
-  background-color: $black;
 }
 
 .container__web__dev__experience {
@@ -3177,7 +3176,7 @@ body {
 .container__web__dev__experience__header__heading {
   font-size: $font-large;
   font-weight: bold;
-  color: $white;
+
   margin-bottom: 0.5em;
   text-align: center;
 }
@@ -3186,7 +3185,6 @@ body {
 }
 
 .container__web__dev__experience__header__info {
-  color: $white;
   width: 100%;
   max-width: 800px;
   text-align: center;
@@ -3207,25 +3205,12 @@ body {
 }
 
 .container__web__dev__experience__content__entry__heading {
-  color: $white;
   font-weight: bold;
   margin-bottom: 0.8em;
   position: relative;
 }
 
-.container__web__dev__experience__content__entry__heading::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  border-radius: 50px;
-  left: -25px;
-  width: 10px;
-  height: 10px;
-  background-color: $primary;
-}
-
 .container__web__dev__experience__content__entry__info {
-  color: #adadad;
   width: 100%;
   max-width: 400px;
 }
@@ -3249,7 +3234,15 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
+.container__web__dev__experience__content__entry {
+  border-right: 1px solid $primary;
+}
+.container__web__dev__experience__content__entry:last-child {
+  border-right: none;
+}
+.container__web__dev__experience__content__entry:nth-child(3) {
+  border-right: none;
+}
 .container__web__dev__solution__header {
   width: 100%;
   display: flex;
@@ -7945,10 +7938,8 @@ body {
 
 .highly__customer__main__second__container {
   width: 48%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
 .highly__customer__main__second__container__interior {
   display: flex;
   align-items: center;
@@ -7957,6 +7948,11 @@ body {
   color: $white;
   padding: 3em 0em;
   border-radius: 5px;
+}
+.Agile__customer__main__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .highly__customer__main__container__heading {
   width: 100%;
@@ -7982,6 +7978,18 @@ body {
   margin-bottom: 2em;
   width: 100%;
   background-color: rgba(13, 110, 74, 0.1);
+  margin-bottom: 1em;
+  margin: 1em;
+}
+.high__customer__main__first__container{
+  width: 50%;
+}
+.Agile__customer__main__first__container__jira__container{
+  border-radius: 10px;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  width: 100%;
+
   margin-bottom: 1em;
   margin: 1em;
 }

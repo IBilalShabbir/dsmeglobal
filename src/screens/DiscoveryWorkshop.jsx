@@ -35,6 +35,7 @@ function AgileDiscoveryWorkshop() {
             />
             <ExperienceCard
               label="Speed & Agility"
+              svg
               info="We have structured this workshop in a way to ensure that we gather and document an in-depth understanding of your product in the shortest time possible."
             />
             <ExperienceCard
@@ -57,7 +58,7 @@ function AgileDiscoveryWorkshop() {
         </div>
       </div>
       <div className="Agile__discover__workshop__container">
-        <div className="highly__customer__main__container">
+        <div className="Agile__customer__main__container">
           <div className="highly__customer__main__second__container">
             <div className="highly__customer__main__second__container__interior">
               <div className="highly__customer__main__container__heading__content">
@@ -82,8 +83,8 @@ function AgileDiscoveryWorkshop() {
               </div>
             </div>
           </div>
-          <div className="highly__customer__main__first__container">
-            <div className="highly__customer__main__first__container__jira__container">
+          <div className="high__customer__main__first__container">
+            <div className="Agile__customer__main__first__container__jira__container">
               <div className="highly__customer__main__first__container__jira__container__heading">
                 <svg
                   id="Group_2"
@@ -158,7 +159,7 @@ function AgileDiscoveryWorkshop() {
                 locked in everyone’s calendars.
               </div>
             </div>
-            <div className="highly__customer__main__first__container__jira__container">
+            <div className="Agile__customer__main__first__container__jira__container">
               <div className="highly__customer__main__first__container__jira__container__heading">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +188,7 @@ function AgileDiscoveryWorkshop() {
                 Listen & refine requirements by talking to all stakeholders
               </div>
             </div>
-            <div className="highly__customer__main__first__container__jira__container">
+            <div className="Agile__customer__main__first__container__jira__container">
               <div className="highly__customer__main__first__container__jira__container__heading">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +231,7 @@ function AgileDiscoveryWorkshop() {
                 goals, and to assess its complexity.
               </div>
             </div>
-            <div className="highly__customer__main__first__container__jira__container">
+            <div className="Agile__customer__main__first__container__jira__container">
               <div className="highly__customer__main__first__container__jira__container__heading">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +281,7 @@ function AgileDiscoveryWorkshop() {
                 visualize your end product.
               </div>
             </div>
-            <div className="highly__customer__main__first__container__jira__container">
+            <div className="Agile__customer__main__first__container__jira__container">
               <div className="highly__customer__main__first__container__jira__container__heading">
                 <svg
                   id="Group_5"
