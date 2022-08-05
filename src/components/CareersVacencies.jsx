@@ -53,7 +53,7 @@ export function CareersVacencies({
             />
           </div>
         ) : (
-          careerDataFiltered.map((item, i) => (
+          careerDataFiltered?.map((item, i) => (
             <VacencyCard
               item={item}
               key={JSON.stringify(item)}

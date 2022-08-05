@@ -1518,7 +1518,7 @@ export function EcommerceProcess({ role, process, setProcess }) {
       {role === "Shopify" ? (
         <div className="ecommerce__screen__container__process__content">
           <div className="ecommerce__screen__container__process__content__selector">
-            {shopifyPorcess.map((item) => (
+            {shopifyPorcess?.map((item) => (
               <EcomereceProcessSelector
                 label={item.label}
                 selected={process}
@@ -1528,13 +1528,13 @@ export function EcommerceProcess({ role, process, setProcess }) {
             ))}
           </div>
           {shopifyPorcess
-            .filter((item) => item.label === process)
-            .map((item) => (
+            ?.filter((item) => item.label === process)
+            ?.map((item) => (
               <div
                 className="ecommerce__screen__container__process__content__selector__content"
                 key={JSON.stringify(item)}
               >
-                {item.list.map((item) => (
+                {item.list?.map((item) => (
                   <div
                     className="ecommerce__screen__container__process__content__selector__content__entry"
                     key={JSON.stringify(item)}
@@ -1551,7 +1551,7 @@ export function EcommerceProcess({ role, process, setProcess }) {
       ) : (
         <div className="ecommerce__screen__container__process__content">
           <div className="ecommerce__screen__container__process__content__selector">
-            {wordpressPorcess.map((item) => (
+            {wordpressPorcess?.map((item) => (
               <EcomereceProcessSelector
                 label={item.label}
                 selected={process}
@@ -1561,13 +1561,13 @@ export function EcommerceProcess({ role, process, setProcess }) {
             ))}
           </div>
           {wordpressPorcess
-            .filter((item) => item.label === process)
-            .map((item) => (
+            ?.filter((item) => item.label === process)
+            ?.map((item) => (
               <div
                 className="ecommerce__screen__container__process__content__selector__content"
                 key={JSON.stringify(item)}
               >
-                {item.list.map((item) => (
+                {item.list?.map((item) => (
                   <div
                     className="ecommerce__screen__container__process__content__selector__content__entry"
                     key={JSON.stringify(item)}

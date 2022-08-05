@@ -35,7 +35,7 @@ export default function FaqSection() {
         <div className="faq__section__content__heading">
           Frequently Asked <span>Questions</span>
         </div>
-        {faqData.map((faq, index) => (
+        {faqData?.map((faq, index) => (
           <FaqSectionEntry
             key={JSON.stringify(faq)}
             index={index}

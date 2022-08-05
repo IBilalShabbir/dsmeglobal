@@ -8,8 +8,8 @@ export function WorkSection({ data }) {
 
   useEffect(() => {
     data
-      .filter((item, i) => i === 0)
-      .map((item) => {
+      ?.filter((item, i) => i === 0)
+      ?.map((item) => {
         setProject(item);
       });
   }, [data]);
@@ -53,7 +53,7 @@ export function WorkSection({ data }) {
               </Fade>
             </div>
             <div className="work__section__content__selection">
-              {data.map((item, i) => (
+              {data?.map((item, i) => (
                 <div
                   className="work__section__content__selection__entry"
                   key={JSON.stringify(item)}

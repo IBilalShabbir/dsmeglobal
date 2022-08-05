@@ -5,7 +5,7 @@ export function FooterServices({ data }) {
   return (
     <div className="footer__container__content__col">
       <div className="footer__container__content__col__heading">Services</div>
-      {data.map((item) => (
+      {data?.map((item) => (
         <Link
           onClick={() => {
             window.localStorage.setItem("servicesData", JSON.stringify(item));

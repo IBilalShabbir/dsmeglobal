@@ -1,8 +1,53 @@
 export const teamData = [
   {
+    image: "Shahid_Aziz_Advisor_kkhqzt",
+    name: "Shahid Aziz",
+    designation: "Chairman",
+  },
+  {
+    image: "Director_Legal_Affairs_f01roo",
+    name: "Muhammad Soman",
+    designation: "Director Legal Affairs",
+  },
+  {
+    image: "Azeem_Hammad_Team_Lead_Frontend_Developer_yztlx3",
+    name: "Azeem Hammad",
+    designation: "Technical Lead",
+  },
+  {
+    image: "Kamran_Ameen_Backend_Developer_lmuq61",
+    name: "Kamran Ameen",
+    designation: "Senior Software Engineer",
+  },
+  {
+    image: "Gulraiz_Malik_Team_Lead_Frontend_Developer_hlhvzl",
+    name: "Gulraiz Malik",
+    designation: "Senior Software Engineer",
+  },
+  {
+    image: "Salman_Nisar___Mobile_Architect_qduily",
+    name: "Salman Nisar",
+    designation: "Mobile Architect",
+  },
+  {
+    image: "WhatsApp_Image_2022-07-22_at_2.15.31_PM_j9tlpg",
+    name: "Muhammad Sharyar",
+    designation: "Software Architect",
+  },
+  {
     image: "Abdullah_Backend_Developer_szxgvm",
     name: "Abdullah",
-    designation: "Backend Developer",
+    designation: "Snr. Backend Developer",
+  },
+  {
+    image: "Ahsan_Saeed__Frontend_Developer_gykomy",
+    name: "Ahsan Saeed",
+    designation: "Snr. Frontend Developer",
+  },
+  {
+    image: "Zunaira_Najam_Frontend_Developer_uhiual",
+    name: "Zunaira Najam",
+    designation: "Frontend Developer",
   },
   {
     image: "Ahmed__React_Developer_tq0bmz",
@@ -10,8 +55,13 @@ export const teamData = [
     designation: "React Developer",
   },
   {
-    image: "Ahsan_Saeed__Frontend_Developer_gykomy",
-    name: "Ahsan Saeed",
+    image: "Daniyal_Pirzada_Frontend_Developers_w9d6cg",
+    name: "Daniyal Pirzada ",
+    designation: "Frontend Developers",
+  },
+  {
+    image: "Hamza_Arshad_Frontend_Developer_fjqf8f",
+    name: "Hamza Arshad",
     designation: "Frontend Developer",
   },
   {
@@ -20,50 +70,51 @@ export const teamData = [
     designation: "Frontend Developer",
   },
   {
+    image: "Qaiser_Riaz_Frontend_Developer_hi9zb0",
+    name: "Qaiser Riaz",
+    designation: "Frontend Developer",
+  },
+  {
+    image: "Musharraf_Hassan_Backend_Developer_uelg3t",
+    name: "Musharraf Hassan",
+    designation: "Backend Developer",
+  },
+  {
+    image: "Moazam_Saleem_Backend_Developer_i6yyfm",
+    name: "Moazam Saleem",
+    designation: "Backend Developer",
+  },
+  {
+    image: "Qasim_Frontend_Developer_eybjrf",
+    name: "Qasim",
+    designation: "Backend Developer",
+  },
+  {
+    image: "Zunaira_Amjad__Business_Developer_cbog1k",
+    name: "Zunaira Amjad",
+    designation: "Lead Business Developer",
+  },
+  {
+    image: "Dr.Aimon_Malik_j9vrwo",
+    name: "Dr.Aimon Malik",
+    designation: "Health-Tech Consultant",
+  },
+  {
+    image: "Dr.Nimra_Qureshi_ltctgl",
+    name: "Dr.Nimra Qureshi",
+    designation: "Health-Tech Consultant",
+  },
+  {
     image: "Aniqa_Mukhtar_Graphic_Designer_vuxi60",
     name: "Aniqa Mukhtar",
     designation: "Graphic Designer",
   },
   {
-    image: "Azeem_Hammad_Team_Lead_Frontend_Developer_yztlx3",
-    name: "Azeem Hammad",
-    designation: "Frontend Developer",
-  },
-  {
     image: "Danish_Azhar_picture_x4szi6",
     name: "Danish Azhar",
-    designation: "",
+    designation: "Outreach Strategist",
   },
-  {
-    image: "Daniyal_Pirzada_Frontend_Developers_w9d6cg",
-    name: "Daniyal Pirzada ",
-    designation: "Frontend Developers",
-  },
-  {
-    image: "Director_Legal_Affairs_f01roo",
-    name: "Muhammad Soman",
-    designation: "Director Legal Affairs",
-  },
-  {
-    image: "Dr.Aimon_Malik_j9vrwo",
-    name: "Dr.Aimon Malik",
-    designation: "",
-  },
-  {
-    image: "Dr.Nimra_Qureshi_ltctgl",
-    name: "Dr.Nimra Qureshi",
-    designation: "",
-  },
-  {
-    image: "Gulraiz_Malik_Team_Lead_Frontend_Developer_hlhvzl",
-    name: "Gulraiz Malik",
-    designation: "Frontend Developer",
-  },
-  {
-    image: "Hamza_Arshad_Frontend_Developer_fjqf8f",
-    name: "Hamza Arshad",
-    designation: "Frontend Developer",
-  },
+
   {
     image: "Hira_Najm__Frontend_Developer_x2rfoa",
     name: "Hira Najm",
@@ -75,19 +126,9 @@ export const teamData = [
     designation: "Content Writer",
   },
   {
-    image: "Kamran_Ameen_Backend_Developer_lmuq61",
-    name: "Kamran Ameen",
-    designation: "Backend Developer",
-  },
-  {
     image: "Muhammad_Mobeen_t9kkdl",
-    name: "Laiba Asif",
-    designation: "Marketing",
-  },
-  {
-    image: "Moazam_Saleem_Backend_Developer_i6yyfm",
-    name: "Moazam Saleem",
-    designation: "Backend Developer",
+    name: "Muhammad Mobeen",
+    designation: "Marketing Manager",
   },
   {
     image: "Muhammad_Mobeen_t9kkdl",
@@ -95,39 +136,19 @@ export const teamData = [
     designation: "Marketing",
   },
   {
-    image: "Musharraf_Hassan_Backend_Developer_uelg3t",
-    name: "Musharraf Hassan",
-    designation: "Backend Developer",
-  },
-  {
     image: "Naimah_Jones__Business_Development_Lead_US_Office_njgftp",
     name: "Naimah Jones",
     designation: "Business Development Lead US Office",
   },
   {
-    image: "Qaiser_Riaz_Frontend_Developer_hi9zb0",
-    name: "Qaiser Riaz",
-    designation: "Frontend Developer",
-  },
-  {
-    image: "Qasim_Frontend_Developer_eybjrf",
-    name: "Qasim",
-    designation: "Frontend Developer",
-  },
-  {
     image: "Ramsha_Arshad_Talent_Acquisition_Recruiter_pyagxu",
     name: "Ramsha Arshad",
-    designation: "Talent Acquisition Recruiter",
+    designation: "Talent Source",
   },
   {
     image: "Rijaab_Manzoor_Business_Developer_w2kikd",
     name: "Rijaab Manzoor",
     designation: "Business Developer",
-  },
-  {
-    image: "Salman_Nisar___Mobile_Architect_qduily",
-    name: "Salman Nisar",
-    designation: "Mobile Architect",
   },
   {
     image: "Sapna_Shams_QA_wm8tyc",
@@ -140,34 +161,14 @@ export const teamData = [
     designation: "Business Developer",
   },
   {
-    image: "Shahid_Aziz_Advisor_kkhqzt",
-    name: "Shahid Aziz",
-    designation: "Advisor",
-  },
-  {
     image: "Usman_Ijaz_Recruitment_Consultant_hmlf1g",
     name: "Usman Ijaz",
     designation: "Recruitment Consultant",
   },
   {
-    image: "WhatsApp_Image_2022-07-22_at_2.15.31_PM_j9tlpg",
-    name: "",
-    designation: "",
-  },
-  {
     image: "Zoha_Waqas_Aidapro_jvv1yl",
     name: "Zoha Waqas",
-    designation: "Recruitment Consultant",
-  },
-  {
-    image: "Zunaira_Amjad__Business_Developer_cbog1k",
-    name: "Zunaira Amjad",
-    designation: "Business Developer",
-  },
-  {
-    image: "Zunaira_Najam_Frontend_Developer_uhiual",
-    name: "Zunaira Najam",
-    designation: "Frontend Developer",
+    designation: "Marketing Strategist",
   },
 ];
 export const servicesData = [

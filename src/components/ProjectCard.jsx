@@ -5,14 +5,14 @@ export function ProjectCard({ setShowImage, data, setShowImageData, filter }) {
   let isOurProduct;
   let doesFilter;
   let categoryList = [];
-  data.categories.map((item) => {
+  data.categories?.map((item) => {
     categoryList.push(item.label);
   });
   for (var i = 0; i <= categoryList.length; i++) {
     doesFilter = categoryList.includes(filter);
   }
 
-  data.isOur.map((item) => {
+  data.isOur?.map((item) => {
     isOurProduct = item.value;
   });
   return (

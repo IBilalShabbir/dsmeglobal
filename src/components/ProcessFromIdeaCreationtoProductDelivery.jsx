@@ -26,7 +26,7 @@ export function ProcessFromIdeaCreationtoProductDelivery() {
     "Media & Entertainment",
     "Field Force Automation",
     "Retail",
-  ]
+  ];
   const DeliveryCardEntry3 = [
     "JavaScript",
     "Java",
@@ -54,12 +54,10 @@ export function ProcessFromIdeaCreationtoProductDelivery() {
   ];
   return (
     <div className="pricing__delivery__section">
-      <div className="pricing__delivery__section__heading">
-        The Best Fit
-      </div>
+      <div className="pricing__delivery__section__heading">The Best Fit</div>
       <div className="pricing__delivery__section__heading__content">
-      You can trust us with our deep technological & domain expertise to come up with the best solution for your product.
-
+        You can trust us with our deep technological & domain expertise to come
+        up with the best solution for your product.
       </div>
       <div className="pricing__delivery__section__content">
         <div className="pricing__delivery__section__content__card">
@@ -67,7 +65,7 @@ export function ProcessFromIdeaCreationtoProductDelivery() {
             Enterprise
           </div>
           <div className="pricing__delivery__section__content__card__content">
-            {DeliveryCardEntry1.map((item) => (
+            {DeliveryCardEntry1?.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
                 key={JSON.stringify(item)}
@@ -83,7 +81,7 @@ export function ProcessFromIdeaCreationtoProductDelivery() {
             Domain Knowledge
           </div>
           <div className="pricing__delivery__section__content__card__content">
-            {DeliveryCardEntry2.map((item) => (
+            {DeliveryCardEntry2?.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
                 key={JSON.stringify(item)}
@@ -99,7 +97,7 @@ export function ProcessFromIdeaCreationtoProductDelivery() {
             Technologies We Use
           </div>
           <div className="pricing__delivery__section__content__card__content">
-            {DeliveryCardEntry3.map((item) => (
+            {DeliveryCardEntry3?.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
                 key={JSON.stringify(item)}

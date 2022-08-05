@@ -83,7 +83,7 @@ function Graphicdesign() {
           Get in touch with our graphic design services consultants.
         </div>
         <div className="staff__talent__features">
-          {talentFeatures.map((feature) => (
+          {talentFeatures?.map((feature) => (
             <div
               className="staff__talent__features__entry"
               key={JSON.stringify(feature)}
@@ -222,7 +222,7 @@ function Graphicdesign() {
       <div className="ios__mobile__share__your__idea__section__buttons__section">
         <div className="graphic__design__logos__and__brands__imgs">
           <div className="graphic__design__logos__and__brands">
-            {logos.map((logo, i) => (
+            {logos?.map((logo, i) => (
               <div
                 className="graphic__design__logo__wrapper"
                 style={(i + 1) % 5 === 0 ? { borderRight: "none" } : null}
@@ -248,7 +248,7 @@ function Graphicdesign() {
       </div>
       <div className="graphic__design__logos__and__brands__imgs">
         <div className="graphic__design__logos__and__brands">
-          {logos.map((logo, i) => (
+          {logos?.map((logo, i) => (
             <div
               className="graphic__design__logo__wrapper"
               style={(i + 1) % 5 === 0 ? { borderRight: "none" } : null}

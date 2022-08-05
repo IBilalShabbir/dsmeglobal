@@ -217,7 +217,7 @@ export function EmergingTechnologiesKnowHowMobDev() {
         technologies.
       </div>
       <div className="container__emerging__technologies__section">
-        {array.map((item) => (
+        {array?.map((item) => (
           <WebdevArrEntry
             label={item.label}
             svg={item.svg}
@@ -228,8 +228,8 @@ export function EmergingTechnologiesKnowHowMobDev() {
         ))}
       </div>
       {array
-        .filter((item) => item.label === selected)
-        .map((item) => (
+        ?.filter((item) => item.label === selected)
+        ?.map((item) => (
           <div
             className="container__emerging__technologies__section__entry__data"
             key={JSON.stringify(item)}

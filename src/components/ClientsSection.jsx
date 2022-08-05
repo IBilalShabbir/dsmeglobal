@@ -38,7 +38,7 @@ export function ClientsSection({ data }) {
       </Fade>
       <div className="container__clients__right">
         <Swiper slidesPerView={slidesPerView} autoplay>
-          {data.map((client) => (
+          {data?.map((client) => (
             <SwiperSlide key={JSON.stringify(client)}>
               <div className="container__clients__right__entry">
                 <Reveal>

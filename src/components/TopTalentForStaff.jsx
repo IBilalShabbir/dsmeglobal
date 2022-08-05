@@ -38,7 +38,7 @@ export function TopTalentForStaff() {
         needs.
       </div>
       <div className="staff__talent__features">
-        {talentFeatures.map((feature) => (
+        {talentFeatures?.map((feature) => (
           <div
             className="staff__talent__features__entry"
             key={JSON.stringify(feature)}

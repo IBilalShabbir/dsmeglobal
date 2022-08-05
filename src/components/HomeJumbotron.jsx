@@ -37,7 +37,7 @@ export function HomeJumbotron({
               {taglinesLine}{" "}
               {taglines
                 ?.filter((tagline, i) => i === taglineNo)
-                .map((tagline) => {
+                ?.map((tagline) => {
                   return <span key={tagline}>{tagline}</span>;
                 })}{" "}
             </div>
@@ -47,7 +47,7 @@ export function HomeJumbotron({
                   {matcherLine}{" "}
                   {matchers
                     ?.filter((matcher, i) => i === taglineNo)
-                    .map((matcher) => {
+                    ?.map((matcher) => {
                       return (
                         <span key={JSON.stringify(matcher)}>{matcher}</span>
                       );
@@ -104,8 +104,8 @@ export function HomeJumbotron({
         <div className="container__jumbotron__right">
           {imgs ? (
             imgs
-              .filter((item, i) => i === taglineNo)
-              .map((item) => (
+              ?.filter((item, i) => i === taglineNo)
+              ?.map((item) => (
                 <img src={item} alt={item} key={JSON.stringify(item)} />
               ))
           ) : (

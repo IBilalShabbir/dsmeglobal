@@ -117,8 +117,8 @@ export default function Portfolio({ data }) {
         </div>
         <div className="blog__page__content">
           {data
-            .filter((item, i) => (filter === "" ? i < noOfItems : i))
-            .map((item) => (
+            ?.filter((item, i) => (filter === "" ? i < noOfItems : i))
+            ?.map((item) => (
               <ProjectCard
                 setShowImage={setShowImage}
                 setShowImageData={setShowImageData}

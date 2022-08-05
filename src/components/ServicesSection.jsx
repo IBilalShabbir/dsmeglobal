@@ -66,7 +66,7 @@ export function ServicesSection() {
           </div>
         </Fade>
         <div className="container__services__right">
-          {data.map((item) => (
+          {data?.map((item) => (
             <ServicesCardNew data={item} key={JSON.stringify(item)} />
           ))}
         </div>

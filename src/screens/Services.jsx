@@ -21,12 +21,12 @@ export default function Services({ data }) {
       </div>
       <div className="services__main__container">
         <div className="services__main__container__left">
-          {data.map((item) => (
+          {data?.map((item) => (
             <ServicesCard data={item} key={JSON.stringify(item)} />
           ))}
         </div>
         <div className="services__main__container__right">
-          {data.map((item) => (
+          {data?.map((item) => (
             <Fade up key={JSON.stringify(item)}>
               <a
                 href={

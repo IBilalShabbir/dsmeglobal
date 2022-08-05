@@ -9,7 +9,7 @@ export function AboutOurTeam() {
         <span>Teamwork</span>, Makes the dream work
       </div>
       <div className="about__teams__content">
-        {teamData.map((item) => (
+        {teamData?.map((item) => (
           <Fade up key={JSON.stringify(item)}>
             <div className="about__teams__content__entry">
               <img

@@ -14,7 +14,7 @@ export function BlogSection({ data }) {
       <div className="blog__section__content">
         {data
           ?.filter((blog, i) => i < 3)
-          .map((blog) => (
+          ?.map((blog) => (
             <Fade up key={JSON.stringify(blog)}>
               <button
                 onClick={() => {

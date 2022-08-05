@@ -95,7 +95,7 @@ export default function QuoteScreen({ setNoShowContactUs, data }) {
                   type="text"
                   required={true}
                   placeholder="Services"
-                  list={data.map((item) => item.name)}
+                  list={data?.map((item) => item.name)}
                   onChange={(e) => {
                     setService(e.target.value);
                   }}

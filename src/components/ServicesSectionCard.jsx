@@ -14,7 +14,6 @@ export default function ServicesSectionCard({ data }) {
       window.scrollTo({ behavior: "smooth", top: 0 });
     }, 300);
   }
-  console.log();
   return (
     <Fade up>
       <section
@@ -42,7 +41,9 @@ export default function ServicesSectionCard({ data }) {
             {data.title
               .trim()
               .split(" ")
-              .map((word, i) => (i == 1 ? <span>{word}</span> : word))}
+              ?.map((word, i) =>
+                i == 1 ? <span key={JSON.stringify(word)}>{word}</span> : word
+              )}
           </div>
           <div className="services__main__container__content__wrapper__card__info">
             {data.description}

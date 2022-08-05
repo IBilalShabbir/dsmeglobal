@@ -1210,7 +1210,7 @@ export default function Pricing() {
             <div className="pricing__delivery__section__content__card__heading">
               Discovery
             </div>
-            {DeliveryCardEntry1.map((item) => (
+            {DeliveryCardEntry1?.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
                 key={JSON.stringify(item)}
@@ -1223,7 +1223,7 @@ export default function Pricing() {
             <div className="pricing__delivery__section__content__card__heading">
               Execution
             </div>
-            {DeliveryCardEntry2.map((item) => (
+            {DeliveryCardEntry2?.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
                 key={JSON.stringify(item)}
@@ -1236,7 +1236,7 @@ export default function Pricing() {
             <div className="pricing__delivery__section__content__card__heading">
               Support
             </div>
-            {DeliveryCardEntry3.map((item) => (
+            {DeliveryCardEntry3?.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
                 key={JSON.stringify(item)}

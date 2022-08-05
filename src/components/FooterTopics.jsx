@@ -7,8 +7,8 @@ export function FooterTopics({ data }) {
         Technologies
       </div>
       {data
-        .filter((item, i) => i < 7)
-        .map((item) => (
+        ?.filter((item, i) => i < 7)
+        ?.map((item) => (
           <div
             key={JSON.stringify(item)}
             className="footer__container__content__col__link"

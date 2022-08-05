@@ -16,7 +16,7 @@ export function CareersFilters({ setDeparment, setSearchQuery, data }) {
         />
       </Fade>
       <datalist id="departments">
-        {data.map((category) => (
+        {data?.map((category) => (
           <option key={JSON.stringify(category)} value={category.name} />
         ))}
       </datalist>

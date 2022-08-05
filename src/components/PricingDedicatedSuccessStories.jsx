@@ -15,7 +15,7 @@ export function PricingDedicatedSuccessStories({ slidesPerView, data }) {
       </div>
       <div className="pricing__fitted__team__content">
         <Swiper slidesPerView={slidesPerView} autoplay>
-          {data.map((item) => (
+          {data?.map((item) => (
             <SwiperSlide key={JSON.stringify(item)}>
               <div className="pricing__success__stories__slide">
                 <div className="pricing__success__stories__slide__image">

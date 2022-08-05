@@ -18,7 +18,7 @@ export function CareersViewOpenings({
         <div className="hot__offers__section__content">
           {
             <Swiper slidesPerView={slidesPerPage} spaceBetween={30}>
-              {data.map((item) => (
+              {data?.map((item) => (
                 <SwiperSlide key={JSON.stringify(item)}>
                   <HotOfferJobCard
                     item={item}

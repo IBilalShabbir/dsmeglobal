@@ -273,7 +273,7 @@ export function OurDevelopmentProcess() {
         technologies.
       </div>
       <div className="container__emerging__technologies__section container__emerging__technologies__section__reverse">
-        {array.map((item, i) => (
+        {array?.map((item, i) => (
           <WebdevArrEntry
             key={i}
             label={item.label}
@@ -284,8 +284,8 @@ export function OurDevelopmentProcess() {
         ))}
       </div>
       {array
-        .filter((item) => item.label === selected)
-        .map((item, i) => (
+        ?.filter((item) => item.label === selected)
+        ?.map((item, i) => (
           <div
             className="container__emerging__technologies__section__entry__data"
             key={i}

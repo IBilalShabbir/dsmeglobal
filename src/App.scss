@@ -1644,6 +1644,7 @@ body {
 .about__teams__content__entry {
   flex: 1;
   min-width: 15%;
+  max-width: 20%;
   background-color: $white;
   aspect-ratio: 1/1;
   max-height: 200px;
@@ -1653,6 +1654,7 @@ body {
 }
 .about__teams__content__entry__img {
   width: 100%;
+  min-width: 100%;
   mix-blend-mode: luminosity;
   min-height: 100%;
 }
@@ -8663,6 +8665,7 @@ body {
   }
   .about__teams__content__entry {
     min-width: 20%;
+    max-width: 20%;
   }
   .Custome__methodologies__section__detail__card {
     width: 48%;
@@ -8725,6 +8728,7 @@ body {
   }
   .about__teams__content__entry {
     min-width: 25%;
+    max-width: 25%;
   }
   .about__page__container__pricing__content {
     flex-direction: column;
@@ -8804,6 +8808,7 @@ body {
   }
   .about__teams__content__entry {
     min-width: 33.3%;
+    max-width: 33.3%;
   }
 }
 @media (max-width: 500px) {
@@ -8873,6 +8878,7 @@ body {
   }
   .about__teams__content__entry {
     min-width: 50%;
+    max-width: 50%;
   }
   .WHYS__main__container__left {
     height: 400px;

@@ -18,7 +18,7 @@ export default function Careers({ setLightHeader, data, CategoryData }) {
 
   useEffect(() => {
     setCareerDataFiltered(
-      data.filter((item) =>
+      data?.filter((item) =>
         item.position
           .toLowerCase()
           .replace(" ", "")
