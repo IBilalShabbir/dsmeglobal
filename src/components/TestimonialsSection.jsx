@@ -67,9 +67,8 @@ export function TestimonialsSection() {
           id="container__testimonials__overlay__content"
         >
           {array.map((item, i) => (
-            <Fade up>
+            <Fade up key={JSON.stringify(item)}>
               <button
-                key={JSON.stringify(item)}
                 className={
                   selected === i
                     ? "container__testimonials__overlay__content__entry container__testimonials__overlay__content__entry__active"
