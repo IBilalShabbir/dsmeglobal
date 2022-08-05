@@ -1,12 +1,12 @@
 import React from "react";
 import { CheckCircle } from "react-feather";
-import angular from "../assets/technologies/angular-icon-logo.webp";
-import react from "../assets/technologies/react.webp";
-import sql from "../assets/technologies/sql-server-logo.webp";
-import nodejs from "../assets/technologies/node js.webp";
-import mysql from "../assets/technologies/MySQL-Logo.wine.webp";
-import xml from "../assets/technologies/Group 847.webp";
-import typescript from "../assets/technologies/Image 5.webp";
+import angular from "../assets/angular-icon-logo.webp";
+import react from "../assets/react.webp";
+import sql from "../assets/sql-server-logo.webp";
+import nodejs from "../assets/node js.webp";
+import mysql from "../assets/MySQL-Logo.wine.webp";
+import xml from "../assets/Group 847.webp";
+import typescript from "../assets/Image 5.webp";
 
 export function FromMVPtoEnterpriseSolution() {
   return (

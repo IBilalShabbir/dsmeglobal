@@ -5,10 +5,6 @@ import img3 from "../assets/3.webp";
 import img4 from "../assets/4.webp";
 import img5 from "../assets/5.webp";
 import img6 from "../assets/6.webp";
-import img7 from "../assets/iosandroid.jpg";
-import img8 from "../assets/iosswift.jpg";
-import img9 from "../assets/iosapplication.png";
-import img10 from "../assets/ioscross.png";
 
 export function Youshareyourideawegetitdone() {
   return (
