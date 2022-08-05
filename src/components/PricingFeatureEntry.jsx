@@ -1,16 +1,17 @@
 import React from "react";
-import { Fade } from "react-reveal";
 
 export function PricingFeatureEntry({ title, content, icon }) {
   return (
-    <Fade up>
-      <div className="pricing__feature__entry">
+    <div className="Idustry__revolution__entry">
+      <div className="Idustry__revolution__section__top">
         {icon ? (
-          <div className="pricing__feature__entry__icon">{icon}</div>
+          <div className="Idustry__revolution__section__icon">{icon}</div>
         ) : null}
-        <div className="pricing__feature__entry__heading">{title}</div>
-        <div className="pricing__feature__entry__info">{content}</div>
+        <div className="Idustry__revolution__section__entry__heading">
+          {title}
+        </div>
       </div>
-    </Fade>
+      <div className="Idustry__revolution__section__info">{content}</div>
+    </div>
   );
 }

@@ -17,21 +17,23 @@ export default function Industry() {
       </div>
       <Fade up>
         {" "}
-        <div className="industry__software__solutions">
+        <div className="industry__software__solutions__heading">
           Software solutions for<span>industry leaders</span>
         </div>
       </Fade>
-      <Fade up>
-        {" "}
-        <div className="industry__software__solutions__content">
-          Need a software solution that’s right for you? Choose a digital
-          product crafted to answer the challenges of your industry. Small or
-          big, startup, or enterprise – we partner with companies of various
-          sizes and profiles on their way to innovation and growth. Empower your
-          business with a state-of-the-art digital solution, tailored to your
-          needs and expectations.
-        </div>
-      </Fade>
+      <div className="industry__software__sol__container">
+        <Fade up>
+          {" "}
+          <div className="industry__software__solutions__content">
+            Need a software solution that’s right for you? Choose a digital
+            product crafted to answer the challenges of your industry. Small or
+            big, startup, or enterprise – we partner with companies of various
+            sizes and profiles on their way to innovation and growth. Empower
+            your business with a state-of-the-art digital solution, tailored to
+            your needs and expectations.
+          </div>
+        </Fade>
+      </div>
       <IndustryFeatrues />
       <div style={{ background: "rgba(13, 110, 74, 0.1)" }}>
         <div className="tangible_results">
@@ -45,7 +47,6 @@ export default function Industry() {
               high-performing, and excellent teams of developers.
             </div>
           </div>
-
           <div className="tangible_results_right">
             <div className="tangible_results_right_contant">
               <div className="tangible_results_right_icon"></div>

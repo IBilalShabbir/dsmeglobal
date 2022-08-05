@@ -1411,30 +1411,32 @@ body {
   border: none;
   height: 250px;
 }
-.industry__software__solutions {
+.industry__software__solutions__heading {
   font-size: $font-large;
   font-weight: 600;
   display: flex;
   justify-content: start;
   max-width: 1440px;
   margin: 0 auto;
-  padding-bottom: 2em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding: 0em 1.8em;
 }
-.industry__software__solutions span {
+.industry__software__solutions__heading span {
   color: $primary;
   margin-left: 10px;
 }
+.industry__software__sol__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .industry__software__solutions__content {
   font-size: $font-normal;
   font-weight: 400;
+  max-width: 60%;
   display: flex;
   justify-content: start;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-left: 52.5px;
-  padding-right: 52.5px;
+  padding: 1em 4em;
 }
 .contact__section__content__img {
   width: 100%;
@@ -1763,8 +1765,43 @@ body {
   z-index: 999;
   position: sticky;
 }
+.Idustry__revolution__section {
+  width: 100%;
+  max-width: calc(1500px - 4em);
+  padding: 4em;
+  padding-top: 0em;
+  border-radius: 30px;
+  margin: 0em auto;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+  z-index: 999;
+  position: sticky;
+}
 .pricing__feature__main {
   background-color: $black;
+}
+
+.Idustry__revolution__main__heading {
+  font-size: large;
+  color: $black;
+  width: 100%;
+  max-width: 70%;
+}
+.Idustry__revolution__cards__section {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.Idustry__revolution__main__heading span {
+  color: $black;
 }
 .pricing__feature__entry__reverse {
   font-size: $font-large;
@@ -1773,7 +1810,17 @@ body {
   min-height: 180px;
   width: 30%;
 }
+
 .pricing__feature__entry__reverse span {
+  color: $primary;
+}
+.Idustry__revolution__entry {
+  background-color: $white;
+  width: 50%;
+  padding: 2em;
+  border-radius: 10px;
+  min-height: 200px;
+  position: relative;
   color: $primary;
 }
 
@@ -1830,7 +1877,20 @@ body {
   width: 40px;
   height: 40px;
 }
+.Idustry__revolution__section__icon svg {
+  width: 130px;
+  height: 90px;
+}
+.Idustry__revolution__section__info {
+  color: $black;
+}
 .pricing__feature__entry__heading {
+  font-size: $font-sub-heading;
+  margin-bottom: 0.7em;
+  color: $black;
+  font-weight: bold;
+}
+.Idustry__revolution__section__entry__heading {
   font-size: $font-sub-heading;
   margin-bottom: 0.7em;
   color: $black;
@@ -7740,17 +7800,18 @@ body {
   padding: 4em;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
   max-width: 1440px;
+  flex-direction: column;
   align-items: center;
 }
+
 .tangible_results_left_heading {
   font-size: $font-large;
   font-weight: 500;
   width: 100%;
 }
 .tangible_results_left_para {
-  width: 100%;
+  max-width: 800px;
   padding: 1em;
   padding-left: 0;
   text-align: start;
@@ -7768,14 +7829,15 @@ body {
   flex-direction: column;
   flex: 1;
   text-align: center;
+  margin-top: 1em;
 }
 .tangible_results_right {
   display: flex;
-  width: 60%;
+  width: 100%;
   justify-content: space-around;
 }
 .tangible_results_left {
-  width: 40%;
+  width: 100%;
 }
 .hot__offers__section__heade {
   font-size: $font-normal;
@@ -8359,6 +8421,9 @@ body {
   .scaleup__startup__card {
     width: 48%;
   }
+  .industry__software__solutions__content {
+    max-width: 100%;
+  }
 }
 @media (max-width: 875px) {
   .blockchain__whysection__servicecard {
@@ -8711,6 +8776,11 @@ body {
   }
   .Custome__methodologies__section__detail__card {
     width: 48%;
+  }
+}
+@media (max-width: 950px) {
+  .Idustry__revolution__entry {
+    width: 100%;
   }
 }
 @media (max-width: 850px) {
@@ -9382,7 +9452,8 @@ body {
     margin: 0 !important;
     margin-bottom: 2em !important;
   }
-  .pricing__feature__entry__reverse {
+
+  .Idustry__revolution__card {
     width: 100%;
   }
   .pricing__feature__entry {
