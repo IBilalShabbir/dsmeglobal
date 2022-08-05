@@ -21,9 +21,9 @@ function ServiceWebScraping() {
         </div>
 
         <div className="Android__and__ios__box__container">
-          <div className="Android__and__ios__box__container_entry">
-            <div className="Android__and__ios__box__container_entry_right">
-              <div className="Android__and__ios__box__container_entry_right_svg">
+          <div className="Android__and__ios__box__container_odd_entry">
+            <div className="Android__and__ios__box__container_entry_odd_right">
+              <div className="Android__and__ios__box__container_entry_right_odd_svg">
                 <svg
                   data-name="Layer 1"
                   width="400.90589"
@@ -200,11 +200,11 @@ function ServiceWebScraping() {
                 </svg>
               </div>
             </div>
-            <div className="Android__and__ios__box__container_entry_left">
-              <div className="Android__and__ios__box__container_entry_heading">
+            <div className="Android__and__ios__box__container_odd_entry_left">
+              <div className="Android__and__ios__box__container_odd_entry_heading">
                 Extraction
               </div>
-              <div className="Android__and__ios__box__container_entry_para">
+              <div className="Android__and__ios__box__container_odd_entry_para">
                 Our web scraping tools scan the web and extract the information
                 you need. We specialize in creating custom crawl clusters that
                 crawl through large quantities of data from multiple sources in
@@ -416,14 +416,15 @@ function ServiceWebScraping() {
               </div>
             </div>
           </div>
-          <div className="Android__and__ios__box__container_entry">
-            <div className="Android__and__ios__box__container_entry_right">
-              <div className="Android__and__ios__box__container_entry_right_svg">
+          <div className="Android__and__ios__box__container_odd_entry">
+            <div className="Android__and__ios__box__container_entry_odd_right">
+              <div className="Android__and__ios__box__container_entry_right_odd_svg">
                 <svg
                   data-name="Layer 1"
-                  width="400.90589"
-                  height="300.76206"
+                  width="400.34"
+                  height="300.14"
                   viewBox="0 0 1072.34 780.14"
+              
                 >
                   <title>QA engineers</title>
                   <path
@@ -1029,11 +1030,11 @@ function ServiceWebScraping() {
                 </svg>
               </div>
             </div>
-            <div className="Android__and__ios__box__container_entry_left">
-              <div className="Android__and__ios__box__container_entry_heading">
-                Quality <span>Assurance</span>
+            <div className="Android__and__ios__box__container_odd_entry_left">
+              <div className="Android__and__ios__box__container_odd_entry_heading">
+                Quality <span> Assurance</span>
               </div>
-              <div className="Android__and__ios__box__container_entry_para">
+              <div className="Android__and__ios__box__container_odd_entry_para">
                 We have quality assurance checks built into every step of the
                 process, ensuring your web scraping tools function well and work
                 quickly.

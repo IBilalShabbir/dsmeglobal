@@ -3334,7 +3334,8 @@ body {
   align-items: center;
 }
 .Android__and__ios__box__container {
-  padding: 0em 1em;
+  // padding-top: 6em;
+  padding-bottom: 1em;
 }
 
 .container__web__dev__solution__left__row__img {
@@ -3343,6 +3344,15 @@ body {
   margin-left: 1em;
   margin-bottom: 1em;
 }
+.Android__and__ios__box__container_odd_entry{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0em 2em;
+}
+.Android__and__ios__box__container_entry_odd_right{
+  width: 50%;
+}
 .Android__and__ios__box__container_entry {
   width: 100%;
   display: flex;
@@ -3350,15 +3360,32 @@ body {
   align-items: center;
 }
 .Android__and__ios__box__container_entry_para {
-  padding: 1em 0em;
+  padding: 0.5em 0em;
 }
 .Android__and__ios__box__container_entry_left {
   width: 50%;
-  padding-left: 2em;
+  // padding-left: 2em;
 }
 
 .Android__and__ios__box__container_entry_right {
   width: 50%;
+}
+.Android__and__ios__box__container_odd_entry_left{
+  width: 50%;
+  padding-left: 5em;
+
+}
+.Android__and__ios__box__container_odd_entry_heading{
+  font-size: $font-heading;
+
+
+}
+.Android__and__ios__box__container_odd_entry_para{
+  padding: 0.5em 0em;
+
+}
+.Android__and__ios__box__container_odd_entry_heading span{
+  color: $primary;
 }
 .container__web__dev__solution__right {
   background-color: $primary;
@@ -5309,9 +5336,8 @@ body {
 .ios__mobile__page__container__ios__company__heading {
   font-size: $font-heading;
   font-weight: 600;
-  width: 100%;
-  top: 0;
-  position: sticky;
+  width: 160%;
+  margin-left: 1em;
 }
 .Android__and__ios__box__container_entry_right_svg{
   padding:  0em 5em;
@@ -8165,14 +8191,16 @@ body {
   padding-bottom: 0em;
 }
 .Android__and__ios__boxes {
-  width: 70%;
-  position: relative;
+  width:30%;
 }
 .Android__and__ios__boxes__all {
   width: 100%;
   display: flex;
-  padding: 2em 4em;
-}
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 6em;
+  
+ }
 .svg__Android__and__ios__box__two {
   display: flex;
   align-items: center;
@@ -8497,6 +8525,27 @@ body {
   .pricing__delivery__section__content__card {
     min-width: 50%;
   }
+  .Android__and__ios__boxes__all{
+    flex-direction: column;
+  }
+  
+  .Android__and__ios__boxes{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .ios__mobile__page__container__ios__company__heading{
+     width: 120%;
+  }
+  
+  .Android__and__ios__box__container{
+    padding: 2em 5em;
+  }
+
+
+
+
+
 }
 @media (max-width: 1200px) {
   .about__core__values__content__entry {
@@ -9217,6 +9266,61 @@ body {
     flex-direction: column;
     height: 100%;
   }
+
+  .Android__and__ios__box__container_odd_entry{
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5em;
+
+
+
+
+  }
+  .Android__and__ios__box__container_odd_entry_para{
+    width: 120%;
+  }
+  .Android__and__ios__box__container_odd_entry_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+
+  }
+.Android__and__ios__box__container_entry_right_odd_svg svg{
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-right: 7em;
+}
+.Android__and__ios__box__container_entry{
+  flex-direction: column;
+}
+.Android__and__ios__box__container_entry_left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+
+}
+
+.Android__and__ios__box__container_entry_right_svg svg{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 7em;
+}
 
   .tangible_results_left {
     width: 100%;
