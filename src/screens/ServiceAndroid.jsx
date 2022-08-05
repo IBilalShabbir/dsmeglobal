@@ -931,13 +931,17 @@ export default function ServicesAndroid() {
                   svg={item.svg}
                   selected={selected}
                   setSelected={setSelected}
+                  key={JSON.stringify(item)}
                 />
               ))}
             </div>
             {array
               .filter((item) => item.label === selected)
               .map((item) => (
-                <div className="container__emerging__technologies__section__entry__data">
+                <div
+                  className="container__emerging__technologies__section__entry__data"
+                  key={JSON.stringify(item)}
+                >
                   <div className="container__emerging__technologies__section__entry__data___heading">
                     {item.label}
                   </div>

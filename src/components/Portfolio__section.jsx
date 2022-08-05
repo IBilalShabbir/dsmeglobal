@@ -14,7 +14,10 @@ export default function Portfolio__section({ data }) {
         </div>
         <div className="portfolio__section__container__buttons">
           {data.techonologies?.map((item) => (
-            <button style={{ border: `2px solid ${data.theme}` }}>
+            <button
+              style={{ border: `2px solid ${data.theme}` }}
+              key={JSON.stringify(item)}
+            >
               {item.label}
             </button>
           ))}
@@ -57,7 +60,7 @@ export default function Portfolio__section({ data }) {
             />
           </SwiperSlide>
           {data.sliderImage?.map((item) => (
-            <SwiperSlide>
+            <SwiperSlide key={JSON.stringify(item)}>
               <img
                 loading="lazy"
                 src={

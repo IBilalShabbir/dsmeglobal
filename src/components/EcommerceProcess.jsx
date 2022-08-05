@@ -1513,7 +1513,7 @@ export function EcommerceProcess({ role, process, setProcess }) {
   return (
     <div className="ecommerce__screen__container__process">
       <div className="ecommerce__screen__container__process__heading">
-        Our <span>Process</span> 
+        Our <span>Process</span>
       </div>
       {role === "Shopify" ? (
         <div className="ecommerce__screen__container__process__content">
@@ -1523,15 +1523,22 @@ export function EcommerceProcess({ role, process, setProcess }) {
                 label={item.label}
                 selected={process}
                 setSelected={setProcess}
+                key={JSON.stringify(item)}
               />
             ))}
           </div>
           {shopifyPorcess
             .filter((item) => item.label === process)
             .map((item) => (
-              <div className="ecommerce__screen__container__process__content__selector__content">
+              <div
+                className="ecommerce__screen__container__process__content__selector__content"
+                key={JSON.stringify(item)}
+              >
                 {item.list.map((item) => (
-                  <div className="ecommerce__screen__container__process__content__selector__content__entry">
+                  <div
+                    className="ecommerce__screen__container__process__content__selector__content__entry"
+                    key={JSON.stringify(item)}
+                  >
                     {item.svg}
                     <div className="ecommerce__screen__container__process__content__selector__content__entry__info">
                       {item.info}
@@ -1549,15 +1556,22 @@ export function EcommerceProcess({ role, process, setProcess }) {
                 label={item.label}
                 selected={process}
                 setSelected={setProcess}
+                key={JSON.stringify(item)}
               />
             ))}
           </div>
           {wordpressPorcess
             .filter((item) => item.label === process)
             .map((item) => (
-              <div className="ecommerce__screen__container__process__content__selector__content">
+              <div
+                className="ecommerce__screen__container__process__content__selector__content"
+                key={JSON.stringify(item)}
+              >
                 {item.list.map((item) => (
-                  <div className="ecommerce__screen__container__process__content__selector__content__entry">
+                  <div
+                    className="ecommerce__screen__container__process__content__selector__content__entry"
+                    key={JSON.stringify(item)}
+                  >
                     {item.svg}
                     <div className="ecommerce__screen__container__process__content__selector__content__entry__info">
                       {item.info}

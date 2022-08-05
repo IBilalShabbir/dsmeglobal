@@ -203,10 +203,12 @@ export function EmergingTechnologiesKnowHowMobDev() {
     <div
       className="container__emerging__technologies"
       style={{
-        marginTop: "5em",backgroundColor: "#ffff", color:"#242424" 
+        marginTop: "5em",
+        backgroundColor: "#ffff",
+        color: "#242424",
       }}
     >
-      <div className="container__emerging__technologies__heading__main" >
+      <div className="container__emerging__technologies__heading__main">
         Emerging Technologies <span> Know -How</span>
       </div>
       <div className="container__emerging__technologies__text__main">
@@ -221,13 +223,17 @@ export function EmergingTechnologiesKnowHowMobDev() {
             svg={item.svg}
             selected={selected}
             setSelected={setSelected}
+            key={JSON.stringify(item)}
           />
         ))}
       </div>
       {array
         .filter((item) => item.label === selected)
         .map((item) => (
-          <div className="container__emerging__technologies__section__entry__data">
+          <div
+            className="container__emerging__technologies__section__entry__data"
+            key={JSON.stringify(item)}
+          >
             <div className="container__emerging__technologies__section__entry__data___heading">
               {item.label}
             </div>

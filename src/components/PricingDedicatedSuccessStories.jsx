@@ -1,14 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { fetcher, replacePngWithWebp } from "../utils/functions";
-import useSWR from "swr";
+import { replacePngWithWebp } from "../utils/functions";
 
-export function PricingDedicatedSuccessStories({ slidesPerView }) {
-  const { data } = useSWR(
-    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_success_stories`,
-    fetcher,
-    { suspense: true }
-  );
+export function PricingDedicatedSuccessStories({ slidesPerView, data }) {
   return (
     <div className="pricing__fitted__team">
       <div
@@ -22,7 +16,7 @@ export function PricingDedicatedSuccessStories({ slidesPerView }) {
       <div className="pricing__fitted__team__content">
         <Swiper slidesPerView={slidesPerView} autoplay>
           {data.map((item) => (
-            <SwiperSlide>
+            <SwiperSlide key={JSON.stringify(item)}>
               <div className="pricing__success__stories__slide">
                 <div className="pricing__success__stories__slide__image">
                   <img

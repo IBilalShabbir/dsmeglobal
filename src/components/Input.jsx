@@ -71,7 +71,7 @@ export default function Input({
         />
         <datalist id={placeholder + "s"}>
           {list?.map((item) => (
-            <option value={item} />
+            <option value={item} key={JSON.stringify(item)} />
           ))}
         </datalist>
       </div>

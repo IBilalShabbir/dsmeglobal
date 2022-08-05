@@ -10,11 +10,8 @@ export function AboutOurTeam() {
       </div>
       <div className="about__teams__content">
         {teamData.map((item) => (
-          <Fade up>
-            <div
-              className="about__teams__content__entry"
-              key={JSON.stringify(item)}
-            >
+          <Fade up key={JSON.stringify(item)}>
+            <div className="about__teams__content__entry">
               <img
                 src={
                   "https://res.cloudinary.com/mehfoozurrehman/image/upload/v1658515904/dsme_team/" +

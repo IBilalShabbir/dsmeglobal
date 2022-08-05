@@ -2,22 +2,15 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BlogsCard from "../components/BlogCard";
 import BlogsFilter from "../components/BlogsFilter";
-import { fetcher } from "../utils/functions";
 import blog from "../assets/blog.svg";
-import useSWR from "swr";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { Fade } from "react-reveal";
 
-export default function Blogs() {
+export default function Blogs({ data }) {
   const navigate = useNavigate();
   const [noOfItems, setNoOfItems] = useState(9);
   const [filter, setFilter] = useState("");
 
-  const { data, error } = useSWR(
-    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_blog`,
-    fetcher,
-    { suspense: true }
-  );
   return (
     <>
       <div className="container">
@@ -68,19 +61,15 @@ export default function Blogs() {
           />
         </div>
         <div className="blog__page__content">
-          {error ? (
-            <div>failed to load</div>
-          ) : (
-            data
-              .filter((item, i) => (filter === "" ? i < noOfItems : i))
-              .map((item) => (
-                <BlogsCard
-                  data={item}
-                  key={JSON.stringify(item)}
-                  filter={filter}
-                />
-              ))
-          )}
+          {data
+            .filter((item, i) => (filter === "" ? i < noOfItems : i))
+            .map((item) => (
+              <BlogsCard
+                data={item}
+                key={JSON.stringify(item)}
+                filter={filter}
+              />
+            ))}
         </div>
         {filter === "" && data.length > 6 ? (
           <div className="blog__page__content__button">

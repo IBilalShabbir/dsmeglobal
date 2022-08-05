@@ -61,6 +61,7 @@ export function TechonologiesForStaff() {
             svg={item.svg}
             selected={selected}
             setSelected={setSelected}
+            key={JSON.stringify(item)}
           />
         ))}
       </div>
@@ -68,11 +69,12 @@ export function TechonologiesForStaff() {
         .filter((item) => item.label === selected)
         .map((item) => (
           <div className="container__emerging__technologies__section__entry__data">
-            {item.techIcons.map((icon, index) => {
+            {item.techIcons.map((icon) => {
               return (
                 <div
-                  key={index}
-                  className="container__emerging__technologies__section__entry__data__img">
+                  key={JSON.stringify(icon)}
+                  className="container__emerging__technologies__section__entry__data__img"
+                >
                   <img src={icon} alt="icon" />
                 </div>
               );

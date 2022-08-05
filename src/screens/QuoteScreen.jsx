@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from "react";
 import quote from "../assets/quote.svg";
 import Input from "../components/Input";
-import { fetcher } from "../utils/functions";
 import axios from "axios";
-import useSWR from "swr";
 
-export default function QuoteScreen({ setNoShowContactUs }) {
-  const { data } = useSWR(
-    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_category`,
-    fetcher,
-    { suspense: true }
-  );
-  console.log(data);
+export default function QuoteScreen({ setNoShowContactUs, data }) {
   useEffect(() => {
     setNoShowContactUs(false);
 

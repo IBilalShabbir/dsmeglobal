@@ -15,7 +15,12 @@ import homebanner2 from "../assets/homebanner2.webp";
 import homebanner3 from "../assets/homebanner3.webp";
 import { WeHelpYouSucceed } from "../components/WeHelpYouSucceed";
 
-export default function Home({ setLightHeader }) {
+export default function Home({
+  setLightHeader,
+  BlogData,
+  WorkData,
+  TechnologiesData,
+}) {
   useEffect(() => {
     setLightHeader(true);
 
@@ -25,15 +30,7 @@ export default function Home({ setLightHeader }) {
   }, []);
   return (
     <>
-      <div
-        className="container"
-        style={{
-          background:
-            'url("https://img.freepik.com/free-photo/black-elegant-background-with-copy-space_24972-1836.jpg?t=st=1658749141~exp=1658749741~hmac=1e2a415798ccb0b21f058af653cee77aa63112f98c093a9fc3d4cd6fa220f5ca&w=900"),no-repeat',
-          backgroundSize: "cover",
-          marginBottom: "3em",
-        }}
-      >
+      <div className="container container__reverse">
         <HomeJumbotron
           taglinesLine="Quality"
           taglines={["services", "products", "customizations"]}
@@ -49,14 +46,14 @@ export default function Home({ setLightHeader }) {
       <div className="container">
         <ServicesSection />
         <StatsSection />
-        <WorkSection />
+        <WorkSection data={WorkData} />
         <QuateSection />
         <PricingSection />
         <OurDevelopmentProcess />
-        <ClientsSection />
+        <ClientsSection data={TechnologiesData} />
         <TestimonialsSection />
         <WeHelpYouSucceed />
-        <BlogSection />
+        <BlogSection data={BlogData} />
         <NewsletterSection />
       </div>
     </>

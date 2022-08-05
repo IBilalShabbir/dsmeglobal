@@ -1,37 +1,29 @@
-import React, {useEffect, useLayoutEffect, useState} from 'react';
-import ApplyForJobPopup from '../components/ApplyForJobPopup';
-import {HomeJumbotron} from '../components/HomeJumbotron';
-import {CareerBanner} from '../components/CareerBanner';
-import {CareeersFeature} from '../components/CareeersFeature';
-import {CareersVacencies} from '../components/CareersVacencies';
-import {CareersViewOpenings} from '../components/CareersViewOpenings';
-import {fetcher} from '../utils/functions';
-import noData from '../assets/noData.webp';
-import career from '../assets/career.svg';
-import useSWR from 'swr';
+import React, { useEffect, useState } from "react";
+import ApplyForJobPopup from "../components/ApplyForJobPopup";
+import { HomeJumbotron } from "../components/HomeJumbotron";
+import { CareerBanner } from "../components/CareerBanner";
+import { CareeersFeature } from "../components/CareeersFeature";
+import { CareersVacencies } from "../components/CareersVacencies";
+import { CareersViewOpenings } from "../components/CareersViewOpenings";
+import noData from "../assets/noData.webp";
+import career from "../assets/career.svg";
 
-export default function Careers({setLightHeader}) {
+export default function Careers({ setLightHeader, data, CategoryData }) {
   const [slidesPerPage, setSlidesPerPage] = useState(3.5);
-  const [department, setDeparment] = useState('');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [department, setDeparment] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
   const [isApplyOpen, setIsApplyOpen] = useState(false);
   const [selectItem, setSelectedItem] = useState([]);
   const [careerDataFiltered, setCareerDataFiltered] = useState([]);
 
-  const {data, error} = useSWR(
-    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_careers`,
-    fetcher,
-    {suspense: true},
-  );
-
   useEffect(() => {
     setCareerDataFiltered(
-      data.filter(item =>
+      data.filter((item) =>
         item.position
           .toLowerCase()
-          .replace(' ', '')
-          .includes(searchQuery.toLocaleLowerCase().replace(' ', '')),
-      ),
+          .replace(" ", "")
+          .includes(searchQuery.toLocaleLowerCase().replace(" ", ""))
+      )
     );
   }, [searchQuery, data]);
 
@@ -54,7 +46,7 @@ export default function Careers({setLightHeader}) {
     } else {
       setSlidesPerPage(3.5);
     }
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       if (window.innerWidth <= 500) {
         setSlidesPerPage(1);
       } else if (window.innerWidth <= 650) {
@@ -95,7 +87,6 @@ export default function Careers({setLightHeader}) {
           </div>
           <CareeersFeature />
           <CareersViewOpenings
-            error={error}
             slidesPerPage={slidesPerPage}
             setIsApplyOpen={setIsApplyOpen}
             data={data}
@@ -106,6 +97,7 @@ export default function Careers({setLightHeader}) {
             setSearchQuery={setSearchQuery}
             noData={noData}
             data={data}
+            CategoryData={CategoryData}
             department={department}
             setIsApplyOpen={setIsApplyOpen}
             careerDataFiltered={careerDataFiltered}

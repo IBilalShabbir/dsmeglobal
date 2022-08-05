@@ -226,6 +226,7 @@ function Graphicdesign() {
               <div
                 className="graphic__design__logo__wrapper"
                 style={(i + 1) % 5 === 0 ? { borderRight: "none" } : null}
+                key={JSON.stringify(logo)}
               >
                 <img className="graphic__design__logo" src={logo} alt={logo} />
               </div>
@@ -251,6 +252,7 @@ function Graphicdesign() {
             <div
               className="graphic__design__logo__wrapper"
               style={(i + 1) % 5 === 0 ? { borderRight: "none" } : null}
+              key={JSON.stringify(logo)}
             >
               <img className="graphic__design__logo" src={logo} alt={logo} />
             </div>

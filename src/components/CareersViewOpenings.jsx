@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Fade } from "react-reveal";
 
 export function CareersViewOpenings({
-  error,
   slidesPerPage,
   data,
   setIsApplyOpen,
@@ -14,13 +13,10 @@ export function CareersViewOpenings({
     <div className="hot__offers__section__wrapper">
       <section id="job__section" className="hot__offers__section">
         <Fade up>
-          {" "}
           <div className="hot__offers__section__header"> View Openings </div>
         </Fade>
         <div className="hot__offers__section__content">
-          {error ? (
-            <div>failed to load</div>
-          ) : (
+          {
             <Swiper slidesPerView={slidesPerPage} spaceBetween={30}>
               {data.map((item) => (
                 <SwiperSlide key={JSON.stringify(item)}>
@@ -34,7 +30,7 @@ export function CareersViewOpenings({
                 </SwiperSlide>
               ))}
             </Swiper>
-          )}
+          }
         </div>
       </section>
     </div>

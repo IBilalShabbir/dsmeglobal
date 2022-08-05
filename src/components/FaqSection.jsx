@@ -37,7 +37,7 @@ export default function FaqSection() {
         </div>
         {faqData.map((faq, index) => (
           <FaqSectionEntry
-            key={index}
+            key={JSON.stringify(faq)}
             index={index}
             data={faq}
             isOpen={isOpen}

@@ -11,6 +11,7 @@ export function CareersVacencies({
   setIsApplyOpen,
   careerDataFiltered,
   setSelectedItem,
+  CategoryData,
 }) {
   return (
     <div className="hot__offers__section">
@@ -30,6 +31,7 @@ export function CareersVacencies({
         <CareersFilters
           setDeparment={setDeparment}
           setSearchQuery={setSearchQuery}
+          data={CategoryData}
         />
         {careerDataFiltered.length === 0 ? (
           <div

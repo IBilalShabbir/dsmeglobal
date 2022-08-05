@@ -2,21 +2,13 @@ import React, { useEffect } from "react";
 import ServicesCard from "../components/ServicesSectionCard";
 import servicesbanner from "../assets/servicesbanner.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
-import useSWR from "swr";
-import { fetcher } from "../utils/functions";
 import { Fade } from "react-reveal";
 
-export default function Services() {
+export default function Services({ data }) {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  const { data } = useSWR(
-    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_service`,
-    fetcher,
-    { suspense: true }
-  );
-  console.log(data);
   return (
     <>
       <div className="container">
@@ -35,7 +27,7 @@ export default function Services() {
         </div>
         <div className="services__main__container__right">
           {data.map((item) => (
-            <Fade up>
+            <Fade up key={JSON.stringify(item)}>
               <a
                 href={
                   "#" +

@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { fetcher, replacePngWithWebp } from "../utils/functions";
-import useSWR from "swr";
+import { replacePngWithWebp } from "../utils/functions";
 import { Fade, Reveal } from "react-reveal";
 
-export function ClientsSection() {
+export function ClientsSection({ data }) {
   const [slidesPerView, setSlidesPerView] = useState(4);
-  const { data, error } = useSWR(
-    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_techonologies`,
-    fetcher,
-    { suspense: true }
-  );
+
   function getSlidesPerView() {
     if (window.innerWidth < 400) {
       setSlidesPerView(1);
@@ -42,28 +37,24 @@ export function ClientsSection() {
         </div>
       </Fade>
       <div className="container__clients__right">
-        {error ? (
-          <div>failed to load</div>
-        ) : (
-          <Swiper slidesPerView={slidesPerView} autoplay>
-            {data.map((client) => (
-              <SwiperSlide key={JSON.stringify(client)}>
-                <div className="container__clients__right__entry">
-                  <Reveal>
-                    <img
-                      loading="lazy"
-                      src={
-                        import.meta.env.VITE_CLOUDNAIRY_API_URL +
-                        replacePngWithWebp(client.icon)
-                      }
-                      alt={client.icon}
-                    />
-                  </Reveal>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        )}
+        <Swiper slidesPerView={slidesPerView} autoplay>
+          {data.map((client) => (
+            <SwiperSlide key={JSON.stringify(client)}>
+              <div className="container__clients__right__entry">
+                <Reveal>
+                  <img
+                    loading="lazy"
+                    src={
+                      import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                      replacePngWithWebp(client.icon)
+                    }
+                    alt={client.icon}
+                  />
+                </Reveal>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

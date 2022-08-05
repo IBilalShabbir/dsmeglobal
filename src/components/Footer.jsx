@@ -11,7 +11,7 @@ import { Dribbble, Facebook, Instagram, Linkedin } from "react-feather";
 import { FooterServices } from "./FooterServices";
 import { FooterTopics } from "./FooterTopics";
 
-export default function Footer() {
+export default function Footer({ TechnologiesData, ServiceData }) {
   return (
     <div className="footer__container">
       <div className="footer__container__content__wrapper">
@@ -35,8 +35,8 @@ export default function Footer() {
               software development company. Let’s work together
             </div>
           </div>
-          <FooterServices />
-          <FooterTopics />
+          <FooterServices data={ServiceData} />
+          <FooterTopics data={TechnologiesData} />
           <div className="footer__container__content__col">
             <div className="footer__container__content__col__heading">
               Contact Us

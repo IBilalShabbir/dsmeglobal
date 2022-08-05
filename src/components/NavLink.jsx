@@ -9,7 +9,7 @@ export function NavLink({ children, to, navigate, setIsNavOpen }) {
         id={children}
         title={children}
         className="header__content__nav__entry__input"
-        defaultChecked={window.location.pathname === to}
+        checked={window.location.pathname === to}
         onClick={() => {
           navigate(to);
           if (window.innerWidth < 1000) {

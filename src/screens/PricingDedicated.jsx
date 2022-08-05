@@ -11,7 +11,7 @@ import { ProcessFromIdeaCreationtoProductDelivery } from "../components/ProcessF
 import { PricingDedicatedSuccessStories } from "../components/PricingDedicatedSuccessStories";
 import { AdvantagesOfDSMETalent } from "../components/AdvantagesOfDSMETalent";
 
-export default function PricingDedicated() {
+export default function PricingDedicated({ TechnologiesData }) {
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [slidesPerViewLogo, setSlidesPerViewLogo] = useState(4);
   const [showNavigation, setShowNavigation] = useState(true);
@@ -62,7 +62,10 @@ export default function PricingDedicated() {
       <TransparentExecution />
       <WhyDedicatedTeamswithDSMEGlobal />
       <ProcessFromIdeaCreationtoProductDelivery />
-      <PricingDedicatedSuccessStories slidesPerView={slidesPerView} />
+      <PricingDedicatedSuccessStories
+        slidesPerView={slidesPerView}
+        data={TechnologiesData}
+      />
       <AwardsAchievements
         slidesPerViewLogo={slidesPerViewLogo}
         Navigation={Navigation}

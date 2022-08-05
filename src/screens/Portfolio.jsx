@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { PortfolioFilter } from "../components/PortfolioFilter";
 import { ProjectCard } from "../components/ProjectCard";
-import { fetcher } from "../utils/functions";
 import project from "../assets/projects.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
-import useSWR from "swr";
 
-export default function Portfolio() {
+export default function Portfolio({ data }) {
   const [showImage, setShowImage] = useState(false);
   const [noOfItems, setNoOfItems] = useState(9);
   const [showImagData, setShowImageData] = useState([]);
@@ -17,11 +15,6 @@ export default function Portfolio() {
     document.body.style.overflow = "auto";
   }
 
-  const { data, error } = useSWR(
-    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_project`,
-    fetcher,
-    { suspense: true }
-  );
   return (
     <>
       <div className="container">
@@ -123,21 +116,17 @@ export default function Portfolio() {
           />
         </div>
         <div className="blog__page__content">
-          {error ? (
-            <div>failed to load</div>
-          ) : (
-            data
-              .filter((item, i) => (filter === "" ? i < noOfItems : i))
-              .map((item) => (
-                <ProjectCard
-                  setShowImage={setShowImage}
-                  setShowImageData={setShowImageData}
-                  data={item}
-                  key={JSON.stringify(item)}
-                  filter={filter}
-                />
-              ))
-          )}
+          {data
+            .filter((item, i) => (filter === "" ? i < noOfItems : i))
+            .map((item) => (
+              <ProjectCard
+                setShowImage={setShowImage}
+                setShowImageData={setShowImageData}
+                data={item}
+                key={JSON.stringify(item)}
+                filter={filter}
+              />
+            ))}
         </div>
         {filter === "" && data.length > 6 ? (
           <div className="blog__page__content__button">

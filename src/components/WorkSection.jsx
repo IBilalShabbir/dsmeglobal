@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { fetcher, replacePngWithWebp } from "../utils/functions";
-import useSWR from "swr";
+import { replacePngWithWebp } from "../utils/functions";
 import { Fade } from "react-reveal";
 
-export function WorkSection() {
+export function WorkSection({ data }) {
   const [project, setProject] = useState([]);
 
-  const { data, error } = useSWR(
-    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_work`,
-    fetcher,
-    { suspense: true }
-  );
   useEffect(() => {
     data
       .filter((item, i) => i === 0)
@@ -59,41 +53,37 @@ export function WorkSection() {
               </Fade>
             </div>
             <div className="work__section__content__selection">
-              {error ? (
-                <div>failed to load</div>
-              ) : (
-                data.map((item, i) => (
-                  <div
-                    className="work__section__content__selection__entry"
-                    key={JSON.stringify(item)}
-                  >
-                    <input
-                      type="radio"
-                      name="work__section__content__selection__entry__input"
-                      className="work__section__content__selection__entry__input"
-                      title={
-                        "work__section__content__selection__entry__input" +
-                        item.title
+              {data.map((item, i) => (
+                <div
+                  className="work__section__content__selection__entry"
+                  key={JSON.stringify(item)}
+                >
+                  <input
+                    type="radio"
+                    name="work__section__content__selection__entry__input"
+                    className="work__section__content__selection__entry__input"
+                    title={
+                      "work__section__content__selection__entry__input" +
+                      item.title
+                    }
+                    onClick={() => {
+                      setProject(item);
+                    }}
+                    defaultChecked={i === 0 ? true : false}
+                  />
+                  <Fade up>
+                    <img
+                      loading="lazy"
+                      src={
+                        "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                        item.logo
                       }
-                      onClick={() => {
-                        setProject(item);
-                      }}
-                      defaultChecked={i === 0 ? true : false}
+                      alt={item.title}
+                      className="work__section__content__selection__entry__img"
                     />
-                    <Fade up>
-                      <img
-                        loading="lazy"
-                        src={
-                          "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                          item.logo
-                        }
-                        alt={item.title}
-                        className="work__section__content__selection__entry__img"
-                      />
-                    </Fade>
-                  </div>
-                ))
-              )}
+                  </Fade>
+                </div>
+              ))}
             </div>
             <Link
               to="/portfolio"

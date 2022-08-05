@@ -19,7 +19,7 @@ export function MeetUsStories() {
         </Fade>
         <div className="meetus__container__stories__card__container">
           {teamData.map((item) => (
-            <Fade up>
+            <Fade up key={JSON.stringify(item)}>
               <div className="meetus__container__stories__card">
                 <div className="meetus__container__stories__card__image">
                   <img

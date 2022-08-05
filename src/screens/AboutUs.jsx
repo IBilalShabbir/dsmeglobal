@@ -14,7 +14,7 @@ import { AboutSuccessStories } from "../components/AboutSuccessStories";
 import { AboutPressRelease } from "../components/AboutPressRelease";
 import { AboutOurMissionandVision } from "../components/AboutOurMissionandVision";
 
-export default function AboutUs() {
+export default function AboutUs({ AboutSuccessStoriesData }) {
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [slidesPerViewLogo, setSlidesPerViewLogo] = useState(4);
   const [showNavigation, setShowNavigation] = useState(true);
@@ -74,7 +74,10 @@ export default function AboutUs() {
       <AboutKeyDifferences />
       <AboutOurEndeavors />
       <AboutPressRelease slidesPerView={slidesPerView} />
-      <AboutSuccessStories slidesPerView={slidesPerView} />
+      <AboutSuccessStories
+        slidesPerView={slidesPerView}
+        data={AboutSuccessStoriesData}
+      />
       <AboutAwardAchievements
         slidesPerViewLogo={slidesPerViewLogo}
         Navigation={Navigation}

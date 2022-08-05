@@ -146,12 +146,20 @@ body {
   flex-direction: column;
   width: 100%;
 }
+.container__reverse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: url("./assets/homeJumbotronBg.webp"), no-repeat;
+  background-size: cover;
+  margin-bottom: 3em;
+}
 
 .container__jumbotron {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 700px;
+  min-height: 768px;
   width: 100%;
   max-width: 1500px;
   padding: 0 4em;

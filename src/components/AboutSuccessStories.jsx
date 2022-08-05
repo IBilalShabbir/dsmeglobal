@@ -1,20 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import useSWR from "swr";
-import { fetcher, getText } from "../utils/functions";
+import { getText } from "../utils/functions";
 
-export function AboutSuccessStories({ slidesPerView }) {
-  const { data } = useSWR(
-    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_success_stories`,
-    fetcher,
-    { suspense: true }
-  );
-  console.log(data);
+export function AboutSuccessStories({ slidesPerView, data }) {
   return (
     <div className="pricing__fitted__team">
       <div
         className="pricing__fitted__team__header"
-        id="pricing__success__stories__team__header">
+        id="pricing__success__stories__team__header"
+      >
         <div className="pricing__fitted__team__header__heading">
           Success <span>Stories</span>
         </div>
@@ -22,9 +16,8 @@ export function AboutSuccessStories({ slidesPerView }) {
       <div className="pricing__fitted__team__content">
         <Swiper slidesPerView={slidesPerView} autoplay>
           {data.map((item) => {
-            console.log(import.meta.env.VITE_CLOUDNAIRY_API_URL + item.logo);
             return (
-              <SwiperSlide>
+              <SwiperSlide key={JSON.stringify(item)}>
                 <div className="pricing__success__stories__slide">
                   <div className="pricing__success__stories__slide__image">
                     <img
