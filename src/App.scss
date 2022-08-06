@@ -1823,6 +1823,12 @@ body {
   min-height: 200px;
   position: relative;
   color: $primary;
+  border: 1px solid transparent;
+}
+.Idustry__revolution__entry:hover {
+  border: 1px solid $primary;
+  background-color: rgba(228, 228, 228, 0.3);
+  transition: 300ms ease-in-out;
 }
 
 .pricing__feature__entry {
@@ -1892,8 +1898,8 @@ body {
   font-weight: bold;
 }
 .Idustry__revolution__section__entry__heading {
-  font-size: $font-sub-heading;
-  margin-bottom: 0.7em;
+  font-size: 24px;
+  margin: 0.7em 0em;
   color: $black;
   font-weight: bold;
 }
@@ -7830,7 +7836,7 @@ body {
 
 .tangible_results_left_heading {
   font-size: $font-large;
-  font-weight: 500;
+  font-weight: 600;
   width: 100%;
 }
 .tangible_results_left_para {
@@ -7840,12 +7846,13 @@ body {
   text-align: start;
 }
 .tangible_results_right_sub_heading {
-  font-size: $font-large;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 800;
   color: $primary;
 }
 .tangible_results_right_para {
   font-size: $font-normal;
+  text-transform: capitalize;
 }
 
 .tangible_results_right_contant {
