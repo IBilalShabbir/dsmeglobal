@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { parseDate } from "../utils/functions";
 
-export default function BlogDetails() {
+export default function BlogDetails({ setLightHeader }) {
   let blogData = JSON.parse(window.localStorage.getItem("blogsData"));
   return (
     <>
-      <div className="blog__jumbotron">
+      <div className="blog__jumbotron" style={{ marginTop: "6.6em" }}>
         <img
           loading="lazy"
           src={

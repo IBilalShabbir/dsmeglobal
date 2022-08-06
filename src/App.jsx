@@ -127,7 +127,10 @@ function App() {
         <Route path="/services/graphic-designing" element={<GraphicDesign />} />
         <Route path="/portfolio" element={<Portfolio data={PortfolioData} />} />
         <Route path="/blog" element={<Blogs data={BlogData} />} />
-        <Route path="/blog-details" element={<BlogDetails />} />
+        <Route
+          path="/blog-details"
+          element={<BlogDetails setLightHeader={setLightHeader} />}
+        />
         <Route path="/pricing" element={<Pricing />} />
         <Route
           path="/pricing-dedicated-teams"

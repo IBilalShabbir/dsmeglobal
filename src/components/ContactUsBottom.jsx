@@ -137,7 +137,6 @@ export default function ContactUsBottom() {
                     type="tel"
                     label="Mobile (Optional)"
                     placeholder=""
-                    required={true}
                     isError={errorPhone}
                     errorMessage={errorPhoneMessage}
                     onChange={(e) => {

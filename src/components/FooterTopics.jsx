@@ -9,12 +9,13 @@ export function FooterTopics({ data }) {
       {data
         ?.filter((item, i) => i < 7)
         ?.map((item) => (
-          <div
+          <a
+            href="#"
             key={JSON.stringify(item)}
             className="footer__container__content__col__link"
           >
             {item.name}
-          </div>
+          </a>
         ))}
     </div>
   );
