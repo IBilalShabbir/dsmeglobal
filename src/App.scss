@@ -667,6 +667,10 @@ body {
   padding: 1em 3em;
   margin-top: 3em;
 }
+.services__main__container__reverse .services__main__container__left {
+  margin-right: 0em;
+  margin-left: 4em;
+}
 .services__main__container__left {
   flex: 1;
   display: flex;
@@ -8669,6 +8673,9 @@ body {
   .services__main__container__left {
     margin-right: 0em;
   }
+  .services__main__container__reverse .services__main__container__left {
+    margin-left: 0em;
+  }
 }
 @media (max-width: 1100px) {
   .ios__development__native__cross__plat__development__img {
@@ -9353,6 +9360,7 @@ body {
   }
   .services__main__container__content__wrapper__card__svg {
     margin-right: 0em !important;
+    margin-left: 0em !important;
     margin-bottom: 5em !important;
   }
   .services__main__container__content__wrapper__card__content {
