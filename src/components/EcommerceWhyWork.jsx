@@ -3,10 +3,13 @@ import EcommerceWorkCodeCard from "../components/EcommerceWorkCodeCard";
 
 export function EcommerceWhyWork({ role }) {
   return (
-    <div className="ecommerce__screen__container__work__code">
+    <div
+      className="ecommerce__screen__container__work__code"
+      style={{ marginBottom: -50, paddingBottom: 0 }}
+    >
       <div className="ecommerce__screen__container__work__code__header">
         <div className="ecommerce__screen__container__work__code__header__heading">
-          Why Work With<span>DSMEGlobals</span> 
+          Why Work With<span>DSMEGlobals</span>
         </div>
         <div className="ecommerce__screen__container__work__code__header__info">
           Get access to the top talent of experienced product managers, smartest

@@ -1,32 +1,10 @@
 import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { IndustryCard } from "../components/IndustryCard";
-import Scrollspy from "react-scrollspy";
 import { Fade } from "react-reveal";
+import { scrapingData } from "../constants/data";
 
 function ServiceWebScraping() {
-  const scrapingData = [
-    {
-      title: "Extraction",
-      content:
-        "Our web scraping tools scan the web and extract the information you need. We specialize in creating custom crawl clusters that crawl through large quantities of data from multiple sources in parallel, retrieving usable data faster while breaking free of scaling constraints.",
-    },
-    {
-      title: "Cleaning",
-      content:
-        "Our data cleansing takes the raw data extracted by the web scraping tools and runs it through a processing platform to shake off old material, duplicates, incorrect details, and more. While data is valuable, ‘clean’ data is gold, enabling you to make the best possible decisions.",
-    },
-    {
-      title: "Quality Assurance",
-      content:
-        "We have quality assurance checks built into every step of the process, ensuring your web scraping tools function well and work quickly.",
-    },
-    {
-      title: "Verification & Validation",
-      content:
-        "We verify your data at every step of the process and check the integrity of the results created.",
-    },
-  ];
   return (
     <>
       <div className="container">

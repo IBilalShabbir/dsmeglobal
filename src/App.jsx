@@ -117,7 +117,7 @@ function App() {
           path="/services/android-development"
           element={<ServiceAndroid />}
         />
-        <Route path="/services/ecomerce" element={<ServiceEcomerece />} />
+        <Route path="/services/ecommerce" element={<ServiceEcomerece />} />
         <Route path="/services/startup-services" element={<ServiceStartup />} />
         <Route path="/services/staff-augmentation" element={<ServiceStaff />} />
         <Route
