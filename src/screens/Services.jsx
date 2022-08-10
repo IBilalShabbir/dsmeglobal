@@ -3,6 +3,7 @@ import ServicesCard from "../components/ServicesSectionCard";
 import servicesbanner from "../assets/servicesbanner.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { Fade } from "react-reveal";
+import Scrollspy from "react-scrollspy";
 
 export default function Services({ data }) {
   useEffect(() => {
@@ -25,27 +26,42 @@ export default function Services({ data }) {
             <ServicesCard data={item} key={JSON.stringify(item)} />
           ))}
         </div>
-        <div className="services__main__container__right">
+
+        <Scrollspy
+          items={data?.map((item) =>
+            item.title
+              .trim()
+              .replaceAll(" ", "-")
+              .replaceAll("-&-", "-")
+              .replaceAll(".", "")
+              .replaceAll("/", "-")
+              .toLowerCase()
+          )}
+          offset={-100}
+          currentClassName="active"
+          className="services__main__container__right"
+        >
           {data?.map((item) => (
-            <Fade up key={JSON.stringify(item)}>
-              <a
-                href={
-                  "#" +
-                  item.title
-                    .trim()
-                    .replaceAll(" ", "-")
-                    .replaceAll("-&-", "-")
-                    .replaceAll(".", "")
-                    .replaceAll("/", "-")
-                    .toLowerCase()
-                }
-                className="services__main__container__right__link"
-              >
-                {item.title}
-              </a>
-            </Fade>
+            <li className="services__main__container__right__link">
+              <Fade up key={JSON.stringify(item)}>
+                <a
+                  href={
+                    "#" +
+                    item.title
+                      .trim()
+                      .replaceAll(" ", "-")
+                      .replaceAll("-&-", "-")
+                      .replaceAll(".", "")
+                      .replaceAll("/", "-")
+                      .toLowerCase()
+                  }
+                >
+                  {item.title}
+                </a>
+              </Fade>
+            </li>
           ))}
-        </div>
+        </Scrollspy>
       </div>
     </>
   );

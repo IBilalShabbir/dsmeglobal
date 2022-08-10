@@ -686,16 +686,23 @@ body {
   padding: 2em;
   padding-bottom: 1em;
 }
+.services__main__container__right .active a {
+  color: $primary;
+  text-decoration: underline;
+}
 .services__main__container__right__link {
   margin-bottom: 1em;
+}
+.services__main__container__right__link a {
   color: $black;
   text-decoration: none;
 }
-.services__main__container__right__link:hover {
+.services__main__container__right__link a:hover {
   transition: 300ms ease-in-out;
   color: $primary;
   text-decoration: underline;
 }
+
 .services__main__container__content__wrapper__card {
   display: flex;
   text-decoration: none;

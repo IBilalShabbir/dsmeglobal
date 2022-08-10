@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { X, Menu } from "react-feather";
 import { Link, useNavigate } from "react-router-dom";
 import logoDark from "../assets/logoDark.svg";
@@ -54,7 +54,7 @@ export default function Header({ light }) {
           className="header__content__logo"
         >
           <img
-            src={!light || isNavOpen || isScrolling ? logoDark : logo}
+            src={!light || isScrolling ? logoDark : isNavOpen ? logoDark : logo}
             alt="logo"
           />
         </Link>
