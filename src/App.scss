@@ -8277,7 +8277,7 @@ body {
 }
 .graphic__design__essence__container {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: bold;
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
@@ -8299,10 +8299,9 @@ body {
 .graphic__design__essence__container__buttton a {
   text-align: center;
   background-color: $primary;
-
   width: 100px;
   height: 100px;
-  padding: 0.5em;
+  padding: 0.5em 1.5em;
   border-radius: 5px;
   text-decoration: none;
   color: $white;
@@ -8319,11 +8318,11 @@ body {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
+  align-items: center;
 }
 .graphic__design__essence__container__image img {
-  margin-top: 4em;
   width: 100%;
-  min-height: 500px;
+  margin-right: 2em;
 }
 .graphic__design__essence__container__skills__all {
   flex-direction: column;
@@ -8360,7 +8359,7 @@ body {
 }
 .graphic__design__essence__container__we__offer__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: bold;
   max-width: 1440px;
   width: 60%;
   padding-left: 2.5em;

@@ -333,3 +333,50 @@ export const servicesData = [
     link: "/services/graphicdesign",
   },
 ];
+export const industriesFeatures = [
+  {
+    title: "Healthcare",
+    content:
+      "We bring easy healthcare to the masses, by building tech solutions that enable practices, improve patient experiences, and streamline workflows",
+  },
+  {
+    title: "Real Estate",
+    content:
+      "Make real estate transactions more profitable with our fully automated sales process and property management solutions.",
+  },
+  {
+    title: "Retail",
+    content:
+      "We build bespoke retail apps to better manage warehouse operations, ease stock ordering process and enhance consumer purchase experience.",
+  },
+  {
+    title: "FinTech",
+    content:
+      "With the aim of making financial services more accessible, we provide Fintech services like mobile banking, investment banking, and BLE technology.",
+  },
+  {
+    title: "Logistics & Transport",
+    content:
+      "Simplify complex and highly challenging logistics and transportation processes with our custom designed apps and software integrations.",
+  },
+  {
+    title: "Insurance",
+    content:
+      "We create personalized products for insurance companies to assist them with risk inspections,document/claim management and retention.",
+  },
+  {
+    title: "Food & Entertainment",
+    content:
+      "Stay ahead of market trends with our data-driven and analytics-powered food & entertainment applications and development services.",
+  },
+  {
+    title: "Ecommerce",
+    content:
+      "Delivering custom e-commerce solutions for businesses of all shapes and sizes Regardless of your industry or whether you want to target B2B or B2C customers, the software we create for you promises to benefit your business in every step of its operations and delivery.",
+  },
+  {
+    title: "Other",
+    content:
+      "None of the above applies to you? We believe that the rules are simple when it comes to technology and business. No matter the industry, we focus on personalized, user-oriented solutions, crafted to help you reach your long-term goals. Discover the solutions we deliver for education, food, customer service, telco, and other industries.",
+  },
+];

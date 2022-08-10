@@ -246,7 +246,10 @@ function Graphicdesign() {
           money.
         </div>
       </div>
-      <div className="graphic__design__logos__and__brands__imgs">
+      <div
+        className="graphic__design__logos__and__brands__imgs"
+        style={{ marginBottom: "-8em" }}
+      >
         <div className="graphic__design__logos__and__brands">
           {logos?.map((logo, i) => (
             <div
