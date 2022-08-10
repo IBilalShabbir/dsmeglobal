@@ -18,12 +18,6 @@ export default function Header({ light }) {
       setIsNavOpen(true);
     }
   }
-  useLayoutEffect(() => {
-    navOpenClose();
-    window.addEventListener("resize", navOpenClose);
-    window.addEventListener("scroll", navOpenClose);
-  }, []);
-
   const changeBackgrond = () => {
     if (window.scrollY > 0) {
       setIsScrolling(true);
@@ -31,8 +25,11 @@ export default function Header({ light }) {
       setIsScrolling(false);
     }
   };
-  useEffect(() => {
+  useLayoutEffect(() => {
     changeBackgrond();
+    navOpenClose();
+    window.addEventListener("resize", navOpenClose);
+    window.addEventListener("scroll", navOpenClose);
   }, []);
 
   window.addEventListener("scroll", changeBackgrond);
@@ -42,9 +39,7 @@ export default function Header({ light }) {
         isScrolling ? "header" : light ? "header header__active" : "header"
       }
       style={
-        isScrolling
-          ? { backgroundColor: "white" }
-          : isNavOpen && window.innerWidth < 1000
+        (isNavOpen && window.innerWidth < 1000) || isScrolling
           ? { backgroundColor: "white" }
           : null
       }
@@ -54,11 +49,12 @@ export default function Header({ light }) {
           to="/"
           onClick={() => {
             document.getElementById("Home").checked = true;
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
           className="header__content__logo"
         >
           <img
-            src={isScrolling ? logoDark : light ? logo : logoDark}
+            src={!light || isNavOpen || isScrolling ? logoDark : logo}
             alt="logo"
           />
         </Link>
@@ -87,7 +83,6 @@ export default function Header({ light }) {
               <Menu size={20} color="currentColor" />
             )}
           </button>
-
           <Link
             to="/quote"
             onClick={() => {

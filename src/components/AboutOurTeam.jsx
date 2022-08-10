@@ -16,7 +16,7 @@ export function AboutOurTeam() {
                 src={
                   "https://res.cloudinary.com/mehfoozurrehman/image/upload/v1658515904/dsme_team/" +
                   item.image +
-                  ".webp"
+                  ".png"
                 }
                 alt={item.name}
                 className="about__teams__content__entry__img"

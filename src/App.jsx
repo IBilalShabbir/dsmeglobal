@@ -7,9 +7,9 @@ import Loader from "./components/Loader";
 import style from "./App.scss";
 import useSWR from "swr";
 
-const Header = lazy(() => import("./components/Header"));
-const Footer = lazy(() => import("./components/Footer"));
-const ContactUsBottom = lazy(() => import("./components/ContactUsBottom"));
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ContactUsBottom from "./components/ContactUsBottom";
 
 const Home = lazy(() => import("./screens/Home"));
 const AboutUs = lazy(() => import("./screens/AboutUs"));

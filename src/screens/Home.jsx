@@ -43,7 +43,7 @@ export default function Home({
           styleColor={{ color: "white" }}
         />
       </div>
-      <div className="container">
+      <div className="container" style={{ marginBottom: "-8em" }}>
         <ServicesSection />
         <StatsSection />
         <WorkSection data={WorkData} />

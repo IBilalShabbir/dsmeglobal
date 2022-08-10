@@ -13,6 +13,7 @@ export function NavLink({ children, to, navigate, setIsNavOpen }) {
         readOnly
         onClick={() => {
           navigate(to);
+          window.scrollTo({ top: 0, behavior: "smooth" });
           if (window.innerWidth < 1000) {
             setIsNavOpen(false);
           }
