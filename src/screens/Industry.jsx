@@ -1,10 +1,11 @@
 import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
-import industries from "../assets/industry.webp";
+import industries from "../assets/industry.svg";
 import { Fade } from "react-reveal";
 import Scrollspy from "react-scrollspy";
+import { IndustryCard } from "../components/IndustryCard";
 
-export default function Industry({ data }) {
+export default function Industry() {
   const industriesFeatures = [
     {
       title: "Healthcare",
@@ -132,44 +133,55 @@ export default function Industry({ data }) {
           ))}
         </div>
       </div>
-    </>
-  );
-}
-
-function IndustryCard({ data }) {
-  return (
-    <Fade up>
-      <section
-        id={data.title
-          .trim()
-          .replaceAll(" ", "-")
-          .replaceAll("-&-", "-")
-          .replaceAll(".", "")
-          .replaceAll("/", "-")
-          .toLowerCase()}
-        className="services__main__container__content__wrapper__card"
-      >
-        <img
-          loading="lazy"
-          src={industries}
-          alt={data.title}
-          className="services__main__container__content__wrapper__card__svg"
-        />
-
-        <div className="services__main__container__content__wrapper__card__content">
-          <div className="services__main__container__content__wrapper__card__heading">
-            {data.title
-              .trim()
-              .split(" ")
-              ?.map((word, i) =>
-                i == 1 ? <span key={JSON.stringify(word)}>{word}</span> : word
-              )}
+      <div style={{ background: "rgba(13, 110, 74, 0.1)", marginTop: "7em" }}>
+        <div className="tangible_results">
+          <div className="tangible_results_left">
+            <div className="tangible_results_left_heading">
+              Tangible results, <span>right on schedule</span>
+            </div>
+            <div className="tangible_results_left_para">
+              Engineering teams today need to move and scale fast. DSME Global
+              Links injects momentum into your engineering department with
+              high-performing, and excellent teams of developers.
+            </div>
           </div>
-          <div className="services__main__container__content__wrapper__card__info">
-            {data.content}
+          <div className="tangible_results_right">
+            <div className="tangible_results_right_contant">
+              <div className="tangible_results_right_icon"></div>
+              <div className="tangible_results_right_sub_heading">2</div>
+              <div className="tangible_results_right_para">
+                weeks for the prototype
+              </div>
+            </div>
+            <div className="tangible_results_right_contant">
+              <div className="tangible_results_right_icon"></div>
+              <div className="tangible_results_right_sub_heading">3</div>
+              <div className="tangible_results_right_para">
+                months for the MVP
+              </div>
+            </div>
+            <div className="tangible_results_right_contant">
+              <div className="tangible_results_right_icon"></div>
+              <div className="tangible_results_right_sub_heading">30%</div>
+              <div className="tangible_results_right_para">
+                More efficient staffing
+              </div>
+            </div>
+            <div className="tangible_results_right_contant">
+              <div className="tangible_results_right_icon"></div>
+              <div className="tangible_results_right_sub_heading">60%</div>
+              <div className="tangible_results_right_para">Lower risk</div>
+            </div>
+            <div className="tangible_results_right_contant">
+              <div className="tangible_results_right_icon"></div>
+              <div className="tangible_results_right_sub_heading">3.6x</div>
+              <div className="tangible_results_right_para">
+                Higher project Satisfaction
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </Fade>
+      </div>
+    </>
   );
 }

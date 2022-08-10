@@ -7836,7 +7836,8 @@ body {
 .tangible_results {
   width: 100%;
   height: 60%;
-  padding: 4em;
+  padding: 6em 4em;
+  padding-bottom: 3em;
   margin: 0 auto;
   display: flex;
   max-width: 1440px;
@@ -7846,30 +7847,35 @@ body {
 
 .tangible_results_left_heading {
   font-size: $font-large;
-  font-weight: 600;
+  font-weight: bold;
   width: 100%;
+  text-align: center;
+}
+.tangible_results_left_heading span {
+  color: $primary;
 }
 .tangible_results_left_para {
   max-width: 800px;
-  padding: 1em;
-  padding-left: 0;
-  text-align: start;
+  margin: 2em auto;
+  text-align: center;
+  width: 100%;
 }
 .tangible_results_right_sub_heading {
   font-size: 50px;
-  font-weight: 800;
+  font-weight: 600;
   color: $primary;
 }
 .tangible_results_right_para {
-  font-size: $font-normal;
+  font-size: $font-normal + 2px;
   text-transform: capitalize;
 }
 
 .tangible_results_right_contant {
   flex-direction: column;
-  flex: 1;
+  width: 200px;
   text-align: center;
   margin-top: 1em;
+  margin-bottom: 3em;
 }
 .tangible_results_right {
   display: flex;
@@ -9710,7 +9716,7 @@ body {
     width: 100%;
   }
   .tangible_results {
-    padding: 1em !important;
+    padding: 6em 1em !important;
   }
   .graphic__design__essence__container {
     padding: 0em 1em !important;

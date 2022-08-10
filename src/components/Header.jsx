@@ -1,9 +1,9 @@
 import React, { useLayoutEffect, useState } from "react";
-import { X, Menu } from "react-feather";
+import OutsideClickHandler from "react-outside-click-handler";
 import { Link, useNavigate } from "react-router-dom";
 import logoDark from "../assets/logoDark.svg";
+import { X, Menu } from "react-feather";
 import logo from "../assets/logo.svg";
-import OutsideClickHandler from "react-outside-click-handler";
 import { Nav } from "./Nav";
 
 export default function Header({ light }) {
@@ -33,6 +33,7 @@ export default function Header({ light }) {
   }, []);
 
   window.addEventListener("scroll", changeBackgrond);
+
   return (
     <div
       className={
@@ -54,7 +55,15 @@ export default function Header({ light }) {
           className="header__content__logo"
         >
           <img
-            src={!light || isScrolling ? logoDark : isNavOpen ? logoDark : logo}
+            src={
+              isScrolling
+                ? logoDark
+                : light
+                ? !isNavOpen
+                  ? logo
+                  : logoDark
+                : logoDark
+            }
             alt="logo"
           />
         </Link>
