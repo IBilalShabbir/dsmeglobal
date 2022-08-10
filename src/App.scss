@@ -3285,6 +3285,13 @@ body {
   font-weight: bold;
   margin-bottom: 0.8em;
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.container__web__dev__experience__content__entry__heading svg {
+  width: 30px;
+  margin-right: 1em;
+  stroke: $primary;
 }
 
 .container__web__dev__experience__content__entry__info {
@@ -3311,15 +3318,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.container__web__dev__experience__content__entry {
-  border-right: 1px solid $primary;
-}
-.container__web__dev__experience__content__entry:last-child {
-  border-right: none;
-}
-.container__web__dev__experience__content__entry:nth-child(3) {
-  border-right: none;
-}
+
 .container__web__dev__solution__header {
   width: 100%;
   display: flex;
@@ -8052,7 +8051,7 @@ body {
   display: flex;
   align-items: center;
   height: fit-content;
-  background-color: rgba(0, 0, 0, 0.767);
+  background-color: $black;
   color: $white;
   padding: 3em 0em;
   border-radius: 5px;
@@ -8248,6 +8247,7 @@ body {
   padding: 4em;
   max-width: 1440px;
   margin: 0 auto;
+  padding-top: 0em;
 }
 .Agile__discover__workshop__container__content {
   border: 1px solid $primary;
@@ -8412,6 +8412,18 @@ body {
   }
 }
 @media (max-width: 1000px) {
+  .Agile__customer__main__container {
+    flex-direction: column;
+  }
+  .high__customer__main__first__container {
+    width: 100%;
+    margin-top: 5em;
+    margin-left: 0em;
+  }
+  .Agile__customer__main__first__container__jira__container {
+    padding-left: 0em;
+    margin-left: 0em;
+  }
   .blockchain__worksection__detail {
     flex-direction: column;
   }
@@ -8989,8 +9001,20 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .pricing__process__container {
+    padding: 4em 0em;
+  }
+  .container__web__dev__experience {
+    padding: 5em 2em;
+  }
+  .Agile__discover__workshop__container {
+    padding: 4em 2em;
+  }
   .ios__development__native__cross__plat__development__container {
-    padding: 2em 2em;
+    padding: 2em;
+  }
+  .Agile__discover__workshop__container__cards {
+    padding: 2em;
   }
   .about__ceo__message,
   .about__core__values,

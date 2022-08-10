@@ -84,7 +84,10 @@ function AgileDiscoveryWorkshop() {
             </div>
           </div>
           <div className="high__customer__main__first__container">
-            <div className="Agile__customer__main__first__container__jira__container">
+            <div
+              className="Agile__customer__main__first__container__jira__container"
+              style={{ marginTop: 0, paddingTop: 0 }}
+            >
               <div className="highly__customer__main__first__container__jira__container__heading">
                 <svg
                   id="Group_2"
