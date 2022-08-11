@@ -2326,7 +2326,7 @@ body {
 }
 .pricing__process__container__content__bottom__left__middle__button {
   flex: 1 1 45%;
-  padding: 1em;
+  padding: 0.5em 1em;
   font-size: $font-normal;
   background: linear-gradient(135deg, $primary, $black);
   margin: 0.1rem;
@@ -2338,8 +2338,6 @@ body {
   align-items: center;
   height: fit-content;
   width: 200px;
-  height: 50px;
-  padding: 0em 0.1em;
 }
 .pricing__process__container__content__bottom__left:nth-child(2)
   .pricing__process__container__content__bottom__left__middle__button {
@@ -3292,9 +3290,10 @@ body {
   align-items: center;
 }
 .container__web__dev__experience__content__entry__heading svg {
-  width: 30px;
+  width: 44px;
+  height: 44px;
   margin-right: 1em;
-  stroke: $primary;
+  fill: $primary;
 }
 
 .container__web__dev__experience__content__entry__info {
@@ -4594,7 +4593,6 @@ body {
 }
 .june_third_container_first_box__colomns__contents__text {
   font-size: $font-normal;
- 
 }
 
 .june_third_container_first_box__colomns__heading__svg svg {
@@ -6880,13 +6878,13 @@ body {
   max-width: 100%;
   text-align: center;
 }
-.blockchain__worksection__heading__two__desktop_main{
-// width: 70%;
-// margin: 0 auto;
-height: 100%;
-width: 100%;
-display: flex;
-justify-content: center;
+.blockchain__worksection__heading__two__desktop_main {
+  // width: 70%;
+  // margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .blockchain__worksection__heading__two__desktopimg {
   width: 60%;
@@ -8465,20 +8463,20 @@ justify-content: center;
     width: 100%;
     padding: 0em 0em;
   }
-  .blockchain__servicessection{
-    padding:2em;
+  .blockchain__servicessection {
+    padding: 2em;
   }
-  .blockchain__servicessection__services{
-    padding:0em;
+  .blockchain__servicessection__services {
+    padding: 0em;
   }
-  .june_main_container_first_container{
+  .june_main_container_first_container {
     padding: 2em 0em !important;
   }
-  .june_second_container_main{
-    padding: 2em  !important;
+  .june_second_container_main {
+    padding: 2em !important;
   }
-  .june_third_container_first_box__colomns{
-    padding: 1em  !important;
+  .june_third_container_first_box__colomns {
+    padding: 1em !important;
   }
   .ecommerce__screen__container__recent__work__content___row__reverse {
     flex-direction: column !important;
@@ -8514,7 +8512,6 @@ justify-content: center;
   .Android__and__ios__boxes__all {
     flex-direction: column;
   }
- 
 
   .Android__and__ios__boxes {
     width: 50%;
@@ -8792,10 +8789,10 @@ justify-content: center;
     width: 100%;
     margin: 0em;
   }
-  .june_second_container_main{
+  .june_second_container_main {
     flex-direction: column;
   }
-  .june_second_container{
+  .june_second_container {
     width: 100%;
     margin-bottom: 2em;
   }
@@ -8953,7 +8950,7 @@ justify-content: center;
   .june_main_container_images_content_One {
     height: 0%;
   }
-  .june_main_container_images_content_two{
+  .june_main_container_images_content_two {
     padding-top: 6em !important;
   }
   .june_second_container_images_one_content_container {
@@ -9835,7 +9832,7 @@ justify-content: center;
   .customsoft_second_container_content {
     width: 100%;
   }
-  .june_second_container{
+  .june_second_container {
     width: 100%;
   }
 }
@@ -10367,7 +10364,7 @@ justify-content: center;
   .ecommerce__screen__container__process__content__selector__content__entry {
     flex-wrap: wrap;
   }
- 
+
   .container__feature__col {
     min-width: 50%;
     padding-left: 0em;
