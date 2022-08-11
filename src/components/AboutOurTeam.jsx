@@ -4,7 +4,7 @@ import { teamData } from "../constants/data";
 
 export function AboutOurTeam() {
   return (
-    <div className="about__teams">
+    <div className="about__teams" style={{ marginTop: "2em" }}>
       <div className="about__teams__heading">
         <span>Teamwork</span>, Makes the dream work
       </div>

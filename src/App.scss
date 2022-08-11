@@ -17,6 +17,7 @@ $font-normal: 16px;
 *::before {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Jost", sans-serif;
 }
 
 body {
@@ -24,7 +25,6 @@ body {
   padding: 0;
   overflow-x: hidden;
   width: 100%;
-  font-family: "Jost", sans-serif;
 }
 .width__50per {
   width: 48%;
@@ -40,8 +40,8 @@ body {
   max-width: 1440px;
   background-color: white;
   border-radius: 50px;
-  padding: 1em 1.5em;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 0.7em 1.5em;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,7 +75,7 @@ body {
   background-color: #397462;
   color: white;
   cursor: pointer;
-  padding: 0em;
+  padding: 0;
   margin-right: 0.5em;
 }
 .header__content__menu:hover {
@@ -94,7 +94,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 0em 1em;
+  padding: 0 1em;
   text-decoration: none;
 }
 .header__content__nav__link:hover {
@@ -107,7 +107,7 @@ body {
 .header__content__nav .active::after {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: calc(50% - 5px);
   width: 8px;
   height: 8px;
@@ -128,7 +128,7 @@ body {
   background-color: #397462;
   color: white;
   cursor: pointer;
-  padding: 0em 1.5em;
+  padding: 0 1.5em;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -208,6 +208,7 @@ body {
   display: flex;
   font-size: $font-large;
   flex-wrap: wrap;
+  word-break: break-all;
 }
 .container__jumbotron__left__heading span {
   color: $primary;
@@ -270,8 +271,7 @@ body {
 .container__jumbotron__left__button__secondary {
   color: $white;
   height: 40px;
-  padding: 0 1.5em;
-
+  padding: 0 2em;
   margin-right: 2em;
   background-color: $primary;
   border: none;
@@ -351,6 +351,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 2em 4em;
+  padding-top: 0;
   min-height: 500px;
   position: relative;
   overflow: hidden;
@@ -666,7 +667,7 @@ body {
   margin-top: 3em;
 }
 .services__main__container__reverse .services__main__container__left {
-  margin-right: 0em;
+  margin-right: 0;
   margin-left: 4em;
 }
 .services__main__container__left {
@@ -709,7 +710,7 @@ body {
   display: flex;
   text-decoration: none;
   justify-content: space-between;
-  padding: 7em 0em;
+  padding: 7em 0;
   padding-bottom: 3em;
   position: relative;
   width: 100%;
@@ -745,7 +746,7 @@ body {
 }
 .services__main__container__content__wrapper__card:nth-child(even)
   .services__main__container__content__wrapper__card__svg {
-  margin-right: 0em;
+  margin-right: 0;
   margin-left: 3em;
 }
 .services__main__container__content__wrapper__card__content {
@@ -759,6 +760,8 @@ body {
   font-weight: bold;
   font-size: $font-heading;
   margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
 }
 .services__main__container__content__wrapper__card__heading span {
   margin-right: 0.3em;
@@ -782,7 +785,7 @@ body {
 .services__main__container__content__wrapper__card__link {
   color: $primary;
   width: fit-content;
-  padding: 1em 0em;
+  padding: 1em 0;
   display: flex;
   align-items: center;
   font-size: $font-normal;
@@ -830,7 +833,7 @@ body {
   background-color: rgba(13, 110, 74, 0.1);
   position: absolute;
   bottom: -3px;
-  left: 0px;
+  left: 0;
 }
 
 .blog__page__filter {
@@ -1422,12 +1425,12 @@ body {
 }
 .industry__software__solutions__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
   justify-content: start;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0em 1.8em;
+  padding: 0 1.8em;
 }
 .industry__software__solutions__heading span {
   color: $primary;
@@ -1638,8 +1641,8 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  margin: 0em auto;
-  padding: 0em 4em;
+  margin: 0 auto;
+  padding: 0 4em;
   margin-bottom: 5em;
   align-items: center;
 }
@@ -1676,8 +1679,8 @@ body {
 }
 .about__teams__content__entry__overlay {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(13, 110, 75, 0.5);
@@ -1690,11 +1693,13 @@ body {
 .about__teams__content__entry__overlay__heading {
   font-size: $font-sub-heading;
   color: $white;
+  text-align: center;
   font-weight: bold;
 }
 .about__teams__content__entry__overlay__info {
   font-size: $font-normal;
   color: $white;
+  text-align: center;
 }
 .about__teams__content__entry:hover .about__teams__content__entry__overlay {
   transition: 300ms ease-in-out;
@@ -1705,8 +1710,8 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  margin: 0em auto;
-  padding: 0em 4em;
+  margin: 0 auto;
+  padding: 0 4em;
   margin-bottom: 5em;
   align-items: center;
 }
@@ -1778,9 +1783,9 @@ body {
   width: 100%;
   max-width: calc(1440px - 4em);
   padding: 4em;
-  padding-top: 0em;
+  padding-top: 0;
   border-radius: 30px;
-  margin: 0em auto;
+  margin: 0 auto;
   margin-bottom: 0;
   display: flex;
   justify-content: space-between;
@@ -1907,7 +1912,7 @@ body {
 }
 .Idustry__revolution__section__entry__heading {
   font-size: 24px;
-  margin: 0.7em 0em;
+  margin: 0.7em 0;
   color: $black;
   font-weight: bold;
 }
@@ -2029,7 +2034,7 @@ body {
   height: 40px;
   margin: 1em 0.5em;
   display: flex;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px0;
   justify-content: center;
   align-items: center;
   background-color: $white;
@@ -2133,7 +2138,7 @@ body {
 .pricing__success__stories__slide__logo {
   display: flex;
   justify-content: flex-start;
-  margin: 1em 0em;
+  margin: 1em 0;
 }
 .pricing__success__stories__slide__logo img {
   width: 150px;
@@ -2175,7 +2180,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0em 1em;
+  padding: 0 1em;
 }
 .about__us__success__stories__slide__image {
   width: 100%;
@@ -2425,7 +2430,7 @@ body {
   width: 47%;
   background-color: $white;
   border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.05) 0 7px 29px0;
   cursor: pointer;
 }
 .pricing__understand__container__content__bottom__card__left {
@@ -3316,7 +3321,7 @@ body {
 .container__web__dev__solution__left {
   flex-direction: column;
   flex: 1;
-  padding: 0 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -3367,7 +3372,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0em 2em;
+  padding: 0 2em;
 }
 .Android__and__ios__box__container_entry_odd_right {
   width: 50%;
@@ -3375,11 +3380,11 @@ body {
 .Android__and__ios__box__container_entry {
   width: 100%;
   display: flex;
-  padding: 2em 0em;
+  padding: 2em 0;
   align-items: center;
 }
 .Android__and__ios__box__container_entry_para {
-  padding: 0.5em 0em;
+  padding: 0.5em 0;
 }
 .Android__and__ios__box__container_entry_left {
   width: 50%;
@@ -3397,7 +3402,7 @@ body {
   font-size: $font-heading;
 }
 .Android__and__ios__box__container_odd_entry_para {
-  padding: 0.5em 0em;
+  padding: 0.5em 0;
 }
 .Android__and__ios__box__container_odd_entry_heading span {
   color: $primary;
@@ -3480,9 +3485,7 @@ body {
   padding: 0 4em;
 }
 .container__emerging__technologies__section svg {
-  stroke: $white;
   z-index: 999;
-  color: $white;
 }
 
 .container__emerging__technologies__section::after {
@@ -3574,8 +3577,7 @@ body {
 
 .container__emerging__technologies__section__entry__img {
   margin-bottom: 1em;
-
-  color: $white;
+  color: inherit;
 }
 
 .container__emerging__technologies__section__entry__text {
@@ -3612,8 +3614,8 @@ body {
 }
 .about__page__container__pricing__content__left img {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   width: 200px;
   opacity: 0.25;
 }
@@ -3644,8 +3646,8 @@ body {
 }
 .about__page__container__pricing__content__right img {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   width: 300px;
   opacity: 0.25;
 }
@@ -3727,8 +3729,8 @@ body {
 }
 .container__pricing__content__left img {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   width: 300px;
   opacity: 0.25;
 }
@@ -3808,8 +3810,8 @@ body {
 }
 .container__pricing__content__right img {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   width: 300px;
   opacity: 0.25;
 }
@@ -4098,7 +4100,7 @@ body {
 
 .footer__container__content__col__heading {
   font-size: $font-sub-heading;
-  font-weight: 600;
+  font-weight: 500;
   color: $primary;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -4423,7 +4425,7 @@ body {
 
 .portfolio__section__container__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1em;
   color: $black;
 }
@@ -4522,7 +4524,7 @@ body {
   display: flex;
   align-items: center;
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .portfolio__section__container__calendar__seccontainer__right {
@@ -4535,7 +4537,7 @@ body {
   display: flex;
   align-items: center;
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .june_main_container {
@@ -4556,7 +4558,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0em 4em;
+  padding: 0 4em;
   padding-bottom: 4em;
   max-width: 1440px;
   margin: 0 auto;
@@ -4708,7 +4710,7 @@ body {
   padding: 4em;
   width: 100%;
   max-width: 1440px;
-  margin: 0em auto;
+  margin: 0 auto;
 }
 .june_second_container:hover {
   background-color: $primary;
@@ -5253,7 +5255,7 @@ body {
 }
 .ios__mobile__share__your__idea__section__left__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   width: 100%;
   text-align: center;
   align-items: center;
@@ -5325,7 +5327,7 @@ body {
   padding: 4em;
   width: 100%;
   max-width: 1440px;
-  margin: 0em auto;
+  margin: 0 auto;
 }
 .graphic__design__logos img {
   width: 200px;
@@ -5348,12 +5350,12 @@ body {
 }
 .ios__mobile__page__container__ios__company__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   width: 160%;
   margin-left: 1em;
 }
 .Android__and__ios__box__container_entry_right_svg {
-  padding: 0em 5em;
+  padding: 0 5em;
 }
 .ios__mobile__page__container__ios__company__heading span {
   color: $primary;
@@ -5369,7 +5371,7 @@ body {
   margin-right: 1em;
   flex-direction: column;
   justify-content: center;
-  padding: 0em 1em;
+  padding: 0 1em;
 }
 .ios__mobile__page__one__step__ios__development__section__left__heading {
   font-size: $font-sub-heading;
@@ -5421,7 +5423,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-left: 1em;
-  padding: 0em 1em;
+  padding: 0 1em;
 }
 .ios__ios__development__swift__development__section__right__heading {
   font-size: $font-sub-heading;
@@ -5438,7 +5440,9 @@ body {
   width: 100%;
   text-align: center;
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
   color: $white;
 }
 .ios__development__tangible__col__one__heading span {
@@ -5458,7 +5462,7 @@ body {
 }
 .ios__development__tangible__col__two__header__weeks {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.5em;
 }
 .ios__development__tangible__col__two__header__middle {
@@ -5487,7 +5491,7 @@ body {
 }
 .ios__development__tangible__col__three__header__weeks {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.5em;
 }
 .ios__development__native__ios {
@@ -5507,7 +5511,7 @@ body {
 .ios__development__native__ios__container__heading {
   font-size: $font-heading;
   margin-bottom: 0.4em;
-  font-weight: 600;
+  font-weight: 500;
 }
 .ios__development__native__ios__container__heading span {
   color: $primary;
@@ -5528,7 +5532,7 @@ body {
 }
 .ios__development__native__impressive__performance__heading {
   font-size: $font-sub-heading;
-  font-weight: 600;
+  font-weight: 500;
 }
 .ios__development__native__impressive__performance__content {
   width: 100%;
@@ -5594,14 +5598,14 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 .ios__development__native__sound__promising__heading span {
   color: $primary;
 }
 .ios__development__native__sound__promising__heading {
   font-size: $font-sub-heading;
-  font-weight: 600;
+  font-weight: 500;
 }
 .ios__development__native__sound__promising__button {
   background-color: $primary;
@@ -5994,7 +5998,6 @@ body {
 .ios__development__native__cross__plat__development__img {
   width: 500px;
   height: 350px;
-  mix-blend-mode: luminosity;
   border-radius: 5px;
 }
 .ios__development__native__cross__plat__development__container {
@@ -6004,7 +6007,7 @@ body {
   margin: 0 auto;
   height: 100%;
   color: $white;
-  padding: 4em 4em;
+  padding: 5em 4em;
   display: flex;
   justify-content: center;
 }
@@ -6016,7 +6019,7 @@ body {
 }
 .ios__development__native__cross__plat__development__container__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1em;
 }
 .ios__development__native__cross__plat__development__container__heading span {
@@ -6058,29 +6061,34 @@ body {
 }
 .android__development__our__stack__container__col__row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .android__development__our__stack__container__col__one__heading {
-  font-size: $font-heading;
+  font-size: $font-sub-heading;
+  font-weight: bold;
   color: #189366;
   margin-top: 1.5em;
   align-items: center;
 }
 .android__development__our__stack__container__col__one__heading__text {
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 .android__development__our__stack__container__col__one__heading__text li {
-  margin: 1em 0em;
+  margin: 0.5em 0;
+}
+.android__development__our__stack__container__col__one__heading__text
+  li::marker {
+  color: $primary;
 }
 .about__ceo__message,
 .about__core__values,
 .about__key__difference {
   width: 100%;
   max-width: 1440px;
-  padding: 0em 3em;
-  margin: 0em auto;
+  padding: 0 3em;
+  margin: 0 auto;
   margin-bottom: 2.5em;
   display: flex;
   flex-direction: column;
@@ -6161,7 +6169,7 @@ body {
   width: 25%;
   border: 1px solid transparent;
   border-right: 1px solid $primary;
-  padding: 0em 2em;
+  padding: 0 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6192,7 +6200,7 @@ body {
 .about__core__values__content__entry__heading {
   font-size: $font-normal;
   font-weight: bold;
-  margin: 0.5em 0em;
+  margin: 0.5em 0;
 }
 .about__core__values__content__entry__info {
   text-align: center;
@@ -6250,12 +6258,12 @@ body {
 }
 .about__key__difference__content {
   display: flex;
-  padding: 0em 1em;
+  padding: 0 1em;
   flex-wrap: wrap;
 }
 .about__key__difference__content__col {
   flex: 1;
-  padding: 0em 2em;
+  padding: 0 2em;
 }
 .about__key__difference__content__col__entry {
   display: flex;
@@ -6288,7 +6296,7 @@ body {
   font-weight: bold;
 }
 .about__key__difference__content__col:first-child {
-  padding-left: 0em;
+  padding-left: 0;
 }
 .about__key__difference__content__col:last-child {
   padding: 2em;
@@ -6320,13 +6328,13 @@ body {
   width: 100%;
   max-width: 1440px;
   padding: 3em 4em;
-  margin: 0em auto;
+  margin: 0 auto;
   flex-wrap: wrap;
   margin-top: 1em;
 }
 .container__feature__col {
   flex: 1;
-  padding: 0em 2em;
+  padding: 0 2em;
 }
 .container__feature__col__heading {
   font-size: $font-heading;
@@ -6365,7 +6373,7 @@ body {
   width: 100%;
   max-width: 1440px;
   padding: 4em 3em;
-  margin: 0em auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -6447,7 +6455,7 @@ body {
   width: 100%;
   max-width: 1440px;
   padding: 4em;
-  margin: 0em auto;
+  margin: 0 auto;
 }
 .staff__talent__heading {
   font-size: $font-heading;
@@ -6478,7 +6486,7 @@ body {
   width: 100%;
   max-width: 800px;
   margin-bottom: 1em;
-  font-weight: 600;
+  font-weight: 500;
 }
 .staff__talent__features {
   width: 100%;
@@ -6542,7 +6550,7 @@ body {
   max-width: 1440px;
   padding: 4em;
   padding-top: 0;
-  margin: 0em auto;
+  margin: 0 auto;
 }
 .how__we__do__section__heading {
   font-size: $font-heading;
@@ -6681,7 +6689,7 @@ body {
 }
 .blockchain__whysection__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   color: $black;
   text-align: center;
   margin-bottom: 2em;
@@ -6711,7 +6719,7 @@ body {
   font-size: $font-sub-heading;
   font-weight: bold;
   color: $black;
-  margin: 1em 0em;
+  margin: 1em 0;
 }
 .blockchain__whysection__servicecard__detail {
   color: $black;
@@ -6745,7 +6753,7 @@ body {
 }
 .blockchain__servicessection__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 2em;
   color: $white;
   text-align: center;
@@ -6799,7 +6807,7 @@ body {
 .blockchain__ready {
   max-width: 1440px;
   width: 100%;
-  margin: 0em auto;
+  margin: 0 auto;
   padding: 4em;
   background-color: $primary;
   display: flex;
@@ -6852,7 +6860,7 @@ body {
 .blockchain__worksection {
   max-width: 1440px;
   width: 100%;
-  margin: 0em auto;
+  margin: 0 auto;
   padding: 4em 4em;
 }
 .blockchain__worksection {
@@ -6943,7 +6951,7 @@ body {
   width: 50%;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 .blockchain__worksection__img img {
   width: 450px;
@@ -7103,7 +7111,7 @@ body {
 
   align-items: center;
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1em;
   text-align: center;
 }
@@ -7148,7 +7156,7 @@ body {
   width: 100%;
   max-width: 1440px;
   padding: 5em 4em;
-  margin: 0em auto;
+  margin: 0 auto;
 }
 .faq__section__content__heading {
   font-size: $font-heading;
@@ -7252,7 +7260,7 @@ body {
 }
 .customsoft_first_container_svg span {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   padding-left: 0.5em;
 }
 .customsoft_first_container_svg svg {
@@ -7260,7 +7268,7 @@ body {
 }
 .customsoft_second_container_svg span {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   padding-left: 0.5em;
 }
 .customsoft_first_container_content {
@@ -7285,7 +7293,7 @@ body {
 .learn_more {
   text-decoration: none;
   font-size: $font-normal;
-  font-weight: 600;
+  font-weight: 500;
   padding-right: 7px;
   color: $primary;
 }
@@ -7407,7 +7415,7 @@ body {
 }
 .customsoft_third_container_first_box_start span {
   font-size: $font-sub-heading;
-  font-weight: 700;
+  font-weight: bold;
   padding-left: 7px;
 }
 .customsoft_third_container_first_box_svg span {
@@ -7447,7 +7455,7 @@ body {
 }
 .customsoft_third_container_second_box span {
   font-size: $font-sub-heading;
-  font-weight: 700;
+  font-weight: bold;
   padding-left: 7px;
 }
 .customsoft_third_container_second_box {
@@ -7464,7 +7472,7 @@ body {
 }
 .customsoft_third_container_third_box span {
   font-size: $font-sub-heading;
-  font-weight: 700;
+  font-weight: bold;
   padding-left: 7px;
 }
 .customsoft_third_container_first_box_first_main {
@@ -7723,7 +7731,7 @@ body {
 }
 .customsoft_five_container_first_box_content {
   font-size: $font-sub-heading;
-  font-weight: 600;
+  font-weight: 500;
   width: 300px;
   padding-top: 1.5em;
 }
@@ -7733,7 +7741,7 @@ body {
 }
 .customsoft_five_container_second_box_content {
   font-size: $font-sub-heading;
-  font-weight: 600;
+  font-weight: 500;
   width: 300px;
   padding-top: 1.5em;
 }
@@ -7743,7 +7751,7 @@ body {
 }
 .customsoft_five_container_third_box_content {
   font-size: $font-sub-heading;
-  font-weight: 600;
+  font-weight: 500;
   width: 300px;
   padding-top: 1.5em;
 }
@@ -7753,7 +7761,7 @@ body {
 }
 .customsoft_five_container_four_box_content {
   font-size: $font-normal;
-  font-weight: 600;
+  font-weight: 500;
   width: 300px;
   padding-top: 1.5em;
 }
@@ -7795,7 +7803,7 @@ body {
 }
 .service__startup__main__container__first__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   width: 100%;
   max-width: 800px;
@@ -7871,7 +7879,7 @@ body {
 }
 .tangible_results_right_sub_heading {
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 500;
   color: $primary;
 }
 .tangible_results_right_para {
@@ -7990,7 +7998,7 @@ body {
   .engagement__models__card
   .services__startup__card__icon {
   background-color: $white;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   padding: 1em;
   border-radius: 50px;
   width: 82px;
@@ -8041,7 +8049,7 @@ body {
 
 .highly__customer__main__container__heading {
   font-size: $font-heading;
-  font-weight: 700;
+  font-weight: bold;
 }
 .highly__customer__main__container__heading span {
   color: $primary;
@@ -8063,7 +8071,7 @@ body {
   height: fit-content;
   background-color: $black;
   color: $white;
-  padding: 3em 0em;
+  padding: 3em 0;
   border-radius: 5px;
 }
 .Agile__customer__main__container {
@@ -8080,14 +8088,15 @@ body {
 }
 .highly__customer__main__first__container__jira__container__heading {
   width: 100%;
-  font-size: $font-sub-heading;
+  font-size: $font-normal;
   color: black;
+  font-weight: bold;
   display: flex;
   align-items: center;
 }
 
 .highly__customer__main__first__container__jira__container__heading svg {
-  margin-right: 0.5em;
+  margin-right: 1em;
 }
 .highly__customer__main__first__container__jira__container {
   border-radius: 10px;
@@ -8149,14 +8158,14 @@ body {
   color: black;
 }
 .highly__customer__main__container {
-  padding: 0em 1em 0em 0em;
+  padding: 0 1em 0 0;
 }
 .highly__customer__main__container__heading__content span {
   padding-left: 1em;
   padding-right: 1em;
   color: $primary;
   font-size: $font-heading;
-  font-weight: 800;
+  font-weight: bold;
 }
 .one {
   padding-left: 3em;
@@ -8188,7 +8197,7 @@ body {
 }
 .Android__and__ios__box__one__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
   width: 100%;
 }
 .Android__and__ios__box__one__heading span {
@@ -8201,7 +8210,7 @@ body {
 }
 .Android__and__ios__box__two__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
 }
 .Android__and__ios__box__two__heading span {
   color: $primary;
@@ -8217,7 +8226,7 @@ body {
   display: flex;
   justify-content: space-between;
 
-  padding-bottom: 0em;
+  padding-bottom: 0;
 }
 .Android__and__ios__boxes {
   width: 30%;
@@ -8257,7 +8266,7 @@ body {
   padding: 4em;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 0em;
+  padding-top: 0;
 }
 .Agile__discover__workshop__container__content {
   border: 1px solid $primary;
@@ -8291,7 +8300,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
-  padding: 0em 4em;
+  padding: 0 4em;
 }
 .graphic__design__essence__container span {
   color: $primary;
@@ -8322,7 +8331,7 @@ body {
 }
 .graphic__design__essence__container__skills__heading {
   font-size: $font-heading;
-  font-weight: 600;
+  font-weight: 500;
 }
 .graphic__design__essence__container__image {
   display: flex;
@@ -8341,7 +8350,7 @@ body {
   width: 50%;
   color: $primary;
   padding: 2em;
-  padding-top: 0em;
+  padding-top: 0;
 }
 .graphic__design__essence__container__image {
   max-width: 1440px;
@@ -8402,7 +8411,7 @@ body {
   display: flex;
   align-items: center;
   font-size: $font-sub-heading;
-  font-weight: 600;
+  font-weight: 500;
 }
 .blockchain__whysection__servicecard__svg__content svg {
   margin-right: 1em;
@@ -8464,16 +8473,16 @@ body {
     align-items: center;
     display: flex;
     width: 100%;
-    padding: 0em 0em;
+    padding: 0 0;
   }
   .blockchain__servicessection {
     padding: 2em;
   }
   .blockchain__servicessection__services {
-    padding: 0em;
+    padding: 0;
   }
   .june_main_container_first_container {
-    padding: 2em 0em !important;
+    padding: 2em 0 !important;
   }
   .june_second_container_main {
     padding: 2em !important;
@@ -8494,7 +8503,7 @@ body {
     padding: 4em 2em;
   }
   .blockchain__techstack__container__tags {
-    padding: 0em 2em;
+    padding: 0 2em;
   }
   .blockchain__techstack__container__tags {
     align-items: flex-start;
@@ -8600,9 +8609,9 @@ body {
   .service__startup__main__container__second__cards__container__augmantation
     .engagement__models__card:nth-child(3)
     .services__startup__card__icon::after {
-    border-radius: 0px;
+    border-radius: 0;
     min-width: 100%;
-    height: 0px;
+    height: 0;
   }
   .service__startup__main__container__second__cards__container__augmantation
     .engagement__models__card:nth-child(4)
@@ -8645,17 +8654,18 @@ body {
     display: none;
   }
   .services__main__container__left {
-    margin-right: 0em;
+    margin-right: 0;
   }
   .services__main__container__reverse .services__main__container__left {
-    margin-left: 0em;
+    margin-left: 0;
+    width: 100%;
   }
 }
 @media (max-width: 1100px) {
   .ios__development__native__cross__plat__development__img {
     display: flex;
     align-items: center;
-    margin: 0em auto;
+    margin: 0 auto;
     justify-content: center;
     position: relative;
     margin-top: -90px;
@@ -8717,7 +8727,7 @@ body {
   .ios__development__tangible {
     width: 100%;
     margin-left: 0;
-    padding: 1em 2em;
+    padding: 4em 2em;
   }
   .ecommerce__screen__container__recent__work__content___row {
     flex-direction: column;
@@ -8749,7 +8759,7 @@ body {
   .about__key__difference__content__col {
     min-width: 100%;
     margin-bottom: 3em;
-    padding: 0em;
+    padding: 0;
   }
   .about__ceo__message {
     display: flex;
@@ -8765,7 +8775,7 @@ body {
   }
   .pricing__fitted__team__content__entry {
     min-width: 100%;
-    margin: 0em;
+    margin: 0;
     margin-bottom: 2em;
   }
   .about__teams__content__entry {
@@ -8790,7 +8800,7 @@ body {
   }
   .june_second_container {
     width: 100%;
-    margin: 0em;
+    margin: 0;
   }
   .june_second_container_main {
     flex-direction: column;
@@ -8818,14 +8828,14 @@ body {
   }
   .ios__development__tangible__col__one__heading {
     max-width: 100%;
-    margin: 0 0;
+    margin: 0;
     text-align: center;
   }
   .ios__development__tangible__col__two__header__middle {
     margin-top: 0;
   }
   .ios__development__tangible__col__two {
-    padding: 0 0;
+    padding: 0;
     width: 100%;
     align-items: center;
   }
@@ -8847,7 +8857,7 @@ body {
   }
   .ios__development__native__cross__plat__development__container {
     width: 100%;
-    border-radius: 0px;
+    border-radius: 0;
   }
   .ios__development__native__cross__plat__development__img {
     width: 100%;
@@ -8862,7 +8872,7 @@ body {
 }
 @media (max-width: 500px) {
   .pricing__process__container {
-    padding: 4em 0em;
+    padding: 4em 0;
   }
   .container__web__dev__experience {
     padding: 5em 2em;
@@ -8879,17 +8889,17 @@ body {
   .about__ceo__message,
   .about__core__values,
   .about__key__difference {
-    padding: 0em 2em;
+    padding: 0 2em;
   }
   .staff__talent {
     padding: 4em 2em;
     padding-bottom: 3em;
   }
   .max__width__container {
-    padding: 0em 2em !important;
+    padding: 0 2em !important;
   }
   .services__startup__card {
-    margin: 1% 0px !important;
+    margin: 1%0 !important;
   }
   .how__we__do__section {
     padding: 2em;
@@ -8932,10 +8942,10 @@ body {
     position: sticky;
   }
   .about__teams {
-    padding: 0em 2em;
+    padding: 0 2em;
   }
   .about__agile__process {
-    padding: 0em 2em;
+    padding: 0 2em;
   }
   .about__teams__content__entry {
     min-width: 50%;
@@ -9194,13 +9204,16 @@ body {
     align-items: center;
   }
   .services__main__container__content__wrapper__card__svg {
-    margin-right: 0em !important;
-    margin-left: 0em !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
     margin-bottom: 5em !important;
   }
   .services__main__container__content__wrapper__card__content {
     text-align: center;
     align-items: center;
+  }
+  .services__main__container__content__wrapper__card__heading {
+    justify-content: center;
   }
 }
 @media (max-width: 850px) {
@@ -9312,7 +9325,7 @@ body {
   }
   .graphic__design__essence__container__image img {
     width: 100%;
-    margin: 2em 0em;
+    margin: 2em 0;
   }
   .meetus__container__smallThings__content__container {
     flex-direction: column;
@@ -9387,7 +9400,7 @@ body {
     padding-top: 8em;
   }
   .container__jumbotron__left {
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9433,8 +9446,8 @@ body {
   }
   .header__content {
     transition: 300ms ease-in-out;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     transition: 300ms ease-in-out;
   }
   .header__content__nav {
@@ -9442,9 +9455,9 @@ body {
     flex-direction: column;
     top: 6.1em;
     background-color: white;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
-    left: 0px;
+    left: 0;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     padding-bottom: 1em;
@@ -9457,7 +9470,7 @@ body {
     height: 1em;
     position: absolute;
     width: 100%;
-    left: 0px;
+    left: 0;
     top: -15px;
   }
   @keyframes header__content__nav__animation {
@@ -9477,11 +9490,11 @@ body {
   .high__customer__main__first__container {
     width: 100%;
     margin-top: 5em;
-    margin-left: 0em;
+    margin-left: 0;
   }
   .Agile__customer__main__first__container__jira__container {
-    padding-left: 0em;
-    margin-left: 0em;
+    padding-left: 0;
+    margin-left: 0;
   }
   .blockchain__worksection__detail {
     flex-direction: column;
@@ -9509,7 +9522,7 @@ body {
     align-items: center;
     display: flex;
     width: 100%;
-    padding: 0em 4em;
+    padding: 0 4em;
   }
   .blockchain__worksection__img img {
     width: 50%;
@@ -9593,7 +9606,7 @@ body {
 
   .container__feature__col {
     min-width: 50%;
-    padding-left: 0em;
+    padding-left: 0;
   }
   .container__feature__col:first-child {
     margin-bottom: 3em;
@@ -9608,7 +9621,7 @@ body {
   }
   .apply__popup__form__row
     .contact__section__content__middle__input:first-child {
-    margin-right: 0em;
+    margin-right: 0;
   }
 
   .contact__section__content__middle__form__row {
@@ -9622,14 +9635,10 @@ body {
   }
   .contact__section__content__middle__form__row
     .contact__section__content__middle__input:first-child {
-    margin-right: 0em;
+    margin-right: 0;
   }
   .pricing__all__inclusive__container__content__bottom__card {
     width: 48%;
-  }
-  .about__teams__content__entry {
-    min-width: 20%;
-    max-width: 20%;
   }
   .Custome__methodologies__section__detail__card {
     width: 48%;
@@ -9795,7 +9804,7 @@ body {
     max-width: 100%;
   }
   .container__emerging__technologies__section__entry__data {
-    padding: 0 0;
+    padding: 0;
   }
   .container__emerging__technologies__heading__main {
     font-size: $font-heading;
@@ -9837,6 +9846,7 @@ body {
   .container__jumbotron {
     padding: 0 2em;
     padding-top: 6em;
+    margin-bottom: 5em;
   }
   .container__clients {
     padding: 2em;
@@ -9882,7 +9892,7 @@ body {
     padding-top: 4em;
   }
   .container__emerging__technologies__text__main {
-    padding: 0 0;
+    padding: 0;
     text-align: start;
   }
   .container__emerging__technologies__heading__main {
@@ -9919,7 +9929,7 @@ body {
     padding: 6em 1em !important;
   }
   .graphic__design__essence__container {
-    padding: 0em 1em !important;
+    padding: 0 1em !important;
   }
   .Android__and__ios__box__one__and__two {
     padding: 2em !important;
@@ -9937,7 +9947,7 @@ body {
 }
 @media (max-width: 450px) {
   .june_third_container_first_box {
-    padding: 0em 2em;
+    padding: 0 2em;
     padding-bottom: 4em;
   }
   .highly__customer__main__container__heading__content {
@@ -9969,7 +9979,7 @@ body {
     width: 100%;
   }
   .graphic__design__essence__container {
-    padding: 0em 2em !important
+    padding: 0 2em !important
     ;
   }
   .why__work__with__us__card {
@@ -10160,7 +10170,7 @@ body {
   }
   .about__key__different__sec__contanier__heading div {
     font-size: $font-heading;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 1em;
   }
   .ios__development__native__ios__container {
@@ -10171,8 +10181,8 @@ body {
   }
   .android__development__our__stack__container {
     width: 100%;
-    margin-left: 0em;
-    border-radius: 0px;
+    margin-left: 0;
+    border-radius: 0;
     padding: 2em;
   }
   .tangible_results_right_contant {
@@ -10279,7 +10289,7 @@ body {
     font-size: $font-sub-heading !important;
   }
   .highly__customer__main__second__container {
-    padding: 2em 0em;
+    padding: 2em 0;
   }
 }
 @media (max-width: 605px) {
