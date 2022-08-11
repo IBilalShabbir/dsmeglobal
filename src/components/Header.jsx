@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { X, Menu } from "react-feather";
 import OutsideClickHandler from "react-outside-click-handler";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logoHeader.svg";
 import { NavLink as Link } from "react-router-dom";
 
 export default function Header() {

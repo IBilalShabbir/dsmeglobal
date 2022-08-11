@@ -157,7 +157,7 @@ body {
   align-items: center;
   min-height: 768px;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1440px;
   padding: 0 4em;
   margin: 0 auto;
   position: relative;
@@ -5809,12 +5809,12 @@ body {
 }
 .ecommerce__screen__container__outside {
   width: 100%;
-  background-color: $black;
+ 
   margin-bottom: 6em;
 }
 .ecommerce__screen__container__services__heading {
   font-size: $font-large;
-  color: $white;
+
   font-weight: bold;
   margin-bottom: 2em;
   text-align: center;
@@ -5832,7 +5832,7 @@ body {
 .ecommerce__screen__container__services__content__entry {
   width: 31%;
   margin: 1%;
-  background-color: $white;
+  background-color: rgba(13, 110, 74, 0.1);
   padding: 2em;
   border-radius: 8px;
   fill: $primary;
