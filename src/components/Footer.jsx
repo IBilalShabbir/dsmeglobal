@@ -24,7 +24,7 @@ export default function Footer({ TechnologiesData, ServiceData }) {
               }}
               className="header__content__logo"
             >
-              <img loading="lazy" src={logoDark} alt="logo" />
+              <img loading="lazy" src={logoDark} alt="logo"  style={{width:100n}}/>
             </Link>
             <div
               className="footer__container__content__col__text"

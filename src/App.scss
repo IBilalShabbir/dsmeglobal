@@ -7825,10 +7825,7 @@ body {
   margin: 1%;
   border: 1px solid transparent;
 }
-.services__startup__card:hover {
-  transition: border 0.5s ease-in-out;
-  border: 1px solid $primary;
-}
+
 .services__startup__card__icon svg {
   height: 50px;
   width: 50px;
