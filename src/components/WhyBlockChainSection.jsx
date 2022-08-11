@@ -38,9 +38,204 @@ export function WhyBlockChainSection() {
         </svg>
       ),
       title: "Save Time and Operational Costs",
-      subTitle: "Save Time and Operational Costs",
+      // subTitle: "Save Time and Operational Costs",
       content:
         "Blockchain tech allows for allows for verification without having to be dependent on redundant processes and third parties.",
+    },
+    {
+      image: (
+        <svg
+          id="time-fast_1_"
+          data-name="time-fast (1)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          stroke="currentColor"
+        >
+          <path
+            id="Path_36077"
+            data-name="Path 36077"
+            d="M10,23a1,1,0,0,1-1,1H1a1,1,0,0,1,0-2H9A1,1,0,0,1,10,23Z"
+          />
+          <path
+            id="Path_36078"
+            data-name="Path 36078"
+            d="M1,20H7a1,1,0,0,0,0-2H1a1,1,0,0,0,0,2Z"
+          />
+          <path
+            id="Path_36079"
+            data-name="Path 36079"
+            d="M1,16H5a1,1,0,0,0,0-2H1a1,1,0,0,0,0,2Z"
+          />
+          <path
+            id="Path_36080"
+            data-name="Path 36080"
+            d="M12,0A12,12,0,0,0,0,12c0,.061.008.12.009.181A2.966,2.966,0,0,1,1,12H5a2.99,2.99,0,0,1,2.78,4.116,2.975,2.975,0,0,1,2,4,2.949,2.949,0,0,1,2.039,3.875c.061,0,.12.009.181.009A12,12,0,1,0,12,0Zm3.707,15.707a1,1,0,0,1-1.414,0l-3-3A1,1,0,0,1,11,12V7a1,1,0,0,1,2,0v4.586l2.707,2.707a1,1,0,0,1,0,1.414Z"
+          />
+        </svg>
+      ),
+      title: "Eliminate the Middle Man",
+      // subTitle: "Save Time and Operational Costs",
+      content:
+        "Blockchain helps you take control of your transactions and saves you the hassle of employing a middle man.",
+    },
+    {
+      image: (
+        <svg
+          id="time-fast_1_"
+          data-name="time-fast (1)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          stroke="currentColor"
+        >
+          <path
+            id="Path_36077"
+            data-name="Path 36077"
+            d="M10,23a1,1,0,0,1-1,1H1a1,1,0,0,1,0-2H9A1,1,0,0,1,10,23Z"
+          />
+          <path
+            id="Path_36078"
+            data-name="Path 36078"
+            d="M1,20H7a1,1,0,0,0,0-2H1a1,1,0,0,0,0,2Z"
+          />
+          <path
+            id="Path_36079"
+            data-name="Path 36079"
+            d="M1,16H5a1,1,0,0,0,0-2H1a1,1,0,0,0,0,2Z"
+          />
+          <path
+            id="Path_36080"
+            data-name="Path 36080"
+            d="M12,0A12,12,0,0,0,0,12c0,.061.008.12.009.181A2.966,2.966,0,0,1,1,12H5a2.99,2.99,0,0,1,2.78,4.116,2.975,2.975,0,0,1,2,4,2.949,2.949,0,0,1,2.039,3.875c.061,0,.12.009.181.009A12,12,0,1,0,12,0Zm3.707,15.707a1,1,0,0,1-1.414,0l-3-3A1,1,0,0,1,11,12V7a1,1,0,0,1,2,0v4.586l2.707,2.707a1,1,0,0,1,0,1.414Z"
+          />
+        </svg>
+      ),
+      title: "Make your Data Secure",
+      // subTitle: "Save Time and Operational Costs",
+      content:
+        "The tech removes the risk of duplicate entry or fraud as multiple consensus protocols need to be fulfilled to validate an entry.",
+    },
+    {
+      image: (
+        <svg
+          id="time-fast_1_"
+          data-name="time-fast (1)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          stroke="currentColor"
+        >
+          <path
+            id="Path_36077"
+            data-name="Path 36077"
+            d="M10,23a1,1,0,0,1-1,1H1a1,1,0,0,1,0-2H9A1,1,0,0,1,10,23Z"
+          />
+          <path
+            id="Path_36078"
+            data-name="Path 36078"
+            d="M1,20H7a1,1,0,0,0,0-2H1a1,1,0,0,0,0,2Z"
+          />
+          <path
+            id="Path_36079"
+            data-name="Path 36079"
+            d="M1,16H5a1,1,0,0,0,0-2H1a1,1,0,0,0,0,2Z"
+          />
+          <path
+            id="Path_36080"
+            data-name="Path 36080"
+            d="M12,0A12,12,0,0,0,0,12c0,.061.008.12.009.181A2.966,2.966,0,0,1,1,12H5a2.99,2.99,0,0,1,2.78,4.116,2.975,2.975,0,0,1,2,4,2.949,2.949,0,0,1,2.039,3.875c.061,0,.12.009.181.009A12,12,0,1,0,12,0Zm3.707,15.707a1,1,0,0,1-1.414,0l-3-3A1,1,0,0,1,11,12V7a1,1,0,0,1,2,0v4.586l2.707,2.707a1,1,0,0,1,0,1.414Z"
+          />
+        </svg>
+      ),
+      title: "Ensure high Level of Transparency ",
+      // subTitle: "Save Time and Operational Costs",
+      content:
+        "Transactions are recorded across every participating node in the Blockchain, which helps ensure transparency to each participant.",
+    },
+    {
+      image: (
+        <svg
+          id="time-fast_1_"
+          data-name="time-fast (1)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          stroke="currentColor"
+        >
+          <path
+            id="Path_36077"
+            data-name="Path 36077"
+            d="M10,23a1,1,0,0,1-1,1H1a1,1,0,0,1,0-2H9A1,1,0,0,1,10,23Z"
+          />
+          <path
+            id="Path_36078"
+            data-name="Path 36078"
+            d="M1,20H7a1,1,0,0,0,0-2H1a1,1,0,0,0,0,2Z"
+          />
+          <path
+            id="Path_36079"
+            data-name="Path 36079"
+            d="M1,16H5a1,1,0,0,0,0-2H1a1,1,0,0,0,0,2Z"
+          />
+          <path
+            id="Path_36080"
+            data-name="Path 36080"
+            d="M12,0A12,12,0,0,0,0,12c0,.061.008.12.009.181A2.966,2.966,0,0,1,1,12H5a2.99,2.99,0,0,1,2.78,4.116,2.975,2.975,0,0,1,2,4,2.949,2.949,0,0,1,2.039,3.875c.061,0,.12.009.181.009A12,12,0,1,0,12,0Zm3.707,15.707a1,1,0,0,1-1.414,0l-3-3A1,1,0,0,1,11,12V7a1,1,0,0,1,2,0v4.586l2.707,2.707a1,1,0,0,1,0,1.414Z"
+          />
+        </svg>
+      ),
+      title: "Take control of your Information",
+      // subTitle: "Save Time and Operational Costs",
+      content:
+        "Consent of all ledger participants is needed to add records to the chain, which means every stakeholder gets a say in major decisions.",
+    },
+    {
+      image: (
+        <svg
+          id="time-fast_1_"
+          data-name="time-fast (1)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          stroke="currentColor"
+        >
+          <path
+            id="Path_36077"
+            data-name="Path 36077"
+            d="M10,23a1,1,0,0,1-1,1H1a1,1,0,0,1,0-2H9A1,1,0,0,1,10,23Z"
+          />
+          <path
+            id="Path_36078"
+            data-name="Path 36078"
+            d="M1,20H7a1,1,0,0,0,0-2H1a1,1,0,0,0,0,2Z"
+          />
+          <path
+            id="Path_36079"
+            data-name="Path 36079"
+            d="M1,16H5a1,1,0,0,0,0-2H1a1,1,0,0,0,0,2Z"
+          />
+          <path
+            id="Path_36080"
+            data-name="Path 36080"
+            d="M12,0A12,12,0,0,0,0,12c0,.061.008.12.009.181A2.966,2.966,0,0,1,1,12H5a2.99,2.99,0,0,1,2.78,4.116,2.975,2.975,0,0,1,2,4,2.949,2.949,0,0,1,2.039,3.875c.061,0,.12.009.181.009A12,12,0,1,0,12,0Zm3.707,15.707a1,1,0,0,1-1.414,0l-3-3A1,1,0,0,1,11,12V7a1,1,0,0,1,2,0v4.586l2.707,2.707a1,1,0,0,1,0,1.414Z"
+          />
+        </svg>
+      ),
+      title: "Ensure Completeness of Data",
+      // subTitle: "Save Time and Operational Costs",
+      content:
+        "Blockchain's append only property makes data alteration or deletion impossible, helping you maintain its accuracy at all times.",
     },
   ];
   return (

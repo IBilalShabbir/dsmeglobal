@@ -61,11 +61,15 @@ export function BlockchainHowWork() {
           and frictionless exchange of digital assets and information in
           real-time.
         </div>
+        <div className="blockchain__worksection__heading__two__desktop_main">
         <img
           className="blockchain__worksection__heading__two__desktopimg"
           src={blockdeskimg}
           alt="blockchaindesktop"
         />
+
+        </div>
+        
       </div>
     </div>
   );

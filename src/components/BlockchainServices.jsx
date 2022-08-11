@@ -3,13 +3,47 @@ import { Fade } from "react-reveal";
 import Scrollspy from "react-scrollspy";
 import { IndustryCard } from "./IndustryCard";
 import industries from "../assets/industry.svg";
+import publicprivate from "../assets/publicprivate.svg";
+
 
 export function BlockchainServices() {
   const blockChainServicesData = [
     {
+      image: publicprivate,
+
+      title: "Public and Private Blockchains",
+      content:
+        "With Public and Private Blockchain options, you get to control who has access to specific information.",
+    },
+    {
+      image: industries,
+      title: "Wallets and Exchanges",
+      content:
+        "We help you build safe Cryptocurrency wallets and exchanges to conduct trade seamlessly without hurdles.",
+    },
+    {
+      image: industries,
+      title: "Distributed Applications",
+      content:
+        "Our Decentralized Applications development service helps keep records tamper-proof and free of intrusions.",
+    },
+    {
+      image: industries,
+      title: "Testing & Migration",
+      content:
+        "We help you migrate your existing business into Blockchain and define a testing and migration roadmap.",
+    },
+    {
       image: industries,
       title: "Smart Contracts",
-      content: "lorem2dfjlasjdflksajdflkjsaldkfj;laskjdfjl",
+      content:
+        "We use Blockchain platforms like Etherium to deliver highly secure, and competitive Smart Contracts.",
+    },
+    {
+      image: industries,
+      title: "Blockchain Consultancy",
+      content:
+        "By analyzing your business infrastructure, we identify threats Blockchain can counter and opportunities it can address.",
     },
   ];
   return (
