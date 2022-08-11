@@ -1,7 +1,10 @@
 import React from "react";
 
+
+
 export function BlockchainServices() {
   return (
+    <>
     <div style={{ backgroundcolor: "#242424", width: "100%" }}>
       <div
         className="blockchain__servicessection"
@@ -327,5 +330,7 @@ export function BlockchainServices() {
         </div>
       </div>
     </div>
+   
+    </>
   );
 }
