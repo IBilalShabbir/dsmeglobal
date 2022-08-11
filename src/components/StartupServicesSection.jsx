@@ -4,7 +4,7 @@ import React from "react";
 
 export function StartupServicesSection() {
   return (
-    <div className="service__startup__main__container__second" style={{background:"black" , color:"white"}}  >
+    <div className="service__startup__main__container__second"  >
       <div className="max__width__container">
         <div className="service__startup__main__container__second__cards__container" >
           <ServicesStartupCard 
