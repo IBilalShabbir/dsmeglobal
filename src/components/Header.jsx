@@ -1,92 +1,140 @@
-import React, { useLayoutEffect, useState } from "react";
-import OutsideClickHandler from "react-outside-click-handler";
-import { Link, useNavigate } from "react-router-dom";
-import logoDark from "../assets/logoDark.svg";
+import React, { useEffect } from "react";
 import { X, Menu } from "react-feather";
+import OutsideClickHandler from "react-outside-click-handler";
 import logo from "../assets/logo.svg";
-import { Nav } from "./Nav";
+import { NavLink as Link } from "react-router-dom";
 
-export default function Header({ light }) {
-  const navigate = useNavigate();
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isScrolling, setIsScrolling] = useState(false);
-
-  function navOpenClose() {
+export default function Header() {
+  const [isOpen, setIsOpen] = React.useState(true);
+  function changeOpenClose() {
     if (window.innerWidth < 1000) {
-      setIsNavOpen(false);
+      setIsOpen(false);
     } else {
-      setIsNavOpen(true);
+      setIsOpen(true);
     }
   }
-  const changeBackgrond = () => {
-    if (window.scrollY > 0) {
-      setIsScrolling(true);
-    } else {
-      setIsScrolling(false);
-    }
-  };
-  useLayoutEffect(() => {
-    changeBackgrond();
-    navOpenClose();
-    window.addEventListener("resize", navOpenClose);
-    window.addEventListener("scroll", navOpenClose);
+  useEffect(() => {
+    changeOpenClose();
+    window.addEventListener("resize", changeOpenClose);
+    window.addEventListener("scroll", changeOpenClose);
   }, []);
 
-  window.addEventListener("scroll", changeBackgrond);
-
   return (
-    <div
-      className={
-        isScrolling ? "header" : light ? "header header__active" : "header"
-      }
-      style={
-        (isNavOpen && window.innerWidth < 1000) || isScrolling
-          ? { backgroundColor: "white" }
-          : null
-      }
-    >
-      <div className="header__content">
-        <Link
-          to="/"
-          onClick={() => {
-            document.getElementById("Home").checked = true;
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="header__content__logo"
-        >
-          <img
-            src={
-              isScrolling
-                ? logoDark
-                : light
-                ? !isNavOpen
-                  ? logo
-                  : logoDark
-                : logoDark
-            }
-            alt="logo"
-          />
+    <div className="header">
+      <div
+        className="header__content"
+        style={
+          isOpen
+            ? null
+            : {
+                borderBottomLeftRadius: "50px",
+                borderBottomRightRadius: "50px",
+              }
+        }
+      >
+        <Link to="/" className="header__content__logo">
+          <img src={logo} alt="logo" className="header__content__logo__img" />
+          <div className="header__content__logo__brand">
+            DSME <span>GLOBAL</span>
+          </div>
         </Link>
-        {isNavOpen ? (
+        {isOpen ? (
           <OutsideClickHandler
             onOutsideClick={() => {
               if (window.innerWidth < 1000) {
-                setIsNavOpen(false);
+                setIsOpen(false);
               }
             }}
           >
-            <Nav navigate={navigate} setIsNavOpen={setIsNavOpen} />
+            <div className="header__content__nav">
+              <Link
+                to="/"
+                onClick={() => {
+                  if (window.innerWidth < 1000) {
+                    setIsOpen(false);
+                  }
+                }}
+                className="header__content__nav__link"
+              >
+                Home
+              </Link>
+              <Link
+                to="/about-us"
+                onClick={() => {
+                  if (window.innerWidth < 1000) {
+                    setIsOpen(false);
+                  }
+                }}
+                className="header__content__nav__link"
+              >
+                About Us
+              </Link>
+              <Link
+                to="/services"
+                onClick={() => {
+                  if (window.innerWidth < 1000) {
+                    setIsOpen(false);
+                  }
+                }}
+                className="header__content__nav__link"
+              >
+                Services
+              </Link>
+              <Link
+                to="/portfolio"
+                onClick={() => {
+                  if (window.innerWidth < 1000) {
+                    setIsOpen(false);
+                  }
+                }}
+                className="header__content__nav__link"
+              >
+                Portfolio
+              </Link>
+              <Link
+                to="/industry"
+                onClick={() => {
+                  if (window.innerWidth < 1000) {
+                    setIsOpen(false);
+                  }
+                }}
+                className="header__content__nav__link"
+              >
+                Industries
+              </Link>
+              <Link
+                to="/careers"
+                onClick={() => {
+                  if (window.innerWidth < 1000) {
+                    setIsOpen(false);
+                  }
+                }}
+                className="header__content__nav__link"
+              >
+                Careers
+              </Link>
+              <Link
+                to="/blog"
+                onClick={() => {
+                  if (window.innerWidth < 1000) {
+                    setIsOpen(false);
+                  }
+                }}
+                className="header__content__nav__link"
+              >
+                Blog
+              </Link>
+            </div>
           </OutsideClickHandler>
         ) : null}
-        <div className="header__content__button">
+        <div className="header__content__cta">
           <button
-            className="header__content__button__secondary"
+            className="header__content__menu"
             onClick={() => {
-              setIsNavOpen(!isNavOpen);
+              setIsOpen(!isOpen);
             }}
-            title="Menu"
           >
-            {isNavOpen ? (
+            {isOpen ? (
               <X size={20} color="currentColor" />
             ) : (
               <Menu size={20} color="currentColor" />
@@ -95,13 +143,11 @@ export default function Header({ light }) {
           <Link
             to="/quote"
             onClick={() => {
-              document
-                .getElementsByName("header__content__nav__entry")
-                .forEach((item) => {
-                  item.checked = false;
-                });
+              if (window.innerWidth < 1000) {
+                setIsOpen(false);
+              }
             }}
-            className="header__content__button__primary"
+            className="header__content__cta__button"
           >
             Get a Quote
           </Link>

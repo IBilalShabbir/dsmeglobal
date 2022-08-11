@@ -46,3 +46,4 @@ export function replacePngWithWebp(image) {
     return image.replace(".png", ".webp");
   }
 }
+export const hash = Math.floor(Math.random() * 90000) + 10000;
