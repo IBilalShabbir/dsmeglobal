@@ -164,7 +164,7 @@ export function EmergingTechnologiesWebDev() {
     <div style={{ backgroundcolor: "#242424", width: "100%" }}>
       <div className="container__emerging__technologies">
         <div className="container__emerging__technologies__heading__main">
-          Emerging<span>Technologies</span>
+          Emerging<span> Technologies</span>
         </div>
         <div className="container__emerging__technologies__text__main">
           We constantly push our limits and explore emerging technologies to

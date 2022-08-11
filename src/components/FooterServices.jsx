@@ -8,12 +8,18 @@ export function FooterServices({ data }) {
       {data?.map((item) => (
         <Link
           onClick={() => {
-            window.localStorage.setItem("servicesData", JSON.stringify(item));
-            setTimeout(() => {
-              window.scrollTo({ behavior: "smooth", top: 0 });
-            }, 300);
+            window.scrollTo({ behavior: "smooth", top: 0 });
           }}
-          to="/service"
+          to={
+            "/services/" +
+            item?.title
+              .trim()
+              .replaceAll(" ", "-")
+              .replaceAll("-&-", "-")
+              .replaceAll(".", "")
+              .replaceAll("/", "-")
+              .toLowerCase()
+          }
           key={JSON.stringify(item)}
           className="footer__container__content__col__link"
         >

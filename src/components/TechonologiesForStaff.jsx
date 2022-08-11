@@ -50,10 +50,6 @@ export function TechonologiesForStaff() {
       <div className="container__emerging__technologies__heading__main">
         Technologies<span>We Use</span>
       </div>
-      {/* <div className="container__emerging__technologies__text__main">
-        We constantly push our limits and explore emerging technologies to build
-        a solution that you help our clients stay ahead of the game.
-      </div> */}
       <div className="container__emerging__technologies__section">
         {array?.map((item, i) => (
           <WebdevArrEntry

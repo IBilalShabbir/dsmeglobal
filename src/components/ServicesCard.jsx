@@ -11,7 +11,16 @@ export function ServicesCard({ data }) {
   return (
     <Link
       onClick={onClick}
-      to={data.link}
+      to={
+        "/services/" +
+        data?.title
+          .trim()
+          .replaceAll(" ", "-")
+          .replaceAll("-&-", "-")
+          .replaceAll(".", "")
+          .replaceAll("/", "-")
+          .toLowerCase()
+      }
       className="container__services__right__entry"
     >
       <Fade up>

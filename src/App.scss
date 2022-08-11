@@ -3451,6 +3451,7 @@ body {
   justify-content: center;
   font-size: $font-heading;
   font-weight: bold;
+  flex-wrap: wrap;
 }
 .container__emerging__technologies__heading__main span {
   color: $primary;
