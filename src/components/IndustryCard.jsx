@@ -28,7 +28,11 @@ export function IndustryCard({ data }) {
               .trim()
               .split(" ")
               ?.map((word, i) =>
-                i == 1 ? <span key={JSON.stringify(word)}>{word}</span> : word
+                i % 2 === 0 ? (
+                  <span key={JSON.stringify(word)}>{word}</span>
+                ) : (
+                  word
+                )
               )}
           </div>
           <div className="services__main__container__content__wrapper__card__info">

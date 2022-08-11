@@ -336,14 +336,6 @@ export function WhychoosenativeiOSappdevelopment() {
           </div>
         </div>
       </div>
-      <div className="ios__development__native__sound__promising">
-        <div className="ios__development__native__sound__promising__heading">
-          Sound promising? Let’s talk about your idea!
-        </div>
-        <div className="ios__development__native__sound__promising__button">
-          Get in Touch
-        </div>
-      </div>
     </div>
   );
 }
