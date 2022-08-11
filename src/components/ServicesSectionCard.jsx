@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ChevronRight, ChevronsRight } from "react-feather";
+import { ChevronRight } from "react-feather";
 import { Fade } from "react-reveal";
+
 export default function ServicesSectionCard({ data }) {
   function onClick() {
     window.localStorage.setItem(
       "servicesData",
-      JSON.stringify(
-        "https://res.cloudinary.com/mehfoozurrehman/image/upload/" + data.image
-      )
+      JSON.stringify(import.meta.env.VITE_CLOUDNAIRY_API_URL + data.image)
     );
     setTimeout(() => {
       window.scrollTo({ behavior: "smooth", top: 0 });
@@ -28,10 +27,7 @@ export default function ServicesSectionCard({ data }) {
       >
         <img
           loading="lazy"
-          src={
-            "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-            data.image
-          }
+          src={import.meta.env.VITE_CLOUDNAIRY_API_URL + data.image}
           alt={data.title}
           className="services__main__container__content__wrapper__card__svg"
         />

@@ -21,10 +21,7 @@ export default function BlogsCardContent({ data }) {
       >
         <img
           loading="lazy"
-          src={
-            "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-            data.image
-          }
+          src={import.meta.env.VITE_CLOUDNAIRY_API_URL + data.image}
           alt={data.title}
           width={200}
           className="blog__card__img"

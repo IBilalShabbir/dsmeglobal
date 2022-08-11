@@ -14,9 +14,10 @@ export function AboutOurTeam() {
             <div className="about__teams__content__entry">
               <img
                 src={
-                  "https://res.cloudinary.com/mehfoozurrehman/image/upload/v1658515904/dsme_team/" +
+                  import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                  "v1658515904/dsme_team/" +
                   item.image +
-                  ".png"
+                  ".webp"
                 }
                 alt={item.name}
                 className="about__teams__content__entry__img"

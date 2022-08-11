@@ -18,10 +18,7 @@ export function ServicesCard({ data }) {
         <div className="container__services__right__entry__icon">
           <img
             loading="lazy"
-            src={
-              "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-              data.logo
-            }
+            src={import.meta.env.VITE_CLOUDNAIRY_API_URL + data.logo}
             width={70}
             height={70}
             alt={data.title}

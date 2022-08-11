@@ -25,7 +25,8 @@ export function MeetUsStories() {
                   <img
                     loading="lazy"
                     src={
-                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/v1658515904/dsme_team/" +
+                      import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                      "v1658515904/dsme_team/" +
                       item.image +
                       ".webp"
                     }

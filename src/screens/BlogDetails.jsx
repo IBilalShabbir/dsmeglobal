@@ -1,17 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { parseDate } from "../utils/functions";
 
-export default function BlogDetails({ setLightHeader }) {
+export default function BlogDetails() {
   let blogData = JSON.parse(window.localStorage.getItem("blogsData"));
   return (
     <>
       <div className="blog__jumbotron" style={{ marginTop: "6.6em" }}>
         <img
           loading="lazy"
-          src={
-            "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-            blogData.image
-          }
+          src={import.meta.env.VITE_CLOUDNAIRY_API_URL + blogData.image}
           alt="BlogDetailsImg"
           className="service__details__jumbotron__img"
           style={{ height: "100%", width: "100%" }}

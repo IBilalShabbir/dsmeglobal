@@ -75,10 +75,7 @@ export function WorkSection({ data }) {
                   <Fade up>
                     <img
                       loading="lazy"
-                      src={
-                        "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                        item.logo
-                      }
+                      src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.logo}
                       width={200}
                       alt={item.title}
                       className="work__section__content__selection__entry__img"
