@@ -17,7 +17,7 @@ export function IndustryCard({ data }) {
       >
         <img
           loading="lazy"
-          src={industries}
+          src={data.image ? data.image : industries}
           alt={data.title}
           className="services__main__container__content__wrapper__card__svg"
         />

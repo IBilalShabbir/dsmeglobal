@@ -3214,13 +3214,19 @@ body {
 
 .container__web__dev__experties__content__header__heading {
   color: $black;
-  font-size: $font-normal;
+  font-size: $font-normal + 2px;
   font-weight: bold;
 }
 
 .container__web__dev__experties__content__info {
   color: $black;
   font-size: $font-normal;
+  display: flex;
+  flex-direction: column;
+}
+.container__web__dev__experties__content__info span {
+  font-weight: 500;
+  margin-bottom: 0.5em;
 }
 .container__web__dev__experties__content__entry:hover * {
   fill: $white;
@@ -5806,11 +5812,10 @@ body {
 .ecommerce__screen__container__services {
   display: flex;
   flex-direction: column;
-  
 }
 .ecommerce__screen__container__outside {
   width: 100%;
- 
+
   margin-bottom: 2em;
 }
 .ecommerce__screen__container__services__heading {
@@ -6961,7 +6966,7 @@ body {
   flex-wrap: wrap;
 }
 
-.blockchain__techstack__container__tags svg {
+.blockchain__techstack__container__tags img {
   width: 190px;
   height: 80px;
 }
@@ -6975,7 +6980,7 @@ body {
   background-color: $primary;
   width: 150px;
   height: 45px;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
   color: $white;
   border: 1px solid $primary;
@@ -8407,7 +8412,6 @@ body {
   }
 }
 
-
 @media (max-width: 875px) {
   .blockchain__whysection__servicecard {
     width: 45%;
@@ -8452,7 +8456,7 @@ body {
     width: 100%;
     padding: 0em 0em;
   }
-  .ecommerce__screen__container__recent__work__content___row__reverse{
+  .ecommerce__screen__container__recent__work__content___row__reverse {
     flex-direction: column !important;
   }
 
@@ -8884,7 +8888,6 @@ body {
   .Android__and__ios__box__one__and__two {
     padding: 1em !important;
   }
-  
 }
 @media (max-width: 465px) {
   .june_main_container_first_container_para {
@@ -9071,9 +9074,8 @@ body {
     flex-direction: column;
     height: 100%;
   }
-  .ecommerce__screen__container__services__content__entry{
+  .ecommerce__screen__container__services__content__entry {
     width: 100%;
-   
   }
 
   .Android__and__ios__box__container_odd_entry {
@@ -9344,9 +9346,10 @@ body {
     flex-direction: column;
   }
   .ecommerce__screen__container__services__content {
-   flex-direction: column;
+    flex-direction: column;
   }
-  .ecommerce__screen__container__services__content ,.ecommerce__screen__container__services__content__entry{
+  .ecommerce__screen__container__services__content,
+  .ecommerce__screen__container__services__content__entry {
     width: 100%;
   }
 }
@@ -9511,10 +9514,10 @@ body {
   .container__services__right__entry {
     width: 100%;
   }
-  .ecommerce__screen__container{
+  .ecommerce__screen__container {
     padding: 1em !important;
   }
-  .ecommerce__screen__container__services__content{
+  .ecommerce__screen__container__services__content {
     padding: 1em !important;
   }
   .tangible_results {
@@ -10042,7 +10045,7 @@ body {
     flex-direction: column !important;
     flex-wrap: wrap;
   }
-   
+
   .graphic__design__essence__container__skills__all {
     width: 100%;
   }
@@ -10324,7 +10327,6 @@ body {
 
   .ecommerce__screen__container__services__content__entry,
   .ecommerce__screen__container__process__content__selector__content__entry {
-    
     flex-wrap: wrap;
   }
   .june_second_container {

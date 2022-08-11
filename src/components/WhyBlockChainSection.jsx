@@ -38,6 +38,7 @@ export function WhyBlockChainSection() {
         </svg>
       ),
       title: "Save Time and Operational Costs",
+      subTitle: "Save Time and Operational Costs",
       content:
         "Blockchain tech allows for allows for verification without having to be dependent on redundant processes and third parties.",
     },
@@ -58,6 +59,7 @@ export function WhyBlockChainSection() {
             svg={data.image}
             label={data.title}
             info={data.content}
+            subTitle={data.subTitle}
           />
         ))}
       </div>
