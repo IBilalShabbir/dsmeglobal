@@ -93,45 +93,88 @@ function App() {
             />
           }
         />
-        <Route path="/services" element={<Services data={ServiceData} />} />
+        <Route
+          path="/services"
+          element={<Services data={ServiceData} />}
+          loading
+        />
         <Route
           path="/services/web-app-development"
           element={<ServicesWebDev />}
+          loading
         />
-        <Route path="/services/ui-ux-design" element={<ServiceUIUX />} />
+        <Route
+          path="/services/ui-ux-design"
+          element={<ServiceUIUX />}
+          loading
+        />
         <Route
           path="/services/mobile-app-development"
-          element={<ServiceMobDev />}
+          element={<ServiceMobDev data={SuccessStoriesData} />}
+          loading
         />
         <Route
           path="/services/blockchain-consulting"
           element={<ServiceBlockChain />}
+          loading
         />
         <Route
           path="/services/custom-software-development"
           element={<ServiceCustomSoft />}
+          loading
         />
-        <Route path="/services/ios-development" element={<ServiceIos />} />
-        <Route path="/services/web-scraping" element={<ServiceWebScraping />} />
+        <Route
+          path="/services/ios-development"
+          element={<ServiceIos />}
+          loading
+        />
+        <Route
+          path="/services/web-scraping"
+          element={<ServiceWebScraping />}
+          loading
+        />
         <Route
           path="/services/android-development"
           element={<ServiceAndroid />}
+          loading
         />
-        <Route path="/services/ecommerce" element={<ServiceEcomerece />} />
-        <Route path="/services/startup-services" element={<ServiceStartup />} />
-        <Route path="/services/staff-augmentation" element={<ServiceStaff />} />
+        <Route
+          path="/services/ecommerce"
+          element={<ServiceEcomerece />}
+          loading
+        />
+        <Route
+          path="/services/startup-services"
+          element={<ServiceStartup />}
+          loading
+        />
+        <Route
+          path="/services/staff-augmentation"
+          element={<ServiceStaff />}
+          loading
+        />
         <Route
           path="/services/agile-discovery-workshop"
           element={<DiscoveryWorkshop />}
+          loading
         />
-        <Route path="/services/graphic-designing" element={<GraphicDesign />} />
-        <Route path="/portfolio" element={<Portfolio data={PortfolioData} />} />
-        <Route path="/blog" element={<Blogs data={BlogData} />} />
+        <Route
+          path="/services/graphic-designing"
+          element={<GraphicDesign />}
+          loading
+        />
+        <Route
+          path="/portfolio"
+          element={<Portfolio data={PortfolioData} />}
+          loading
+        />
+        <Route path="/blog" element={<Blogs data={BlogData} />} loading />
         <Route
           path="/blog-details"
           element={<BlogDetails setLightHeader={setLightHeader} />}
+          loading
         />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/pricing" element={<Pricing />} loading />
         <Route
           path="/pricing-dedicated-teams"
           element={
@@ -140,11 +183,13 @@ function App() {
               TechnologiesData={TechnologiesData}
             />
           }
+          loading
         />
 
         <Route
           path="/contact-us"
           element={<ContactUs setNoShowContactUs={setNoShowContactUs} />}
+          loading
         />
         <Route
           path="/quote"
@@ -154,12 +199,14 @@ function App() {
               data={CategoryData}
             />
           }
+          loading
         />
         <Route
           path="/about-us"
           element={<AboutUs AboutSuccessStoriesData={SuccessStoriesData} />}
+          loading
         />
-        <Route path="/industry" element={<Industry />} />
+        <Route path="/industry" element={<Industry />} loading />
         <Route
           path="/careers"
           element={
@@ -167,11 +214,12 @@ function App() {
               setLightHeader={setLightHeader}
               data={CareerData}
               CategoryData={CategoryData}
+              loading
             />
           }
         />
-        <Route path="/portfolio-detail" element={<PortfolioDetail />} />
-        <Route path="/meet-us" element={<MeetUs />} />
+        <Route path="/portfolio-detail" element={<PortfolioDetail />} loading />
+        <Route path="/meet-us" element={<MeetUs />} loading />
       </Routes>
       {noShowContactUs ? <ContactUsBottom /> : null}
       <Footer TechnologiesData={TechnologiesData} ServiceData={ServiceData} />

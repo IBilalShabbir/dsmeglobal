@@ -128,7 +128,7 @@ export default function Portfolio({ data }) {
               />
             ))}
         </div>
-        {filter === "" && data.length > 6 ? (
+        {filter === "" && data?.length > 6 ? (
           <div className="blog__page__content__button">
             <button
               className="button"

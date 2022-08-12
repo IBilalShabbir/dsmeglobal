@@ -7,7 +7,7 @@ import { ExceptionalDomainExpertiseMobDev } from "../components/ExceptionalDomai
 import { OurExpertiseMobDev } from "../components/OurExpertiseMobDev";
 import { AboutSuccessStories } from "../components/AboutSuccessStories";
 
-export default function ServicesMobDev() {
+export default function ServicesMobDev({ data }) {
   const [slidesPerView, setSlidesPerView] = useState(3);
 
   function getSlidesPerView() {
@@ -44,7 +44,7 @@ export default function ServicesMobDev() {
       <EmergingTechnologiesKnowHowMobDev />
       <HowSection />
       <WhyDSMEGlobalLinksMobDev />
-      <AboutSuccessStories slidesPerView={slidesPerView} />
+      <AboutSuccessStories slidesPerView={slidesPerView} data={data} />
     </>
   );
 }

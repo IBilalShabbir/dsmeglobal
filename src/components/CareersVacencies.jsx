@@ -33,7 +33,7 @@ export function CareersVacencies({
           setSearchQuery={setSearchQuery}
           data={CategoryData}
         />
-        {careerDataFiltered.length === 0 ? (
+        {careerDataFiltered?.length === 0 ? (
           <div
             style={{
               width: "100%",

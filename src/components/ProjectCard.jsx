@@ -8,7 +8,7 @@ export function ProjectCard({ setShowImage, data, setShowImageData, filter }) {
   data.categories?.map((item) => {
     categoryList.push(item.label);
   });
-  for (var i = 0; i <= categoryList.length; i++) {
+  for (var i = 0; i <= categoryList?.length; i++) {
     doesFilter = categoryList.includes(filter);
   }
 

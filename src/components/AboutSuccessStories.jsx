@@ -34,7 +34,7 @@ export function AboutSuccessStories({ slidesPerView, data }) {
                     />
                   </div>
                   <div className="pricing__success__stories__slide__info">
-                    {getText(item.description).length < 200
+                    {getText(item.description)?.length < 200
                       ? getText(item.description)
                       : getText(item.description).substring(0, 200) + "..."}
                   </div>

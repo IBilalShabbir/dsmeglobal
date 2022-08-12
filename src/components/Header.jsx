@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { X, Menu } from "react-feather";
-import OutsideClickHandler from "react-outside-click-handler";
+import ClickAwayListener from "react-click-away-listener";
 import logo from "../assets/logoHeader.svg";
 import { NavLink as Link } from "react-router-dom";
 
@@ -39,8 +39,8 @@ export default function Header() {
           </div>
         </Link>
         {isOpen ? (
-          <OutsideClickHandler
-            onOutsideClick={() => {
+          <ClickAwayListener
+            onClickAway={() => {
               if (window.innerWidth < 1000) {
                 setIsOpen(false);
               }
@@ -125,7 +125,7 @@ export default function Header() {
                 Blog
               </Link>
             </div>
-          </OutsideClickHandler>
+          </ClickAwayListener>
         ) : null}
         <div className="header__content__cta">
           <button

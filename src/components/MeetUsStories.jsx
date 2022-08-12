@@ -4,40 +4,30 @@ import { teamData } from "../constants/data";
 
 export function MeetUsStories() {
   return (
-    <div className="meetus__container__stories">
-      <div className="meetus__container__stories__content">
-        <Fade up>
-          <div className="meetus__container__stories__heading">
-            See our <span>stories</span>
-          </div>
-        </Fade>
-        <Fade up>
-          <div className="meetus__container__stories__para">
-            Your passion is part of our identity. See how #dsmeglobalpeople
-            rock.
-          </div>
-        </Fade>
-        <div className="meetus__container__stories__card__container">
+    <>
+      <div className="about__teams" style={{ marginTop: "2em" }}>
+        <div className="about__teams__heading">
+          <span>Teamwork</span>, Makes the dream work
+        </div>
+        <div className="about__teams__content">
           {teamData?.map((item) => (
             <Fade up key={JSON.stringify(item)}>
-              <div className="meetus__container__stories__card">
-                <div className="meetus__container__stories__card__image">
-                  <img
-                    loading="lazy"
-                    src={
-                      import.meta.env.VITE_CLOUDNAIRY_API_URL +
-                      "v1658515904/dsme_team/" +
-                      item.image +
-                      ".webp"
-                    }
-                    alt="Stories card"
-                  />
-                </div>
-                <div className="meetus__container__stories__card__text">
-                  <div className="meetus__container__stories__card__heading">
+              <div className="about__teams__content__entry">
+                <img
+                  src={
+                    import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                    "v1658515904/dsme_team/" +
+                    item.image +
+                    ".webp"
+                  }
+                  alt={item.name}
+                  className="about__teams__content__entry__img"
+                />
+                <div className="about__teams__content__entry__overlay">
+                  <div className="about__teams__content__entry__overlay__heading">
                     {item.name}
                   </div>
-                  <div className="meetus__container__stories__card__para">
+                  <div className="about__teams__content__entry__overlay__info">
                     {item.designation}
                   </div>
                 </div>
@@ -46,6 +36,6 @@ export function MeetUsStories() {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -30,7 +30,7 @@ export default function BlogsCardContent({ data }) {
         <div className="blog__card__content">
           <div className="blog__card__content__heading">{data.title}</div>
           <div className="blog__card__content__info">
-            {getText(data.content).length < 200
+            {getText(data.content)?.length < 200
               ? getText(data.content)
               : getText(data.content).substring(0, 200) + "..."}
           </div>

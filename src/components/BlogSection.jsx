@@ -46,7 +46,7 @@ export function BlogSection({ data }) {
                       {blog.title}
                     </div>
                     <div className="blog__card__content__info">
-                      {getText(blog.content).length < 260
+                      {getText(blog.content)?.length < 260
                         ? getText(blog.content)
                         : getText(blog.content).substring(0, 260) + "..."}
                     </div>

@@ -8,7 +8,7 @@ $primaryDark: #0d6e4b;
 $black: #242424;
 
 $font-large: 35px;
-$font-heading: 25px;
+$font-heading: 28px;
 $font-sub-heading: 20px;
 $font-normal: 16px;
 
@@ -2619,7 +2619,7 @@ body {
 }
 
 .container__stats__entry__value {
-  font-size: $font-heading;
+  font-size: $font-large;
   color: $primary;
   font-weight: bold;
   margin-bottom: 0.2em;
@@ -3143,7 +3143,7 @@ body {
   padding-bottom: 0em;
   max-width: 1440px;
   margin: 0 auto;
-  margin-top:em;
+  margin-top: em;
 }
 
 .container__web__dev__experties__header {
@@ -4346,7 +4346,8 @@ body {
 }
 
 .meetus__container__sub__left__image img {
-  width: 520px;
+  width: 100%;
+  max-width: 420px;
 }
 
 .meetus__container__sub__right {
@@ -4621,12 +4622,14 @@ body {
   align-items: center;
   margin-bottom: 0.5em;
 }
-.june_third_container_first_box__colomns__contents svg{
+.june_third_container_first_box__colomns__contents svg {
   color: $primary;
   stroke: $primary;
 }
-.june_third_container_first_box__colomns:hover .june_third_container_first_box__colomns__contents svg{
-  stroke:$white;
+.june_third_container_first_box__colomns:hover
+  .june_third_container_first_box__colomns__contents
+  svg {
+  stroke: $white;
 }
 .june_third_container_first_box__colomns__contents__svg svg {
   width: 18px;
@@ -7170,13 +7173,13 @@ body {
   margin-bottom: 1em;
   text-align: center;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.9em;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: $white;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: $primary;
   border: 1px solid transparent;
   border-radius: 9px;
@@ -7903,7 +7906,6 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 .services__startup__card {
   width: 23%;
@@ -8535,6 +8537,10 @@ body {
   .customsoft_five_container_all_main {
     flex-wrap: wrap;
   }
+  .header__content {
+    margin: 1em 1.5em;
+    width: calc(100% - 3em);
+  }
 }
 @media (max-width: 500px) {
   .blockchain__worksection__img {
@@ -8937,6 +8943,10 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .header__content {
+    margin: 1em auto;
+    width: 100%;
+  }
   .pricing__process__container {
     padding: 4em 0;
   }
@@ -9426,17 +9436,13 @@ body {
   .meetus__container__sub__content {
     flex-direction: column-reverse;
     justify-content: center;
-    margin: 2rem 0;
+    padding: 0em 2em;
   }
   .meetus__container__sub__left {
     width: 100%;
   }
   .meetus__container__sub__right {
     width: 100%;
-  }
-  #meetus__container__sub__content2 {
-    flex-direction: column;
-    justify-content: center;
   }
   .meetus__container__smallThings__left {
     width: 100%;
@@ -9445,9 +9451,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 2em;
-  }
-  .meetus__container__main {
-    padding: 0 3em;
   }
   .meetus__container__sub__right {
     padding: 1rem 0;
@@ -10057,7 +10060,8 @@ body {
 }
 @media (max-width: 600px) {
   .meetus__container__sub__left__image img {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
   }
   .container__web__dev__experties__content__entry {
     width: 100%;

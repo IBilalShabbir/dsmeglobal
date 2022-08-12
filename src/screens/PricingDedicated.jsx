@@ -11,7 +11,7 @@ import { ProcessFromIdeaCreationtoProductDelivery } from "../components/ProcessF
 import { PricingDedicatedSuccessStories } from "../components/PricingDedicatedSuccessStories";
 import { AdvantagesOfDSMETalent } from "../components/AdvantagesOfDSMETalent";
 
-export default function PricingDedicated({ TechnologiesData }) {
+export default function PricingDedicated({ TechnologiesData, data }) {
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [slidesPerViewLogo, setSlidesPerViewLogo] = useState(4);
   const [showNavigation, setShowNavigation] = useState(true);
@@ -64,7 +64,7 @@ export default function PricingDedicated({ TechnologiesData }) {
       <ProcessFromIdeaCreationtoProductDelivery />
       <PricingDedicatedSuccessStories
         slidesPerView={slidesPerView}
-        data={TechnologiesData}
+        data={data}
       />
       <AwardsAchievements
         slidesPerViewLogo={slidesPerViewLogo}
