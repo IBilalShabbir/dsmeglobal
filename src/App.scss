@@ -38,7 +38,7 @@ body {
 .header__content {
   width: 100%;
   max-width: 1440px;
-  background-color: white;
+  background-color: $white;
   border-radius: 50px;
   padding: 0.7em 1.5em;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -58,11 +58,11 @@ body {
 }
 .header__content__logo__brand {
   font-size: 16px;
-  color: black;
+  color: $black;
   font-weight: bold;
 }
 .header__content__logo__brand span {
-  color: #397462;
+  color: $primary;
 }
 .header__content__menu {
   display: none;
@@ -70,17 +70,17 @@ body {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 5px;
   border: none;
-  background-color: #397462;
-  color: white;
+  background-color: $primary;
+  color: $white;
   cursor: pointer;
   padding: 0;
   margin-right: 0.5em;
 }
 .header__content__menu:hover {
   transition: 300ms ease-in-out;
-  background-color: #285c4c;
+  background-color: $primaryDark;
 }
 .header__content__nav {
   display: flex;
@@ -88,7 +88,7 @@ body {
 }
 .header__content__nav__link {
   font-size: 16px;
-  color: black;
+  color: $black;
   height: 40px;
   display: flex;
   align-items: center;
@@ -98,10 +98,10 @@ body {
   text-decoration: none;
 }
 .header__content__nav__link:hover {
-  color: #397462;
+  color: $primary;
 }
 .header__content__nav .active {
-  color: #397462;
+  color: $primary;
   font-weight: bold;
 }
 .header__content__nav .active::after {
@@ -111,7 +111,7 @@ body {
   left: calc(50% - 5px);
   width: 8px;
   height: 8px;
-  background-color: #397462;
+  background-color: $primary;
   border-radius: 50px;
 }
 .header__content__cta {
@@ -123,10 +123,10 @@ body {
   align-items: center;
   justify-content: center;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 5px;
   border: none;
-  background-color: #397462;
-  color: white;
+  background-color: $primary;
+  color: $white;
   cursor: pointer;
   padding: 0 1.5em;
   text-decoration: none;
@@ -134,7 +134,7 @@ body {
 }
 .header__content__cta__button:hover {
   transition: 300ms ease-in-out;
-  background-color: #285c4c;
+  background-color: $primaryDark;
 }
 
 .container {
@@ -2079,19 +2079,19 @@ body {
 }
 
 .pricing__delivery__section__content__card:nth-child(2) * ::before {
-  background-color: #2d9cdb;
+  background-color: $primary;
 }
 
 .pricing__delivery__section__content__card:nth-child(2)
   .pricing__delivery__section__content__card__heading {
-  color: #2d9cdb;
+  color: $primary;
 }
 .pricing__delivery__section__content__card:nth-child(3) * ::before {
-  background-color: #bb6bd9;
+  background-color: $primary;
 }
 .pricing__delivery__section__content__card:nth-child(3)
   .pricing__delivery__section__content__card__heading {
-  color: #bb6bd9;
+  color: $primary;
 }
 .pricing__delivery__section__heading {
   font-size: $font-heading;
@@ -3441,7 +3441,7 @@ body {
   z-index: 999;
   padding: 4em;
   background-color: $black;
-  color: white;
+  color: $white;
 }
 
 .container__emerging__technologies__heading__main {
@@ -4113,7 +4113,7 @@ body {
 }
 .footer__container__content__col__text__heading {
   font-weight: bold;
-  color: #189366;
+  color: $primary;
   // font-size: 16px;
 }
 .footer__container__content__col__text {
@@ -4330,13 +4330,13 @@ body {
   font-size: $font-normal;
   width: 100%;
   max-width: 500px;
-  color: white;
+  color: $white;
 }
 .meetus__container__sub__right__heading {
   font-size: $font-heading;
   font-weight: bold;
   margin-bottom: 0.5em;
-  color: white;
+  color: $white;
 }
 .meetus__container__sub__right__heading span {
   color: $primary;
@@ -4733,7 +4733,7 @@ body {
 .june_third_container_first_box__colomns:hover
   .june_third_container_first_box__colomns__heading__svg
   svg {
-  stroke: white;
+  stroke: $white;
 }
 .june_third_container_first_box__colomns:hover * {
   color: $white;
@@ -5294,8 +5294,8 @@ body {
   height: 170px;
   cursor: pointer;
   mix-blend-mode: luminosity;
-  border-bottom: 1px solid #2424242e;
-  border-right: 1px solid #2424242e;
+  border-bottom: 1px solid $black;
+  border-right: 1px solid $black;
   border-right: overflow;
   display: flex;
   align-items: center;
@@ -5333,7 +5333,7 @@ body {
   width: 200px;
   height: 170px;
   cursor: pointer;
-  border-right: 1px solid #2424242e;
+  border-right: 1px solid $black;
 }
 .graphic__design__logos:nth-child(even) {
   border-right: none;
@@ -5470,12 +5470,14 @@ body {
 }
 .ios__development__tangible__col__two__header__middle__button {
   width: 150px;
-  height: 50px;
+  height: 40px;
   outline: none;
+  border-radius: 5px;
   border: 1px solid transparent;
   margin-top: 1.5em;
   background-color: $primaryDark;
   cursor: pointer;
+  font-size: $font-normal;
   transition: all ease-in-out 0.3s;
   color: $white;
 }
@@ -6068,7 +6070,7 @@ body {
 .android__development__our__stack__container__col__one__heading {
   font-size: $font-sub-heading;
   font-weight: bold;
-  color: #189366;
+  color: $primary;
   margin-top: 1.5em;
   align-items: center;
 }
@@ -6404,7 +6406,7 @@ body {
 .pricing__fitted__team__content__entry__box__one {
   flex: 1;
   border-radius: 10px;
-  background-color: #000000da;
+  background-color: $black;
   color: $white;
   padding: 3em;
   padding-bottom: 1.5em;
@@ -6583,7 +6585,7 @@ body {
 .how__we__do__section__card:hover .how__we__do__section__card__detail svg {
   color: $white;
 }
-.how__we__do__section__card:hover .how__we__do__section__card__heading svg{
+.how__we__do__section__card:hover .how__we__do__section__card__heading svg {
   color: $white;
   fill: $white;
 }
@@ -6594,8 +6596,8 @@ body {
   display: flex;
   align-items: center;
 }
-.how__we__do__section__card__heading svg{
-margin-right:10px ;
+.how__we__do__section__card__heading svg {
+  margin-right: 10px;
 }
 .how__we__do__section__card__detail__line {
   display: flex;
@@ -6856,7 +6858,7 @@ margin-right:10px ;
 .blockchain__ready__button {
   padding: 12px 25px;
   margin-left: 2rem;
-  border: 1px solid white;
+  border: 1px solid $white;
   color: $white;
   background-color: $primary;
   cursor: pointer;
@@ -7082,7 +7084,7 @@ margin-right:10px ;
 .WHYS__main__container__right__content {
   display: flex;
   width: 45%;
-  // border: 1px solid black;
+  // border: 1px solid $black;
   margin-bottom: 1em;
   align-items: center;
 }
@@ -7587,7 +7589,7 @@ margin-right:10px ;
   padding-bottom: 1.5em;
 }
 .customsoft_fourth_container_second_title {
-  color: #2d9cdb;
+  color: $primary;
 }
 .customsoft_fourth_container_second_content {
   padding-top: 1.5em;
@@ -7618,7 +7620,7 @@ margin-right:10px ;
   padding-bottom: 1.5em;
 }
 .customsoft_fourth_container_third_title {
-  color: #bb6bd9;
+  color: $primary;
 }
 .customsoft_fourth_container_third_box_content_first {
   padding-top: 1.5em;
@@ -7925,7 +7927,7 @@ margin-right:10px ;
   // height: fit-content;
   width: 23%;
   display: flex;
-  color: black;
+  color: $black;
   background-color: rgba(13, 110, 74, 0.1);
   flex-direction: column;
   align-items: center;
@@ -7944,7 +7946,7 @@ margin-right:10px ;
   color: $white;
 }
 .scaleup__startup__card:hover .scaleup__startup__card__icon svg {
-  color: white;
+  color: $white;
 }
 .scaleup__startup__card__icon svg {
   height: 50px;
@@ -7957,13 +7959,13 @@ margin-right:10px ;
   margin: 0.5em 0;
   text-align: center;
   // color: $white;
-  color: black;
+  color: $black;
 }
 .scaleup__startup__card__info {
   text-align: center;
   width: 100%;
   // color: $white;
-  color: black;
+  color: $black;
 
   min-height: 100%;
 }
@@ -8095,7 +8097,7 @@ margin-right:10px ;
 .highly__customer__main__first__container__jira__container__heading {
   width: 100%;
   font-size: $font-normal;
-  color: black;
+  color: $black;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -8161,7 +8163,7 @@ margin-right:10px ;
   margin-top: 1em;
   font-size: $font-normal;
   width: 100%;
-  color: black;
+  color: $black;
 }
 .highly__customer__main__container {
   padding: 0 1em 0 0;
@@ -8288,17 +8290,17 @@ margin-right:10px ;
   color: $primary;
 }
 .container__web__dev__experience__header__heading span {
-  color: #189366;
+  color: $primary;
 }
 .pricing__process__container__content__top__heading span {
-  color: #189366;
+  color: $primary;
 }
 .container__web__dev__experties__header__heading span {
-  color: #189366;
+  color: $primary;
 }
 .highly__customer__main__first__container__jira__container__heading svg {
-  stroke: #189366;
-  color: #189366;
+  stroke: $primary;
+  color: $primary;
 }
 .graphic__design__essence__container {
   font-size: $font-heading;
@@ -9457,7 +9459,7 @@ margin-right:10px ;
     position: absolute;
     flex-direction: column;
     top: 6.1em;
-    background-color: white;
+    background-color: $white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
     left: 0;
@@ -9469,7 +9471,7 @@ margin-right:10px ;
   }
   .header__content__nav::before {
     content: "";
-    background-color: white;
+    background-color: $white;
     height: 1em;
     position: absolute;
     width: 100%;
