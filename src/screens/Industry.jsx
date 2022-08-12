@@ -1,10 +1,10 @@
 import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
-import industries from "../assets/industry.svg";
 import { Fade } from "react-reveal";
 import Scrollspy from "react-scrollspy";
 import { IndustryCard } from "../components/IndustryCard";
 import { industriesFeatures } from "../constants/data";
+import industries from "../assets/industry.svg";
 
 export default function Industry() {
   return (

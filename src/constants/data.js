@@ -1,3 +1,17 @@
+import entertainment from "../assets/entertainment.svg";
+import healthcare from "../assets/healthcare.svg";
+import realestate from "../assets/realestate.svg";
+import insurance from "../assets/insurance.svg";
+import transport from "../assets/transport.svg";
+import ecommerce from "../assets/ecommerce.svg";
+import extraction from "../assets/extraction.svg";
+import retails from "../assets/retails.svg";
+import others from "../assets/others.svg";
+import cleaning from "../assets/cleaning.svg";
+import tech from "../assets/tech.svg";
+import qualityassurance from "../assets/qualityassurance.svg";
+import verification from "../assets/verification.svg";
+
 export const teamData = [
   {
     image: "Shahid_Aziz_Advisor_kkhqzt",
@@ -335,46 +349,55 @@ export const servicesData = [
 ];
 export const industriesFeatures = [
   {
+    image: healthcare,
     title: "Healthcare",
     content:
       "We bring easy healthcare to the masses, by building tech solutions that enable practices, improve patient experiences, and streamline workflows",
   },
   {
+    image: realestate,
     title: "Real Estate",
     content:
       "Make real estate transactions more profitable with our fully automated sales process and property management solutions.",
   },
   {
+    image: retails,
     title: "Retail",
     content:
       "We build bespoke retail apps to better manage warehouse operations, ease stock ordering process and enhance consumer purchase experience.",
   },
   {
+    image: tech,
     title: "FinTech",
     content:
       "With the aim of making financial services more accessible, we provide Fintech services like mobile banking, investment banking, and BLE technology.",
   },
   {
+    image: transport,
     title: "Logistics & Transport",
     content:
       "Simplify complex and highly challenging logistics and transportation processes with our custom designed apps and software integrations.",
   },
   {
+    image: insurance,
     title: "Insurance",
     content:
       "We create personalized products for insurance companies to assist them with risk inspections,document/claim management and retention.",
   },
   {
+    image: entertainment,
     title: "Food & Entertainment",
     content:
       "Stay ahead of market trends with our data-driven and analytics-powered food & entertainment applications and development services.",
   },
   {
+    image: ecommerce,
     title: "Ecommerce",
     content:
       "Delivering custom e-commerce solutions for businesses of all shapes and sizes Regardless of your industry or whether you want to target B2B or B2C customers, the software we create for you promises to benefit your business in every step of its operations and delivery.",
   },
   {
+    image: others,
     title: "Other",
     content:
       "None of the above applies to you? We believe that the rules are simple when it comes to technology and business. No matter the industry, we focus on personalized, user-oriented solutions, crafted to help you reach your long-term goals. Discover the solutions we deliver for education, food, customer service, telco, and other industries.",
@@ -382,21 +405,25 @@ export const industriesFeatures = [
 ];
 export const scrapingData = [
   {
+    image: extraction,
     title: "Extraction",
     content:
       "Our web scraping tools scan the web and extract the information you need. We specialize in creating custom crawl clusters that crawl through large quantities of data from multiple sources in parallel, retrieving usable data faster while breaking free of scaling constraints.",
   },
   {
+    image: cleaning,
     title: "Cleaning",
     content:
       "Our data cleansing takes the raw data extracted by the web scraping tools and runs it through a processing platform to shake off old material, duplicates, incorrect details, and more. While data is valuable, ‘clean’ data is gold, enabling you to make the best possible decisions.",
   },
   {
+    image: qualityassurance,
     title: "Quality Assurance",
     content:
       "We have quality assurance checks built into every step of the process, ensuring your web scraping tools function well and work quickly.",
   },
   {
+    image: verification,
     title: "Verification & Validation",
     content:
       "We verify your data at every step of the process and check the integrity of the results created.",
