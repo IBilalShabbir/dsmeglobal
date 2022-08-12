@@ -3522,6 +3522,11 @@ body {
   cursor: pointer;
 }
 
+.container__emerging__technologies__section__wrapper__input:hover
+  ~ .container__emerging__technologies__section__entry {
+  color: $primary;
+  fill: $primary;
+}
 .container__emerging__technologies__section__wrapper__input:checked
   ~ .container__emerging__technologies__section__entry {
   color: $primary;
@@ -3557,11 +3562,16 @@ body {
   width: 50%;
 }
 .container__emerging__technologies__section__entry__data___heading {
-  font-weight: 500;
+  font-weight: bold;
   margin-right: 1em;
   font-size: $font-sub-heading;
+  display: flex;
+  align-items: center;
 }
-
+.container__emerging__technologies__section__entry__data___heading__ico {
+  margin-right: 1em;
+  margin-top: 0.5em;
+}
 .container__emerging__technologies__section__entry__data__text {
   max-width: 55%;
   display: flex;
