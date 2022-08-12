@@ -208,7 +208,6 @@ body {
   display: flex;
   font-size: $font-large;
   flex-wrap: wrap;
-  word-break: break-all;
 }
 .container__jumbotron__left__heading span {
   color: $primary;
@@ -7028,6 +7027,7 @@ margin-right:10px ;
   height: fit-content;
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 .WHYS__main__container__left {
   width: 50%;
@@ -7036,22 +7036,16 @@ margin-right:10px ;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding: 2em;
+  margin-right: 2em;
 }
 .WHYS__main__container__left__heading {
   font-size: $font-heading;
   font-weight: bold;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   position: relative;
 }
-.WHYS__main__container__left__heading::after {
-  position: absolute;
-  content: "";
-  bottom: -30%;
-  left: 0;
-  height: 15%;
-  width: 50%;
-  background-color: $primary;
+.WHYS__main__container__left__heading span {
+  color: $primary;
 }
 .WHYS__main__container__left__heading__after {
   width: 100%;
@@ -7061,52 +7055,53 @@ margin-right:10px ;
   position: absolute;
 }
 .WHYS__main__container__left__subHeading {
-  font-size: $font-sub-heading;
-  color: $primary;
-  margin-bottom: 1em;
+  font-size: $font-heading;
+  color: $black;
+  width: 100%;
+  max-width: 400px;
+  margin: 0em auto;
+  margin-top: 2em;
+  text-align: center;
 }
 .WHYS__main__container__left__text {
   font-size: $font-normal;
+  width: 100%;
+  max-width: 400px;
 }
 .WHYS__main__container__right {
   width: 50%;
   min-height: 100%;
-  background-color: $primary;
+  border: 1px solid $primary;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 2em;
   align-items: center;
   border-radius: 5px;
 }
-
-.WHYS__main__container__right:hover {
-  background-color: black;
-  transition: background-color 0.5s ease-in-out;
-}
 .WHYS__main__container__right__content {
   display: flex;
-  width: 80%;
+  width: 45%;
   // border: 1px solid black;
   margin-bottom: 1em;
   align-items: center;
 }
 .WHYS__main__container__right__content__icon {
-  margin-right: 1em;
+  margin-right: 0.7em;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
-  padding: 0.7em;
+  background-color: $primary;
+  padding: 1em;
   border-radius: 50%;
 }
 .WHYS__main__container__right__content__icon svg {
   height: 40px;
   width: 40px;
-  fill: white;
+  fill: $white;
 }
 .WHYS__main__container__right__content__text {
-  color: white;
+  color: inherit;
 }
 
 .Staff__automation__a__modern__solution__to__scaling {
@@ -7801,6 +7796,7 @@ margin-right:10px ;
 }
 .max__width__container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 4em;
 }
@@ -8520,9 +8516,6 @@ margin-right:10px ;
     padding: 3em 2em;
   }
   .WHYS__main__container__left {
-    padding: 2em 0;
-  }
-  .WHYS__main__container__right {
     padding: 2em 0;
   }
 }
@@ -9548,12 +9541,12 @@ margin-right:10px ;
   }
   .WHYS__main__container__left {
     width: 100%;
-    height: 350px;
-    justify-content: end;
+    justify-content: flex-start;
   }
   .WHYS__main__container__right {
     width: 100%;
-    min-height: 50%;
+    margin-top: 2em;
+    min-height: 350px;
   }
   .graphic__design__essence__container__image {
     width: 100%;
@@ -10074,6 +10067,13 @@ margin-right:10px ;
   }
   .portfolio__section__container__calendar__sec__container {
     padding: 6em 2em;
+  }
+  .WHYS__main__container__right {
+    padding: 3em;
+    padding-bottom: 2em;
+  }
+  .WHYS__main__container__right__content {
+    width: 100%;
   }
 }
 @media (max-width: 685px) {

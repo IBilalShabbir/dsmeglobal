@@ -6,17 +6,16 @@ export function WeHelpYouSucceed() {
       <div className="WHYS__main__container">
         <div className="WHYS__main__container__left">
           <div className="WHYS__main__container__left__heading">
-            We help you succeed
+            We help you <span>succeed</span>
+          </div>
+          <div className="WHYS__main__container__left__text">
+            Work with top-notch developers and designers to build, enhance and
+            support your product on time and in budget.
           </div>
           <div className="WHYS__main__container__left__subHeading">
             <span>"</span>
             We build amazing software solutions on-time and within budget.
             <span>"</span>
-          </div>
-
-          <div className="WHYS__main__container__left__text">
-            Work with top-notch developers and designers to build, enhance and
-            support your product on time and in budget.
           </div>
         </div>
         <div className="WHYS__main__container__right">

@@ -121,7 +121,10 @@ export function AboutAwardAchievements({
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="highly__customer__main__container__heading">
+      <div
+        className="highly__customer__main__container__heading"
+        style={{ marginTop: "5em" }}
+      >
         Highly Customer Centric <span>Development Process</span>
       </div>
       <div className="highly__customer__main__container__heading__content">
@@ -129,7 +132,10 @@ export function AboutAwardAchievements({
         communication channels and Project Management tools to ensure clients
         stay updated about the progress of their projects at all times.
       </div>
-      <div className="highly__customer__main__container">
+      <div
+        className="highly__customer__main__container"
+        style={{ marginBottom: "-8em" }}
+      >
         <div className="highly__customer__main__first__container">
           <div className="highly__customer__main__first__container__jira__container">
             <div className="highly__customer__main__first__container__jira__container__heading">
