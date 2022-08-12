@@ -8,21 +8,9 @@ import img3 from "../assets/3.webp";
 import img4 from "../assets/4.webp";
 import img5 from "../assets/5.webp";
 import img6 from "../assets/6.webp";
+import { GraphicdesignTalentFeatures } from "../constants/data";
 
 function Graphicdesign() {
-  const talentFeatures = [
-    "Corporate Identity Development",
-    "Web Design & Development",
-    "User Experience Design (UX)",
-    "Interactive Design",
-    "Interactive Design",
-    "Rich Media Production",
-    "Online Branding",
-    "Campaign Microsites",
-    "2D / 3D Illustration and Visualization",
-    "Video Content Creation",
-    " Print, Packaging and POS",
-  ];
   const logos = [
     img1,
     img2,
@@ -83,7 +71,7 @@ function Graphicdesign() {
           Get in touch with our graphic design services consultants.
         </div>
         <div className="staff__talent__features">
-          {talentFeatures?.map((feature) => (
+          {GraphicdesignTalentFeatures?.map((feature) => (
             <div
               className="staff__talent__features__entry"
               key={JSON.stringify(feature)}

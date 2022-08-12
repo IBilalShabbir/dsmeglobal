@@ -9,31 +9,13 @@ import { ExperitseCard } from "../components/ExperitseCard";
 import { WorkWithUsCard } from "../components/WorkWithUsCard";
 import FaqSection from "../components/FaqSection";
 import { HowFixedPriceProcessWorks } from "./HowFixedPriceProcessWorks";
+import {
+  DeliveryCardEntry1,
+  DeliveryCardEntry2,
+  DeliveryCardEntry3,
+} from "../constants/data";
 
 export default function Pricing() {
-  const DeliveryCardEntry1 = [
-    { para: "Onsite / Offsite Discovery Workshop" },
-    { para: "Vision and Goal Mapping" },
-    { para: "Stakeholders Interviews" },
-    { para: "Requirements Definition" },
-    { para: "UI/UX and Visual Prototyping" },
-    { para: "High Risk Tech POCs" },
-    { para: "Product Roadmap" },
-  ];
-  const DeliveryCardEntry2 = [
-    { para: " Software Architecture and Design" },
-    { para: "Development of Web / Mobile / Backend Components" },
-    { para: "APIs Development and Integrations" },
-    { para: "Continuous Integration/Delivery" },
-    { para: "UAQ" },
-    { para: "QA Testing" },
-  ];
-  const DeliveryCardEntry3 = [
-    { para: "SLA Based Support" },
-    { para: "L3 and Production Support Services" },
-    { para: "Operational support" },
-    { para: "On-going Support" },
-  ];
   return (
     <>
       <div className="container">
@@ -1215,7 +1197,7 @@ export default function Pricing() {
                 className="pricing__delivery__section__content__card__para"
                 key={JSON.stringify(item)}
               >
-                {item.para}
+                {item}
               </div>
             ))}
           </div>
@@ -1228,7 +1210,7 @@ export default function Pricing() {
                 className="pricing__delivery__section__content__card__para"
                 key={JSON.stringify(item)}
               >
-                {item.para}
+                {item}
               </div>
             ))}
           </div>
@@ -1241,7 +1223,7 @@ export default function Pricing() {
                 className="pricing__delivery__section__content__card__para"
                 key={JSON.stringify(item)}
               >
-                {item.para}
+                {item}
               </div>
             ))}
           </div>

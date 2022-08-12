@@ -1,19 +1,8 @@
 import React from "react";
 import { Check } from "react-feather";
+import { talentFeatures } from "../constants/data";
 
 export function TopTalentForStaff() {
-  const talentFeatures = [
-    "Frontend Developers",
-    "Backend Developers",
-    "UI/UX Designers",
-    "Project Manager",
-    "Business Analysts",
-    "DevOps Engineers",
-    "Cloud Developers",
-    "QA & Test automation engineers",
-    "Al/ML Engineers",
-    "Deep Learning Engineers",
-  ];
   return (
     <div className="staff__talent">
       <div className="staff__talent__heading">

@@ -1,45 +1,9 @@
 import React, { useState } from "react";
 import { Fade } from "react-reveal";
 import testimonialBg from "../assets/testimonialBg.webp";
+import { TestimonialsSectionArray } from "../constants/data";
 
 export function TestimonialsSection() {
-  const array = [
-    {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
-      name: "Fahad Ayyaz",
-      designation: "Designer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-    },
-    {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
-      name: "Bilal Shabbir",
-      designation: "Developer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-    },
-    {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
-      name: "Mehfooz",
-      designation: "Developer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-    },
-    {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
-      name: "Asim Rasheed",
-      designation: "Designer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-    },
-    {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
-      name: "Arslan",
-      designation: "Designer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-    },
-  ];
   const [selected, setSelected] = useState(0);
   return (
     <div className="container__testimonials">
@@ -66,7 +30,7 @@ export function TestimonialsSection() {
           className="container__testimonials__overlay__content"
           id="container__testimonials__overlay__content"
         >
-          {array?.map((item, i) => (
+          {TestimonialsSectionArray?.map((item, i) => (
             <Fade up key={JSON.stringify(item)}>
               <button
                 className={
@@ -89,9 +53,8 @@ export function TestimonialsSection() {
           ))}
         </div>
       </div>
-      {array
-        ?.filter((item, i) => i === selected)
-        ?.map((item, i) => (
+      {TestimonialsSectionArray?.filter((item, i) => i === selected)?.map(
+        (item, i) => (
           <div className="container__testimonials__overlay__info" key={i}>
             <Fade up>
               <div className="container__testimonials__overlay__info__message">
@@ -105,7 +68,8 @@ export function TestimonialsSection() {
               </div>
             </Fade>
           </div>
-        ))}
+        )
+      )}
     </div>
   );
 }
