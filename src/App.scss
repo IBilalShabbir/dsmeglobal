@@ -7394,7 +7394,7 @@ body {
 .customsoft_first_container {
   min-height: fit-content;
   width: 550px;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2em;
 }
 
@@ -7402,7 +7402,7 @@ body {
   min-height: fit-content;
   width: 550px;
 
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2em;
 }
 .customsoft_third_container_headind {
@@ -7880,8 +7880,8 @@ body {
   padding-top: 2em;
   padding-bottom: 0.5em;
   margin: 0 auto;
-  
- 
+  display: flex;
+  flex-direction: column;
 }
 .service__startup__main__container__first__heading span {
   color: $primary;
