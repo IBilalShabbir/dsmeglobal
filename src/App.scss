@@ -6637,13 +6637,13 @@ body {
 }
 .Custome__methodologies__section__detail {
   display: flex;
-  flex-wrap: wrap;
+ 
   justify-content: space-between;
 }
 .Custome__methodologies__section__detail__card {
   margin-bottom: 2em;
   background-color: rgba(13, 110, 74, 0.1);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 2em;
   width: 32%;
 }
@@ -7250,17 +7250,16 @@ stroke: $primary;
 .customsoft_first_container_svg svg :hover {
   color: $white;
 }
-.customsoft_second_container_all_main:hover {
+.customsoft_second_container:hover{
   color: $white;
   background-color: $primary;
-  border-radius: 5px;
 }
-.customsoft_second_container_all_main:hover
-  .customsoft_second_container_button
-  * {
+.customsoft_second_container:hover .customsoft_second_container_button svg{
   color: $white;
 }
-
+.customsoft_second_container:hover .customsoft_second_container_button a {
+  color: $white;
+}
 .customsoft_content {
   display: flex;
   justify-content: center;
@@ -7268,6 +7267,7 @@ stroke: $primary;
 }
 .customsoft_content_one {
   width: 600px;
+  padding-top: 4em;
 }
 .customsoft_main {
   display: flex;
@@ -7279,8 +7279,7 @@ stroke: $primary;
 .customsoft_first_container_svg {
   display: flex;
   align-items: center;
-  padding-top: 2em;
-  padding: 1em;
+
   text-align: center;
 }
 .customsoft_first_container_svg span {
@@ -7300,17 +7299,21 @@ stroke: $primary;
   width: 90%;
   display: flex;
   justify-content: center;
-  padding-left: 5em;
+ padding-top: 1.5em;
 
   font-size: $font-normal;
 }
 .customsoft_first_container_button {
-  padding-left: 6em;
+
+  align-items: center;
   padding-top: 3em;
   display: flex;
 }
+
+
+
 .customsoft_second_container_button {
-  padding-left: 6em;
+align-items: center;
   padding-top: 3em;
   display: flex;
 }
@@ -7325,24 +7328,24 @@ stroke: $primary;
 .customsoft_second_container_svg {
   display: flex;
   align-items: center;
-  padding-top: 2em;
+ 
   text-align: center;
-  padding: 1em;
-  padding-bottom: 0;
+ 
 }
 .customsoft_second_container_svg svg {
   color: $primary;
 }
 .customsoft_first_container_button svg {
   color: $primary;
+  margin-top: 8px;
 }
 .customsoft_second_container_button svg {
   color: $primary;
 }
 .customsoft_second_container_content {
   width: 100%;
-  padding-left: 5em;
-  padding-top: 1em;
+ 
+  padding-top: 1.5em;
   font-size: $font-normal;
 }
 .Andriod__and__ios__boxes {
@@ -7350,18 +7353,18 @@ stroke: $primary;
   color: $white;
 }
 .customsoft_first_container {
-  border-radius: 5px;
-  min-height: 330px;
+  min-height: fit-content;
   width: 550px;
-  padding: 1em;
+  border-radius: 5px;
+  padding: 2em;
 }
 
 .customsoft_second_container {
-  min-height: 330px;
+  min-height: fit-content;
   width: 550px;
-  padding: 1em;
+ 
   border-radius: 5px;
-  padding-right: 4em;
+  padding: 2em;
 }
 .customsoft_third_container_headind {
   display: flex;
@@ -9011,6 +9014,10 @@ stroke: $primary;
     width: fit-content;
     padding: 0 2rem;
   }
+  .Custome__methodologies__section__detail{
+    flex-direction: column;
+    width: 100%;
+  }
 }
 @media (max-width: 650px) {
   .june_main_container_first_container_para {
@@ -9347,6 +9354,9 @@ stroke: $primary;
   .container__jumbotron__left__heading__entry {
     justify-content: center;
   }
+  .Custome__methodologies__section__detail{
+    flex-wrap: wrap;
+  }
   .graphic__design__essence__container__image {
     flex-direction: column !important;
     flex-wrap: wrap;
@@ -9671,9 +9681,7 @@ stroke: $primary;
   .pricing__all__inclusive__container__content__bottom__card {
     width: 48%;
   }
-  .Custome__methodologies__section__detail__card {
-    width: 48%;
-  }
+  
   .customsoft_third_container_first_box {
     flex-direction: column;
   }
@@ -9869,6 +9877,12 @@ stroke: $primary;
   }
   .container__jumbotron__left__heading__entry {
     font-size: $font-heading;
+  }
+  .Custome__methodologies__section__detail__card{
+    padding: 1em;
+  }
+  .Custome__methodologies__section{
+    padding: 2em;
   }
   .container__services {
     padding: 2em;
