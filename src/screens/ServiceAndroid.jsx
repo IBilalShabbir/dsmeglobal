@@ -1,5 +1,19 @@
 import React, { useState } from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
+import { WebdevArrEntry } from "../components/WebdevArrEntry";
+import { IndustryCard } from "../components/IndustryCard";
+import Scrollspy from "react-scrollspy";
+import { User } from "react-feather";
+import { Fade } from "react-reveal";
+import androiddev from "../assets/androiddev.svg";
+import experts from "../assets/experts.svg";
+import worldwide from "../assets/worldwide.svg";
+import crossplatform from "../assets/crossplatform.svg";
+import uniquedesign from "../assets/uniquedesign.svg";
+import nativeandroid from "../assets/nativeandroid.svg";
+import instantsupport from "../assets/instantsupport.svg";
+import impressiveperformance from "../assets/impressiveperformance.svg";
+import inhouseoption from "../assets/inhouseoption.svg";
 import img1 from "../assets/1.webp";
 import img2 from "../assets/2.webp";
 import img3 from "../assets/3.webp";
@@ -7,16 +21,6 @@ import img4 from "../assets/4.webp";
 import img5 from "../assets/5.webp";
 import img6 from "../assets/6.webp";
 import img8 from "../assets/iosswift.jpg";
-import { WebdevArrEntry } from "../components/WebdevArrEntry";
-import { User } from "react-feather";
-import { IndustryCard } from "../components/IndustryCard";
-import Scrollspy from "react-scrollspy";
-import { Fade } from "react-reveal";
-import industries from "../assets/industry.svg";
-import androiddev from "../assets/androiddev.svg";
-import experts from "../assets/experts.svg";
-import worldwide from "../assets/worldwide.svg";
-import crossplatform from "../assets/crossplatform.svg";
 
 export default function ServicesAndroid() {
   const [selected, setSelected] = useState("AR VR");
@@ -116,7 +120,7 @@ export default function ServicesAndroid() {
   ];
   const whyChooseNative = [
     {
-      image: industries,
+      image: uniquedesign,
       title: "Unique user experience",
       content: (
         <>
@@ -132,7 +136,7 @@ export default function ServicesAndroid() {
       ),
     },
     {
-      image: industries,
+      image: nativeandroid,
       title: "Native Android features",
       content: (
         <>
@@ -145,7 +149,7 @@ export default function ServicesAndroid() {
       ),
     },
     {
-      image: industries,
+      image: instantsupport,
       title: "Dependability and support",
       content: (
         <>
@@ -160,7 +164,7 @@ export default function ServicesAndroid() {
       ),
     },
     {
-      image: industries,
+      image: impressiveperformance,
       title: "Stability and performance",
       content: (
         <>
@@ -173,7 +177,7 @@ export default function ServicesAndroid() {
       ),
     },
     {
-      image: industries,
+      image: inhouseoption,
       title: "In-house transfer options",
       content: (
         <>

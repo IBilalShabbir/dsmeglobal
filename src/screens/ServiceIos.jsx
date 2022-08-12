@@ -3,15 +3,17 @@ import { HomeJumbotron } from "../components/HomeJumbotron";
 import { Tangibleresultsrightonschedule } from "../components/Tangibleresultsrightonschedule";
 import { Youshareyourideawegetitdone } from "../components/Youshareyourideawegetitdone";
 import { IndustryCard } from "../components/IndustryCard";
-import { Fade } from "react-reveal";
 import Scrollspy from "react-scrollspy";
-import industries from "../assets/industry.svg";
+import { Fade } from "react-reveal";
 import androiddev from "../assets/androiddev.svg";
-import experts from "../assets/experts.svg";
 import worldwide from "../assets/worldwide.svg";
 import instantsupport from "../assets/instantsupport.svg";
 import impressiveperformance from "../assets/impressiveperformance.svg";
 import crossplatform from "../assets/crossplatform.svg";
+import platformspecific from "../assets/platformspecific.svg";
+import futureproof from "../assets/futureproof.svg";
+import inhouseoption from "../assets/inhouseoption.svg";
+import excellentUiUx from "../assets/excellentUiUx.svg";
 
 export default function ServicesIos() {
   const iosFeatures = [
@@ -54,7 +56,7 @@ export default function ServicesIos() {
       ),
     },
     {
-      image: experts,
+      image: platformspecific,
       title: "Platform-specific features",
       content: (
         <>
@@ -82,7 +84,7 @@ export default function ServicesIos() {
       ),
     },
     {
-      image: industries,
+      image: futureproof,
       title: "Future-proof and scalable",
       content: (
         <>
@@ -97,7 +99,7 @@ export default function ServicesIos() {
       ),
     },
     {
-      image: industries,
+      image: inhouseoption,
       title: "In-house transfer options",
       content: (
         <>
@@ -109,7 +111,7 @@ export default function ServicesIos() {
       ),
     },
     {
-      image: industries,
+      image: excellentUiUx,
       title: "Excellent UX/UI",
       content: (
         <>
