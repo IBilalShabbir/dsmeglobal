@@ -3161,7 +3161,7 @@ body {
 
 .container__web__dev__experties__header__heading {
   font-size: $font-heading;
-  font-weight: bold;
+  font-weight: 500;
   color: $black;
   margin-bottom: 0.5em;
   text-align: center;
@@ -6690,7 +6690,7 @@ body {
 .Custome__methodologies__section__detail__card__heading {
   font-size: $font-sub-heading;
   font-weight: bold;
-  margin-bottom: 0.7em;
+  margin-bottom: 1em;
   display: flex;
   align-items: center;
 }
@@ -7266,7 +7266,9 @@ stroke: $primary;
   text-align: center;
 }
 .customsoft_content_one {
-  width: 600px;
+  width: 780px;
+  font-size: $font-heading;
+  font-weight: bold;
   padding-top: 4em;
 }
 .customsoft_main {
@@ -7620,6 +7622,8 @@ align-items: center;
 }
 .customsoft_fourth_container_second_title {
   color: $primary;
+  font-size: 20px;
+  font-weight: 500;
 }
 .customsoft_fourth_container_second_content {
   padding-top: 1.5em;
@@ -7651,6 +7655,8 @@ align-items: center;
 }
 .customsoft_fourth_container_third_title {
   color: $primary;
+  font-size: $font-sub-heading;
+  font-weight: 500;
 }
 .customsoft_fourth_container_third_box_content_first {
   padding-top: 1.5em;
