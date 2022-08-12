@@ -4621,6 +4621,13 @@ body {
   align-items: center;
   margin-bottom: 0.5em;
 }
+.june_third_container_first_box__colomns__contents svg{
+  color: $primary;
+  stroke: $primary;
+}
+.june_third_container_first_box__colomns:hover .june_third_container_first_box__colomns__contents svg{
+  stroke:$white;
+}
 .june_third_container_first_box__colomns__contents__svg svg {
   width: 18px;
   height: 18px;
