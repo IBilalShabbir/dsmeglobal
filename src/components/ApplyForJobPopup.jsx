@@ -116,7 +116,7 @@ export default function ApplyForJobPopup({ selectItem, setIsApplyOpen }) {
                   <div
                     style={{
                       width: "100%",
-                      height: "100%",
+                      height: 40,
                       display: "flex",
                       alignItems: "center",
                       paddingRight: 10,
@@ -154,11 +154,11 @@ export default function ApplyForJobPopup({ selectItem, setIsApplyOpen }) {
                 border: "1px solid #383838",
                 borderRadius: "4px",
                 fontSize: cv === "" ? 30 : 12,
-                height: "40px",
+                height: "50px",
                 cursor: "pointer",
                 padding: 0,
               }}
-              folder={"dsme_global"}
+              folder="dsme_global"
               cropping={true}
               multiple={false}
               autoClose={false}

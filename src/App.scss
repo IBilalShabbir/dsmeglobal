@@ -1075,6 +1075,10 @@ body {
   margin-left: 10px;
   color: $primary;
 }
+.hot__offers__section__header__text {
+  margin-bottom: 1.5em;
+  margin-top: -1em;
+}
 .hot__offers__section__header_span {
   font-size: $font-heading;
   margin-left: 10px;
@@ -1145,13 +1149,15 @@ body {
 .hot__offers__section__content__card__info__heading {
   color: $black;
   margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: $font-normal;
 }
 
 .hot__offers__section__content__card__info__content {
   margin-bottom: 0.5em;
-
   color: rgba(0, 0, 0, 0.5);
   min-height: 50px;
+  font-size: $font-normal;
 }
 
 .hot__offers__section__content__card:hover {
@@ -1271,7 +1277,8 @@ body {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-color: rgb(255, 255, 255);
+  background: url("./assets/applyforjob.png"), no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1291,7 +1298,7 @@ body {
   border-radius: 10px;
   border: 1px solid $primary;
   position: absolute;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0.9);
   max-height: 600px;
   overflow-y: auto;
 }
