@@ -6,29 +6,35 @@ import { IndustryCard } from "../components/IndustryCard";
 import { Fade } from "react-reveal";
 import Scrollspy from "react-scrollspy";
 import industries from "../assets/industry.svg";
+import androiddev from "../assets/androiddev.svg";
+import experts from "../assets/experts.svg";
+import worldwide from "../assets/worldwide.svg";
+import instantsupport from "../assets/instantsupport.svg";
+import impressiveperformance from "../assets/impressiveperformance.svg";
+import crossplatform from "../assets/crossplatform.svg";
 
 export default function ServicesIos() {
   const iosFeatures = [
     {
-      image: industries,
+      image: androiddev,
       title: "One-stop iOS development agency",
       content:
         "It takes lots of effort, planning, and research to create a mobile app that succeeds. Choose our all-in-one iOS services to make sure that both your strategy and your digital product are flawless. We take good care of your project from start to finish by beginning with in-depth research, a data-based strategy, and outstanding product design. Then, we combine foolproof development and maintenance for the excellent stability and performance of your app.",
     },
     {
-      image: industries,
+      image: instantsupport,
       title: "Swift dashboard",
       content:
         "If you are researching iPhone app development, you’ve probably heard of Swift. It’s a powerful, intuitive programming language, created and supported by Apple, and used to build applications for iOS. Although older applications were often written in ObjC, Swift is the go-to choice for new applications, as a faster, more secure, and future-proof choice. With each case, our developers choose the stack carefully to deliver top-notch applications, made to fit specific business needs.",
     },
     {
-      image: industries,
+      image: worldwide,
       title: "iOS applications recognized worldwide",
       content:
         "With over 10 years of work in iOS application development, you can be sure that you are not putting your project in inexperienced hands. Working with world-renowned brands worldwide such as AIDApro, Vinvi, SeeVitals, Friendly Face, BFS, or Catering, we’ve gained hands-on experience in combining business objectives with cutting-edge mobile solutions.",
     },
     {
-      image: industries,
+      image: crossplatform,
       title: "Cross-platform options",
       content:
         "If you’re thinking about building an app for both Android and iOS, you will face a crucial decision. Should you develop two native apps, or just one that will work on both platforms? We’re here to make sure you choose the right approach! If you pick cross-platform over native Android application development, we can take care of that, too. Our team excels in building apps with the two most popular cross-platform frameworks: Flutter and React Native : Flutter and react Native",
@@ -36,7 +42,7 @@ export default function ServicesIos() {
   ];
   const whyChooseNative = [
     {
-      image: industries,
+      image: impressiveperformance,
       title: "Impressive performance",
       content: (
         <>
@@ -48,7 +54,7 @@ export default function ServicesIos() {
       ),
     },
     {
-      image: industries,
+      image: experts,
       title: "Platform-specific features",
       content: (
         <>
@@ -62,7 +68,7 @@ export default function ServicesIos() {
       ),
     },
     {
-      image: industries,
+      image: instantsupport,
       title: "Dependability and support",
       content: (
         <>

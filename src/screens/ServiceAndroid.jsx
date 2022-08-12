@@ -13,6 +13,10 @@ import { IndustryCard } from "../components/IndustryCard";
 import Scrollspy from "react-scrollspy";
 import { Fade } from "react-reveal";
 import industries from "../assets/industry.svg";
+import androiddev from "../assets/androiddev.svg";
+import experts from "../assets/experts.svg";
+import worldwide from "../assets/worldwide.svg";
+import crossplatform from "../assets/crossplatform.svg";
 
 export default function ServicesAndroid() {
   const [selected, setSelected] = useState("AR VR");
@@ -50,7 +54,7 @@ export default function ServicesAndroid() {
   ];
   const androidFeatures = [
     {
-      image: industries,
+      image: androiddev,
       title: "One-stop Android development agency",
       content: (
         <>
@@ -65,7 +69,7 @@ export default function ServicesAndroid() {
       ),
     },
     {
-      image: industries,
+      image: experts,
       title: "Experts in Java and Kotlin development",
       content: (
         <>
@@ -81,7 +85,7 @@ export default function ServicesAndroid() {
       ),
     },
     {
-      image: industries,
+      image: worldwide,
       title: "Android applications recognized worldwide",
       content: (
         <>
@@ -95,7 +99,7 @@ export default function ServicesAndroid() {
       ),
     },
     {
-      image: industries,
+      image: crossplatform,
       title: "Cross-platform options",
       content: (
         <>
@@ -522,7 +526,6 @@ export default function ServicesAndroid() {
           </div>
         </div>
       </div>
-      
     </>
   );
 }
