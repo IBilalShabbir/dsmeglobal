@@ -7887,6 +7887,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 .services__startup__card {
   width: 23%;
@@ -7894,9 +7895,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  padding: 2em;
   margin: 1%;
   border: 1px solid transparent;
+  background-color: rgba(13, 110, 74, 0.1);
 }
 
 .services__startup__card__icon svg {
@@ -8034,7 +8036,7 @@ body {
 .services__startup__card__label {
   font-size: $font-sub-heading;
 
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .why__work__with__us__card__info {
   text-align: start;
