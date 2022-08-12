@@ -6584,10 +6584,19 @@ body {
 .how__we__do__section__card:hover .how__we__do__section__card__detail svg {
   color: $white;
 }
+.how__we__do__section__card:hover .how__we__do__section__card__heading svg{
+  color: $white;
+  fill: $white;
+}
 .how__we__do__section__card__heading {
   font-size: $font-sub-heading;
   font-weight: bold;
   margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+.how__we__do__section__card__heading svg{
+margin-right:10px ;
 }
 .how__we__do__section__card__detail__line {
   display: flex;
