@@ -3417,11 +3417,7 @@ body {
   width: 40%;
   border-radius: 10px;
 }
-.container__web__dev__solution__right:hover {
-  background-color: $black;
-  transition: all 0.2s ease-in-out;
-  color: $primary;
-}
+
 .container__web__dev__solution__right__entry {
   display: flex;
   align-items: center;
@@ -6645,11 +6641,15 @@ body {
   background-color: $primary;
   color: $white;
 }
-.Custome__methodologies__section__detail__card:hover
-  .Custome__methodologies__section__detail__card__line::before {
+.Custome__methodologies__section__detail__card:hover .Custome__methodologies__section__detail__card__heading svg {
   color: $white;
-  background-color: $white;
+  fill: $white;
 }
+
+.Custome__methodologies__section__detail__card:hover .Custome__methodologies__section__detail__card__line svg{
+  stroke: $white;
+}
+
 .customsoft_five_container_all_main_boxes {
   margin-bottom: 2em;
   background-color: rgba(13, 110, 74, 0.1);
@@ -6680,20 +6680,26 @@ body {
 .Custome__methodologies__section__detail__card__heading {
   font-size: $font-sub-heading;
   font-weight: bold;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
+  display: flex;
+  align-items: center;
+}
+.Custome__methodologies__section__detail__card__heading svg {
+  margin-right: 10px;
 }
 .Custome__methodologies__section__detail__card__line {
   font-size: $font-normal;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  
 }
-.Custome__methodologies__section__detail__card__line::before {
-  content: "";
-  background-color: $primary;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  display: inline-block;
-  margin-right: 1em;
+.Custome__methodologies__section__detail__card__line svg{
+margin-right: 10px;
+stroke: $primary;
 }
+
+
 .blockchain__whysection {
   max-width: 1440px;
   width: 100%;
@@ -7354,7 +7360,7 @@ body {
   align-items: center;
   font-size: $font-heading;
   font-weight: 650;
-  color: $white;
+ 
 }
 .customsoft_third_container_headindspan {
   color: $primary;
@@ -7364,7 +7370,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: $white;
+  
 }
 .customsoft_third_container_content span {
   width: 500px;
@@ -7420,7 +7426,10 @@ body {
   margin-bottom: 1.5em;
   display: flex;
   align-items: center;
-  color: $white;
+  
+}
+.customsoft_third_container_first_box_start svg{
+  color: $primary;
 }
 .customsoft_third_container_first_box_start span {
   font-size: $font-sub-heading;
@@ -7429,35 +7438,35 @@ body {
 }
 .customsoft_third_container_first_box_svg span {
   margin-left: 1em;
-  color: $white;
+
 }
 .customsoft_third_container_first_box_svg {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_one span {
   margin-left: 1em;
-  color: $white;
+  
 }
 .customsoft_third_container_first_box_svg_one {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_two span {
   margin-left: 1em;
-  color: $white;
+ 
 }
 .customsoft_third_container_first_box_svg_two {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_three span {
   margin-left: 1em;
-  color: $white;
+ 
 }
 .customsoft_third_container_first_box_svg_three {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_fourth span {
   margin-left: 1em;
-  color: $white;
+ 
 }
 .customsoft_third_container_first_box_svg_fourth {
   margin-top: 2em;
@@ -7467,17 +7476,23 @@ body {
   font-weight: bold;
   padding-left: 7px;
 }
+.customsoft_third_container_second_box svg{
+  color: $primary;
+}
 .customsoft_third_container_second_box {
   margin-bottom: 1.5em;
   display: flex;
   align-items: center;
-  color: $white;
+ 
 }
 .customsoft_third_container_third_box {
   margin-bottom: 1.5em;
   display: flex;
   align-items: center;
-  color: $white;
+ 
+}
+.customsoft_third_container_third_box svg{
+  color: $primary;
 }
 .customsoft_third_container_third_box span {
   font-size: $font-sub-heading;
@@ -7499,7 +7514,7 @@ body {
   padding-top: 2em;
 }
 .customsoft_third_container {
-  background-color: $black;
+ 
   padding: 4em;
   margin-top: 3em;
   max-width: 1440px;
