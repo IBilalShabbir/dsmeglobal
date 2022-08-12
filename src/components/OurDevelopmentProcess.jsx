@@ -12,6 +12,7 @@ export function OurDevelopmentProcess() {
           width="40"
           height="40"
           viewBox="0 0 144.341 144.374"
+          fill="currentColor"
         >
           <g
             id="Group_29"
@@ -58,6 +59,7 @@ export function OurDevelopmentProcess() {
           width="40"
           height="40"
           viewBox="0 0 135.396 135.374"
+          fill="currentColor"
         >
           <g
             id="Group_30"
@@ -105,6 +107,7 @@ export function OurDevelopmentProcess() {
           width="40"
           height="40"
           viewBox="0 0 143.757 144.452"
+          fill="currentColor"
         >
           <g
             id="Group_31"
@@ -164,6 +167,7 @@ export function OurDevelopmentProcess() {
           width="40"
           height="40"
           viewBox="0 0 120.788 142.938"
+          fill="currentColor"
         >
           <g
             id="Group_32"
@@ -212,6 +216,7 @@ export function OurDevelopmentProcess() {
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
+          fill="currentColor"
           viewBox="0 0 165.23 102.883"
         >
           <path
@@ -294,6 +299,9 @@ export function OurDevelopmentProcess() {
               className="container__emerging__technologies__section__entry__data___heading"
               style={{ color: "white" }}
             >
+              <div className="container__emerging__technologies__section__entry__data___heading__ico">
+                {item.svg}
+              </div>
               {item.label}
             </div>
             <div
