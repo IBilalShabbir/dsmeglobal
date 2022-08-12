@@ -3284,9 +3284,43 @@ body {
   flex-direction: column;
   width: 32%;
   margin-bottom: 3em;
-  padding: 1em;
+  padding: 2em;
+  position: relative;
 }
-
+.container__web__dev__experience__content__entry::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 50px);
+  right: 0px;
+  height: 100px;
+  width: 1px;
+  background-color: $black;
+}
+.container__web__dev__experience__content__entry::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 25px);
+  right: -1px;
+  height: 50px;
+  width: 3px;
+  background-color: $primary;
+  border-radius: 3px;
+}
+.container__web__dev__experience__content__entry:nth-child(3)::after,
+.container__web__dev__experience__content__entry:nth-child(3)::before {
+  display: none;
+}
+.container__web__dev__experience__content__entry:nth-child(6)::after,
+.container__web__dev__experience__content__entry:nth-child(6)::before {
+  display: none;
+}
+.container__web__dev__experience__content__entry:hover
+  .container__web__dev__experience__content__entry__heading
+  svg {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
+  border-radius: 50px;
+}
 .container__web__dev__experience__content__entry__heading {
   font-weight: bold;
   margin-bottom: 0.8em;
@@ -3295,10 +3329,13 @@ body {
   align-items: center;
 }
 .container__web__dev__experience__content__entry__heading svg {
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
   margin-right: 1em;
   fill: $primary;
+  padding: 0.7em;
+
+  border: 1px solid transparent;
 }
 
 .container__web__dev__experience__content__entry__info {
@@ -6637,7 +6674,7 @@ body {
 }
 .Custome__methodologies__section__detail {
   display: flex;
- 
+
   justify-content: space-between;
 }
 .Custome__methodologies__section__detail__card {
@@ -6651,12 +6688,16 @@ body {
   background-color: $primary;
   color: $white;
 }
-.Custome__methodologies__section__detail__card:hover .Custome__methodologies__section__detail__card__heading svg {
+.Custome__methodologies__section__detail__card:hover
+  .Custome__methodologies__section__detail__card__heading
+  svg {
   color: $white;
   fill: $white;
 }
 
-.Custome__methodologies__section__detail__card:hover .Custome__methodologies__section__detail__card__line svg{
+.Custome__methodologies__section__detail__card:hover
+  .Custome__methodologies__section__detail__card__line
+  svg {
   stroke: $white;
 }
 
@@ -6702,13 +6743,11 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
-  
 }
-.Custome__methodologies__section__detail__card__line svg{
-margin-right: 10px;
-stroke: $primary;
+.Custome__methodologies__section__detail__card__line svg {
+  margin-right: 10px;
+  stroke: $primary;
 }
-
 
 .blockchain__whysection {
   max-width: 1440px;
@@ -7250,11 +7289,11 @@ stroke: $primary;
 .customsoft_first_container_svg svg :hover {
   color: $white;
 }
-.customsoft_second_container:hover{
+.customsoft_second_container:hover {
   color: $white;
   background-color: $primary;
 }
-.customsoft_second_container:hover .customsoft_second_container_button svg{
+.customsoft_second_container:hover .customsoft_second_container_button svg {
   color: $white;
 }
 .customsoft_second_container:hover .customsoft_second_container_button a {
@@ -7301,21 +7340,18 @@ stroke: $primary;
   width: 90%;
   display: flex;
   justify-content: center;
- padding-top: 1.5em;
+  padding-top: 1.5em;
 
   font-size: $font-normal;
 }
 .customsoft_first_container_button {
-
   align-items: center;
   padding-top: 3em;
   display: flex;
 }
 
-
-
 .customsoft_second_container_button {
-align-items: center;
+  align-items: center;
   padding-top: 3em;
   display: flex;
 }
@@ -7330,9 +7366,8 @@ align-items: center;
 .customsoft_second_container_svg {
   display: flex;
   align-items: center;
- 
+
   text-align: center;
- 
 }
 .customsoft_second_container_svg svg {
   color: $primary;
@@ -7346,7 +7381,7 @@ align-items: center;
 }
 .customsoft_second_container_content {
   width: 100%;
- 
+
   padding-top: 1.5em;
   font-size: $font-normal;
 }
@@ -7364,7 +7399,7 @@ align-items: center;
 .customsoft_second_container {
   min-height: fit-content;
   width: 550px;
- 
+
   border-radius: 5px;
   padding: 2em;
 }
@@ -7375,7 +7410,6 @@ align-items: center;
   align-items: center;
   font-size: $font-heading;
   font-weight: 650;
- 
 }
 .customsoft_third_container_headindspan {
   color: $primary;
@@ -7385,7 +7419,6 @@ align-items: center;
   display: flex;
   justify-content: center;
   text-align: center;
-  
 }
 .customsoft_third_container_content span {
   width: 500px;
@@ -7441,9 +7474,8 @@ align-items: center;
   margin-bottom: 1.5em;
   display: flex;
   align-items: center;
-  
 }
-.customsoft_third_container_first_box_start svg{
+.customsoft_third_container_first_box_start svg {
   color: $primary;
 }
 .customsoft_third_container_first_box_start span {
@@ -7453,35 +7485,30 @@ align-items: center;
 }
 .customsoft_third_container_first_box_svg span {
   margin-left: 1em;
-
 }
 .customsoft_third_container_first_box_svg {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_one span {
   margin-left: 1em;
-  
 }
 .customsoft_third_container_first_box_svg_one {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_two span {
   margin-left: 1em;
- 
 }
 .customsoft_third_container_first_box_svg_two {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_three span {
   margin-left: 1em;
- 
 }
 .customsoft_third_container_first_box_svg_three {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_fourth span {
   margin-left: 1em;
- 
 }
 .customsoft_third_container_first_box_svg_fourth {
   margin-top: 2em;
@@ -7491,22 +7518,20 @@ align-items: center;
   font-weight: bold;
   padding-left: 7px;
 }
-.customsoft_third_container_second_box svg{
+.customsoft_third_container_second_box svg {
   color: $primary;
 }
 .customsoft_third_container_second_box {
   margin-bottom: 1.5em;
   display: flex;
   align-items: center;
- 
 }
 .customsoft_third_container_third_box {
   margin-bottom: 1.5em;
   display: flex;
   align-items: center;
- 
 }
-.customsoft_third_container_third_box svg{
+.customsoft_third_container_third_box svg {
   color: $primary;
 }
 .customsoft_third_container_third_box span {
@@ -7529,7 +7554,6 @@ align-items: center;
   padding-top: 2em;
 }
 .customsoft_third_container {
- 
   padding: 4em;
   margin-top: 3em;
   max-width: 1440px;
@@ -9020,7 +9044,7 @@ align-items: center;
     width: fit-content;
     padding: 0 2rem;
   }
-  .Custome__methodologies__section__detail{
+  .Custome__methodologies__section__detail {
     flex-direction: column;
     width: 100%;
   }
@@ -9340,6 +9364,18 @@ align-items: center;
   .container__web__dev__experience__content__entry {
     width: 49%;
   }
+  .container__web__dev__experience__content__entry:nth-child(3):after,
+  .container__web__dev__experience__content__entry:nth-child(3):before {
+    display: flex;
+  }
+  .container__web__dev__experience__content__entry:nth-child(2):after,
+  .container__web__dev__experience__content__entry:nth-child(2):before {
+    display: none;
+  }
+  .container__web__dev__experience__content__entry:nth-child(4):after,
+  .container__web__dev__experience__content__entry:nth-child(4):before {
+    display: none;
+  }
   .ecommerce__screen__container__selling__content {
     flex-direction: column;
   }
@@ -9360,7 +9396,7 @@ align-items: center;
   .container__jumbotron__left__heading__entry {
     justify-content: center;
   }
-  .Custome__methodologies__section__detail{
+  .Custome__methodologies__section__detail {
     flex-wrap: wrap;
   }
   .graphic__design__essence__container__image {
@@ -9687,7 +9723,7 @@ align-items: center;
   .pricing__all__inclusive__container__content__bottom__card {
     width: 48%;
   }
-  
+
   .customsoft_third_container_first_box {
     flex-direction: column;
   }
@@ -9844,6 +9880,11 @@ align-items: center;
   }
   .container__web__dev__experience__content__entry {
     width: 100%;
+    padding: 1em;
+  }
+  .container__web__dev__experience__content__entry:after,
+  .container__web__dev__experience__content__entry:before {
+    display: none !important;
   }
   .container__emerging__technologies__section__entry__data__text {
     max-width: 100%;
@@ -9884,10 +9925,10 @@ align-items: center;
   .container__jumbotron__left__heading__entry {
     font-size: $font-heading;
   }
-  .Custome__methodologies__section__detail__card{
+  .Custome__methodologies__section__detail__card {
     padding: 1em;
   }
-  .Custome__methodologies__section{
+  .Custome__methodologies__section {
     padding: 2em;
   }
   .container__services {
