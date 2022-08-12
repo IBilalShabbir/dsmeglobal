@@ -7,7 +7,6 @@ import { ExecutionProcess } from "../components/ExecutionProcess";
 import { UIUXLetsTalk } from "../components/UIUXLetsTalk";
 import { UIUXFeatures } from "../components/UIUXFeatures";
 import { UiUXDesignWork } from "../components/UiUXDesignWork";
-// import { BlockchainServices } from "../components/BlockchainServices";
 
 export default function ServiceUIUX() {
   return (

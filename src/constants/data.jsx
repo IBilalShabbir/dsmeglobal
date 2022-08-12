@@ -1310,7 +1310,6 @@ export const whyBlockChainData = [
       </svg>
     ),
     title: "Save Time and Operational Costs",
-    // subTitle: "Save Time and Operational Costs",
     content:
       "Blockchain tech allows for allows for verification without having to be dependent on redundant processes and third parties.",
   },
@@ -1349,7 +1348,6 @@ export const whyBlockChainData = [
       </svg>
     ),
     title: "Eliminate the Middle Man",
-    // subTitle: "Save Time and Operational Costs",
     content:
       "Blockchain helps you take control of your transactions and saves you the hassle of employing a middle man.",
   },
@@ -1388,7 +1386,6 @@ export const whyBlockChainData = [
       </svg>
     ),
     title: "Make your Data Secure",
-    // subTitle: "Save Time and Operational Costs",
     content:
       "The tech removes the risk of duplicate entry or fraud as multiple consensus protocols need to be fulfilled to validate an entry.",
   },
@@ -1427,7 +1424,6 @@ export const whyBlockChainData = [
       </svg>
     ),
     title: "Ensure high Level of Transparency ",
-    // subTitle: "Save Time and Operational Costs",
     content:
       "Transactions are recorded across every participating node in the Blockchain, which helps ensure transparency to each participant.",
   },
@@ -1466,7 +1462,6 @@ export const whyBlockChainData = [
       </svg>
     ),
     title: "Take control of your Information",
-    // subTitle: "Save Time and Operational Costs",
     content:
       "Consent of all ledger participants is needed to add records to the chain, which means every stakeholder gets a say in major decisions.",
   },
@@ -1505,7 +1500,6 @@ export const whyBlockChainData = [
       </svg>
     ),
     title: "Ensure Completeness of Data",
-    // subTitle: "Save Time and Operational Costs",
     content:
       "Blockchain's append only property makes data alteration or deletion impossible, helping you maintain its accuracy at all times.",
   },

@@ -36,8 +36,7 @@ export function AboutAwardAchievements({
       <div className="pricing__fitted__team__content">
         <Swiper
           slidesPerView={slidesPerViewLogo}
-          modules={[Navigation, Pagination]} // loop
-          // spaceBetween={30}
+          modules={[Navigation, Pagination]} 
           navigation={showNavigation ? true : false}
           pagination={
             !showNavigation
