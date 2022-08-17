@@ -10,3 +10,4 @@ export { default as startUpServiceImage } from "./startUpServiceImage.svg";
 export { default as webDevServiceImage } from "./webDevServiceImage.svg";
 export { default as servicesSvg1 } from "./servicesSvg1.svg";
 export { default as servicesSvg2 } from "./servicesSvg2.svg";
+export { default as statsSvg } from "./statsSvg.svg";

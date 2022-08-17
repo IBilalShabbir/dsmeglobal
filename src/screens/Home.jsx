@@ -12,22 +12,26 @@ import {
   mobDevServiceImage,
   servicesSvg1,
   servicesSvg2,
+  statsSvg,
 } from "../assets";
 import useScrollSnap from "react-use-scroll-snap";
 import { HomeServicesCard } from "../components/HomeServicesCard";
+import { useIsInViewport } from "../utils/useIsInViewport";
+import CountUp from "react-countup";
 
 export default function Home() {
   return (
     <>
       <HomeJumbtron />
       <HomeServices />
+      <HomeStats />
     </>
   );
 }
 
 function HomeJumbtron() {
   const scrollRef = useRef(null);
-  useScrollSnap({ ref: scrollRef });
+  // useScrollSnap({ ref: scrollRef });
   return (
     <section ref={scrollRef} className="home__jumbotron">
       <img
@@ -82,7 +86,7 @@ function HomeJumbtron() {
 
 function HomeServices() {
   const scrollRef = useRef(null);
-  useScrollSnap({ ref: scrollRef });
+  // useScrollSnap({ ref: scrollRef });
   const data = [
     {
       image: webDevServiceImage,
@@ -141,6 +145,42 @@ function HomeServices() {
       <NavLink to="/services" className="home__services__button">
         View all services
       </NavLink>
+    </section>
+  );
+}
+
+function HomeStats() {
+  const ref = useRef(null);
+  useIsInViewport(ref);
+  return (
+    <section className="home__stats" ref={ref}>
+      <img src={statsSvg} alt="statsSvg" className="home__stats__svg" />
+      <div className="home__stats__content">
+        <div className="home__stats__content__entry">
+          <div className="home__stats__content__entry__heading">
+            <CountUp end={10} redraw={true} duration={1} />+
+          </div>
+          <div className="home__stats__content__entry__content">
+            Years In Remote Software Development
+          </div>
+        </div>
+        <div className="home__stats__content__entry">
+          <div className="home__stats__content__entry__heading">
+            <CountUp end={150} redraw={true} duration={1} />+
+          </div>
+          <div className="home__stats__content__entry__content">
+            Digital Solutions Delivered
+          </div>
+        </div>
+        <div className="home__stats__content__entry">
+          <div className="home__stats__content__entry__heading">
+            <CountUp end={200} redraw={true} duration={1} />+
+          </div>
+          <div className="home__stats__content__entry__content">
+            Experts On Board
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
