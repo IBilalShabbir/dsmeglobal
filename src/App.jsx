@@ -1,6 +1,18 @@
 import React from "react";
+import { Route, Routes } from "react-router";
 import "./App.scss";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Home from "./screens/Home";
 
 export default function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </>
+  );
 }
