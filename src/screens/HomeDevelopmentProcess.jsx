@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
-import { developmentProcessDesktop, developmentProcessMobile } from "../assets";
+import {
+  developmentProcessDesktop,
+  developmentProcessMobile,
+  developmentProcessSvg,
+} from "../assets";
 
 export function HomeDevelopmentProcess() {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -20,6 +24,11 @@ export function HomeDevelopmentProcess() {
 
   return (
     <div className="home__development__process">
+      <img
+        src={developmentProcessSvg}
+        alt="developmentProcessSvg"
+        className="home__development__process__svg"
+      />
       <div className="home__development__process__heading heading">
         Our Development Process
       </div>

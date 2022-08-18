@@ -1,5 +1,10 @@
 import React from "react";
-import { dedicatedTeams, engagementSvg, fixedPrice } from "../assets";
+import {
+  dedicatedTeams,
+  developmentProcessSvg,
+  engagementSvg,
+  fixedPrice,
+} from "../assets";
 import { HomeEngagementCard } from "./HomeEngagementCard";
 
 export function HomeEngagement() {
@@ -9,6 +14,11 @@ export function HomeEngagement() {
         src={engagementSvg}
         alt="engagementSvg"
         className="home__engagement__svg"
+      />
+      <img
+        src={developmentProcessSvg}
+        alt="developmentProcessSvg"
+        className="home__engagement__svg1"
       />
       <div className="home__engagement__heading heading">Engagement Models</div>
       <div className="home__engagement__info">

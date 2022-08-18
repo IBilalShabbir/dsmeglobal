@@ -24,3 +24,4 @@ export { default as dedicatedTeams } from "./dedicatedTeams.svg";
 export { default as engagementSvg } from "./engagementSvg.svg";
 export { default as developmentProcessMobile } from "./developmentProcessMobile.svg";
 export { default as developmentProcessDesktop } from "./developmentProcessDesktop.svg";
+export { default as developmentProcessSvg } from "./developmentProcessSvg.svg";
