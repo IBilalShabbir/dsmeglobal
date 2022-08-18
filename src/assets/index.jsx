@@ -19,3 +19,6 @@ export { default as backend } from "./backend.svg";
 export { default as crossPlatform } from "./crossPlatform.svg";
 export { default as frontend } from "./frontend.svg";
 export { default as technologiesSvg } from "./technologiesSvg.svg";
+export { default as fixedPrice } from "./fixedPrice.svg";
+export { default as dedicatedTeams } from "./dedicatedTeams.svg";
+export { default as engagementSvg } from "./engagementSvg.svg";

@@ -574,6 +574,110 @@ body {
   left: 6%;
   top: 6%;
 }
+.home__engagement {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  max-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.home__engagement__svg {
+  position: absolute;
+  top: -100px;
+  right: -200px;
+}
+.home__engagement__heading {
+  font-size: 35px;
+  margin-bottom: 0.5em;
+  text-align: center;
+  padding: 0em 2em;
+}
+.home__engagement__info {
+  color: $text;
+  font-size: 16px;
+  margin-bottom: 2em;
+  padding: 0em 2em;
+  text-align: center;
+}
+.home__engagement__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: center;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+.home__engagement__content__card {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: $black;
+  border-radius: 10px;
+  position: relative;
+  padding: 2.5em;
+  min-height: 400px;
+  text-decoration: none;
+  border: 3px solid transparent;
+}
+.home__engagement__content__card:first-child {
+  margin-right: 4em;
+}
+.home__engagement__content__card:first-child
+  .home__engagement__content__card__svg {
+  width: 250px;
+  height: 250px;
+  top: -60px;
+  right: -60px;
+}
+.home__engagement__content__card::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: $black;
+}
+.home__engagement__content__card__img {
+  height: 150px;
+}
+.home__engagement__content__card__svg {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 200px;
+  height: 200px;
+}
+.home__engagement__content__card__heading {
+  font-size: 25px;
+  color: white;
+  margin: 1em 0em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  max-width: 400px;
+  font-family: Gilroy-Light, "jost", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.home__engagement__content__card__info {
+  font-size: 16px;
+  color: $text;
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 1em;
+}
+.home__engagement__content__card:hover {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -599,6 +703,9 @@ body {
     max-width: 1200px;
   }
   .home__technologies__content {
+    max-width: 1200px;
+  }
+  .home__engagement__content {
     max-width: 1200px;
   }
   .home__work__item__img {
@@ -683,6 +790,19 @@ body {
   }
   .home__services__svg1 {
     width: 30%;
+  }
+  .home__engagement {
+    height: fit-content;
+    max-height: fit-content;
+    padding: 7em 0em;
+  }
+  .home__engagement__content__card {
+    width: 100%;
+    margin-right: 2em;
+  }
+  .home__engagement__content__card:first-child {
+    margin-right: 2em;
+    margin-bottom: 4em;
   }
 }
 @media (max-width: 900px) {
@@ -792,6 +912,14 @@ body {
   }
   .home__work__seletion {
     padding: 0em 0.5em;
+  }
+}
+@media (max-width: 500px) {
+  .home__engagement__content__card {
+    margin-right: 0em !important;
+  }
+  .home__engagement__content__card__svg {
+    display: none;
   }
 }
 @media (max-width: 470px) {

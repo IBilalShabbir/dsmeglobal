@@ -28,7 +28,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className={isScrolling ? "header header__active" : "header"}>
+    <div className="header">
       <div className="header__content">
         <NavLink to="/" className="header__content__logo">
           <img src={logo} alt="logo" className="header__content__logo__img" />
