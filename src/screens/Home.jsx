@@ -9,6 +9,7 @@ import { HomeDevelopmentProcess } from "./HomeDevelopmentProcess";
 import { HomeOurTechnologies } from "./HomeOurTechnologies";
 import { HomeTestimonials } from "./HomeTestimonials";
 import { HomeHelp } from "./HomeHelp";
+import { HomeBlog } from "./HomeBlog";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <HomeOurTechnologies />
       <HomeTestimonials />
       <HomeHelp />
+      <HomeBlog />
     </>
   );
 }
