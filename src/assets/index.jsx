@@ -25,3 +25,6 @@ export { default as engagementSvg } from "./engagementSvg.svg";
 export { default as developmentProcessMobile } from "./developmentProcessMobile.svg";
 export { default as developmentProcessDesktop } from "./developmentProcessDesktop.svg";
 export { default as developmentProcessSvg } from "./developmentProcessSvg.svg";
+export { default as technologiesImg } from "./technologiesImg.svg";
+export { default as technologiesSvg1 } from "./technologiesSvg1.svg";
+export { default as technologiesSvg2 } from "./technologiesSvg2.svg";

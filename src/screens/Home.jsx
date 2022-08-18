@@ -6,6 +6,7 @@ import { HomeWork } from "./HomeWork";
 import { HomeTechnologies } from "./HomeTechnologies";
 import { HomeEngagement } from "./HomeEngagement";
 import { HomeDevelopmentProcess } from "./HomeDevelopmentProcess";
+import { HomeOurTechnologies } from "./HomeOurTechnologies";
 
 export default function Home() {
   return (
@@ -16,13 +17,8 @@ export default function Home() {
       <HomeWork />
       <HomeTechnologies />
       <HomeEngagement />
-      <HomeDevelopmentProcess />\
-      <div className="home__techonologies">
-        <div className="home__techonologies__content">
-          <div className="home__techonologies__left"></div>
-          <div className="home__techonologies__right"></div>
-        </div>
-      </div>
+      <HomeDevelopmentProcess />
+      <HomeOurTechnologies />
     </>
   );
 }
