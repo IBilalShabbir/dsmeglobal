@@ -10,6 +10,7 @@ import { HomeOurTechnologies } from "./HomeOurTechnologies";
 import { HomeTestimonials } from "./HomeTestimonials";
 import { HomeHelp } from "./HomeHelp";
 import { HomeBlog } from "./HomeBlog";
+import { HomeNewsletter } from "./HomeNewsletter";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <HomeTestimonials />
       <HomeHelp />
       <HomeBlog />
+      <HomeNewsletter />
     </>
   );
 }
