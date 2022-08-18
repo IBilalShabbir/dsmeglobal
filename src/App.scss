@@ -944,6 +944,89 @@ body::-webkit-scrollbar-track {
   font-size: 18px;
   color: white;
 }
+.home__help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 0em;
+}
+.home__help__heading {
+  font-size: 45px;
+  margin-bottom: 0.5em;
+}
+.home__help__heading span {
+  margin: 0em 0.2em;
+}
+.home__help__info {
+  font-size: 16px;
+  color: $text;
+  margin-bottom: 1em;
+  padding: 0em 2em;
+  text-align: center;
+}
+.home__help__slogan {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  color: $primary;
+  padding: 0em 2em;
+  font-family: Gilroy-Light;
+  font-weight: bolder;
+  font-style: italic;
+}
+.home__help__slogan span {
+  font-weight: bold;
+  font-size: 70px;
+}
+.home__help__slogan span:last-child {
+  vertical-align: top;
+}
+.home__help__slogan__svg {
+  position: absolute;
+  top: -80px;
+  height: 400px;
+  left: calc(50% - 200px);
+  width: 400px;
+  z-index: -1;
+}
+.home__help__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
+  padding: 0em 2em;
+  flex-wrap: wrap;
+}
+.home__help__content__entry {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 1.5em 2em;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+.home__help__content__entry__img {
+  margin-right: 2em;
+}
+.home__help__content__entry__heading {
+  font-size: 18px;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+}
+.home__help__content__entry__heading span {
+  font-weight: bold;
+  font-size: 25px;
+}
+.home__help__content__entry:hover {
+  transition: 300ms ease-in-out;
+  border-color: $black;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -978,7 +1061,8 @@ body::-webkit-scrollbar-track {
   .home__development__process__heading,
   .home__technologies__heading,
   .home__techonologies__content__left__heading,
-  .home__testmonials__heading {
+  .home__testmonials__heading,
+  .home__help__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -1011,6 +1095,9 @@ body::-webkit-scrollbar-track {
   }
   .home__stats__content__entry:last-child {
     margin-top: 3em;
+  }
+  .home__help__content__entry {
+    min-width: 50%;
   }
 }
 @media (max-width: 1100px) {
@@ -1170,8 +1257,14 @@ body::-webkit-scrollbar-track {
   .home__testmonials__content__users__entry {
     margin: 2em !important;
   }
+  .home__help__content__entry {
+    min-width: 100%;
+  }
 }
 @media (max-width: 650px) {
+  .home__help__slogan {
+    font-size: 30px;
+  }
   .home__technologies__content {
     padding: 2em 1em;
     padding-left: 0em;
@@ -1195,8 +1288,20 @@ body::-webkit-scrollbar-track {
   .home__development__process__heading,
   .home__technologies__heading,
   .home__techonologies__content__left__heading,
-  .home__testmonials__heading {
+  .home__testmonials__heading,
+  .home__help__heading {
     font-size: 25px;
+  }
+  .home__help__content__entry {
+    flex-direction: column;
+    padding: 1.5em 1em;
+  }
+  .home__help__content__entry__img {
+    margin-right: 0em;
+  }
+  .home__help__content__entry__heading {
+    margin-top: 1em;
+    text-align: center;
   }
   .home__jumbotron__content__right {
     margin-top: -8em;

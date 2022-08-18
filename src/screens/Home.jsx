@@ -8,6 +8,7 @@ import { HomeEngagement } from "./HomeEngagement";
 import { HomeDevelopmentProcess } from "./HomeDevelopmentProcess";
 import { HomeOurTechnologies } from "./HomeOurTechnologies";
 import { HomeTestimonials } from "./HomeTestimonials";
+import { HomeHelp } from "./HomeHelp";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <HomeDevelopmentProcess />
       <HomeOurTechnologies />
       <HomeTestimonials />
+      <HomeHelp />
     </>
   );
 }
