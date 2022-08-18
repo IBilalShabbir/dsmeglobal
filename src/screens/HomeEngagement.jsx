@@ -42,7 +42,7 @@ export function HomeEngagement() {
               <path
                 d="M317.066 191.53L150.23 317.231L24.529 150.394L191.366 24.6931L317.066 191.53Z"
                 stroke="url(#paint0_linear_77_26)"
-                stroke-width="33.9626"
+                strokeWidth="33.9626"
               />
               <defs>
                 <linearGradient
@@ -53,8 +53,8 @@ export function HomeEngagement() {
                   y2="0.911867"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#2ECC82" />
-                  <stop offset="1" stop-color="#003A1F" />
+                  <stop stopColor="#2ECC82" />
+                  <stop offset="1" stopColor="#003A1F" />
                 </linearGradient>
               </defs>
             </svg>
@@ -79,7 +79,7 @@ export function HomeEngagement() {
                 r="117.13"
                 transform="rotate(-115.578 134.651 134.799)"
                 stroke="url(#paint0_linear_77_28)"
-                stroke-width="33.8577"
+                strokeWidth="33.8577"
               />
               <defs>
                 <linearGradient
@@ -90,8 +90,8 @@ export function HomeEngagement() {
                   y2="268.858"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#2ECC82" />
-                  <stop offset="1" stop-color="#024A28" />
+                  <stop stopColor="#2ECC82" />
+                  <stop offset="1" stopColor="#024A28" />
                 </linearGradient>
               </defs>
             </svg>

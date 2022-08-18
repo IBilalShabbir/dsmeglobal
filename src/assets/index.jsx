@@ -29,3 +29,4 @@ export { default as developmentProcessSvg } from "./developmentProcessSvg.svg";
 export { default as technologiesImg } from "./technologiesImg.svg";
 export { default as technologiesSvg1 } from "./technologiesSvg1.svg";
 export { default as technologiesSvg2 } from "./technologiesSvg2.svg";
+export { default as testimonialSvg } from "./testimonialSvg.svg";

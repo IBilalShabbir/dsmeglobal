@@ -940,6 +940,11 @@ react-router@6.3.0:
   dependencies:
     history "^5.2.0"
 
+react-simple-typewriter@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-simple-typewriter/-/react-simple-typewriter-3.0.1.tgz#5dc7b924a2e1a96950b5a2064f2dfbdfe1f8a60d"
+  integrity sha512-z+aJugzvYPng9HoggyXNpnp7NjxtusGAb33bRaGRK2pEdirVKX4v3qrwdHqs6zdhCeLAthLGLtxgVX9oGekTLg==
+
 react-use-scroll-snap@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/react-use-scroll-snap/-/react-use-scroll-snap-0.0.4.tgz#44d615c347ac53ebf40102f5a13f28dc64feddd3"

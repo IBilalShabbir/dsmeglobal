@@ -58,8 +58,9 @@ export function HomeTechnologies({}) {
         solution for you
       </div>
       <div className="home__technologies__content">
-        {techData.map((item) => (
+        {techData.map((item, i) => (
           <HomeTechnologiesCard
+            key={i}
             image={item.image}
             title={item.title}
             info={item.info}
