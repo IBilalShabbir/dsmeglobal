@@ -5,6 +5,7 @@ import { HomeStats } from "./HomeStats";
 import { HomeWork } from "./HomeWork";
 import { HomeTechnologies } from "./HomeTechnologies";
 import { HomeEngagement } from "./HomeEngagement";
+import { HomeDevelopmentProcess } from "./HomeDevelopmentProcess";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HomeWork />
       <HomeTechnologies />
       <HomeEngagement />
+      <HomeDevelopmentProcess />
     </>
   );
 }

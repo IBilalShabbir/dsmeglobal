@@ -22,3 +22,5 @@ export { default as technologiesSvg } from "./technologiesSvg.svg";
 export { default as fixedPrice } from "./fixedPrice.svg";
 export { default as dedicatedTeams } from "./dedicatedTeams.svg";
 export { default as engagementSvg } from "./engagementSvg.svg";
+export { default as developmentProcessMobile } from "./developmentProcessMobile.svg";
+export { default as developmentProcessDesktop } from "./developmentProcessDesktop.svg";
