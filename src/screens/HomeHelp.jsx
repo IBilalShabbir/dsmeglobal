@@ -7,7 +7,7 @@ import {
   oneStopSolution,
   specializedExperts,
 } from "../assets";
-import { HomeHelpEntry } from "./HomeHelpEntry";
+import { HomeHelpEntry } from "../components/HomeHelpEntry";
 
 export function HomeHelp() {
   return (

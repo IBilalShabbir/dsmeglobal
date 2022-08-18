@@ -5,7 +5,7 @@ import {
   engagementSvg,
   fixedPrice,
 } from "../assets";
-import { HomeEngagementCard } from "./HomeEngagementCard";
+import { HomeEngagementCard } from "../components/HomeEngagementCard";
 
 export function HomeEngagement() {
   return (
