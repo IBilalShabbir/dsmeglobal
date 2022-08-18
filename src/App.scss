@@ -157,10 +157,10 @@ body {
   position: relative;
 }
 .home__jumbotron__content__left {
-  width: 40%;
+  width: 50%;
 }
 .home__jumbotron__content__left__heading {
-  font-size: 50px;
+  font-size: 60px;
   color: white;
   text-transform: uppercase;
   font-weight: bolder;
@@ -169,13 +169,16 @@ body {
 }
 .home__jumbotron__content__left__heading span {
   color: $primary;
+  letter-spacing: 3px;
+  width: auto;
+  animation: slidedown 4s infinite both;
 }
 .home__jumbotron__content__left__info {
   color: $text;
   font-size: 16px;
   margin-bottom: 2em;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 .home__jumbotron__content__left__button {
   color: white;
@@ -192,16 +195,32 @@ body {
   color: $black;
 }
 .home__jumbotron__content__right {
-  width: 60%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .home__jumbotron__content__right__img {
-  width: 120%;
-  margin: 0em -10%;
-  margin-bottom: -10%;
+  width: 100%;
   user-select: none;
+  animation: slidedown 4s infinite both;
+}
+@keyframes slidedown {
+  0% {
+    opacity: 100;
+  }
+  25% {
+    opacity: 50;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 50;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 .home__services {
   width: 100%;
@@ -215,7 +234,7 @@ body {
   overflow: hidden;
 }
 .home__services__heading {
-  font-size: 35px;
+  font-size: 45px;
   letter-spacing: 1px;
   font-weight: 900;
   text-align: center;
@@ -226,7 +245,7 @@ body {
   background-color: $primary;
   color: white;
   padding: 0em 0.3em;
-  font-size: 35px;
+  font-size: 45px;
   letter-spacing: 1px;
   font-weight: 900;
   text-align: center;
@@ -368,7 +387,7 @@ body {
   z-index: -1;
 }
 .home__work__heading {
-  font-size: 35px;
+  font-size: 45px;
   text-align: center;
   padding: 0em 2em;
 }
@@ -490,7 +509,7 @@ body {
   left: 0px;
 }
 .home__technologies__heading {
-  font-size: 35px;
+  font-size: 45px;
   width: 100%;
   max-width: 700px;
   text-align: center;
@@ -598,7 +617,7 @@ body {
   z-index: -1;
 }
 .home__engagement__heading {
-  font-size: 35px;
+  font-size: 45px;
   margin-bottom: 0.5em;
   text-align: center;
   padding: 0em 2em;
@@ -700,7 +719,7 @@ body {
   z-index: -1;
 }
 .home__development__process__heading {
-  font-size: 35px;
+  font-size: 45px;
   margin-bottom: 0.5em;
   max-width: 700px;
   width: 100%;
@@ -753,7 +772,7 @@ body {
 }
 
 .home__techonologies__content__left__heading {
-  font-size: 35px;
+  font-size: 45px;
   color: $black;
   margin-bottom: 0.5em;
 }
@@ -835,6 +854,18 @@ body {
   }
   .home__jumbotron__content {
     max-width: 1200px;
+  }
+  .home__jumbotron__content__left__heading {
+    font-size: 40px;
+  }
+  .home__services__heading,
+  .home__engagement__heading,
+  .home__services__sub__heading,
+  .home__work__heading,
+  .home__development__process__heading,
+  .home__technologies__heading,
+  .home__techonologies__content__left__heading {
+    font-size: 35px;
   }
   .home__technologies__content {
     max-width: 1200px;
@@ -920,7 +951,6 @@ body {
   }
   .home__jumbotron__content__right__img {
     height: 100%;
-    margin-left: -20%;
   }
   .home__jumbotron__svg1 {
     left: 0px;
@@ -1021,9 +1051,6 @@ body {
   .home__technologies__content__entry {
     width: 100%;
   }
-  .home__jumbotron__content__right__img {
-    margin-left: -30%;
-  }
   .home__techonologies__svg2 {
     top: 0px;
     left: 0px;
@@ -1031,7 +1058,7 @@ body {
 }
 @media (max-width: 600px) {
   .home__jumbotron__content__left__heading {
-    font-size: 35px;
+    font-size: 30px;
   }
   .home__services__heading,
   .home__engagement__heading,
@@ -1046,8 +1073,7 @@ body {
     margin-top: -8em;
   }
   .home__jumbotron__content__right__img {
-    width: 150%;
-    margin-left: -50%;
+    width: 100%;
   }
   .home__jumbotron__svg1 {
     width: 50%;
