@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "dsmeglobal",
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "yarn build && firebase deploy --only hosting:dsmeglobal"
   },
   "dependencies": {
     "axios": "^0.27.2",
