@@ -186,7 +186,7 @@ body::-webkit-scrollbar-track {
 }
 .home__jumbotron__content__left__info {
   color: $text;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 2em;
   width: 100%;
   max-width: 500px;
@@ -1325,11 +1325,70 @@ textarea {
 }
 .about__jumbotron__info {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   padding: 0em 2em;
   color: $text;
   z-index: 1;
   line-height: 170%;
+}
+.about__ceo__message {
+  width: 100%;
+  padding: 7em 0em;
+}
+.about__ceo__message__content {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  display: flex;
+  align-items: center;
+  padding: 0em 2em;
+}
+.about__ceo__message__content__left {
+  width: 40%;
+}
+.about__ceo__message__content__left__heading {
+  font-size: 45px;
+  margin-bottom: 0.5em;
+}
+.about__ceo__message__content__left__info {
+  color: $text;
+  font-size: 16px;
+}
+.about__ceo__message__content__right {
+  margin-left: 5em;
+  width: 60%;
+  padding-left: 5em;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    $primary,
+    transparent,
+    transparent,
+    transparent
+  );
+  position: relative;
+  border-radius: 20px;
+}
+.about__ceo__message__content__right__img {
+  position: absolute;
+  top: calc(50% - 65px);
+  left: -65px;
+  width: 130px;
+  height: 130px;
+  border: 10px solid white;
+  outline: 10px solid rgba(255, 255, 255, 0.5);
+  border-radius: 120px;
+}
+.about__ceo__message__content__right__info {
+  font-size: 22px;
+  color: $black;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 3em;
+  font-weight: bold;
+  text-align: justify;
 }
 .footer {
   width: calc(100% - 4em);
@@ -1468,7 +1527,8 @@ textarea {
   .home__testmonials__heading,
   .home__help__heading,
   .home__blog__heading,
-  .about__jumbotron__heading {
+  .about__jumbotron__heading,
+  .about__ceo__message__content__left__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -1610,6 +1670,18 @@ textarea {
   .home__blog__content__entry:last-child {
     margin-top: 3em;
   }
+  .about__ceo__message__content {
+    flex-direction: column;
+  }
+  .about__ceo__message__content__left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .about__ceo__message__content__right {
+    width: 100%;
+    margin-left: 10em;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1690,6 +1762,23 @@ textarea {
   }
 }
 @media (max-width: 800px) {
+  .about__ceo__message__content__right {
+    margin-left: 0em;
+    margin-top: 4em;
+    background: linear-gradient($primary, transparent);
+    justify-content: center;
+    padding-left: 0em;
+    padding: 2em;
+  }
+  .about__ceo__message__content__right__img {
+    top: -60px;
+    left: calc(50% - 65px);
+  }
+  .about__ceo__message__content__right__info {
+    margin-left: 0em;
+    text-align: center;
+    margin-top: 3em;
+  }
   .footer__content__col {
     min-width: 100%;
     max-width: 100%;
@@ -1768,7 +1857,8 @@ textarea {
   .home__techonologies__content__left__heading,
   .home__testmonials__heading,
   .home__blog__heading,
-  .about__jumbotron__heading {
+  .about__jumbotron__heading,
+  .about__ceo__message__content__left__heading {
     font-size: 25px;
   }
   .home__help__content__entry {
