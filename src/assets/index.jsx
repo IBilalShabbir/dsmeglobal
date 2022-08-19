@@ -40,3 +40,5 @@ export { default as newsLetterSvg } from "./newsLetterSvg.svg";
 export { default as contactImage } from "./contactImage.svg";
 export { default as contactSvg } from "./contactSvg.svg";
 export { default as successSvg } from "./success.svg";
+export { default as footerSvg1 } from "./footerSvg1.svg";
+export { default as footerSvg2 } from "./footerSvg2.svg";
