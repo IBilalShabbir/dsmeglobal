@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { newsLetterSvg } from "../assets";
 
 export function HomeNewsletter({}) {
   const [email, setEmail] = useState("");
@@ -31,6 +32,11 @@ export function HomeNewsletter({}) {
 
   return (
     <div className="home__newsletter">
+      <img
+        src={newsLetterSvg}
+        alt="newsLetterSvg"
+        className="home__newsletter__svg"
+      />
       <div className="home__newsletter__content">
         <div className="home__newsletter__content__left">
           <div className="home__newsletter__content__left__heading heading">
