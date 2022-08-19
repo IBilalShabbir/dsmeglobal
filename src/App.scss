@@ -1517,6 +1517,71 @@ textarea {
   font-size: 18px;
   color: $text;
 }
+.about__team {
+  margin: 0em auto;
+  width: 100%;
+  max-width: 1366px;
+  padding: 7em 2em;
+}
+.about__team__heading {
+  font-size: 45px;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.about__team__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about__team__content__entry {
+  width: 16.6%;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: white;
+  transition: 300ms ease-in-out;
+}
+.about__team__content__entry__img {
+  width: 100%;
+  mix-blend-mode: luminosity;
+  min-height: 100%;
+}
+.about__team__content__entry__content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  padding: 1em;
+}
+.about__team__content__entry__content__heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.1em;
+  text-align: center;
+}
+.about__team__content__entry__content__info {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+.about__team__content__entry:hover {
+  transition: 300ms ease-in-out;
+  transform: scale(1.2);
+  z-index: 5;
+  border-radius: 10px;
+}
+.about__team__content__entry:hover .about__team__content__entry__content {
+  transition: 300ms ease-in-out;
+  background-color: rgb(36, 170, 108, 0.7);
+  opacity: 1;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -1556,7 +1621,8 @@ textarea {
   .home__blog__heading,
   .about__jumbotron__heading,
   .about__ceo__message__content__left__heading,
-  .about__our__entry__heading {
+  .about__our__entry__heading,
+  .about__team__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -1590,6 +1656,9 @@ textarea {
   }
 }
 @media (max-width: 1200px) {
+  .about__team__content__entry {
+    width: 20%;
+  }
   .home__stats__content__entry {
     min-width: 50%;
   }
@@ -1710,9 +1779,15 @@ textarea {
     width: 100%;
     margin-left: 10em;
   }
+  .about__team__content__entry {
+    width: 25%;
+  }
 }
 
 @media (max-width: 900px) {
+  .about__team__content__entry {
+    width: 33%;
+  }
   .about__our {
     flex-direction: column;
   }
@@ -1857,6 +1932,9 @@ textarea {
   }
 }
 @media (max-width: 650px) {
+  .about__team__content__entry {
+    width: 50%;
+  }
   .contact__content__left__row {
     flex-direction: column;
   }
@@ -1893,7 +1971,8 @@ textarea {
   .home__blog__heading,
   .about__jumbotron__heading,
   .about__ceo__message__content__left__heading,
-  .about__our__entry__heading {
+  .about__our__entry__heading,
+  .about__team__heading {
     font-size: 25px;
   }
   .home__help__content__entry {

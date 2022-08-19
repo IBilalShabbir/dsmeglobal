@@ -1,7 +1,8 @@
 import React from "react";
 import { AboutCeoMessage } from "../components/AboutCeoMessage";
 import { AboutJumbotron } from "../components/AboutJumbotron";
-import { AboutOur } from "./AboutOur";
+import { AboutOur } from "../components/AboutOur";
+import { AboutTeam } from "../components/AboutTeam";
 
 export default function About() {
   return (
@@ -9,6 +10,7 @@ export default function About() {
       <AboutJumbotron />
       <AboutCeoMessage />
       <AboutOur />
+      <AboutTeam />
     </>
   );
 }
