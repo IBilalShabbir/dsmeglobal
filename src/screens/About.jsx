@@ -4,6 +4,7 @@ import { AboutJumbotron } from "../components/AboutJumbotron";
 import { AboutOur } from "../components/AboutOur";
 import { AboutTeam } from "../components/AboutTeam";
 import { AboutDevelopmentProcess } from "../components/AboutDevelopmentProcess";
+import { AboutCoreValues } from "../components/AboutCoreValues";
 
 export default function About() {
   return (
@@ -13,6 +14,7 @@ export default function About() {
       <AboutOur />
       <AboutTeam />
       <AboutDevelopmentProcess />
+      <AboutCoreValues />
     </>
   );
 }

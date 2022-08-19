@@ -1610,6 +1610,61 @@ textarea {
   max-width: 1366px;
   margin: 0em auto;
 }
+.about__core__values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(#ebebeb, transparent, transparent);
+  margin-top: 5em;
+  padding: 7em 0em;
+}
+.about__core__values__heading {
+  font-size: 45px;
+  margin-bottom: 2em;
+}
+.about__core__values__content {
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  margin: 0em auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+.about__core__values__content__entry {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2.5em;
+  width: 23%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2em;
+}
+.about__core__values__content__entry__icon {
+  color: $primary;
+}
+.about__core__values__content__entry__icon svg {
+  height: 70px;
+}
+.about__core__values__content__entry__heading {
+  font-size: 22px;
+  color: $black;
+  margin: 0.7em 0em;
+  font-weight: bold;
+  font-family: Gilroy-ExtraBold, "jost", sans-serif;
+}
+.about__core__values__content__entry__info {
+  color: $text;
+  font-size: 16px;
+}
+.about__core__values__content__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+}
+.about__core__values__content__entry:hover * {
+  color: white;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -1651,7 +1706,8 @@ textarea {
   .about__ceo__message__content__left__heading,
   .about__our__entry__heading,
   .about__team__heading,
-  .about__our__development__process__heading {
+  .about__our__development__process__heading,
+  .about__core__values__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -1682,6 +1738,9 @@ textarea {
   }
   .footer {
     padding-bottom: 2em;
+  }
+  .about__core__values__content__entry {
+    width: 48%;
   }
 }
 @media (max-width: 1200px) {
@@ -1959,6 +2018,9 @@ textarea {
     margin-top: 3em;
     width: 100%;
   }
+  .about__core__values__content__entry {
+    width: 100%;
+  }
 }
 @media (max-width: 650px) {
   .about__team__content__entry {
@@ -2002,7 +2064,8 @@ textarea {
   .about__ceo__message__content__left__heading,
   .about__our__entry__heading,
   .about__team__heading,
-  .about__our__development__process__heading {
+  .about__our__development__process__heading,
+  .about__core__values__heading {
     font-size: 25px;
   }
   .home__help__content__entry {

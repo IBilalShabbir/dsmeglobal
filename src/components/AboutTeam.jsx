@@ -183,8 +183,9 @@ export function AboutTeam() {
         Teamwork, Makes the dream work
       </div>
       <div className="about__team__content">
-        {data?.map((item) => (
+        {data?.map((item, i) => (
           <AboutTeamCard
+            key={i}
             image={item.image}
             name={item.name}
             designation={item.designation}
