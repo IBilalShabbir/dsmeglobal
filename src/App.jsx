@@ -4,6 +4,7 @@ import "./App.scss";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import About from "./screens/About";
 import Home from "./screens/Home";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Contact />
       <Footer />
