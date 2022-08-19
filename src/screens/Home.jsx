@@ -1,16 +1,16 @@
 import React from "react";
-import { HomeServices } from "./HomeServices";
-import { HomeJumbtron } from "./HomeJumbtron";
-import { HomeStats } from "./HomeStats";
-import { HomeWork } from "./HomeWork";
-import { HomeTechnologies } from "./HomeTechnologies";
-import { HomeEngagement } from "./HomeEngagement";
-import { HomeDevelopmentProcess } from "./HomeDevelopmentProcess";
-import { HomeOurTechnologies } from "./HomeOurTechnologies";
-import { HomeTestimonials } from "./HomeTestimonials";
-import { HomeHelp } from "./HomeHelp";
-import { HomeBlog } from "./HomeBlog";
-import { HomeNewsletter } from "./HomeNewsletter";
+import { HomeServices } from "../components/HomeServices";
+import { HomeJumbtron } from "../components/HomeJumbtron";
+import { HomeStats } from "../components/HomeStats";
+import { HomeWork } from "../components/HomeWork";
+import { HomeTechnologies } from "../components/HomeTechnologies";
+import { HomeEngagement } from "../components/HomeEngagement";
+import { HomeDevelopmentProcess } from "../components/HomeDevelopmentProcess";
+import { HomeOurTechnologies } from "../components/HomeOurTechnologies";
+import { HomeTestimonials } from "../components/HomeTestimonials";
+import { HomeHelp } from "../components/HomeHelp";
+import { HomeBlog } from "../components/HomeBlog";
+import { HomeNewsletter } from "../components/HomeNewsletter";
 
 export default function Home() {
   return (

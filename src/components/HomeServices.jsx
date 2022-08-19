@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
-import { HomeServicesCard } from "../components/HomeServicesCard";
+import { HomeServicesCard } from "./HomeServicesCard";
 import {
   webDevServiceImage,
   staffAugmentationServiceImage,

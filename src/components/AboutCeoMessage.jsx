@@ -1,7 +1,7 @@
 import React from "react";
 import { ceo } from "../assets";
 
-export function AboutCeoMessage({}) {
+export function AboutCeoMessage() {
   return (
     <div className="about__ceo__message">
       <div className="about__ceo__message__content">

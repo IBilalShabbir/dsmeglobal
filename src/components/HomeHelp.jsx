@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import { HomeHelpEntry } from "./HomeHelpEntry";
 import {
   amazingUIUX,
   helpSloganSvg,
@@ -7,7 +8,6 @@ import {
   oneStopSolution,
   specializedExperts,
 } from "../assets";
-import { HomeHelpEntry } from "../components/HomeHelpEntry";
 
 export function HomeHelp() {
   return (
