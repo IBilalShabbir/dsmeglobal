@@ -7,6 +7,9 @@ import { AboutDevelopmentProcess } from "../components/AboutDevelopmentProcess";
 import { AboutCoreValues } from "../components/AboutCoreValues";
 import { AboutOurPromise } from "../components/AboutOurPromise";
 import { AboutKeyDifferences } from "../components/AboutKeyDifferences";
+import { AboutEndeavors } from "../components/AboutEndeavors";
+import { AboutPressRelease } from "../components/AboutPressRelease";
+import { AboutAchievements } from "../components/AboutAchievements";
 
 export default function About() {
   return (
@@ -19,6 +22,9 @@ export default function About() {
       <AboutCoreValues />
       <AboutOurPromise />
       <AboutKeyDifferences />
+      <AboutEndeavors />
+      <AboutPressRelease />
+      <AboutAchievements />
     </>
   );
 }

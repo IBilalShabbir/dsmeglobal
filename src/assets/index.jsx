@@ -48,3 +48,4 @@ export { default as ourMission } from "./ourMission.svg";
 export { default as agileProcess } from "./agileProcess.png";
 export { default as teamSvg } from "./teamSvg.svg";
 export { default as differencesSvg } from "./differencesSvg.svg";
+export { default as endeavor } from "./endeavor.png";

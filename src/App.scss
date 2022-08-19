@@ -1419,7 +1419,7 @@ textarea {
 }
 .footer {
   width: calc(100% - 4em);
-  padding: 5em 3em;
+  padding: 5em 1em;
   background-color: $black;
   border-radius: 10px;
   margin: 2em;
@@ -1441,6 +1441,7 @@ textarea {
   width: 100%;
   max-width: 1366px;
   margin: 0em auto;
+  padding: 0em 2em;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1870,6 +1871,81 @@ textarea {
   font-size: 16px;
   margin-top: 0.3em;
 }
+.about__endeavors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7em;
+}
+.about__endeavors__heading {
+  font-size: 45px;
+  margin-bottom: 1em;
+  padding: 0em 2em;
+  text-align: center;
+}
+.about__endeavors__content {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 0em 2em;
+}
+.about__endeavors__content img {
+  width: 100%;
+}
+.about__press__releases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7em;
+}
+.about__press__releases__heading {
+  font-size: 45px;
+  margin-bottom: 1em;
+  padding: 0em 2em;
+  text-align: center;
+}
+.about__press__releases__content {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 0em 2em;
+}
+.about__press__releases__content img {
+  width: 100%;
+}
+.about__achievements__awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__achievements__awards__heading {
+  font-size: 45px;
+  margin-bottom: 0.5em;
+  padding: 0em 2em;
+  text-align: center;
+}
+.about__achievements__awards__info {
+  color: $text;
+  margin-bottom: 3em;
+  padding: 0em 2em;
+  text-align: center;
+}
+.about__achievements__awards__content {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 0em 2em;
+}
+.about__achievements__awards__content__entry {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__achievements__awards__content__entry img {
+  width: 300px;
+  max-width: 100%;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -1914,7 +1990,10 @@ textarea {
   .about__our__development__process__heading,
   .about__core__values__heading,
   .about__our__promise__heading,
-  .about__key__differences__heading {
+  .about__key__differences__heading,
+  .about__endeavors__heading,
+  .about__press__releases__heading,
+  .about__achievements__awards__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -2304,8 +2383,15 @@ textarea {
   .about__our__development__process__heading,
   .about__core__values__heading,
   .about__our__promise__heading,
-  .about__key__differences__heading {
+  .about__key__differences__heading,
+  .about__endeavors__heading,
+  .about__press__releases__heading,
+  .about__achievements__awards__heading,
+  .contact__content__left__heading {
     font-size: 25px;
+  }
+  .contact__content__left__heading {
+    margin-bottom: 2em;
   }
   .home__help__content__entry {
     flex-direction: column;
