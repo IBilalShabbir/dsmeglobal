@@ -1736,6 +1736,140 @@ textarea {
   transition: 300ms ease-in-out;
   background: $primary;
 }
+.about__key__differences {
+  background-color: #181818;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em 0em;
+  margin: 7em 0em;
+}
+.about__key__differences__heading {
+  font-size: 45px;
+  margin-bottom: 0.5em;
+  color: white;
+  text-align: center;
+  padding: 0em 2em;
+}
+.about__key__differences__info {
+  color: $text;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  padding: 0em 2em;
+  margin-bottom: 2em;
+}
+.about__key__differences__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  flex-wrap: wrap;
+  margin: 0em auto;
+  padding: 2em;
+  justify-content: space-between;
+}
+.about__key__differences__content__card {
+  width: 30%;
+  margin-bottom: 3em;
+  position: relative;
+  z-index: 3;
+}
+.about__key__differences__content__card__content {
+  background-color: #2c2b2b;
+  padding: 2em;
+  border-radius: 10px;
+}
+.about__key__differences__content__card__icon {
+  color: $primary;
+}
+.about__key__differences__content__card__heading {
+  margin: 0.7em 0em;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+.about__key__differences__content__card__info {
+  color: $text;
+  min-height: 90px;
+}
+.about__key__differences__content__card::before {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+  z-index: -1;
+  border-radius: 10px;
+}
+.about__key__differences__content__card::after {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(46, 46, 46, 0.2);
+  z-index: -2;
+  border-radius: 10px;
+}
+.about__key__differences__content__card:hover
+  .about__key__differences__content__card__content {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+}
+.about__key__differences__content__card:hover
+  .about__key__differences__content__card__content
+  * {
+  color: white;
+}
+.about__key__differences__content__card:hover::before {
+  transition: 300ms ease-in-out;
+  background-color: rgb(15, 170, 97, 0.5);
+}
+.about__key__differences__content__card:hover::after {
+  transition: 300ms ease-in-out;
+  background-color: rgb(15, 170, 97, 0.2);
+}
+.about__key__differences__featuers {
+  width: 90%;
+  max-width: 1000px;
+  padding: 3em 16em;
+  padding-right: 0em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $text;
+  padding-bottom: 1em;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+.about__key__differences__featuers__svg {
+  position: absolute;
+  top: -50px;
+  left: -100px;
+}
+.about__key__differences__featuers__entry {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  font-style: italic;
+  height: 70px;
+  color: white;
+  font-family: Gilroy-Light, "jost", sans-serif;
+  font-weight: bolder;
+}
+.about__key__differences__featuers__entry span {
+  font-size: 16px;
+  margin-top: 0.3em;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -1778,7 +1912,9 @@ textarea {
   .about__our__entry__heading,
   .about__team__heading,
   .about__our__development__process__heading,
-  .about__core__values__heading {
+  .about__core__values__heading,
+  .about__our__promise__heading,
+  .about__key__differences__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -1832,6 +1968,9 @@ textarea {
   }
 }
 @media (max-width: 1100px) {
+  .about__key__differences__content__card {
+    width: 48%;
+  }
   .contact {
     height: fit-content;
     max-height: fit-content;
@@ -1941,6 +2080,13 @@ textarea {
   .about__team__content__entry {
     width: 25%;
   }
+  .about__key__differences__featuers__svg {
+    top: calc(50% - 150px);
+    height: 300px;
+  }
+  .about__key__differences__featuers__entry {
+    width: 100%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -2034,6 +2180,22 @@ textarea {
   }
 }
 @media (max-width: 800px) {
+  .about__key__differences__content__card {
+    width: 100%;
+    margin-right: 1em;
+  }
+  .about__key__differences__featuers {
+    padding: 3em;
+    margin-top: 2em;
+    padding-bottom: 1em;
+  }
+  .about__key__differences__featuers__svg {
+    display: none;
+  }
+  .about__key__differences__featuers__entry {
+    height: fit-content;
+    margin-bottom: 1.5em;
+  }
   .about__ceo__message__content__right {
     margin-left: 0em;
     margin-top: 4em;
@@ -2140,7 +2302,9 @@ textarea {
   .about__our__entry__heading,
   .about__team__heading,
   .about__our__development__process__heading,
-  .about__core__values__heading {
+  .about__core__values__heading,
+  .about__our__promise__heading,
+  .about__key__differences__heading {
     font-size: 25px;
   }
   .home__help__content__entry {
