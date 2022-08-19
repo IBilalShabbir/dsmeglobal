@@ -3,6 +3,7 @@ import { AboutCeoMessage } from "../components/AboutCeoMessage";
 import { AboutJumbotron } from "../components/AboutJumbotron";
 import { AboutOur } from "../components/AboutOur";
 import { AboutTeam } from "../components/AboutTeam";
+import { AboutDevelopmentProcess } from "../components/AboutDevelopmentProcess";
 
 export default function About() {
   return (
@@ -11,6 +12,7 @@ export default function About() {
       <AboutCeoMessage />
       <AboutOur />
       <AboutTeam />
+      <AboutDevelopmentProcess />
     </>
   );
 }

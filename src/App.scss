@@ -1523,6 +1523,12 @@ textarea {
   max-width: 1366px;
   padding: 7em 2em;
 }
+.about__team__svg {
+  position: absolute;
+  left: 0px;
+  margin-top: -10em;
+  width: 200px;
+}
 .about__team__heading {
   font-size: 45px;
   margin-bottom: 1.5em;
@@ -1582,6 +1588,28 @@ textarea {
   background-color: rgb(36, 170, 108, 0.7);
   opacity: 1;
 }
+.about__our__development__process {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.about__our__development__process__svg {
+  position: absolute;
+  top: -150px;
+  right: 0px;
+  z-index: -1;
+}
+.about__our__development__process__heading {
+  font-size: 45px;
+  margin-bottom: 1em;
+}
+.about__our__development__process__img {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -1622,7 +1650,8 @@ textarea {
   .about__jumbotron__heading,
   .about__ceo__message__content__left__heading,
   .about__our__entry__heading,
-  .about__team__heading {
+  .about__team__heading,
+  .about__our__development__process__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -1972,7 +2001,8 @@ textarea {
   .about__jumbotron__heading,
   .about__ceo__message__content__left__heading,
   .about__our__entry__heading,
-  .about__team__heading {
+  .about__team__heading,
+  .about__our__development__process__heading {
     font-size: 25px;
   }
   .home__help__content__entry {

@@ -45,4 +45,5 @@ export { default as footerSvg2 } from "./footerSvg2.svg";
 export { default as ceo } from "./ceo.png";
 export { default as ourVision } from "./ourVision.svg";
 export { default as ourMission } from "./ourMission.svg";
-export { default as agileProcess } from "./agileProcess.webp";
+export { default as agileProcess } from "./agileProcess.png";
+export { default as teamSvg } from "./teamSvg.svg";
