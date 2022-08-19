@@ -1177,7 +1177,132 @@ body::-webkit-scrollbar-track {
   background-color: $primary-hover;
 }
 .contact {
+  position: relative;
+  height: 100vh;
+  max-height: 1000px;
+}
+.contact__content {
+  display: flex;
+  align-items: center;
   width: 100%;
+  height: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  margin: 0em auto;
+  justify-content: space-between;
+}
+.contact__content__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4em;
+}
+.contact__content__left__heading {
+  font-size: 45px;
+  margin-bottom: 1em;
+}
+.contact__content__left__row {
+  display: flex;
+  align-items: center;
+}
+.contact__content__left__row .contact__content__left__input:first-child {
+  margin-right: 1em;
+}
+.contact__content__left__input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5em;
+  min-height: 45px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: 1px solid transparent;
+  border-radius: 5px;
+}
+.contact__content__left__input__field {
+  height: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0em 1em;
+  background-color: transparent;
+  width: 100%;
+}
+textarea {
+  font-size: 16px;
+  resize: none;
+  max-height: 180px;
+}
+.contact__content__left__input__label {
+  position: absolute;
+  top: -28px;
+}
+.contact__content__left__input__label span {
+  color: red;
+}
+.contact__content__left__input__error {
+  position: absolute;
+  top: -28px;
+  right: 0px;
+  color: red;
+  font-size: 16px;
+}
+.contact__content__right {
+  flex: 1;
+  position: relative;
+}
+.contact__content__right__svg {
+  position: absolute;
+  width: 400px;
+  top: -100px;
+  left: -100px;
+  z-index: -1;
+}
+.contact__content__right__img {
+  max-width: 100%;
+}
+.contact__content__left__input:hover {
+  border-color: $primary;
+  outline-color: $primary;
+}
+.contact__content__left__input:focus-within {
+  border-color: $primary;
+  outline-color: $primary;
+}
+.contact__content__left__button {
+  margin-left: auto;
+  height: 45px;
+  padding: 0em 3em;
+  background-color: $primary;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.contact__content__left__button:hover {
+  background-color: $primary-hover;
+}
+.contact__overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact__overlay__img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 2em;
+}
+.contact__overlay__heading {
+  font-size: 20px;
+  font-weight: bold;
 }
 @media (max-width: 1550px) {
   .home__stats {
@@ -1254,6 +1379,20 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 1100px) {
+  .contact {
+    height: fit-content;
+    max-height: fit-content;
+    padding: 7em 0em;
+  }
+  .contact__content__left__row {
+    flex-direction: column;
+  }
+  .contact__content__left__row .contact__content__left__input {
+    width: 100%;
+  }
+  .contact__content__left__row .contact__content__left__input:first-child {
+    margin-right: 0em;
+  }
   .home__work__item {
     flex-direction: column;
   }
@@ -1337,6 +1476,21 @@ body::-webkit-scrollbar-track {
 }
 
 @media (max-width: 900px) {
+  .contact__content__left {
+    margin-right: 0em;
+  }
+  .contact__content__right {
+    display: none;
+  }
+  .contact__content__left__row {
+    flex-direction: row;
+  }
+  .contact__content__left__row .contact__content__left__input {
+    width: 100%;
+  }
+  .contact__content__left__row .contact__content__left__input:first-child {
+    margin-right: 1em;
+  }
   .home__techonologies__content {
     flex-direction: column;
     margin-top: -3em;
@@ -1436,6 +1590,12 @@ body::-webkit-scrollbar-track {
   }
 }
 @media (max-width: 650px) {
+  .contact__content__left__row {
+    flex-direction: column;
+  }
+  .contact__content__left__row .contact__content__left__input:first-child {
+    margin-right: 0em;
+  }
   .home__help__slogan {
     font-size: 30px;
   }

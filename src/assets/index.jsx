@@ -38,3 +38,5 @@ export { default as helpSloganSvg } from "./helpSloganSvg.svg";
 export { default as helpSvg } from "./helpSvg.svg";
 export { default as newsLetterSvg } from "./newsLetterSvg.svg";
 export { default as contactImage } from "./contactImage.svg";
+export { default as contactSvg } from "./contactSvg.svg";
+export { default as successSvg } from "./success.svg";

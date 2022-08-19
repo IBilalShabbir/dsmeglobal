@@ -16,9 +16,12 @@ export function HomeNewsletter({}) {
       setError("");
       setSuccess(true);
       axios
-        .post("https://dsmeglobal-api.herokuapp.com/api/v1/set_news_letter", {
-          email: email,
-        })
+        .post(
+          import.meta.env.VITE_REACT_APP_API_URL + "api/v1/set_news_letter",
+          {
+            email: email,
+          }
+        )
         .then(() => {
           setEmail("");
         });
