@@ -1616,7 +1616,7 @@ textarea {
   align-items: center;
   width: 100%;
   position: relative;
-  background: linear-gradient(#ebebeb, transparent, transparent);
+  background: linear-gradient(#ebebeb, transparent);
   margin-top: 5em;
   padding: 7em 0em;
 }
@@ -1664,6 +1664,77 @@ textarea {
 }
 .about__core__values__content__entry:hover * {
   color: white;
+}
+.about__our__promise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -2em;
+  margin-bottom: 3em;
+}
+.about__our__promise__heading {
+  font-size: 45px;
+  margin-bottom: 0.2em;
+}
+.about__our__promise__info {
+  font-size: 16px;
+  color: $text;
+  margin-bottom: 4em;
+}
+.about__our__promise__content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  padding-right: 0em;
+}
+.about__our__promise__content__entry {
+  width: calc(50% - 4em);
+  padding: 2em 2.5em;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 2em;
+  font-style: italic;
+  margin-right: 4em;
+}
+.about__our__promise__content__entry::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 105%;
+  height: 105%;
+  background: linear-gradient(90deg, $text, transparent);
+  border-radius: 10px;
+}
+.about__our__promise__content__entry__number {
+  font-size: 30px;
+  margin-right: 1em;
+  color: $primary;
+}
+.about__our__promise__content__entry__content__heading {
+  font-size: 25px;
+  font-family: Gilroy-ExtraBold, "jost", sans-serif;
+  margin-bottom: 0.1em;
+}
+.about__our__promise__content__entry__content__info {
+  color: $primary;
+  font-weight: bold;
+}
+.about__our__promise__content__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+}
+.about__our__promise__content__entry:hover * {
+  color: white;
+}
+.about__our__promise__content__entry:hover::before {
+  transition: 300ms ease-in-out;
+  background: $primary;
 }
 @media (max-width: 1550px) {
   .home__stats {
@@ -1873,6 +1944,10 @@ textarea {
 }
 
 @media (max-width: 900px) {
+  .about__our__promise__content__entry {
+    width: 100%;
+    margin-right: 3em;
+  }
   .about__team__content__entry {
     width: 33%;
   }
