@@ -1349,6 +1349,8 @@ textarea {
 .about__ceo__message__content__left__heading {
   font-size: 45px;
   margin-bottom: 0.5em;
+  width: 100%;
+  max-width: 400px;
 }
 .about__ceo__message__content__left__info {
   color: $text;
@@ -1389,6 +1391,31 @@ textarea {
   margin-left: 3em;
   font-weight: bold;
   text-align: justify;
+}
+.about__our {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0em auto;
+  padding: 0em 2em;
+}
+.about__our__entry {
+  background: linear-gradient(transparent, #dddddd);
+  width: 48%;
+  padding: 3em;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about__our__entry__img {
+  width: 200px;
+}
+.about__our__entry__heading {
+  font-size: 40px;
+  margin: 0.7em 0em;
 }
 .footer {
   width: calc(100% - 4em);
@@ -1528,7 +1555,8 @@ textarea {
   .home__help__heading,
   .home__blog__heading,
   .about__jumbotron__heading,
-  .about__ceo__message__content__left__heading {
+  .about__ceo__message__content__left__heading,
+  .about__our__entry__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -1685,6 +1713,12 @@ textarea {
 }
 
 @media (max-width: 900px) {
+  .about__our {
+    flex-direction: column;
+  }
+  .about__our__entry {
+    width: 100%;
+  }
   .contact__content__left {
     margin-right: 0em;
   }
@@ -1858,7 +1892,8 @@ textarea {
   .home__testmonials__heading,
   .home__blog__heading,
   .about__jumbotron__heading,
-  .about__ceo__message__content__left__heading {
+  .about__ceo__message__content__left__heading,
+  .about__our__entry__heading {
     font-size: 25px;
   }
   .home__help__content__entry {

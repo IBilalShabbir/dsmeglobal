@@ -43,3 +43,5 @@ export { default as successSvg } from "./success.svg";
 export { default as footerSvg1 } from "./footerSvg1.svg";
 export { default as footerSvg2 } from "./footerSvg2.svg";
 export { default as ceo } from "./ceo.png";
+export { default as ourVision } from "./ourVision.svg";
+export { default as ourMission } from "./ourMission.svg";
