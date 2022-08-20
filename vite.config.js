@@ -4,6 +4,7 @@ import viteCompression from "vite-plugin-compression";
 import { ViteWebfontDownload } from "vite-plugin-webfont-dl";
 import { chunkSplitPlugin } from "vite-plugin-chunk-split";
 import viteImagemin from "vite-plugin-imagemin";
+import { qrcode } from "vite-plugin-qrcode";
 import { webUpdateNotice } from "@plugin-web-update-notification/vite";
 
 // https://vitejs.dev/config/
@@ -13,6 +14,7 @@ export default defineConfig({
     viteCompression(),
     ViteWebfontDownload(),
     chunkSplitPlugin(),
+    qrcode(),
     webUpdateNotice({
       logVersion: true,
     }),

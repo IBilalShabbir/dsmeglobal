@@ -2538,6 +2538,11 @@ pump@^3.0.0:
     end-of-stream "^1.1.0"
     once "^1.3.1"
 
+qrcode-terminal@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/qrcode-terminal/-/qrcode-terminal-0.12.0.tgz#bb5b699ef7f9f0505092a3748be4464fe71b5819"
+  integrity sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==
+
 query-string@^5.0.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-5.1.1.tgz#a78c012b71c17e05f2e3fa2319dd330682efb3cb"
@@ -3213,6 +3218,13 @@ vite-plugin-imagemin@^0.6.1:
     imagemin-webp "^6.0.0"
     jpegtran-bin "^6.0.1"
     pathe "^0.2.0"
+
+vite-plugin-qrcode@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-qrcode/-/vite-plugin-qrcode-0.2.0.tgz#40f957dd088caa817800b5b8cf0ae5d4663d0d00"
+  integrity sha512-R+0gK9BbYjxLXc9rQd3Y+6EME9QK/HMYdDd28+PZ+qisqS8/yhmZJuFshk+RmA9fP2YYu8u2yS5u+TvbsY5PFw==
+  dependencies:
+    qrcode-terminal "^0.12.0"
 
 vite-plugin-webfont-dl@^3.1.1:
   version "3.1.1"
