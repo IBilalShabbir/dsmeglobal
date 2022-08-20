@@ -1948,8 +1948,10 @@ textarea {
   align-items: center;
 }
 .about__achievements__awards__content__entry img {
-  width: 300px;
+  width: 150px;
+  height: 150px;
   max-width: 100%;
+  user-select: none;
 }
 @media (max-width: 1550px) {
   .home__stats {

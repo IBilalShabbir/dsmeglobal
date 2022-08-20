@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { endeavor } from "../assets";
+import useSWR from "swr";
+import { fetcher } from "../utils/fetcher";
 
 export function AboutAchievements() {
+  const { data } = useSWR(
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_award`,
+    fetcher
+  );
   const [slidesPerView, setSlidesPerView] = useState(3);
   useEffect(() => {
     if (window.innerWidth < 768) {
@@ -36,69 +42,55 @@ export function AboutAchievements() {
         platforms.
       </div>
       <div className="about__achievements__awards__content">
-        <Swiper slidesPerView={slidesPerView} spaceBetween={30}>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
+        <Swiper
+          slidesPerView={slidesPerView}
+          spaceBetween={30}
+          loop
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: true,
+            waitForTransition: true,
+          }}
+        >
+          {data
+            ?.filter((item, i) => i % 2 !== 0)
+            ?.map((item) => (
+              <SwiperSlide>
+                <div className="about__achievements__awards__content__entry">
+                  <img
+                    src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
+                    alt="endeavor"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
         </Swiper>
-        <Swiper slidesPerView={slidesPerView} spaceBetween={30}>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="about__achievements__awards__content__entry">
-              <img src={endeavor} alt="endeavor" />
-            </div>
-          </SwiperSlide>
+        <Swiper
+          slidesPerView={slidesPerView}
+          spaceBetween={30}
+          style={{ marginTop: "2em" }}
+          loop
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: true,
+            reverseDirection: true,
+            waitForTransition: true,
+          }}
+        >
+          {data
+            ?.filter((item, i) => i % 2 === 0)
+            ?.map((item) => (
+              <SwiperSlide>
+                <div className="about__achievements__awards__content__entry">
+                  <img
+                    src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
+                    alt="endeavor"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
         </Swiper>
       </div>
     </div>

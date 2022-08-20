@@ -7,6 +7,7 @@ import About from "./screens/About";
 import Home from "./screens/Home";
 import "./App.scss";
 import "swiper/scss";
+import "swiper/scss/autoplay";
 
 export default function App() {
   return (

@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { endeavor } from "../assets";
+import useSWR from "swr";
+import { fetcher } from "../utils/fetcher";
 
 export function AboutPressRelease() {
+  const { data } = useSWR(
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_press_release`,
+    fetcher
+  );
   const [slidesPerView, setSlidesPerView] = useState(3);
   useEffect(() => {
     if (window.innerWidth < 768) {
@@ -30,24 +35,14 @@ export function AboutPressRelease() {
       </div>
       <div className="about__press__releases__content">
         <Swiper slidesPerView={slidesPerView}>
-          <SwiperSlide>
-            <img src={endeavor} alt="endeavor" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={endeavor} alt="endeavor" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={endeavor} alt="endeavor" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={endeavor} alt="endeavor" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={endeavor} alt="endeavor" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={endeavor} alt="endeavor" />
-          </SwiperSlide>
+          {data?.map((item) => (
+            <SwiperSlide>
+              <img
+                src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
+                alt="press"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
