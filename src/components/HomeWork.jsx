@@ -75,7 +75,11 @@ export function HomeWork() {
           </div>
         ))}
       </div>
-      <NavLink to="/portfolio" className="home__work__button">
+      <NavLink
+        to="/portfolio"
+        title="View All Projects"
+        className="home__work__button"
+      >
         View All Projects
       </NavLink>
     </div>

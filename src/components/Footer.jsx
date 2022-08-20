@@ -23,16 +23,32 @@ export default function Footer() {
             development company. Let’s work together
           </div>
           <div className="footer__content__col__socials">
-            <a href="#" className="footer__content__col__socials__link">
+            <a
+              href="#"
+              title="Facebook"
+              className="footer__content__col__socials__link"
+            >
               <Facebook size={20} color="currentColor" />
             </a>
-            <a href="#" className="footer__content__col__socials__link">
+            <a
+              href="#"
+              title="Twitter"
+              className="footer__content__col__socials__link"
+            >
               <Twitter size={20} color="currentColor" />
             </a>
-            <a href="#" className="footer__content__col__socials__link">
+            <a
+              href="#"
+              title="Instagram"
+              className="footer__content__col__socials__link"
+            >
               <Instagram size={20} color="currentColor" />
             </a>
-            <a href="#" className="footer__content__col__socials__link">
+            <a
+              href="#"
+              title="Linkedin"
+              className="footer__content__col__socials__link"
+            >
               <Linkedin size={20} color="currentColor" />
             </a>
           </div>
@@ -88,18 +104,34 @@ export default function Footer() {
         <div className="footer__content__col">
           <div className="footer__content__col__heading">Contact</div>
           <div className="footer__content__col__row">
-            <a href="#" className="footer__content__col__row__link">
+            <a
+              href="#"
+              title="354 454 5344 343"
+              className="footer__content__col__row__link"
+            >
               354 454 5344 343
             </a>
-            <a href="#" className="footer__content__col__row__link">
+            <a
+              href="#"
+              title="354 454 5344 343"
+              className="footer__content__col__row__link"
+            >
               354 454 5344 343
             </a>
           </div>
           <div className="footer__content__col__row">
-            <a href="#" className="footer__content__col__row__link">
+            <a
+              href="#"
+              title="hello@dsme.com"
+              className="footer__content__col__row__link"
+            >
               hello@dsme.com
             </a>
-            <a href="#" className="footer__content__col__row__link">
+            <a
+              href="#"
+              title="info@dsme.com"
+              className="footer__content__col__row__link"
+            >
               info@dsme.com
             </a>
           </div>

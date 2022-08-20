@@ -60,6 +60,7 @@ export default function Contact() {
             <Input
               type="text"
               label="Name"
+              title="Name"
               placeholder="Enter Name"
               required={true}
               value={name}
@@ -68,6 +69,7 @@ export default function Contact() {
             <Input
               type="text"
               label="Company Name (Optional)"
+              title="Company"
               placeholder="Type your company name"
               value={company}
               onChange={(e) => setCompany(e.target.value)}
@@ -77,6 +79,7 @@ export default function Contact() {
             <Input
               type="email"
               label="Email"
+              title="Email"
               placeholder="Enter Email"
               required={true}
               value={email}
@@ -85,6 +88,7 @@ export default function Contact() {
             <Input
               type="tel"
               label="Mobile (Optional)"
+              title="Mobile"
               placeholder="Enter Mobile"
               value={mobile}
               onChange={(e) => setMobile(e.target.value)}
@@ -93,6 +97,7 @@ export default function Contact() {
           <Input
             type="text"
             label="Subject"
+            title="Subject"
             placeholder="Enter Subject"
             required={true}
             value={subject}
@@ -101,12 +106,16 @@ export default function Contact() {
           <Input
             textarea
             label="How can we help you"
+            title="Message"
             placeholder="Give us some details about your project"
             required={true}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <button className="contact__content__left__button">
+          <button
+            title="Let’s Start a Conversation"
+            className="contact__content__left__button"
+          >
             Let’s Start a Conversation
           </button>
         </form>

@@ -78,6 +78,7 @@ export function HomeJumbtron() {
           </div>
           <NavLink
             to="/quote"
+            title="Get a quote"
             className="home__jumbotron__content__left__button"
           >
             Get a quote

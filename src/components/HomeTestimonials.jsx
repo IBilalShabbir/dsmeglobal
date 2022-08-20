@@ -46,6 +46,7 @@ export function HomeTestimonials() {
                 type="radio"
                 name="home__testmonials__content__users"
                 defaultChecked={i === 0}
+                title={item.image}
                 className="home__testmonials__content__users__entry__input"
               />
               <img

@@ -122,6 +122,7 @@ export default function Header() {
             onClick={() => {
               setIsOpen(!isOpen);
             }}
+            title={isOpen ? "Close" : "Open"}
           >
             {isOpen ? (
               <X size={20} color="currentColor" />
@@ -129,7 +130,11 @@ export default function Header() {
               <Menu size={20} color="currentColor" />
             )}
           </button>
-          <NavLink to="/quote" className="header__content__cta__button">
+          <NavLink
+            to="/quote"
+            title="Get a quote"
+            className="header__content__cta__button"
+          >
             Get a quote
           </NavLink>
         </div>

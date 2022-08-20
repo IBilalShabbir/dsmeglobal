@@ -28,6 +28,7 @@ export function HomeBlog({}) {
                 navigate("/blog-details");
                 window.localStorage.setItem("blogsData", JSON.stringify(blog));
               }}
+              title={item.title}
             >
               <img
                 src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}

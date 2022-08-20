@@ -68,7 +68,11 @@ export function HomeServices() {
           />
         ))}
       </div>
-      <NavLink to="/services" className="home__services__button">
+      <NavLink
+        to="/services"
+        title="View all services"
+        className="home__services__button"
+      >
         View all services
       </NavLink>
     </section>

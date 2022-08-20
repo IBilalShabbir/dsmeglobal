@@ -59,6 +59,7 @@ export function HomeNewsletter({}) {
               type="email"
               placeholder="Please Enter Your Email"
               value={email}
+              title="Email"
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
@@ -75,7 +76,10 @@ export function HomeNewsletter({}) {
               </div>
             ) : null}
           </div>
-          <button className="home__newsletter__content__right__button">
+          <button
+            title="Subscribe"
+            className="home__newsletter__content__right__button"
+          >
             Subscribe
           </button>
         </form>
