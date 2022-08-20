@@ -313,6 +313,18 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@plugin-web-update-notification/core@0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@plugin-web-update-notification/core/-/core-0.4.2.tgz#8d2e1c30081785eec0e3b22736caccdbca3093e0"
+  integrity sha512-mrPtXUyOSJKfhjX2Sj23I3Qb9N3/r+3WIeodXmP1qU3XbXChbPa+jsU0mmIbYJbgK6Bb+gJhkSQHstzQmqv1tQ==
+
+"@plugin-web-update-notification/vite@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@plugin-web-update-notification/vite/-/vite-0.4.2.tgz#a11bb26b415463d57057a253ac6e952ae2437afc"
+  integrity sha512-H/A/3zpqeNmlRVz38XAGuTrR/uBMaSo8i3S1BqMP+AHl4vGZGsCsz94hV+R5DXDCcpmYdw9EC0PKB7U3sd3qVg==
+  dependencies:
+    "@plugin-web-update-notification/core" "0.4.2"
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
@@ -443,6 +455,11 @@
     "@babel/plugin-transform-react-jsx-source" "^7.18.6"
     magic-string "^0.26.2"
     react-refresh "^0.14.0"
+
+add@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
+  integrity sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==
 
 ansi-regex@^2.0.0:
   version "2.1.1"
