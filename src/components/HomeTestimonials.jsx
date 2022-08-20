@@ -1,48 +1,18 @@
 import React, { useEffect, useState } from "react";
+import useSWR from "swr";
 import { testimonialSvg } from "../assets";
+import { fetcher } from "../utils/fetcher";
 
-export function HomeTestimonials({}) {
+export function HomeTestimonials() {
+  const { data } = useSWR(
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_testimonial`,
+    fetcher
+  );
   const [seletedData, setSelectedData] = useState([]);
-  const data = [
-    {
-      img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      name: "Fahad Ayyaz",
-      designation: "Designer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-    },
-    {
-      img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      name: "Bilal Shabbir",
-      designation: "Developer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-    },
-    {
-      img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      name: "Mehfooz",
-      designation: "Developer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-    },
-    {
-      img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      name: "Asim Rasheed",
-      designation: "Designer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-    },
-    {
-      img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      name: "Arslan",
-      designation: "Designer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-    },
-  ];
+
   useEffect(() => {
     data
-      .filter((item, i) => i === 0)
+      ?.filter((item, i) => i === 0)
       .map((item) => {
         setSelectedData(item);
       });
@@ -64,7 +34,7 @@ export function HomeTestimonials({}) {
       </div>
       <div className="home__testmonials__content">
         <div className="home__testmonials__content__users">
-          {data.map((item, i) => (
+          {data?.map((item, i) => (
             <div
               className="home__testmonials__content__users__entry"
               key={i}
@@ -75,10 +45,11 @@ export function HomeTestimonials({}) {
               <input
                 type="radio"
                 name="home__testmonials__content__users"
+                defaultChecked={i === 0}
                 className="home__testmonials__content__users__entry__input"
               />
               <img
-                src={item.img}
+                src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
                 alt="user"
                 className="home__testmonials__content__users__entry__img"
               />
@@ -87,7 +58,7 @@ export function HomeTestimonials({}) {
         </div>
         <div className="home__testmonials__content__details">
           <div className="home__testmonials__content__details__info">
-            {seletedData.message}
+            {seletedData.content}
           </div>
           <div className="home__testmonials__content__details__heading">
             {seletedData.name}
