@@ -52,6 +52,8 @@ export function HomeTestimonials() {
               <img
                 src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
                 alt="user"
+                width={100}
+                height={100}
                 className="home__testmonials__content__users__entry__img"
               />
             </div>
