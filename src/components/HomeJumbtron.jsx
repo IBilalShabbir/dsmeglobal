@@ -28,7 +28,7 @@ export function HomeJumbtron() {
   useEffect(() => {
     setTimeout(() => {
       setIndex(index + 1 < data.length ? index + 1 : 0);
-    }, 4800);
+    }, 4000);
   }, [index]);
 
   return (

@@ -70,10 +70,10 @@ export function HomeServices() {
       </div>
       <NavLink
         to="/services"
-        title="View all services"
-        className="home__services__button"
+        title="View All Projects"
+        className="home__work__button"
       >
-        View all services
+        View All Services
       </NavLink>
     </section>
   );
