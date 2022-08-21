@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: Gilroy-Regular;
-  src: url(./assets/fonts/Gilroy-Regular.ttf);
+  src: url(./assets/Gilroy-Regular.ttf);
 }
 @font-face {
   font-family: Gilroy-Bold;
-  src: url(./assets/fonts/Gilroy-Medium.ttf);
+  src: url(./assets/Gilroy-Medium.ttf);
 }
 $primary: #2ecc82;
 $primary-hover: #24aa6c;
@@ -19,7 +19,7 @@ $text: #878787;
   box-sizing: border-box;
 }
 .heading {
-  font-family: Gilroy-Bold, "Jost", sans-serif;
+  font-family: Gilroy-Bold, sans-serif;
   font-weight: 800;
 }
 body {
@@ -1710,7 +1710,7 @@ textarea {
   color: $black;
   margin: 0.7em 0em;
   font-weight: bold;
-  font-family: Gilroy-Bold, "jost", sans-serif;
+  font-family: Gilroy-Bold, sans-serif;
 }
 .about__core__values__content__entry__info {
   color: $text;
@@ -1782,7 +1782,7 @@ textarea {
 }
 .about__our__promise__content__entry__content__heading {
   font-size: 25px;
-  font-family: Gilroy-Bold, "jost", sans-serif;
+  font-family: Gilroy-Bold, sans-serif;
   margin-bottom: 0.1em;
 }
 .about__our__promise__content__entry__content__info {
