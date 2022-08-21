@@ -1,3 +1,6 @@
+@import "swiper/scss";
+@import "swiper/scss/autoplay";
+
 @font-face {
   font-family: Gilroy-Regular;
   src: url(./assets/Gilroy-Regular.ttf);
@@ -967,6 +970,7 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .home__help__heading {
   font-size: 45px;
@@ -2188,6 +2192,8 @@ textarea {
   }
   .home__jumbotron__content__right__img {
     height: 100%;
+    max-width: 600px;
+    margin-bottom: 2em;
   }
   .home__jumbotron__svg1 {
     left: 0px;
@@ -2483,9 +2489,11 @@ textarea {
   }
   .home__jumbotron__content__right {
     margin-top: 0em;
+    height: 300px;
   }
   .home__jumbotron__content__right__img {
     width: 100%;
+    margin-bottom: 4em;
   }
   .home__jumbotron__svg1 {
     width: 50%;

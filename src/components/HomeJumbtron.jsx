@@ -11,7 +11,6 @@ import {
 } from "../assets";
 
 export function HomeJumbtron() {
-  const scrollRef = useRef(null);
   const data = [
     {
       image: homeBannerImage,
@@ -23,7 +22,6 @@ export function HomeJumbtron() {
       image: homeBannerImage1,
     },
   ];
-  // useScrollSnap({ ref: scrollRef });
   const [index, setIndex] = useState(0);
   useEffect(() => {
     setTimeout(() => {
@@ -32,7 +30,7 @@ export function HomeJumbtron() {
   }, [index]);
 
   return (
-    <section ref={scrollRef} className="home__jumbotron">
+    <section className="home__jumbotron">
       <img
         src={homeBannerSvg1}
         alt="homeBannerSvg1"
@@ -88,7 +86,7 @@ export function HomeJumbtron() {
           <img
             src={data
               .filter((item, i) => i === index)
-              .map((item, index) => item.image)}
+              .map((item) => item.image)}
             alt="homeBannerImage"
             className="home__jumbotron__content__right__img"
           />

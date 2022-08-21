@@ -38,7 +38,7 @@ export function HomeTestimonials() {
           {data?.map((item, i) => (
             <div
               className="home__testmonials__content__users__entry"
-              key={i}
+              key={item._id}
               onClick={() => {
                 setSelectedData(item);
               }}

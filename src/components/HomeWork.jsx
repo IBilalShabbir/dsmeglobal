@@ -49,10 +49,7 @@ export function HomeWork() {
       </div>
       <div className="home__work__seletion">
         {data?.map((item, i) => (
-          <div
-            className="home__work__seletion__entry"
-            key={JSON.stringify(item)}
-          >
+          <div className="home__work__seletion__entry" key={item._id}>
             <input
               type="radio"
               name="home__work__seletion__entry"

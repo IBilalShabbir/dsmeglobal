@@ -444,11 +444,6 @@
     magic-string "^0.26.2"
     react-refresh "^0.14.0"
 
-add@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
-  integrity sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==
-
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -2631,13 +2626,6 @@ react-simple-typewriter@^3.0.1:
   resolved "https://registry.yarnpkg.com/react-simple-typewriter/-/react-simple-typewriter-3.0.1.tgz#5dc7b924a2e1a96950b5a2064f2dfbdfe1f8a60d"
   integrity sha512-z+aJugzvYPng9HoggyXNpnp7NjxtusGAb33bRaGRK2pEdirVKX4v3qrwdHqs6zdhCeLAthLGLtxgVX9oGekTLg==
 
-react-use-scroll-snap@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/react-use-scroll-snap/-/react-use-scroll-snap-0.0.4.tgz#44d615c347ac53ebf40102f5a13f28dc64feddd3"
-  integrity sha512-IVnGldU13ZM5NkiBNudXFVsyDuF8u99zjYhGsy+fsS75CvcD//apT0Qn1YTEUQ/QDB21K8NPM8psFpTIKeay2Q==
-  dependencies:
-    tweezer.js "^1.5.0"
-
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
@@ -3107,11 +3095,6 @@ tunnel-agent@^0.6.0:
   integrity sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==
   dependencies:
     safe-buffer "^5.0.1"
-
-tweezer.js@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/tweezer.js/-/tweezer.js-1.5.0.tgz#ca50ac5215022203fd3be4d28617e8e2305f5c0c"
-  integrity sha512-aSiJz7rGWNAQq7hjMK9ZYDuEawXupcCWgl3woQQSoDP2Oh8O4srWb/uO1PzzHIsrPEOqrjJ2sUb9FERfzuBabQ==
 
 type-fest@^0.11.0:
   version "0.11.0"

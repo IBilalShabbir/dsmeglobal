@@ -37,7 +37,7 @@ export function AboutPressRelease() {
       <div className="about__press__releases__content">
         <Swiper slidesPerView={slidesPerView}>
           {data?.map((item) => (
-            <SwiperSlide>
+            <SwiperSlide key={item._id}>
               <img
                 src={
                   import.meta.env.VITE_CLOUDNAIRY_API_URL +

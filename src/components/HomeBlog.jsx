@@ -18,10 +18,10 @@ export function HomeBlog({}) {
       <div className="home__blog__content">
         {data
           ?.filter((blog, i) => i < 3)
-          ?.map((item, i) => (
+          ?.map((item) => (
             <button
               className="home__blog__content__entry"
-              key={i}
+              key={item._id}
               onClick={() => {
                 setTimeout(() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });

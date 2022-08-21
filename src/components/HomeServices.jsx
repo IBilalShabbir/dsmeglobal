@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { HomeServicesCard } from "./HomeServicesCard";
 import {
@@ -11,8 +11,6 @@ import {
 } from "../assets";
 
 export function HomeServices() {
-  const scrollRef = useRef(null);
-  // useScrollSnap({ ref: scrollRef });
   const data = [
     {
       image: webDevServiceImage,
@@ -36,7 +34,7 @@ export function HomeServices() {
     },
   ];
   return (
-    <section ref={scrollRef} className="home__services">
+    <section className="home__services">
       <img
         src={servicesSvg1}
         alt="servicesSvg1"

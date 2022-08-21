@@ -3,7 +3,7 @@ import { technologiesSvg } from "../assets";
 import { HomeTechnologiesCard } from "./HomeTechnologiesCard";
 
 export function HomeTechnologies() {
-  const techData = [
+  const data = [
     {
       image: (
         <svg
@@ -146,7 +146,7 @@ export function HomeTechnologies() {
         solution for you
       </div>
       <div className="home__technologies__content">
-        {techData.map((item, i) => (
+        {data.map((item, i) => (
           <HomeTechnologiesCard
             key={i}
             image={item.image}

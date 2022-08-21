@@ -1,13 +1,12 @@
 import React from "react";
+import { withStyles } from "react-critical-css";
 import { Route, Routes, topbar } from "react-router-loading";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./screens/About";
 import Home from "./screens/Home";
-import "./App.scss";
-import "swiper/scss";
-import "swiper/scss/autoplay";
+import stylesheet from "./App.scss";
 
 topbar.config({
   autoRun: false,
@@ -22,7 +21,7 @@ topbar.config({
   className: "topbar",
 });
 
-export default function App() {
+function App() {
   return (
     <>
       <Header />
@@ -35,3 +34,4 @@ export default function App() {
     </>
   );
 }
+export default withStyles(stylesheet)(App);

@@ -15,7 +15,7 @@ export function AboutEndeavors() {
       <div className="about__endeavors__content">
         <Swiper>
           {data?.map((item) => (
-            <SwiperSlide>
+            <SwiperSlide key={item._id}>
               <img
                 src={
                   import.meta.env.VITE_CLOUDNAIRY_API_URL +

@@ -57,7 +57,7 @@ export function AboutAchievements() {
           {data
             ?.filter((item, i) => i % 2 !== 0)
             ?.map((item) => (
-              <SwiperSlide>
+              <SwiperSlide key={item._id}>
                 <div className="about__achievements__awards__content__entry">
                   <img
                     src={
@@ -86,7 +86,7 @@ export function AboutAchievements() {
           {data
             ?.filter((item, i) => i % 2 === 0)
             ?.map((item) => (
-              <SwiperSlide>
+              <SwiperSlide key={item._id}>
                 <div className="about__achievements__awards__content__entry">
                   <img
                     src={

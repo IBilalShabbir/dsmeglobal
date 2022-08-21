@@ -6,7 +6,6 @@ import ClickAwayListener from "react-click-away-listener";
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
-  const [isScrolling, setIsScrolling] = React.useState(false);
   function changeNavState() {
     if (window.innerWidth < 900) {
       setIsOpen(false);
@@ -19,11 +18,6 @@ export default function Header() {
     window.addEventListener("resize", changeNavState);
     window.addEventListener("scroll", () => {
       changeNavState();
-      if (window.scrollY > 0) {
-        setIsScrolling(true);
-      } else {
-        setIsScrolling(false);
-      }
     });
   }, []);
 
