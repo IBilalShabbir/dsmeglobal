@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import useSWR from "swr";
 import { fetcher } from "../utils/fetcher";
+import { replacePngWithWebp } from "../utils/replacePngWithWebp";
 
 export function AboutEndeavors() {
   const { data } = useSWR(
@@ -16,7 +17,10 @@ export function AboutEndeavors() {
           {data?.map((item) => (
             <SwiperSlide>
               <img
-                src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
+                src={
+                  import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                  replacePngWithWebp(item.image)
+                }
                 alt="endeavor"
               />
             </SwiperSlide>

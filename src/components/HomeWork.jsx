@@ -66,7 +66,10 @@ export function HomeWork() {
             <Fade up>
               <img
                 loading="lazy"
-                src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.logo}
+                src={
+                  import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                  replacePngWithWebp(item.logo)
+                }
                 width={200}
                 alt={item.title}
                 className="home__work__seletion__entry__img"

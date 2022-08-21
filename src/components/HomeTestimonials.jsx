@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import useSWR from "swr";
 import { testimonialSvg } from "../assets";
 import { fetcher } from "../utils/fetcher";
+import { replacePngWithWebp } from "../utils/replacePngWithWebp";
 
 export function HomeTestimonials() {
   const { data } = useSWR(
@@ -50,7 +51,10 @@ export function HomeTestimonials() {
                 className="home__testmonials__content__users__entry__input"
               />
               <img
-                src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
+                src={
+                  import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                  replacePngWithWebp(item.image)
+                }
                 alt="user"
                 width={100}
                 height={100}

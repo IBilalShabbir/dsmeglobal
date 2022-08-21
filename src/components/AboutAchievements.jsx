@@ -3,6 +3,7 @@ import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import useSWR from "swr";
 import { fetcher } from "../utils/fetcher";
+import { replacePngWithWebp } from "../utils/replacePngWithWebp";
 
 export function AboutAchievements() {
   const { data } = useSWR(
@@ -59,7 +60,10 @@ export function AboutAchievements() {
               <SwiperSlide>
                 <div className="about__achievements__awards__content__entry">
                   <img
-                    src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
+                    src={
+                      import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                      replacePngWithWebp(item.image)
+                    }
                     alt="endeavor"
                   />
                 </div>
@@ -85,7 +89,10 @@ export function AboutAchievements() {
               <SwiperSlide>
                 <div className="about__achievements__awards__content__entry">
                   <img
-                    src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
+                    src={
+                      import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                      replacePngWithWebp(item.image)
+                    }
                     alt="endeavor"
                   />
                 </div>

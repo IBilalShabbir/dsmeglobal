@@ -2,6 +2,7 @@ import React from "react";
 import useSWR from "swr";
 import { fetcher } from "../utils/fetcher";
 import { useNavigate } from "react-router-dom";
+import { replacePngWithWebp } from "../utils/replacePngWithWebp";
 
 export function HomeBlog({}) {
   const { data } = useSWR(
@@ -31,7 +32,10 @@ export function HomeBlog({}) {
               title={item.title}
             >
               <img
-                src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
+                src={
+                  import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                  replacePngWithWebp(item.image)
+                }
                 alt={item.title}
                 className="home__blog__content__entry__img"
               />
