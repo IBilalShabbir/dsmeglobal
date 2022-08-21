@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
-  font-family: Gilroy-Light;
-  src: url(./assets/fonts/Gilroy-Light.otf);
+  font-family: Gilroy-Regular;
+  src: url(./assets/fonts/Gilroy-Regular.ttf);
 }
 @font-face {
-  font-family: Gilroy-ExtraBold;
-  src: url(./assets/fonts/Gilroy-ExtraBold.otf);
+  font-family: Gilroy-Bold;
+  src: url(./assets/fonts/Gilroy-Medium.ttf);
 }
 $primary: #2ecc82;
 $primary-hover: #24aa6c;
@@ -19,8 +19,8 @@ $text: #878787;
   box-sizing: border-box;
 }
 .heading {
-  font-family: Gilroy-ExtraBold, "Jost", sans-serif;
-  font-weight: 900;
+  font-family: Gilroy-Bold, "Jost", sans-serif;
+  font-weight: 800;
 }
 body {
   margin: 0;
@@ -545,13 +545,17 @@ body::-webkit-scrollbar-track {
 }
 .home__technologies__content__entry {
   width: 30%;
+  position: relative;
+  margin-bottom: 3em;
+  transition: 300ms ease-in-out;
+  transform: scale(1);
+}
+.home__technologies__content__entry__content {
   padding: 2.5em;
   background-color: white;
-  border-radius: 5px;
-  margin-bottom: 3em;
-  position: relative;
-  z-index: 50;
-  transition: 300ms ease-in-out;
+  border-radius: 10px;
+  z-index: 3;
+  height: 100%;
 }
 .home__technologies__content__entry::before {
   content: "";
@@ -561,9 +565,8 @@ body::-webkit-scrollbar-track {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  z-index: -2;
-  border-radius: 5px;
-  transition: 300ms ease-in-out;
+  z-index: -1;
+  border-radius: 10px;
 }
 .home__technologies__content__entry::after {
   content: "";
@@ -574,8 +577,7 @@ body::-webkit-scrollbar-track {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: -2;
-  border-radius: 5px;
-  transition: 300ms ease-in-out;
+  border-radius: 10px;
 }
 .home__technologies__content__entry__img {
   height: 50px;
@@ -590,19 +592,22 @@ body::-webkit-scrollbar-track {
   font-size: 16px;
   color: $text;
 }
-.home__technologies__content__entry:hover {
+.home__technologies__content__entry:hover * {
+  color: white;
+  fill: white;
+}
+.home__technologies__content__entry:hover
+  .home__technologies__content__entry__content {
   transition: 300ms ease-in-out;
-  transform: scale(1.05);
+  background-color: $primary;
 }
 .home__technologies__content__entry:hover::before {
   transition: 300ms ease-in-out;
-  left: 3%;
-  top: 3%;
+  background-color: rgb(15, 170, 97, 0.5);
 }
 .home__technologies__content__entry:hover::after {
   transition: 300ms ease-in-out;
-  left: 6%;
-  top: 6%;
+  background-color: rgb(15, 170, 97, 0.2);
 }
 .home__engagement {
   width: 100%;
@@ -700,7 +705,7 @@ body::-webkit-scrollbar-track {
   margin-bottom: 0.5em;
   width: 100%;
   max-width: 400px;
-  font-family: Gilroy-Light, "jost", sans-serif;
+  font-family: Gilroy-Regular, "jost", sans-serif;
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -973,7 +978,7 @@ body::-webkit-scrollbar-track {
   position: relative;
   color: $primary;
   padding: 0em 2em;
-  font-family: Gilroy-Light;
+  font-family: Gilroy-Regular;
   font-weight: bolder;
   font-style: italic;
 }
@@ -1653,7 +1658,7 @@ textarea {
   color: $black;
   margin: 0.7em 0em;
   font-weight: bold;
-  font-family: Gilroy-ExtraBold, "jost", sans-serif;
+  font-family: Gilroy-Bold, "jost", sans-serif;
 }
 .about__core__values__content__entry__info {
   color: $text;
@@ -1724,7 +1729,7 @@ textarea {
 }
 .about__our__promise__content__entry__content__heading {
   font-size: 25px;
-  font-family: Gilroy-ExtraBold, "jost", sans-serif;
+  font-family: Gilroy-Bold, "jost", sans-serif;
   margin-bottom: 0.1em;
 }
 .about__our__promise__content__entry__content__info {
@@ -1869,7 +1874,7 @@ textarea {
   font-style: italic;
   height: 70px;
   color: white;
-  font-family: Gilroy-Light, "jost", sans-serif;
+  font-family: Gilroy-Regular, "jost", sans-serif;
   font-weight: bolder;
 }
 .about__key__differences__featuers__entry span {

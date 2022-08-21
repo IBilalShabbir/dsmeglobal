@@ -13,10 +13,10 @@ export function HomeTestimonials() {
   useEffect(() => {
     data
       ?.filter((item, i) => i === 0)
-      .map((item) => {
+      ?.map((item) => {
         setSelectedData(item);
       });
-  }, []);
+  }, [data]);
 
   return (
     <div className="home__testmonials">
