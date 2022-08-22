@@ -1289,6 +1289,15 @@ textarea {
 .contact__content__right__img {
   max-width: 100%;
 }
+.contact__content__left__reverse .contact__content__left__input {
+  border-color: $text;
+}
+.contact__content__left__reverse .contact__content__left__input__field {
+  color: $primary;
+}
+.contact__content__left__reverse .contact__content__left__input__label {
+  color: white;
+}
 .contact__content__left__input:hover {
   border-color: $primary;
   outline-color: $primary;
