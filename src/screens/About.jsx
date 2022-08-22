@@ -23,10 +23,10 @@ export default function About() {
       <AboutCoreValues />
       <AboutOurPromise />
       <AboutKeyDifferences />
+      <AboutCustomerCentric />
       <AboutEndeavors />
       <AboutPressRelease />
       <AboutAchievements />
-      <AboutCustomerCentric />
     </>
   );
 }

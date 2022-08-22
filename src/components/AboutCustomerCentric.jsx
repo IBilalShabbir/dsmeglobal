@@ -123,7 +123,7 @@ export function AboutCustomerCentric({}) {
     },
   ];
   return (
-    <section className="home__services">
+    <section className="home__services" style={{ marginTop: "-2em" }}>
       <div className="home__services__heading heading">
         Highly Customer Centric Development Process
       </div>
