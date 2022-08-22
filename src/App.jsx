@@ -9,6 +9,7 @@ import Home from "./screens/Home";
 import stylesheet from "./App.scss";
 import MeetUs from "./screens/MeetUs";
 import NotFound from "./screens/NotFound";
+import Quote from "./screens/Quote";
 
 // topbar.config({
 //   autoRun: false,
@@ -34,16 +35,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/meet-us" element={<MeetUs />} />
-        <Route
-          path="*"
-          element={
-            <NotFound
-              setIsHeader={setIsHeader}
-              setIsContact={setIsContact}
-              setIsFooter={setIsFooter}
-            />
-          }
-        />
+        <Route path="/quote" element={<Quote setIsContact={setIsContact} />} />
+        <Route path="*" element={<NotFound setIsContact={setIsContact} />} />
       </Routes>
       {isContact ? <Contact /> : null}
       {isFooter ? <Footer /> : null}
