@@ -2,7 +2,7 @@ import React from "react";
 import { teamSvg } from "../assets";
 import { AboutTeamCard } from "./AboutTeamCard";
 
-export function AboutTeam() {
+export function AboutTeam({ style }) {
   const data = [
     {
       image: "Shahid_Aziz_Advisor_kkhqzt",
@@ -177,7 +177,7 @@ export function AboutTeam() {
     },
   ];
   return (
-    <div className="about__team">
+    <div className="about__team" style={style}>
       <img src={teamSvg} alt="teamSvg" className="about__team__svg" />
       <div className="about__team__heading heading">
         Teamwork, Makes the dream work

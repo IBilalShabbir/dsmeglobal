@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import About from "./screens/About";
 import Home from "./screens/Home";
 import stylesheet from "./App.scss";
+import MeetUs from "./screens/MeetUs";
 
 topbar.config({
   autoRun: false,
@@ -28,6 +29,7 @@ function App() {
       <Routes maxLoadingTime={500}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} loading />
+        <Route path="/meet-us" element={<MeetUs />} loading />
       </Routes>
       <Contact />
       <Footer />

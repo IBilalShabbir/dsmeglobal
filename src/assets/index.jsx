@@ -42,3 +42,6 @@ export { default as ourMission } from "./ourMission.svg";
 export { default as agileProcess } from "./agileProcess.webp";
 export { default as teamSvg } from "./teamSvg.svg";
 export { default as differencesSvg } from "./differencesSvg.svg";
+export { default as smallthingsBigdifference } from "./smallthingsBigdifference.svg";
+export { default as smallthingsBigdifference1 } from "./smallthingsBigdifference1.svg";
+export { default as smallthingsBigdifference2 } from "./smallthingsBigdifference2.svg";
