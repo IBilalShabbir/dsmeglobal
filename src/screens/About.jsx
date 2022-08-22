@@ -10,6 +10,7 @@ import { AboutKeyDifferences } from "../components/AboutKeyDifferences";
 import { AboutEndeavors } from "../components/AboutEndeavors";
 import { AboutPressRelease } from "../components/AboutPressRelease";
 import { AboutAchievements } from "../components/AboutAchievements";
+import { AboutCustomerCentric } from "../components/AboutCustomerCentric";
 
 export default function About() {
   return (
@@ -25,6 +26,7 @@ export default function About() {
       <AboutEndeavors />
       <AboutPressRelease />
       <AboutAchievements />
+      <AboutCustomerCentric />
     </>
   );
 }
