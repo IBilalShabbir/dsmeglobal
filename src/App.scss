@@ -18,6 +18,7 @@ $text: #878787;
 *::after,
 *::before {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .heading {
   font-family: Gilroy-Bold, sans-serif;
@@ -2084,6 +2085,123 @@ textarea {
   padding: 0em 0.5em;
   margin-bottom: -3em;
 }
+.services__heading {
+  text-align: center;
+  padding: 0em 2em;
+  margin-bottom: -2em;
+  margin-top: 2em;
+  font-size: 45px;
+}
+.services__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1366px;
+  margin: 4em auto;
+  margin-bottom: 0em;
+  padding: 0em 2em;
+}
+.services__content__sidebar {
+  flex: 1;
+  max-width: 350px;
+  background-color: $black;
+  height: fit-content;
+  position: sticky;
+  top: 4em;
+  padding: 2.5em;
+  border-radius: 10px;
+  margin-right: 2em;
+  overflow: hidden;
+  margin-top: 4em;
+  padding-bottom: 1.5em;
+}
+.services__content__sidebar__svg {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 100%;
+}
+.services__content__sidebar__link {
+  list-style: none;
+  margin-bottom: 1em;
+  z-index: 2;
+  position: relative;
+}
+.services__content__sidebar__link a {
+  color: white;
+  text-decoration: none;
+}
+.services__content__sidebar .active a {
+  font-weight: bold;
+}
+.services__content__main {
+  flex: 1;
+}
+.services__content__main__card__wrapper {
+  padding-top: 4em;
+}
+.services__content__main__card__wrapper:nth-child(even)
+  .services__content__main__card {
+  flex-direction: row-reverse;
+}
+.services__content__main__card__wrapper:nth-child(even)
+  .services__content__main__card
+  .services__content__main__card__img {
+  margin-right: 0em;
+  margin-left: 2em;
+}
+.services__content__main__card__wrapper:nth-child(even)
+  .services__content__main__card
+  .services__content__main__card__content {
+  align-items: flex-end;
+  text-align: right;
+}
+.services__content__main__card {
+  display: flex;
+  padding: 2.5em 3em;
+  border: 1px solid #a49a9a;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+.services__content__main__card__img {
+  margin-right: 2em;
+}
+.services__content__main__card__content {
+  display: flex;
+  flex-direction: column;
+}
+.services__content__main__card__content__heading {
+  font-size: 25px;
+  margin-bottom: 0.5em;
+}
+.services__content__main__card__content__info {
+  margin-bottom: 1em;
+  width: 100%;
+  max-width: 700px;
+  font-size: 16px;
+  min-height: 50px;
+}
+.services__content__main__card__content__link {
+  color: $black;
+  background-color: $primary;
+  width: fit-content;
+  padding: 0em 2em;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.services__content__main__card__content__link:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary-hover;
+}
+.services__content__main__card:hover {
+  border-color: $primary;
+  outline: 2px solid $primary;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -2135,7 +2253,8 @@ textarea {
   .about__endeavors__heading,
   .about__press__releases__heading,
   .about__achievements__awards__heading,
-  .meet__us__content__heading {
+  .meet__us__content__heading,
+  .services__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -2496,6 +2615,9 @@ textarea {
   .about__core__values__content__col {
     width: 100%;
   }
+  .services__content__sidebar {
+    display: none;
+  }
 }
 @media (max-width: 650px) {
   .meet__us__content__svg1 {
@@ -2554,7 +2676,8 @@ textarea {
   .about__press__releases__heading,
   .about__achievements__awards__heading,
   .contact__content__left__heading,
-  .meet__us__content__heading {
+  .meet__us__content__heading,
+  .services__heading {
     font-size: 25px;
   }
   .contact__content__left__heading {
@@ -2621,6 +2744,26 @@ textarea {
   }
   .home__testmonials__content__users__entry {
     margin: 0.5em !important;
+  }
+  .services__content__main__card {
+    flex-direction: column;
+    padding: 2.2em;
+  }
+  .services__content__main__card__wrapper:nth-child(even)
+    .services__content__main__card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .services__content__main__card__wrapper:nth-child(even)
+    .services__content__main__card
+    .services__content__main__card__content {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .services__content__main__card__img {
+    margin: 0em !important;
+    margin-bottom: 1em !important;
   }
 }
 @media (max-width: 470px) {

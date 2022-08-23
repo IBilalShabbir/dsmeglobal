@@ -10,6 +10,7 @@ import stylesheet from "./App.scss";
 import MeetUs from "./screens/MeetUs";
 import NotFound from "./screens/NotFound";
 import Quote from "./screens/Quote";
+import Services from "./screens/Services";
 
 // topbar.config({
 //   autoRun: false,
@@ -34,6 +35,7 @@ function App() {
       <Routes maxLoadingTime={500}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/meet-us" element={<MeetUs />} />
         <Route path="/quote" element={<Quote setIsContact={setIsContact} />} />
         <Route path="*" element={<NotFound setIsContact={setIsContact} />} />

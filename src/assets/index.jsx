@@ -47,3 +47,4 @@ export { default as smallthingsBigdifference1 } from "./smallthingsBigdifference
 export { default as smallthingsBigdifference2 } from "./smallthingsBigdifference2.svg";
 export { default as notFound } from "./404.svg";
 export { default as contactBannerSvg } from "./contactBannerSvg.svg";
+export { default as serviceSidebarSvg } from "./serviceSidebarSvg.svg";
