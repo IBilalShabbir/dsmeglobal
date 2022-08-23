@@ -1377,6 +1377,8 @@ textarea {
   color: $text;
   z-index: 1;
   line-height: 170%;
+  width: 100%;
+  max-width: 1000px;
 }
 .jumbotron__link {
   color: white;
@@ -2315,6 +2317,64 @@ textarea {
   text-decoration: none;
   margin-top: 1em;
 }
+.careers__motivation__wrapper {
+  position: relative;
+  width: 100%;
+}
+.careers__motivation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1366px;
+  padding: 7em 2em;
+  margin: 0em auto;
+  padding-bottom: 5em;
+}
+.careers__motivation__content {
+  width: 30%;
+}
+.careers__motivation__content__heading {
+  font-size: 45px;
+  display: flex;
+  margin-top: -2em;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+.careers__motivation__content__heading span {
+  color: $primary;
+}
+.careers__motivation__entry {
+  width: 30%;
+  border-radius: 10px;
+  border: 1px solid #bdbdbd;
+  padding: 2.5em;
+  min-height: 280px;
+  margin-bottom: 3.5em;
+  position: relative;
+  outline: 2px solid transparent;
+}
+.careers__motivation__entry__icon {
+  position: absolute;
+  padding: 0em 0.5em;
+  background-color: white;
+  top: -40px;
+  left: 20px;
+}
+.careers__motivation__entry__icon svg {
+  width: 80px;
+}
+.careers__motivation__entry__heading {
+  font-size: 20px;
+  margin: 0.5em 0em;
+  margin-top: 1em;
+}
+.careers__motivation__entry:hover {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
+  outline-color: $primary;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -2368,7 +2428,8 @@ textarea {
   .about__achievements__awards__heading,
   .meet__us__content__heading,
   .services__heading,
-  .industries__solutions__heading {
+  .industries__solutions__heading,
+  .careers__motivation__content__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -2589,6 +2650,16 @@ textarea {
     width: 100%;
     justify-content: center;
   }
+  .careers__motivation {
+    padding-bottom: 0em;
+  }
+  .careers__motivation__content {
+    width: 48%;
+  }
+  .careers__motivation__entry {
+    width: 48%;
+    min-height: 320px;
+  }
 }
 @media (max-width: 900px) {
   .about__our__promise__content__entry {
@@ -2734,6 +2805,21 @@ textarea {
   .services__content__sidebar {
     display: none;
   }
+  .careers__motivation__content {
+    width: 100%;
+    margin-bottom: 5em;
+  }
+  .careers__motivation__content__heading {
+    margin-top: 0em;
+    text-align: center;
+  }
+  .careers__motivation__content__info{
+    text-align: center;
+  }
+  .careers__motivation__entry {
+    width: 100%;
+    min-height: fit-content;
+  }
 }
 @media (max-width: 650px) {
   .meet__us__content__svg1 {
@@ -2794,7 +2880,8 @@ textarea {
   .contact__content__left__heading,
   .meet__us__content__heading,
   .services__heading,
-  .industries__solutions__heading {
+  .industries__solutions__heading,
+  .careers__motivation__content__heading {
     font-size: 25px;
   }
   .contact__content__left__heading {
