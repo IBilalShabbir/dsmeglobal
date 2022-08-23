@@ -1202,6 +1202,7 @@ body::-webkit-scrollbar-track {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color: white;
 }
 .home__newsletter__content__right__button:hover {
   transition: 300ms ease-in-out;
@@ -1317,6 +1318,7 @@ textarea {
   border-radius: 5px;
   font-weight: 500;
   cursor: pointer;
+  color: white;
 }
 .contact__content__left__button:hover {
   background-color: $primary-hover;
@@ -1393,7 +1395,6 @@ textarea {
   transition: 300ms ease-in-out;
   border-color: $primary;
   background-color: $primary;
-  color: $black;
 }
 .about__ceo__message {
   width: 100%;
@@ -2185,7 +2186,6 @@ textarea {
   min-height: 50px;
 }
 .services__content__main__card__content__link {
-  color: $black;
   background-color: $primary;
   width: fit-content;
   padding: 0em 2em;
@@ -2196,6 +2196,7 @@ textarea {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 500;
+  color: white;
 }
 .services__content__main__card__content__link:hover {
   transition: 300ms ease-in-out;
@@ -2308,7 +2309,7 @@ textarea {
 .industries__tengible__result__content__card__link {
   height: 40px;
   background-color: $primary;
-  color: $black;
+  color: white;
   border-radius: 5px;
   padding: 0em 2em;
   display: flex;
@@ -2813,7 +2814,7 @@ textarea {
     margin-top: 0em;
     text-align: center;
   }
-  .careers__motivation__content__info{
+  .careers__motivation__content__info {
     text-align: center;
   }
   .careers__motivation__entry {
