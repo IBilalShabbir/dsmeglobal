@@ -7,7 +7,7 @@ import ClickAwayListener from "react-click-away-listener";
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
   function changeNavState() {
-    if (window.innerWidth < 900) {
+    if (window.innerWidth < 1000) {
       setIsOpen(false);
     } else {
       setIsOpen(true);
@@ -30,7 +30,7 @@ export default function Header() {
         {isOpen ? (
           <ClickAwayListener
             onClickAway={() => {
-              if (window.innerWidth < 900) {
+              if (window.innerWidth < 1000) {
                 setIsOpen(false);
               }
             }}
@@ -41,7 +41,7 @@ export default function Header() {
                 activeclassname="active"
                 className="header__content__nav__link"
                 onClick={() => {
-                  if (window.innerWidth < 900) {
+                  if (window.innerWidth < 1000) {
                     setIsOpen(false);
                   }
                 }}
@@ -53,7 +53,7 @@ export default function Header() {
                 activeclassname="active"
                 className="header__content__nav__link"
                 onClick={() => {
-                  if (window.innerWidth < 900) {
+                  if (window.innerWidth < 1000) {
                     setIsOpen(false);
                   }
                 }}
@@ -65,7 +65,7 @@ export default function Header() {
                 activeclassname="active"
                 className="header__content__nav__link"
                 onClick={() => {
-                  if (window.innerWidth < 900) {
+                  if (window.innerWidth < 1000) {
                     setIsOpen(false);
                   }
                 }}
@@ -73,11 +73,23 @@ export default function Header() {
                 About Us
               </NavLink>
               <NavLink
+                to="/industries"
+                activeclassname="active"
+                className="header__content__nav__link"
+                onClick={() => {
+                  if (window.innerWidth < 1000) {
+                    setIsOpen(false);
+                  }
+                }}
+              >
+                Industries
+              </NavLink>
+              <NavLink
                 to="/career"
                 activeclassname="active"
                 className="header__content__nav__link"
                 onClick={() => {
-                  if (window.innerWidth < 900) {
+                  if (window.innerWidth < 1000) {
                     setIsOpen(false);
                   }
                 }}
@@ -89,7 +101,7 @@ export default function Header() {
                 activeclassname="active"
                 className="header__content__nav__link"
                 onClick={() => {
-                  if (window.innerWidth < 900) {
+                  if (window.innerWidth < 1000) {
                     setIsOpen(false);
                   }
                 }}
@@ -99,7 +111,7 @@ export default function Header() {
               <NavLink
                 to="/quote"
                 onClick={() => {
-                  if (window.innerWidth < 900) {
+                  if (window.innerWidth < 1000) {
                     setIsOpen(false);
                   }
                 }}

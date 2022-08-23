@@ -48,3 +48,12 @@ export { default as smallthingsBigdifference2 } from "./smallthingsBigdifference
 export { default as notFound } from "./404.svg";
 export { default as contactBannerSvg } from "./contactBannerSvg.svg";
 export { default as serviceSidebarSvg } from "./serviceSidebarSvg.svg";
+export { default as ecommerce } from "./ecommerce.svg";
+export { default as entertainment } from "./entertainment.svg";
+export { default as finTech } from "./finTech.svg";
+export { default as healthcare } from "./healthcare.svg";
+export { default as insurance } from "./insurance.svg";
+export { default as others } from "./others.svg";
+export { default as realEstate } from "./realEstate.svg";
+export { default as retail } from "./retail.svg";
+export { default as transport } from "./transport.svg";

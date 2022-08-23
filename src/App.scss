@@ -1,5 +1,6 @@
 @import "swiper/scss";
 @import "swiper/scss/autoplay";
+@import "swiper/scss/free-mode";
 
 @font-face {
   font-family: Gilroy-Regular;
@@ -2202,6 +2203,118 @@ textarea {
   border-color: $primary;
   outline: 2px solid $primary;
 }
+.industries__solutions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7em 0em;
+  background-color: #efefef;
+}
+.industries__solutions__heading {
+  font-size: 45px;
+  margin-bottom: 0.5em;
+  padding: 0em 2em;
+  text-align: center;
+}
+.industries__solutions__info {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0em 2em;
+  margin-bottom: 2em;
+  color: $text;
+}
+.industries__solutions__content {
+  width: 100%;
+}
+.industries__solutions__content__card {
+  background-color: white;
+  padding: 2.5em;
+  border-radius: 10px;
+  min-height: 300px;
+}
+.industries__solutions__content__card__img {
+  height: 60px;
+}
+.industries__solutions__content__card__heading {
+  font-size: 22px;
+  color: $black;
+  margin: 0.5em 0em;
+  font-weight: bold;
+}
+.industries__tengible__result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7em 0em;
+  padding-bottom: 2em;
+}
+.industries__tengible__result__heading {
+  font-size: 45px;
+  margin-bottom: 0.5em;
+  padding: 0em 2em;
+  text-align: center;
+}
+.industries__tengible__result__info {
+  font-size: 16px;
+  margin-bottom: 0.5em;
+  padding: 0em 2em;
+  text-align: center;
+  color: $text;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 2em;
+}
+.industries__tengible__result__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  margin-bottom: 1em;
+}
+.industries__tengible__result__content__card {
+  border-radius: 10px;
+  border: 1px solid $text;
+  padding: 1.5em;
+  padding-top: 3em;
+  position: relative;
+  width: 300px;
+  margin: 1.5em;
+  outline: 2px solid transparent;
+}
+.industries__tengible__result__content__card__value {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  background-color: white;
+  color: $primary;
+  font-size: 55px;
+  padding: 0em 0.2em;
+}
+.industries__tengible__result__content__card__heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+.industries__tengible__result__content__card:hover {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
+  outline-color: $primary;
+}
+.industries__tengible__result__content__card__link {
+  height: 40px;
+  background-color: $primary;
+  color: $black;
+  border-radius: 5px;
+  padding: 0em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 1em;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -2254,7 +2367,8 @@ textarea {
   .about__press__releases__heading,
   .about__achievements__awards__heading,
   .meet__us__content__heading,
-  .services__heading {
+  .services__heading,
+  .industries__solutions__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -2446,6 +2560,36 @@ textarea {
   }
 }
 
+@media (max-width: 1000px) {
+  .header__content__menu {
+    display: flex;
+  }
+  .header__content__nav {
+    flex-direction: column;
+    position: absolute;
+    top: 6em;
+    left: 0px;
+    background-color: $black;
+    width: 100%;
+    padding: 0em 2em;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1.5em;
+    animation: header__content__nav__animation 300ms both;
+    transform-origin: top;
+  }
+  @keyframes header__content__nav__animation {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+  .header__content__nav__link {
+    width: 100%;
+    justify-content: center;
+  }
+}
 @media (max-width: 900px) {
   .about__our__promise__content__entry {
     width: 100%;
@@ -2494,34 +2638,6 @@ textarea {
   }
   .home__development__process__img {
     max-height: fit-content;
-  }
-  .header__content__menu {
-    display: flex;
-  }
-  .header__content__nav {
-    flex-direction: column;
-    position: absolute;
-    top: 6em;
-    left: 0px;
-    background-color: $black;
-    width: 100%;
-    padding: 0em 2em;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    padding-bottom: 1.5em;
-    animation: header__content__nav__animation 300ms both;
-    transform-origin: top;
-  }
-  @keyframes header__content__nav__animation {
-    from {
-      transform: scaleY(0);
-    }
-    to {
-      transform: scaleY(1);
-    }
-  }
-  .header__content__nav__link {
-    width: 100%;
-    justify-content: center;
   }
   .home__stats__content__entry__heading {
     font-size: 40px;
@@ -2677,7 +2793,8 @@ textarea {
   .about__achievements__awards__heading,
   .contact__content__left__heading,
   .meet__us__content__heading,
-  .services__heading {
+  .services__heading,
+  .industries__solutions__heading {
     font-size: 25px;
   }
   .contact__content__left__heading {

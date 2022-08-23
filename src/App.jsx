@@ -11,6 +11,7 @@ import MeetUs from "./screens/MeetUs";
 import NotFound from "./screens/NotFound";
 import Quote from "./screens/Quote";
 import Services from "./screens/Services";
+import Industries from "./screens/Industries";
 
 // topbar.config({
 //   autoRun: false,
@@ -36,6 +37,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/industries" element={<Industries />} />
         <Route path="/meet-us" element={<MeetUs />} />
         <Route path="/quote" element={<Quote setIsContact={setIsContact} />} />
         <Route path="*" element={<NotFound setIsContact={setIsContact} />} />
