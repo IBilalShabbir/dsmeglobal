@@ -18,9 +18,6 @@ export function HomeJumbtron() {
     {
       image: homeBannerImage1,
     },
-    {
-      image: homeBannerImage1,
-    },
   ];
   const [index, setIndex] = useState(0);
   useEffect(() => {
@@ -57,15 +54,11 @@ export function HomeJumbtron() {
           <div className="home__jumbotron__content__left__heading heading">
             Quality{" "}
             <span>
-              <Typewriter
-                loop
-                cursor
-                words={["Products", "Customizations", "Services"]}
-              />
+              <Typewriter loop cursor words={["Products", "Services"]} />
             </span>{" "}
             <br /> You Really{" "}
             <span>
-              <Typewriter loop cursor words={["Need", "Deserve", "Want"]} />
+              <Typewriter loop cursor words={["Need", "Want"]} />
             </span>
           </div>
           <div className="home__jumbotron__content__left__info">
