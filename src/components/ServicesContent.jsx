@@ -15,46 +15,51 @@ export function ServicesContent() {
     <>
       <div className="services__heading heading">Our Services</div>
       <div className="services__content">
-        <Scrollspy
-          items={data?.map((item) =>
-            item.title
-              .trim()
-              .replaceAll(" ", "-")
-              .replaceAll("-&-", "-")
-              .replaceAll(".", "")
-              .replaceAll("/", "-")
-              .toLowerCase()
-          )}
-          offset={-200}
-          currentClassName="active"
-          className="services__content__sidebar"
-        >
-          {data?.map((item) => (
-            <li className="services__content__sidebar__link">
-              <Fade up key={JSON.stringify(item)}>
-                <a
-                  href={
-                    "#" +
-                    item.title
-                      .trim()
-                      .replaceAll(" ", "-")
-                      .replaceAll("-&-", "-")
-                      .replaceAll(".", "")
-                      .replaceAll("/", "-")
-                      .toLowerCase()
-                  }
-                >
-                  {item.title}
-                </a>
-              </Fade>
-            </li>
-          ))}
-          <img
-            src={serviceSidebarSvg}
-            alt="serviceSidebarSvg"
-            className="services__content__sidebar__svg"
-          />
-        </Scrollspy>
+        {data?.length > 0 ? (
+          <Scrollspy
+            items={data?.map((item) =>
+              item.title
+                .trim()
+                .replaceAll(" ", "-")
+                .replaceAll("-&-", "-")
+                .replaceAll(".", "")
+                .replaceAll("/", "-")
+                .toLowerCase()
+            )}
+            offset={-200}
+            currentClassName="active"
+            className="services__content__sidebar"
+          >
+            {data?.map((item) => (
+              <li
+                className="services__content__sidebar__link"
+                key={JSON.stringify(item)}
+              >
+                <Fade up>
+                  <a
+                    href={
+                      "#" +
+                      item.title
+                        .trim()
+                        .replaceAll(" ", "-")
+                        .replaceAll("-&-", "-")
+                        .replaceAll(".", "")
+                        .replaceAll("/", "-")
+                        .toLowerCase()
+                    }
+                  >
+                    {item.title}
+                  </a>
+                </Fade>
+              </li>
+            ))}
+            <img
+              src={serviceSidebarSvg}
+              alt="serviceSidebarSvg"
+              className="services__content__sidebar__svg"
+            />
+          </Scrollspy>
+        ) : null}
         <div className="services__content__main">
           {data?.map((item, i) => (
             <ServiceCard item={item} key={item._id} />
