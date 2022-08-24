@@ -9,7 +9,7 @@ export default function QuoteJumbotron() {
     `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_service`,
     fetcher
   );
-  console.log(data);
+
   const [name, setName] = React.useState("");
   const [company, setCompany] = React.useState("");
   const [email, setEmail] = React.useState("");

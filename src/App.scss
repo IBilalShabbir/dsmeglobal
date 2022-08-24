@@ -2137,6 +2137,9 @@ textarea {
 }
 .services__content__sidebar .active a {
   font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: $primary;
+  font-size: 18px;
 }
 .services__content__main {
   flex: 1;
