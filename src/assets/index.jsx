@@ -57,3 +57,5 @@ export { default as others } from "./others.svg";
 export { default as realEstate } from "./realEstate.svg";
 export { default as retail } from "./retail.svg";
 export { default as transport } from "./transport.svg";
+export { default as meetUs } from "./meetUs.svg";
+export { default as jobs } from "./jobs.svg";
