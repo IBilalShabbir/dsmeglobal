@@ -6,6 +6,7 @@ export function AboutTeamCard({ image, name, designation }) {
       <img
         src={
           import.meta.env.VITE_CLOUDNAIRY_API_URL.replace("q_50", "q_20") +
+          "/c_crop,g_custom/" +
           image
         }
         alt={name}
