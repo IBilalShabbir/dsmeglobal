@@ -1543,7 +1543,6 @@ textarea {
   margin: 2em 0em;
   width: 100%;
   max-width: 300px;
-  text-align: justify;
 }
 .footer__content__col__socials {
   display: flex;
@@ -2385,8 +2384,7 @@ textarea {
   justify-content: center;
   width: 100%;
   max-width: 1366px;
-  margin: 7em auto;
-  margin-bottom: 10em;
+  margin: 0em auto;
 }
 .career__bannner__divider {
   width: 1px;
@@ -2401,6 +2399,7 @@ textarea {
   text-decoration: none;
   color: white;
   padding: 2em;
+  z-index: 2;
 }
 .career__bannner__entry__img {
   transform: scale(1);
@@ -2494,6 +2493,9 @@ textarea {
   .home__techonologies__svg1 {
     display: none;
   }
+  .career__bannner__entry__img {
+    height: 250px;
+  }
 }
 @media (max-width: 1300px) {
   .home__stats__content__entry__heading {
@@ -2535,9 +2537,6 @@ textarea {
   }
   .home__help__content__entry {
     min-width: 50%;
-  }
-  .career__bannner__entry__img {
-    height: 250px;
   }
 }
 @media (max-width: 1100px) {
@@ -2924,7 +2923,6 @@ textarea {
   .home__techonologies__content__left__heading,
   .home__testmonials__heading,
   .home__blog__heading,
-  .jumbotron__heading,
   .about__ceo__message__content__left__heading,
   .about__our__entry__heading,
   .about__team__heading,

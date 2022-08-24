@@ -10,7 +10,13 @@ export default function Footer() {
       <img src={footerSvg2} alt="footerSvg2" className="footer__svg2" />
       <div className="footer__content">
         <div className="footer__content__col">
-          <Link to="/" className="footer__content__col__logo">
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__logo"
+          >
             <img
               src={logo}
               alt="logo"
@@ -24,29 +30,25 @@ export default function Footer() {
           </div>
           <div className="footer__content__col__socials">
             <a
-              href="#"
+              href="https://www.facebook.com/dsmeglobal"
               title="Facebook"
+              target="_blank"
               className="footer__content__col__socials__link"
             >
               <Facebook size={20} color="currentColor" />
             </a>
             <a
-              href="#"
-              title="Twitter"
-              className="footer__content__col__socials__link"
-            >
-              <Twitter size={20} color="currentColor" />
-            </a>
-            <a
-              href="#"
+              href="https://www.instagram.com/dsmeglobal/"
               title="Instagram"
+              target="_blank"
               className="footer__content__col__socials__link"
             >
               <Instagram size={20} color="currentColor" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/dsmegloballinks"
               title="Linkedin"
+              target="_blank"
               className="footer__content__col__socials__link"
             >
               <Linkedin size={20} color="currentColor" />
@@ -55,49 +57,133 @@ export default function Footer() {
         </div>
         <div className="footer__content__col">
           <div className="footer__content__col__heading">Industries</div>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/industries"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Healthcare
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/industries"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Real Estate
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/industries"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Retail
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/industries"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             FinTech
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/industries"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Logistics & Transport
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/industries"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Insurance
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/industries"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Food & Entertainment
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/industries"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Ecommerce
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/industries"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Other
           </Link>
         </div>
         <div className="footer__content__col">
           <div className="footer__content__col__heading">QuickLinks</div>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Home
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/about"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             About Us
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/portfolio"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Portfolio
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/services"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Services
           </Link>
-          <Link to="/" className="footer__content__col__link">
+          <Link
+            to="/industries"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="footer__content__col__link"
+          >
             Industries
           </Link>
         </div>
@@ -109,34 +195,27 @@ export default function Footer() {
               title="354 454 5344 343"
               className="footer__content__col__row__link"
             >
-              354 454 5344 343
+              +923219652222
             </a>
             <a
               href="#"
               title="354 454 5344 343"
               className="footer__content__col__row__link"
             >
-              354 454 5344 343
+              +923260466668
             </a>
           </div>
           <div className="footer__content__col__row">
-            <a
-              href="#"
-              title="hello@dsme.com"
-              className="footer__content__col__row__link"
-            >
-              hello@dsme.com
-            </a>
             <a
               href="#"
               title="info@dsme.com"
               className="footer__content__col__row__link"
             >
-              info@dsme.com
+              info@dsmeglobal.com
             </a>
           </div>
           <div className="footer__content__col__row">
-            1st floor, DHA - Z Block, Plot # 33, Lahore, 54000, Pakistan
+            33-Z, 1st Floor Commercial Plaza, DHA Phase III, Lahore, Pakistan.
           </div>
         </div>
       </div>

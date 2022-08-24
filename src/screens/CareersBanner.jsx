@@ -16,10 +16,10 @@ export default function CareersBanner({ setIsContact }) {
       <div
         className="jumbotron"
         style={{
-          minHeight: 300,
-          justifyContent: "flex-end",
+          justifyContent: "center",
           backgroundColor: "transparent",
-          marginBottom: "-2em",
+          paddingTop: window.innerWidth < 600 ? "8em" : "6em",
+          minHeight: "100vh",
         }}
       >
         <img
@@ -36,21 +36,37 @@ export default function CareersBanner({ setIsContact }) {
           Be a Part of Our Team
         </div>
         <div className="jumbotron__heading heading">Career</div>
-      </div>
-      <div className="career__bannner">
-        <Link to="/meet-us" className="career__bannner__entry">
-          <img
-            src={meetUs}
-            alt="meetUs"
-            className="career__bannner__entry__img"
-          />
-          <div className="career__bannner__entry__heading">Meet Us</div>
-        </Link>
-        <div className="career__bannner__divider"></div>
-        <Link to="/vacancies" className="career__bannner__entry">
-          <img src={jobs} alt="jobs" className="career__bannner__entry__img" />
-          <div className="career__bannner__entry__heading">Search Jobs</div>
-        </Link>
+        <div className="career__bannner">
+          <Link
+            to="/meet-us"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="career__bannner__entry"
+          >
+            <img
+              src={meetUs}
+              alt="meetUs"
+              className="career__bannner__entry__img"
+            />
+            <div className="career__bannner__entry__heading">Meet Us</div>
+          </Link>
+          <div className="career__bannner__divider"></div>
+          <Link
+            to="/vacancies"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="career__bannner__entry"
+          >
+            <img
+              src={jobs}
+              alt="jobs"
+              className="career__bannner__entry__img"
+            />
+            <div className="career__bannner__entry__heading">Search Jobs</div>
+          </Link>
+        </div>
       </div>
     </>
   );

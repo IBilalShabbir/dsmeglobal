@@ -20,7 +20,13 @@ export function MeetUsJumbotron() {
         Diverse personalities, Geeks, Individualists, and Team players Making
         kick-ass apps together.
       </div>
-      <Link to="/services" className="jumbotron__link">
+      <Link
+        to="/services"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        className="jumbotron__link"
+      >
         Let’s work together
       </Link>
     </div>

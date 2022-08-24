@@ -2,9 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export function HomeServicesCard({ image, title, info, svg, description }) {
+  function onClick() {
+    window.localStorage.setItem(
+      "servicesData",
+      JSON.stringify(import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image)
+    );
+    setTimeout(() => {
+      window.scrollTo({ behavior: "smooth", top: 0 });
+    }, 300);
+  }
   return (
     <Link
-      to="/"
+      onClick={onClick}
+      to={title
+        .trim()
+        .replaceAll(" ", "-")
+        .replaceAll("-&-", "-")
+        .replaceAll(".", "")
+        .replaceAll("/", "-")
+        .toLowerCase()}
       className={
         description
           ? "home__services__content__card home__services__content__card__reverse"

@@ -26,7 +26,13 @@ export function ServicesJumbotron() {
       >
         THE FULL RANGE OF ENGINEERING SERVICES YOUR COMPANY NEEDS
       </div>
-      <Link to="/services" className="jumbotron__link">
+      <Link
+        to="/services"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        className="jumbotron__link"
+      >
         Let’s work together
       </Link>
     </div>

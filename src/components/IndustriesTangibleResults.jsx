@@ -36,6 +36,9 @@ export function IndustriesTangibleResults({}) {
       </div>
       <Link
         to="/quote"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
         className="industries__tengible__result__content__card__link"
       >
         Get a Quote

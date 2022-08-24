@@ -25,7 +25,13 @@ export function CareersJumbotron() {
         be surrounded by smart, ambitious, and motivated people at DSME Global
         Links.
       </div>
-      <Link to="/services" className="jumbotron__link">
+      <Link
+        to="/services"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        className="jumbotron__link"
+      >
         Let’s work together
       </Link>
     </div>
