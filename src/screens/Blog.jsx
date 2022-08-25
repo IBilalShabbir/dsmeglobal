@@ -4,6 +4,7 @@ import { fetcher } from "../utils/fetcher";
 import { BlogContent } from "../components/BlogContent";
 import { BlogFilters } from "../components/BlogFilters";
 import { BlogJumbotron } from "../components/BlogJumbotron";
+import { Link } from "react-router-dom";
 
 export default function Blog() {
   const [filter, setFiter] = React.useState("");
@@ -34,6 +35,15 @@ export default function Blog() {
       >
         <BlogFilters filter={filter} setFiter={setFiter} />
         <BlogContent dataFilter={dataFilter} data={data} filter={filter} />
+      </div>
+      <div className="blog__motivation">
+        <div className="blog__motivation__heading heading">
+          Delivering software solutions beyond expectations
+        </div>
+        <div className="blog__motivation__info">Have a project in mind?</div>
+        <Link to="/" className="blog__motivation__button">
+          Learn More
+        </Link>
       </div>
     </>
   );
