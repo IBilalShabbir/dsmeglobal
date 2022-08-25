@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 import { homeBannerSvg1, homeBannerSvg3 } from "../assets";
 
@@ -15,12 +16,16 @@ export function BlogJumbotron() {
         alt="homeBannerSvg3"
         className="home__jumbotron__svg3"
       />
-      <div className="jumbotron__heading heading">BLOGS</div>
-      <div className="jumbotron__info">
-        Keep up with the most trending tech news articles. Stay ahead of the
-        curve and up-to-date with the latest technology to advance and innovate
-        your business at DSME Global Link Blog.
-      </div>
+      <Fade bottom distance="30%">
+        <div className="jumbotron__heading heading">BLOGS</div>
+      </Fade>
+      <Fade bottom distance="30%">
+        <div className="jumbotron__info">
+          Keep up with the most trending tech news articles. Stay ahead of the
+          curve and up-to-date with the latest technology to advance and
+          innovate your business at DSME Global Link Blog.
+        </div>
+      </Fade>
       <Link
         to="/services"
         onClick={() => {
@@ -31,7 +36,7 @@ export function BlogJumbotron() {
         }}
         className="jumbotron__link"
       >
-        Let’s work together
+        <Fade distance="30%">Let’s work together</Fade>
       </Link>
     </div>
   );

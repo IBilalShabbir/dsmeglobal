@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 import { homeBannerSvg1, homeBannerSvg3 } from "../assets";
 
@@ -15,13 +16,17 @@ export function AboutJumbotron() {
         alt="homeBannerSvg3"
         className="home__jumbotron__svg3"
       />
-      <div className="jumbotron__heading heading">LETS GET TO KNOW US</div>
-      <div className="jumbotron__info">
-        We are talented. We are experienced. <br />
-        We are bold. We are DSME Global Links! <br />
-        Get a behind-the-scenes glimpse of your new favorite software
-        development company.
-      </div>
+      <Fade bottom distance="30%">
+        <div className="jumbotron__heading heading">LETS GET TO KNOW US</div>
+      </Fade>
+      <Fade bottom distance="30%">
+        <div className="jumbotron__info">
+          We are talented. We are experienced. <br />
+          We are bold. We are DSME Global Links! <br />
+          Get a behind-the-scenes glimpse of your new favorite software
+          development company.
+        </div>
+      </Fade>
       <Link
         to="/services"
         onClick={() => {
@@ -29,7 +34,7 @@ export function AboutJumbotron() {
         }}
         className="jumbotron__link"
       >
-        Let’s work together
+        <Fade distance="30%">Let’s work together</Fade>
       </Link>
     </div>
   );

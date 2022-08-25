@@ -9,6 +9,7 @@ import {
   homeBannerSvg3,
   homeBannerSvg4,
 } from "../assets";
+import { Fade } from "react-reveal";
 
 export function HomeJumbtron() {
   const data = [
@@ -50,42 +51,46 @@ export function HomeJumbtron() {
       />
 
       <div className="home__jumbotron__content">
-        <div className="home__jumbotron__content__left">
-          <div className="home__jumbotron__content__left__heading heading">
-            Quality{" "}
-            <span>
-              <Typewriter loop cursor words={["Products", "Services"]} />
-            </span>{" "}
-            <br /> You Really{" "}
-            <span>
-              <Typewriter loop cursor words={["Need", "Want"]} />
-            </span>
+        <Fade bottom distance="30%">
+          <div className="home__jumbotron__content__left">
+            <div className="home__jumbotron__content__left__heading heading">
+              Quality{" "}
+              <span>
+                <Typewriter loop cursor words={["Products", "Services"]} />
+              </span>{" "}
+              <br /> You Really{" "}
+              <span>
+                <Typewriter loop cursor words={["Need", "Want"]} />
+              </span>
+            </div>
+            <div className="home__jumbotron__content__left__info">
+              Whether you want to modernize your application portfolio broadly,
+              pursue specific opportunities in your industry, or optimize a
+              single technology, DSME brings together all the services with
+              leading back-office and industry-specific SaaS.
+            </div>
+            <NavLink
+              to="/quote"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              title="Get a quote"
+              className="home__jumbotron__content__left__button"
+            >
+              Get a quote
+            </NavLink>
           </div>
-          <div className="home__jumbotron__content__left__info">
-            Whether you want to modernize your application portfolio broadly,
-            pursue specific opportunities in your industry, or optimize a single
-            technology, DSME brings together all the services with leading
-            back-office and industry-specific SaaS.
-          </div>
-          <NavLink
-            to="/quote"
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-            title="Get a quote"
-            className="home__jumbotron__content__left__button"
-          >
-            Get a quote
-          </NavLink>
-        </div>
+        </Fade>
         <div className="home__jumbotron__content__right">
-          <img
-            src={data
-              .filter((item, i) => i === index)
-              .map((item) => item.image)}
-            alt="homeBannerImage"
-            className="home__jumbotron__content__right__img"
-          />
+          <Fade spy={index} duration={2000} appear>
+            <img
+              src={data
+                .filter((item, i) => i === index)
+                .map((item) => item.image)}
+              alt="homeBannerImage"
+              className="home__jumbotron__content__right__img"
+            />
+          </Fade>
         </div>
       </div>
     </section>
