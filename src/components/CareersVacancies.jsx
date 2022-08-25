@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import useSWR from "swr";
 import { noData } from "../assets";
 import { fetcher } from "../utils/fetcher";
@@ -9,8 +9,8 @@ export function CareersVacancies() {
     `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_careers`,
     fetcher
   );
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
-  const [searchQuery, setSearchQuery] = React.useState("");
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [searchQuery, setSearchQuery] = useState("");
   return (
     <div className="careers__vacancies">
       <div className="careers__vacancies__heading heading">

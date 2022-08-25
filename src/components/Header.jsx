@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Menu, X } from "react-feather";
 import { NavLink } from "react-router-dom";
 import { logo } from "../assets";
@@ -6,7 +6,7 @@ import ClickAwayListener from "react-click-away-listener";
 import { Fade } from "react-reveal";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   function changeNavState() {
     if (window.innerWidth < 1000) {
       setIsOpen(false);

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   developmentProcessDesktop,
   developmentProcessMobile,
@@ -6,7 +6,7 @@ import {
 } from "../assets";
 
 export function HomeDevelopmentProcess() {
-  const [isMobile, setIsMobile] = React.useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     if (window.innerWidth < 900) {
       setIsMobile(true);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import useSWR from "swr";
 import { fetcher } from "../utils/fetcher";
 import { BlogContent } from "../components/BlogContent";
@@ -7,7 +7,7 @@ import { BlogJumbotron } from "../components/BlogJumbotron";
 import { Link } from "react-router-dom";
 
 export default function Blog() {
-  const [filter, setFiter] = React.useState("");
+  const [filter, setFiter] = useState("");
   console.log(filter);
   const { data } = useSWR(
     `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_blog`,

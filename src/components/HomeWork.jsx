@@ -29,8 +29,10 @@ export function HomeWork() {
       <div className="home__work__item">
         <img
           src={
-            import.meta.env.VITE_CLOUDNAIRY_API_URL +
-            replacePngWithWebp(project.image)
+            project.length > 0
+              ? import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                replacePngWithWebp(project.image)
+              : ""
           }
           alt={project.title}
           className="home__work__item__img"

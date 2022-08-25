@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import useSWR from "swr";
 import { contactBannerSvg, successSvg } from "../assets";
 import { fetcher } from "../utils/fetcher";
@@ -10,14 +10,14 @@ export default function QuoteJumbotron() {
     fetcher
   );
 
-  const [name, setName] = React.useState("");
-  const [company, setCompany] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [mobile, setMobile] = React.useState("");
-  const [service, setService] = React.useState("");
-  const [message, setMessage] = React.useState("");
-  const [budget, setBudget] = React.useState("");
-  const [success, setSuccess] = React.useState(false);
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [service, setService] = useState("");
+  const [message, setMessage] = useState("");
+  const [budget, setBudget] = useState("");
+  const [success, setSuccess] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();

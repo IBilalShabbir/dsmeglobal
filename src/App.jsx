@@ -1,42 +1,38 @@
-import React from "react";
+import React, { lazy, Suspense, useState } from "react";
 import { withStyles } from "react-critical-css";
 import { Route, Routes } from "react-router";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import About from "./screens/About";
 import Home from "./screens/Home";
 import stylesheet from "./App.scss";
-import MeetUs from "./screens/MeetUs";
-import NotFound from "./screens/NotFound";
-import Quote from "./screens/Quote";
-import Services from "./screens/Services";
-import Industries from "./screens/Industries";
-import Careers from "./screens/Careers";
-import CareersBanner from "./screens/CareersBanner";
-import Blog from "./screens/Blog";
-import BlogDetails from "./screens/BlogDetails";
 
-// topbar.config({
-//   autoRun: false,
-//   barThickness: 3,
-//   barColors: {
-//     0: "#2ecc82",
-//     0.3: "#2ecc82",
-//     1.0: "#2ecc82",
-//   },
-//   shadowBlur: 5,
-//   shadowColor: "transparent",
-//   className: "topbar",
-// });
+const MeetUs = lazy(() => import("./screens/MeetUs"));
+const NotFound = lazy(() => import("./screens/NotFound"));
+const Quote = lazy(() => import("./screens/Quote"));
+const Services = lazy(() => import("./screens/Services"));
+const Industries = lazy(() => import("./screens/Industries"));
+const Careers = lazy(() => import("./screens/Careers"));
+const CareersBanner = lazy(() => import("./screens/CareersBanner"));
+const Blog = lazy(() => import("./screens/Blog"));
+const BlogDetails = lazy(() => import("./screens/BlogDetails"));
+const About = lazy(() => import("./screens/About"));
 
 function App() {
-  const [isHeader, setIsHeader] = React.useState(true);
-  const [isContact, setIsContact] = React.useState(true);
-  const [isFooter, setIsFooter] = React.useState(true);
+  const [isContact, setIsContact] = useState(true);
   return (
-    <>
-      {isHeader ? <Header /> : null}
+    <Suspense
+      fallback={
+        <div
+          style={{
+            backgroundColor: "#181818",
+            height: "100vh",
+            width: "100vw",
+          }}
+        />
+      }
+    >
+      <Header />
       <Routes maxLoadingTime={500}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -54,8 +50,8 @@ function App() {
         <Route path="*" element={<NotFound setIsContact={setIsContact} />} />
       </Routes>
       {isContact ? <Contact /> : null}
-      {isFooter ? <Footer /> : null}
-    </>
+      <Footer />
+    </Suspense>
   );
 }
 export default withStyles(stylesheet)(App);
