@@ -1,5 +1,6 @@
 import React from "react";
 import useSWR from "swr";
+import { noData } from "../assets";
 import { fetcher } from "../utils/fetcher";
 import { CareersVacanciesEntry } from "./CareersVacanciesEntry";
 
@@ -55,22 +56,48 @@ export function CareersVacancies() {
             />
           </svg>
         </div>
-        {data
-          ?.filter((item) =>
-            item.position
-              .toLowerCase()
-              .trim()
-              .includes(searchQuery.toLowerCase().trim())
-          )
-          ?.map((item, i) => (
-            <CareersVacanciesEntry
-              data={item}
-              index={i}
-              key={i}
-              selectedIndex={selectedIndex}
-              setSelectedIndex={setSelectedIndex}
+        {data?.filter((item) =>
+          item.position
+            .toLowerCase()
+            .trim()
+            .includes(searchQuery.toLowerCase().trim())
+        )?.length > 0 ? (
+          data
+            ?.filter((item) =>
+              item.position
+                .toLowerCase()
+                .trim()
+                .includes(searchQuery.toLowerCase().trim())
+            )
+            ?.map((item, i) => (
+              <CareersVacanciesEntry
+                data={item}
+                index={i}
+                key={i}
+                selectedIndex={selectedIndex}
+                setSelectedIndex={setSelectedIndex}
+              />
+            ))
+        ) : (
+          <div
+            style={{
+              width: "100%",
+              height: 300,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src={noData}
+              alt="noData"
+              style={{
+                width: "100%",
+                maxWidth: 500,
+              }}
             />
-          ))}
+          </div>
+        )}
       </div>
     </div>
   );

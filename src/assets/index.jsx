@@ -59,3 +59,4 @@ export { default as retail } from "./retail.svg";
 export { default as transport } from "./transport.svg";
 export { default as meetUs } from "./meetUs.svg";
 export { default as jobs } from "./jobs.svg";
+export { default as noData } from "./noData.svg";

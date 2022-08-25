@@ -1087,6 +1087,7 @@ body::-webkit-scrollbar-track {
   padding: 0em;
   border: none;
   cursor: pointer;
+  margin-bottom: 2em;
 }
 .home__blog__content__entry__img {
   width: 100%;
@@ -2564,6 +2565,70 @@ textarea {
   transition: 300ms ease-in-out;
   background-color: $primary-hover;
 }
+.blog__filters {
+  width: 100%;
+  max-width: 1366px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0em 2em;
+  margin: 0em auto;
+  margin-bottom: -1em;
+  flex-wrap: wrap;
+}
+.blog__filters__entry {
+  position: relative;
+  margin: 0.5em;
+}
+.blog__filters__entry__input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.blog__filters__entry__content {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  min-height: 40px;
+  border-radius: 50px;
+  padding-right: 0.8em;
+}
+.blog__filters__entry__content__icon {
+  background-color: $primary;
+  color: white;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5em;
+}
+.blog__filters__entry__input:hover ~ .blog__filters__entry__content {
+  transition: 300ms ease-in-out;
+  background-color: #bdbdbd;
+}
+.blog__filters__entry__input:checked ~ .blog__filters__entry__content {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  color: white;
+}
+.blog__filters__entry__input:checked
+  ~ .blog__filters__entry__content
+  .blog__filters__entry__content__icon {
+  transition: 300ms ease-in-out;
+  background-color: $black;
+}
+.home__blog__reverse .home__blog__content {
+  justify-content: flex-start;
+}
+.home__blog__reverse .home__blog__content .home__blog__content__entry {
+  margin-right: 1%;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -3178,6 +3243,13 @@ textarea {
   .services__content__main__card__img {
     margin: 0em !important;
     margin-bottom: 1em !important;
+  }
+  .blog__filters {
+    margin-bottom: -4em;
+  }
+  .blog__filters__entry {
+    margin: 0.5em 0em;
+    width: 100%;
   }
 }
 @media (max-width: 470px) {

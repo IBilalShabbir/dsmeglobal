@@ -27,7 +27,7 @@ export function HomeBlog({}) {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }, 300);
                 navigate("/blog-details");
-                window.localStorage.setItem("blogsData", JSON.stringify(blog));
+                window.localStorage.setItem("blogsData", JSON.stringify(item));
               }}
               title={item.title}
             >
