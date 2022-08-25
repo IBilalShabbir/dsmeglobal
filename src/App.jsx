@@ -15,6 +15,7 @@ import Industries from "./screens/Industries";
 import Careers from "./screens/Careers";
 import CareersBanner from "./screens/CareersBanner";
 import Blog from "./screens/Blog";
+import BlogDetails from "./screens/BlogDetails";
 
 // topbar.config({
 //   autoRun: false,
@@ -48,6 +49,7 @@ function App() {
         <Route path="/vacancies" element={<Careers />} />
         <Route path="/meet-us" element={<MeetUs />} />
         <Route path="/blogs" element={<Blog />} />
+        <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/quote" element={<Quote setIsContact={setIsContact} />} />
         <Route path="*" element={<NotFound setIsContact={setIsContact} />} />
       </Routes>

@@ -22,7 +22,14 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="header">
+    <div
+      className="header"
+      style={
+        isOpen && window.innerWidth < 1000
+          ? { backgroundColor: "#181818" }
+          : null
+      }
+    >
       <div className="header__content">
         <NavLink to="/" className="header__content__logo">
           <img src={logo} alt="logo" className="header__content__logo__img" />

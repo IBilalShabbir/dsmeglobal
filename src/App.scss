@@ -2629,6 +2629,61 @@ textarea {
 .home__blog__reverse .home__blog__content .home__blog__content__entry {
   margin-right: 1%;
 }
+.blog__details__banner {
+  width: 100%;
+  max-width: 1600px;
+  height: 550px;
+  overflow: hidden;
+  margin: 0em auto;
+  position: relative;
+}
+.blog__details__banner__img {
+  width: 100%;
+  min-height: 100%;
+  max-height: 150%;
+}
+.blog__details__banner__overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(transparent, $primary);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3em;
+}
+.blog__details__banner__overlay__heading {
+  font-size: 45px;
+  margin-bottom: 0.5em;
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+.blog__details__banner__overlay__info {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.blog__details__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  padding: 2em;
+  text-align: center;
+  margin: 5em auto;
+}
+.blog__details__content a {
+  color: $primary;
+}
+.blog__details__content * {
+  word-break: break-all;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -2684,7 +2739,8 @@ textarea {
   .services__heading,
   .industries__solutions__heading,
   .careers__motivation__content__heading,
-  .careers__vacancies__heading {
+  .careers__vacancies__heading,
+  .blog__details__banner__overlay__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -2993,6 +3049,16 @@ textarea {
   }
 }
 @media (max-width: 800px) {
+  .blog__details__banner {
+    height: 500px;
+  }
+  .blog__details__banner__img {
+    width: 150%;
+    margin-left: -25%;
+  }
+  .blog__details__banner__overlay {
+    height: 100%;
+  }
   .about__key__differences__content__card {
     width: 100%;
     margin-right: 1em;
@@ -3150,7 +3216,8 @@ textarea {
   .services__heading,
   .industries__solutions__heading,
   .careers__motivation__content__heading,
-  .careers__vacancies__heading {
+  .careers__vacancies__heading,
+  .blog__details__banner__overlay__heading {
     font-size: 25px;
   }
   .contact__content__left__heading {
