@@ -11,7 +11,7 @@ export function AboutAchievements() {
     fetcher
   );
   const [slidesPerView, setSlidesPerView] = useState(3);
-  useEffect(() => {
+  function changeSlidesPerView() {
     if (window.innerWidth < 768) {
       setSlidesPerView(1);
     } else if (window.innerWidth < 1000) {
@@ -21,17 +21,10 @@ export function AboutAchievements() {
     } else {
       setSlidesPerView(4);
     }
-    window.addEventListener("resize", () => {
-      if (window.innerWidth < 768) {
-        setSlidesPerView(1);
-      } else if (window.innerWidth < 1000) {
-        setSlidesPerView(2);
-      } else if (window.innerWidth < 1300) {
-        setSlidesPerView(3);
-      } else {
-        setSlidesPerView(4);
-      }
-    });
+  }
+  useEffect(() => {
+    changeSlidesPerView();
+    window.addEventListener("resize", changeSlidesPerView);
   }, []);
   return (
     <div className="about__achievements__awards">
