@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { NavLink } from "react-router-dom";
 import {
@@ -12,6 +12,12 @@ import {
 import { Fade } from "react-reveal";
 
 export function HomeJumbtron() {
+  const preloadedSpinner = useRef();
+
+  useEffect(() => {
+    preloadedSpinner.current = new Image();
+    preloadedSpinner.current.src = homeBannerImage;
+  }, []);
   const data = [
     {
       image: homeBannerImage,
@@ -84,6 +90,7 @@ export function HomeJumbtron() {
         <div className="home__jumbotron__content__right">
           <Fade spy={index} duration={2000} appear>
             <img
+              ref={preloadedSpinner}
               src={data
                 .filter((item, i) => i === index)
                 .map((item) => item.image)}

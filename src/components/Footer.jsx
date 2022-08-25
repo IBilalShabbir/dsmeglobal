@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { footerSvg1, footerSvg2, logo } from "../assets";
-import { Facebook, Linkedin, Twitter, Instagram } from "react-feather";
+import { Facebook, Linkedin, Instagram } from "react-feather";
 
 export default function Footer() {
   return (
