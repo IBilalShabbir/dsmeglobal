@@ -1,7 +1,7 @@
 import React from "react";
 import { HomeServicesCard } from "../components/HomeServicesCard";
 
-export function AboutCustomerCentric({}) {
+export function AboutCustomerCentric() {
   const data = [
     {
       image: (

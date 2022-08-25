@@ -1,7 +1,7 @@
 import React from "react";
 import { CareerrsMotivationCard } from "./CareerrsMotivationCard";
 
-export function CareersMotivation({}) {
+export function CareersMotivation() {
   return (
     <div className="careers__motivation__wrapper">
       <div className="careers__motivation">

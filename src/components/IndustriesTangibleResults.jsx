@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IndustriesTangibleResultsCard } from "./IndustriesTangibleResultsCard";
 
-export function IndustriesTangibleResults({}) {
+export function IndustriesTangibleResults() {
   return (
     <div className="industries__tengible__result">
       <div className="industries__tengible__result__heading heading">

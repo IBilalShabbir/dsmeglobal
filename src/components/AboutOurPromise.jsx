@@ -1,7 +1,7 @@
 import React from "react";
 import { AboutOurPromiseCard } from "./AboutOurPromiseCard";
 
-export function AboutOurPromise({}) {
+export function AboutOurPromise() {
   return (
     <div className="about__our__promise">
       <div className="about__our__promise__heading heading">Our Promise</div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { newsLetterSvg } from "../assets";
 
-export function HomeNewsletter({}) {
+export function HomeNewsletter() {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);

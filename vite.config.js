@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react";
 import viteCompression from "vite-plugin-compression";
 import { ViteWebfontDownload } from "vite-plugin-webfont-dl";
 import { chunkSplitPlugin } from "vite-plugin-chunk-split";
+import { imagetools } from "vite-imagetools";
 import viteImagemin from "vite-plugin-imagemin";
-import { qrcode } from "vite-plugin-qrcode";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,7 +13,7 @@ export default defineConfig({
     viteCompression(),
     ViteWebfontDownload(),
     chunkSplitPlugin(),
-    qrcode(),
+    imagetools(),
     viteImagemin({
       gifsicle: {
         optimizationLevel: 7,

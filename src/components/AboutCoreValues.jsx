@@ -1,7 +1,7 @@
 import React from "react";
 import { AboutCoreValuesCard } from "./AboutCoreValuesCard";
 
-export function AboutCoreValues({}) {
+export function AboutCoreValues() {
   return (
     <div className="about__core__values">
       <div className="about__core__values__heading heading">

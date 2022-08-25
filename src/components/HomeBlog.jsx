@@ -4,7 +4,7 @@ import { fetcher } from "../utils/fetcher";
 import { useNavigate } from "react-router-dom";
 import { replacePngWithWebp } from "../utils/replacePngWithWebp";
 
-export function HomeBlog({}) {
+export function HomeBlog() {
   const { data } = useSWR(
     `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_blog`,
     fetcher
