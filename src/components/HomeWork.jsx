@@ -77,6 +77,9 @@ export function HomeWork() {
       </div>
       <NavLink
         to="/portfolio"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
         title="View All Projects"
         className="home__work__button"
       >

@@ -69,6 +69,9 @@ export function HomeJumbtron() {
           </div>
           <NavLink
             to="/quote"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             title="Get a quote"
             className="home__jumbotron__content__left__button"
           >
