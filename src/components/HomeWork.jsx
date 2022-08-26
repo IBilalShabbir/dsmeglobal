@@ -35,7 +35,7 @@ export function HomeWork() {
         <img
           loading="lazy"
           src={
-            project.length > 0
+            project
               ? import.meta.env.VITE_CLOUDNAIRY_API_URL +
                 replacePngWithWebp(project.image)
               : ""
