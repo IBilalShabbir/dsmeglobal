@@ -10,7 +10,10 @@ import viteImagemin from "vite-plugin-imagemin";
 export default defineConfig({
   plugins: [
     react(),
-    viteCompression(),
+    viteCompression({
+      algorithm: "brotliCompress",
+      threshold: 500,
+    }),
     ViteWebfontDownload(),
     chunkSplitPlugin(),
     imagetools(),
@@ -26,17 +29,33 @@ export default defineConfig({
         quality: 20,
       },
       pngquant: {
-        quality: [0.8, 0.9],
+        quality: [0.7, 0.8],
         speed: 4,
       },
+      webp: {
+        quality: 70,
+      },
       svgo: {
+        multipass: true,
         plugins: [
           {
             name: "removeViewBox",
           },
           {
+            name: "minifyStyles",
+          },
+          {
+            name: "removeMetadata",
+          },
+          {
+            name: "removeUselessStrokeAndFill",
+          },
+          {
+            name: "reusePaths",
+          },
+          {
             name: "removeEmptyAttrs",
-            active: false,
+            active: true,
           },
         ],
       },

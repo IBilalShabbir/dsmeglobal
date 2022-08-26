@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { NavLink } from "react-router-dom";
+import { Fade } from "react-reveal";
 import {
   homeBannerImage,
   homeBannerImage1,
@@ -9,25 +10,11 @@ import {
   homeBannerSvg3,
   homeBannerSvg4,
 } from "../assets";
-import { Fade } from "react-reveal";
 
 export function HomeJumbtron() {
-  const preloadedSpinner = useRef();
-
-  useEffect(() => {
-    preloadedSpinner.current = new Image();
-    preloadedSpinner.current.src = homeBannerImage;
-  }, []);
-  const data = [
-    {
-      image: homeBannerImage,
-    },
-    {
-      image: homeBannerImage1,
-    },
-  ];
+  const data = [homeBannerImage, homeBannerImage1];
   const [index, setIndex] = useState(0);
-  useEffect(() => {
+  useMemo(() => {
     setTimeout(() => {
       setIndex(index + 1 < data.length ? index + 1 : 0);
     }, 4000);
@@ -55,7 +42,6 @@ export function HomeJumbtron() {
         alt="homeBannerSvg4"
         className="home__jumbotron__svg4"
       />
-
       <div className="home__jumbotron__content">
         <Fade bottom distance="30%">
           <div className="home__jumbotron__content__left">
@@ -90,10 +76,7 @@ export function HomeJumbtron() {
         <div className="home__jumbotron__content__right">
           <Fade spy={index} duration={2000} appear>
             <img
-              ref={preloadedSpinner}
-              src={data
-                .filter((item, i) => i === index)
-                .map((item) => item.image)}
+              src={data.filter((item, i) => i === index).map((item) => item)}
               alt="homeBannerImage"
               className="home__jumbotron__content__right__img"
             />
