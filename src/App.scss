@@ -5,10 +5,12 @@
 @font-face {
   font-family: Gilroy-Regular;
   src: url(./assets/Gilroy-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: Gilroy-Bold;
   src: url(./assets/Gilroy-Medium.ttf);
+  font-display: swap;
 }
 $primary: #2ecc82;
 $primary-hover: #24aa6c;

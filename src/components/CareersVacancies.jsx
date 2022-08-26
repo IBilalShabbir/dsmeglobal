@@ -89,6 +89,7 @@ export function CareersVacancies() {
             }}
           >
             <img
+              loading="lazy"
               src={noData}
               alt="noData"
               style={{

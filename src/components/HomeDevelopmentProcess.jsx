@@ -25,6 +25,7 @@ export function HomeDevelopmentProcess() {
   return (
     <div className="home__development__process">
       <img
+        loading="lazy"
         src={developmentProcessSvg}
         alt="developmentProcessSvg"
         className="home__development__process__svg"
@@ -38,6 +39,7 @@ export function HomeDevelopmentProcess() {
         technologies.
       </div>
       <img
+        loading="lazy"
         src={isMobile ? developmentProcessMobile : developmentProcessDesktop}
         alt={
           isMobile ? "developmentProcessMobile" : "developmentProcessDesktop"

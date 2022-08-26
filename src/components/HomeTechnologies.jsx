@@ -134,6 +134,7 @@ export function HomeTechnologies() {
   return (
     <div className="home__technologies">
       <img
+        loading="lazy"
         src={technologiesSvg}
         alt="technologiesSvg"
         className="home__technologies__img"

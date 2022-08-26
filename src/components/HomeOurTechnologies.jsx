@@ -5,11 +5,13 @@ export function HomeOurTechnologies() {
   return (
     <div className="home__techonologies">
       <img
+        loading="lazy"
         src={technologiesSvg1}
         alt="technologiesSvg1"
         className="home__techonologies__svg1"
       />
       <img
+        loading="lazy"
         src={technologiesSvg2}
         alt="technologiesSvg2"
         className="home__techonologies__svg2"
@@ -27,6 +29,7 @@ export function HomeOurTechnologies() {
         <div className="home__techonologies__content__right">
           <div className="home__techonologies__content__img__wrapper">
             <img
+              loading="lazy"
               src={technologiesImg}
               alt="technologiesImg"
               className="home__techonologies__content__right__img"

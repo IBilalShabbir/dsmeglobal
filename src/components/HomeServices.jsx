@@ -36,11 +36,13 @@ export function HomeServices() {
   return (
     <section className="home__services">
       <img
+        loading="lazy"
         src={servicesSvg1}
         alt="servicesSvg1"
         className="home__services__svg1"
       />
       <img
+        loading="lazy"
         src={servicesSvg2}
         alt="servicesSvg2"
         className="home__services__svg2"

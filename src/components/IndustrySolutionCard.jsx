@@ -4,6 +4,7 @@ export function IndustrySolutionCard({ image, title, info }) {
   return (
     <div className="industries__solutions__content__card">
       <img
+        loading="lazy"
         src={image}
         alt={title}
         className="industries__solutions__content__card__img"

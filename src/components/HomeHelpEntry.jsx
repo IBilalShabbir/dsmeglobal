@@ -4,6 +4,7 @@ export function HomeHelpEntry({ image, heading }) {
   return (
     <div className="home__help__content__entry">
       <img
+        loading="lazy"
         src={image}
         alt={heading}
         className="home__help__content__entry__img"

@@ -11,11 +11,13 @@ export function HomeEngagement() {
   return (
     <div className="home__engagement">
       <img
+        loading="lazy"
         src={engagementSvg}
         alt="engagementSvg"
         className="home__engagement__svg"
       />
       <img
+        loading="lazy"
         src={developmentProcessSvg}
         alt="developmentProcessSvg"
         className="home__engagement__svg1"

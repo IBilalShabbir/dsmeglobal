@@ -25,6 +25,7 @@ export function HomeHelp() {
       </div>
       <div className="home__help__slogan">
         <img
+          loading="lazy"
           src={helpSloganSvg}
           alt="helpSloganSvg"
           className="home__help__slogan__svg"

@@ -31,6 +31,7 @@ export function HomeServicesCard({ image, title, info, svg, description }) {
         <div className="home__services__content__card__icon">{svg}</div>
       ) : (
         <img
+          loading="lazy"
           src={image}
           alt={title}
           className="home__services__content__card__img"

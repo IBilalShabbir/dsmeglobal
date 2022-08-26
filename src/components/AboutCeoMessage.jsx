@@ -15,6 +15,7 @@ export function AboutCeoMessage() {
         </div>
         <div className="about__ceo__message__content__right">
           <img
+            loading="lazy"
             src={ceo}
             alt="Dayyan Shahid"
             className="about__ceo__message__content__right__img"

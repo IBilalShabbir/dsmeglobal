@@ -26,6 +26,7 @@ export function ServiceCard({ item }) {
       <Fade up>
         <div className="services__content__main__card">
           <img
+            loading="lazy"
             src={
               import.meta.env.VITE_CLOUDNAIRY_API_URL.replace("q_50", "q_100") +
               item.image

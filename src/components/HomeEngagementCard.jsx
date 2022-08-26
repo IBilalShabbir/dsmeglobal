@@ -6,6 +6,7 @@ export function HomeEngagementCard({ image, title, info, svg }) {
     <Link to="/" className="home__engagement__content__card">
       {svg}
       <img
+        loading="lazy"
         src={image}
         alt={title}
         className="home__engagement__content__card__img"

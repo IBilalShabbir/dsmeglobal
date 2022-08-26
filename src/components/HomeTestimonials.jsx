@@ -22,6 +22,7 @@ export function HomeTestimonials() {
   return (
     <div className="home__testmonials">
       <img
+        loading="lazy"
         src={testimonialSvg}
         alt="testimonialSvg"
         className="home__testmonials__svg"
@@ -51,6 +52,7 @@ export function HomeTestimonials() {
                 className="home__testmonials__content__users__entry__input"
               />
               <img
+                loading="lazy"
                 src={
                   import.meta.env.VITE_CLOUDNAIRY_API_URL +
                   replacePngWithWebp(item.image)

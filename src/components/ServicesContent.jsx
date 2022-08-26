@@ -54,6 +54,7 @@ export function ServicesContent() {
               </li>
             ))}
             <img
+              loading="lazy"
               src={serviceSidebarSvg}
               alt="serviceSidebarSvg"
               className="services__content__sidebar__svg"

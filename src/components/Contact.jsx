@@ -42,6 +42,7 @@ export default function Contact() {
       {success ? (
         <div className="contact__overlay">
           <img
+            loading="lazy"
             src={successSvg}
             alt="success"
             className="contact__overlay__img"
@@ -121,11 +122,13 @@ export default function Contact() {
         </form>
         <div className="contact__content__right">
           <img
+            loading="lazy"
             src={contactSvg}
             alt="contactSvg"
             className="contact__content__right__svg"
           />
           <img
+            loading="lazy"
             src={contactImage}
             alt="contactImage"
             className="contact__content__right__img"

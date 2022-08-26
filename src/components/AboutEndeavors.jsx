@@ -17,6 +17,7 @@ export function AboutEndeavors() {
           {data?.map((item) => (
             <SwiperSlide key={item._id}>
               <img
+                loading="lazy"
                 src={
                   import.meta.env.VITE_CLOUDNAIRY_API_URL +
                   replacePngWithWebp(item.image)

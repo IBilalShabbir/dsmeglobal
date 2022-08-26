@@ -36,6 +36,7 @@ export function HomeNewsletter() {
   return (
     <div className="home__newsletter">
       <img
+        loading="lazy"
         src={newsLetterSvg}
         alt="newsLetterSvg"
         className="home__newsletter__svg"

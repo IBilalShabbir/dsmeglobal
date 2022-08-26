@@ -6,8 +6,18 @@ import { Facebook, Linkedin, Instagram } from "react-feather";
 export default function Footer() {
   return (
     <div className="footer">
-      <img src={footerSvg1} alt="footerSvg1" className="footer__svg1" />
-      <img src={footerSvg2} alt="footerSvg2" className="footer__svg2" />
+      <img
+        loading="lazy"
+        src={footerSvg1}
+        alt="footerSvg1"
+        className="footer__svg1"
+      />
+      <img
+        loading="lazy"
+        src={footerSvg2}
+        alt="footerSvg2"
+        className="footer__svg2"
+      />
       <div className="footer__content">
         <div className="footer__content__col">
           <Link
@@ -18,6 +28,7 @@ export default function Footer() {
             className="footer__content__col__logo"
           >
             <img
+              loading="lazy"
               src={logo}
               alt="logo"
               className="footer__content__col__logo__img"

@@ -26,6 +26,7 @@ export function BlogContent({ dataFilter, data, filter }) {
             }}
           >
             <img
+              loading="lazy"
               src={noData}
               alt="noData"
               style={{

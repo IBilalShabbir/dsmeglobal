@@ -22,6 +22,7 @@ export function BlogCard({ item, filter }) {
       title={item.title}
     >
       <img
+        loading="lazy"
         src={
           import.meta.env.VITE_CLOUDNAIRY_API_URL +
           replacePngWithWebp(item.image)

@@ -24,11 +24,13 @@ export default function Quote({ setIsContact }) {
         }}
       >
         <img
+          loading="lazy"
           src={homeBannerSvg1}
           alt="homeBannerSvg1"
           className="home__jumbotron__svg1"
         />
         <img
+          loading="lazy"
           src={homeBannerSvg3}
           alt="homeBannerSvg3"
           className="home__jumbotron__svg3"

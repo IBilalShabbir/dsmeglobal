@@ -8,7 +8,12 @@ export function HomeStats() {
   useIsInViewport(ref);
   return (
     <section className="home__stats" ref={ref}>
-      <img src={statsSvg} alt="statsSvg" className="home__stats__svg" />
+      <img
+        loading="lazy"
+        src={statsSvg}
+        alt="statsSvg"
+        className="home__stats__svg"
+      />
       <div className="home__stats__content">
         <div className="home__stats__content__entry">
           <div className="home__stats__content__entry__heading">

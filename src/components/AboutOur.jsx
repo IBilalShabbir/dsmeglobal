@@ -6,6 +6,7 @@ export function AboutOur() {
     <div className="about__our">
       <div className="about__our__entry">
         <img
+          loading="lazy"
           src={ourVision}
           alt="ourVision"
           className="about__our__entry__img"
@@ -21,6 +22,7 @@ export function AboutOur() {
       </div>
       <div className="about__our__entry">
         <img
+          loading="lazy"
           src={ourMission}
           alt="ourMission"
           className="about__our__entry__img"

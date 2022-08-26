@@ -22,12 +22,18 @@ export function HomeWork() {
   }, [data]);
   return (
     <div className="home__work">
-      <img src={workSvg} alt="workSvg" className="home__work__svg" />
+      <img
+        loading="lazy"
+        src={workSvg}
+        alt="workSvg"
+        className="home__work__svg"
+      />
       <div className="home__work__heading heading">
         Flip through our latest projects
       </div>
       <div className="home__work__item">
         <img
+          loading="lazy"
           src={
             project.length > 0
               ? import.meta.env.VITE_CLOUDNAIRY_API_URL +

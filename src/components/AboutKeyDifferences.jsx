@@ -188,6 +188,7 @@ export function AboutKeyDifferences() {
       </div>
       <div className="about__key__differences__featuers">
         <img
+          loading="lazy"
           src={differencesSvg}
           alt="differencesSvg"
           className="about__key__differences__featuers__svg"

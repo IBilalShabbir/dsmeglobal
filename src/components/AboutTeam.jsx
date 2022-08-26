@@ -184,7 +184,12 @@ export function AboutTeam({ style }) {
   // ];
   return (
     <div className="about__team" style={style}>
-      <img src={teamSvg} alt="teamSvg" className="about__team__svg" />
+      <img
+        loading="lazy"
+        src={teamSvg}
+        alt="teamSvg"
+        className="about__team__svg"
+      />
       <div className="about__team__heading heading">
         Teamwork, Makes the dream work
       </div>

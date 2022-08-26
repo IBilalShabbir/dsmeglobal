@@ -55,6 +55,7 @@ export default function QuoteJumbotron() {
           style={{ backgroundColor: "#131313" }}
         >
           <img
+            loading="lazy"
             src={successSvg}
             alt="success"
             className="contact__overlay__img"
@@ -67,6 +68,7 @@ export default function QuoteJumbotron() {
       <div className="contact__content" style={{ maxWidth: "1366px" }}>
         <div className="contact__content__right" style={{ marginRight: 100 }}>
           <img
+            loading="lazy"
             src={contactBannerSvg}
             alt="contactImage"
             className="contact__content__right__img"

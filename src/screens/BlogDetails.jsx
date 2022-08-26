@@ -12,6 +12,7 @@ export default function BlogDetails() {
       />
       <div className="blog__details__banner">
         <img
+          loading="lazy"
           src={
             import.meta.env.VITE_CLOUDNAIRY_API_URL.replace("q_50", "q_150") +
             replacePngWithWebp(data.image)

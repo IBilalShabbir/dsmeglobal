@@ -53,6 +53,7 @@ export function AboutAchievements() {
               <SwiperSlide key={item._id}>
                 <div className="about__achievements__awards__content__entry">
                   <img
+                    loading="lazy"
                     src={
                       import.meta.env.VITE_CLOUDNAIRY_API_URL +
                       replacePngWithWebp(item.image)
@@ -82,6 +83,7 @@ export function AboutAchievements() {
               <SwiperSlide key={item._id}>
                 <div className="about__achievements__awards__content__entry">
                   <img
+                    loading="lazy"
                     src={
                       import.meta.env.VITE_CLOUDNAIRY_API_URL +
                       replacePngWithWebp(item.image)
