@@ -16,7 +16,7 @@ import { IndustrySolutionCard } from "./IndustrySolutionCard";
 
 export function IndustriesSolution() {
   const [slidesPerView, setSlidesPerView] = useState(3);
-  useEffect(() => {
+  function changeSlidesPerView() {
     if (window.innerWidth < 768) {
       setSlidesPerView(1.2);
     } else if (window.innerWidth < 1000) {
@@ -26,17 +26,10 @@ export function IndustriesSolution() {
     } else {
       setSlidesPerView(4.5);
     }
-    window.addEventListener("resize", () => {
-      if (window.innerWidth < 768) {
-        setSlidesPerView(1.2);
-      } else if (window.innerWidth < 1000) {
-        setSlidesPerView(2.5);
-      } else if (window.innerWidth < 1300) {
-        setSlidesPerView(3.5);
-      } else {
-        setSlidesPerView(4.5);
-      }
-    });
+  }
+  useEffect(() => {
+    changeSlidesPerView();
+    window.addEventListener("resize", changeSlidesPerView);
   }, []);
   return (
     <div className="industries__solutions">
@@ -113,13 +106,11 @@ export function IndustriesSolution() {
           }}
           loop
           modules={[Autoplay, FreeMode]}
-          freeMode={true}
           speed={2500}
           autoplay={{
             delay: 1,
             disableOnInteraction: false,
             reverseDirection: true,
-            pauseOnMouseEnter: true,
           }}
         >
           <SwiperSlide>
