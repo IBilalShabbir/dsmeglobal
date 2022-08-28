@@ -1,7 +1,7 @@
 
 # DSMEGlobal
 
-A brief description of what this project does and who it's for
+A website for a startup empowering and helping non technical personal to build creative and intuitive digital identity
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/main/LICENSEs)
 
@@ -11,57 +11,45 @@ A brief description of what this project does and who it's for
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/MehfoozurRehman/dsmeglobal
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd dsmeglobal
 ```
 
 Install dependencies
 
 ```bash
-  npm install
+  yarn install
 ```
 
 Start the server
 
 ```bash
-  npm run start
+  yarn start
 ```
 
 
 ## Roadmap
 
-- Additional browser support
+- Pricing Page
 
-- Add more integrations
+- Services Details
 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+![image](https://user-images.githubusercontent.com/68416499/187097453-d619ef5d-c7eb-4ad1-ae8d-09594c4939e7.png)
 
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
-
-**Server:** Node, Express
-
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
+**Client:** React, Sass
 
 
 ## Support
 
-For support, email fake@fake.com or join our Slack channel.
+For support, email mehfoozijaz786@gmail.com or join our Slack channel.
 
