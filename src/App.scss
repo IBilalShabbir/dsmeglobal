@@ -2766,6 +2766,7 @@ textarea {
 }
 .portfolio__details__jubmotron__content__right__img {
   height: 400px;
+  margin-bottom: -0.3em;
 }
 .portfolio__details__about {
   width: 100%;
@@ -2777,18 +2778,22 @@ textarea {
   font-size: 35px;
   margin-bottom: 1em;
   color: white;
+  text-align: center;
 }
 .portfolio__details__about__info {
   font-size: 16px;
   color: $text;
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0em auto;
 }
 .portfolio__details__about__categories {
   width: 100%;
   display: flex;
   align-items: center;
   margin-top: 2.5em;
+  justify-content: center;
 }
 .portfolio__details__about__categories__entry {
   background-color: transparent;
