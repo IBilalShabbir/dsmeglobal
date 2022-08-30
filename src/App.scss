@@ -2743,6 +2743,126 @@ textarea {
   background-color: $primary;
   color: white;
 }
+.portfolio__details__jubmotron {
+  width: 100%;
+}
+.portfolio__details__jubmotron__content {
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0em auto;
+}
+.portfolio__details__jubmotron__content__left {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  flex: 1;
+}
+.portfolio__details__jubmotron__content__right {
+  flex: 1;
+}
+.portfolio__details__jubmotron__content__right__img {
+  height: 400px;
+}
+.portfolio__details__about {
+  width: 100%;
+  max-width: 1366px;
+  padding: 7em 2em;
+  margin: 0em auto;
+}
+.portfolio__details__about__heading {
+  font-size: 35px;
+  margin-bottom: 1em;
+  color: white;
+}
+.portfolio__details__about__info {
+  font-size: 16px;
+  color: $text;
+  width: 100%;
+  max-width: 700px;
+}
+.portfolio__details__about__categories {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 2.5em;
+}
+.portfolio__details__about__categories__entry {
+  background-color: transparent;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 0.5em 2em;
+  margin-right: 1em;
+  font-size: 14px;
+}
+.portfolio__details__about__categories__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: white;
+  color: black;
+}
+.portfolio__details__images {
+  width: 100%;
+  max-width: 1366px;
+  padding: 7em 2em;
+  margin: 0em auto;
+}
+.portfolio__details__images__entry {
+  width: 100%;
+  overflow: hidden !important;
+}
+.portfolio__details__images__entry__img {
+  width: 100%;
+  transition: 300ms ease-in-out;
+}
+.portfolio__details__images__entry:hover
+  .portfolio__details__images__entry__img {
+  transition: 300ms ease-in-out;
+  transform: scale(1.05);
+}
+.portfolio__details__quote {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 4em 2em;
+}
+.portfolio__details__quote svg {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: calc(50% - 225px);
+  z-index: -1;
+  top: calc(50% - 300px);
+}
+.portfolio__details__quote__message {
+  color: white;
+  text-align: center;
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 800px;
+}
+.portfolio__details__quote__name {
+  color: white;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+  max-width: 800px;
+}
+.portfolio__details__quote__designation {
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -2800,7 +2920,8 @@ textarea {
   .careers__motivation__content__heading,
   .careers__vacancies__heading,
   .blog__details__banner__overlay__heading,
-  .blog__motivation__heading {
+  .blog__motivation__heading,
+  .portfolio__details__jubmotron__content__left {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -2869,6 +2990,9 @@ textarea {
   }
   .home__help__content__entry {
     min-width: 50%;
+  }
+  .portfolio__details__jubmotron__content__right__img {
+    height: 350px;
   }
 }
 @media (max-width: 1100px) {
@@ -3051,6 +3175,19 @@ textarea {
   }
   .careers__vacancies {
     margin-top: 4em;
+  }
+  .portfolio__details__jubmotron__content {
+    flex-direction: column;
+  }
+  .portfolio__details__jubmotron__content__left {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio__details__jubmotron__content__right__img {
+    height: fit-content;
+    width: 100%;
   }
 }
 @media (max-width: 900px) {
@@ -3288,7 +3425,8 @@ textarea {
   .careers__motivation__content__heading,
   .careers__vacancies__heading,
   .blog__details__banner__overlay__heading,
-  .blog__motivation__heading {
+  .blog__motivation__heading,
+  .portfolio__details__jubmotron__content__left {
     font-size: 25px;
   }
   .contact__content__left__heading {
@@ -3347,6 +3485,15 @@ textarea {
   }
   .careers__vacancies__content__entry__button {
     padding: 1em 2em;
+  }
+  .portfolio__details__jubmotron__content__left {
+    min-height: 150px;
+  }
+  .portfolio__details__quote {
+    padding: 0em 2em;
+  }
+  .portfolio__details__quote svg {
+    left: calc(50% - 210px);
   }
 }
 @media (max-width: 500px) {
