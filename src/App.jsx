@@ -16,6 +16,7 @@ import CareersBanner from "./screens/CareersBanner";
 import Blog from "./screens/Blog";
 import About from "./screens/About";
 import BlogDetails from "./screens/BlogDetails";
+import Portfolio from "./screens/Portfolio";
 
 function App() {
   const [isContact, setIsContact] = useState(true);
@@ -35,6 +36,7 @@ function App() {
         <Route path="/meet-us" element={<MeetUs />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/blog-details" element={<BlogDetails />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/quote" element={<Quote setIsContact={setIsContact} />} />
         <Route path="*" element={<NotFound setIsContact={setIsContact} />} />
       </Routes>

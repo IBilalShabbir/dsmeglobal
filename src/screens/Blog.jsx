@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 export default function Blog() {
   const [filter, setFiter] = useState("");
-  console.log(filter);
   const { data } = useSWR(
     `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_blog`,
     fetcher

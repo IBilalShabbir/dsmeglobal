@@ -2,7 +2,7 @@ import React from "react";
 import { noData } from "../assets";
 import { BlogCard } from "./BlogCard";
 
-export function BlogContent({ dataFilter, data, filter }) {
+export function BlogContent({ dataFilter, data, filter, isPortfolio }) {
   return (
     <div
       className="home__blog home__blog__reverse"
@@ -13,7 +13,12 @@ export function BlogContent({ dataFilter, data, filter }) {
       <div className="home__blog__content">
         {dataFilter()?.length > 0 ? (
           data?.map((item) => (
-            <BlogCard item={item} key={item._id} filter={filter} />
+            <BlogCard
+              isPortfolio={isPortfolio}
+              item={item}
+              key={item._id}
+              filter={filter}
+            />
           ))
         ) : (
           <div

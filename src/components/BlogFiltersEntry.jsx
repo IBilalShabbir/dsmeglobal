@@ -7,9 +7,13 @@ export function BlogFiltersEntry({ label, filter, setFiter }) {
         type="radio"
         className="blog__filters__entry__input"
         name="blog__filters__entry"
-        checked={filter === label}
+        checked={label === "All" ? filter === "" : filter === label}
         onClick={() => {
-          filter === label ? setFiter("") : setFiter(label);
+          label === "All"
+            ? setFiter("")
+            : filter === label
+            ? setFiter("")
+            : setFiter(label);
         }}
         readOnly
       />
