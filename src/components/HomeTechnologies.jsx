@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { technologiesSvg } from "../assets";
 import { HomeTechnologiesCard } from "./HomeTechnologiesCard";
 
@@ -139,13 +140,17 @@ export function HomeTechnologies() {
         alt="technologiesSvg"
         className="home__technologies__img"
       />
-      <div className="home__technologies__heading heading">
-        Where Business meets cutting-edge Technology
-      </div>
-      <div className="home__technologies__info">
-        Choose the tech stack for your next application, or let us pick the best
-        solution for you
-      </div>
+      <Fade bottom distance="30%">
+        <div className="home__technologies__heading heading">
+          Where Business meets cutting-edge Technology
+        </div>
+      </Fade>
+      <Fade bottom distance="30%">
+        <div className="home__technologies__info">
+          Choose the tech stack for your next application, or let us pick the
+          best solution for you
+        </div>
+      </Fade>
       <div className="home__technologies__content">
         {data.map((item, i) => (
           <HomeTechnologiesCard

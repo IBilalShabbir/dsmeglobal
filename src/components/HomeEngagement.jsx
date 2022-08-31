@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import {
   dedicatedTeams,
   developmentProcessSvg,
@@ -22,11 +23,17 @@ export function HomeEngagement() {
         alt="developmentProcessSvg"
         className="home__engagement__svg1"
       />
-      <div className="home__engagement__heading heading">Engagement Models</div>
-      <div className="home__engagement__info">
-        Depending on your project specifics and needs, you can choose method of
-        your own choice.
-      </div>
+      <Fade bottom distance="30%">
+        <div className="home__engagement__heading heading">
+          Engagement Models
+        </div>
+      </Fade>
+      <Fade bottom distance="30%">
+        <div className="home__engagement__info">
+          Depending on your project specifics and needs, you can choose method
+          of your own choice.
+        </div>
+      </Fade>
       <div className="home__engagement__content">
         <HomeEngagementCard
           to="/dedicated-teams"

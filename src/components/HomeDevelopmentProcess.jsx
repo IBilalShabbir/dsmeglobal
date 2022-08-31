@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Fade } from "react-reveal";
 import {
   developmentProcessDesktop,
   developmentProcessMobile,
@@ -30,22 +31,28 @@ export function HomeDevelopmentProcess() {
         alt="developmentProcessSvg"
         className="home__development__process__svg"
       />
-      <div className="home__development__process__heading heading">
-        Our Development Process
-      </div>
-      <div className="home__development__process__info">
-        We understand the potential value of emerging technologies for both
-        corporates and consumers and thus help you choose the right set of
-        technologies.
-      </div>
-      <img
-        loading="lazy"
-        src={isMobile ? developmentProcessMobile : developmentProcessDesktop}
-        alt={
-          isMobile ? "developmentProcessMobile" : "developmentProcessDesktop"
-        }
-        className="home__development__process__img"
-      />
+      <Fade bottom distance="30%">
+        <div className="home__development__process__heading heading">
+          Our Development Process
+        </div>
+      </Fade>
+      <Fade bottom distance="30%">
+        <div className="home__development__process__info">
+          We understand the potential value of emerging technologies for both
+          corporates and consumers and thus help you choose the right set of
+          technologies.
+        </div>
+      </Fade>
+      <Fade bottom distance="30%">
+        <img
+          loading="lazy"
+          src={isMobile ? developmentProcessMobile : developmentProcessDesktop}
+          alt={
+            isMobile ? "developmentProcessMobile" : "developmentProcessDesktop"
+          }
+          className="home__development__process__img"
+        />
+      </Fade>
     </div>
   );
 }

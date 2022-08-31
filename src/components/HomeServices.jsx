@@ -9,6 +9,7 @@ import {
   servicesSvg1,
   servicesSvg2,
 } from "../assets";
+import { Fade } from "react-reveal";
 
 export function HomeServices() {
   const data = [
@@ -47,17 +48,23 @@ export function HomeServices() {
         alt="servicesSvg2"
         className="home__services__svg2"
       />
-      <div className="home__services__heading heading">
-        A complete enterprise designed
-      </div>
-      <div className="home__services__sub__heading heading">
-        to modernize your business
-      </div>
-      <div className="home__services__info">
-        We excel in providing cutting-edge solutions and development services
-        that drive business performance, cultivate startups, and accelerate
-        growth.
-      </div>
+      <Fade bottom distance="30%">
+        <div className="home__services__heading heading">
+          A complete enterprise designed
+        </div>
+      </Fade>
+      <Fade bottom distance="30%">
+        <div className="home__services__sub__heading heading">
+          to modernize your business
+        </div>
+      </Fade>
+      <Fade bottom distance="30%">
+        <div className="home__services__info">
+          We excel in providing cutting-edge solutions and development services
+          that drive business performance, cultivate startups, and accelerate
+          growth.
+        </div>
+      </Fade>
       <div className="home__services__content">
         {data?.map((item, index) => (
           <HomeServicesCard
@@ -68,16 +75,18 @@ export function HomeServices() {
           />
         ))}
       </div>
-      <NavLink
-        to="/services"
-        onClick={() => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }}
-        title="View All Projects"
-        className="home__work__button"
-      >
-        View All Services
-      </NavLink>
+      <Fade bottom distance="30%">
+        <NavLink
+          to="/services"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          title="View All Projects"
+          className="home__work__button"
+        >
+          View All Services
+        </NavLink>
+      </Fade>
     </section>
   );
 }

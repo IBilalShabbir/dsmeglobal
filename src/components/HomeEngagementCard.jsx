@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
 export function HomeEngagementCard({ image, title, info, svg, to }) {
@@ -11,14 +12,16 @@ export function HomeEngagementCard({ image, title, info, svg, to }) {
       className="home__engagement__content__card"
     >
       {svg}
-      <img
-        loading="lazy"
-        src={image}
-        alt={title}
-        className="home__engagement__content__card__img"
-      />
-      <div className="home__engagement__content__card__heading">{title}</div>
-      <div className="home__engagement__content__card__info">{info}</div>
+      <Fade bottom distance="30%">
+        <img
+          loading="lazy"
+          src={image}
+          alt={title}
+          className="home__engagement__content__card__img"
+        />
+        <div className="home__engagement__content__card__heading">{title}</div>
+        <div className="home__engagement__content__card__info">{info}</div>
+      </Fade>
       <svg
         width="31"
         height="14"

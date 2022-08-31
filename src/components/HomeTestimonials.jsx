@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Fade } from "react-reveal";
 import useSWR from "swr";
 import { testimonialSvg } from "../assets";
 import { fetcher } from "../utils/fetcher";
@@ -27,13 +28,17 @@ export function HomeTestimonials() {
         alt="testimonialSvg"
         className="home__testmonials__svg"
       />
-      <div className="home__testmonials__heading heading">
-        Learn why 1000+ customers trust DSME
-      </div>
-      <div className="home__testmonials__info">
-        Hear from our customers to learn what makes DSME the right choice for
-        them, and why we're the right partner for your business.
-      </div>
+      <Fade bottom distance="30%">
+        <div className="home__testmonials__heading heading">
+          Learn why 1000+ customers trust DSME
+        </div>
+      </Fade>
+      <Fade bottom distance="30%">
+        <div className="home__testmonials__info">
+          Hear from our customers to learn what makes DSME the right choice for
+          them, and why we're the right partner for your business.
+        </div>
+      </Fade>
       <div className="home__testmonials__content">
         <div className="home__testmonials__content__users">
           {data?.map((item, i) => (
@@ -51,30 +56,38 @@ export function HomeTestimonials() {
                 title={item.image}
                 className="home__testmonials__content__users__entry__input"
               />
-              <img
-                loading="lazy"
-                src={
-                  import.meta.env.VITE_CLOUDNAIRY_API_URL +
-                  replacePngWithWebp(item.image)
-                }
-                alt="user"
-                width={100}
-                height={100}
-                className="home__testmonials__content__users__entry__img"
-              />
+              <Fade bottom distance="30%">
+                <img
+                  loading="lazy"
+                  src={
+                    import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                    replacePngWithWebp(item.image)
+                  }
+                  alt="user"
+                  width={100}
+                  height={100}
+                  className="home__testmonials__content__users__entry__img"
+                />
+              </Fade>
             </div>
           ))}
         </div>
         <div className="home__testmonials__content__details">
-          <div className="home__testmonials__content__details__info">
-            {seletedData.content}
-          </div>
-          <div className="home__testmonials__content__details__heading">
-            {seletedData.name}
-          </div>
-          <div className="home__testmonials__content__details__sub__heading">
-            {seletedData.designation}
-          </div>
+          <Fade bottom distance="30%">
+            <div className="home__testmonials__content__details__info">
+              {seletedData.content}
+            </div>
+          </Fade>
+          <Fade bottom distance="30%">
+            <div className="home__testmonials__content__details__heading">
+              {seletedData.name}
+            </div>
+          </Fade>
+          <Fade bottom distance="30%">
+            <div className="home__testmonials__content__details__sub__heading">
+              {seletedData.designation}
+            </div>
+          </Fade>
         </div>
       </div>
     </div>

@@ -8,21 +8,26 @@ import {
   oneStopSolution,
   specializedExperts,
 } from "../assets";
+import { Fade } from "react-reveal";
 
 export function HomeHelp() {
   return (
     <div className="home__help">
-      <Marquee className="home__help__heading heading" speed={100}>
-        <span>We Help You Succeed.</span>
-        <span>We Help You Succeed.</span>
-        <span>We Help You Succeed.</span>
-        <span>We Help You Succeed.</span>
-        <span>We Help You Succeed.</span>
-      </Marquee>
-      <div className="home__help__info">
-        Work with top-notch developers and designers to build, enhance and
-        support your product on time and in budget.
-      </div>
+      <Fade bottom distance="30%">
+        <Marquee className="home__help__heading heading" speed={100}>
+          <span>We Help You Succeed.</span>
+          <span>We Help You Succeed.</span>
+          <span>We Help You Succeed.</span>
+          <span>We Help You Succeed.</span>
+          <span>We Help You Succeed.</span>
+        </Marquee>
+      </Fade>
+      <Fade bottom distance="30%">
+        <div className="home__help__info">
+          Work with top-notch developers and designers to build, enhance and
+          support your product on time and in budget.
+        </div>
+      </Fade>
       <div className="home__help__slogan">
         <img
           loading="lazy"

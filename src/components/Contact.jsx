@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Fade } from "react-reveal";
 import { contactImage, contactSvg, successSvg } from "../assets";
 
 export default function Contact() {
@@ -113,12 +114,14 @@ export default function Contact() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <button
-            title="Let’s Start a Conversation"
-            className="contact__content__left__button"
-          >
-            Let’s Start a Conversation
-          </button>
+          <Fade bottom distance="30%">
+            <button
+              title="Let’s Start a Conversation"
+              className="contact__content__left__button"
+            >
+              Let’s Start a Conversation
+            </button>
+          </Fade>
         </form>
         <div className="contact__content__right">
           <img
@@ -127,12 +130,14 @@ export default function Contact() {
             alt="contactSvg"
             className="contact__content__right__svg"
           />
-          <img
-            loading="lazy"
-            src={contactImage}
-            alt="contactImage"
-            className="contact__content__right__img"
-          />
+          <Fade bottom distance="30%">
+            <img
+              loading="lazy"
+              src={contactImage}
+              alt="contactImage"
+              className="contact__content__right__img"
+            />
+          </Fade>
         </div>
       </div>
     </div>
@@ -141,33 +146,35 @@ export default function Contact() {
 
 function Input({ textarea, required, label, error, ...props }) {
   return (
-    <div className="contact__content__left__input">
-      <label
-        htmlFor={props.id}
-        className="contact__content__left__input__label"
-      >
-        {label}
-        {required ? <span>*</span> : null}
-      </label>
-      {textarea ? (
-        <textarea
-          {...props}
-          cols="30"
-          rows="10"
-          className="contact__content__left__input__field"
-          required={required}
-          style={{ padding: "1em" }}
-        />
-      ) : (
-        <input
-          {...props}
-          className="contact__content__left__input__field"
-          required={required}
-        />
-      )}
-      {error !== "" ? (
-        <div className="contact__content__left__input__error">{error}</div>
-      ) : null}
-    </div>
+    <Fade bottom distance="30%">
+      <div className="contact__content__left__input">
+        <label
+          htmlFor={props.id}
+          className="contact__content__left__input__label"
+        >
+          {label}
+          {required ? <span>*</span> : null}
+        </label>
+        {textarea ? (
+          <textarea
+            {...props}
+            cols="30"
+            rows="10"
+            className="contact__content__left__input__field"
+            required={required}
+            style={{ padding: "1em" }}
+          />
+        ) : (
+          <input
+            {...props}
+            className="contact__content__left__input__field"
+            required={required}
+          />
+        )}
+        {error !== "" ? (
+          <div className="contact__content__left__input__error">{error}</div>
+        ) : null}
+      </div>
+    </Fade>
   );
 }

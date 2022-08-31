@@ -28,32 +28,38 @@ export function HomeWork() {
         alt="workSvg"
         className="home__work__svg"
       />
-      <div className="home__work__heading heading">
-        Flip through our latest projects
-      </div>
-      <div className="home__work__item">
-        <img
-          loading="lazy"
-          src={
-            project
-              ? import.meta.env.VITE_CLOUDNAIRY_API_URL +
-                replacePngWithWebp(project.image)
-              : ""
-          }
-          alt={project.title}
-          className="home__work__item__img"
-        />
-        <div className="home__work__item__content">
-          <div className="home__work__item__content__sub__heading">
-            {project.company}
-          </div>
-          <div className="home__work__item__content__heading">
-            {project.title}
-          </div>
-          <div className="home__work__item__content__info">
-            {project.description}
-          </div>
+      <Fade bottom distance="30%">
+        <div className="home__work__heading heading">
+          Flip through our latest projects
         </div>
+      </Fade>
+      <div className="home__work__item">
+        <Fade bottom distance="30%">
+          <img
+            loading="lazy"
+            src={
+              data
+                ? import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                  replacePngWithWebp(project.image)
+                : ""
+            }
+            alt={project.title}
+            className="home__work__item__img"
+          />
+        </Fade>
+        <Fade bottom distance="30%">
+          <div className="home__work__item__content">
+            <div className="home__work__item__content__sub__heading">
+              {project.company}
+            </div>
+            <div className="home__work__item__content__heading">
+              {project.title}
+            </div>
+            <div className="home__work__item__content__info">
+              {project.description}
+            </div>
+          </div>
+        </Fade>
       </div>
       <div className="home__work__seletion">
         {data?.map((item, i) => (

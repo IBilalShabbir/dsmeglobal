@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { technologiesImg, technologiesSvg1, technologiesSvg2 } from "../assets";
 
 export function HomeOurTechnologies() {
@@ -18,22 +19,28 @@ export function HomeOurTechnologies() {
       />
       <div className="home__techonologies__content">
         <div className="home__techonologies__left">
-          <div className="home__techonologies__content__left__heading heading">
-            Our Technologies
-          </div>
-          <div className="home__techonologies__content__left__info">
-            We solve business challenges with cutting-edge technology and
-            data-driven research.
-          </div>
+          <Fade bottom distance="30%">
+            <div className="home__techonologies__content__left__heading heading">
+              Our Technologies
+            </div>
+          </Fade>
+          <Fade bottom distance="30%">
+            <div className="home__techonologies__content__left__info">
+              We solve business challenges with cutting-edge technology and
+              data-driven research.
+            </div>
+          </Fade>
         </div>
         <div className="home__techonologies__content__right">
           <div className="home__techonologies__content__img__wrapper">
-            <img
-              loading="lazy"
-              src={technologiesImg}
-              alt="technologiesImg"
-              className="home__techonologies__content__right__img"
-            />
+            <Fade bottom distance="30%">
+              <img
+                loading="lazy"
+                src={technologiesImg}
+                alt="technologiesImg"
+                className="home__techonologies__content__right__img"
+              />
+            </Fade>
           </div>
         </div>
       </div>
