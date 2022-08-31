@@ -2711,10 +2711,10 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-click-away-listener@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/react-click-away-listener/-/react-click-away-listener-2.2.1.tgz#c04b72783baf1a70b1f5bee3969019b3517cc565"
-  integrity sha512-l6KoQXrVgPVTGXTQllqMjzpmHDLBkm7LTOr3NIAhWeNc1JWyeecP/jh/3r77Jn9LxDxuYC0pJFuFg+fu06HdlA==
+react-click-away-listener@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/react-click-away-listener/-/react-click-away-listener-2.2.2.tgz#933104ae8df6bec1272b5738ebce4b665de16917"
+  integrity sha512-6x5Ra+2xagMq+5YcBu42jtht+bKVErgPXaI/GqYP5M8Xz2o/UbGyMd3TISQK6ixfORUTvdHeRnOVU3TbSpZ5Zg==
 
 react-cloudinary-upload-widget@^1.6.0:
   version "1.6.0"
@@ -2934,10 +2934,10 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
-sass@^1.54.7:
-  version "1.54.7"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.7.tgz#a93fb1690472b161fab8f4ab34a66a0f3000c478"
-  integrity sha512-3q7MQz7sCpVG6TLhUfZwGOcd2/sm2ghYN2JEdRjNiW04ILdvahdo9GuAs+bxsxZ3hDCKv+wUT5w0iFWGU0CxlA==
+sass@^1.54.8:
+  version "1.54.8"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.8.tgz#4adef0dd86ea2b1e4074f551eeda4fc5f812a996"
+  integrity sha512-ib4JhLRRgbg6QVy6bsv5uJxnJMTS2soVcCp9Y88Extyy13A8vV0G1fAwujOzmNkFQbR3LvedudAMbtuNRPbQww==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
