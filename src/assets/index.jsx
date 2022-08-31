@@ -60,3 +60,4 @@ export { default as transport } from "./transport.svg";
 export { default as meetUs } from "./meetUs.svg";
 export { default as jobs } from "./jobs.svg";
 export { default as noData } from "./noData.svg";
+export { default as dedicatedTeamAbout } from "./dedicatedTeamAbout.svg";

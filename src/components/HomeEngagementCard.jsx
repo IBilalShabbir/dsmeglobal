@@ -1,9 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export function HomeEngagementCard({ image, title, info, svg }) {
+export function HomeEngagementCard({ image, title, info, svg, to }) {
   return (
-    <Link to="/" className="home__engagement__content__card">
+    <Link
+      to={to}
+      onClick={() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }}
+      className="home__engagement__content__card"
+    >
       {svg}
       <img
         loading="lazy"

@@ -29,6 +29,7 @@ export function HomeEngagement() {
       </div>
       <div className="home__engagement__content">
         <HomeEngagementCard
+          to="/dedicated-teams"
           image={dedicatedTeams}
           title="Build your Dedicated Teams"
           info="Get your projects fast-tracked with the best technical and management talent. Increase quality and efficiency, and retain complete control of teams."
@@ -63,6 +64,7 @@ export function HomeEngagement() {
           }
         />
         <HomeEngagementCard
+          to="/"
           image={fixedPrice}
           title="Fixed Price Project"
           info="Get a comprehensive product development experience from design to delivery with reduced development costs."
