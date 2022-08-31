@@ -2898,6 +2898,109 @@ textarea {
 .dedicated__teams__about__right__img {
   width: 100%;
 }
+.dedicated__teams__plan {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1366px;
+  padding: 4em 2em;
+  margin: 0em auto;
+}
+.dedicated__teams__plan__left {
+  flex: 1;
+  margin-right: 2em;
+}
+.dedicated__teams__plan__wrapper {
+  padding: 2.5em;
+  border-radius: 10px;
+  outline: 2px solid transparent;
+  outline-offset: -3px;
+}
+.dedicated__teams__plan__left .dedicated__teams__plan__wrapper {
+  border: 1px solid #aaaaaa;
+}
+.dedicated__teams__plan__left:hover .dedicated__teams__plan__wrapper {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
+  outline-color: $primary;
+}
+.dedicated__teams__plan__right {
+  flex: 1;
+}
+.dedicated__teams__plan__right .dedicated__teams__plan__wrapper {
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+}
+.dedicated__teams__plan__right:hover .dedicated__teams__plan__wrapper {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
+  outline-color: $primary;
+}
+.dedicated__teams__plan__heading {
+  font-size: 25px;
+  color: $black;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.dedicated__teams__plan__info {
+  margin-left: 2em;
+  position: relative;
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+.dedicated__teams__plan__info::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: $primary;
+}
+.dedicated__teams__plan__left .dedicated__teams__plan__content {
+  background-color: $primary;
+}
+.dedicated__teams__plan__right .dedicated__teams__plan__content {
+  background-color: $black;
+}
+.dedicated__teams__plan__left
+  .dedicated__teams__plan__content
+  .dedicated__teams__plan__content__info::before {
+  background-color: white;
+}
+.dedicated__teams__plan__content {
+  padding: 2.5em;
+  border-radius: 10px;
+  margin-top: -1em;
+  z-index: 1;
+  position: relative;
+  padding-bottom: 1.5em;
+}
+.dedicated__teams__plan__content__heading {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 1em;
+}
+.dedicated__teams__plan__content__info {
+  margin-left: 2em;
+  position: relative;
+  margin-bottom: 1em;
+  color: white;
+  font-size: 18px;
+  width: calc(100% - 2em);
+  max-width: 400px;
+}
+.dedicated__teams__plan__content__info::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: $primary;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -3172,6 +3275,13 @@ textarea {
   }
   .dedicated__teams__about__left__info {
     text-align: center;
+  }
+  .dedicated__teams__plan {
+    flex-direction: column;
+  }
+  .dedicated__teams__plan__left {
+    margin-right: 0em;
+    margin-bottom: 2em;
   }
   .header__content__menu {
     display: flex;
@@ -3473,7 +3583,8 @@ textarea {
   .blog__details__banner__overlay__heading,
   .blog__motivation__heading,
   .portfolio__details__jubmotron__content__left,
-  .dedicated__teams__about__left__heading {
+  .dedicated__teams__about__left__heading,
+  .dedicated__teams__plan__heading {
     font-size: 25px;
   }
   .contact__content__left__heading {
