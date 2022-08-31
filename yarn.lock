@@ -418,10 +418,19 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.17":
+"@types/react@*":
   version "18.0.17"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.17.tgz#4583d9c322d67efe4b39a935d223edcc7050ccf4"
   integrity sha512-38ETy4tL+rn4uQQi7mB81G7V1g0u2ryquNmsVIOKUAEIDK+3CUjZ6rSRpdvS99dNBnkLFL83qfmtLacGOTIhwQ==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^18.0.18":
+  version "18.0.18"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.18.tgz#9f16f33d57bc5d9dca848d12c3572110ff9429ac"
+  integrity sha512-6hI08umYs6NaiHFEEGioXnxJ+oEhY3eRz8VCUaudZmGdtvPviCJB8mgaMxaDWAdPSYd4eFavrPk2QIolwbLYrg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -1880,10 +1889,10 @@ imagemin@^7.0.1:
     p-pipe "^3.0.0"
     replace-ext "^1.0.0"
 
-imagetools-core@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/imagetools-core/-/imagetools-core-3.0.3.tgz#ed454c47abb21e85c272798a8a47b569ca344c72"
-  integrity sha512-JK7kb0ezkzD27zQgZs7mtRd7DekC+/RTePjIzPsuBAp3S/Z17wNt+6TSEdDJRQSV5xiGV+SOG00weSGVdX3Xig==
+imagetools-core@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/imagetools-core/-/imagetools-core-3.1.1.tgz#78ce6dd61d726f34574ee2baafe49d611c6b917d"
+  integrity sha512-LNVnortLEgE0ATHaGZBt3WTccKBz8zNk+NWRHsuyhgMiZ1nCJwAA1I2QcHXUq7OMbsiYm/H5muTv+iSLXM2tiA==
   dependencies:
     sharp "^0.30.0"
 
@@ -2925,10 +2934,10 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
-sass@^1.54.5:
-  version "1.54.5"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.5.tgz#93708f5560784f6ff2eab8542ade021a4a947b3a"
-  integrity sha512-p7DTOzxkUPa/63FU0R3KApkRHwcVZYC0PLnLm5iyZACyp15qSi32x7zVUhRdABAATmkALqgGrjCJAcWvobmhHw==
+sass@^1.54.7:
+  version "1.54.7"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.7.tgz#a93fb1690472b161fab8f4ab34a66a0f3000c478"
+  integrity sha512-3q7MQz7sCpVG6TLhUfZwGOcd2/sm2ghYN2JEdRjNiW04ILdvahdo9GuAs+bxsxZ3hDCKv+wUT5w0iFWGU0CxlA==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
@@ -3407,13 +3416,13 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vite-imagetools@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/vite-imagetools/-/vite-imagetools-4.0.4.tgz#4feba88c2dcaa8a6413c5f2e7afed3060862f6e0"
-  integrity sha512-ik1Sq4ueKYN2iBjxe3g8YxqM9aul2goQ2z8CuTKKxOG3M1nF63SRqialbXMuJVH8aKJ9A2oGhs1sktCAoo9EBg==
+vite-imagetools@^4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/vite-imagetools/-/vite-imagetools-4.0.7.tgz#94653232174477b6b243e8b078c922cd1e87f955"
+  integrity sha512-QyT5J455oD0jzi+bIfP/QHNNTSVdyYeWLXZBS0XeI5hReZ/7U4fD7ypZM1qwEBTEJFte4hDrOsFeyin09wig2A==
   dependencies:
     "@rollup/pluginutils" "^4.1.2"
-    imagetools-core "^3.0.3"
+    imagetools-core "^3.1.1"
     magic-string "^0.26.0"
 
 vite-plugin-chunk-split@^0.2.7:
