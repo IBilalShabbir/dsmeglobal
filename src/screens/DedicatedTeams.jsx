@@ -4,6 +4,7 @@ import { DedicatedTeamsJumbotron } from "../components/DedicatedTeamsJumbotron";
 import { DedicatedTeamsAbout } from "../components/DedicatedTeamsAbout";
 import { DedicatedTeamsPlans } from "../components/DedicatedTeamsPlans";
 import { DedicatedTeamsAdvantages } from "../components/DedicatedTeamsAdvantages";
+import { DedicatedTeamsGetStarted } from "../components/DedicatedTeamsGetStarted";
 
 export default function DedicatedTeams() {
   return (
@@ -12,6 +13,7 @@ export default function DedicatedTeams() {
       <DedicatedTeamsAbout />
       <DedicatedTeamsPlans />
       <DedicatedTeamsAdvantages />
+      <DedicatedTeamsGetStarted />
       <DedicatedTeamsWhy />
     </>
   );
