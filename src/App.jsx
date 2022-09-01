@@ -19,6 +19,7 @@ import BlogDetails from "./screens/BlogDetails";
 import Portfolio from "./screens/Portfolio";
 import PortfolioDetails from "./screens/PortfolioDetails";
 import DedicatedTeams from "./screens/DedicatedTeams";
+import FixedPrice from "./screens/FixedPrice";
 
 function App() {
   const [isContact, setIsContact] = useState(true);
@@ -37,6 +38,7 @@ function App() {
         <Route path="/vacancies" element={<Careers />} />
         <Route path="/meet-us" element={<MeetUs />} />
         <Route path="/dedicated-teams" element={<DedicatedTeams />} />
+        <Route path="/fixed-price" element={<FixedPrice />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/portfolio" element={<Portfolio />} />

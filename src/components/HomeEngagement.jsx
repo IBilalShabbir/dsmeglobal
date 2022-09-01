@@ -71,7 +71,7 @@ export function HomeEngagement() {
           }
         />
         <HomeEngagementCard
-          to="/"
+          to="/fixed-price"
           image={fixedPrice}
           title="Fixed Price Project"
           info="Get a comprehensive product development experience from design to delivery with reduced development costs."
