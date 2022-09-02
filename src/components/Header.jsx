@@ -116,7 +116,7 @@ export default function Header() {
                   Career
                 </NavLink>
               </Fade>
-              <Fade top distance="30%">
+              {/* <Fade top distance="30%">
                 <NavLink
                   to="/blogs"
                   activeclassname="active"
@@ -129,7 +129,7 @@ export default function Header() {
                 >
                   Blogs
                 </NavLink>
-              </Fade>
+              </Fade> */}
               <NavLink
                 to="/quote"
                 onClick={() => {
