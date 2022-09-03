@@ -33,7 +33,7 @@
     "@vitejs/plugin-react": "^2.0.1",
     "sass": "^1.54.8",
     "vite": "^3.0.9",
-    "vite-imagetools": "^4.0.7",
+    "vite-imagetools": "^4.0.8",
     "vite-plugin-chunk-split": "^0.2.7",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-imagemin": "^0.6.1",
