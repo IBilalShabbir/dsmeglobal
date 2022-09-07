@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import useSWR from "swr";
-import { noData } from "../assets";
-import { fetcher } from "../utils/fetcher";
 import { CareersVacanciesEntry } from "./CareersVacanciesEntry";
+import { fetcher } from "../utils/fetcher";
+import { noData } from "../assets";
+import useSWR from "swr";
 
 export function CareersVacancies() {
   const { data } = useSWR(

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import useSWR from "swr";
-import { fetcher } from "../utils/fetcher";
 import { replacePngWithWebp } from "../utils/replacePngWithWebp";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { fetcher } from "../utils/fetcher";
+import { Autoplay } from "swiper";
+import useSWR from "swr";
 
 export function AboutAchievements() {
   const { data } = useSWR(

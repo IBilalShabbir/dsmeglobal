@@ -1,7 +1,7 @@
 import React from "react";
 import { replacePngWithWebp } from "../utils/replacePngWithWebp";
-import DOMPurify from "dompurify";
 import { parseDate } from "../utils/parseDate";
+import DOMPurify from "dompurify";
 
 export default function BlogDetails() {
   const data = JSON.parse(window.localStorage.getItem("blogsData"));
@@ -14,7 +14,7 @@ export default function BlogDetails() {
         <img
           loading="lazy"
           src={
-            import.meta.env.VITE_CLOUDNAIRY_API_URL.replace("q_50", "q_150") +
+            import.meta.env.VITE_CLOUDNAIRY_API_URL +
             replacePngWithWebp(data.image)
           }
           alt={data.title}

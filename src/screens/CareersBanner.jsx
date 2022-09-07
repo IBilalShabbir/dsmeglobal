@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { Fade } from "react-reveal";
-import { Link } from "react-router-dom";
 import { homeBannerSvg1, homeBannerSvg3, jobs, meetUs } from "../assets";
+import { Link } from "react-router-dom";
+import { Fade } from "react-reveal";
 
 export default function CareersBanner({ setIsContact }) {
   useEffect(() => {

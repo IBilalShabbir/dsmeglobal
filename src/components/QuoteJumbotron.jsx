@@ -1,8 +1,8 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
-import useSWR from "swr";
 import { contactBannerSvg, successSvg } from "../assets";
 import { fetcher } from "../utils/fetcher";
+import axios from "axios";
+import useSWR from "swr";
 
 export default function QuoteJumbotron() {
   const { data } = useSWR(

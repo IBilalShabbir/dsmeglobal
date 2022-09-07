@@ -1,10 +1,10 @@
 import React from "react";
-import Scrollspy from "react-scrollspy";
-import { fetcher } from "../utils/fetcher";
-import useSWR from "swr";
-import { Fade } from "react-reveal";
 import { serviceSidebarSvg } from "../assets";
 import { ServiceCard } from "./ServiceCard";
+import { fetcher } from "../utils/fetcher";
+import Scrollspy from "react-scrollspy";
+import { Fade } from "react-reveal";
+import useSWR from "swr";
 
 export function ServicesContent() {
   const { data } = useSWR(

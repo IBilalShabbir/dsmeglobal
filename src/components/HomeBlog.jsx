@@ -1,9 +1,9 @@
 import React from "react";
-import useSWR from "swr";
-import { fetcher } from "../utils/fetcher";
-import { useNavigate } from "react-router-dom";
 import { replacePngWithWebp } from "../utils/replacePngWithWebp";
+import { useNavigate } from "react-router-dom";
+import { fetcher } from "../utils/fetcher";
 import { Fade } from "react-reveal";
+import useSWR from "swr";
 
 export function HomeBlog() {
   const { data } = useSWR(

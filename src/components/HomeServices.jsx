@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { HomeServicesCard } from "./HomeServicesCard";
+import { Link } from "react-router-dom";
+import { Fade } from "react-reveal";
 import {
   webDevServiceImage,
   staffAugmentationServiceImage,
@@ -9,7 +10,6 @@ import {
   servicesSvg1,
   servicesSvg2,
 } from "../assets";
-import { Fade } from "react-reveal";
 
 export function HomeServices() {
   const data = [
@@ -76,7 +76,7 @@ export function HomeServices() {
         ))}
       </div>
       <Fade bottom distance="30%">
-        <NavLink
+        <Link
           to="/services"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
@@ -85,7 +85,7 @@ export function HomeServices() {
           className="home__work__button"
         >
           View All Services
-        </NavLink>
+        </Link>
       </Fade>
     </section>
   );

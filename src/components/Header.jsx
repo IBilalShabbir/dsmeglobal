@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Menu, X } from "react-feather";
-import { NavLink } from "react-router-dom";
-import { logo } from "../assets";
 import ClickAwayListener from "react-click-away-listener";
+import { NavLink } from "react-router-dom";
+import { Menu, X } from "react-feather";
 import { Fade } from "react-reveal";
+import { logo } from "../assets";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);

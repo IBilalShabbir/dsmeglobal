@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import useSWR from "swr";
-import { fetcher } from "../utils/fetcher";
+import { BlogJumbotron } from "../components/BlogJumbotron";
 import { BlogContent } from "../components/BlogContent";
 import { BlogFilters } from "../components/BlogFilters";
-import { BlogJumbotron } from "../components/BlogJumbotron";
+import { fetcher } from "../utils/fetcher";
 import { Link } from "react-router-dom";
+import useSWR from "swr";
 
 export default function Blog() {
   const [filter, setFiter] = useState("");

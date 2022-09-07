@@ -1,7 +1,7 @@
 import React from "react";
-import { AboutTeam } from "../components/AboutTeam";
 import { MeetUsJumbotron } from "../components/MeetUsJumbotron";
 import { MeetUsContent } from "../components/MeetUsContent";
+import { AboutTeam } from "../components/AboutTeam";
 
 export default function MeetUs() {
   return (

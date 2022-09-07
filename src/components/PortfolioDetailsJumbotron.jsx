@@ -14,7 +14,7 @@ export function PortfolioDetailsJumbotron({ data }) {
         <div className="portfolio__details__jubmotron__content__right">
           <img
             src={
-              import.meta.env.VITE_CLOUDNAIRY_API_URL.replace("q_50", "q_150") +
+              import.meta.env.VITE_CLOUDNAIRY_API_URL +
               replacePngWithWebp(data.banner)
             }
             alt={data.title}

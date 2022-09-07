@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
 import {
   homeBannerImage,
@@ -61,7 +61,7 @@ export function HomeJumbtron() {
               single technology, DSME brings together all the services with
               leading back-office and industry-specific SaaS.
             </div>
-            <NavLink
+            <Link
               to="/quote"
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
@@ -70,7 +70,7 @@ export function HomeJumbtron() {
               className="home__jumbotron__content__left__button"
             >
               Get a quote
-            </NavLink>
+            </Link>
           </div>
         </Fade>
         <div className="home__jumbotron__content__right">

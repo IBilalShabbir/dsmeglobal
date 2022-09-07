@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Fade } from "react-reveal";
-import useSWR from "swr";
+import { replacePngWithWebp } from "../utils/replacePngWithWebp";
 import { testimonialSvg } from "../assets";
 import { fetcher } from "../utils/fetcher";
-import { replacePngWithWebp } from "../utils/replacePngWithWebp";
+import { Fade } from "react-reveal";
+import useSWR from "swr";
 
 export function HomeTestimonials() {
   const { data } = useSWR(

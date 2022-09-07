@@ -1,8 +1,8 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import useSWR from "swr";
-import { fetcher } from "../utils/fetcher";
 import { replacePngWithWebp } from "../utils/replacePngWithWebp";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { fetcher } from "../utils/fetcher";
+import useSWR from "swr";
 
 export function AboutEndeavors() {
   const { data } = useSWR(

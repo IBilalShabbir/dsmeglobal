@@ -23,17 +23,15 @@ export function PortfolioDetailsImages({ data }) {
         <SwiperSlide>
           <a
             href={
-              import.meta.env.VITE_CLOUDNAIRY_API_URL.replace("q_50", "q_150") +
+              import.meta.env.VITE_CLOUDNAIRY_API_URL +
               replacePngWithWebp(data.image)
             }
             className="portfolio__details__images__entry"
           >
             <img
               src={
-                import.meta.env.VITE_CLOUDNAIRY_API_URL.replace(
-                  "q_50",
-                  "q_150"
-                ) + replacePngWithWebp(data.image)
+                import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                replacePngWithWebp(data.image)
               }
               alt={data.title}
               className="portfolio__details__images__entry__img"
@@ -44,19 +42,15 @@ export function PortfolioDetailsImages({ data }) {
           <SwiperSlide>
             <a
               href={
-                import.meta.env.VITE_CLOUDNAIRY_API_URL.replace(
-                  "q_50",
-                  "q_150"
-                ) + replacePngWithWebp(item)
+                import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                replacePngWithWebp(item)
               }
               className="portfolio__details__images__entry"
             >
               <img
                 src={
-                  import.meta.env.VITE_CLOUDNAIRY_API_URL.replace(
-                    "q_50",
-                    "q_150"
-                  ) + replacePngWithWebp(item)
+                  import.meta.env.VITE_CLOUDNAIRY_API_URL +
+                  replacePngWithWebp(item)
                 }
                 alt={data.title}
                 className="portfolio__details__images__entry__img"

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { fetcher } from "../utils/fetcher";
 import { replacePngWithWebp } from "../utils/replacePngWithWebp";
-import useSWR from "swr";
+import { Link } from "react-router-dom";
+import { fetcher } from "../utils/fetcher";
 import { Fade } from "react-reveal";
 import { workSvg } from "../assets";
+import useSWR from "swr";
 
 export function HomeWork() {
   const { data } = useSWR(
@@ -89,7 +89,7 @@ export function HomeWork() {
           </div>
         ))}
       </div>
-      <NavLink
+      <Link
         to="/portfolio"
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
@@ -98,7 +98,7 @@ export function HomeWork() {
         className="home__work__button"
       >
         View All Projects
-      </NavLink>
+      </Link>
     </div>
   );
 }

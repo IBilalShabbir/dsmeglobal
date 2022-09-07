@@ -1,7 +1,7 @@
 import React from "react";
+import { IndustriesTangibleResults } from "../components/IndustriesTangibleResults";
 import { IndustriesJumbotron } from "../components/IndustriesJumbotron";
 import { IndustriesSolution } from "../components/IndustriesSolution";
-import { IndustriesTangibleResults } from "../components/IndustriesTangibleResults";
 
 export default function Industries() {
   return (

@@ -27,10 +27,7 @@ export function ServiceCard({ item }) {
         <div className="services__content__main__card">
           <img
             loading="lazy"
-            src={
-              import.meta.env.VITE_CLOUDNAIRY_API_URL.replace("q_50", "q_100") +
-              item.image
-            }
+            src={import.meta.env.VITE_CLOUDNAIRY_API_URL + item.image}
             alt={item.title}
             className="services__content__main__card__img"
           />
