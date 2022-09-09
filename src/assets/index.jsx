@@ -63,3 +63,6 @@ export { default as noData } from "./noData.svg";
 export { default as dedicatedTeamAbout } from "./dedicatedTeamAbout.svg";
 export { default as dedicatedTeamAdvantages } from "./dedicatedTeamAdvantages.svg";
 export { default as dedicatedTeamAdvantagesActive } from "./dedicatedTeamAdvantagesActive.svg";
+export { default as domianKnowledge } from "./domianKnowledge.svg";
+export { default as enterprise } from "./enterprise.svg";
+export { default as techonologies } from "./techonologies.svg";

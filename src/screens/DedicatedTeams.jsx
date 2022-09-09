@@ -5,6 +5,7 @@ import { DedicatedTeamsAbout } from "../components/DedicatedTeamsAbout";
 import { DedicatedTeamsPlans } from "../components/DedicatedTeamsPlans";
 import { DedicatedTeamsAdvantages } from "../components/DedicatedTeamsAdvantages";
 import { DedicatedTeamsGetStarted } from "../components/DedicatedTeamsGetStarted";
+import { DedicatedBestFit } from "../components//DedicatedBestFit";
 
 export default function DedicatedTeams() {
   return (
@@ -15,6 +16,7 @@ export default function DedicatedTeams() {
       <DedicatedTeamsAdvantages />
       <DedicatedTeamsGetStarted />
       <DedicatedTeamsWhy />
+      <DedicatedBestFit />
     </>
   );
 }
