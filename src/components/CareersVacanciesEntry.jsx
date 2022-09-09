@@ -28,7 +28,8 @@ export function CareersVacanciesEntry({
       {selectedIndex === index ? (
         <div className="careers__vacancies__content__entry__content">
           <Link
-            to="/"
+            to="/vacancies-details"
+            state={data}
             className="careers__vacancies__content__entry__content__name heading"
           >
             {data?.position}

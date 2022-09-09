@@ -3242,6 +3242,20 @@ textarea {
   background-color: transparent;
   border: 1px solid $black;
 }
+.careers__details__content {
+  width: 100%;
+  max-width: 1366px;
+  padding: 5em 2em;
+  margin: 0em auto;
+}
+.careers__details__content__heading {
+  font-size: 25px;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.careers__details__content__info {
+  margin-bottom: 1em;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
