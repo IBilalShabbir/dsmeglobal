@@ -21,6 +21,7 @@ import PortfolioDetails from "./screens/PortfolioDetails";
 import DedicatedTeams from "./screens/DedicatedTeams";
 import FixedPrice from "./screens/FixedPrice";
 import CareerDetails from "./screens/CareerDetails";
+import MobileDevelopment from "./screens/MobileDevelopment";
 
 function App() {
   const [isContact, setIsContact] = useState(true);
@@ -31,6 +32,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route
+          path="/services/mobile-app-development"
+          element={<MobileDevelopment />}
+        />
         <Route path="/industries" element={<Industries />} />
         <Route
           path="/career"

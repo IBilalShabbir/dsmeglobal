@@ -11,6 +11,7 @@ export function ServicesContent() {
     `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_service`,
     fetcher
   );
+  console.log(data);
   return (
     <>
       <div className="services__heading heading">Our Services</div>

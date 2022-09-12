@@ -3256,6 +3256,68 @@ textarea {
 .careers__details__content__info {
   margin-bottom: 1em;
 }
+.services__experties {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7em 0em;
+}
+.services__experties__heading {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 0.5em;
+  padding: 0em 2em;
+}
+.services__experties__info {
+  font-size: 16px;
+  color: $text;
+  margin-bottom: 3em;
+  width: 100%;
+  text-align: center;
+  max-width: 700px;
+  padding: 0em 2em;
+}
+.services__experties__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+}
+.services__experties__content__left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 3em;
+}
+.services__experties__content__left__entry {
+  display: flex;
+  margin-bottom: 2em;
+}
+.services__experties__content__left__entry__icon {
+  margin-right: 1em;
+}
+.services__experties__content__left__entry__content {
+  display: flex;
+  flex-direction: column;
+}
+.services__experties__content__left__entry__content__heading {
+  color: $primary;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.services__experties__content__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services__experties__content__right__img {
+  width: 100%;
+  max-width: 500px;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -3318,7 +3380,8 @@ textarea {
   .dedicated__teams__about__left__heading,
   .dedicated__teams__advantages__heading,
   .dedicated__teams__get__started__heading,
-  .dedicated__best__fit__heading {
+  .dedicated__best__fit__heading,
+  .services__experties__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -3701,6 +3764,12 @@ textarea {
   .dedicated__best__fit__content__details__info__entry {
     width: 33%;
   }
+  .services__experties__content__left {
+    margin-right: 0em;
+  }
+  .services__experties__content__right {
+    display: none;
+  }
 }
 @media (max-width: 800px) {
   .dedicated__teams__get__started__content__entry {
@@ -3889,7 +3958,8 @@ textarea {
   .dedicated__teams__plan__heading,
   .dedicated__teams__advantages__heading,
   .dedicated__teams__get__started__heading,
-  .dedicated__best__fit__heading {
+  .dedicated__best__fit__heading,
+  .services__experties__heading {
     font-size: 25px;
   }
   .dedicated__teams__get__started__heading {
