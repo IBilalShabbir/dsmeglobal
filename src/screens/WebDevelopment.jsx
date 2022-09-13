@@ -3,6 +3,7 @@ import { homeBannerImage1 } from "../assets";
 import { Jumbotron } from "../components/Jumbotron";
 import { ServicesExperties } from "../components/ServicesExperties";
 import { ServicesExpertiesEntry } from "../components/ServicesExpertiesEntry";
+import { ServicesHowWeDoIt } from "./ServicesHowWeDoIt";
 
 export default function WebDevelopment() {
   return (
@@ -121,6 +122,7 @@ export default function WebDevelopment() {
           description="Left stranded with a bad product that doesn’t work? We can pick up the pieces and get you up and running in no time."
         />
       </ServicesExperties>
+      <ServicesHowWeDoIt />
     </>
   );
 }
