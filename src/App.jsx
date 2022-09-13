@@ -22,6 +22,16 @@ import DedicatedTeams from "./screens/DedicatedTeams";
 import FixedPrice from "./screens/FixedPrice";
 import CareerDetails from "./screens/CareerDetails";
 import MobileDevelopment from "./screens/MobileDevelopment";
+import WebDevelopment from "./screens/WebDevelopment";
+import CustomSoftware from "./screens/CustomSoftware";
+import UIUXDesign from "./screens/UIUXDesign";
+import Ecommerce from "./screens/UIUXDesign";
+import BlockchainConsulting from "./screens/BlockchainConsulting";
+import IOSDevelopment from "./screens/IOSDevelopment";
+import AndroidDevelopment from "./screens/AndroidDevelopment";
+import WebScraping from "./screens/WebScraping";
+import StartupServices from "./screens/StartupServices";
+import GraphicDesign from "./screens/GraphicDesign";
 
 function App() {
   const [isContact, setIsContact] = useState(true);
@@ -36,6 +46,31 @@ function App() {
           path="/services/mobile-app-development"
           element={<MobileDevelopment />}
         />
+        <Route
+          path="/services/web-app-development"
+          element={<WebDevelopment />}
+        />
+        <Route
+          path="/services/custom-software-development"
+          element={<CustomSoftware />}
+        />
+        <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
+        <Route path="/services/ecommerce" element={<Ecommerce />} />
+        <Route
+          path="/services/blockchain-consulting"
+          element={<BlockchainConsulting />}
+        />
+        <Route
+          path="/services/android-development"
+          element={<AndroidDevelopment />}
+        />
+        <Route path="/services/ios-development" element={<IOSDevelopment />} />
+        <Route path="/services/web-scraping" element={<WebScraping />} />
+        <Route
+          path="/services/startup-services"
+          element={<StartupServices />}
+        />
+        <Route path="/services/graphic-designing" element={<GraphicDesign />} />
         <Route path="/industries" element={<Industries />} />
         <Route
           path="/career"
