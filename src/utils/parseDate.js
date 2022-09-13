@@ -25,7 +25,7 @@ export function parseDate(date) {
   return (
     day +
     " - " +
-    months?.filter((item, i) => i === parseInt(month) - 1) +
+    months?.filter((_item, i) => i === parseInt(month) - 1) +
     " - " +
     year
   );

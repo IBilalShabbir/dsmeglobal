@@ -76,7 +76,7 @@ export function HomeJumbtron() {
         <div className="home__jumbotron__content__right">
           <Fade spy={index} duration={2000} appear>
             <img
-              src={data.filter((item, i) => i === index).map((item) => item)}
+              src={data.filter((_item, i) => i === index).map((item) => item)}
               alt="homeBannerImage"
               className="home__jumbotron__content__right__img"
             />

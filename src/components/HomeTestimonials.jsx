@@ -14,7 +14,7 @@ export function HomeTestimonials() {
 
   useEffect(() => {
     data
-      ?.filter((item, i) => i === 0)
+      ?.filter((_item, i) => i === 0)
       ?.map((item) => {
         setSelectedData(item);
       });

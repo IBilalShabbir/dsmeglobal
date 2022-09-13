@@ -3,8 +3,8 @@ import { Jumbotron } from "../components/Jumbotron";
 import { ServicesFeatureListing } from "../components/ServicesFeatureListing";
 import { ServicesExperties } from "../components/ServicesExperties";
 import { ServicesExpertiesEntry } from "../components/ServicesExpertiesEntry";
-import { homeBannerImage } from "../assets";
 import { ServicesHowWeDoIt } from "./ServicesHowWeDoIt";
+import { homeBannerImage } from "../assets";
 
 export default function MobileDevelopment() {
   const mobileDevelopmentFeature = [

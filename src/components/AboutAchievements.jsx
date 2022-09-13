@@ -48,7 +48,7 @@ export function AboutAchievements() {
           }}
         >
           {data
-            ?.filter((item, i) => i % 2 !== 0)
+            ?.filter((_item, i) => i % 2 !== 0)
             ?.map((item) => (
               <SwiperSlide key={item._id}>
                 <div className="about__achievements__awards__content__entry">
@@ -78,7 +78,7 @@ export function AboutAchievements() {
           }}
         >
           {data
-            ?.filter((item, i) => i % 2 === 0)
+            ?.filter((_item, i) => i % 2 === 0)
             ?.map((item) => (
               <SwiperSlide key={item._id}>
                 <div className="about__achievements__awards__content__entry">

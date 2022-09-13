@@ -20,7 +20,7 @@ export function HomeBlog() {
       </Fade>
       <div className="home__blog__content">
         {data
-          ?.filter((blog, i) => i < 3)
+          ?.filter((_item, i) => i < 3)
           ?.map((item) => (
             <Fade bottom distance="30%" key={item._id}>
               <button
