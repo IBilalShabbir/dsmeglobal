@@ -66,3 +66,5 @@ export { default as dedicatedTeamAdvantagesActive } from "./dedicatedTeamAdvanta
 export { default as domianKnowledge } from "./domianKnowledge.svg";
 export { default as enterprise } from "./enterprise.svg";
 export { default as techonologies } from "./techonologies.svg";
+export { default as webAppDevelopment } from "./webAppDevelopment.svg";
+export { default as mobileAppDevelopment } from "./mobileAppDevelopment.svg";
