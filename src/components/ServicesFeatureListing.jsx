@@ -22,6 +22,7 @@ export function ServicesFeatureListing({ data, title, description }) {
         {data.map((item, i) => (
           <HomeTechnologiesCard
             key={i}
+            smaller
             image={item.image}
             title={item.title}
             info={item.info}

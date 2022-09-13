@@ -580,6 +580,10 @@ body::-webkit-scrollbar-track {
   width: 100px;
   height: 100px;
 }
+.home__technologies__content__entry__content__special svg {
+  width: 60px;
+  height: 60px;
+}
 .home__technologies__content__entry::before {
   content: "";
   position: absolute;
