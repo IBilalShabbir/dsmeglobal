@@ -13,6 +13,7 @@ export function PortfolioDetailsJumbotron({ data }) {
         </div>
         <div className="portfolio__details__jubmotron__content__right">
           <img
+            loading="lazy"
             src={
               import.meta.env.VITE_CLOUDNAIRY_API_URL +
               replacePngWithWebp(data.banner)

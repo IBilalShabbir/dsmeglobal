@@ -16,6 +16,7 @@ export function DedicatedTeamsAbout() {
       </div>
       <div className="dedicated__teams__about__right">
         <img
+          loading="lazy"
           src={dedicatedTeamAbout}
           alt="dedicatedTeamAbout"
           className="dedicated__teams__about__right__img"

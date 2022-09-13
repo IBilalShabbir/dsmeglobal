@@ -13,6 +13,7 @@ export function DedicatedTeamsAdvantages() {
         Advantages of using DSME’s Talent
       </div>
       <img
+        loading="lazy"
         src={hover ? dedicatedTeamAdvantagesActive : dedicatedTeamAdvantages}
         alt="dedicatedTeamAdvantages"
         onMouseOver={() => setHover(true)}

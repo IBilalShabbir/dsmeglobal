@@ -24,11 +24,13 @@ export default function CareersBanner({ setIsContact }) {
         }}
       >
         <img
+          loading="lazy"
           src={homeBannerSvg1}
           alt="homeBannerSvg1"
           className="home__jumbotron__svg1"
         />
         <img
+          loading="lazy"
           src={homeBannerSvg3}
           alt="homeBannerSvg3"
           className="home__jumbotron__svg3"
@@ -51,6 +53,7 @@ export default function CareersBanner({ setIsContact }) {
               className="career__bannner__entry"
             >
               <img
+                loading="lazy"
                 src={meetUs}
                 alt="meetUs"
                 className="career__bannner__entry__img"
@@ -68,6 +71,7 @@ export default function CareersBanner({ setIsContact }) {
               className="career__bannner__entry"
             >
               <img
+                loading="lazy"
                 src={jobs}
                 alt="jobs"
                 className="career__bannner__entry__img"

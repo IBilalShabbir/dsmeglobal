@@ -10,6 +10,7 @@ export function DedicatedBestFitContent({ right, image, heading, list }) {
       }
     >
       <img
+        loading="lazy"
         src={image}
         alt={heading}
         className="dedicated__best__fit__content__img"

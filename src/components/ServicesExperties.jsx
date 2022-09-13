@@ -9,6 +9,7 @@ export function ServicesExperties({ children, image, description }) {
         <div className="services__experties__content__left">{children}</div>
         <div className="services__experties__content__right">
           <img
+            loading="lazy"
             src={image}
             alt="homeBannerImage"
             className="services__experties__content__right__img"
