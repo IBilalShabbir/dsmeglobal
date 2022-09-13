@@ -19,6 +19,70 @@ export default function MobileDevelopment() {
           },
         ]}
       />
+      <div className="services__how__we__do__it">
+        <div className="services__how__we__do__it__heading heading">
+          How we do it?
+        </div>
+        <div className="services__how__we__do__it__info">
+          Fast-track your project's delivery using our simple three-step
+          application development process.
+        </div>
+        <div className="services__how__we__do__it__content">
+          <ServicesHowWeDoItEntry
+            icon="1"
+            title="Requirements Gathering"
+            list={[
+              "Requirements Definition",
+              "Analyzing the requirements",
+              "Documenting the process",
+              "Provide initial design",
+            ]}
+          />
+          <ServicesHowWeDoItEntry
+            icon="2"
+            title="Development & Testing"
+            list={[
+              "Requirements Definition",
+              "Analyzing the requirements",
+              "Documenting the process",
+              "Provide initial design",
+            ]}
+          />
+          <ServicesHowWeDoItEntry
+            icon="3"
+            title="Support & Maintenance"
+            list={[
+              "Requirements Definition",
+              "Analyzing the requirements",
+              "Documenting the process",
+              "Provide initial design",
+            ]}
+          />
+        </div>
+      </div>
     </>
+  );
+}
+
+function ServicesHowWeDoItEntry({ icon, title, list }) {
+  return (
+    <div className="services__how__we__do__it__content__entry">
+      <div className="services__how__we__do__it__content__entry__icon heading">
+        {icon}
+      </div>
+      <div className="services__how__we__do__it__content__entry__card">
+        <div className="services__how__we__do__it__content__entry__card__heading heading">
+          {title}
+        </div>
+        <div className="services__how__we__do__it__content__entry__card__content">
+          {list.map((item) => (
+            <div className="services__how__we__do__it__content__entry__card__content__entry">
+              <div className="services__how__we__do__it__content__entry__card__content__entry__dot" />
+              {item}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }

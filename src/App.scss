@@ -3318,6 +3318,114 @@ textarea {
   width: 100%;
   max-width: 500px;
 }
+.services__how__we__do__it {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7em 0em;
+}
+.services__how__we__do__it__heading {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+}
+.services__how__we__do__it__info {
+  font-size: 16px;
+  color: $text;
+  margin-bottom: 3em;
+  padding: 0em 2em;
+}
+.services__how__we__do__it__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+}
+.services__how__we__do__it__content__entry {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.services__how__we__do__it__content__entry:last-child
+  .services__how__we__do__it__content__entry__icon::after {
+  display: none;
+}
+.services__how__we__do__it__content__entry__icon {
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  transition: 300ms ease-in-out;
+}
+.services__how__we__do__it__content__entry__icon::after {
+  content: "";
+  position: absolute;
+  left: calc(50% + 55px);
+  width: calc(100% - 80px);
+  border-bottom: 1px dashed $black;
+  top: 40px;
+  z-index: -1;
+}
+.services__how__we__do__it__content__entry__card {
+  padding: 2.5em;
+  padding-bottom: 2em;
+  border-radius: 10px;
+  border: 1px solid #6b6b6b;
+  width: 100%;
+  transition: 300ms ease-in-out;
+}
+.services__how__we__do__it__content__entry__card__heading {
+  font-size: 25px;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 1em;
+}
+.services__how__we__do__it__content__entry__card__content {
+  display: flex;
+  flex-direction: column;
+}
+.services__how__we__do__it__content__entry__card__content__entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7em;
+}
+.services__how__we__do__it__content__entry__card__content__entry__dot {
+  margin-right: 1em;
+  width: 10px;
+  height: 10px;
+  background-color: $primary;
+  border-radius: 50px;
+  transition: 300ms ease-in-out;
+}
+.services__how__we__do__it__content__entry:hover
+  .services__how__we__do__it__content__entry__icon {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  color: white;
+}
+.services__how__we__do__it__content__entry:hover
+  .services__how__we__do__it__content__entry__card {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  border-color: $primary;
+  color: white;
+}
+.services__how__we__do__it__content__entry:hover
+  .services__how__we__do__it__content__entry__card
+  .services__how__we__do__it__content__entry__card__content
+  .services__how__we__do__it__content__entry__card__content__entry
+  .services__how__we__do__it__content__entry__card__content__entry__dot {
+  transition: 300ms ease-in-out;
+  background-color: white;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
