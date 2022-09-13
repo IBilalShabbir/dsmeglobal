@@ -10,7 +10,10 @@ export default function MobileDevelopment() {
   return (
     <>
       <Jumbotron heading="Mobile Application Development" />
-      <ServicesExperties image={homeBannerImage}>
+      <ServicesExperties
+        description="Building a great business and consumer apps means not only creating an amazing user experience but also taking architecture, technical design, and security into account."
+        image={homeBannerImage}
+      >
         <ServicesExpertiesEntry
           icon={
             <svg
