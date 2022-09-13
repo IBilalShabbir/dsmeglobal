@@ -1,11 +1,11 @@
 import React from "react";
-import { ServicesDetalsJumbotron } from "../components/ServicesDetalsJumbotron";
+import { Jumbotron } from "../components/Jumbotron";
 
 export default function GraphicDesign() {
   return (
     <>
-      <ServicesDetalsJumbotron
-        title="DESIGNING YOUR PRESENCE"
+      <Jumbotron
+        heading="DESIGNING YOUR PRESENCE"
         description="Unleash and expand your brand with strategic art and design."
       />
     </>

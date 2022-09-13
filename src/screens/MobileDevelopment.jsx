@@ -1,5 +1,5 @@
 import React from "react";
-import { ServicesDetalsJumbotron } from "../components/ServicesDetalsJumbotron";
+import { Jumbotron } from "../components/Jumbotron";
 import { ServicesFeatureListing } from "../components/ServicesFeatureListing";
 import { ServicesExperties } from "../components/ServicesExperties";
 import { ServicesHowWeDoItEntry } from "../components/ServicesHowWeDoItEntry";
@@ -7,7 +7,7 @@ import { ServicesHowWeDoItEntry } from "../components/ServicesHowWeDoItEntry";
 export default function MobileDevelopment() {
   return (
     <>
-      <ServicesDetalsJumbotron title="Mobile Application Development" />
+      <Jumbotron heading="Mobile Application Development" />
       <ServicesExperties />
       <ServicesFeatureListing
         title="Exceptional Domain Expertise"

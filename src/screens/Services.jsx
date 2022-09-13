@@ -1,11 +1,14 @@
 import React from "react";
-import { ServicesJumbotron } from "../components/ServicesJumbotron";
 import { ServicesContent } from "../components/ServicesContent";
+import { Jumbotron } from "../components/Jumbotron";
 
 export default function Services() {
   return (
     <>
-      <ServicesJumbotron />
+      <Jumbotron
+        heading="FROM STARTUP TO ENTERPRISE"
+        subHeading="THE FULL RANGE OF ENGINEERING SERVICES YOUR COMPANY NEEDS"
+      />
       <ServicesContent />
     </>
   );

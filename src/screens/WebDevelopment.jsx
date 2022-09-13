@@ -1,10 +1,10 @@
 import React from "react";
-import { ServicesDetalsJumbotron } from "../components/ServicesDetalsJumbotron";
+import { Jumbotron } from "../components/Jumbotron";
 
 export default function WebDevelopment() {
   return (
     <>
-      <ServicesDetalsJumbotron title="Web Application Development" />
+      <Jumbotron heading="Web Application Development" />
     </>
   );
 }

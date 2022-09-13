@@ -1,12 +1,15 @@
 import React from "react";
 import { IndustriesTangibleResults } from "../components/IndustriesTangibleResults";
-import { IndustriesJumbotron } from "../components/IndustriesJumbotron";
 import { IndustriesSolution } from "../components/IndustriesSolution";
+import { Jumbotron } from "../components/Jumbotron";
 
 export default function Industries() {
   return (
     <>
-      <IndustriesJumbotron />
+      <Jumbotron
+        heading="FROM STARTUP TO ENTERPRISE,"
+        subHeading="THE FULL RANGE OF ENGINEERING SERVICES YOUR COMPANY NEEDS"
+      />
       <IndustriesSolution />
       <IndustriesTangibleResults />
     </>

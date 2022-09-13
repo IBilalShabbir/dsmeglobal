@@ -1,11 +1,11 @@
 import React from "react";
-import { ServicesDetalsJumbotron } from "../components/ServicesDetalsJumbotron";
+import { Jumbotron } from "../components/Jumbotron";
 
 export default function CustomSoftware() {
   return (
     <>
-      <ServicesDetalsJumbotron
-        title="Custom Software Development"
+      <Jumbotron
+        heading="Custom Software Development"
         description="Our dynamic team members experienced across multiple tech stacks can help you to rapidly build or maintain your applications/enterprise systems."
       />
     </>

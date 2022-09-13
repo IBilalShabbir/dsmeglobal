@@ -1,11 +1,11 @@
 import React from "react";
-import { ServicesDetalsJumbotron } from "../components/ServicesDetalsJumbotron";
+import { Jumbotron } from "../components/Jumbotron";
 
 export default function AndroidDevelopment() {
   return (
     <>
-      <ServicesDetalsJumbotron
-        title="FULL-SERVICE ANDROID APPLICATION DEVELOPMENT COMPANY        "
+      <Jumbotron
+        heading="FULL-SERVICE ANDROID APPLICATION DEVELOPMENT COMPANY        "
         description="Choose an experienced partner to transform your business idea into a top-performing custom Android app"
       />
     </>

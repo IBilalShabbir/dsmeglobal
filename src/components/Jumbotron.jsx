@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 import { homeBannerSvg1, homeBannerSvg3 } from "../assets";
 
-export function IndustriesJumbotron() {
+export function Jumbotron({ heading, subHeading, description, to }) {
   return (
     <div className="jumbotron">
       <img
@@ -17,22 +17,20 @@ export function IndustriesJumbotron() {
         className="home__jumbotron__svg3"
       />
       <Fade bottom distance="30%">
-        <div className="jumbotron__heading heading">
-          FROM STARTUP TO ENTERPRISE,
-        </div>
+        <div className="jumbotron__heading heading">{heading}</div>
       </Fade>
-      <Fade bottom distance="30%">
-        <div
-          className="jumbotron__sub__heading"
-          style={{
-            marginTop: "-.5em",
-          }}
-        >
-          THE FULL RANGE OF ENGINEERING SERVICES YOUR COMPANY NEEDS
-        </div>
-      </Fade>
+      {subHeading ? (
+        <Fade bottom distance="30%">
+          <div className="jumbotron__sub__heading">{subHeading}</div>
+        </Fade>
+      ) : null}
+      {description ? (
+        <Fade bottom distance="30%">
+          <div className="jumbotron__info">{description}</div>
+        </Fade>
+      ) : null}
       <Link
-        to="/services"
+        to={to ? to : "/services"}
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}

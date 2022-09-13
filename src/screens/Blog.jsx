@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { BlogJumbotron } from "../components/BlogJumbotron";
 import { BlogContent } from "../components/BlogContent";
 import { BlogFilters } from "../components/BlogFilters";
 import { fetcher } from "../utils/fetcher";
 import { Link } from "react-router-dom";
 import useSWR from "swr";
+import { Jumbotron } from "../components/Jumbotron";
 
 export default function Blog() {
   const [filter, setFiter] = useState("");
@@ -24,7 +24,12 @@ export default function Blog() {
 
   return (
     <>
-      <BlogJumbotron />
+      <Jumbotron
+        heading="BLOGS"
+        description="Keep up with the most trending tech news articles. Stay ahead of the
+          curve and up-to-date with the latest technology to advance and
+          innovate your business at DSME Global Link Blog."
+      />
       <div
         style={{
           backgroundColor: "#EFEFEF",

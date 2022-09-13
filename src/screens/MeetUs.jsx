@@ -1,12 +1,16 @@
 import React from "react";
-import { MeetUsJumbotron } from "../components/MeetUsJumbotron";
 import { MeetUsContent } from "../components/MeetUsContent";
 import { AboutTeam } from "../components/AboutTeam";
+import { Jumbotron } from "../components/Jumbotron";
 
 export default function MeetUs() {
   return (
     <>
-      <MeetUsJumbotron />
+      <Jumbotron
+        heading="MEET US"
+        description="Diverse personalities, Geeks, Individualists, and Team players Making
+          kick-ass apps together."
+      />
       <MeetUsContent />
       <AboutTeam style={{ marginBottom: "-2em" }} />
     </>
