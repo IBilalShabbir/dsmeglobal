@@ -1,42 +1,49 @@
-import React, { useState } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import { withStyles } from "react-critical-css";
 import { Route, Routes } from "react-router";
+
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./screens/Home";
+
+import { Loader } from "./screens/Loader";
+
 import stylesheet from "./App.scss";
-import MeetUs from "./screens/MeetUs";
-import NotFound from "./screens/NotFound";
-import Quote from "./screens/Quote";
-import Services from "./screens/Services";
-import Industries from "./screens/Industries";
-import Careers from "./screens/Careers";
-import CareersBanner from "./screens/CareersBanner";
-import Blog from "./screens/Blog";
-import About from "./screens/About";
-import BlogDetails from "./screens/BlogDetails";
-import Portfolio from "./screens/Portfolio";
-import PortfolioDetails from "./screens/PortfolioDetails";
-import DedicatedTeams from "./screens/DedicatedTeams";
-import FixedPrice from "./screens/FixedPrice";
-import CareerDetails from "./screens/CareerDetails";
-import MobileDevelopment from "./screens/MobileDevelopment";
-import WebDevelopment from "./screens/WebDevelopment";
-import CustomSoftware from "./screens/CustomSoftware";
-import UIUXDesign from "./screens/UIUXDesign";
-import Ecommerce from "./screens/UIUXDesign";
-import BlockchainConsulting from "./screens/BlockchainConsulting";
-import IOSDevelopment from "./screens/IOSDevelopment";
-import AndroidDevelopment from "./screens/AndroidDevelopment";
-import WebScraping from "./screens/WebScraping";
-import StartupServices from "./screens/StartupServices";
-import GraphicDesign from "./screens/GraphicDesign";
+
+const Home = lazy(() => import("./screens/Home"));
+const Blog = lazy(() => import("./screens/Blog"));
+const About = lazy(() => import("./screens/About"));
+const Quote = lazy(() => import("./screens/Quote"));
+const MeetUs = lazy(() => import("./screens/MeetUs"));
+const Careers = lazy(() => import("./screens/Careers"));
+const NotFound = lazy(() => import("./screens/NotFound"));
+const Services = lazy(() => import("./screens/Services"));
+const Portfolio = lazy(() => import("./screens/Portfolio"));
+const Ecommerce = lazy(() => import("./screens/Ecommerce"));
+const UIUXDesign = lazy(() => import("./screens/UIUXDesign"));
+const FixedPrice = lazy(() => import("./screens/FixedPrice"));
+const Industries = lazy(() => import("./screens/Industries"));
+const BlogDetails = lazy(() => import("./screens/BlogDetails"));
+const WebScraping = lazy(() => import("./screens/WebScraping"));
+const GraphicDesign = lazy(() => import("./screens/GraphicDesign"));
+const CareerDetails = lazy(() => import("./screens/CareerDetails"));
+const CareersBanner = lazy(() => import("./screens/CareersBanner"));
+const IOSDevelopment = lazy(() => import("./screens/IOSDevelopment"));
+const DedicatedTeams = lazy(() => import("./screens/DedicatedTeams"));
+const WebDevelopment = lazy(() => import("./screens/WebDevelopment"));
+const CustomSoftware = lazy(() => import("./screens/CustomSoftware"));
+const StartupServices = lazy(() => import("./screens/StartupServices"));
+const PortfolioDetails = lazy(() => import("./screens/PortfolioDetails"));
+const MobileDevelopment = lazy(() => import("./screens/MobileDevelopment"));
+const AndroidDevelopment = lazy(() => import("./screens/AndroidDevelopment"));
+const BlockchainConsulting = lazy(() =>
+  import("./screens/BlockchainConsulting")
+);
 
 function App() {
   const [isContact, setIsContact] = useState(true);
   return (
-    <>
+    <Suspense fallback={<Loader />}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -93,7 +100,7 @@ function App() {
       </Routes>
       {isContact ? <Contact /> : null}
       <Footer />
-    </>
+    </Suspense>
   );
 }
 export default withStyles(stylesheet)(App);
