@@ -2,6 +2,8 @@ import React from "react";
 import { Jumbotron } from "../components/Jumbotron";
 import { CustomSoftwareContent } from "../components/CustomSoftwareContent";
 import { CustomSoftwareBuisness } from "../components/CustomSoftwareBuisness";
+import { HomeOurTechnologies } from "../components/HomeOurTechnologies";
+import { CustomSoftwareWhy } from "../components/CustomSoftwareWhy";
 
 export default function CustomSoftware() {
   return (
@@ -12,6 +14,8 @@ export default function CustomSoftware() {
       />
       <CustomSoftwareContent />
       <CustomSoftwareBuisness />
+      <HomeOurTechnologies />
+      <CustomSoftwareWhy />
     </>
   );
 }

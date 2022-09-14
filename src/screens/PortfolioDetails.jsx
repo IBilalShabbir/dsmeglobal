@@ -8,16 +8,15 @@ export default function PortfolioDetails({ setIsContact }) {
   const data = JSON.parse(window.localStorage.getItem("portfolioData"));
   useEffect(() => {
     setIsContact(false);
-    document.querySelector("body").style.backgroundColor = "#131313";
+
     return () => {
       setIsContact(true);
-      document.querySelector("body").style.backgroundColor = "white";
     };
   }, []);
 
   return (
     <>
-      <div style={{ height: "6em" }} />
+      <div style={{ height: "6em", background: "#181818" }} />
       <PortfolioDetailsJumbotron data={data} />
       <PortfolioDetailsAbout data={data} />
       <PortfolioDetailsQuote data={data} />

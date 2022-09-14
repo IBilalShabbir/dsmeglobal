@@ -2835,7 +2835,7 @@ textarea {
 .portfolio__details__about__heading {
   font-size: 35px;
   margin-bottom: 1em;
-  color: white;
+  color: $black;
   text-align: center;
 }
 .portfolio__details__about__info {
@@ -2855,9 +2855,9 @@ textarea {
 }
 .portfolio__details__about__categories__entry {
   background-color: transparent;
-  color: white;
+  color: $black;
   border-radius: 50px;
-  border: 1px solid white;
+  border: 1px solid $black;
   padding: 0.5em 2em;
   margin-right: 1em;
   font-size: 14px;
@@ -2865,8 +2865,8 @@ textarea {
 }
 .portfolio__details__about__categories__entry:hover {
   transition: 300ms ease-in-out;
-  background-color: white;
-  color: black;
+  background-color: $black;
+  color: white;
 }
 .portfolio__details__images {
   width: 100%;
@@ -2907,14 +2907,14 @@ textarea {
   top: calc(50% - 300px);
 }
 .portfolio__details__quote__message {
-  color: white;
+  color: $black;
   text-align: center;
   margin-bottom: 2em;
   width: 100%;
   max-width: 800px;
 }
 .portfolio__details__quote__name {
-  color: white;
+  color: $black;
   text-align: center;
   margin-bottom: 0.5em;
   font-weight: bold;
@@ -2923,7 +2923,7 @@ textarea {
   max-width: 800px;
 }
 .portfolio__details__quote__designation {
-  color: white;
+  color: $black;
   text-align: center;
   width: 100%;
   max-width: 800px;
