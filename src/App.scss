@@ -3633,6 +3633,9 @@ textarea {
   margin-bottom: 2em;
   background-color: transparent !important;
 }
+.ecommerce__why__content__special .ecommerce__why__content__entry__special {
+  width: 49%;
+}
 .ecommerce__why__content__entry__special
   .ecommerce__why__content__entry__heading {
   font-size: 40px;
@@ -3803,6 +3806,9 @@ textarea {
   }
   .ecommerce__why__content__entry {
     width: 31%;
+  }
+  .ecommerce__why__content__special .ecommerce__why__content__entry__special {
+    width: 100%;
   }
 }
 @media (max-width: 1150px) {

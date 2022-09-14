@@ -3,7 +3,8 @@ import { homeBannerImage1 } from "../assets";
 import { Jumbotron } from "../components/Jumbotron";
 import { ServicesExperties } from "../components/ServicesExperties";
 import { ServicesExpertiesEntry } from "../components/ServicesExpertiesEntry";
-import { ServicesHowWeDoIt } from "./ServicesHowWeDoIt";
+import { ServicesHowWeDoIt } from "../components/ServicesHowWeDoIt";
+import { WebDevelopmentWhy } from "../components/WebDevelopmentWhy";
 
 export default function WebDevelopment() {
   return (
@@ -123,6 +124,7 @@ export default function WebDevelopment() {
         />
       </ServicesExperties>
       <ServicesHowWeDoIt />
+      <WebDevelopmentWhy />
     </>
   );
 }

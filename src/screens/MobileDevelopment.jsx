@@ -3,9 +3,9 @@ import { Jumbotron } from "../components/Jumbotron";
 import { ServicesFeatureListing } from "../components/ServicesFeatureListing";
 import { ServicesExperties } from "../components/ServicesExperties";
 import { ServicesExpertiesEntry } from "../components/ServicesExpertiesEntry";
-import { ServicesHowWeDoIt } from "./ServicesHowWeDoIt";
+import { ServicesHowWeDoIt } from "../components/ServicesHowWeDoIt";
 import { homeBannerImage } from "../assets";
-import { MobileDevelopmentWhy } from "./MobileDevelopmentWhy";
+import { MobileDevelopmentWhy } from "../components/MobileDevelopmentWhy";
 
 export default function MobileDevelopment() {
   const mobileDevelopmentFeature = [
