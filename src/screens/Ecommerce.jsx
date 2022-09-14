@@ -1,7 +1,9 @@
 import React from "react";
 import { Jumbotron } from "../components/Jumbotron";
-import { EcommerceAbout } from "./EcommerceAbout";
-import { EcommerceService } from "./EcommerceService";
+import { EcommerceAbout } from "../components/EcommerceAbout";
+import { EcommerceGetStarted } from "../components/EcommerceGetStarted";
+import { EcommerceService } from "../components/EcommerceService";
+import { EcommerceWhy } from "../components/EcommerceWhy";
 
 export default function UIUXDesign() {
   return (
@@ -13,6 +15,8 @@ export default function UIUXDesign() {
 
       <EcommerceAbout />
       <EcommerceService />
+      <EcommerceGetStarted />
+      <EcommerceWhy />
     </>
   );
 }

@@ -3088,12 +3088,20 @@ textarea {
   padding: 7em 0em;
   margin-top: 4em;
 }
+.dedicated__teams__get__started__reverse {
+  background-color: white;
+  padding-top: 0em;
+}
 .dedicated__teams__get__started__heading {
   font-size: 45px;
   color: white;
   margin: 0em auto;
   text-align: center;
   margin-bottom: 2em;
+}
+.dedicated__teams__get__started__reverse
+  .dedicated__teams__get__started__heading {
+  color: $black;
 }
 .dedicated__teams__get__started__content {
   width: 100%;
@@ -3111,10 +3119,17 @@ textarea {
   position: relative;
   padding: 2.5em;
   width: 31%;
-  padding-top: 4em;
+  padding-top: 2em;
   padding-bottom: 1.5em;
   outline: 2px solid transparent;
   transition: 300ms ease-in-out;
+}
+.dedicated__teams__get__started__content__entry:nth-child(4) {
+  margin-top: 4em;
+}
+.dedicated__teams__get__started__content__entry:nth-child(5) {
+  width: 65.5%;
+  margin-top: 4em;
 }
 .dedicated__teams__get__started__content__entry__icon {
   color: $black;
@@ -3128,6 +3143,11 @@ textarea {
   padding: 0em 0.5em;
   transition: 300ms ease-in-out;
 }
+.dedicated__teams__get__started__reverse
+  .dedicated__teams__get__started__content__entry__icon {
+  background-color: white;
+  color: white;
+}
 .dedicated__teams__get__started__content__entry__heading {
   font-size: 20px;
   color: white;
@@ -3140,6 +3160,7 @@ textarea {
   margin-left: 2em;
   color: $text;
   margin-bottom: 1.5em;
+
   font-size: 17px;
 }
 .dedicated__teams__get__started__content__entry__info::before {
@@ -3567,6 +3588,59 @@ textarea {
   width: 100%;
   max-width: 450px;
 }
+.ecommerce__why {
+  width: 100%;
+  background: linear-gradient(transparent, #e6e6e6);
+  padding-bottom: 7em;
+}
+.ecommerce__why__content {
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  margin: 0em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ecommerce__why__content__entry {
+  width: 23%;
+  border: 1px solid #5b5b5b;
+  padding: 2em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  padding-top: 5em;
+  transition: 300ms ease-in-out;
+}
+.ecommerce__why__content__entry__icon {
+  color: $primary;
+  transition: 300ms ease-in-out;
+}
+.ecommerce__why__content__entry__heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0.5em 0em;
+}
+.ecommerce__why__content__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: $black;
+  border-color: $black;
+  color: white;
+}
+.ecommerce__why__content__entry__special {
+  width: 73%;
+  border: none;
+  padding: 2em 0em;
+  margin-bottom: 2em;
+  background-color: transparent !important;
+}
+.ecommerce__why__content__entry__special
+  .ecommerce__why__content__entry__heading {
+  font-size: 40px;
+  color: $black;
+}
+.ecommerce__why__content__entry__special .ecommerce__why__content__entry__info {
+  color: $black;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -3631,7 +3705,9 @@ textarea {
   .dedicated__teams__get__started__heading,
   .dedicated__best__fit__heading,
   .services__experties__heading,
-  .ecommerce__about__content__right__heading {
+  .ecommerce__about__content__right__heading,
+  .ecommerce__why__content__entry__special
+    .ecommerce__why__content__entry__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -3700,6 +3776,13 @@ textarea {
     width: 48%;
     margin-bottom: 5em;
   }
+  .dedicated__teams__get__started__content__entry:nth-child(4) {
+    margin-top: 0em;
+  }
+  .dedicated__teams__get__started__content__entry:nth-child(5) {
+    margin-top: 0em;
+    width: 100%;
+  }
   .about__team__content__entry {
     width: 20%;
   }
@@ -3717,6 +3800,9 @@ textarea {
   }
   .portfolio__details__jubmotron__content__right__img {
     height: 350px;
+  }
+  .ecommerce__why__content__entry {
+    width: 31%;
   }
 }
 @media (max-width: 1150px) {
@@ -4052,6 +4138,9 @@ textarea {
   .services__how__we__do__it__content__entry__card__heading {
     font-size: 20px;
   }
+  .ecommerce__why__content__entry {
+    width: 48%;
+  }
 }
 @media (max-width: 800px) {
   .dedicated__teams__get__started__content__entry {
@@ -4171,6 +4260,12 @@ textarea {
   .dedicated__best__fit__content__details__info__entry {
     width: 50%;
   }
+  .ecommerce__why__content__entry {
+    width: 100%;
+  }
+  .ecommerce__why__content__entry__special {
+    margin-top: -4em;
+  }
 }
 @media (max-width: 650px) {
   .meet__us__content__svg1 {
@@ -4249,7 +4344,9 @@ textarea {
   .dedicated__teams__get__started__heading,
   .dedicated__best__fit__heading,
   .services__experties__heading,
-  .ecommerce__about__content__right__heading {
+  .ecommerce__about__content__right__heading,
+  .ecommerce__why__content__entry__special
+    .ecommerce__why__content__entry__heading {
     font-size: 25px;
   }
   .dedicated__teams__get__started__heading {
