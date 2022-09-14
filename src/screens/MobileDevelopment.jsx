@@ -5,6 +5,7 @@ import { ServicesExperties } from "../components/ServicesExperties";
 import { ServicesExpertiesEntry } from "../components/ServicesExpertiesEntry";
 import { ServicesHowWeDoIt } from "./ServicesHowWeDoIt";
 import { homeBannerImage } from "../assets";
+import { MobileDevelopmentWhy } from "./MobileDevelopmentWhy";
 
 export default function MobileDevelopment() {
   const mobileDevelopmentFeature = [
@@ -479,6 +480,7 @@ export default function MobileDevelopment() {
         data={mobileDevelopmentFeature}
       />
       <ServicesHowWeDoIt />
+      <MobileDevelopmentWhy />
     </>
   );
 }
