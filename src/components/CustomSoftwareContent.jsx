@@ -9,7 +9,15 @@ import { HomeEngagementCard } from "../components/HomeEngagementCard";
 
 export function CustomSoftwareContent() {
   return (
-    <div className="home__engagement">
+    <div
+      className="home__engagement"
+      style={{
+        marginTop: "5em",
+        paddingBottom: "4em",
+        paddingTop: "2em",
+        height: "fit-content",
+      }}
+    >
       <img
         loading="lazy"
         src={engagementSvg}
