@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { replacePngWithWebp } from "../utils/replacePngWithWebp";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export function PortfolioDetailsImages({ data }) {
+export function PortfolioDetailsImages({ data, setShowCarousel }) {
   const [slidesPerView, setSlidesPerView] = useState(3);
   function changeSlidesPerView() {
     if (window.innerWidth < 768) {
@@ -20,44 +19,21 @@ export function PortfolioDetailsImages({ data }) {
   return (
     <div className="portfolio__details__images">
       <Swiper slidesPerView={slidesPerView} spaceBetween={30}>
-        <SwiperSlide>
-          <a
-            href={
-              import.meta.env.VITE_CLOUDNAIRY_API_URL +
-              replacePngWithWebp(data.image)
-            }
-            className="portfolio__details__images__entry"
-          >
-            <img
-              loading="lazy"
-              src={
-                import.meta.env.VITE_CLOUDNAIRY_API_URL +
-                replacePngWithWebp(data.image)
-              }
-              alt={data.title}
-              className="portfolio__details__images__entry__img"
-            />
-          </a>
-        </SwiperSlide>
-        {data.sliderImage.map((item) => (
+        {data.map((item) => (
           <SwiperSlide>
-            <a
-              href={
-                import.meta.env.VITE_CLOUDNAIRY_API_URL +
-                replacePngWithWebp(item)
-              }
+            <div
               className="portfolio__details__images__entry"
+              onClick={() => {
+                setShowCarousel(true);
+              }}
             >
               <img
                 loading="lazy"
-                src={
-                  import.meta.env.VITE_CLOUDNAIRY_API_URL +
-                  replacePngWithWebp(item)
-                }
+                src={item.src}
                 alt={data.title}
                 className="portfolio__details__images__entry__img"
               />
-            </a>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

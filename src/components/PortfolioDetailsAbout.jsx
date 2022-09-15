@@ -2,7 +2,7 @@ import React from "react";
 
 export function PortfolioDetailsAbout({ data }) {
   return (
-    <div className="portfolio__details__about">
+    <div className="portfolio__details__about" style={{ marginBottom: "-7em" }}>
       <div className="portfolio__details__about__heading heading">
         About{" "}
         <span
