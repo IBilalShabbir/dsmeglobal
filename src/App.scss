@@ -3692,6 +3692,67 @@ textarea {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
+.services__mvp {
+  width: 100%;
+  margin-top: 7em;
+}
+.services__mvp__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 0em 2em;
+}
+.services__mvp__content__left {
+  flex: 1;
+}
+.services__mvp__content__left__heading {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+  width: 100%;
+  max-width: 400px;
+}
+.services__mvp__content__left__info {
+  margin-bottom: 1.5em;
+  width: 100%;
+  max-width: 500px;
+}
+.services__mvp__content__left__sub__heading {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.services__mvp__content__left__logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__mvp__content__middle {
+  width: 1px;
+  height: 300px;
+  background-color: $black;
+  margin: 0em 4em;
+}
+.services__mvp__content__right {
+  flex: 1;
+}
+.services__mvp__content__right__entry {
+  display: flex;
+  padding: 1em 2em;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.services__mvp__content__right__entry__icon svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 1em;
+}
+.services__mvp__content__right__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: $black;
+  color: white;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -3759,7 +3820,8 @@ textarea {
   .ecommerce__about__content__right__heading,
   .ecommerce__why__content__entry__special
     .ecommerce__why__content__entry__heading,
-  .services__experiance__heading {
+  .services__experiance__heading,
+  .services__mvp__content__left__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4313,6 +4375,19 @@ textarea {
   .services__experiance__content__entry {
     width: 100%;
   }
+  .services__mvp__content {
+    flex-direction: column;
+  }
+  .services__mvp__content__left {
+    width: 100%;
+    margin-bottom: 4em;
+  }
+  .services__mvp__content__middle {
+    display: none;
+  }
+  .services__mvp__content__right {
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .dedicated__best__fit__content__details__info__entry {
@@ -4405,7 +4480,8 @@ textarea {
   .ecommerce__about__content__right__heading,
   .ecommerce__why__content__entry__special
     .ecommerce__why__content__entry__heading,
-  .services__experiance__heading {
+  .services__experiance__heading,
+  .services__mvp__content__left__heading {
     font-size: 25px;
   }
   .dedicated__teams__get__started__heading {
