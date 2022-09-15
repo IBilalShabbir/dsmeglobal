@@ -275,6 +275,8 @@ body::-webkit-scrollbar-track {
   text-align: center;
   margin-bottom: 0.3em;
   padding: 0em 1em;
+  width: 100%;
+  max-width: 1000px;
 }
 .home__services__sub__heading {
   background-color: $primary;
