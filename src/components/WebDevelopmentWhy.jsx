@@ -1,7 +1,7 @@
 import React from "react";
 import { EcommerceWhyEntry } from "../components/EcommerceWhyEntry";
 
-export function WebDevelopmentWhy({}) {
+export function WebDevelopmentWhy() {
   return (
     <div className="ecommerce__why">
       <div className="ecommerce__why__content ecommerce__why__content__special">

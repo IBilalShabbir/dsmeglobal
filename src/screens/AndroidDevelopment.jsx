@@ -5,7 +5,7 @@ export default function AndroidDevelopment() {
   return (
     <>
       <Jumbotron
-        heading="FULL-SERVICE ANDROID APPLICATION DEVELOPMENT COMPANY        "
+        heading="FULL-SERVICE ANDROID APPLICATION DEVELOPMENT COMPANY"
         description="Choose an experienced partner to transform your business idea into a top-performing custom Android app"
       />
     </>

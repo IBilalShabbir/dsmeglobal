@@ -1,7 +1,7 @@
 import React from "react";
 import { HomeServicesCard } from "../components/HomeServicesCard";
 
-export function MobileDevelopmentWhy({}) {
+export function MobileDevelopmentWhy() {
   return (
     <section
       className="home__services"

@@ -1,7 +1,7 @@
 import React from "react";
 import { HomeServicesCard } from "../components/HomeServicesCard";
 
-export function CustomSoftwareWhy({}) {
+export function CustomSoftwareWhy() {
   return (
     <section
       className="home__services"

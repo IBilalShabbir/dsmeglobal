@@ -3365,9 +3365,18 @@ textarea {
   align-items: center;
   padding: 7em 0em;
 }
+.services__how__we__do__it__reverse {
+  background-color: $black;
+}
 .services__how__we__do__it__heading {
   font-size: 40px;
   margin-bottom: 0.5em;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+.services__how__we__do__it__reverse .services__how__we__do__it__heading {
+  color: white;
 }
 .services__how__we__do__it__info {
   font-size: 16px;
@@ -3407,14 +3416,22 @@ textarea {
   margin-bottom: 1em;
   transition: 300ms ease-in-out;
 }
+
 .services__how__we__do__it__content__entry__icon::after {
   content: "";
   position: absolute;
   left: calc(50% + 55px);
-  width: calc(100% - 80px);
-  border-bottom: 1px dashed $black;
+  width: calc(100% - 90px);
+  border-bottom: 1px dashed $text;
   top: 40px;
-  z-index: -1;
+  z-index: 0;
+}
+
+.services__how__we__do__it__reverse
+  .services__how__we__do__it__content__entry__card {
+  background-color: #272727;
+  color: white;
+  border-color: #272727;
 }
 .services__how__we__do__it__content__entry__card {
   padding: 2.5em;

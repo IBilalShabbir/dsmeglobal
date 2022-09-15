@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ServicesMVP({}) {
+export function ServicesMVP() {
   return (
     <div className="services__mvp">
       <div className="services__mvp__content">

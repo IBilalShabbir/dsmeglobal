@@ -1,6 +1,6 @@
 import React from "react";
 
-export function CustomSoftwareBuisness({}) {
+export function CustomSoftwareBuisness() {
   return (
     <div className="dedicated__teams__get__started dedicated__teams__get__started__reverse">
       <div

@@ -1,6 +1,6 @@
 import React from "react";
 
-export function EcommerceGetStarted({}) {
+export function EcommerceGetStarted() {
   return (
     <div className="dedicated__teams__get__started dedicated__teams__get__started__reverse">
       <div className="dedicated__teams__get__started__heading heading">

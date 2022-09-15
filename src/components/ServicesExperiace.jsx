@@ -1,7 +1,7 @@
 import React from "react";
 import { ServicesExperianceEntry } from "./ServicesExperianceEntry";
 
-export function ServicesExperiace({}) {
+export function ServicesExperiace() {
   return (
     <div className="services__experiance">
       <div className="services__experiance__heading heading">

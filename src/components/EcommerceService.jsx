@@ -1,7 +1,7 @@
 import React from "react";
 import { AboutKeyDifferencesCard } from "../components/AboutKeyDifferencesCard";
 
-export function EcommerceService({}) {
+export function EcommerceService() {
   return (
     <div className="about__key__differences">
       <div className="about__key__differences__heading heading">

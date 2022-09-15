@@ -1,25 +1,29 @@
 import React from "react";
 import { ServicesHowWeDoItEntry } from "../components/ServicesHowWeDoItEntry";
 
-export function ServicesHowWeDoIt() {
+export function CustomSoftwareMethodologies({}) {
   return (
-    <div className="services__how__we__do__it">
-      <div className="services__how__we__do__it__heading heading">
-        How we do it?
+    <div className="services__how__we__do__it services__how__we__do__it__reverse">
+      <div
+        className="services__how__we__do__it__heading heading"
+        style={{
+          marginBottom: "1em",
+        }}
+      >
+        End-to-End Software Development Methodologies
       </div>
-      <div className="services__how__we__do__it__info">
-        Fast-track your project's delivery using our simple three-step
-        application development process.
-      </div>
+      []
       <div className="services__how__we__do__it__content">
         <ServicesHowWeDoItEntry
           icon="1"
           title="Requirements Gathering"
           list={[
-            "Requirements Definition",
-            "Analyzing the requirements",
-            "Documenting the process",
-            "Provide initial design",
+            "Work Breakdown Structure",
+            "Project Plan",
+            "Project Budget",
+            "Requirements Docs",
+            "Use Cases",
+            "User Stories",
           ]}
         />
         <ServicesHowWeDoItEntry
