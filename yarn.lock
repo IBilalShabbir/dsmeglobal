@@ -10691,6 +10691,11 @@ vite-plugin-chunk-split@^0.3.0:
   resolved "https://registry.yarnpkg.com/vite-plugin-chunk-split/-/vite-plugin-chunk-split-0.3.0.tgz#0a8abe8eb8190f887c165bd6c629c649163fd1d2"
   integrity sha512-2+AltyaVnKx33HRKwRQBWzmt3RHGJvDEUp+HDUbPcl4xpKXbWLvMCezlspXun9hL+3sEmqp3nF89uXknPtkc6A==
 
+vite-plugin-clear-console@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-clear-console/-/vite-plugin-clear-console-0.2.0.tgz#ea54ba2e520743d34ec2103dd8811c048ffd1663"
+  integrity sha512-Lm0+upcrTX7Mqyix0t7GdFieBqIErOT2Q7Z/Cr5PgYD5GDijAsbb3NFc+m3QjDBOvh0+C+6tJ8mVPHnkAzS+oA==
+
 vite-plugin-compression@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/vite-plugin-compression/-/vite-plugin-compression-0.5.1.tgz#a75b0d8f48357ebb377b65016da9f20885ef39b6"
@@ -10699,6 +10704,11 @@ vite-plugin-compression@^0.5.1:
     chalk "^4.1.2"
     debug "^4.3.3"
     fs-extra "^10.0.0"
+
+vite-plugin-dynamic-import@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-dynamic-import/-/vite-plugin-dynamic-import-1.2.2.tgz#700b3ebf42b5e80fdc4c117ce96d265434e6118e"
+  integrity sha512-50m5Whh9ZLzJouIcHhSzlcrieXx3YUiWAel4twcaNvZIlV9AbRud8e1qAunzpHZKTKPwujhkZps3O6XwebRGLg==
 
 vite-plugin-imagemin@^0.6.1:
   version "0.6.1"
