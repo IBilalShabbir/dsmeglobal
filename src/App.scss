@@ -3644,6 +3644,54 @@ textarea {
 .ecommerce__why__content__entry__special .ecommerce__why__content__entry__info {
   color: $black;
 }
+.services__experiance {
+  background: linear-gradient(transparent, #e6e6e6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7em;
+}
+.services__experiance__heading {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+  padding: 0em 2em;
+  text-align: center;
+}
+.services__experiance__info {
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  padding: 0em 2em;
+}
+.services__experiance__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  margin: 0em auto;
+  margin-top: 4em;
+  margin-bottom: -2em;
+}
+.services__experiance__content__entry {
+  width: 48%;
+  display: flex;
+  margin-bottom: 3em;
+}
+.services__experiance__content__entry__icon svg {
+  width: 40px;
+  height: 40px;
+}
+.services__experiance__content__entry__content {
+  margin-left: 1.5em;
+}
+.services__experiance__content__entry__content__heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -3710,7 +3758,8 @@ textarea {
   .services__experties__heading,
   .ecommerce__about__content__right__heading,
   .ecommerce__why__content__entry__special
-    .ecommerce__why__content__entry__heading {
+    .ecommerce__why__content__entry__heading,
+  .services__experiance__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4261,6 +4310,9 @@ textarea {
     width: 100%;
     min-height: fit-content;
   }
+  .services__experiance__content__entry {
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .dedicated__best__fit__content__details__info__entry {
@@ -4352,7 +4404,8 @@ textarea {
   .services__experties__heading,
   .ecommerce__about__content__right__heading,
   .ecommerce__why__content__entry__special
-    .ecommerce__why__content__entry__heading {
+    .ecommerce__why__content__entry__heading,
+  .services__experiance__heading {
     font-size: 25px;
   }
   .dedicated__teams__get__started__heading {
