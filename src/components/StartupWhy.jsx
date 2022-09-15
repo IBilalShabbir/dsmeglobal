@@ -3,7 +3,7 @@ import { AboutKeyDifferencesCard } from "./AboutKeyDifferencesCard";
 
 export function StartupWhy() {
   return (
-    <div className="about__key__differences " style={{ marginTop: "-2em" }}>
+    <div className="about__key__differences ">
       <div
         className="about__key__differences__heading heading"
         style={{ marginBottom: "1em" }}

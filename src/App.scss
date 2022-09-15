@@ -3776,6 +3776,98 @@ textarea {
   background-color: $black;
   color: white;
 }
+.startup__process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(transparent, #ebebeb);
+  padding-bottom: 7em;
+  margin-bottom: -7em;
+}
+.startup__process__heading {
+  margin-bottom: 2em;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 900px;
+  padding: 0em 2em;
+  text-align: center;
+}
+.startup__process__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  margin: 0em auto;
+}
+.startup__process__content__entry {
+  width: 48.5%;
+  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+.startup__process__content__entry__heading {
+  margin-bottom: 1em;
+  font-size: 20px;
+}
+.startup__process__content__entry__heading svg {
+  margin-right: 1em;
+  margin-bottom: -0.5em;
+}
+.startup__process__content__entry:hover {
+  transition: 300ms ease-in-out;
+  color: white;
+  background-color: $black;
+}
+.startup__engagement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em;
+}
+.startup__engagement__heading {
+  font-size: 40px;
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+.startup__engagement__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 0em 2em;
+}
+.startup__engagement__content__entry {
+  padding: 2.5em;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  width: 32%;
+  padding-top: 4em;
+}
+.startup__engagement__content__entry__icon {
+  color: $primary;
+}
+.startup__engagement__content__entry__heading {
+  margin: 1em 0em;
+  font-size: 22px;
+  width: 100%;
+  max-width: 200px;
+}
+.startup__engagement__content__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  color: white;
+}
+.startup__engagement__content__entry:hover
+  .startup__engagement__content__entry__icon {
+  transition: 300ms ease-in-out;
+  color: white;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -3844,7 +3936,8 @@ textarea {
   .ecommerce__why__content__entry__special
     .ecommerce__why__content__entry__heading,
   .services__experiance__heading,
-  .services__mvp__content__left__heading {
+  .services__mvp__content__left__heading,
+  .startup__process__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4083,6 +4176,9 @@ textarea {
   .about__key__differences__featuers__entry {
     width: 100%;
   }
+  .startup__process__content__entry__heading svg {
+    margin-bottom: 0em;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -4191,6 +4287,10 @@ textarea {
   }
   .dedicated__best__fit__content__details__info__entry {
     width: 25%;
+  }
+  .startup__engagement__content__entry {
+    width: 48.5%;
+    margin-bottom: 1.5em;
   }
 }
 @media (max-width: 900px) {
@@ -4419,6 +4519,12 @@ textarea {
   .services__mvp__content__right {
     width: 100%;
   }
+  .startup__process__content__entry {
+    width: 100%;
+  }
+  .startup__engagement__content__entry {
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .dedicated__best__fit__content__details__info__entry {
@@ -4512,7 +4618,8 @@ textarea {
   .ecommerce__why__content__entry__special
     .ecommerce__why__content__entry__heading,
   .services__experiance__heading,
-  .services__mvp__content__left__heading {
+  .services__mvp__content__left__heading,
+  .startup__process__heading {
     font-size: 25px;
   }
   .dedicated__teams__get__started__heading {
