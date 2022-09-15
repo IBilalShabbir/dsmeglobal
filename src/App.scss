@@ -1941,6 +1941,10 @@ textarea {
   padding: 2em;
   justify-content: space-between;
 }
+.about__key__differences__content__special
+  .about__key__differences__content__card {
+  width: 46%;
+}
 .about__key__differences__content__card {
   width: 30%;
   margin-bottom: 3em;
@@ -3953,6 +3957,10 @@ textarea {
   .about__key__differences__content__card {
     width: 48%;
   }
+  .about__key__differences__content__special
+    .about__key__differences__content__card {
+    width: 48%;
+  }
   .contact {
     height: fit-content;
     max-height: fit-content;
@@ -4298,6 +4306,10 @@ textarea {
   .about__key__differences__content__card {
     width: 100%;
     margin-right: 1em;
+  }
+  .about__key__differences__content__special
+    .about__key__differences__content__card {
+    width: 100%;
   }
   .about__key__differences__featuers {
     padding: 3em;

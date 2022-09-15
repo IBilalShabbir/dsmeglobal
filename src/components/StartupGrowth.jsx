@@ -145,7 +145,7 @@ export function StartupGrowth() {
     },
   ];
   return (
-    <section className="home__services" style={{ marginTop: "-2em" }}>
+    <section className="home__services">
       <div className="home__services__heading heading">
         Accelerate Your Growth with Our Startup Product Development Services
       </div>
