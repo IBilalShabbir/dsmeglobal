@@ -69,3 +69,5 @@ export { default as techonologies } from "./techonologies.svg";
 export { default as webAppDevelopment } from "./webAppDevelopment.svg";
 export { default as mobileAppDevelopment } from "./mobileAppDevelopment.svg";
 export { default as wordpressAboutImage } from "./wordpressAboutImage.png";
+export { default as smartContract } from "./smartContract.png";
+export { default as smartContractSvg } from "./smartContractSvg.svg";

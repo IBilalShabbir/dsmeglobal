@@ -2,6 +2,7 @@ import React from "react";
 import { BlockchainWhy } from "../components/BlockchainWhy";
 import { Jumbotron } from "../components/Jumbotron";
 import { ServicesFeatureListing } from "../components/ServicesFeatureListing";
+import { BlockchainDevelopment } from "./BlockchainDevelopment";
 
 export default function BlockchainConsulting() {
   const blockChainFeature = [
@@ -182,6 +183,9 @@ export default function BlockchainConsulting() {
         description="Phenomenal domain expertise to help you build and deliver mobile applications that can increase productivity, improve engagement and boost customer loyalty."
         data={blockChainFeature}
       />
+      <div className="blockchain__get__started"></div>
+      <div className="blockchain__how"></div>
+      <BlockchainDevelopment />
     </>
   );
 }

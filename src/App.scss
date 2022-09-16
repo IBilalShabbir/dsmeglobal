@@ -3868,6 +3868,41 @@ textarea {
   transition: 300ms ease-in-out;
   color: white;
 }
+.blockchain__development {
+  width: 100%;
+  position: relative;
+}
+.blockchain__development__svg {
+  position: absolute;
+  top: -20%;
+  right: 0px;
+  height: 100%;
+  z-index: -1;
+}
+.blockchain__development__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 0em 2em;
+}
+.blockchain__development__content__left {
+  flex: 1;
+  margin-right: 3em;
+}
+.blockchain__development__content__left__img {
+  width: 100%;
+}
+.blockchain__development__content__right {
+  flex: 1;
+}
+.blockchain__development__content__right__heading {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+  width: 100%;
+  max-width: 300px;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -3937,7 +3972,8 @@ textarea {
     .ecommerce__why__content__entry__heading,
   .services__experiance__heading,
   .services__mvp__content__left__heading,
-  .startup__process__heading {
+  .startup__process__heading,
+  .blockchain__development__content__right__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4292,6 +4328,22 @@ textarea {
     width: 48.5%;
     margin-bottom: 1.5em;
   }
+  .blockchain__development__svg {
+    height: 300px;
+  }
+  .blockchain__development__content {
+    flex-direction: column;
+  }
+  .blockchain__development__content__left {
+    margin-right: 0em;
+    margin-bottom: 3em;
+  }
+  .blockchain__development__content__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 @media (max-width: 900px) {
   .about__our__promise__content__entry {
@@ -4619,7 +4671,8 @@ textarea {
     .ecommerce__why__content__entry__heading,
   .services__experiance__heading,
   .services__mvp__content__left__heading,
-  .startup__process__heading {
+  .startup__process__heading,
+  .blockchain__development__content__right__heading {
     font-size: 25px;
   }
   .dedicated__teams__get__started__heading {
