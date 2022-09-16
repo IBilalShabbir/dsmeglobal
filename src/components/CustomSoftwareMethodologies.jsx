@@ -12,7 +12,6 @@ export function CustomSoftwareMethodologies({}) {
       >
         End-to-End Software Development Methodologies
       </div>
-      []
       <div className="services__how__we__do__it__content">
         <ServicesHowWeDoItEntry
           icon="1"

@@ -3389,6 +3389,8 @@ textarea {
   color: $text;
   margin-bottom: 3em;
   text-align: center;
+  width: 100%;
+  max-width: 900px;
   padding: 0em 2em;
 }
 .services__how__we__do__it__content {
@@ -3442,7 +3444,7 @@ textarea {
 .services__how__we__do__it__content__entry__card {
   padding: 2.5em;
   padding-bottom: 2em;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid #6b6b6b;
   width: 100%;
   height: 100%;
