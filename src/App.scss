@@ -3972,9 +3972,12 @@ textarea {
 }
 .blockchain__get__started__heading {
   font-size: 40px;
+  margin: 0em auto;
   margin-bottom: 1em;
   padding: 0em 2em;
   text-align: center;
+  width: 100%;
+  max-width: 1000px;
 }
 .blockchain__get__started__link {
   border: 1px solid $black;
@@ -3988,6 +3991,57 @@ textarea {
   background-color: $primary;
   color: white;
   border-color: $primary;
+}
+.web__scraping__feature {
+  width: 100%;
+  margin-top: 7em;
+  position: relative;
+  overflow: hidden;
+}
+.web__scraping__feature__svg1 {
+  position: absolute;
+  bottom: 100px;
+  z-index: -1;
+  left: 0px;
+}
+.web__scraping__feature__svg2 {
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+  right: 100px;
+}
+.web__scraping__feature__content {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 0em 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.web__scraping__feature__content__entry {
+  width: 50%;
+  padding: 2.5em;
+  height: fit-content;
+  border-radius: 10px;
+}
+.web__scraping__feature__content__entry:nth-child(2) {
+  margin-top: 10em;
+}
+.web__scraping__feature__content__entry:nth-child(3) {
+  margin-top: -10em;
+}
+.web__scraping__feature__content__entry__icon svg {
+  height: 200px;
+  width: 200px;
+}
+.web__scraping__feature__content__entry__heading {
+  font-size: 25px;
+  margin: 1em 0em;
+}
+.web__scraping__feature__content__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  color: white;
 }
 @media (max-width: 1550px) {
   .home__stats {
@@ -4685,6 +4739,13 @@ textarea {
   .ecommerce__why__content__entry__special {
     margin-top: -4em;
   }
+  .web__scraping__feature__content {
+    flex-direction: column;
+  }
+  .web__scraping__feature__content__entry {
+    margin: 0em !important;
+    width: 100%;
+  }
 }
 @media (max-width: 650px) {
   .meet__us__content__svg1 {
@@ -4777,6 +4838,7 @@ textarea {
   .blockchain__get__started {
     margin-top: 0em;
     margin-bottom: 0em;
+    overflow: hidden;
   }
   .dedicated__teams__get__started__heading {
     margin-bottom: 4em;

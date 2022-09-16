@@ -11,8 +11,11 @@ export function ServicesHowWeDoItEntry({ icon, title, list }) {
           {title}
         </div>
         <div className="services__how__we__do__it__content__entry__card__content">
-          {list.map((item) => (
-            <div className="services__how__we__do__it__content__entry__card__content__entry">
+          {list.map((item, i) => (
+            <div
+              className="services__how__we__do__it__content__entry__card__content__entry"
+              key={i}
+            >
               <div className="services__how__we__do__it__content__entry__card__content__entry__dot" />
               {item}
             </div>
