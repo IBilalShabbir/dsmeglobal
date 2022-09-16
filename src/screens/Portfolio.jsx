@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { BlogContent } from "../components/BlogContent";
 import { BlogFilters } from "../components/BlogFilters";
+import { Jumbotron } from "../components/Jumbotron";
 import { fetcher } from "../utils/fetcher";
 import useSWR from "swr";
-import { Jumbotron } from "../components/Jumbotron";
 
 export default function Portfolio() {
   const [filter, setFiter] = useState("");

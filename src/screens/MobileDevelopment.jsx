@@ -4,8 +4,8 @@ import { ServicesFeatureListing } from "../components/ServicesFeatureListing";
 import { ServicesExperties } from "../components/ServicesExperties";
 import { ServicesExpertiesEntry } from "../components/ServicesExpertiesEntry";
 import { ServicesHowWeDoIt } from "../components/ServicesHowWeDoIt";
-import { homeBannerImage } from "../assets";
 import { MobileDevelopmentWhy } from "../components/MobileDevelopmentWhy";
+import { homeBannerImage } from "../assets";
 
 export default function MobileDevelopment() {
   const mobileDevelopmentFeature = [
