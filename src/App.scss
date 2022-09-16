@@ -3903,6 +3903,53 @@ textarea {
   width: 100%;
   max-width: 300px;
 }
+.blockchain__how {
+  margin: 7em 0em;
+  position: relative;
+}
+.blockchain__how__svg {
+  position: absolute;
+  top: -200px;
+  left: 0px;
+  height: 400px;
+  z-index: -1;
+}
+.blockchain__how__content {
+  display: flex;
+  margin: 0em auto;
+  padding: 0em 2em;
+  width: 100%;
+  max-width: 1366px;
+  align-items: center;
+}
+.blockchain__how__content__left {
+  flex: 1;
+  margin-right: 3em;
+}
+.blockchain__how__content__left__heading {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+}
+.blockchain__how__content__left__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.blockchain__how__content__left__list:last-child {
+  margin-bottom: 0em;
+}
+.blockchain__how__content__left__list span {
+  color: $primary;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 1em;
+}
+.blockchain__how__content__right {
+  flex: 1;
+}
+.blockchain__how__content__right__img {
+  width: 100%;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -3973,7 +4020,8 @@ textarea {
   .services__experiance__heading,
   .services__mvp__content__left__heading,
   .startup__process__heading,
-  .blockchain__development__content__right__heading {
+  .blockchain__development__content__right__heading,
+  .blockchain__how__content__left__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4344,6 +4392,12 @@ textarea {
     align-items: center;
     text-align: center;
   }
+  .blockchain__how__content {
+    flex-direction: column;
+  }
+  .blockchain__how__content__left {
+    margin-right: 0em;
+  }
 }
 @media (max-width: 900px) {
   .about__our__promise__content__entry {
@@ -4577,6 +4631,9 @@ textarea {
   .startup__engagement__content__entry {
     width: 100%;
   }
+  .blockchain__how__svg {
+    height: 200px;
+  }
 }
 @media (max-width: 700px) {
   .dedicated__best__fit__content__details__info__entry {
@@ -4672,7 +4729,8 @@ textarea {
   .services__experiance__heading,
   .services__mvp__content__left__heading,
   .startup__process__heading,
-  .blockchain__development__content__right__heading {
+  .blockchain__development__content__right__heading,
+  .blockchain__how__content__left__heading {
     font-size: 25px;
   }
   .dedicated__teams__get__started__heading {

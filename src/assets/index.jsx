@@ -71,3 +71,5 @@ export { default as mobileAppDevelopment } from "./mobileAppDevelopment.svg";
 export { default as wordpressAboutImage } from "./wordpressAboutImage.png";
 export { default as smartContract } from "./smartContract.png";
 export { default as smartContractSvg } from "./smartContractSvg.svg";
+export { default as howBlockchain } from "./howBlockchain.png";
+export { default as howBlockchainSvg } from "./howBlockchainSvg.svg";

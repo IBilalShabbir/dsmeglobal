@@ -3,6 +3,7 @@ import { BlockchainWhy } from "../components/BlockchainWhy";
 import { Jumbotron } from "../components/Jumbotron";
 import { ServicesFeatureListing } from "../components/ServicesFeatureListing";
 import { BlockchainDevelopment } from "./BlockchainDevelopment";
+import { BlockchainHow } from "./BlockchainHow";
 
 export default function BlockchainConsulting() {
   const blockChainFeature = [
@@ -184,7 +185,7 @@ export default function BlockchainConsulting() {
         data={blockChainFeature}
       />
       <div className="blockchain__get__started"></div>
-      <div className="blockchain__how"></div>
+      <BlockchainHow />
       <BlockchainDevelopment />
     </>
   );
