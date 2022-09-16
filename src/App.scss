@@ -3903,6 +3903,10 @@ textarea {
   width: 100%;
   max-width: 300px;
 }
+.blockchain__development__content__right__info {
+  width: 100%;
+  max-width: 500px;
+}
 .blockchain__how {
   margin: 7em 0em;
   position: relative;
@@ -3949,6 +3953,41 @@ textarea {
 }
 .blockchain__how__content__right__img {
   width: 100%;
+}
+.blockchain__get__started {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  height: 500px;
+  margin-bottom: -7em;
+  margin-top: 7em;
+}
+.blockchain__get__started__svg {
+  position: absolute;
+  height: 500px;
+  z-index: -1;
+}
+.blockchain__get__started__heading {
+  font-size: 40px;
+  margin-bottom: 1em;
+  padding: 0em 2em;
+  text-align: center;
+}
+.blockchain__get__started__link {
+  border: 1px solid $black;
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  color: $black;
+  text-decoration: none;
+}
+.blockchain__get__started__link:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  color: white;
+  border-color: $primary;
 }
 @media (max-width: 1550px) {
   .home__stats {
@@ -4021,7 +4060,8 @@ textarea {
   .services__mvp__content__left__heading,
   .startup__process__heading,
   .blockchain__development__content__right__heading,
-  .blockchain__how__content__left__heading {
+  .blockchain__how__content__left__heading,
+  .blockchain__get__started__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4730,8 +4770,13 @@ textarea {
   .services__mvp__content__left__heading,
   .startup__process__heading,
   .blockchain__development__content__right__heading,
-  .blockchain__how__content__left__heading {
+  .blockchain__how__content__left__heading,
+  .blockchain__get__started__heading {
     font-size: 25px;
+  }
+  .blockchain__get__started {
+    margin-top: 0em;
+    margin-bottom: 0em;
   }
   .dedicated__teams__get__started__heading {
     margin-bottom: 4em;

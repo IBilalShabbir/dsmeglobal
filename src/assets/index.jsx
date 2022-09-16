@@ -73,3 +73,4 @@ export { default as smartContract } from "./smartContract.png";
 export { default as smartContractSvg } from "./smartContractSvg.svg";
 export { default as howBlockchain } from "./howBlockchain.png";
 export { default as howBlockchainSvg } from "./howBlockchainSvg.svg";
+export { default as blockChainGetStarted } from "./blockChainGetStarted.svg";
