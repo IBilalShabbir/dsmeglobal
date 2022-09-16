@@ -1,5 +1,6 @@
 import React from "react";
 import { Jumbotron } from "../components/Jumbotron";
+import { IOSFeatures } from "../components/IOSFeatures";
 
 export default function IOSDevelopment() {
   return (
@@ -8,6 +9,7 @@ export default function IOSDevelopment() {
         heading="INDUSTRY-LEADING IOS APP DEVELOPMENT COMPANY"
         description="Explore new business destinations, accelerate growth, and captivate your customers with a custom iOS application"
       />
+      <IOSFeatures />
     </>
   );
 }

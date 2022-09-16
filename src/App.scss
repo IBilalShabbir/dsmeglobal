@@ -4045,6 +4045,10 @@ textarea {
   background-color: $primary;
   color: white;
 }
+.web__scraping__feature__content__reverse
+  .web__scraping__feature__content__entry:hover {
+  background-color: $black;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
