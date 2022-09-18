@@ -4164,6 +4164,160 @@ textarea {
   border-color: $primary;
   outline-color: $primary;
 }
+.android__cross__dev {
+  background-color: $black;
+  margin-top: 16em;
+}
+.android__cross__dev__content {
+  width: 100%;
+  max-width: 1366px;
+  padding: 7em 2em;
+  margin: 0em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.android__cross__dev__content__heading {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.android__cross__dev__content__info {
+  margin-bottom: 1em;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  color: $text;
+}
+.android__cross__dev__content__details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.android__cross__dev__content__details__entry {
+  width: 200px;
+  height: 200px;
+  background-color: #0a0a0a;
+  border-radius: 50%;
+  border: 4px dashed $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+.android__cross__dev__content__details__entry__value {
+  font-size: 50px;
+  color: white;
+}
+.android__cross__dev__content__details__entry__heading {
+  color: $text;
+  text-align: center;
+  width: 100%;
+  max-width: 150px;
+  font-size: 14px;
+}
+.android__cross__dev__content__details__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+}
+.android__cross__dev__content__details__entry:hover * {
+  transition: 300ms ease-in-out;
+  color: $black;
+}
+.android__cross__dev__content__link {
+  border: 1px solid white;
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+.android__cross__dev__content__link:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  border-color: $primary;
+}
+.androidios__why__choose {
+  width: 100%;
+  margin-bottom: -7em;
+}
+.androidios__why__choose__reverse {
+  background-color: $black;
+}
+.androidios__why__choose__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  padding: 7em 2em;
+  margin: 0em auto;
+}
+.androidios__why__choose__reverse .androidios__why__choose__content__heading {
+  color: white;
+}
+.androidios__why__choose__content__heading {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.androidios__why__choose__content__info {
+  text-align: center;
+  color: $text;
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 700px;
+}
+.androidios__why__choose__content__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.androidios__why__choose__content__details__entry {
+  width: calc(50% - 2em);
+  margin: 1em;
+  padding: 2.5em;
+  border-radius: 10px;
+  border: 1px solid #5b5b5b;
+}
+.androidios__why__choose__reverse
+  .androidios__why__choose__content__details__entry__heading {
+  color: white;
+}
+.androidios__why__choose__content__details__entry__heading {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+.androidios__why__choose__content__details__entry__heading svg {
+  margin-right: 1em;
+}
+.androidios__why__choose__content__details__entry__info {
+  color: $text;
+}
+.androidios__why__choose__reverse
+  .androidios__why__choose__content__details__entry:hover {
+  background-color: $primary;
+}
+.androidios__why__choose__reverse
+  .androidios__why__choose__content__details__entry:hover
+  * {
+  transition: 300ms ease-in-out;
+  color: $black;
+  fill: $black;
+}
+.androidios__why__choose__content__details__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: $black;
+}
+.androidios__why__choose__content__details__entry:hover * {
+  transition: 300ms ease-in-out;
+  color: white;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -4723,6 +4877,9 @@ textarea {
     margin-bottom: 1em;
   }
   .android__tech__stack__content__entry {
+    width: 100%;
+  }
+  .androidios__why__choose__content__details__entry {
     width: 100%;
   }
 }
