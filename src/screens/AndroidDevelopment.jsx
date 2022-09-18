@@ -4,6 +4,8 @@ import { AndroidFeatures } from "../components/AndroidFeatures";
 import { ServicesClients } from "../components/ServicesClients";
 import { ServicesFeatureListing } from "../components/ServicesFeatureListing";
 import { AndroidTechStack } from "../components/AndroidTechStack";
+import { blockChainGetStarted } from "../assets";
+import { Link } from "react-router-dom";
 
 export default function AndroidDevelopment() {
   const techonologiesFeature = [
@@ -307,6 +309,19 @@ export default function AndroidDevelopment() {
         description="It takes lots of effort, planning and research to create an app that succeeds. We want to take the work off your shoulders. Our Android team rated number one on Clutch combines in-depth research, outstanding design and impeccable development to create applications that astound users and bring measurable business results. Focus on what’s important to your business, and let us do the rest."
       />
       <AndroidFeatures />
+      <div className="blockchain__get__started">
+        <img
+          src={blockChainGetStarted}
+          alt="blockChainGetStarted"
+          className="blockchain__get__started__svg"
+        />
+        <div className="blockchain__get__started__heading heading">
+          Sounds promising? Let’s discuss your idea!
+        </div>
+        <Link to="/quote" className="blockchain__get__started__link">
+          Let’s work together
+        </Link>
+      </div>
       <AndroidTechStack />
       <ServicesFeatureListing
         special
