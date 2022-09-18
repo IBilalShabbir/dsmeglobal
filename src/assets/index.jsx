@@ -77,3 +77,4 @@ export { default as blockChainGetStarted } from "./blockChainGetStarted.svg";
 export { default as webScrapingSvg1 } from "./webScrapingSvg1.svg";
 export { default as webScrapingSvg2 } from "./webScrapingSvg2.svg";
 export { default as servicesGetQuoteSvg } from "./servicesGetQuoteSvg.svg";
+export { default as applyForJob } from "./applyForJob.svg";

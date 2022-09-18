@@ -47,7 +47,14 @@ export function CareersVacanciesEntry({
             {getText(data?.requirements)}
           </div>
           <Link
-            to="/"
+            to="/apply-for-job"
+            state={{ state: data }}
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
             className="careers__vacancies__content__entry__content__button"
           >
             Apply Now

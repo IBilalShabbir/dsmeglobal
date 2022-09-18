@@ -25,6 +25,7 @@ const FixedPrice = lazy(() => import("./screens/FixedPrice"));
 const Industries = lazy(() => import("./screens/Industries"));
 const BlogDetails = lazy(() => import("./screens/BlogDetails"));
 const WebScraping = lazy(() => import("./screens/WebScraping"));
+const ApplyForJob = lazy(() => import("./screens/ApplyForJob"));
 const GraphicDesign = lazy(() => import("./screens/GraphicDesign"));
 const CareerDetails = lazy(() => import("./screens/CareerDetails"));
 const CareersBanner = lazy(() => import("./screens/CareersBanner"));
@@ -96,6 +97,10 @@ function App() {
           element={<PortfolioDetails setIsContact={setIsContact} />}
         />
         <Route path="/quote" element={<Quote setIsContact={setIsContact} />} />
+        <Route
+          path="/apply-for-job"
+          element={<ApplyForJob setIsContact={setIsContact} />}
+        />
         <Route path="*" element={<NotFound setIsContact={setIsContact} />} />
       </Routes>
       {isContact ? <Contact /> : null}
