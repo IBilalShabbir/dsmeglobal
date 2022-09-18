@@ -1,7 +1,7 @@
 import React from "react";
 import { ServicesHowWeDoItEntry } from "../components/ServicesHowWeDoItEntry";
 
-export function CustomSoftwareMethodologies({}) {
+export function CustomSoftwareMethodologies() {
   return (
     <div className="services__how__we__do__it services__how__we__do__it__reverse">
       <div

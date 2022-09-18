@@ -1,7 +1,7 @@
 import React from "react";
 import { StartupEngagementEntry } from "./StartupEngagementEntry";
 
-export function StartupEngagement({}) {
+export function StartupEngagement() {
   return (
     <div className="startup__engagement">
       <div className="startup__engagement__heading heading">

@@ -37,9 +37,7 @@
     "vite": "^3.1.1",
     "vite-imagetools": "^4.0.9",
     "vite-plugin-chunk-split": "^0.4.0",
-    "vite-plugin-clear-console": "^0.2.0",
     "vite-plugin-compression": "^0.5.1",
-    "vite-plugin-dynamic-import": "^1.2.2",
     "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-webfont-dl": "^3.1.1"
   }

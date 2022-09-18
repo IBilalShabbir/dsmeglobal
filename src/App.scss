@@ -4099,6 +4099,71 @@ textarea {
 .androidios__clients__content__slogan__right {
   flex: 1;
 }
+.android__tech__stack {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7em;
+}
+.android__tech__stack__heading {
+  font-size: 40px;
+  padding: 0em 2em;
+  text-align: center;
+}
+.android__tech__stack__content {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  margin: 0em auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.android__tech__stack__content__entry {
+  width: 18%;
+  border-radius: 20px;
+  border: 1px solid #6b6b6b;
+  outline: 2px solid transparent;
+  position: relative;
+  padding: 3em 2em;
+  padding-bottom: 2em;
+  margin-top: 4em;
+}
+.android__tech__stack__content__entry__icon {
+  position: absolute;
+  top: -2em;
+  left: calc(50% - 25px - 2em);
+  padding: 1em 2em;
+  background-color: white;
+}
+.android__tech__stack__content__entry__icon svg {
+  width: 50px;
+  height: 50px;
+}
+.android__tech__stack__content__entry__heading {
+  text-align: center;
+  margin: 1em 0em;
+  font-size: 20px;
+  font-weight: bold;
+}
+.android__tech__stack__content__entry__entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.android__tech__stack__content__entry__entry__dot {
+  width: 10px;
+  height: 10px;
+  margin-right: 1em;
+  background-color: $primary;
+  border-radius: 50px;
+}
+.android__tech__stack__content__entry:hover {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
+  outline-color: $primary;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -4173,7 +4238,8 @@ textarea {
   .blockchain__how__content__left__heading,
   .blockchain__get__started__heading,
   .androidios__clients__content__heading,
-  .androidios__clients__content__slogan__left {
+  .androidios__clients__content__slogan__left,
+  .android__tech__stack__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4229,6 +4295,9 @@ textarea {
   .dedicated__best__fit__content__details__info__entry {
     width: 33%;
   }
+  .android__tech__stack__content__entry {
+    width: 23%;
+  }
 }
 @media (max-width: 1200px) {
   .dedicated__teams__get__started {
@@ -4277,6 +4346,9 @@ textarea {
 @media (max-width: 1150px) {
   .dedicated__best__fit__content__details__info__entry {
     width: 50%;
+  }
+  .android__tech__stack__content__entry {
+    width: 48%;
   }
 }
 @media (max-width: 1100px) {
@@ -4650,6 +4722,9 @@ textarea {
     margin-right: 0em;
     margin-bottom: 1em;
   }
+  .android__tech__stack__content__entry {
+    width: 100%;
+  }
 }
 @media (max-width: 800px) {
   .dedicated__teams__get__started__content__entry {
@@ -4908,7 +4983,8 @@ textarea {
   .blockchain__how__content__left__heading,
   .blockchain__get__started__heading,
   .androidios__clients__content__heading,
-  .androidios__clients__content__slogan__left {
+  .androidios__clients__content__slogan__left,
+  .android__tech__stack__heading {
     font-size: 25px;
   }
   .blockchain__get__started {

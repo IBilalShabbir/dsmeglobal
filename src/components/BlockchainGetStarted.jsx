@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { blockChainGetStarted } from "../assets";
 
-export function BlockchainGetStarted({}) {
+export function BlockchainGetStarted() {
   return (
     <div className="blockchain__get__started">
       <img

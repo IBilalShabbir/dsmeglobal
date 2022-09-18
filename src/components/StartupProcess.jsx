@@ -1,7 +1,7 @@
 import React from "react";
 import { StartupProcessEntry } from "./StartupProcessEntry";
 
-export function StartupProcess({}) {
+export function StartupProcess() {
   return (
     <div
       className="startup__process"

@@ -1,22 +1,18 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import viteCompression from "vite-plugin-compression";
-import { ViteWebfontDownload } from "vite-plugin-webfont-dl";
-import { chunkSplitPlugin } from "vite-plugin-chunk-split";
 import { imagetools } from "vite-imagetools";
 import viteImagemin from "vite-plugin-imagemin";
-import clearConsole from "vite-plugin-clear-console";
-import dynamicImport from "vite-plugin-dynamic-import";
+import viteCompression from "vite-plugin-compression";
+import { chunkSplitPlugin } from "vite-plugin-chunk-split";
+import { ViteWebfontDownload } from "vite-plugin-webfont-dl";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    clearConsole(),
     ViteWebfontDownload(),
     chunkSplitPlugin(),
     imagetools(),
-    dynamicImport(),
     viteCompression({
       algorithm: "brotliCompress",
       threshold: 100,
