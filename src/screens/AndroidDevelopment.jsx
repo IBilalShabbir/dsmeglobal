@@ -4,7 +4,7 @@ import { AndroidFeatures } from "../components/AndroidFeatures";
 import { ServicesClients } from "../components/ServicesClients";
 import { ServicesFeatureListing } from "../components/ServicesFeatureListing";
 import { AndroidTechStack } from "../components/AndroidTechStack";
-import { blockChainGetStarted } from "../assets";
+import { blockChainGetStarted, servicesGetQuoteSvg } from "../assets";
 import { Link } from "react-router-dom";
 import { AndroidCrossDev } from "../components/AndroidCrossDev";
 import { AndroidWhyChoose } from "../components/AndroidWhyChoose";
@@ -311,6 +311,21 @@ export default function AndroidDevelopment() {
         description="It takes lots of effort, planning and research to create an app that succeeds. We want to take the work off your shoulders. Our Android team rated number one on Clutch combines in-depth research, outstanding design and impeccable development to create applications that astound users and bring measurable business results. Focus on what’s important to your business, and let us do the rest."
       />
       <AndroidFeatures />
+      <div className="services__get__quote">
+        <img
+          src={servicesGetQuoteSvg}
+          alt="servicesGetQuoteSvg"
+          className="services__get__quote__svg"
+        />
+        <div className="services__get__quote__content">
+          <div className="services__get__quote__content__heading heading">
+            Tangible results, right on schedule
+          </div>
+          <Link to="/quote" className="services__get__quote__content__link">
+            Get a quote
+          </Link>
+        </div>
+      </div>
       <AndroidWhyChoose />
       <div className="blockchain__get__started">
         <img

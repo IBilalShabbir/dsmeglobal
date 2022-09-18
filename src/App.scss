@@ -4318,6 +4318,47 @@ textarea {
   transition: 300ms ease-in-out;
   color: white;
 }
+.services__get__quote {
+  width: 100%;
+  position: relative;
+  background-color: $primary;
+  margin-top: 5em;
+}
+.services__get__quote__svg {
+  position: absolute;
+  top: -200px;
+  right: 0px;
+  height: 650px;
+}
+.services__get__quote__content {
+  padding: 2em;
+  margin: 0em auto;
+  width: 100%;
+  max-width: 1366px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services__get__quote__content__heading {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.services__get__quote__content__link {
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+}
+.services__get__quote__content__link:hover {
+  transition: 300ms ease-in-out;
+  background-color: white;
+  color: $primary;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -4393,7 +4434,10 @@ textarea {
   .blockchain__get__started__heading,
   .androidios__clients__content__heading,
   .androidios__clients__content__slogan__left,
-  .android__tech__stack__heading {
+  .android__tech__stack__heading,
+  .androidios__why__choose__content__heading,
+  .services__get__quote__content__heading,
+  .android__cross__dev__content__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4640,6 +4684,9 @@ textarea {
   }
   .startup__process__content__entry__heading svg {
     margin-bottom: 0em;
+  }
+  .services__get__quote__svg {
+    display: none;
   }
 }
 
@@ -5141,7 +5188,10 @@ textarea {
   .blockchain__get__started__heading,
   .androidios__clients__content__heading,
   .androidios__clients__content__slogan__left,
-  .android__tech__stack__heading {
+  .android__tech__stack__heading,
+  .androidios__why__choose__content__heading,
+  .services__get__quote__content__heading,
+  .android__cross__dev__content__heading {
     font-size: 25px;
   }
   .blockchain__get__started {
@@ -5220,6 +5270,9 @@ textarea {
   }
   .dedicated__best__fit__content__details__info__entry {
     width: 100%;
+  }
+  .android__cross__dev {
+    margin-top: 0em;
   }
 }
 @media (max-width: 500px) {

@@ -3,10 +3,7 @@ import { AndroidIosWhyChoose } from "./AndroidIosWhyChoose";
 
 export function IOSWhyChoose({}) {
   return (
-    <div
-      className="androidios__why__choose androidios__why__choose__reverse"
-      style={{ marginTop: "7em" }}
-    >
+    <div className="androidios__why__choose androidios__why__choose__reverse">
       <div className="androidios__why__choose__content">
         <div className="androidios__why__choose__content__heading heading">
           Why choose native IOS app development?

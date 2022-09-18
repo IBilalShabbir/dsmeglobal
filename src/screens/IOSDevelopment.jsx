@@ -2,7 +2,7 @@ import React from "react";
 import { Jumbotron } from "../components/Jumbotron";
 import { IOSFeatures } from "../components/IOSFeatures";
 import { ServicesClients } from "../components/ServicesClients";
-import { blockChainGetStarted } from "../assets";
+import { blockChainGetStarted, servicesGetQuoteSvg } from "../assets";
 import { Link } from "react-router-dom";
 import { IOSWhyChoose } from "../components/IOSWhyChoose";
 
@@ -15,6 +15,21 @@ export default function IOSDevelopment() {
       />
       <ServicesClients description="How can you ensure your iOS app turns into a great success? Trust an experienced partner that takes the development effort off your hands, and let us create a solution that will astound your users and bring measurable business results. While you can focus on your business, we combine in-depth research, outstanding design, and impeccable development to create an exceptional iOS application that fits your needs." />
       <IOSFeatures />
+      <div className="services__get__quote">
+        <img
+          src={servicesGetQuoteSvg}
+          alt="servicesGetQuoteSvg"
+          className="services__get__quote__svg"
+        />
+        <div className="services__get__quote__content">
+          <div className="services__get__quote__content__heading heading">
+            Tangible results, right on schedule
+          </div>
+          <Link to="/quote" className="services__get__quote__content__link">
+            Get a quote
+          </Link>
+        </div>
+      </div>
       <IOSWhyChoose />
       <div
         className="blockchain__get__started"
