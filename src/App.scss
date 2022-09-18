@@ -4049,6 +4049,56 @@ textarea {
   .web__scraping__feature__content__entry:hover {
   background-color: $black;
 }
+.androidios__clients {
+  background: linear-gradient(transparent, #e6e6e6);
+}
+.androidios__clients__content {
+  width: 100%;
+  max-width: 1366px;
+  padding: 7em 2em;
+  margin: 0em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.androidios__clients__content__heading {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.androidios__clients__content__info {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+.androidios__clients__content__logos {
+  width: 100%;
+  max-width: 1000px;
+}
+.androidios__clients__content__logos__logo {
+  width: 100%;
+  filter: grayscale(100%);
+}
+.androidios__clients__content__slogan {
+  width: 100%;
+  display: flex;
+  margin-top: 2em;
+}
+.androidios__clients__content__slogan__left {
+  flex: 1;
+  display: flex;
+  font-size: 35px;
+  align-items: flex-start;
+  margin-right: 2em;
+}
+.androidios__clients__content__slogan__left svg {
+  min-width: 100px;
+  height: 100px;
+  margin-right: 0.5em;
+}
+.androidios__clients__content__slogan__right {
+  flex: 1;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -4121,7 +4171,9 @@ textarea {
   .startup__process__heading,
   .blockchain__development__content__right__heading,
   .blockchain__how__content__left__heading,
-  .blockchain__get__started__heading {
+  .blockchain__get__started__heading,
+  .androidios__clients__content__heading,
+  .androidios__clients__content__slogan__left {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4591,6 +4643,13 @@ textarea {
   .ecommerce__why__content__entry {
     width: 48%;
   }
+  .androidios__clients__content__slogan {
+    flex-direction: column;
+  }
+  .androidios__clients__content__slogan__left {
+    margin-right: 0em;
+    margin-bottom: 1em;
+  }
 }
 @media (max-width: 800px) {
   .dedicated__teams__get__started__content__entry {
@@ -4752,6 +4811,15 @@ textarea {
     margin: 0em !important;
     width: 100%;
   }
+  .androidios__clients__content__slogan__left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .androidios__clients__content__slogan__left svg {
+    margin-right: 0em;
+    margin-bottom: 1em;
+  }
 }
 @media (max-width: 650px) {
   .meet__us__content__svg1 {
@@ -4838,7 +4906,9 @@ textarea {
   .startup__process__heading,
   .blockchain__development__content__right__heading,
   .blockchain__how__content__left__heading,
-  .blockchain__get__started__heading {
+  .blockchain__get__started__heading,
+  .androidios__clients__content__heading,
+  .androidios__clients__content__slogan__left {
     font-size: 25px;
   }
   .blockchain__get__started {
