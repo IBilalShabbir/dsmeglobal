@@ -4393,6 +4393,90 @@ textarea {
 .home__services__details__right__img {
   max-width: 100%;
 }
+.uiux__capabilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7em 0em;
+  position: relative;
+}
+.uiux__capabilities__svg {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  z-index: -1;
+}
+.uiux__capabilities__heading {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 40px;
+  padding: 0em 2em;
+}
+.uiux__capabilities__info {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  margin-bottom: 3em;
+  padding: 0em 2em;
+}
+.uiux__capabilities__content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1366px;
+  justify-content: space-between;
+  padding: 0em 2em;
+}
+.uiux__capabilities__content__entry {
+  width: 23%;
+  border: 1px solid #6b6b6b;
+  padding: 2em;
+  border-radius: 20px;
+}
+.uiux__capabilities__content__entry__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6em;
+}
+.uiux__capabilities__content__entry__content {
+  margin-bottom: 2em;
+}
+.uiux__capabilities__content__entry__content__heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 1em 0em;
+}
+.uiux__capabilities__content__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  border-color: $primary;
+  color: white;
+}
+.uiux__features {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0em auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0em 2em;
+}
+.uiux__features__entry {
+  padding: 2em;
+  width: 31%;
+  margin-top: 2em;
+  border: 1px solid #6b6b6b;
+  border-radius: 20px;
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
+.uiux__features__entry__heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 1em 0em;
+  width: 100%;
+  max-width: 200px;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -4471,7 +4555,9 @@ textarea {
   .android__tech__stack__heading,
   .androidios__why__choose__content__heading,
   .services__get__quote__content__heading,
-  .android__cross__dev__content__heading {
+  .android__cross__dev__content__heading,
+  .uiux__capabilities__heading,
+  .services__how__we__do__it__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4581,6 +4667,10 @@ textarea {
   }
   .android__tech__stack__content__entry {
     width: 48%;
+  }
+  .uiux__capabilities__content__entry {
+    width: 49%;
+    margin-top: 1.5em;
   }
 }
 @media (max-width: 1100px) {
@@ -5118,6 +5208,9 @@ textarea {
   .blockchain__how__svg {
     height: 200px;
   }
+  .uiux__features__entry {
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .dedicated__best__fit__content__details__info__entry {
@@ -5144,6 +5237,9 @@ textarea {
   .androidios__clients__content__slogan__left svg {
     margin-right: 0em;
     margin-bottom: 1em;
+  }
+  .uiux__capabilities__content__entry {
+    width: 100%;
   }
 }
 @media (max-width: 650px) {
@@ -5237,7 +5333,9 @@ textarea {
   .android__tech__stack__heading,
   .androidios__why__choose__content__heading,
   .services__get__quote__content__heading,
-  .android__cross__dev__content__heading {
+  .android__cross__dev__content__heading,
+  .uiux__capabilities__heading,
+  .services__how__we__do__it__heading {
     font-size: 25px;
   }
   .blockchain__get__started {
