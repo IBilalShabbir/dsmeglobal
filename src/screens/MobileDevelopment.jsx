@@ -337,7 +337,10 @@ export default function MobileDevelopment() {
   ];
   return (
     <>
-      <Jumbotron heading="Mobile Application Development" />
+      <Jumbotron
+        heading="Mobile Application Development"
+        description="Leveraging the latest technological tools & industry practices, we build high-performance apps to scale your business.Our team builds nimble and elegant apps for all smartphone platforms. Our engineers work closely with you to understand your specifications and develop apps that provide an intuitive end-user experience."
+      />
       <ServicesExperties
         description="Building a great business and consumer apps means not only creating an amazing user experience but also taking architecture, technical design, and security into account."
         image={homeBannerImage}

@@ -11,7 +11,10 @@ import { ServicesMVP } from "../components/ServicesMVP";
 export default function WebDevelopment() {
   return (
     <>
-      <Jumbotron heading="Web Application Development" />
+      <Jumbotron
+        heading="Web Application Development"
+        description="We believe in developing interactive web applications, to create experiences beyond our clients’ expectations. We create beautifully designed web apps precisely tailored to your situation. From providing Software as a Service to creating custom software to support your customers, our Web App team will get you up and running."
+      />
       <ServicesExperties
         description="Custom-built web applications with amazing user experiences & latest web technologies that help support your business goals."
         image={homeBannerImage1}

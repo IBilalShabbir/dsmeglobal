@@ -3514,6 +3514,7 @@ textarea {
   padding: 2em;
   border-radius: 10px;
   min-height: 360px;
+  outline: 2px solid transparent;
 }
 .blockchain__why__content__entry__heading {
   font-size: 20px;
@@ -3521,6 +3522,11 @@ textarea {
 }
 .blockchain__why__content__entry__info {
   color: $text;
+}
+.blockchain__why__content__entry:hover {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
+  outline-color: $primary;
 }
 .ecommerce__about {
   width: 100%;
