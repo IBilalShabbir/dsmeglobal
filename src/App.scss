@@ -4365,6 +4365,34 @@ textarea {
   background-color: white;
   color: $primary;
 }
+.home__services__details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  margin: 0em auto;
+}
+.home__services__details__left {
+  flex: 1;
+}
+.home__services__details__left .home__services__heading {
+  padding: 0em;
+  text-align: left;
+  max-width: 600px;
+}
+.home__services__details__left .home__services__info {
+  padding: 0em;
+  text-align: left;
+}
+.home__services__details__right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.home__services__details__right__img {
+  max-width: 100%;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -4828,6 +4856,18 @@ textarea {
   }
   .blockchain__how__content__left {
     margin-right: 0em;
+  }
+  .home__services__details {
+    flex-direction: column;
+  }
+  .home__services__details__left {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home__services__details__left * {
+    text-align: center !important;
   }
 }
 @media (max-width: 900px) {

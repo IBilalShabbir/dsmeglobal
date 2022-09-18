@@ -1,4 +1,5 @@
 import React from "react";
+import { startupGrowth } from "../assets";
 import { HomeServicesCard } from "../components/HomeServicesCard";
 
 export function StartupGrowth() {
@@ -146,13 +147,24 @@ export function StartupGrowth() {
   ];
   return (
     <section className="home__services">
-      <div className="home__services__heading heading">
-        Accelerate Your Growth with Our Startup Product Development Services
-      </div>
-      <div className="home__services__info">
-        We understand your needs. Our product development team uses lean and
-        agile methods to build a scalable product for startups that aim to
-        minimize risks and maximize returns.
+      <div className="home__services__details">
+        <div className="home__services__details__left">
+          <div className="home__services__heading heading">
+            Accelerate Your Growth with Our Startup Product Development Services
+          </div>
+          <div className="home__services__info">
+            We understand your needs. Our product development team uses lean and
+            agile methods to build a scalable product for startups that aim to
+            minimize risks and maximize returns.
+          </div>
+        </div>
+        <div className="home__services__details__right">
+          <img
+            src={startupGrowth}
+            alt="startupGrowth"
+            className="home__services__details__right__img"
+          />
+        </div>
       </div>
       <div className="home__services__content">
         {data?.map((item, index) => (
