@@ -30,7 +30,7 @@ export function Jumbotron({ heading, subHeading, description, to }) {
         </Fade>
       ) : null}
       <Link
-        to={to ? to : "/services"}
+        to={to ? to : "/quote"}
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
