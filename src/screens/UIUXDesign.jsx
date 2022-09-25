@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { blockChainGetStarted, designFlow } from "../assets";
 import { Jumbotron } from "../components/Jumbotron";
-import { UIUXCapabilities } from "./UIUXCapabilities";
-import { UIUXDesignExecuationProcess } from "./UIUXDesignExecuationProcess";
+import { UIUXCapabilities } from "../components/UIUXCapabilities";
+import { UIUXDesignExecuationProcess } from "../components/UIUXDesignExecuationProcess";
 
 export default function UIUXDesign() {
   return (
