@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import { Loader } from "./screens/Loader";
 
 import stylesheet from "./App.scss";
+import AgileDiscoveryWorkshop from "./screens/AgileDiscoveryWorkshop";
 
 const Home = lazy(() => import("./screens/Home"));
 const Blog = lazy(() => import("./screens/Blog"));
@@ -95,6 +96,10 @@ function App() {
         <Route
           path="/portfolio-details"
           element={<PortfolioDetails setIsContact={setIsContact} />}
+        />
+        <Route
+          path="/agile-discovery-workshop"
+          element={<AgileDiscoveryWorkshop />}
         />
         <Route path="/quote" element={<Quote setIsContact={setIsContact} />} />
         <Route
