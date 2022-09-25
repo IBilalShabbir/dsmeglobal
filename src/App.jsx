@@ -2,14 +2,13 @@ import React, { lazy, Suspense, useState } from "react";
 import { withStyles } from "react-critical-css";
 import { Route, Routes } from "react-router";
 
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-
 import { Loader } from "./screens/Loader";
 
 import stylesheet from "./App.scss";
-import AgileDiscoveryWorkshop from "./screens/AgileDiscoveryWorkshop";
+
+const Contact = lazy(() => import("./components/Contact"));
+const Footer = lazy(() => import("./components/Footer"));
+const Header = lazy(() => import("./components/Header"));
 
 const Home = lazy(() => import("./screens/Home"));
 const Blog = lazy(() => import("./screens/Blog"));
@@ -40,6 +39,9 @@ const MobileDevelopment = lazy(() => import("./screens/MobileDevelopment"));
 const AndroidDevelopment = lazy(() => import("./screens/AndroidDevelopment"));
 const BlockchainConsulting = lazy(() =>
   import("./screens/BlockchainConsulting")
+);
+const AgileDiscoveryWorkshop = lazy(() =>
+  import("./screens/AgileDiscoveryWorkshop")
 );
 
 function App() {
