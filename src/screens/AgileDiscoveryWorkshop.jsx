@@ -2,7 +2,7 @@ import React from "react";
 import { Jumbotron } from "../components/Jumbotron";
 import { ServicesHowWorks } from "../components/ServicesHowWorks";
 
-export default function FixedPrice() {
+export default function AgileDiscoveryWorkshop() {
   return (
     <>
       <Jumbotron
