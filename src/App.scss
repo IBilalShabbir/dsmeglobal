@@ -4604,6 +4604,40 @@ textarea {
   left: -1.5em;
   border-radius: 50px;
 }
+.fixed__price__links {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0em 2em;
+  display: flex;
+  margin: 0em auto;
+  justify-content: space-between;
+}
+.fixed__price__links__link {
+  width: 49%;
+  background-color: $black;
+  padding: 2.5em;
+  border: 2px solid $primary;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 300ms ease-in-out;
+}
+.fixed__price__links__link svg {
+  width: 70px;
+  height: 70px;
+}
+.fixed__price__links__link__heading {
+  margin: 1em 0em;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.fixed__price__links__link__info {
+  color: white;
+}
+.fixed__price__links__link:hover {
+  transition: 300ms ease-in-out;
+  background-color: black;
+}
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -4684,7 +4718,8 @@ textarea {
   .services__get__quote__content__heading,
   .android__cross__dev__content__heading,
   .uiux__capabilities__heading,
-  .services__how__we__do__it__heading {
+  .services__how__we__do__it__heading,
+  .services__how__works__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -5361,6 +5396,15 @@ textarea {
   .uiux__features__entry {
     width: 100%;
   }
+  .fixed__price__links {
+    flex-direction: column;
+  }
+  .fixed__price__links__link {
+    width: 100%;
+  }
+  .fixed__price__links__link:first-child {
+    margin-bottom: 2em;
+  }
 }
 @media (max-width: 700px) {
   .dedicated__best__fit__content__details__info__entry {
@@ -5485,7 +5529,8 @@ textarea {
   .services__get__quote__content__heading,
   .android__cross__dev__content__heading,
   .uiux__capabilities__heading,
-  .services__how__we__do__it__heading {
+  .services__how__we__do__it__heading,
+  .services__how__works__heading {
     font-size: 25px;
   }
   .blockchain__get__started {
