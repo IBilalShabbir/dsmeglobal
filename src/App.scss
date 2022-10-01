@@ -635,6 +635,7 @@ body::-webkit-scrollbar-track {
 .home__technologies__content__entry__info {
   font-size: 16px;
   color: $text;
+  text-align: justify;
 }
 .home__technologies__content__entry:hover * {
   color: white;
@@ -3154,6 +3155,11 @@ textarea {
   background-color: white;
   color: white;
 }
+.dedicated__teams__get__started__reverse
+  .dedicated__teams__get__started__content__entry__heading {
+  color: $black;
+  margin-top: 2em;
+}
 .dedicated__teams__get__started__content__entry__heading {
   font-size: 20px;
   color: white;
@@ -3757,6 +3763,10 @@ textarea {
   display: flex;
   flex-wrap: wrap;
 }
+.services__mvp__content__left__logos img {
+  width: 60px;
+  margin-right: 1em;
+}
 .services__mvp__content__middle {
   width: 1px;
   height: 300px;
@@ -4207,7 +4217,7 @@ textarea {
   height: 200px;
   background-color: #0a0a0a;
   border-radius: 50%;
-  border: 4px dashed $primary;
+  border: 2px dashed $primary;
   display: flex;
   flex-direction: column;
   justify-content: center;

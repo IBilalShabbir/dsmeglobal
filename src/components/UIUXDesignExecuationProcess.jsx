@@ -16,34 +16,30 @@ export function UIUXDesignExecuationProcess({}) {
       <div className="services__how__we__do__it__content">
         <ServicesHowWeDoItEntry
           icon="1"
-          title="Requirements Gathering"
+          title="Discovery"
           list={[
-            "Work Breakdown Structure",
-            "Project Plan",
-            "Project Budget",
-            "Requirements Docs",
-            "Use Cases",
-            "User Stories",
+            "Understand business pain points",
+            "Interviews & observations",
+            "Functional requirements",
           ]}
         />
         <ServicesHowWeDoItEntry
           icon="2"
-          title="Development & Testing"
+          title="Wireframes"
           list={[
-            "Frontend & backend development",
-            "Weekly Client Feedback (SCRUM)",
-            "QA Testing",
-            "Deployment",
+            "Concept sketching",
+            "System/Process flow",
+            "Information architecture",
           ]}
         />
         <ServicesHowWeDoItEntry
           icon="3"
-          title="Support & Maintenance"
+          title="Build & Iterate"
           list={[
-            "SLA Based Support",
-            "L3 and Production Support Services",
-            "Operational support where needed",
-            "On-going Support",
+            "Interaction design",
+            "High-fidelity mockups",
+            "Interactive prototypes",
+            "UI Style guide/brand identity",
           ]}
         />
       </div>

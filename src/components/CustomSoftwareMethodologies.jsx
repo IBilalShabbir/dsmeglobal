@@ -27,22 +27,26 @@ export function CustomSoftwareMethodologies() {
         />
         <ServicesHowWeDoItEntry
           icon="2"
-          title="Development & Testing"
+          title="Design & Development"
           list={[
-            "Frontend & backend development",
-            "Weekly Client Feedback (SCRUM)",
-            "QA Testing",
-            "Deployment",
+            "Low-Fi Design",
+            "Hi-FI Design",
+            "User Experience Design",
+            "Source Code",
+            "Compiled Code",
+            "Code Documentation",
           ]}
         />
         <ServicesHowWeDoItEntry
           icon="3"
-          title="Support & Maintenance"
+          title="Delivery & Support"
           list={[
-            "SLA Based Support",
-            "L3 and Production Support Services",
-            "Operational support where needed",
-            "On-going Support",
+            "Release Management",
+            "Change Management",
+            "User Docs and Training",
+            "Scheduled Maintenance",
+            "Adaptive Maintenance",
+            "Software Roadmap",
           ]}
         />
       </div>

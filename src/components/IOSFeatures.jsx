@@ -16,8 +16,7 @@ export function IOSFeatures() {
         className="web__scraping__feature__svg2"
       />
       <div className="blockchain__get__started__heading heading">
-        Our web scrapers sift through the web’s maze of data to find precisely
-        what you need.
+        What makes DSME Global Links a top IOS development company?
       </div>
       <div className="web__scraping__feature__content web__scraping__feature__content__reverse">
         <WebScrapingFeatureEntry
@@ -198,8 +197,8 @@ export function IOSFeatures() {
               />
             </svg>
           }
-          heading="Extraction"
-          description="Our web scraping tools scan the web and extract the information you need. We specialize in creating custom crawl clusters that crawl through large quantities of data from multiple sources in parallel, retrieving usable data faster while breaking free of scaling constraints."
+          heading="One-stop IOS development agency"
+          description="It takes lots of effort, planning, and research to create a mobile app that succeeds. Choose our all-in-one iOS services to make sure that both your strategy and your digital product are flawless. We take good care of your project from start to finish by beginning with in-depth research, a data-based strategy, and outstanding product design. Then, we combine foolproof development and maintenance for the excellent stability and performance of your app."
         />
         <WebScrapingFeatureEntry
           icon={
@@ -389,8 +388,8 @@ export function IOSFeatures() {
               />
             </svg>
           }
-          heading="Cleaning"
-          description="Our data cleansing takes the raw data extracted by the web scraping tools and runs it through a processing platform to shake off old material, duplicates, incorrect details, and more. While data is valuable, ‘clean’ data is gold, enabling you to make the best possible decisions."
+          heading="Swift dashboard"
+          description="If you are researching iPhone app development, you’ve probably heard of Swift. It’s a powerful, intuitive programming language, created and supported by Apple, and used to build applications for iOS. Although older applications were often written in ObjC, Swift is the go-to choice for new applications, as a faster, more secure, and future-proof choice. With each case, our developers choose the stack carefully to deliver top-notch applications, made to fit specific business needs."
         />
         <WebScrapingFeatureEntry
           icon={
@@ -476,8 +475,8 @@ export function IOSFeatures() {
               />
             </svg>
           }
-          heading="Quality Assurance"
-          description="We have quality assurance checks built into every step of the process, ensuring your web scraping tools function well and work quickly."
+          heading="IOS applications recognized worldwide"
+          description="With over 10 years of work in iOS application development, you can be sure that you are not putting your project in inexperienced hands. Working with world-renowned brands worldwide such as AIDApro, Vinvi, SeeVitals, Friendly Face, BFS, or Catering, we’ve gained hands-on experience in combining business objectives with cutting-edge mobile solutions."
         />
         <WebScrapingFeatureEntry
           icon={
@@ -700,8 +699,8 @@ export function IOSFeatures() {
               />
             </svg>
           }
-          heading="Verification & Validation"
-          description="We verify your data at every step of the process and check the integrity of the results created."
+          heading="Cross-platform options"
+          description="If you’re thinking about building an app for both Android and iOS, you will face a crucial decision. Should you develop two native apps, or just one that will work on both platforms? We’re here to make sure you choose the right approach! If you pick cross-platform over native Android application development, we can take care of that, too. Our team excels in building apps with the two most popular cross-platform frameworks: Flutter and React Native : Flutter and react Native"
         />
       </div>
     </div>

@@ -41,7 +41,13 @@ export function AndroidCrossDev({}) {
         <div className="android__cross__dev__content__info">
           You should consider our cross-platform development services.
         </div>
-        <Link to="/" className="android__cross__dev__content__link">
+        <Link
+          to="/"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="android__cross__dev__content__link"
+        >
           Learn about Cross-platform development
         </Link>
       </div>

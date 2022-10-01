@@ -154,13 +154,7 @@ export function AndroidTechStack() {
             </svg>
           }
           heading="Design"
-          list={[
-            "MVP or MVVM",
-            "RxJava 3 or Kotlin Coroutines",
-            "Dagger 2 or Koin",
-            "Retrofit and Room",
-            "Glide or Picasso",
-          ]}
+          list={["Sketch", "Adobe XD", "Figma", "Indesign", "InVision"]}
         />
       </div>
     </div>

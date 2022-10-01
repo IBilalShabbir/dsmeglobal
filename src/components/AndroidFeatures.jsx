@@ -194,8 +194,8 @@ export function AndroidFeatures() {
               />
             </svg>
           }
-          heading="Extraction"
-          description="Our web scraping tools scan the web and extract the information you need. We specialize in creating custom crawl clusters that crawl through large quantities of data from multiple sources in parallel, retrieving usable data faster while breaking free of scaling constraints."
+          heading="One-stop Android development agency"
+          description="A great idea is important, but it takes more to build an excellent mobile app. Choose our all-in-one Android development services and hire a team that takes care of everything that your app needs to succeed. Strategy and market research to sharpen your vision, and outstanding product designs to delight your users. Foolproof app development and maintenance for excellent stability and performance. All in one place."
         />
         <WebScrapingFeatureEntry
           icon={
@@ -385,8 +385,8 @@ export function AndroidFeatures() {
               />
             </svg>
           }
-          heading="Cleaning"
-          description="Our data cleansing takes the raw data extracted by the web scraping tools and runs it through a processing platform to shake off old material, duplicates, incorrect details, and more. While data is valuable, ‘clean’ data is gold, enabling you to make the best possible decisions."
+          heading="Experts in Java and Kotlin development"
+          description="When it comes to native Android development, there are two technologies that matter: Java and Kotlin. Older applications are usually written in Java, but most of the new ones are created with Kotlin. Our developers are fluent in both, and with each case, they choose the stack carefully to deliver top-notch applications, made to fit specific business needs. Whether you wish to write a brand new app or spruce up the one you already have, we help you choose the right tech solution."
         />
         <WebScrapingFeatureEntry
           icon={
@@ -472,8 +472,8 @@ export function AndroidFeatures() {
               />
             </svg>
           }
-          heading="Quality Assurance"
-          description="We have quality assurance checks built into every step of the process, ensuring your web scraping tools function well and work quickly."
+          heading="Android applications recognized worldwide"
+          description="You don’t want to put your project in inexperienced hands. Our Android team is top-rated on Clutch, and with over 10 years of practice in Android application development, we have gained the trust of world-renowned brands such as Marhaba Mahal, AIDAPro, Friendly Face, or Gentleman & Co. We create beautiful, top-performing Android apps for industries like e-commerce, banking, music, and travel."
         />
         <WebScrapingFeatureEntry
           icon={
@@ -696,8 +696,8 @@ export function AndroidFeatures() {
               />
             </svg>
           }
-          heading="Verification & Validation"
-          description="We verify your data at every step of the process and check the integrity of the results created."
+          heading="Cross-platform options"
+          description="If you’re thinking about building an app for both Android and iOS, you will face a crucial decision. Should you develop two native apps, or just one that will work on both platforms? We’re here to make sure you choose the right approach! If you pick cross-platform over native Android application development, we can take care of that, too. Our team excels in building apps with the two most popular cross-platform frameworks: Flutter and React Native."
         />
       </div>
     </div>
