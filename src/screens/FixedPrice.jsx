@@ -5,6 +5,7 @@ import { FixedPriceAllInclusivePricing } from "../components/FixedPriceAllInclus
 import { FixedPriceWhyWork } from "../components/FixedPriceWhyWork";
 import { FixedPriceLinks } from "../components/FixedPriceLinks";
 import { blockChainGetStarted } from "../assets";
+import { FixedPriceProcess } from "../components/FixedPriceProcess";
 
 export default function FixedPrice() {
   return (
@@ -28,6 +29,7 @@ export default function FixedPrice() {
       </div>
       <FixedPriceWhyWork />
       <FixedPriceAllInclusivePricing />
+      <FixedPriceProcess />
     </>
   );
 }

@@ -3095,6 +3095,29 @@ textarea {
   padding: 7em 0em;
   margin-top: 4em;
 }
+.dedicated__teams__get__started__process {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  margin: 0em auto;
+  margin-bottom: 7em;
+  flex-wrap: wrap;
+}
+.dedicated__teams__get__started__process__entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.dedicated__teams__get__started__process__entry svg {
+  margin-bottom: 1em;
+  width: 50px;
+  height: 50px;
+}
 .dedicated__teams__get__started__reverse {
   background-color: white;
   padding-top: 0em;
@@ -5271,6 +5294,13 @@ textarea {
   }
 }
 @media (max-width: 800px) {
+  .dedicated__teams__get__started__process {
+    margin-bottom: 6em;
+  }
+  .dedicated__teams__get__started__process__entry {
+    width: 150px;
+    margin-bottom: 1em;
+  }
   .dedicated__teams__get__started__content__entry {
     width: 100%;
   }
@@ -5705,5 +5735,10 @@ textarea {
     margin: 1em !important;
     width: 100px;
     height: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .dedicated__teams__get__started__process__entry {
+    width: 50%;
   }
 }

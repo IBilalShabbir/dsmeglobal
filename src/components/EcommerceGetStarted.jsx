@@ -4,7 +4,7 @@ export function EcommerceGetStarted() {
   return (
     <div className="dedicated__teams__get__started dedicated__teams__get__started__reverse">
       <div className="dedicated__teams__get__started__heading heading">
-        How to Get Started ?
+        Our Process
       </div>
       <div className="dedicated__teams__get__started__content">
         <div className="dedicated__teams__get__started__content__entry">
