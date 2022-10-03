@@ -3264,9 +3264,18 @@ textarea {
   margin-bottom: 1em;
   font-weight: bold;
 }
+.dedicated__best__fit__content__details__heading__reverse {
+  font-size: 40px;
+  width: 100%;
+  max-width: 500px;
+}
 .dedicated__best__fit__content__details__info {
   display: flex;
   flex-wrap: wrap;
+}
+.dedicated__best__fit__content__details__info__reverse
+  .dedicated__best__fit__content__details__info__entry {
+  width: 50%;
 }
 .dedicated__best__fit__content__details__info__entry {
   width: 25%;
@@ -4768,7 +4777,8 @@ textarea {
   .uiux__capabilities__heading,
   .services__how__we__do__it__heading,
   .services__how__works__heading,
-  .startup__engagement__heading {
+  .startup__engagement__heading,
+  .dedicated__best__fit__content__details__heading__reverse {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -5587,7 +5597,8 @@ textarea {
   .uiux__capabilities__heading,
   .services__how__we__do__it__heading,
   .services__how__works__heading,
-  .startup__engagement__heading {
+  .startup__engagement__heading,
+  .dedicated__best__fit__content__details__heading__reverse {
     font-size: 25px;
   }
   .blockchain__get__started {
