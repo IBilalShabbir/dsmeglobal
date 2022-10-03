@@ -3845,11 +3845,18 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin-bottom: 4em;
+  margin-top: -7em;
+  position: relative;
 }
 .startup__engagement__heading {
   font-size: 40px;
+  padding: 0em 2em;
   margin-bottom: 2em;
   font-weight: bold;
+  position: absolute;
+  text-align: center;
+  top: 2.2em;
+  color: white;
 }
 .startup__engagement__content {
   display: flex;
@@ -3859,6 +3866,7 @@ textarea {
   max-width: 1366px;
   margin: 0em auto;
   padding: 0em 2em;
+  margin-top: -10em;
 }
 .startup__engagement__content__entry {
   padding: 2.5em;
@@ -4729,7 +4737,8 @@ textarea {
   .android__cross__dev__content__heading,
   .uiux__capabilities__heading,
   .services__how__we__do__it__heading,
-  .services__how__works__heading {
+  .services__how__works__heading,
+  .startup__engagement__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -5540,7 +5549,8 @@ textarea {
   .android__cross__dev__content__heading,
   .uiux__capabilities__heading,
   .services__how__we__do__it__heading,
-  .services__how__works__heading {
+  .services__how__works__heading,
+  .startup__engagement__heading {
     font-size: 25px;
   }
   .blockchain__get__started {

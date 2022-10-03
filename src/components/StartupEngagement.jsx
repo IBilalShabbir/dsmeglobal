@@ -1,9 +1,15 @@
 import React from "react";
+import { engagementBgSvg } from "../assets";
 import { StartupEngagementEntry } from "./StartupEngagementEntry";
 
 export function StartupEngagement() {
   return (
     <div className="startup__engagement">
+      <img
+        src={engagementBgSvg}
+        alt="engagementBgSvg"
+        className="startup__engagement__bg"
+      />
       <div className="startup__engagement__heading heading">
         Our Engagement Models
       </div>
