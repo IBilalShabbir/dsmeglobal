@@ -4108,10 +4108,17 @@ textarea {
   flex-direction: column;
   align-items: center;
 }
+.androidios__clients__content__img {
+  margin-bottom: 2em;
+  width: 100%;
+}
 .androidios__clients__content__heading {
   font-size: 40px;
   margin-bottom: 0.5em;
   text-align: center;
+}
+.androidios__clients__content__heading__reverse {
+  color: #24aa6c;
 }
 .androidios__clients__content__info {
   width: 100%;

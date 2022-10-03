@@ -1,4 +1,5 @@
 import React from "react";
+import { GraphicDesignClients } from "../components/GraphicDesignClients";
 import { Jumbotron } from "../components/Jumbotron";
 
 export default function GraphicDesign() {
@@ -8,6 +9,7 @@ export default function GraphicDesign() {
         heading="DESIGNING YOUR PRESENCE"
         description="Unleash and expand your brand with strategic art and design."
       />
+      <GraphicDesignClients />
     </>
   );
 }

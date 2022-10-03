@@ -82,3 +82,4 @@ export { default as startupGrowth } from "./startupGrowth.gif";
 export { default as designCapabilities } from "./designCapabilities.svg";
 export { default as designFlow } from "./designFlow.gif";
 export { default as engagementBgSvg } from "./engagementBgSvg.svg";
+export { default as startupPackages } from "./startupPackages.svg";
