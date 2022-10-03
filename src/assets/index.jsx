@@ -85,3 +85,4 @@ export { default as engagementBgSvg } from "./engagementBgSvg.svg";
 export { default as startupPackages } from "./startupPackages.svg";
 export { default as identityOfBrand } from "./identityOfBrand.svg";
 export { default as brandImpact } from "./brandImpact.svg";
+export { default as whyCustomPrice } from "./whyCustomPrice.svg";

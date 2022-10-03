@@ -4553,6 +4553,32 @@ textarea {
   border-color: $primary;
   color: white;
 }
+.graphic__design__why__custom__pricing {
+  background-color: #181818;
+}
+.graphic__design__why__custom__pricing__content {
+  width: 100%;
+  max-width: 1366px;
+  padding: 7em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0em auto;
+}
+.graphic__design__why__custom__pricing__content__left {
+  max-width: 50%;
+  margin-right: 2em;
+}
+.graphic__design__why__custom__pricing__content__right {
+  width: 50%;
+}
+.graphic__design__why__custom__pricing__content__right__heading {
+  font-size: 40px;
+  color: white;
+}
+.graphic__design__why__custom__pricing__content__right__info {
+  color: white;
+}
 .uiux__features {
   width: 100%;
   max-width: 1000px;
@@ -4822,7 +4848,8 @@ textarea {
   .services__how__we__do__it__heading,
   .services__how__works__heading,
   .startup__engagement__heading,
-  .dedicated__best__fit__content__details__heading__reverse {
+  .dedicated__best__fit__content__details__heading__reverse,
+  .graphic__design__why__custom__pricing__content__right__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -5355,6 +5382,21 @@ textarea {
   }
 }
 @media (max-width: 800px) {
+  .graphic__design__why__custom__pricing__content {
+    flex-direction: column;
+  }
+  .graphic__design__why__custom__pricing__content__left {
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 2em;
+    margin-right: 0em;
+  }
+  .graphic__design__why__custom__pricing__content__right {
+    width: 100%;
+  }
+  .graphic__design__why__custom__pricing__content__right * {
+    text-align: center;
+  }
   .dedicated__teams__get__started__process {
     margin-bottom: 6em;
   }
@@ -5645,7 +5687,8 @@ textarea {
   .services__how__we__do__it__heading,
   .services__how__works__heading,
   .startup__engagement__heading,
-  .dedicated__best__fit__content__details__heading__reverse {
+  .dedicated__best__fit__content__details__heading__reverse,
+  .graphic__design__why__custom__pricing__content__right__heading {
     font-size: 25px;
   }
   .blockchain__get__started {

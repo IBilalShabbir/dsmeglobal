@@ -4,6 +4,7 @@ import { Jumbotron } from "../components/Jumbotron";
 import { BrandImpact } from "../components/BrandImpact";
 import { GraphicDesignBrandIdentity } from "../components/GraphicDesignBrandIdentity";
 import { GraphicDesignSkills } from "../components/GraphicDesignSkills";
+import { GraphicDesignWhyCustomPricing } from "./GraphicDesignWhyCustomPricing";
 
 export default function GraphicDesign() {
   return (
@@ -15,6 +16,7 @@ export default function GraphicDesign() {
       <GraphicDesignBrandIdentity />
       <BrandImpact />
       <GraphicDesignSkills />
+      <GraphicDesignWhyCustomPricing />
       <GraphicDesignClients />
     </>
   );
