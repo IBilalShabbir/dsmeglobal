@@ -86,3 +86,4 @@ export { default as startupPackages } from "./startupPackages.svg";
 export { default as identityOfBrand } from "./identityOfBrand.svg";
 export { default as brandImpact } from "./brandImpact.svg";
 export { default as whyCustomPrice } from "./whyCustomPrice.svg";
+export { default as degreeBranding } from "./360DegreeBranding.png";

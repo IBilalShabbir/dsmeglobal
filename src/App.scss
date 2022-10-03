@@ -4579,6 +4579,39 @@ textarea {
 .graphic__design__why__custom__pricing__content__right__info {
   color: white;
 }
+.graphic__design__branding {
+  background-color: #181818;
+  max-height: 400px;
+}
+.graphic__design__branding__content {
+  width: 100%;
+  max-width: 1366px;
+  padding: 0em 2em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0em auto;
+  align-items: center;
+}
+.graphic__design__branding__content__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  margin-bottom: 4em;
+}
+.graphic__design__branding__content__left__heading {
+  font-size: 40px;
+  color: #24aa6c;
+  margin-bottom: 0.5em;
+}
+.graphic__design__branding__content__left__info {
+  color: white;
+}
+.graphic__design__branding__content__img {
+  width: 50%;
+  margin-top: -100px;
+}
 .uiux__features {
   width: 100%;
   max-width: 1000px;
@@ -4849,7 +4882,8 @@ textarea {
   .services__how__works__heading,
   .startup__engagement__heading,
   .dedicated__best__fit__content__details__heading__reverse,
-  .graphic__design__why__custom__pricing__content__right__heading {
+  .graphic__design__why__custom__pricing__content__right__heading,
+  .graphic__design__branding__content__left__heading {
     font-size: 35px;
   }
   .home__technologies__content {
@@ -4876,6 +4910,15 @@ textarea {
     width: calc(100% - 4em);
     margin: 0em 2em;
     margin-top: 6em;
+  }
+  .graphic__design__branding {
+    max-height: fit-content;
+  }
+  .graphic__design__branding__content__left {
+    margin-bottom: 0em;
+  }
+  .graphic__design__branding__content__img {
+    margin-top: 0em;
   }
 }
 @media (max-width: 1300px) {
@@ -5130,6 +5173,20 @@ textarea {
 }
 
 @media (max-width: 1000px) {
+  .graphic__design__branding__content {
+    flex-direction: column;
+    padding: 7em 2em;
+  }
+  .graphic__design__branding__content__left {
+    width: 100%;
+  }
+  .graphic__design__branding__content__left * {
+    text-align: center;
+  }
+  .graphic__design__branding__content__img {
+    width: fit-content;
+    max-width: 100%;
+  }
   .ecommerce__about__content {
     flex-direction: column;
   }
@@ -5559,6 +5616,11 @@ textarea {
   }
 }
 @media (max-width: 700px) {
+  .dedicated__best__fit__content__details__info__reverse
+    .dedicated__best__fit__content__details__info__entry {
+    width: 100%;
+    text-align: left;
+  }
   .dedicated__best__fit__content__details__info__entry {
     width: 50%;
   }
@@ -5688,7 +5750,8 @@ textarea {
   .services__how__works__heading,
   .startup__engagement__heading,
   .dedicated__best__fit__content__details__heading__reverse,
-  .graphic__design__why__custom__pricing__content__right__heading {
+  .graphic__design__why__custom__pricing__content__right__heading,
+  .graphic__design__branding__content__left__heading {
     font-size: 25px;
   }
   .blockchain__get__started {
