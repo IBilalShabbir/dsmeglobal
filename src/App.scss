@@ -3923,7 +3923,8 @@ textarea {
   color: white;
 }
 .startup__engagement__content__entry:hover
-  .startup__engagement__content__entry__icon {
+  .startup__engagement__content__entry__icon
+  svg {
   transition: 300ms ease-in-out;
   color: white;
 }
