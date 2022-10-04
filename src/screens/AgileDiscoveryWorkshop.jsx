@@ -3,6 +3,7 @@ import { Jumbotron } from "../components/Jumbotron";
 import { ServicesHowWorks } from "../components/ServicesHowWorks";
 import { AgileDiscoveryWorkshopWhatYouGet } from "../components/AgileDiscoveryWorkshopWhatYouGet";
 import { AgileDiscoveryWhyRecommend } from "../components/AgileDiscoveryWhyRecommend";
+import { AgileFreequentlyAskQuestion } from "../components/AgileFreequentlyAskQuestion";
 
 export default function AgileDiscoveryWorkshop() {
   return (
@@ -14,6 +15,7 @@ export default function AgileDiscoveryWorkshop() {
       <ServicesHowWorks />
       <AgileDiscoveryWhyRecommend />
       <AgileDiscoveryWorkshopWhatYouGet />
+      <AgileFreequentlyAskQuestion />
     </>
   );
 }

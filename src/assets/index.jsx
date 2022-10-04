@@ -87,3 +87,5 @@ export { default as identityOfBrand } from "./identityOfBrand.svg";
 export { default as brandImpact } from "./brandImpact.svg";
 export { default as whyCustomPrice } from "./whyCustomPrice.svg";
 export { default as degreeBranding } from "./360DegreeBranding.png";
+export { default as logobrandone } from "./logobrandone.png";
+export { default as logobrandtwo } from "./logobrandtwo.png";
