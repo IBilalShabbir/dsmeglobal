@@ -267,6 +267,7 @@ body::-webkit-scrollbar-track {
   position: relative;
   overflow: hidden;
   padding: 7em 0em;
+  padding-top: 12em;
 }
 .home__services__heading {
   font-size: 45px;
@@ -5149,6 +5150,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .frequently__asked__question__conatiner__right svg {
   width: 400px;
@@ -5179,6 +5181,125 @@ textarea {
   content: "";
   background-color: $primary;
 }
+//
+.agile__discovery__workshop {
+  width: 100%;
+  margin-top: 7em;
+  position: relative;
+  overflow: hidden;
+  background-color: $black;
+  padding: 7em 2em;
+  color: $text;
+}
+.agile__discovery__workshop__svg1 {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+.agile__discovery__workshop__svg1 svg {
+  width: 500px;
+  height: 400px;
+}
+.agile__discovery__workshop__svg2 {
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+}
+.agile__discovery__workshop__svg2 svg {
+  width: 500px;
+  height: 400px;
+}
+.agile__discovery__workshop__container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 0em 2em;
+}
+.agile__discovery__workshop__container__heading {
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+}
+.agile__discovery__workshop__container__heading__text {
+  font-size: 16px;
+  color: #878787;
+  text-align: center;
+  max-width: 850px;
+  padding: 1em 2em;
+}
+.agile__discovery__workshop__container__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.agile__discovery__workshop__container__header__middle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2em 0em;
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.agile__discovery__workshop__container__header__middle svg {
+  width: 130px;
+  height: 130px;
+}
+.agile__discovery__workshop__container__header__middle__overlay {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+.agile__discovery__workshop__container__header__middle__text {
+  color: $primary;
+  text-align: center;
+  max-width: 380px;
+  font-weight: bold;
+}
+.agile__discovery__workshop__header__last__entries__row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.agile__discovery__workshop__header__last__entry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  min-width: 350px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin: 1em;
+  z-index: 999;
+}
+.agile__discovery__workshop__header__last__entry:hover {
+  border: 1px solid $primary;
+  border-radius: 15px;
+  transition: all 300ms ease-in-out;
+}
+.agile__discovery__workshop__header__last__entry__heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: 1em;
+}
+.agile__discovery__workshop__header__last__entry__icon svg {
+  width: 80px;
+  height: 80px;
+}
+.agile__discovery__workshop__header__last__entry__text {
+  margin-top: 1em;
+  max-width: 270px;
+  text-align: center;
+}
+//
 @media (max-width: 1550px) {
   .home__stats {
     overflow: hidden;
@@ -5269,7 +5390,8 @@ textarea {
   .ready__to__get__started__heading__two,
   .fixed__price__discovery__container__overlay__heading,
   .frequently__asked__question__conatiner__right__overlay__heading,
-  .graphic__design__logo__and__branding__container__heading {
+  .graphic__design__logo__and__branding__container__heading,
+  .agile__discovery__workshop__container__heading {
     font-size: 35px;
   }
   .ready__to__get__started__heading__container svg {
@@ -5489,7 +5611,8 @@ textarea {
     margin-left: 0em;
   }
   .home__services {
-    padding: 5em 0em;
+    padding: 10em 0em;
+    padding-bottom: 5em;
     min-height: 100vh;
     height: fit-content;
     max-height: fit-content;
@@ -6072,6 +6195,10 @@ textarea {
   .frequently__asked__question__conatiner__left {
     max-width: 100%;
   }
+  .agile__discovery__workshop__header__last__entry {
+    min-width: 100%;
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .dedicated__best__fit__content__details__info__reverse
@@ -6217,8 +6344,12 @@ textarea {
   .ready__to__get__started__heading,
   .ready__to__get__started__heading__two,
   .fixed__price__discovery__container__overlay__heading,
-  .graphic__design__logo__and__branding__container__heading {
+  .graphic__design__logo__and__branding__container__heading,
+  .agile__discovery__workshop__container__heading {
     font-size: 25px;
+  }
+  .agile__discovery__workshop__container__heading__text {
+    margin-top: 1em;
   }
   .blockchain__get__started {
     margin-top: 0em;
@@ -6330,6 +6461,13 @@ textarea {
   .graphic__design__logo__and__branding__container__text {
     font-size: 16px;
   }
+  .agile__discovery__workshop__container__heading__text {
+    max-width: 100%;
+    padding: 1em 0em;
+  }
+  .agile__discovery__workshop__container {
+    padding: 0em 0em;
+  }
 }
 @media (max-width: 500px) {
   .home__newsletter__svg {
@@ -6385,6 +6523,14 @@ textarea {
   .freequetly__ask__question__accordian__entry__button {
     padding: 1em 0em;
     text-align: left;
+  }
+  .agile__discovery__workshop__container__header__middle svg {
+    width: 70px;
+    height: 70px;
+  }
+  .agile__discovery__workshop__container__header__middle__overlay {
+    top: 40px;
+    left: 0;
   }
 }
 @media (max-width: 470px) {

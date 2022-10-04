@@ -4,6 +4,7 @@ import { ServicesHowWorks } from "../components/ServicesHowWorks";
 import { AgileDiscoveryWorkshopWhatYouGet } from "../components/AgileDiscoveryWorkshopWhatYouGet";
 import { AgileDiscoveryWhyRecommend } from "../components/AgileDiscoveryWhyRecommend";
 import { AgileFreequentlyAskQuestion } from "../components/AgileFreequentlyAskQuestion";
+import { AgileWrokshopWhatWeDo } from "../components/AgileWrokshopWhatWeDo.jsx";
 
 export default function AgileDiscoveryWorkshop() {
   return (
@@ -14,6 +15,7 @@ export default function AgileDiscoveryWorkshop() {
       />
       <ServicesHowWorks />
       <AgileDiscoveryWhyRecommend />
+      <AgileWrokshopWhatWeDo />
       <AgileDiscoveryWorkshopWhatYouGet />
       <AgileFreequentlyAskQuestion />
     </>
