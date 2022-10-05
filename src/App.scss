@@ -5092,11 +5092,9 @@ textarea {
   align-items: flex-start;
 }
 .frequently__asked__question__conatiner__left {
-  width: 50%;
+  width: 55%;
 }
 .frequently__asked__question__conatiner__left__header {
-  background-color: #f9f9f9;
-  padding: 1em 1.5em;
   border-radius: 15px;
 }
 .frequently__asked__question__conatiner__left__header__heading {
@@ -5104,6 +5102,8 @@ textarea {
   font-weight: bold;
   color: $primary;
   margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
 }
 .frequently__asked__question__conatiner__left__header__text {
   font-size: 16px;
@@ -5116,23 +5116,20 @@ textarea {
 }
 .freequetly__ask__question__accordian__entry {
   width: 100%;
-  margin: 1em 0em;
+  margin: 2em 0em;
 }
-
 .freequetly__ask__question__accordian__entry__button {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1em 1em;
-  background-color: #fff;
+  padding: 0em 0em;
+  border-radius: 15px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .accordian__entry__button__heading__contet__text {
-  padding: 1em 1.5em;
-  background-color: #f9f9f9;
-  border-radius: 15px;
   font-size: 16px;
   color: #878787;
   text-align: justify;
@@ -5156,10 +5153,10 @@ textarea {
   font-size: 18px;
 }
 .frequently__asked__question__conatiner__right {
-  width: 50%;
+  width: 45%;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   z-index: 1;
 }
@@ -5174,13 +5171,12 @@ textarea {
   right: 0;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .frequently__asked__question__conatiner__right__overlay__heading {
   font-size: 40px;
   font-weight: bold;
-  max-width: 50%;
-  margin-left: 2em;
+  max-width: 320px;
   position: relative;
 }
 .frequently__asked__question__conatiner__right__overlay__heading::after {
@@ -5426,9 +5422,6 @@ textarea {
   .career__bannner__entry__img {
     height: 250px;
   }
-  .frequently__asked__question__conatiner__right__overlay__heading {
-    max-width: 50%;
-  }
 }
 @media (max-width: 1366px) {
   .blog__motivation {
@@ -5555,23 +5548,6 @@ textarea {
   .fixed__price__at__the__end__container__right {
     width: 80%;
     align-items: flex-start;
-  }
-  .frequently__asked__question__conatiner {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .frequently__asked__question__conatiner__right {
-    margin-bottom: 2em;
-    width: 100%;
-  }
-  .frequently__asked__question__conatiner__left {
-    width: 100%;
-    max-width: 80%;
-    margin-top: 3em;
-  }
-  .frequently__asked__question__conatiner__right__overlay__heading {
-    max-width: 40%;
-    margin-left: 6em;
   }
 }
 @media (max-width: 1150px) {
@@ -6532,7 +6508,6 @@ textarea {
     margin-bottom: 1em;
   }
   .freequetly__ask__question__accordian__entry__button {
-    padding: 1em 0em;
     text-align: left;
   }
   .agile__discovery__workshop__container__header__middle svg {
