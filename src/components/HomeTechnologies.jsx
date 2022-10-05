@@ -20,7 +20,7 @@ export function HomeTechnologies() {
         </svg>
       ),
       title: "Andriod",
-      info: "Create a seamless mobile experience with Android app development.Our software house has been recognized by Google for outstanding Android application quality.",
+      info: "Create a seamless mobile experience with Android app development. Our software house has been recognized by Google for outstanding Android application quality.",
     },
     {
       image: (
@@ -37,7 +37,7 @@ export function HomeTechnologies() {
         </svg>
       ),
       title: "IOS",
-      info: "Stay ahead of the curve with a custom iOS app.We offer iOS application development services for startups, enterprises, and unicorns around the globe.",
+      info: "Stay ahead of the curve with a custom iOS app We offer iOS application development services for startups, enterprises, and unicorns around the globe.",
     },
     {
       image: (
@@ -66,7 +66,7 @@ export function HomeTechnologies() {
         </svg>
       ),
       title: "Cross-Platform",
-      info: "Cut your time-to-market with cross-platform application development.We help you save time and resources thanks to our development services.",
+      info: "Cut your time-to-market with cross-platform application development We help you save time and resources thanks to our development services.",
     },
     {
       image: (
@@ -83,7 +83,7 @@ export function HomeTechnologies() {
         </svg>
       ),
       title: "Frontend",
-      info: "Take your app to the next level with our front-end app development.We build user-oriented intuitive web applications that highlight your brand image.",
+      info: "Take your app to the next level with our front-end app development. We build user-oriented intuitive web applications that highlight your brand image.",
     },
     {
       image: (
@@ -142,13 +142,13 @@ export function HomeTechnologies() {
       />
       <Fade bottom distance="30%">
         <div className="home__technologies__heading heading">
-          Where Business meets cutting-edge Technology
+          Where business meets cutting-edge technology
         </div>
       </Fade>
       <Fade bottom distance="30%">
         <div className="home__technologies__info">
-          Choose the tech stack for your next application, or let us pick the
-          best solution for you
+          Choose the tech stack for your project, or let us pick the best
+          solution for you
         </div>
       </Fade>
       <div className="home__technologies__content">

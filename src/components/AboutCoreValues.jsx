@@ -7,6 +7,10 @@ export function AboutCoreValues() {
       <div className="about__core__values__heading heading">
         Our Core Values
       </div>
+      <div className="about__core__values__subheading">
+        We strive tto build great software products for out clients to delight
+        their customers at every touch point.
+      </div>
       <div className="about__core__values__content">
         <div className="about__core__values__content__col">
           <AboutCoreValuesCard

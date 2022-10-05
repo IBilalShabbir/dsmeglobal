@@ -48,7 +48,7 @@ export function HomeServicesCard({ image, title, info, svg, description }) {
           </div>
         ) : (
           <div className="home__services__content__card__info">
-            {info?.length > 120 ? info.substring("", 120) + "..." : info}
+            {info?.length > 102 ? info.substring("", 102) + "..." : info}
           </div>
         )}
       </Fade>

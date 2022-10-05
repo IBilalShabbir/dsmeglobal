@@ -38,7 +38,7 @@ export function HomeEngagement() {
         <HomeEngagementCard
           to="/dedicated-teams"
           image={dedicatedTeams}
-          title="Build your Dedicated Teams"
+          title="Build Your Dedicated Teams"
           info="Get your projects fast-tracked with the best technical and management talent. Increase quality and efficiency, and retain complete control of teams."
           svg={
             <svg

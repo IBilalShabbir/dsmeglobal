@@ -925,6 +925,8 @@ body::-webkit-scrollbar-track {
   font-size: 16px;
   color: $text;
   text-align: center;
+  width: 100%;
+  max-width: 950px;
   margin-bottom: 2em;
   padding: 0em 2em;
 }
@@ -1767,12 +1769,20 @@ textarea {
 }
 .about__core__values__heading {
   font-size: 45px;
+  margin-bottom: 0.5em;
+}
+.about__core__values__subheading {
+  color: #878787;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  padding: 0em 2em;
   margin-bottom: 2em;
 }
 .about__core__values__content {
   width: 100%;
   max-width: 1366px;
-  padding: 0em 2em;
+  padding: 2em 2em;
   margin: 0em auto;
   flex-wrap: wrap;
   display: flex;

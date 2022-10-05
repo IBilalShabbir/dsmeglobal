@@ -35,8 +35,11 @@ export function HomeTestimonials() {
       </Fade>
       <Fade bottom distance="30%">
         <div className="home__testmonials__info">
-          Hear from our customers to learn what makes DSME the right choice for
-          them, and why we're the right partner for your business.
+          Innovation, ease of use, better results—those are just some of the
+          reasons organizations in all industries and of all sizes rely on DSME
+          to help them succeed. Hear from our customers to learn what makes DSME
+          the right choice for them, and why we're the right partner for your
+          business.
         </div>
       </Fade>
       <div className="home__testmonials__content">

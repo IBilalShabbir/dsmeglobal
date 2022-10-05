@@ -139,7 +139,7 @@ export function AboutKeyDifferences() {
             </svg>
           }
           title="Immediate Starts"
-          info="No need for a costly and timeconsuming recruitment process - we can get into action as soon as you get ready to start."
+          info="No need for a costly and time-consuming recruitment process - we can get into action as soon as you get ready to start."
         />
         <AboutKeyDifferencesCard
           icon={
