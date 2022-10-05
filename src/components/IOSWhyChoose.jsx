@@ -35,7 +35,7 @@ export function IOSWhyChoose({}) {
           <AndroidIosWhyChoose
             svg={svg}
             title="Platform-specific features"
-            info="Planning to equip your app with functions like biometrics, geolocation, or features based on Bluetooth connection? The more native features your Android app needs, the better to go for the native product. Even seemingly simple functionalities such as push notifications tend to perform better within native applications."
+            info="Are you planning to equip your app with functions like biometrics, geolocation, or features based on a Bluetooth connection? If so, it’s better to develop a native iOS application. These are what we call native application features, and they usually are more difficult to develop for cross-platform. Even seemingly simple functionalities tend to perform better within native applications."
           />
           <AndroidIosWhyChoose
             svg={svg}

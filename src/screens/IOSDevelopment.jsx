@@ -41,7 +41,7 @@ export default function IOSDevelopment() {
           className="blockchain__get__started__svg"
         />
         <div className="blockchain__get__started__heading heading">
-          Sounds promising? Let’s discuss your idea!
+          Sound promising? Let’s talk about your idea!
         </div>
         <Link to="/quote" className="blockchain__get__started__link">
           Let’s work together

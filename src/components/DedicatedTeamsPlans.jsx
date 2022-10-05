@@ -26,7 +26,7 @@ export function DedicatedTeamsPlans() {
             exists)
           </div>
           <div className="dedicated__teams__plan__content__info">
-            With evolving specifications based on feedbacks on features
+            With evolving specifications based on features feedback.
           </div>
           <div className="dedicated__teams__plan__content__info">
             Not looking to go through a long-lasting & expensive hiring process.

@@ -327,10 +327,8 @@ export function DedicatedTeamsWhy() {
       title: "Supervisor-Level Reporting",
       info: (
         <>
-          Due to our well-established development processes, product knowledge
-          is accumulated and retained throughout the project. Proper transition
-          plans are created for knowledge transfer to new team members when
-          needed.
+          Monitor the progress and health of your project based on key
+          attributes like milestone tasks, bugs, blockers, and team happiness.
         </>
       ),
     },

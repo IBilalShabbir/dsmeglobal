@@ -182,7 +182,6 @@ export default function BlockchainConsulting() {
       <BlockchainWhy />
       <ServicesFeatureListing
         title="Services We Offer"
-        description="Phenomenal domain expertise to help you build and deliver mobile applications that can increase productivity, improve engagement and boost customer loyalty."
         data={blockChainFeature}
       />
       <BlockchainGetStarted />

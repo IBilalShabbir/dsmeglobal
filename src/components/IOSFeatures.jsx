@@ -700,7 +700,7 @@ export function IOSFeatures() {
             </svg>
           }
           heading="Cross-platform options"
-          description="If you’re thinking about building an app for both Android and iOS, you will face a crucial decision. Should you develop two native apps, or just one that will work on both platforms? We’re here to make sure you choose the right approach! If you pick cross-platform over native Android application development, we can take care of that, too. Our team excels in building apps with the two most popular cross-platform frameworks: Flutter and React Native : Flutter and react Native"
+          description="If you’re thinking about building an app for both Android and iOS, there are two approaches to consider. Should you develop two separate native apps, or just one that will work on both platforms? We’re here to make sure you take the right path! If you pick cross-platform over native iOS application development, we can take care of that, too. Our team excels in building cross-platform apps with the two most popular frameworks: Flutter and React Native."
         />
       </div>
     </div>

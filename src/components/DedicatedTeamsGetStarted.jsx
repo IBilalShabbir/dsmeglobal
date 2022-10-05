@@ -11,7 +11,10 @@ export function DedicatedTeamsGetStarted() {
           <div className="dedicated__teams__get__started__content__entry__icon">
             1
           </div>
-          <div className="dedicated__teams__get__started__content__entry__heading heading">
+          <div
+            className="dedicated__teams__get__started__content__entry__heading heading"
+            style={{ marginTop: "2em" }}
+          >
             Choose Your Team
           </div>
           <div className="dedicated__teams__get__started__content__entry__info">
@@ -30,7 +33,10 @@ export function DedicatedTeamsGetStarted() {
           <div className="dedicated__teams__get__started__content__entry__icon">
             2
           </div>
-          <div className="dedicated__teams__get__started__content__entry__heading heading">
+          <div
+            className="dedicated__teams__get__started__content__entry__heading heading"
+            style={{ marginTop: "2em" }}
+          >
             Get Ready
           </div>
           <div className="dedicated__teams__get__started__content__entry__info">
@@ -51,7 +57,10 @@ export function DedicatedTeamsGetStarted() {
           <div className="dedicated__teams__get__started__content__entry__icon">
             3
           </div>
-          <div className="dedicated__teams__get__started__content__entry__heading heading">
+          <div
+            className="dedicated__teams__get__started__content__entry__heading heading"
+            style={{ marginTop: "2em" }}
+          >
             Execute
           </div>
           <div className="dedicated__teams__get__started__content__entry__info">

@@ -48,7 +48,7 @@ export function DedicatedBestFit() {
       />
       <DedicatedBestFitContent
         image={techonologies}
-        heading="Enterprise"
+        heading="Technologies We Use"
         list={[
           "JavaScript",
           "Java",

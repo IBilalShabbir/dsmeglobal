@@ -18,7 +18,7 @@ export function CustomSoftwareBuisness() {
           marginBottom: "5em",
         }}
       >
-        We empower innovative startups, rapidly expanding businesses and
+        We empower innovative startups, rapidly expanding businesses, and
         enterprises to build amazing custom applications
       </div>
       <div className="dedicated__teams__get__started__content">
